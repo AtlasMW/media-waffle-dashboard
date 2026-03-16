@@ -28,7 +28,6 @@ export async function action({ request }: Route.ActionArgs) {
     return redirect("/", { headers });
   }
 
-  // Magic link mode
   const { error } = await supabase.auth.signInWithOtp({
     email,
     options: {
@@ -82,81 +81,191 @@ export default function Login() {
   }, [rootData, navigate]);
 
   return (
-    <div className="login-page min-h-screen flex items-center justify-center px-4">
-      <div className="w-full max-w-md">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-[var(--color-cream-100)]">Media Waffle</h1>
-          <p className="text-[var(--color-cream-200)] mt-2">Sign in to your dashboard</p>
+    <div style={{
+      minHeight: '100vh',
+      background: '#f5f0e8',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '20px',
+      fontFamily: "'Montserrat', sans-serif",
+    }}>
+      <div style={{ width: '100%', maxWidth: '420px' }}>
+        {/* Logo */}
+        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+          <img
+            src="/mw-logo.png"
+            alt="Media Waffle"
+            style={{ height: '60px', margin: '0 auto 16px' }}
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+          <p style={{
+            fontSize: '14px',
+            color: '#8a8478',
+            letterSpacing: '0.5px',
+          }}>
+            Client Dashboard
+          </p>
         </div>
 
-        <div className="bg-[var(--color-charcoal-800)] rounded-xl p-8 shadow-lg">
+        {/* Card */}
+        <div style={{
+          background: '#ffffff',
+          borderRadius: '16px',
+          padding: '40px 36px',
+          boxShadow: '0 4px 24px rgba(59,59,59,0.08)',
+        }}>
           {hashStatus === "processing" ? (
-            <div className="text-center">
-              <p className="text-[var(--color-cream-100)]">Signing you in...</p>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                width: '40px',
+                height: '40px',
+                border: '3px solid #ddd5c4',
+                borderTopColor: '#3b3b3b',
+                borderRadius: '50%',
+                animation: 'spin 0.8s linear infinite',
+                margin: '0 auto 16px',
+              }} />
+              <p style={{ color: '#3b3b3b', fontSize: '15px' }}>Signing you in...</p>
+              <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
             </div>
           ) : hashStatus !== "processing" && (actionData?.success && actionData?.mode === "magic" || (submitted && mode === "magic")) ? (
-            <div className="text-center">
-              <h2 className="text-xl font-semibold text-[var(--color-cream-100)] mb-2">
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '40px', marginBottom: '12px' }}>✉️</div>
+              <h2 style={{
+                fontSize: '20px',
+                fontWeight: 700,
+                color: '#3b3b3b',
+                marginBottom: '8px',
+                fontFamily: "'Georgia', serif",
+              }}>
                 Check your email
               </h2>
-              <p className="text-[var(--color-cream-200)]">
-                We&apos;ve sent you a magic link. Click it to sign in.
+              <p style={{ color: '#8a8478', fontSize: '14px', lineHeight: 1.6 }}>
+                We've sent you a login link. Click it to access your dashboard.
               </p>
             </div>
           ) : (
             <form method="post" onSubmit={() => { if (mode === "magic") setSubmitted(true); }}>
               <input type="hidden" name="mode" value={mode} />
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-[var(--color-cream-200)] mb-2"
-              >
-                Email address
+
+              <h2 style={{
+                fontSize: '22px',
+                fontWeight: 700,
+                color: '#3b3b3b',
+                marginBottom: '24px',
+                textAlign: 'center',
+                fontFamily: "'Georgia', serif",
+              }}>
+                Sign In
+              </h2>
+
+              <label style={{
+                display: 'block',
+                fontSize: '13px',
+                fontWeight: 600,
+                color: '#3b3b3b',
+                marginBottom: '6px',
+              }}>
+                Email
               </label>
               <input
-                id="email"
                 name="email"
                 type="email"
                 required
-                placeholder="you@example.com"
-                className="w-full px-4 py-3 rounded-lg bg-[var(--color-charcoal-700)] border border-[var(--color-charcoal-600)] text-[var(--color-cream-100)] placeholder-[var(--color-charcoal-400)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] mb-4"
+                placeholder="your@email.com"
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '10px',
+                  border: '1px solid #ddd5c4',
+                  background: '#faf8f4',
+                  color: '#3b3b3b',
+                  fontSize: '15px',
+                  outline: 'none',
+                  marginBottom: '16px',
+                  boxSizing: 'border-box',
+                  fontFamily: "'Montserrat', sans-serif",
+                }}
               />
+
               {mode === "password" && (
                 <>
-                  <label
-                    htmlFor="password"
-                    className="block text-sm font-medium text-[var(--color-cream-200)] mb-2"
-                  >
+                  <label style={{
+                    display: 'block',
+                    fontSize: '13px',
+                    fontWeight: 600,
+                    color: '#3b3b3b',
+                    marginBottom: '6px',
+                  }}>
                     Password
                   </label>
                   <input
-                    id="password"
                     name="password"
                     type="password"
                     required
                     placeholder="Enter your password"
-                    className="w-full px-4 py-3 rounded-lg bg-[var(--color-charcoal-700)] border border-[var(--color-charcoal-600)] text-[var(--color-cream-100)] placeholder-[var(--color-charcoal-400)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] mb-4"
+                    style={{
+                      width: '100%',
+                      padding: '12px 16px',
+                      borderRadius: '10px',
+                      border: '1px solid #ddd5c4',
+                      background: '#faf8f4',
+                      color: '#3b3b3b',
+                      fontSize: '15px',
+                      outline: 'none',
+                      marginBottom: '16px',
+                      boxSizing: 'border-box',
+                      fontFamily: "'Montserrat', sans-serif",
+                    }}
                   />
                 </>
               )}
+
               {(hashError || actionData?.error) && (
-                <p className="text-red-400 text-sm mb-4">{hashError || actionData?.error}</p>
+                <p style={{
+                  color: '#c44',
+                  fontSize: '13px',
+                  marginBottom: '16px',
+                  textAlign: 'center',
+                }}>
+                  {hashError || actionData?.error}
+                </p>
               )}
+
               <button
                 type="submit"
-                className="w-full py-3 rounded-lg bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] text-[var(--color-charcoal-900)] font-semibold transition-colors"
+                style={{
+                  width: '100%',
+                  padding: '14px',
+                  borderRadius: '10px',
+                  background: '#3b3b3b',
+                  color: '#f5f0e8',
+                  fontSize: '15px',
+                  fontWeight: 600,
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontFamily: "'Montserrat', sans-serif",
+                  transition: 'background 0.2s',
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.background = '#555')}
+                onMouseOut={(e) => (e.currentTarget.style.background = '#3b3b3b')}
               >
-                {mode === "password" ? "Sign In" : "Send Magic Link"}
-              </button>
-              <button
-                type="button"
-                onClick={() => setMode(mode === "password" ? "magic" : "password")}
-                className="w-full mt-3 text-sm text-[var(--color-cream-300)] hover:text-[var(--color-cream-100)] transition-colors"
-              >
-                {mode === "password" ? "Sign in with magic link instead" : "Sign in with password instead"}
+                {mode === "password" ? "Sign In" : "Send Login Link"}
               </button>
             </form>
           )}
         </div>
+
+        {/* Footer */}
+        <p style={{
+          textAlign: 'center',
+          fontSize: '12px',
+          color: '#b0a89a',
+          marginTop: '24px',
+        }}>
+          Powered by Media Waffle
+        </p>
       </div>
     </div>
   );
