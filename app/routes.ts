@@ -4,6 +4,7 @@ export default [
   index("routes/home.tsx"),
   route("login", "routes/login.tsx"),
   route("auth/callback", "routes/auth.callback.tsx"),
+  route("api/generate-link", "routes/api.generate-link.tsx"),
   layout("routes/_app.tsx", [
     route("admin", "routes/_app.admin.tsx", [
       index("routes/_app.admin.index.tsx"),

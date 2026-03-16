@@ -31,6 +31,11 @@ export default function AdminHub() {
   const [toastMsg, setToastMsg] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [inviteSlug, setInviteSlug] = useState<string | null>(null);
+  const [inviteName, setInviteName] = useState('');
+  const [inviteEmail, setInviteEmail] = useState('');
+  const [inviteLink, setInviteLink] = useState('');
+  const [inviteLoading, setInviteLoading] = useState(false);
   const templateRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -56,6 +61,42 @@ export default function AdminHub() {
 
   function openDashboard(slug: string) {
     window.location.href = '/dashboard?client=' + slug;
+  }
+
+  function openInviteModal(slug: string) {
+    const client = CLIENTS.find(c => c.slug === slug);
+    setInviteSlug(slug);
+    setInviteName(client?.name || '');
+    setInviteEmail('');
+    setInviteLink('');
+    setInviteLoading(false);
+  }
+
+  async function generateLink() {
+    if (!inviteEmail || !inviteSlug) return;
+    setInviteLoading(true);
+    setInviteLink('');
+    try {
+      const form = new FormData();
+      form.set('email', inviteEmail);
+      form.set('clientSlug', inviteSlug);
+      form.set('displayName', inviteName);
+      const res = await fetch('/api/generate-link', { method: 'POST', body: form });
+      const data = await res.json();
+      if (data.link) {
+        setInviteLink(data.link);
+        showToast('Login link generated');
+      } else {
+        showToast('Error: ' + (data.error || 'Unknown error'));
+      }
+    } catch (e) {
+      showToast('Failed to generate link');
+    }
+    setInviteLoading(false);
+  }
+
+  function copyInviteLink() {
+    navigator.clipboard.writeText(inviteLink).then(() => showToast('Login link copied')).catch(() => showToast('Login link copied'));
   }
 
   function copyTemplate() {
@@ -245,6 +286,10 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                       Copy Link
                     </button>
+                    <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openInviteModal(c.slug); }} style={{background:'var(--green-light)',color:'var(--green)'}}>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+                      Invite
+                    </button>
                   </div>
                 </div>
               </div>
@@ -299,6 +344,55 @@ Any notes:`} />
           </div>
         </div>
       </div>
+
+      {/* Invite Modal */}
+      {inviteSlug && (
+        <div className="modal-overlay open" onClick={(e) => { if (e.target === e.currentTarget) setInviteSlug(null); }}>
+          <div className="modal" style={{maxWidth:'480px'}}>
+            <div className="modal-header">
+              <h2 style={{fontFamily:'Georgia,serif',fontSize:'18px'}}>Generate Login Link</h2>
+              <button onClick={() => setInviteSlug(null)} style={{background:'none',border:'none',cursor:'pointer',padding:'4px'}}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--dark)" strokeWidth="2" style={{width:'20px',height:'20px'}}><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div className="modal-body">
+              <p style={{color:'var(--dark-light)',marginBottom:'16px',fontSize:'13px'}}>{inviteName}</p>
+              {!inviteLink ? (
+                <>
+                  <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Client Email</label>
+                  <input
+                    type="email"
+                    value={inviteEmail}
+                    onChange={(e) => setInviteEmail(e.target.value)}
+                    placeholder="client@example.com"
+                    style={{width:'100%',padding:'10px 14px',border:'1px solid var(--beige)',borderRadius:'8px',fontFamily:'inherit',fontSize:'14px',color:'var(--dark)',marginBottom:'16px',outline:'none'}}
+                  />
+                  <button className="btn btn-primary" onClick={generateLink} disabled={inviteLoading || !inviteEmail} style={{width:'100%',padding:'12px',opacity:inviteLoading?0.6:1}}>
+                    {inviteLoading ? 'Generating...' : 'Generate Login Link'}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Login Link (one-time use)</label>
+                  <div style={{background:'var(--beige-light)',borderRadius:'8px',padding:'12px',wordBreak:'break-all',fontSize:'12px',color:'var(--dark)',marginBottom:'16px',lineHeight:'1.6'}}>
+                    {inviteLink}
+                  </div>
+                  <div style={{display:'flex',gap:'10px'}}>
+                    <button className="btn btn-primary" onClick={copyInviteLink} style={{flex:1,padding:'12px'}}>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                      Copy Link
+                    </button>
+                    <button className="btn btn-secondary" onClick={() => { setInviteLink(''); setInviteEmail(''); }} style={{flex:1,padding:'12px'}}>
+                      Generate New
+                    </button>
+                  </div>
+                  <p style={{fontSize:'11px',color:'#999',marginTop:'12px'}}>Send this link to the client. It will log them in directly to their dashboard. Links expire after 24 hours.</p>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className={`toast${toastVisible ? ' show' : ''}`}>{toastMsg}</div>
     </>
