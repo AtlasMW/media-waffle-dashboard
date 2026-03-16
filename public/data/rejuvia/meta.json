@@ -1900,5 +1900,6 @@
     }
   ],
   "adsStartDate": "2025-10-03",
-  "ltv": null
+  "ltv": null,
+  "ltvDescription": "The average revenue generated per client, calculated by dividing total revenue by the total number of clients."
 }

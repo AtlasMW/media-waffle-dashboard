@@ -3667,5 +3667,6 @@
     }
   ],
   "adsStartDate": "2025-07-22",
-  "ltv": 827
+  "ltv": 827,
+  "ltvDescription": "The estimated lifetime value of a customer based on average revenue data from Timely reports."
 }

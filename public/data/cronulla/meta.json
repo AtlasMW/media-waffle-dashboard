@@ -880,5 +880,6 @@
     }
   ],
   "adsStartDate": "2026-01-12",
-  "ltv": 1637
+  "ltv": 1637,
+  "ltvDescription": "The estimated lifetime value of a customer based on average LTV data from Phorest reports. Currently estimated at ~$1,637 per client."
 }
