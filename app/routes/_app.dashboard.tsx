@@ -702,7 +702,7 @@ function renderLeads(l,pl,m) {
   charts.lt = new Chart(document.getElementById('c-lead-trend'),{type:'bar',data:{
     labels:dowLabels,
     datasets:[
-      {label:'Opportunities',data:dowData,backgroundColor:C.dark,borderRadius:6}
+      {label:'Opportunities',data:dowData,backgroundColor:C.beige,borderRadius:6}
     ]
   },options:{responsive:true,maintainAspectRatio:false,scales:{y:{grid:{color:'#f0ebe3'},ticks:{stepSize:1}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
 }
@@ -747,7 +747,7 @@ function renderLeadsRange(l,pl,leads,days) {
   charts.lt = new Chart(document.getElementById('c-lead-trend'),{type:'bar',data:{
     labels:dowLabelsR,
     datasets:[
-      {label:'Opportunities',data:dowDataR,backgroundColor:C.dark,borderRadius:6}
+      {label:'Opportunities',data:dowDataR,backgroundColor:C.beige,borderRadius:6}
     ]
   },options:{responsive:true,maintainAspectRatio:false,scales:{y:{grid:{color:'#f0ebe3'},ticks:{stepSize:1}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
 }
