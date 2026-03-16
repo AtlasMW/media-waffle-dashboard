@@ -694,10 +694,9 @@ function renderLeads(l,pl,m) {
     datasets:[{data:[l.confirmed,l.noShow,l.cancelled,l.inFollowUp,l.noContact],backgroundColor:[C.green,C.coral,'#c0392b',C.accent,C.beige],borderWidth:0,hoverOffset:4}]
   },options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{position:'right'}}}});
 
-  var allLeads = leadsData.allLeads || [];
-  var monthLeads = allLeads.filter(function(ld){ return ld.date && ld.date.startsWith && ld.date.startsWith(currentMonth); });
+  var allLeads = (l.leads || []);
   var dowCounts = [0,0,0,0,0,0,0];
-  monthLeads.forEach(function(ld){ var d = parseLocalDate(ld.date); var day = d.getDay(); dowCounts[day]++; });
+  allLeads.forEach(function(ld){ if(ld.date){ var d = new Date(ld.date); if(!isNaN(d.getTime())){ dowCounts[d.getDay()]++; }}});
   var dowLabels = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
   var dowData = [dowCounts[1],dowCounts[2],dowCounts[3],dowCounts[4],dowCounts[5],dowCounts[6],dowCounts[0]];
   charts.lt = new Chart(document.getElementById('c-lead-trend'),{type:'bar',data:{
@@ -742,7 +741,7 @@ function renderLeadsRange(l,pl,leads,days) {
   }
 
   var dowCountsR = [0,0,0,0,0,0,0];
-  leads.forEach(function(ld){ if(ld.date){ var d = parseLocalDate(ld.date); var day = d.getDay(); dowCountsR[day]++; }});
+  leads.forEach(function(ld){ if(ld.date){ var d = new Date(ld.date); if(!isNaN(d.getTime())){ dowCountsR[d.getDay()]++; }}});
   var dowLabelsR = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
   var dowDataR = [dowCountsR[1],dowCountsR[2],dowCountsR[3],dowCountsR[4],dowCountsR[5],dowCountsR[6],dowCountsR[0]];
   charts.lt = new Chart(document.getElementById('c-lead-trend'),{type:'bar',data:{
