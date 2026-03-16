@@ -306,7 +306,7 @@ function destroyCharts() { Object.values(charts).forEach(function(c){c.destroy()
 function getLastCompletedMonthEnd() {
   var now = new Date();
   var endOfLastMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-  return endOfLastMonth.toISOString().slice(0,10);
+  return endOfLastMonth.getFullYear()+'-'+String(endOfLastMonth.getMonth()+1).padStart(2,'0')+'-'+String(endOfLastMonth.getDate()).padStart(2,'0');
 }
 
 function getDataCeiling() {
