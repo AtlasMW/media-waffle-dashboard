@@ -1,0 +1,3669 @@
+{
+  "client": "Vernalys Skin & Laser Clinic",
+  "currency": "AUD",
+  "lastUpdated": "2026-03-16T02:02:56+10:00",
+  "agencyFees": {
+    "2025-07": 950,
+    "2025-08": 950,
+    "2025-09": 950,
+    "2025-10": 950,
+    "2025-11": 950,
+    "2025-12": 950,
+    "2026-01": 950,
+    "2026-02": 950
+  },
+  "monthly": {
+    "2025-07": {
+      "spend": 339.73,
+      "impressions": 13902,
+      "reach": 6208,
+      "leads": 22,
+      "cpl": 15.44,
+      "messages": 13,
+      "costPerMessage": 26.13,
+      "uniqueCtr": 0.08,
+      "cpm": 24.44,
+      "leadConvPct": 440.0,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT",
+          "spend": 19.39,
+          "impressions": 1216,
+          "reach": 932,
+          "leads": 1,
+          "cpl": 19.39,
+          "uniqueCtr": 0.0,
+          "messages": 0,
+          "leadConvPct": 0
+        },
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 320.34,
+          "impressions": 12686,
+          "reach": 5904,
+          "leads": 21,
+          "cpl": 15.25,
+          "uniqueCtr": 0.08,
+          "messages": 13,
+          "leadConvPct": 420.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT",
+          "leads": 1,
+          "cpl": 19.39,
+          "spend": 19.39,
+          "campaignPattern": "TOF // LEAD // A+CB // OFFER 1 - PAYOT"
+        },
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "leads": 21,
+          "cpl": 15.25,
+          "spend": 320.34,
+          "campaignPattern": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 3 H1 - C1",
+          "adSetName": "NO DT AD+ // AD+PLACEMENT // ALL // SYD CBD",
+          "campaignName": "TOF // LEAD // A+CB // OFFER 1 - PAYOT",
+          "spend": 6.72,
+          "leads": 1,
+          "cpl": 6.72,
+          "uniqueCtr": 0.0,
+          "frequency": 1.12
+        },
+        {
+          "adName": "IMG 1 H1 - C1 - Copy",
+          "adSetName": "NO DT // FEED+STORY // WOMEN // SYD CBD",
+          "campaignName": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 216.57,
+          "leads": 18,
+          "cpl": 12.03,
+          "uniqueCtr": 0.11,
+          "frequency": 1.68
+        },
+        {
+          "adName": "IMG 2 H1 - C1 - Copy",
+          "adSetName": "NO DT // FEED+STORY // WOMEN // SYD CBD",
+          "campaignName": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 26.45,
+          "leads": 2,
+          "cpl": 13.22,
+          "uniqueCtr": 0.0,
+          "frequency": 1.64
+        },
+        {
+          "adName": "IMG 4 H1 - C1 - Copy",
+          "adSetName": "NO DT // FEED+STORY // WOMEN // SYD CBD",
+          "campaignName": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 26.14,
+          "leads": 1,
+          "cpl": 26.14,
+          "uniqueCtr": 0.0,
+          "frequency": 1.41
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 30.5,
+          "leads": 2
+        },
+        {
+          "age": "25-34",
+          "spend": 104.04,
+          "leads": 6
+        },
+        {
+          "age": "35-44",
+          "spend": 70.29,
+          "leads": 3
+        },
+        {
+          "age": "45-54",
+          "spend": 55.08,
+          "leads": 8
+        },
+        {
+          "age": "55-64",
+          "spend": 39.94,
+          "leads": 1
+        },
+        {
+          "age": "65+",
+          "spend": 39.88,
+          "leads": 2
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 51.85,
+          "leads": 7
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 6.92,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 45.95,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.82,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 29.38,
+          "leads": 1
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.02,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 70.81,
+          "leads": 5
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 133.98,
+          "leads": 6
+        }
+      ]
+    },
+    "2025-08": {
+      "spend": 635.88,
+      "impressions": 41455,
+      "reach": 15402,
+      "leads": 89,
+      "cpl": 7.14,
+      "messages": 54,
+      "costPerMessage": 11.78,
+      "uniqueCtr": 0.09,
+      "cpm": 15.34,
+      "leadConvPct": 635.71,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 151.74,
+          "impressions": 6110,
+          "reach": 3081,
+          "leads": 8,
+          "cpl": 18.97,
+          "uniqueCtr": 0.0,
+          "messages": 5,
+          "leadConvPct": 0
+        },
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 484.14,
+          "impressions": 35345,
+          "reach": 13320,
+          "leads": 81,
+          "cpl": 5.98,
+          "uniqueCtr": 0.11,
+          "messages": 49,
+          "leadConvPct": 578.57
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "leads": 8,
+          "cpl": 18.97,
+          "spend": 151.74,
+          "campaignPattern": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]"
+        },
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 81,
+          "cpl": 5.98,
+          "spend": 484.14,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 43.37,
+          "leads": 11,
+          "cpl": 3.94,
+          "uniqueCtr": 0.06,
+          "frequency": 1.66
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 38.07,
+          "leads": 9,
+          "cpl": 4.23,
+          "uniqueCtr": 0.04,
+          "frequency": 1.35
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 107.38,
+          "leads": 19,
+          "cpl": 5.65,
+          "uniqueCtr": 0.04,
+          "frequency": 1.64
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 23.85,
+          "leads": 4,
+          "cpl": 5.96,
+          "uniqueCtr": 0.11,
+          "frequency": 1.18
+        },
+        {
+          "adName": "IMG 2 H1 - C1 - Copy",
+          "adSetName": "NO DT // FEED+STORY // WOMEN // SYD CBD",
+          "campaignName": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
+          "spend": 27.88,
+          "leads": 4,
+          "cpl": 6.97,
+          "uniqueCtr": 0.0,
+          "frequency": 1.59
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 50.08,
+          "leads": 2
+        },
+        {
+          "age": "25-34",
+          "spend": 219.37,
+          "leads": 29
+        },
+        {
+          "age": "35-44",
+          "spend": 199.68,
+          "leads": 34
+        },
+        {
+          "age": "45-54",
+          "spend": 100.24,
+          "leads": 18
+        },
+        {
+          "age": "55-64",
+          "spend": 39.04,
+          "leads": 4
+        },
+        {
+          "age": "65+",
+          "spend": 27.47,
+          "leads": 2
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 100.8,
+          "leads": 11
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 14.24,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 126.25,
+          "leads": 27
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.12,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 104.8,
+          "leads": 18
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 128.85,
+          "leads": 12
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 160.81,
+          "leads": 19
+        }
+      ]
+    },
+    "2025-09": {
+      "spend": 806.76,
+      "impressions": 60416,
+      "reach": 20116,
+      "leads": 117,
+      "cpl": 6.9,
+      "messages": 64,
+      "costPerMessage": 12.61,
+      "uniqueCtr": 0.07,
+      "cpm": 13.35,
+      "leadConvPct": 835.71,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 806.76,
+          "impressions": 60416,
+          "reach": 20116,
+          "leads": 117,
+          "cpl": 6.9,
+          "uniqueCtr": 0.07,
+          "messages": 64,
+          "leadConvPct": 835.71
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 117,
+          "cpl": 6.9,
+          "spend": 806.76,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 56.45,
+          "leads": 11,
+          "cpl": 5.13,
+          "uniqueCtr": 0.03,
+          "frequency": 1.42
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 331.58,
+          "leads": 57,
+          "cpl": 5.82,
+          "uniqueCtr": 0.03,
+          "frequency": 1.85
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 106.07,
+          "leads": 18,
+          "cpl": 5.89,
+          "uniqueCtr": 0.11,
+          "frequency": 1.75
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 7.0,
+          "leads": 1,
+          "cpl": 7.0,
+          "uniqueCtr": 0.0,
+          "frequency": 1.13
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 113.49,
+          "leads": 13,
+          "cpl": 8.73,
+          "uniqueCtr": 0.07,
+          "frequency": 2.01
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 59.27,
+          "leads": 9
+        },
+        {
+          "age": "25-34",
+          "spend": 277.04,
+          "leads": 43
+        },
+        {
+          "age": "35-44",
+          "spend": 304.66,
+          "leads": 50
+        },
+        {
+          "age": "45-54",
+          "spend": 121.95,
+          "leads": 10
+        },
+        {
+          "age": "55-64",
+          "spend": 27.34,
+          "leads": 3
+        },
+        {
+          "age": "65+",
+          "spend": 16.5,
+          "leads": 2
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 115.48,
+          "leads": 17
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 20.49,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 188.25,
+          "leads": 26
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 89.08,
+          "leads": 14
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 195.29,
+          "leads": 32
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 198.17,
+          "leads": 26
+        }
+      ]
+    },
+    "2025-10": {
+      "spend": 836.73,
+      "impressions": 68606,
+      "reach": 23901,
+      "leads": 150,
+      "cpl": 5.58,
+      "messages": 87,
+      "costPerMessage": 9.62,
+      "uniqueCtr": 0.08,
+      "cpm": 12.2,
+      "leadConvPct": 789.47,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 836.73,
+          "impressions": 68606,
+          "reach": 23901,
+          "leads": 150,
+          "cpl": 5.58,
+          "uniqueCtr": 0.08,
+          "messages": 87,
+          "leadConvPct": 789.47
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 150,
+          "cpl": 5.58,
+          "spend": 836.73,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 1.18,
+          "leads": 1,
+          "cpl": 1.18,
+          "uniqueCtr": 0.0,
+          "frequency": 1.01
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 3.07,
+          "leads": 1,
+          "cpl": 3.07,
+          "uniqueCtr": 0.0,
+          "frequency": 1.04
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 377.49,
+          "leads": 76,
+          "cpl": 4.97,
+          "uniqueCtr": 0.07,
+          "frequency": 2.38
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 60.35,
+          "leads": 10,
+          "cpl": 6.04,
+          "uniqueCtr": 0.04,
+          "frequency": 1.69
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 181.7,
+          "leads": 30,
+          "cpl": 6.06,
+          "uniqueCtr": 0.02,
+          "frequency": 1.5
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 76.29,
+          "leads": 18
+        },
+        {
+          "age": "25-34",
+          "spend": 310.24,
+          "leads": 57
+        },
+        {
+          "age": "35-44",
+          "spend": 304.15,
+          "leads": 53
+        },
+        {
+          "age": "45-54",
+          "spend": 108.48,
+          "leads": 14
+        },
+        {
+          "age": "55-64",
+          "spend": 24.74,
+          "leads": 7
+        },
+        {
+          "age": "65+",
+          "spend": 12.83,
+          "leads": 1
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 96.52,
+          "leads": 20
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 15.44,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 191.56,
+          "leads": 35
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 124.33,
+          "leads": 22
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 198.62,
+          "leads": 32
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 210.25,
+          "leads": 39
+        }
+      ]
+    },
+    "2025-11": {
+      "spend": 813.01,
+      "impressions": 57599,
+      "reach": 23522,
+      "leads": 108,
+      "cpl": 7.53,
+      "messages": 115,
+      "costPerMessage": 7.07,
+      "uniqueCtr": 0.03,
+      "cpm": 14.12,
+      "leadConvPct": 1800.0,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 813.01,
+          "impressions": 57599,
+          "reach": 23522,
+          "leads": 108,
+          "cpl": 7.53,
+          "uniqueCtr": 0.03,
+          "messages": 115,
+          "leadConvPct": 1800.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 108,
+          "cpl": 7.53,
+          "spend": 813.01,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 54.82,
+          "leads": 11,
+          "cpl": 4.98,
+          "uniqueCtr": 0.0,
+          "frequency": 1.44
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 53.43,
+          "leads": 9,
+          "cpl": 5.94,
+          "uniqueCtr": 0.0,
+          "frequency": 1.55
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 229.25,
+          "leads": 37,
+          "cpl": 6.2,
+          "uniqueCtr": 0.04,
+          "frequency": 1.87
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 16.61,
+          "leads": 2,
+          "cpl": 8.3,
+          "uniqueCtr": 0.0,
+          "frequency": 1.16
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 74.81,
+          "leads": 9,
+          "cpl": 8.31,
+          "uniqueCtr": 0.0,
+          "frequency": 1.3
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 76.77,
+          "leads": 9
+        },
+        {
+          "age": "25-34",
+          "spend": 295.28,
+          "leads": 37
+        },
+        {
+          "age": "35-44",
+          "spend": 285.06,
+          "leads": 40
+        },
+        {
+          "age": "45-54",
+          "spend": 114.29,
+          "leads": 18
+        },
+        {
+          "age": "55-64",
+          "spend": 24.34,
+          "leads": 1
+        },
+        {
+          "age": "65+",
+          "spend": 17.27,
+          "leads": 3
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 123.73,
+          "leads": 23
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 17.55,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 139.68,
+          "leads": 20
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 116.33,
+          "leads": 26
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 233.23,
+          "leads": 15
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 182.49,
+          "leads": 22
+        }
+      ]
+    },
+    "2025-12": {
+      "spend": 832.7,
+      "impressions": 66506,
+      "reach": 24099,
+      "leads": 125,
+      "cpl": 6.66,
+      "messages": 135,
+      "costPerMessage": 6.17,
+      "uniqueCtr": 0.02,
+      "cpm": 12.52,
+      "leadConvPct": 3125.0,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 832.7,
+          "impressions": 66506,
+          "reach": 24099,
+          "leads": 125,
+          "cpl": 6.66,
+          "uniqueCtr": 0.02,
+          "messages": 135,
+          "leadConvPct": 3125.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 125,
+          "cpl": 6.66,
+          "spend": 832.7,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 3.96,
+          "leads": 1,
+          "cpl": 3.96,
+          "uniqueCtr": 0.0,
+          "frequency": 1.12
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 91.84,
+          "leads": 17,
+          "cpl": 5.4,
+          "uniqueCtr": 0.0,
+          "frequency": 1.27
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 52.42,
+          "leads": 9,
+          "cpl": 5.82,
+          "uniqueCtr": 0.0,
+          "frequency": 1.36
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 298.0,
+          "leads": 51,
+          "cpl": 5.84,
+          "uniqueCtr": 0.03,
+          "frequency": 1.86
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 126.14,
+          "leads": 17,
+          "cpl": 7.42,
+          "uniqueCtr": 0.0,
+          "frequency": 1.77
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 68.7,
+          "leads": 11
+        },
+        {
+          "age": "25-34",
+          "spend": 307.03,
+          "leads": 48
+        },
+        {
+          "age": "35-44",
+          "spend": 296.3,
+          "leads": 41
+        },
+        {
+          "age": "45-54",
+          "spend": 114.91,
+          "leads": 22
+        },
+        {
+          "age": "55-64",
+          "spend": 28.29,
+          "leads": 2
+        },
+        {
+          "age": "65+",
+          "spend": 17.47,
+          "leads": 1
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 101.89,
+          "leads": 24
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 13.28,
+          "leads": 3
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 154.79,
+          "leads": 25
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 159.74,
+          "leads": 24
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 215.04,
+          "leads": 32
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 187.96,
+          "leads": 17
+        }
+      ]
+    },
+    "2026-01": {
+      "spend": 1798.11,
+      "impressions": 180006,
+      "reach": 65718,
+      "leads": 187,
+      "cpl": 9.62,
+      "messages": 235,
+      "costPerMessage": 7.65,
+      "uniqueCtr": 0.1,
+      "cpm": 9.99,
+      "leadConvPct": 296.83,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 818.07,
+          "impressions": 78717,
+          "reach": 28810,
+          "leads": 165,
+          "cpl": 4.96,
+          "uniqueCtr": 0.03,
+          "messages": 142,
+          "leadConvPct": 1650.0
+        },
+        {
+          "name": "inbox",
+          "spend": 448.02,
+          "impressions": 40262,
+          "reach": 14913,
+          "leads": 7,
+          "cpl": 64.0,
+          "uniqueCtr": 0.15,
+          "messages": 38,
+          "leadConvPct": 30.43
+        },
+        {
+          "name": "inbox - all review",
+          "spend": 225.16,
+          "impressions": 21138,
+          "reach": 10889,
+          "leads": 13,
+          "cpl": 17.32,
+          "uniqueCtr": 0.14,
+          "messages": 27,
+          "leadConvPct": 86.67
+        },
+        {
+          "name": "Reach",
+          "spend": 33.08,
+          "impressions": 20859,
+          "reach": 20310,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.0,
+          "messages": 0,
+          "leadConvPct": 0.0
+        },
+        {
+          "name": "inbox - \ud83d\udd25HOT DEAL! Triple the Glow for only $159\u203c\ufe0f",
+          "spend": 87.52,
+          "impressions": 4850,
+          "reach": 1828,
+          "leads": 1,
+          "cpl": 87.52,
+          "uniqueCtr": 0.49,
+          "messages": 6,
+          "leadConvPct": 11.11
+        },
+        {
+          "name": "inbox - Saturday vibes \ud83d\ude0d\ud83d\udc96\ud83d\udc95",
+          "spend": 45.23,
+          "impressions": 3695,
+          "reach": 2093,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.0,
+          "messages": 9,
+          "leadConvPct": 0
+        },
+        {
+          "name": "inbox - \u0e23\u0e31\u0e01\u0e29\u0e32\u0e2a\u0e34\u0e27\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e27\u0e34\u0e18\u0e35 \u0e1c\u0e34\u0e27\u0e14\u0e35\u0e02\u0e36\u0e49\u0e19\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96",
+          "spend": 53.63,
+          "impressions": 3868,
+          "reach": 1205,
+          "leads": 1,
+          "cpl": 53.63,
+          "uniqueCtr": 0.25,
+          "messages": 4,
+          "leadConvPct": 33.33
+        },
+        {
+          "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96",
+          "spend": 3.67,
+          "impressions": 368,
+          "reach": 262,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.0,
+          "messages": 1,
+          "leadConvPct": 0
+        },
+        {
+          "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
+          "spend": 83.73,
+          "impressions": 6249,
+          "reach": 2152,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.09,
+          "messages": 8,
+          "leadConvPct": 0.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 165,
+          "cpl": 4.96,
+          "spend": 818.07,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 320.43,
+          "leads": 75,
+          "cpl": 4.27,
+          "uniqueCtr": 0.02,
+          "frequency": 2.35
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 130.96,
+          "leads": 25,
+          "cpl": 5.24,
+          "uniqueCtr": 0.01,
+          "frequency": 1.46
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 276.83,
+          "leads": 46,
+          "cpl": 6.02,
+          "uniqueCtr": 0.03,
+          "frequency": 1.69
+        },
+        {
+          "adName": "\u0e42\u0e06\u0e29\u0e13\u0e32\u0e01\u0e32\u0e23\u0e21\u0e35\u0e2a\u0e48\u0e27\u0e19\u0e23\u0e48\u0e27\u0e21\u0e43\u0e2b\u0e21\u0e48",
+          "adSetName": "\u0e0a\u0e38\u0e14\u0e42\u0e06\u0e29\u0e13\u0e32\u0e01\u0e32\u0e23\u0e21\u0e35\u0e2a\u0e48\u0e27\u0e19\u0e23\u0e48\u0e27\u0e21\u0e43\u0e2b\u0e21\u0e48",
+          "campaignName": "inbox - all review",
+          "spend": 96.07,
+          "leads": 9,
+          "cpl": 10.67,
+          "uniqueCtr": 0.18,
+          "frequency": 1.61
+        },
+        {
+          "adName": "\u0e42\u0e06\u0e29\u0e13\u0e32\u0e01\u0e32\u0e23\u0e21\u0e35\u0e2a\u0e48\u0e27\u0e19\u0e23\u0e48\u0e27\u0e21\u0e43\u0e2b\u0e21\u0e48 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
+          "adSetName": "\u0e0a\u0e38\u0e14\u0e42\u0e06\u0e29\u0e13\u0e32\u0e01\u0e32\u0e23\u0e21\u0e35\u0e2a\u0e48\u0e27\u0e19\u0e23\u0e48\u0e27\u0e21\u0e43\u0e2b\u0e21\u0e48",
+          "campaignName": "inbox - all review",
+          "spend": 96.03,
+          "leads": 4,
+          "cpl": 24.01,
+          "uniqueCtr": 0.08,
+          "frequency": 1.68
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 137.05,
+          "leads": 17
+        },
+        {
+          "age": "25-34",
+          "spend": 663.92,
+          "leads": 66
+        },
+        {
+          "age": "35-44",
+          "spend": 550.46,
+          "leads": 65
+        },
+        {
+          "age": "45-54",
+          "spend": 246.47,
+          "leads": 29
+        },
+        {
+          "age": "55-64",
+          "spend": 88.41,
+          "leads": 5
+        },
+        {
+          "age": "65+",
+          "spend": 111.8,
+          "leads": 5
+        }
+      ],
+      "placements": [
+        {
+          "name": "Audience_Network An Classic",
+          "spend": 1.25,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Notification",
+          "spend": 2.78,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 190.32,
+          "leads": 26
+        },
+        {
+          "name": "Facebook Facebook Reels Overlay",
+          "spend": 71.05,
+          "leads": 4
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 72.77,
+          "leads": 9
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 566.35,
+          "leads": 31
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 47.58,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Search",
+          "spend": 9.98,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 295.46,
+          "leads": 42
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.46,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 262.71,
+          "leads": 30
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 277.42,
+          "leads": 43
+        },
+        {
+          "name": "Messenger Messenger Stories",
+          "spend": 0.0,
+          "leads": 0
+        }
+      ]
+    },
+    "2026-02": {
+      "spend": 1742.83,
+      "impressions": 145754,
+      "reach": 42427,
+      "leads": 213,
+      "cpl": 8.18,
+      "messages": 255,
+      "costPerMessage": 6.83,
+      "uniqueCtr": 0.08,
+      "cpm": 11.96,
+      "leadConvPct": 645.45,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 666.1,
+          "impressions": 58490,
+          "reach": 21972,
+          "leads": 117,
+          "cpl": 5.69,
+          "uniqueCtr": 0.01,
+          "messages": 127,
+          "leadConvPct": 3900.0
+        },
+        {
+          "name": "inbox - \ud83d\udd25HOT DEAL! Triple the Glow for only $159\u203c\ufe0f",
+          "spend": 131.05,
+          "impressions": 7958,
+          "reach": 2540,
+          "leads": 3,
+          "cpl": 43.68,
+          "uniqueCtr": 0.87,
+          "messages": 12,
+          "leadConvPct": 13.64
+        },
+        {
+          "name": "inbox - Saturday vibes \ud83d\ude0d\ud83d\udc96\ud83d\udc95",
+          "spend": 79.91,
+          "impressions": 6863,
+          "reach": 3849,
+          "leads": 1,
+          "cpl": 79.91,
+          "uniqueCtr": 0.1,
+          "messages": 8,
+          "leadConvPct": 25.0
+        },
+        {
+          "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
+          "spend": 129.29,
+          "impressions": 10636,
+          "reach": 3075,
+          "leads": 4,
+          "cpl": 32.32,
+          "uniqueCtr": 0.07,
+          "messages": 19,
+          "leadConvPct": 200.0
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 736.48,
+          "impressions": 61807,
+          "reach": 19723,
+          "leads": 88,
+          "cpl": 8.37,
+          "uniqueCtr": 0.01,
+          "messages": 89,
+          "leadConvPct": 4400.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 117,
+          "cpl": 5.69,
+          "spend": 666.1,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "leads": 88,
+          "cpl": 8.37,
+          "spend": 736.48,
+          "campaignPattern": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 294.69,
+          "leads": 53,
+          "cpl": 5.56,
+          "uniqueCtr": 0.0,
+          "frequency": 2.29
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 262.1,
+          "leads": 45,
+          "cpl": 5.82,
+          "uniqueCtr": 0.01,
+          "frequency": 1.79
+        },
+        {
+          "adName": "OFFER 3 - IMG 3| H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 101.69,
+          "leads": 15,
+          "cpl": 6.78,
+          "uniqueCtr": 0.0,
+          "frequency": 1.76
+        },
+        {
+          "adName": "OFFER 3 - IMG 1 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 130.7,
+          "leads": 19,
+          "cpl": 6.88,
+          "uniqueCtr": 0.02,
+          "frequency": 1.68
+        },
+        {
+          "adName": "OFFER 3 - IMG 3 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 76.34,
+          "leads": 9,
+          "cpl": 8.48,
+          "uniqueCtr": 0.0,
+          "frequency": 1.59
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 306.52,
+          "leads": 29
+        },
+        {
+          "age": "25-34",
+          "spend": 738.13,
+          "leads": 102
+        },
+        {
+          "age": "35-44",
+          "spend": 437.11,
+          "leads": 54
+        },
+        {
+          "age": "45-54",
+          "spend": 168.97,
+          "leads": 17
+        },
+        {
+          "age": "55-64",
+          "spend": 45.09,
+          "leads": 6
+        },
+        {
+          "age": "65+",
+          "spend": 47.01,
+          "leads": 5
+        },
+        {
+          "age": "Unknown",
+          "spend": 0.0,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Audience_Network An Classic",
+          "spend": 2.61,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Notification",
+          "spend": 2.13,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 217.6,
+          "leads": 32
+        },
+        {
+          "name": "Facebook Facebook Reels Overlay",
+          "spend": 11.7,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 36.45,
+          "leads": 6
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 299.11,
+          "leads": 20
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 6.71,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Search",
+          "spend": 3.1,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 229.22,
+          "leads": 30
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.22,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 447.38,
+          "leads": 72
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 486.61,
+          "leads": 52
+        }
+      ]
+    }
+  },
+  "daily": [
+    {
+      "date": "2025-07-22",
+      "spend": 29.37,
+      "impressions": 1704,
+      "reach": 1312,
+      "leads": 2,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 17.24
+    },
+    {
+      "date": "2025-07-23",
+      "spend": 32.82,
+      "impressions": 1667,
+      "reach": 1191,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 19.69
+    },
+    {
+      "date": "2025-07-24",
+      "spend": 32.45,
+      "impressions": 1374,
+      "reach": 1048,
+      "leads": 3,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 23.62
+    },
+    {
+      "date": "2025-07-25",
+      "spend": 35.03,
+      "impressions": 1414,
+      "reach": 1155,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 24.77
+    },
+    {
+      "date": "2025-07-26",
+      "spend": 35.78,
+      "impressions": 1469,
+      "reach": 1200,
+      "leads": 6,
+      "messages": 6,
+      "uniqueCtr": 0.25,
+      "cpm": 24.36
+    },
+    {
+      "date": "2025-07-27",
+      "spend": 40.65,
+      "impressions": 1767,
+      "reach": 1495,
+      "leads": 4,
+      "messages": 3,
+      "uniqueCtr": 0.07,
+      "cpm": 23.01
+    },
+    {
+      "date": "2025-07-28",
+      "spend": 34.31,
+      "impressions": 1222,
+      "reach": 993,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 28.08
+    },
+    {
+      "date": "2025-07-29",
+      "spend": 34.2,
+      "impressions": 1088,
+      "reach": 914,
+      "leads": 1,
+      "messages": 1,
+      "uniqueCtr": 0.11,
+      "cpm": 31.43
+    },
+    {
+      "date": "2025-07-30",
+      "spend": 34.13,
+      "impressions": 1150,
+      "reach": 953,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 29.68
+    },
+    {
+      "date": "2025-07-31",
+      "spend": 30.99,
+      "impressions": 1047,
+      "reach": 883,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 29.6
+    },
+    {
+      "date": "2025-08-01",
+      "spend": 19.7,
+      "impressions": 730,
+      "reach": 608,
+      "leads": 1,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 26.99
+    },
+    {
+      "date": "2025-08-02",
+      "spend": 17.32,
+      "impressions": 638,
+      "reach": 525,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 27.15
+    },
+    {
+      "date": "2025-08-03",
+      "spend": 20.95,
+      "impressions": 811,
+      "reach": 651,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 25.83
+    },
+    {
+      "date": "2025-08-04",
+      "spend": 16.85,
+      "impressions": 636,
+      "reach": 530,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 26.49
+    },
+    {
+      "date": "2025-08-05",
+      "spend": 14.21,
+      "impressions": 644,
+      "reach": 542,
+      "leads": 1,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 22.07
+    },
+    {
+      "date": "2025-08-06",
+      "spend": 12.47,
+      "impressions": 590,
+      "reach": 463,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 21.14
+    },
+    {
+      "date": "2025-08-07",
+      "spend": 11.65,
+      "impressions": 438,
+      "reach": 361,
+      "leads": 0,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 26.6
+    },
+    {
+      "date": "2025-08-08",
+      "spend": 11.37,
+      "impressions": 458,
+      "reach": 395,
+      "leads": 2,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 24.83
+    },
+    {
+      "date": "2025-08-09",
+      "spend": 10.4,
+      "impressions": 465,
+      "reach": 386,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 22.37
+    },
+    {
+      "date": "2025-08-10",
+      "spend": 14.54,
+      "impressions": 603,
+      "reach": 476,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 24.11
+    },
+    {
+      "date": "2025-08-11",
+      "spend": 2.28,
+      "impressions": 97,
+      "reach": 86,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 23.51
+    },
+    {
+      "date": "2025-08-14",
+      "spend": 24.62,
+      "impressions": 1548,
+      "reach": 1253,
+      "leads": 1,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 15.9
+    },
+    {
+      "date": "2025-08-15",
+      "spend": 25.21,
+      "impressions": 1473,
+      "reach": 1194,
+      "leads": 5,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 17.11
+    },
+    {
+      "date": "2025-08-16",
+      "spend": 24.89,
+      "impressions": 1632,
+      "reach": 1328,
+      "leads": 3,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 15.25
+    },
+    {
+      "date": "2025-08-17",
+      "spend": 31.58,
+      "impressions": 2260,
+      "reach": 1867,
+      "leads": 9,
+      "messages": 4,
+      "uniqueCtr": 0.05,
+      "cpm": 13.97
+    },
+    {
+      "date": "2025-08-18",
+      "spend": 26.97,
+      "impressions": 2011,
+      "reach": 1730,
+      "leads": 3,
+      "messages": 1,
+      "uniqueCtr": 0.06,
+      "cpm": 13.41
+    },
+    {
+      "date": "2025-08-19",
+      "spend": 24.97,
+      "impressions": 1717,
+      "reach": 1476,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.07,
+      "cpm": 14.54
+    },
+    {
+      "date": "2025-08-20",
+      "spend": 24.97,
+      "impressions": 1838,
+      "reach": 1452,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.59
+    },
+    {
+      "date": "2025-08-21",
+      "spend": 27.33,
+      "impressions": 1760,
+      "reach": 1402,
+      "leads": 3,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 15.53
+    },
+    {
+      "date": "2025-08-22",
+      "spend": 27.79,
+      "impressions": 1682,
+      "reach": 1331,
+      "leads": 5,
+      "messages": 2,
+      "uniqueCtr": 0.08,
+      "cpm": 16.52
+    },
+    {
+      "date": "2025-08-23",
+      "spend": 25.37,
+      "impressions": 1751,
+      "reach": 1537,
+      "leads": 7,
+      "messages": 7,
+      "uniqueCtr": 0.13,
+      "cpm": 14.49
+    },
+    {
+      "date": "2025-08-24",
+      "spend": 32.89,
+      "impressions": 2447,
+      "reach": 1989,
+      "leads": 6,
+      "messages": 1,
+      "uniqueCtr": 0.05,
+      "cpm": 13.44
+    },
+    {
+      "date": "2025-08-25",
+      "spend": 26.13,
+      "impressions": 2151,
+      "reach": 1735,
+      "leads": 7,
+      "messages": 6,
+      "uniqueCtr": 0.17,
+      "cpm": 12.15
+    },
+    {
+      "date": "2025-08-26",
+      "spend": 26.19,
+      "impressions": 2080,
+      "reach": 1709,
+      "leads": 8,
+      "messages": 6,
+      "uniqueCtr": 0.06,
+      "cpm": 12.59
+    },
+    {
+      "date": "2025-08-27",
+      "spend": 24.87,
+      "impressions": 2104,
+      "reach": 1772,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 11.82
+    },
+    {
+      "date": "2025-08-28",
+      "spend": 27.07,
+      "impressions": 1959,
+      "reach": 1659,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.82
+    },
+    {
+      "date": "2025-08-29",
+      "spend": 19.75,
+      "impressions": 1760,
+      "reach": 1514,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 11.22
+    },
+    {
+      "date": "2025-08-30",
+      "spend": 32.1,
+      "impressions": 2793,
+      "reach": 2449,
+      "leads": 4,
+      "messages": 3,
+      "uniqueCtr": 0.04,
+      "cpm": 11.49
+    },
+    {
+      "date": "2025-08-31",
+      "spend": 31.44,
+      "impressions": 2379,
+      "reach": 1940,
+      "leads": 7,
+      "messages": 5,
+      "uniqueCtr": 0.1,
+      "cpm": 13.22
+    },
+    {
+      "date": "2025-09-01",
+      "spend": 26.52,
+      "impressions": 2431,
+      "reach": 1986,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 10.91
+    },
+    {
+      "date": "2025-09-02",
+      "spend": 26.03,
+      "impressions": 2212,
+      "reach": 1789,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 11.77
+    },
+    {
+      "date": "2025-09-03",
+      "spend": 26.68,
+      "impressions": 2056,
+      "reach": 1728,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.98
+    },
+    {
+      "date": "2025-09-04",
+      "spend": 24.88,
+      "impressions": 1712,
+      "reach": 1408,
+      "leads": 1,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 14.53
+    },
+    {
+      "date": "2025-09-05",
+      "spend": 27.99,
+      "impressions": 2042,
+      "reach": 1714,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.71
+    },
+    {
+      "date": "2025-09-06",
+      "spend": 25.36,
+      "impressions": 1705,
+      "reach": 1462,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.07,
+      "cpm": 14.87
+    },
+    {
+      "date": "2025-09-07",
+      "spend": 30.92,
+      "impressions": 2214,
+      "reach": 1867,
+      "leads": 6,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 13.97
+    },
+    {
+      "date": "2025-09-08",
+      "spend": 27.47,
+      "impressions": 1994,
+      "reach": 1688,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.78
+    },
+    {
+      "date": "2025-09-09",
+      "spend": 26.44,
+      "impressions": 1720,
+      "reach": 1400,
+      "leads": 11,
+      "messages": 2,
+      "uniqueCtr": 0.07,
+      "cpm": 15.37
+    },
+    {
+      "date": "2025-09-10",
+      "spend": 26.05,
+      "impressions": 2033,
+      "reach": 1661,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.06,
+      "cpm": 12.81
+    },
+    {
+      "date": "2025-09-11",
+      "spend": 25.62,
+      "impressions": 1924,
+      "reach": 1586,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.13,
+      "cpm": 13.32
+    },
+    {
+      "date": "2025-09-12",
+      "spend": 26.24,
+      "impressions": 1976,
+      "reach": 1749,
+      "leads": 6,
+      "messages": 4,
+      "uniqueCtr": 0.06,
+      "cpm": 13.28
+    },
+    {
+      "date": "2025-09-13",
+      "spend": 26.12,
+      "impressions": 1927,
+      "reach": 1698,
+      "leads": 2,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.55
+    },
+    {
+      "date": "2025-09-14",
+      "spend": 31.16,
+      "impressions": 2319,
+      "reach": 1899,
+      "leads": 3,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.44
+    },
+    {
+      "date": "2025-09-15",
+      "spend": 27.68,
+      "impressions": 2029,
+      "reach": 1749,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 13.64
+    },
+    {
+      "date": "2025-09-16",
+      "spend": 26.78,
+      "impressions": 1936,
+      "reach": 1652,
+      "leads": 4,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 13.83
+    },
+    {
+      "date": "2025-09-17",
+      "spend": 25.78,
+      "impressions": 1892,
+      "reach": 1664,
+      "leads": 3,
+      "messages": 0,
+      "uniqueCtr": 0.06,
+      "cpm": 13.63
+    },
+    {
+      "date": "2025-09-18",
+      "spend": 26.08,
+      "impressions": 2076,
+      "reach": 1775,
+      "leads": 5,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.56
+    },
+    {
+      "date": "2025-09-19",
+      "spend": 26.86,
+      "impressions": 2020,
+      "reach": 1765,
+      "leads": 7,
+      "messages": 4,
+      "uniqueCtr": 0.06,
+      "cpm": 13.3
+    },
+    {
+      "date": "2025-09-20",
+      "spend": 24.4,
+      "impressions": 1785,
+      "reach": 1615,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 13.67
+    },
+    {
+      "date": "2025-09-21",
+      "spend": 30.99,
+      "impressions": 2235,
+      "reach": 1896,
+      "leads": 3,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.87
+    },
+    {
+      "date": "2025-09-22",
+      "spend": 27.76,
+      "impressions": 2041,
+      "reach": 1679,
+      "leads": 4,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.6
+    },
+    {
+      "date": "2025-09-23",
+      "spend": 27.35,
+      "impressions": 1824,
+      "reach": 1556,
+      "leads": 2,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 14.99
+    },
+    {
+      "date": "2025-09-24",
+      "spend": 25.72,
+      "impressions": 1774,
+      "reach": 1434,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 14.5
+    },
+    {
+      "date": "2025-09-25",
+      "spend": 25.51,
+      "impressions": 1887,
+      "reach": 1582,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.52
+    },
+    {
+      "date": "2025-09-26",
+      "spend": 25.65,
+      "impressions": 1886,
+      "reach": 1606,
+      "leads": 4,
+      "messages": 3,
+      "uniqueCtr": 0.06,
+      "cpm": 13.6
+    },
+    {
+      "date": "2025-09-27",
+      "spend": 25.96,
+      "impressions": 2116,
+      "reach": 1850,
+      "leads": 7,
+      "messages": 4,
+      "uniqueCtr": 0.11,
+      "cpm": 12.27
+    },
+    {
+      "date": "2025-09-28",
+      "spend": 29.52,
+      "impressions": 2478,
+      "reach": 2065,
+      "leads": 4,
+      "messages": 6,
+      "uniqueCtr": 0.1,
+      "cpm": 11.91
+    },
+    {
+      "date": "2025-09-29",
+      "spend": 26.86,
+      "impressions": 2140,
+      "reach": 1886,
+      "leads": 5,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.55
+    },
+    {
+      "date": "2025-09-30",
+      "spend": 26.38,
+      "impressions": 2032,
+      "reach": 1737,
+      "leads": 3,
+      "messages": 1,
+      "uniqueCtr": 0.06,
+      "cpm": 12.98
+    },
+    {
+      "date": "2025-10-01",
+      "spend": 27.01,
+      "impressions": 2226,
+      "reach": 1880,
+      "leads": 8,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 12.13
+    },
+    {
+      "date": "2025-10-02",
+      "spend": 27.22,
+      "impressions": 2080,
+      "reach": 1721,
+      "leads": 3,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.09
+    },
+    {
+      "date": "2025-10-03",
+      "spend": 25.83,
+      "impressions": 2088,
+      "reach": 1739,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.37
+    },
+    {
+      "date": "2025-10-04",
+      "spend": 26.14,
+      "impressions": 2105,
+      "reach": 1794,
+      "leads": 0,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 12.42
+    },
+    {
+      "date": "2025-10-05",
+      "spend": 30.57,
+      "impressions": 2549,
+      "reach": 2068,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 11.99
+    },
+    {
+      "date": "2025-10-06",
+      "spend": 28.55,
+      "impressions": 2556,
+      "reach": 2075,
+      "leads": 11,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 11.17
+    },
+    {
+      "date": "2025-10-07",
+      "spend": 26.39,
+      "impressions": 2109,
+      "reach": 1693,
+      "leads": 7,
+      "messages": 3,
+      "uniqueCtr": 0.06,
+      "cpm": 12.51
+    },
+    {
+      "date": "2025-10-08",
+      "spend": 25.53,
+      "impressions": 1974,
+      "reach": 1693,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.93
+    },
+    {
+      "date": "2025-10-09",
+      "spend": 26.05,
+      "impressions": 1763,
+      "reach": 1460,
+      "leads": 6,
+      "messages": 1,
+      "uniqueCtr": 0.07,
+      "cpm": 14.78
+    },
+    {
+      "date": "2025-10-10",
+      "spend": 27.36,
+      "impressions": 1952,
+      "reach": 1679,
+      "leads": 6,
+      "messages": 1,
+      "uniqueCtr": 0.06,
+      "cpm": 14.02
+    },
+    {
+      "date": "2025-10-11",
+      "spend": 24.41,
+      "impressions": 1917,
+      "reach": 1630,
+      "leads": 8,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.73
+    },
+    {
+      "date": "2025-10-12",
+      "spend": 29.65,
+      "impressions": 2259,
+      "reach": 1857,
+      "leads": 0,
+      "messages": 1,
+      "uniqueCtr": 0.05,
+      "cpm": 13.13
+    },
+    {
+      "date": "2025-10-13",
+      "spend": 28.18,
+      "impressions": 2484,
+      "reach": 2094,
+      "leads": 5,
+      "messages": 3,
+      "uniqueCtr": 0.05,
+      "cpm": 11.34
+    },
+    {
+      "date": "2025-10-14",
+      "spend": 26.41,
+      "impressions": 2419,
+      "reach": 2039,
+      "leads": 9,
+      "messages": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 10.92
+    },
+    {
+      "date": "2025-10-15",
+      "spend": 26.3,
+      "impressions": 2191,
+      "reach": 1882,
+      "leads": 5,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.0
+    },
+    {
+      "date": "2025-10-16",
+      "spend": 25.67,
+      "impressions": 1980,
+      "reach": 1707,
+      "leads": 4,
+      "messages": 1,
+      "uniqueCtr": 0.06,
+      "cpm": 12.96
+    },
+    {
+      "date": "2025-10-17",
+      "spend": 26.2,
+      "impressions": 2055,
+      "reach": 1760,
+      "leads": 7,
+      "messages": 4,
+      "uniqueCtr": 0.06,
+      "cpm": 12.75
+    },
+    {
+      "date": "2025-10-18",
+      "spend": 26.45,
+      "impressions": 2310,
+      "reach": 1929,
+      "leads": 8,
+      "messages": 3,
+      "uniqueCtr": 0.1,
+      "cpm": 11.45
+    },
+    {
+      "date": "2025-10-19",
+      "spend": 30.33,
+      "impressions": 2684,
+      "reach": 2297,
+      "leads": 7,
+      "messages": 3,
+      "uniqueCtr": 0.04,
+      "cpm": 11.3
+    },
+    {
+      "date": "2025-10-20",
+      "spend": 28.05,
+      "impressions": 2390,
+      "reach": 1981,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.05,
+      "cpm": 11.74
+    },
+    {
+      "date": "2025-10-21",
+      "spend": 25.88,
+      "impressions": 2241,
+      "reach": 1982,
+      "leads": 2,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 11.55
+    },
+    {
+      "date": "2025-10-22",
+      "spend": 25.31,
+      "impressions": 2112,
+      "reach": 1799,
+      "leads": 6,
+      "messages": 4,
+      "uniqueCtr": 0.11,
+      "cpm": 11.98
+    },
+    {
+      "date": "2025-10-23",
+      "spend": 25.71,
+      "impressions": 2188,
+      "reach": 1920,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.05,
+      "cpm": 11.75
+    },
+    {
+      "date": "2025-10-24",
+      "spend": 26.91,
+      "impressions": 2136,
+      "reach": 1930,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.05,
+      "cpm": 12.6
+    },
+    {
+      "date": "2025-10-25",
+      "spend": 26.8,
+      "impressions": 2068,
+      "reach": 1803,
+      "leads": 7,
+      "messages": 5,
+      "uniqueCtr": 0.06,
+      "cpm": 12.96
+    },
+    {
+      "date": "2025-10-26",
+      "spend": 29.76,
+      "impressions": 2625,
+      "reach": 2269,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.09,
+      "cpm": 11.34
+    },
+    {
+      "date": "2025-10-27",
+      "spend": 27.23,
+      "impressions": 2444,
+      "reach": 2087,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 11.14
+    },
+    {
+      "date": "2025-10-28",
+      "spend": 26.94,
+      "impressions": 2206,
+      "reach": 1913,
+      "leads": 4,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.21
+    },
+    {
+      "date": "2025-10-29",
+      "spend": 26.73,
+      "impressions": 2188,
+      "reach": 1867,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.05,
+      "cpm": 12.22
+    },
+    {
+      "date": "2025-10-30",
+      "spend": 26.52,
+      "impressions": 2209,
+      "reach": 1906,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.01
+    },
+    {
+      "date": "2025-10-31",
+      "spend": 26.64,
+      "impressions": 2098,
+      "reach": 1879,
+      "leads": 4,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.7
+    },
+    {
+      "date": "2025-11-01",
+      "spend": 25.14,
+      "impressions": 2259,
+      "reach": 1980,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 11.13
+    },
+    {
+      "date": "2025-11-02",
+      "spend": 30.64,
+      "impressions": 2806,
+      "reach": 2434,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.04,
+      "cpm": 10.92
+    },
+    {
+      "date": "2025-11-03",
+      "spend": 26.74,
+      "impressions": 2400,
+      "reach": 2089,
+      "leads": 2,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 11.14
+    },
+    {
+      "date": "2025-11-04",
+      "spend": 26.73,
+      "impressions": 2196,
+      "reach": 1925,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 12.17
+    },
+    {
+      "date": "2025-11-05",
+      "spend": 26.51,
+      "impressions": 2181,
+      "reach": 1920,
+      "leads": 5,
+      "messages": 3,
+      "uniqueCtr": 0.05,
+      "cpm": 12.15
+    },
+    {
+      "date": "2025-11-06",
+      "spend": 25.69,
+      "impressions": 2038,
+      "reach": 1811,
+      "leads": 6,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 12.61
+    },
+    {
+      "date": "2025-11-07",
+      "spend": 27.05,
+      "impressions": 2127,
+      "reach": 1823,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.72
+    },
+    {
+      "date": "2025-11-08",
+      "spend": 25.54,
+      "impressions": 1820,
+      "reach": 1621,
+      "leads": 6,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 14.03
+    },
+    {
+      "date": "2025-11-09",
+      "spend": 29.72,
+      "impressions": 2547,
+      "reach": 2156,
+      "leads": 6,
+      "messages": 8,
+      "uniqueCtr": 0.05,
+      "cpm": 11.67
+    },
+    {
+      "date": "2025-11-10",
+      "spend": 28.71,
+      "impressions": 2446,
+      "reach": 2168,
+      "leads": 2,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 11.74
+    },
+    {
+      "date": "2025-11-11",
+      "spend": 26.76,
+      "impressions": 2071,
+      "reach": 1775,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.92
+    },
+    {
+      "date": "2025-11-12",
+      "spend": 26.66,
+      "impressions": 1964,
+      "reach": 1732,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 13.57
+    },
+    {
+      "date": "2025-11-13",
+      "spend": 24.25,
+      "impressions": 1630,
+      "reach": 1446,
+      "leads": 2,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 14.88
+    },
+    {
+      "date": "2025-11-14",
+      "spend": 26.99,
+      "impressions": 1839,
+      "reach": 1648,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 14.68
+    },
+    {
+      "date": "2025-11-15",
+      "spend": 25.87,
+      "impressions": 1804,
+      "reach": 1597,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 14.34
+    },
+    {
+      "date": "2025-11-16",
+      "spend": 30.72,
+      "impressions": 2354,
+      "reach": 1948,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 13.05
+    },
+    {
+      "date": "2025-11-17",
+      "spend": 27.87,
+      "impressions": 1993,
+      "reach": 1700,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 13.98
+    },
+    {
+      "date": "2025-11-18",
+      "spend": 27.55,
+      "impressions": 1781,
+      "reach": 1533,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 15.47
+    },
+    {
+      "date": "2025-11-19",
+      "spend": 25.81,
+      "impressions": 1603,
+      "reach": 1380,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.07,
+      "cpm": 16.1
+    },
+    {
+      "date": "2025-11-20",
+      "spend": 24.39,
+      "impressions": 1551,
+      "reach": 1301,
+      "leads": 2,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 15.73
+    },
+    {
+      "date": "2025-11-21",
+      "spend": 27.44,
+      "impressions": 1636,
+      "reach": 1448,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 16.77
+    },
+    {
+      "date": "2025-11-22",
+      "spend": 25.05,
+      "impressions": 1504,
+      "reach": 1294,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 16.66
+    },
+    {
+      "date": "2025-11-23",
+      "spend": 32.14,
+      "impressions": 1960,
+      "reach": 1698,
+      "leads": 6,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 16.4
+    },
+    {
+      "date": "2025-11-24",
+      "spend": 27.35,
+      "impressions": 1723,
+      "reach": 1535,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 15.87
+    },
+    {
+      "date": "2025-11-25",
+      "spend": 26.18,
+      "impressions": 1745,
+      "reach": 1466,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 15.0
+    },
+    {
+      "date": "2025-11-26",
+      "spend": 25.83,
+      "impressions": 1514,
+      "reach": 1264,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 17.06
+    },
+    {
+      "date": "2025-11-27",
+      "spend": 25.18,
+      "impressions": 1349,
+      "reach": 1147,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 18.67
+    },
+    {
+      "date": "2025-11-28",
+      "spend": 27.06,
+      "impressions": 1408,
+      "reach": 1223,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.16,
+      "cpm": 19.22
+    },
+    {
+      "date": "2025-11-29",
+      "spend": 24.96,
+      "impressions": 1332,
+      "reach": 1166,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 18.74
+    },
+    {
+      "date": "2025-11-30",
+      "spend": 32.48,
+      "impressions": 2018,
+      "reach": 1693,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 16.1
+    },
+    {
+      "date": "2025-12-01",
+      "spend": 27.87,
+      "impressions": 1835,
+      "reach": 1541,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 15.19
+    },
+    {
+      "date": "2025-12-02",
+      "spend": 27.48,
+      "impressions": 1857,
+      "reach": 1608,
+      "leads": 2,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 14.8
+    },
+    {
+      "date": "2025-12-03",
+      "spend": 25.44,
+      "impressions": 2004,
+      "reach": 1791,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 12.69
+    },
+    {
+      "date": "2025-12-04",
+      "spend": 24.77,
+      "impressions": 1917,
+      "reach": 1693,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.92
+    },
+    {
+      "date": "2025-12-05",
+      "spend": 25.81,
+      "impressions": 1873,
+      "reach": 1617,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 13.78
+    },
+    {
+      "date": "2025-12-06",
+      "spend": 25.05,
+      "impressions": 1847,
+      "reach": 1595,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.06,
+      "cpm": 13.56
+    },
+    {
+      "date": "2025-12-07",
+      "spend": 30.11,
+      "impressions": 2091,
+      "reach": 1765,
+      "leads": 3,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 14.4
+    },
+    {
+      "date": "2025-12-08",
+      "spend": 28.82,
+      "impressions": 1945,
+      "reach": 1639,
+      "leads": 6,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 14.82
+    },
+    {
+      "date": "2025-12-09",
+      "spend": 25.37,
+      "impressions": 1989,
+      "reach": 1664,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 12.76
+    },
+    {
+      "date": "2025-12-10",
+      "spend": 26.51,
+      "impressions": 1693,
+      "reach": 1366,
+      "leads": 7,
+      "messages": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 15.66
+    },
+    {
+      "date": "2025-12-11",
+      "spend": 26.73,
+      "impressions": 1927,
+      "reach": 1675,
+      "leads": 1,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 13.87
+    },
+    {
+      "date": "2025-12-12",
+      "spend": 25.47,
+      "impressions": 1731,
+      "reach": 1505,
+      "leads": 3,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 14.71
+    },
+    {
+      "date": "2025-12-13",
+      "spend": 25.88,
+      "impressions": 1888,
+      "reach": 1593,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.06,
+      "cpm": 13.71
+    },
+    {
+      "date": "2025-12-14",
+      "spend": 30.68,
+      "impressions": 2387,
+      "reach": 2038,
+      "leads": 1,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 12.85
+    },
+    {
+      "date": "2025-12-15",
+      "spend": 29.31,
+      "impressions": 2765,
+      "reach": 2312,
+      "leads": 6,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 10.6
+    },
+    {
+      "date": "2025-12-16",
+      "spend": 26.28,
+      "impressions": 2310,
+      "reach": 1993,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 11.38
+    },
+    {
+      "date": "2025-12-17",
+      "spend": 26.13,
+      "impressions": 2040,
+      "reach": 1732,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 12.81
+    },
+    {
+      "date": "2025-12-18",
+      "spend": 26.29,
+      "impressions": 1945,
+      "reach": 1626,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 13.52
+    },
+    {
+      "date": "2025-12-19",
+      "spend": 25.05,
+      "impressions": 1858,
+      "reach": 1584,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.48
+    },
+    {
+      "date": "2025-12-20",
+      "spend": 25.26,
+      "impressions": 2136,
+      "reach": 1782,
+      "leads": 4,
+      "messages": 6,
+      "uniqueCtr": 0.06,
+      "cpm": 11.83
+    },
+    {
+      "date": "2025-12-21",
+      "spend": 30.51,
+      "impressions": 2347,
+      "reach": 1945,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 13.0
+    },
+    {
+      "date": "2025-12-22",
+      "spend": 29.12,
+      "impressions": 2359,
+      "reach": 1943,
+      "leads": 7,
+      "messages": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 12.34
+    },
+    {
+      "date": "2025-12-23",
+      "spend": 25.86,
+      "impressions": 1954,
+      "reach": 1560,
+      "leads": 5,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 13.23
+    },
+    {
+      "date": "2025-12-24",
+      "spend": 26.31,
+      "impressions": 2197,
+      "reach": 1813,
+      "leads": 11,
+      "messages": 9,
+      "uniqueCtr": 0.06,
+      "cpm": 11.98
+    },
+    {
+      "date": "2025-12-25",
+      "spend": 25.51,
+      "impressions": 2282,
+      "reach": 1850,
+      "leads": 3,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 11.18
+    },
+    {
+      "date": "2025-12-26",
+      "spend": 26.07,
+      "impressions": 2290,
+      "reach": 1884,
+      "leads": 4,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 11.38
+    },
+    {
+      "date": "2025-12-27",
+      "spend": 25.52,
+      "impressions": 2209,
+      "reach": 1784,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 11.55
+    },
+    {
+      "date": "2025-12-28",
+      "spend": 29.05,
+      "impressions": 2837,
+      "reach": 2168,
+      "leads": 7,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 10.24
+    },
+    {
+      "date": "2025-12-29",
+      "spend": 27.69,
+      "impressions": 2527,
+      "reach": 1982,
+      "leads": 2,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 10.96
+    },
+    {
+      "date": "2025-12-30",
+      "spend": 26.67,
+      "impressions": 2685,
+      "reach": 2275,
+      "leads": 5,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 9.93
+    },
+    {
+      "date": "2025-12-31",
+      "spend": 26.08,
+      "impressions": 2781,
+      "reach": 2420,
+      "leads": 1,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 9.38
+    },
+    {
+      "date": "2026-01-01",
+      "spend": 26.61,
+      "impressions": 3863,
+      "reach": 3374,
+      "leads": 1,
+      "messages": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 6.89
+    },
+    {
+      "date": "2026-01-02",
+      "spend": 26.27,
+      "impressions": 3264,
+      "reach": 2651,
+      "leads": 5,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 8.05
+    },
+    {
+      "date": "2026-01-03",
+      "spend": 26.59,
+      "impressions": 3271,
+      "reach": 2725,
+      "leads": 4,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 8.13
+    },
+    {
+      "date": "2026-01-04",
+      "spend": 29.75,
+      "impressions": 3241,
+      "reach": 2661,
+      "leads": 9,
+      "messages": 6,
+      "uniqueCtr": 0.04,
+      "cpm": 9.18
+    },
+    {
+      "date": "2026-01-05",
+      "spend": 28.03,
+      "impressions": 3007,
+      "reach": 2563,
+      "leads": 6,
+      "messages": 3,
+      "uniqueCtr": 0.04,
+      "cpm": 9.32
+    },
+    {
+      "date": "2026-01-06",
+      "spend": 26.7,
+      "impressions": 3284,
+      "reach": 2833,
+      "leads": 3,
+      "messages": 2,
+      "uniqueCtr": 0.04,
+      "cpm": 8.13
+    },
+    {
+      "date": "2026-01-07",
+      "spend": 26.0,
+      "impressions": 2986,
+      "reach": 2519,
+      "leads": 13,
+      "messages": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 8.71
+    },
+    {
+      "date": "2026-01-08",
+      "spend": 23.83,
+      "impressions": 2577,
+      "reach": 2186,
+      "leads": 6,
+      "messages": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 9.25
+    },
+    {
+      "date": "2026-01-09",
+      "spend": 26.22,
+      "impressions": 2792,
+      "reach": 2306,
+      "leads": 8,
+      "messages": 4,
+      "uniqueCtr": 0.04,
+      "cpm": 9.39
+    },
+    {
+      "date": "2026-01-10",
+      "spend": 21.02,
+      "impressions": 2053,
+      "reach": 1695,
+      "leads": 3,
+      "messages": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 10.24
+    },
+    {
+      "date": "2026-01-11",
+      "spend": 27.81,
+      "impressions": 2829,
+      "reach": 2404,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 9.83
+    },
+    {
+      "date": "2026-01-12",
+      "spend": 26.83,
+      "impressions": 2660,
+      "reach": 2302,
+      "leads": 6,
+      "messages": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 10.09
+    },
+    {
+      "date": "2026-01-13",
+      "spend": 30.31,
+      "impressions": 2681,
+      "reach": 2324,
+      "leads": 7,
+      "messages": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 11.31
+    },
+    {
+      "date": "2026-01-14",
+      "spend": 120.42,
+      "impressions": 10751,
+      "reach": 6872,
+      "leads": 6,
+      "messages": 11,
+      "uniqueCtr": 0.01,
+      "cpm": 11.2
+    },
+    {
+      "date": "2026-01-15",
+      "spend": 112.66,
+      "impressions": 9468,
+      "reach": 6489,
+      "leads": 7,
+      "messages": 12,
+      "uniqueCtr": 0.09,
+      "cpm": 11.9
+    },
+    {
+      "date": "2026-01-16",
+      "spend": 105.91,
+      "impressions": 9180,
+      "reach": 6478,
+      "leads": 7,
+      "messages": 10,
+      "uniqueCtr": 0.02,
+      "cpm": 11.54
+    },
+    {
+      "date": "2026-01-17",
+      "spend": 122.22,
+      "impressions": 10555,
+      "reach": 7101,
+      "leads": 12,
+      "messages": 17,
+      "uniqueCtr": 0.1,
+      "cpm": 11.58
+    },
+    {
+      "date": "2026-01-18",
+      "spend": 136.98,
+      "impressions": 13165,
+      "reach": 9086,
+      "leads": 12,
+      "messages": 22,
+      "uniqueCtr": 0.07,
+      "cpm": 10.4
+    },
+    {
+      "date": "2026-01-19",
+      "spend": 114.72,
+      "impressions": 10075,
+      "reach": 6594,
+      "leads": 8,
+      "messages": 12,
+      "uniqueCtr": 0.11,
+      "cpm": 11.39
+    },
+    {
+      "date": "2026-01-20",
+      "spend": 109.54,
+      "impressions": 19486,
+      "reach": 17367,
+      "leads": 5,
+      "messages": 10,
+      "uniqueCtr": 0.04,
+      "cpm": 5.62
+    },
+    {
+      "date": "2026-01-21",
+      "spend": 89.75,
+      "impressions": 14875,
+      "reach": 13397,
+      "leads": 7,
+      "messages": 15,
+      "uniqueCtr": 0.04,
+      "cpm": 6.03
+    },
+    {
+      "date": "2026-01-22",
+      "spend": 26.58,
+      "impressions": 1997,
+      "reach": 1634,
+      "leads": 3,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 13.31
+    },
+    {
+      "date": "2026-01-23",
+      "spend": 61.8,
+      "impressions": 4721,
+      "reach": 2713,
+      "leads": 6,
+      "messages": 8,
+      "uniqueCtr": 0.04,
+      "cpm": 13.09
+    },
+    {
+      "date": "2026-01-24",
+      "spend": 55.97,
+      "impressions": 3863,
+      "reach": 2410,
+      "leads": 5,
+      "messages": 8,
+      "uniqueCtr": 0.12,
+      "cpm": 14.49
+    },
+    {
+      "date": "2026-01-25",
+      "spend": 74.52,
+      "impressions": 5597,
+      "reach": 3664,
+      "leads": 7,
+      "messages": 12,
+      "uniqueCtr": 0.11,
+      "cpm": 13.31
+    },
+    {
+      "date": "2026-01-26",
+      "spend": 67.02,
+      "impressions": 5734,
+      "reach": 3946,
+      "leads": 8,
+      "messages": 11,
+      "uniqueCtr": 0.08,
+      "cpm": 11.69
+    },
+    {
+      "date": "2026-01-27",
+      "spend": 60.69,
+      "impressions": 5497,
+      "reach": 3880,
+      "leads": 7,
+      "messages": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 11.04
+    },
+    {
+      "date": "2026-01-28",
+      "spend": 50.43,
+      "impressions": 4491,
+      "reach": 3244,
+      "leads": 1,
+      "messages": 5,
+      "uniqueCtr": 0.06,
+      "cpm": 11.23
+    },
+    {
+      "date": "2026-01-29",
+      "spend": 48.04,
+      "impressions": 4050,
+      "reach": 2998,
+      "leads": 3,
+      "messages": 6,
+      "uniqueCtr": 0.03,
+      "cpm": 11.86
+    },
+    {
+      "date": "2026-01-30",
+      "spend": 48.36,
+      "impressions": 3837,
+      "reach": 2730,
+      "leads": 7,
+      "messages": 9,
+      "uniqueCtr": 0.04,
+      "cpm": 12.6
+    },
+    {
+      "date": "2026-01-31",
+      "spend": 46.53,
+      "impressions": 4156,
+      "reach": 2946,
+      "leads": 1,
+      "messages": 2,
+      "uniqueCtr": 0.1,
+      "cpm": 11.2
+    },
+    {
+      "date": "2026-02-01",
+      "spend": 58.53,
+      "impressions": 5446,
+      "reach": 3727,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 10.75
+    },
+    {
+      "date": "2026-02-02",
+      "spend": 83.77,
+      "impressions": 7919,
+      "reach": 5479,
+      "leads": 15,
+      "messages": 15,
+      "uniqueCtr": 0.05,
+      "cpm": 10.58
+    },
+    {
+      "date": "2026-02-03",
+      "spend": 4.1,
+      "impressions": 390,
+      "reach": 363,
+      "leads": 3,
+      "messages": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 10.51
+    },
+    {
+      "date": "2026-02-04",
+      "spend": 110.01,
+      "impressions": 8422,
+      "reach": 6584,
+      "leads": 6,
+      "messages": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 13.06
+    },
+    {
+      "date": "2026-02-05",
+      "spend": 99.7,
+      "impressions": 8118,
+      "reach": 5777,
+      "leads": 7,
+      "messages": 11,
+      "uniqueCtr": 0.07,
+      "cpm": 12.28
+    },
+    {
+      "date": "2026-02-06",
+      "spend": 87.89,
+      "impressions": 7019,
+      "reach": 4926,
+      "leads": 6,
+      "messages": 11,
+      "uniqueCtr": 0.04,
+      "cpm": 12.52
+    },
+    {
+      "date": "2026-02-07",
+      "spend": 73.05,
+      "impressions": 5953,
+      "reach": 4455,
+      "leads": 7,
+      "messages": 8,
+      "uniqueCtr": 0.04,
+      "cpm": 12.27
+    },
+    {
+      "date": "2026-02-08",
+      "spend": 83.18,
+      "impressions": 6996,
+      "reach": 5089,
+      "leads": 6,
+      "messages": 9,
+      "uniqueCtr": 0.12,
+      "cpm": 11.89
+    },
+    {
+      "date": "2026-02-09",
+      "spend": 78.77,
+      "impressions": 6476,
+      "reach": 4438,
+      "leads": 8,
+      "messages": 10,
+      "uniqueCtr": 0.02,
+      "cpm": 12.16
+    },
+    {
+      "date": "2026-02-10",
+      "spend": 72.07,
+      "impressions": 5786,
+      "reach": 4127,
+      "leads": 7,
+      "messages": 8,
+      "uniqueCtr": 0.02,
+      "cpm": 12.46
+    },
+    {
+      "date": "2026-02-11",
+      "spend": 71.85,
+      "impressions": 5437,
+      "reach": 4077,
+      "leads": 9,
+      "messages": 12,
+      "uniqueCtr": 0.02,
+      "cpm": 13.22
+    },
+    {
+      "date": "2026-02-12",
+      "spend": 66.68,
+      "impressions": 5379,
+      "reach": 3904,
+      "leads": 6,
+      "messages": 8,
+      "uniqueCtr": 0.05,
+      "cpm": 12.4
+    },
+    {
+      "date": "2026-02-13",
+      "spend": 64.36,
+      "impressions": 4933,
+      "reach": 3648,
+      "leads": 8,
+      "messages": 11,
+      "uniqueCtr": 0.11,
+      "cpm": 13.05
+    },
+    {
+      "date": "2026-02-14",
+      "spend": 65.44,
+      "impressions": 5445,
+      "reach": 4029,
+      "leads": 5,
+      "messages": 6,
+      "uniqueCtr": 0.07,
+      "cpm": 12.02
+    },
+    {
+      "date": "2026-02-15",
+      "spend": 84.7,
+      "impressions": 7587,
+      "reach": 5371,
+      "leads": 16,
+      "messages": 18,
+      "uniqueCtr": 0.02,
+      "cpm": 11.16
+    },
+    {
+      "date": "2026-02-16",
+      "spend": 68.89,
+      "impressions": 6539,
+      "reach": 4841,
+      "leads": 8,
+      "messages": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 10.54
+    },
+    {
+      "date": "2026-02-17",
+      "spend": 48.33,
+      "impressions": 4637,
+      "reach": 3758,
+      "leads": 11,
+      "messages": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 10.42
+    },
+    {
+      "date": "2026-02-18",
+      "spend": 47.59,
+      "impressions": 4297,
+      "reach": 3586,
+      "leads": 8,
+      "messages": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 11.08
+    },
+    {
+      "date": "2026-02-19",
+      "spend": 47.68,
+      "impressions": 3814,
+      "reach": 3169,
+      "leads": 6,
+      "messages": 7,
+      "uniqueCtr": 0.03,
+      "cpm": 12.5
+    },
+    {
+      "date": "2026-02-20",
+      "spend": 48.45,
+      "impressions": 3823,
+      "reach": 3125,
+      "leads": 4,
+      "messages": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 12.67
+    },
+    {
+      "date": "2026-02-21",
+      "spend": 46.74,
+      "impressions": 3608,
+      "reach": 2997,
+      "leads": 7,
+      "messages": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 12.95
+    },
+    {
+      "date": "2026-02-22",
+      "spend": 55.56,
+      "impressions": 4931,
+      "reach": 3985,
+      "leads": 16,
+      "messages": 14,
+      "uniqueCtr": 0.05,
+      "cpm": 11.27
+    },
+    {
+      "date": "2026-02-23",
+      "spend": 52.9,
+      "impressions": 4826,
+      "reach": 3954,
+      "leads": 13,
+      "messages": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 10.96
+    },
+    {
+      "date": "2026-02-24",
+      "spend": 45.59,
+      "impressions": 3489,
+      "reach": 2931,
+      "leads": 2,
+      "messages": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 13.07
+    },
+    {
+      "date": "2026-02-25",
+      "spend": 45.13,
+      "impressions": 3546,
+      "reach": 2978,
+      "leads": 4,
+      "messages": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 12.73
+    },
+    {
+      "date": "2026-02-26",
+      "spend": 44.7,
+      "impressions": 3637,
+      "reach": 2934,
+      "leads": 8,
+      "messages": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 12.29
+    },
+    {
+      "date": "2026-02-27",
+      "spend": 43.52,
+      "impressions": 3687,
+      "reach": 3033,
+      "leads": 4,
+      "messages": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 11.8
+    },
+    {
+      "date": "2026-02-28",
+      "spend": 43.65,
+      "impressions": 3614,
+      "reach": 2989,
+      "leads": 8,
+      "messages": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 12.08
+    }
+  ]
+}
