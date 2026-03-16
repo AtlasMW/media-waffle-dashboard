@@ -119,6 +119,18 @@
           "spend": 2.78,
           "leads": 0
         }
+      ],
+      "gender": [
+        {
+          "gender": "Female",
+          "spend": 27.21,
+          "leads": 2
+        },
+        {
+          "gender": "Male",
+          "spend": 25.92,
+          "leads": 3
+        }
       ]
     },
     "2026-02": {
@@ -321,6 +333,23 @@
           "name": "Instagram Instagram Stories",
           "spend": 56.09,
           "leads": 4
+        }
+      ],
+      "gender": [
+        {
+          "gender": "Female",
+          "spend": 368.97,
+          "leads": 29
+        },
+        {
+          "gender": "Male",
+          "spend": 357.18,
+          "leads": 19
+        },
+        {
+          "gender": "Unknown",
+          "spend": 2.51,
+          "leads": 1
         }
       ]
     }
