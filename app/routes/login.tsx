@@ -108,7 +108,6 @@ export default function Login() {
             fontSize: '36px',
             color: '#3b3b3b',
             letterSpacing: '2px',
-            textTransform: 'uppercase',
             lineHeight: 1.2,
             marginBottom: '12px',
           }}>
@@ -118,7 +117,6 @@ export default function Login() {
             fontSize: '13px',
             color: '#8a8478',
             letterSpacing: '1px',
-            textTransform: 'uppercase',
             fontFamily: "'Montserrat', sans-serif",
           }}>
             Client Dashboard
