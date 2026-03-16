@@ -17,7 +17,7 @@
       "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
-      "leadConvPct": 138.46,
+      "leadConvPct": 1.3,
       "campaigns": [
         {
           "name": "OMG | Website purchases",
@@ -28,7 +28,7 @@
           "cpl": 3.32,
           "uniqueCtr": 3.27,
           "messages": 1,
-          "leadConvPct": 50.5
+          "leadConvPct": 1.65
         },
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -39,7 +39,7 @@
           "cpl": 11.5,
           "uniqueCtr": 0.03,
           "messages": 20,
-          "leadConvPct": 3100.0
+          "leadConvPct": 0.95
         }
       ],
       "offers": [
@@ -218,7 +218,7 @@
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 1566.67,
+      "leadConvPct": 1.01,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -229,7 +229,7 @@
           "cpl": 19.76,
           "uniqueCtr": 0.02,
           "messages": 10,
-          "leadConvPct": 1750.0
+          "leadConvPct": 0.4
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
@@ -240,7 +240,7 @@
           "cpl": 6.8,
           "uniqueCtr": 0.11,
           "messages": 34,
-          "leadConvPct": 1514.29
+          "leadConvPct": 1.62
         }
       ],
       "offers": [

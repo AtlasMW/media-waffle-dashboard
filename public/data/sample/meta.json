@@ -9,19 +9,19 @@
       "reach": 31200,
       "clicks": 1847,
       "uniqueLinkClicks": 1420,
-      "uniqueCtr": 2.90,
+      "uniqueCtr": 2.9,
       "cpm": 17.02,
       "leads": 125,
       "cpl": 6.66,
       "messages": 89,
       "costPerMessage": 9.35,
-      "leadConvPct": 8.80,
+      "leadConvPct": 0.0,
       "frequency": 1.57,
       "offers": [
         {
           "name": "Offer 1",
           "campaignPattern": "OFFER 1",
-          "spend": 512.30,
+          "spend": 512.3,
           "leads": 85,
           "cpl": 6.03,
           "messages": 62,
@@ -32,7 +32,7 @@
           "campaignPattern": "OFFER 2",
           "spend": 320.15,
           "leads": 40,
-          "cpl": 8.00,
+          "cpl": 8.0,
           "messages": 27,
           "costPerMessage": 11.86
         }
@@ -42,7 +42,7 @@
           "id": "camp_001",
           "name": "OFFER 1 - PICO Laser Lead Gen",
           "status": "ACTIVE",
-          "spend": 512.30,
+          "spend": 512.3,
           "impressions": 31200,
           "clicks": 1180,
           "uniqueLinkClicks": 920,
@@ -52,7 +52,7 @@
           "cpl": 6.03,
           "messages": 62,
           "costPerMessage": 8.26,
-          "leadConvPct": 9.24,
+          "leadConvPct": 0,
           "frequency": 1.52
         },
         {
@@ -66,10 +66,10 @@
           "uniqueCtr": 2.82,
           "cpm": 18.07,
           "leads": 40,
-          "cpl": 8.00,
+          "cpl": 8.0,
           "messages": 27,
           "costPerMessage": 11.86,
-          "leadConvPct": 8.00,
+          "leadConvPct": 0,
           "frequency": 1.65
         }
       ],
@@ -79,7 +79,7 @@
           "adName": "PICO Before/After Hook v2",
           "adSetName": "Women 25-54 - Sydney CBD",
           "campaignName": "OFFER 1 - PICO Laser Lead Gen",
-          "spend": 285.60,
+          "spend": 285.6,
           "impressions": 18400,
           "leads": 52,
           "cpl": 5.49,
@@ -91,7 +91,7 @@
           "adName": "PICO Testimonial Video - Sarah",
           "adSetName": "Women 25-54 - Sydney CBD",
           "campaignName": "OFFER 1 - PICO Laser Lead Gen",
-          "spend": 226.70,
+          "spend": 226.7,
           "impressions": 12800,
           "leads": 33,
           "cpl": 6.87,
@@ -103,12 +103,12 @@
           "adName": "Summer Skin Package Carousel",
           "adSetName": "Women 30-55 - Broad AU",
           "campaignName": "OFFER 2 - Skin Rejuvenation Inbox",
-          "spend": 180.20,
+          "spend": 180.2,
           "impressions": 10200,
           "leads": 24,
           "cpl": 7.51,
           "uniqueCtr": 2.88,
-          "frequency": 1.60
+          "frequency": 1.6
         },
         {
           "id": "ad_004",
@@ -137,23 +137,96 @@
       ],
       "demographics": {
         "age": [
-          { "range": "18-24", "spend": 83.24, "impressions": 5380, "leads": 12, "percentage": 9.6 },
-          { "range": "25-34", "spend": 249.73, "impressions": 15650, "leads": 42, "percentage": 33.6 },
-          { "range": "35-44", "spend": 274.71, "impressions": 16300, "leads": 39, "percentage": 31.2 },
-          { "range": "45-54", "spend": 149.84, "impressions": 8320, "leads": 22, "percentage": 17.6 },
-          { "range": "55-64", "spend": 58.27, "impressions": 2470, "leads": 8, "percentage": 6.4 },
-          { "range": "65+", "spend": 16.66, "impressions": 800, "leads": 2, "percentage": 1.6 }
+          {
+            "range": "18-24",
+            "spend": 83.24,
+            "impressions": 5380,
+            "leads": 12,
+            "percentage": 9.6
+          },
+          {
+            "range": "25-34",
+            "spend": 249.73,
+            "impressions": 15650,
+            "leads": 42,
+            "percentage": 33.6
+          },
+          {
+            "range": "35-44",
+            "spend": 274.71,
+            "impressions": 16300,
+            "leads": 39,
+            "percentage": 31.2
+          },
+          {
+            "range": "45-54",
+            "spend": 149.84,
+            "impressions": 8320,
+            "leads": 22,
+            "percentage": 17.6
+          },
+          {
+            "range": "55-64",
+            "spend": 58.27,
+            "impressions": 2470,
+            "leads": 8,
+            "percentage": 6.4
+          },
+          {
+            "range": "65+",
+            "spend": 16.66,
+            "impressions": 800,
+            "leads": 2,
+            "percentage": 1.6
+          }
         ],
         "gender": [
-          { "gender": "Female", "spend": 665.96, "impressions": 40100, "leads": 106, "percentage": 84.8 },
-          { "gender": "Male", "spend": 166.49, "impressions": 8820, "leads": 19, "percentage": 15.2 }
+          {
+            "gender": "Female",
+            "spend": 665.96,
+            "impressions": 40100,
+            "leads": 106,
+            "percentage": 84.8
+          },
+          {
+            "gender": "Male",
+            "spend": 166.49,
+            "impressions": 8820,
+            "leads": 19,
+            "percentage": 15.2
+          }
         ],
         "placements": [
-          { "name": "Facebook Feed", "spend": 382.93, "impressions": 22400, "leads": 58 },
-          { "name": "Instagram Feed", "spend": 216.44, "impressions": 12200, "leads": 32 },
-          { "name": "Instagram Stories", "spend": 133.19, "impressions": 8400, "leads": 20 },
-          { "name": "Instagram Reels", "spend": 66.60, "impressions": 3920, "leads": 10 },
-          { "name": "Facebook Stories", "spend": 33.29, "impressions": 2000, "leads": 5 }
+          {
+            "name": "Facebook Feed",
+            "spend": 382.93,
+            "impressions": 22400,
+            "leads": 58
+          },
+          {
+            "name": "Instagram Feed",
+            "spend": 216.44,
+            "impressions": 12200,
+            "leads": 32
+          },
+          {
+            "name": "Instagram Stories",
+            "spend": 133.19,
+            "impressions": 8400,
+            "leads": 20
+          },
+          {
+            "name": "Instagram Reels",
+            "spend": 66.6,
+            "impressions": 3920,
+            "leads": 10
+          },
+          {
+            "name": "Facebook Stories",
+            "spend": 33.29,
+            "impressions": 2000,
+            "leads": 5
+          }
         ]
       }
     },
@@ -163,47 +236,212 @@
       "reach": 62300,
       "clicks": 3840,
       "uniqueLinkClicks": 2950,
-      "uniqueCtr": 3.00,
+      "uniqueCtr": 3.0,
       "cpm": 18.26,
       "leads": 187,
       "cpl": 9.61,
       "messages": 134,
       "costPerMessage": 13.42,
-      "leadConvPct": 6.34,
+      "leadConvPct": 0.0,
       "frequency": 1.58,
       "offers": [
-        { "name": "Offer 1", "campaignPattern": "OFFER 1", "spend": 1120.40, "leads": 128, "cpl": 8.75, "messages": 95, "costPerMessage": 11.79 },
-        { "name": "Offer 2", "campaignPattern": "OFFER 2", "spend": 677.72, "leads": 59, "cpl": 11.49, "messages": 39, "costPerMessage": 17.38 }
+        {
+          "name": "Offer 1",
+          "campaignPattern": "OFFER 1",
+          "spend": 1120.4,
+          "leads": 128,
+          "cpl": 8.75,
+          "messages": 95,
+          "costPerMessage": 11.79
+        },
+        {
+          "name": "Offer 2",
+          "campaignPattern": "OFFER 2",
+          "spend": 677.72,
+          "leads": 59,
+          "cpl": 11.49,
+          "messages": 39,
+          "costPerMessage": 17.38
+        }
       ],
       "campaigns": [
-        { "id": "camp_001", "name": "OFFER 1 - PICO Laser Lead Gen", "status": "ACTIVE", "spend": 1120.40, "impressions": 62100, "clicks": 2450, "uniqueLinkClicks": 1900, "uniqueCtr": 3.06, "cpm": 18.04, "leads": 128, "cpl": 8.75, "messages": 95, "costPerMessage": 11.79, "leadConvPct": 6.74, "frequency": 1.55 },
-        { "id": "camp_002", "name": "OFFER 2 - Skin Rejuvenation Inbox", "status": "ACTIVE", "spend": 677.72, "impressions": 36350, "clicks": 1390, "uniqueLinkClicks": 1050, "uniqueCtr": 2.89, "cpm": 18.64, "leads": 59, "cpl": 11.49, "messages": 39, "costPerMessage": 17.38, "leadConvPct": 5.62, "frequency": 1.63 }
+        {
+          "id": "camp_001",
+          "name": "OFFER 1 - PICO Laser Lead Gen",
+          "status": "ACTIVE",
+          "spend": 1120.4,
+          "impressions": 62100,
+          "clicks": 2450,
+          "uniqueLinkClicks": 1900,
+          "uniqueCtr": 3.06,
+          "cpm": 18.04,
+          "leads": 128,
+          "cpl": 8.75,
+          "messages": 95,
+          "costPerMessage": 11.79,
+          "leadConvPct": 0,
+          "frequency": 1.55
+        },
+        {
+          "id": "camp_002",
+          "name": "OFFER 2 - Skin Rejuvenation Inbox",
+          "status": "ACTIVE",
+          "spend": 677.72,
+          "impressions": 36350,
+          "clicks": 1390,
+          "uniqueLinkClicks": 1050,
+          "uniqueCtr": 2.89,
+          "cpm": 18.64,
+          "leads": 59,
+          "cpl": 11.49,
+          "messages": 39,
+          "costPerMessage": 17.38,
+          "leadConvPct": 0,
+          "frequency": 1.63
+        }
       ],
       "ads": [
-        { "id": "ad_001", "adName": "PICO Before/After Hook v2", "adSetName": "Women 25-54 - Sydney CBD", "campaignName": "OFFER 1 - PICO Laser Lead Gen", "spend": 620.50, "impressions": 35200, "leads": 78, "cpl": 7.96, "uniqueCtr": 3.18, "frequency": 1.50 },
-        { "id": "ad_002", "adName": "PICO Testimonial Video - Sarah", "adSetName": "Women 25-54 - Sydney CBD", "campaignName": "OFFER 1 - PICO Laser Lead Gen", "spend": 499.90, "impressions": 26900, "leads": 50, "cpl": 10.00, "uniqueCtr": 2.90, "frequency": 1.62 },
-        { "id": "ad_003", "adName": "Summer Skin Package Carousel", "adSetName": "Women 30-55 - Broad AU", "campaignName": "OFFER 2 - Skin Rejuvenation Inbox", "spend": 420.50, "impressions": 22800, "leads": 38, "cpl": 11.07, "uniqueCtr": 2.92, "frequency": 1.58 },
-        { "id": "ad_004", "adName": "Rejuvenation Before/After Static", "adSetName": "Women 30-55 - Broad AU", "campaignName": "OFFER 2 - Skin Rejuvenation Inbox", "spend": 257.22, "impressions": 13550, "leads": 21, "cpl": 12.25, "uniqueCtr": 2.78, "frequency": 1.70 }
+        {
+          "id": "ad_001",
+          "adName": "PICO Before/After Hook v2",
+          "adSetName": "Women 25-54 - Sydney CBD",
+          "campaignName": "OFFER 1 - PICO Laser Lead Gen",
+          "spend": 620.5,
+          "impressions": 35200,
+          "leads": 78,
+          "cpl": 7.96,
+          "uniqueCtr": 3.18,
+          "frequency": 1.5
+        },
+        {
+          "id": "ad_002",
+          "adName": "PICO Testimonial Video - Sarah",
+          "adSetName": "Women 25-54 - Sydney CBD",
+          "campaignName": "OFFER 1 - PICO Laser Lead Gen",
+          "spend": 499.9,
+          "impressions": 26900,
+          "leads": 50,
+          "cpl": 10.0,
+          "uniqueCtr": 2.9,
+          "frequency": 1.62
+        },
+        {
+          "id": "ad_003",
+          "adName": "Summer Skin Package Carousel",
+          "adSetName": "Women 30-55 - Broad AU",
+          "campaignName": "OFFER 2 - Skin Rejuvenation Inbox",
+          "spend": 420.5,
+          "impressions": 22800,
+          "leads": 38,
+          "cpl": 11.07,
+          "uniqueCtr": 2.92,
+          "frequency": 1.58
+        },
+        {
+          "id": "ad_004",
+          "adName": "Rejuvenation Before/After Static",
+          "adSetName": "Women 30-55 - Broad AU",
+          "campaignName": "OFFER 2 - Skin Rejuvenation Inbox",
+          "spend": 257.22,
+          "impressions": 13550,
+          "leads": 21,
+          "cpl": 12.25,
+          "uniqueCtr": 2.78,
+          "frequency": 1.7
+        }
       ],
       "demographics": {
         "age": [
-          { "range": "18-24", "spend": 179.81, "impressions": 10830, "leads": 17, "percentage": 9.1 },
-          { "range": "25-34", "spend": 593.38, "impressions": 32480, "leads": 63, "percentage": 33.7 },
-          { "range": "35-44", "spend": 575.40, "impressions": 32850, "leads": 60, "percentage": 32.1 },
-          { "range": "45-54", "spend": 305.68, "impressions": 16230, "leads": 32, "percentage": 17.1 },
-          { "range": "55-64", "spend": 107.89, "impressions": 4870, "leads": 12, "percentage": 6.4 },
-          { "range": "65+", "spend": 35.96, "impressions": 1190, "leads": 3, "percentage": 1.6 }
+          {
+            "range": "18-24",
+            "spend": 179.81,
+            "impressions": 10830,
+            "leads": 17,
+            "percentage": 9.1
+          },
+          {
+            "range": "25-34",
+            "spend": 593.38,
+            "impressions": 32480,
+            "leads": 63,
+            "percentage": 33.7
+          },
+          {
+            "range": "35-44",
+            "spend": 575.4,
+            "impressions": 32850,
+            "leads": 60,
+            "percentage": 32.1
+          },
+          {
+            "range": "45-54",
+            "spend": 305.68,
+            "impressions": 16230,
+            "leads": 32,
+            "percentage": 17.1
+          },
+          {
+            "range": "55-64",
+            "spend": 107.89,
+            "impressions": 4870,
+            "leads": 12,
+            "percentage": 6.4
+          },
+          {
+            "range": "65+",
+            "spend": 35.96,
+            "impressions": 1190,
+            "leads": 3,
+            "percentage": 1.6
+          }
         ],
         "gender": [
-          { "gender": "Female", "spend": 1510.42, "impressions": 81720, "leads": 160, "percentage": 85.6 },
-          { "gender": "Male", "spend": 287.70, "impressions": 16730, "leads": 27, "percentage": 14.4 }
+          {
+            "gender": "Female",
+            "spend": 1510.42,
+            "impressions": 81720,
+            "leads": 160,
+            "percentage": 85.6
+          },
+          {
+            "gender": "Male",
+            "spend": 287.7,
+            "impressions": 16730,
+            "leads": 27,
+            "percentage": 14.4
+          }
         ],
         "placements": [
-          { "name": "Facebook Feed", "spend": 827.14, "impressions": 45280, "leads": 87 },
-          { "name": "Instagram Feed", "spend": 467.51, "impressions": 24530, "leads": 48 },
-          { "name": "Instagram Stories", "spend": 287.70, "impressions": 16920, "leads": 30 },
-          { "name": "Instagram Reels", "spend": 143.85, "impressions": 7880, "leads": 15 },
-          { "name": "Facebook Stories", "spend": 71.92, "impressions": 3840, "leads": 7 }
+          {
+            "name": "Facebook Feed",
+            "spend": 827.14,
+            "impressions": 45280,
+            "leads": 87
+          },
+          {
+            "name": "Instagram Feed",
+            "spend": 467.51,
+            "impressions": 24530,
+            "leads": 48
+          },
+          {
+            "name": "Instagram Stories",
+            "spend": 287.7,
+            "impressions": 16920,
+            "leads": 30
+          },
+          {
+            "name": "Instagram Reels",
+            "spend": 143.85,
+            "impressions": 7880,
+            "leads": 15
+          },
+          {
+            "name": "Facebook Stories",
+            "spend": 71.92,
+            "impressions": 3840,
+            "leads": 7
+          }
         ]
       }
     },
@@ -219,41 +457,206 @@
       "cpl": 8.18,
       "messages": 152,
       "costPerMessage": 11.46,
-      "leadConvPct": 6.49,
+      "leadConvPct": 0.0,
       "frequency": 1.55,
       "offers": [
-        { "name": "Offer 1", "campaignPattern": "OFFER 1", "spend": 1090.20, "leads": 148, "cpl": 7.37, "messages": 108, "costPerMessage": 10.09 },
-        { "name": "Offer 2", "campaignPattern": "OFFER 2", "spend": 652.63, "leads": 65, "cpl": 10.04, "messages": 44, "costPerMessage": 14.83 }
+        {
+          "name": "Offer 1",
+          "campaignPattern": "OFFER 1",
+          "spend": 1090.2,
+          "leads": 148,
+          "cpl": 7.37,
+          "messages": 108,
+          "costPerMessage": 10.09
+        },
+        {
+          "name": "Offer 2",
+          "campaignPattern": "OFFER 2",
+          "spend": 652.63,
+          "leads": 65,
+          "cpl": 10.04,
+          "messages": 44,
+          "costPerMessage": 14.83
+        }
       ],
       "campaigns": [
-        { "id": "camp_001", "name": "OFFER 1 - PICO Laser Lead Gen", "status": "ACTIVE", "spend": 1090.20, "impressions": 66200, "clicks": 2700, "uniqueLinkClicks": 2120, "uniqueCtr": 3.20, "cpm": 16.47, "leads": 148, "cpl": 7.37, "messages": 108, "costPerMessage": 10.09, "leadConvPct": 6.98, "frequency": 1.50 },
-        { "id": "camp_002", "name": "OFFER 2 - Skin Rejuvenation Inbox", "status": "ACTIVE", "spend": 652.63, "impressions": 39000, "clicks": 1510, "uniqueLinkClicks": 1160, "uniqueCtr": 2.97, "cpm": 16.73, "leads": 65, "cpl": 10.04, "messages": 44, "costPerMessage": 14.83, "leadConvPct": 5.60, "frequency": 1.63 }
+        {
+          "id": "camp_001",
+          "name": "OFFER 1 - PICO Laser Lead Gen",
+          "status": "ACTIVE",
+          "spend": 1090.2,
+          "impressions": 66200,
+          "clicks": 2700,
+          "uniqueLinkClicks": 2120,
+          "uniqueCtr": 3.2,
+          "cpm": 16.47,
+          "leads": 148,
+          "cpl": 7.37,
+          "messages": 108,
+          "costPerMessage": 10.09,
+          "leadConvPct": 0,
+          "frequency": 1.5
+        },
+        {
+          "id": "camp_002",
+          "name": "OFFER 2 - Skin Rejuvenation Inbox",
+          "status": "ACTIVE",
+          "spend": 652.63,
+          "impressions": 39000,
+          "clicks": 1510,
+          "uniqueLinkClicks": 1160,
+          "uniqueCtr": 2.97,
+          "cpm": 16.73,
+          "leads": 65,
+          "cpl": 10.04,
+          "messages": 44,
+          "costPerMessage": 14.83,
+          "leadConvPct": 0,
+          "frequency": 1.63
+        }
       ],
       "ads": [
-        { "id": "ad_001", "adName": "PICO Before/After Hook v2", "adSetName": "Women 25-54 - Sydney CBD", "campaignName": "OFFER 1 - PICO Laser Lead Gen", "spend": 590.10, "impressions": 36800, "leads": 88, "cpl": 6.71, "uniqueCtr": 3.32, "frequency": 1.46 },
-        { "id": "ad_004", "adName": "PICO New Year Refresh Reel", "adSetName": "Women 25-54 - Sydney CBD", "campaignName": "OFFER 1 - PICO Laser Lead Gen", "spend": 500.10, "impressions": 29400, "leads": 60, "cpl": 8.34, "uniqueCtr": 3.05, "frequency": 1.55 },
-        { "id": "ad_003", "adName": "Summer Skin Package Carousel", "adSetName": "Women 30-55 - Broad AU", "campaignName": "OFFER 2 - Skin Rejuvenation Inbox", "spend": 390.50, "impressions": 23400, "leads": 42, "cpl": 9.30, "uniqueCtr": 3.01, "frequency": 1.58 },
-        { "id": "ad_005", "adName": "Rejuvenation UGC Testimonial", "adSetName": "Women 30-55 - Broad AU", "campaignName": "OFFER 2 - Skin Rejuvenation Inbox", "spend": 262.13, "impressions": 15600, "leads": 23, "cpl": 11.40, "uniqueCtr": 2.85, "frequency": 1.70 }
+        {
+          "id": "ad_001",
+          "adName": "PICO Before/After Hook v2",
+          "adSetName": "Women 25-54 - Sydney CBD",
+          "campaignName": "OFFER 1 - PICO Laser Lead Gen",
+          "spend": 590.1,
+          "impressions": 36800,
+          "leads": 88,
+          "cpl": 6.71,
+          "uniqueCtr": 3.32,
+          "frequency": 1.46
+        },
+        {
+          "id": "ad_004",
+          "adName": "PICO New Year Refresh Reel",
+          "adSetName": "Women 25-54 - Sydney CBD",
+          "campaignName": "OFFER 1 - PICO Laser Lead Gen",
+          "spend": 500.1,
+          "impressions": 29400,
+          "leads": 60,
+          "cpl": 8.34,
+          "uniqueCtr": 3.05,
+          "frequency": 1.55
+        },
+        {
+          "id": "ad_003",
+          "adName": "Summer Skin Package Carousel",
+          "adSetName": "Women 30-55 - Broad AU",
+          "campaignName": "OFFER 2 - Skin Rejuvenation Inbox",
+          "spend": 390.5,
+          "impressions": 23400,
+          "leads": 42,
+          "cpl": 9.3,
+          "uniqueCtr": 3.01,
+          "frequency": 1.58
+        },
+        {
+          "id": "ad_005",
+          "adName": "Rejuvenation UGC Testimonial",
+          "adSetName": "Women 30-55 - Broad AU",
+          "campaignName": "OFFER 2 - Skin Rejuvenation Inbox",
+          "spend": 262.13,
+          "impressions": 15600,
+          "leads": 23,
+          "cpl": 11.4,
+          "uniqueCtr": 2.85,
+          "frequency": 1.7
+        }
       ],
       "demographics": {
         "age": [
-          { "range": "18-24", "spend": 156.85, "impressions": 9470, "leads": 19, "percentage": 8.9 },
-          { "range": "25-34", "spend": 592.56, "impressions": 35740, "leads": 74, "percentage": 34.7 },
-          { "range": "35-44", "spend": 557.71, "impressions": 33660, "leads": 70, "percentage": 32.9 },
-          { "range": "45-54", "spend": 296.28, "impressions": 17880, "leads": 34, "percentage": 16.0 },
-          { "range": "55-64", "spend": 104.57, "impressions": 6310, "leads": 13, "percentage": 6.1 },
-          { "range": "65+", "spend": 34.86, "impressions": 2140, "leads": 3, "percentage": 1.4 }
+          {
+            "range": "18-24",
+            "spend": 156.85,
+            "impressions": 9470,
+            "leads": 19,
+            "percentage": 8.9
+          },
+          {
+            "range": "25-34",
+            "spend": 592.56,
+            "impressions": 35740,
+            "leads": 74,
+            "percentage": 34.7
+          },
+          {
+            "range": "35-44",
+            "spend": 557.71,
+            "impressions": 33660,
+            "leads": 70,
+            "percentage": 32.9
+          },
+          {
+            "range": "45-54",
+            "spend": 296.28,
+            "impressions": 17880,
+            "leads": 34,
+            "percentage": 16.0
+          },
+          {
+            "range": "55-64",
+            "spend": 104.57,
+            "impressions": 6310,
+            "leads": 13,
+            "percentage": 6.1
+          },
+          {
+            "range": "65+",
+            "spend": 34.86,
+            "impressions": 2140,
+            "leads": 3,
+            "percentage": 1.4
+          }
         ],
         "gender": [
-          { "gender": "Female", "spend": 1463.98, "impressions": 88370, "leads": 183, "percentage": 85.9 },
-          { "gender": "Male", "spend": 278.85, "impressions": 16830, "leads": 30, "percentage": 14.1 }
+          {
+            "gender": "Female",
+            "spend": 1463.98,
+            "impressions": 88370,
+            "leads": 183,
+            "percentage": 85.9
+          },
+          {
+            "gender": "Male",
+            "spend": 278.85,
+            "impressions": 16830,
+            "leads": 30,
+            "percentage": 14.1
+          }
         ],
         "placements": [
-          { "name": "Facebook Feed", "spend": 801.70, "impressions": 48390, "leads": 99 },
-          { "name": "Instagram Feed", "spend": 452.94, "impressions": 26250, "leads": 54 },
-          { "name": "Instagram Stories", "spend": 278.85, "impressions": 18100, "leads": 34 },
-          { "name": "Instagram Reels", "spend": 139.43, "impressions": 8410, "leads": 17 },
-          { "name": "Facebook Stories", "spend": 69.91, "impressions": 4050, "leads": 9 }
+          {
+            "name": "Facebook Feed",
+            "spend": 801.7,
+            "impressions": 48390,
+            "leads": 99
+          },
+          {
+            "name": "Instagram Feed",
+            "spend": 452.94,
+            "impressions": 26250,
+            "leads": 54
+          },
+          {
+            "name": "Instagram Stories",
+            "spend": 278.85,
+            "impressions": 18100,
+            "leads": 34
+          },
+          {
+            "name": "Instagram Reels",
+            "spend": 139.43,
+            "impressions": 8410,
+            "leads": 17
+          },
+          {
+            "name": "Facebook Stories",
+            "spend": 69.91,
+            "impressions": 4050,
+            "leads": 9
+          }
         ]
       }
     }

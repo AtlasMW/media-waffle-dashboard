@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useRouteLoaderData } from "react-router";
 
 const CSS = `
 :root {
@@ -199,7 +200,8 @@ window._dashboardApplyCustomRange = function() { applyCustomRange(); };
 window._dashboardExportPDF = function() { exportPDF(); };
 
 async function loadData() {
-  const client = new URLSearchParams(window.location.search).get('client');
+  var client = new URLSearchParams(window.location.search).get('client');
+  if (!client) client = window.__CLIENT_SLUG__ || null;
   if (!client) { window.location.href = '/admin'; return; }
   const [mr, lr] = await Promise.all([fetch('/data/' + client + '/meta.json'), fetch('/data/' + client + '/leads.json')]);
   metaData = await mr.json(); leadsData = await lr.json();
@@ -354,7 +356,7 @@ function aggregateDaily(days) {
   totals.uniqueCtr = withCtr.length > 0 ? withCtr.reduce(function(s,d){ return s + d.uniqueCtr; }, 0) / withCtr.length : 0;
   totals.cpm = days.length > 0 ? days.reduce(function(s,d){ return s + d.cpm; }, 0) / days.length : 0;
   if (metaData.monthly) {
-    var totalLeadsM = 0, weightedConv = 0;
+    var convCount = 0, convSum = 0;
     Object.entries(metaData.monthly).forEach(function(entry) {
       var k = entry[0], v = entry[1];
       var mStart = k + '-01';
@@ -363,11 +365,11 @@ function aggregateDaily(days) {
       var mEnd = p[0]+'-'+String(p[1]).padStart(2,'0')+'-'+String(mEndD.getDate()).padStart(2,'0');
       var dr = getDateRange(currentRange);
       if (dr && mStart <= dr.end && mEnd >= dr.start && v.leadConvPct) {
-        weightedConv += v.leadConvPct * v.leads;
-        totalLeadsM += v.leads;
+        convSum += v.leadConvPct;
+        convCount++;
       }
     });
-    totals.leadConvPct = totalLeadsM > 0 ? weightedConv / totalLeadsM : 0;
+    totals.leadConvPct = convCount > 0 ? convSum / convCount : 0;
   } else { totals.leadConvPct = 0; }
   return totals;
 }
@@ -720,15 +722,35 @@ function renderLeadsRange(l,pl,leads,days) {
   },options:{responsive:true,maintainAspectRatio:false,scales:{y:{position:'left',grid:{color:'#f0ebe3'}},y1:{position:'right',grid:{display:false},ticks:{callback:function(v){return '$'+v;}}}}}});
 }
 
-var AGENCY_FEE = 950;
 var LTV = 827;
+
+function getAgencyFee(monthKey) {
+  if (!metaData || !metaData.agencyFees) return 0;
+  return metaData.agencyFees[monthKey] || 0;
+}
 
 function roiKpi(label, value) {
   return '<div class="kpi-card"><div class="kpi-label">'+label+'</div><div class="kpi-value">'+value+'</div></div>';
 }
 
 function renderROIContent(tab, m, l, pm, pl, numMonths) {
-  var agencyFee = AGENCY_FEE * numMonths;
+  var agencyFee = 0;
+  if (currentRange === 'monthly') {
+    agencyFee = getAgencyFee(currentMonth);
+  } else {
+    var dr = getDateRange(currentRange);
+    if (dr && metaData.agencyFees) {
+      Object.keys(metaData.agencyFees).forEach(function(mk) {
+        var mStart = mk + '-01';
+        var p = mk.split('-').map(Number);
+        var mEndD = new Date(p[0], p[1], 0);
+        var mEnd = p[0]+'-'+String(p[1]).padStart(2,'0')+'-'+String(mEndD.getDate()).padStart(2,'0');
+        if (mStart <= dr.end && mEnd >= dr.start) {
+          agencyFee += metaData.agencyFees[mk];
+        }
+      });
+    }
+  }
   var adSpend = m&&m.spend || 0;
   var bookings = l&&l.booked || 0;
   var moneyCollected = l&&l.moneyCollected || 0;
@@ -792,10 +814,15 @@ document.addEventListener('click', function(e) {
 
 export default function ClientDashboard() {
   const scriptInjected = useRef(false);
+  const appData = useRouteLoaderData("routes/_app") as { profile?: { client_slug?: string } } | undefined;
 
   useEffect(() => {
     if (scriptInjected.current) return;
     scriptInjected.current = true;
+    // Inject client slug for profile-based routing
+    if (appData?.profile?.client_slug) {
+      (window as any).__CLIENT_SLUG__ = appData.profile.client_slug;
+    }
     // Wait for Chart.js to load
     const waitForChart = setInterval(() => {
       if (typeof (window as any).Chart !== 'undefined') {
