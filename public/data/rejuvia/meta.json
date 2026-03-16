@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:03:03+10:00",
+  "lastUpdated": "2026-03-16T20:34:12+10:00",
   "agencyFees": {
     "2025-10": 1500,
     "2025-11": 1500,
@@ -1899,6 +1899,650 @@
       "cpm": 19.05
     }
   ],
+  "campaignDaily": {
+    "2025-10-03": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 37.79,
+        "leads": 9
+      }
+    },
+    "2025-10-04": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 8.84,
+        "leads": 5
+      }
+    },
+    "2025-10-05": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 27.57,
+        "leads": 6
+      }
+    },
+    "2025-10-06": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 33.65,
+        "leads": 8
+      }
+    },
+    "2025-10-07": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.19,
+        "leads": 5
+      }
+    },
+    "2025-10-08": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 23.75,
+        "leads": 5
+      }
+    },
+    "2025-10-09": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.47,
+        "leads": 7
+      }
+    },
+    "2025-10-10": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.86,
+        "leads": 8
+      }
+    },
+    "2025-10-11": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.36,
+        "leads": 7
+      }
+    },
+    "2025-10-12": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 29.88,
+        "leads": 5
+      }
+    },
+    "2025-10-13": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 28.1,
+        "leads": 7
+      }
+    },
+    "2025-10-14": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.3,
+        "leads": 6
+      }
+    },
+    "2025-10-15": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.87,
+        "leads": 7
+      }
+    },
+    "2025-10-16": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.86,
+        "leads": 0
+      }
+    },
+    "2025-10-17": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.12,
+        "leads": 5
+      }
+    },
+    "2025-10-18": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.69,
+        "leads": 3
+      }
+    },
+    "2025-10-19": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 30.17,
+        "leads": 8
+      }
+    },
+    "2025-10-20": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.64,
+        "leads": 5
+      }
+    },
+    "2025-10-21": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.31,
+        "leads": 4
+      }
+    },
+    "2025-10-22": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 27.87,
+        "leads": 3
+      }
+    },
+    "2025-10-23": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.36,
+        "leads": 7
+      }
+    },
+    "2025-10-24": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 8.3,
+        "leads": 0
+      }
+    },
+    "2025-10-27": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 0.0,
+        "leads": 0
+      }
+    },
+    "2025-11-09": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 15.46,
+        "leads": 0
+      }
+    },
+    "2025-11-10": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 28.2,
+        "leads": 1
+      }
+    },
+    "2025-11-11": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 29.69,
+        "leads": 2
+      }
+    },
+    "2025-11-12": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 30.89,
+        "leads": 1
+      }
+    },
+    "2025-11-13": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 30.68,
+        "leads": 0
+      }
+    },
+    "2025-11-14": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 28.27,
+        "leads": 1
+      }
+    },
+    "2025-11-15": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 27.79,
+        "leads": 1
+      }
+    },
+    "2025-11-16": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 31.58,
+        "leads": 1
+      }
+    },
+    "2025-11-17": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 32.63,
+        "leads": 2
+      }
+    },
+    "2025-11-18": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 9.51,
+        "leads": 0
+      }
+    },
+    "2025-11-27": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.59,
+        "leads": 0
+      }
+    },
+    "2025-11-28": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.79,
+        "leads": 1
+      }
+    },
+    "2025-11-29": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 35.93,
+        "leads": 2
+      }
+    },
+    "2025-11-30": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 41.32,
+        "leads": 4
+      }
+    },
+    "2025-12-01": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 36.81,
+        "leads": 2
+      }
+    },
+    "2025-12-02": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 36.13,
+        "leads": 3
+      }
+    },
+    "2025-12-03": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.74,
+        "leads": 1
+      }
+    },
+    "2025-12-04": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.19,
+        "leads": 1
+      }
+    },
+    "2025-12-05": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.1,
+        "leads": 1
+      }
+    },
+    "2025-12-06": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 23.22,
+        "leads": 1
+      }
+    },
+    "2025-12-07": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 33.41,
+        "leads": 2
+      }
+    },
+    "2025-12-08": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 29.85,
+        "leads": 2
+      }
+    },
+    "2025-12-09": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.22,
+        "leads": 1
+      }
+    },
+    "2025-12-10": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.26,
+        "leads": 2
+      }
+    },
+    "2025-12-11": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.11,
+        "leads": 0
+      }
+    },
+    "2025-12-12": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.15,
+        "leads": 4
+      }
+    },
+    "2025-12-13": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 24.91,
+        "leads": 1
+      }
+    },
+    "2025-12-14": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 32.65,
+        "leads": 1
+      }
+    },
+    "2025-12-15": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 30.49,
+        "leads": 1
+      }
+    },
+    "2025-12-16": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.87,
+        "leads": 1
+      }
+    },
+    "2025-12-17": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.76,
+        "leads": 2
+      }
+    },
+    "2025-12-18": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.51,
+        "leads": 0
+      }
+    },
+    "2025-12-19": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.38,
+        "leads": 1
+      }
+    },
+    "2025-12-20": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 24.16,
+        "leads": 3
+      }
+    },
+    "2025-12-21": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 32.92,
+        "leads": 3
+      }
+    },
+    "2025-12-22": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 23.62,
+        "leads": 2
+      }
+    },
+    "2025-12-23": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.36,
+        "leads": 0
+      }
+    },
+    "2025-12-24": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.29,
+        "leads": 0
+      }
+    },
+    "2025-12-25": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.08,
+        "leads": 0
+      }
+    },
+    "2025-12-26": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 16.0,
+        "leads": 1
+      }
+    },
+    "2025-12-27": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 12.32,
+        "leads": 0
+      }
+    },
+    "2025-12-28": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 18.31,
+        "leads": 0
+      }
+    },
+    "2025-12-29": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.74,
+        "leads": 1
+      }
+    },
+    "2025-12-30": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.47,
+        "leads": 0
+      }
+    },
+    "2025-12-31": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 13.17,
+        "leads": 0
+      }
+    },
+    "2026-01-01": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.11,
+        "leads": 2
+      }
+    },
+    "2026-01-02": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.85,
+        "leads": 0
+      }
+    },
+    "2026-01-03": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.12,
+        "leads": 0
+      }
+    },
+    "2026-01-04": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 16.87,
+        "leads": 0
+      }
+    },
+    "2026-01-05": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.9,
+        "leads": 0
+      }
+    },
+    "2026-01-06": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.2,
+        "leads": 0
+      }
+    },
+    "2026-01-07": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.12,
+        "leads": 0
+      }
+    },
+    "2026-01-08": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.97,
+        "leads": 0
+      }
+    },
+    "2026-01-09": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.94,
+        "leads": 0
+      }
+    },
+    "2026-01-10": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 3.75,
+        "leads": 1
+      }
+    },
+    "2026-01-11": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.05,
+        "leads": 0
+      }
+    },
+    "2026-01-12": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.59,
+        "leads": 0
+      }
+    },
+    "2026-01-13": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.96,
+        "leads": 1
+      }
+    },
+    "2026-01-14": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.41,
+        "leads": 0
+      }
+    },
+    "2026-01-15": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.88,
+        "leads": 1
+      }
+    },
+    "2026-01-16": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.1,
+        "leads": 0
+      }
+    },
+    "2026-01-17": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 3.93,
+        "leads": 0
+      }
+    },
+    "2026-01-18": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.17,
+        "leads": 0
+      }
+    },
+    "2026-01-19": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.4,
+        "leads": 0
+      }
+    },
+    "2026-01-20": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 1.53,
+        "leads": 0
+      }
+    },
+    "2026-02-04": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 14.14,
+        "leads": 0
+      }
+    },
+    "2026-02-05": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 38.67,
+        "leads": 3
+      }
+    },
+    "2026-02-06": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 32.7,
+        "leads": 1
+      }
+    },
+    "2026-02-07": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 32.42,
+        "leads": 1
+      }
+    },
+    "2026-02-08": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.64,
+        "leads": 2
+      }
+    },
+    "2026-02-09": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 34.24,
+        "leads": 1
+      }
+    },
+    "2026-02-10": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 41.77,
+        "leads": 2
+      }
+    },
+    "2026-02-11": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.87,
+        "leads": 3
+      }
+    },
+    "2026-02-12": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.35,
+        "leads": 2
+      }
+    },
+    "2026-02-13": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 37.61,
+        "leads": 1
+      }
+    },
+    "2026-02-14": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 33.45,
+        "leads": 0
+      }
+    },
+    "2026-02-15": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 43.49,
+        "leads": 2
+      }
+    },
+    "2026-02-16": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 11.96,
+        "leads": 2
+      }
+    },
+    "2026-02-17": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 0.0,
+        "leads": 0
+      }
+    },
+    "2026-02-24": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.77,
+        "leads": 1
+      }
+    },
+    "2026-02-25": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 26.89,
+        "leads": 2
+      }
+    },
+    "2026-02-26": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.31,
+        "leads": 3
+      }
+    },
+    "2026-02-27": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.19,
+        "leads": 3
+      }
+    },
+    "2026-02-28": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 23.37,
+        "leads": 3
+      }
+    }
+  },
   "adsStartDate": "2025-10-03",
   "ltv": null,
   "ltvDescription": "The average revenue generated per client, calculated by dividing total revenue by the total number of clients."

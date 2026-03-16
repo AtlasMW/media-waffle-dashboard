@@ -561,14 +561,27 @@ function renderAds(m,pm) {
   var hasGender = m.gender && m.gender.length > 0;
   var ageRowCols = hasGender ? 'triple' : '';
   var adsML = getMonthLabel(currentMonth);
-  tab.innerHTML = '<div class="kpi-grid">'+kpi('spend','Ad Spend',fmtC(m.spend),trend(m.spend,pm&&pm.spend))+kpi('leads','Leads Generated',m.leads,trend(m.leads,pm&&pm.leads))+kpi('cpl','Cost Per Lead',fmtC(m.cpl),trend(m.cpl,pm&&pm.cpl,true))+kpi('msg','Conversations Started',m.messages,trend(m.messages,pm&&pm.messages))+kpi('msg','Cost Per Conversation',fmtC(m.costPerMessage),trend(m.costPerMessage,pm&&pm.costPerMessage,true))+kpi('ctr','Unique CTR',fmtP(m.uniqueCtr),trend(m.uniqueCtr,pm&&pm.uniqueCtr))+kpi('impressions','CPM',fmtC(m.cpm),trend(m.cpm,pm&&pm.cpm,true))+kpi('conv','Lead Conv %',fmtP(m.leadConvPct),trend(m.leadConvPct,pm&&pm.leadConvPct))+'</div><div class="chart-row full"><div class="chart-card"><h3>Campaign Performance</h3><div class="chart-sub">'+adsML+' — Spend, leads, and CPL by campaign (OFFER campaigns only)</div><div class="chart-container"><canvas id="c-campaigns"></canvas></div></div></div>'+(hasMultiOffer?'<div class="chart-row full"><div class="chart-card"><h3>Offer Comparison</h3><div class="chart-sub">'+adsML+' — Side-by-side performance of active offers</div><div class="offer-grid" id="offer-compare-grid"></div></div></div>':'')+'<div class="chart-row '+ageRowCols+'"><div class="chart-card"><h3>Audience by Age</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-age"></canvas></div></div>'+(hasGender?'<div class="chart-card"><h3>Gender Breakdown</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-gender"></canvas></div></div>':'')+'<div class="chart-card"><h3>Ad Placements</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-placements"></canvas></div></div></div><div class="chart-row full"><div class="chart-card"><h3>Ad Creative Leaderboard</h3><div class="chart-sub">'+adsML+' — Top 5 ads ranked by cost per lead</div><div id="ad-leaderboard-table"></div></div></div>'+LEGEND_ADS;
+  tab.innerHTML = '<div class="kpi-grid">'+kpi('spend','Ad Spend',fmtC(m.spend),trend(m.spend,pm&&pm.spend))+kpi('leads','Leads Generated',m.leads,trend(m.leads,pm&&pm.leads))+kpi('cpl','Cost Per Lead',fmtC(m.cpl),trend(m.cpl,pm&&pm.cpl,true))+kpi('msg','Conversations Started',m.messages,trend(m.messages,pm&&pm.messages))+kpi('msg','Cost Per Conversation',fmtC(m.costPerMessage),trend(m.costPerMessage,pm&&pm.costPerMessage,true))+kpi('ctr','Unique CTR',fmtP(m.uniqueCtr),trend(m.uniqueCtr,pm&&pm.uniqueCtr))+kpi('impressions','CPM',fmtC(m.cpm),trend(m.cpm,pm&&pm.cpm,true))+kpi('conv','Lead Conv %',fmtP(m.leadConvPct),trend(m.leadConvPct,pm&&pm.leadConvPct))+'</div><div class="chart-row full"><div class="chart-card"><h3>Campaign Performance</h3><div class="chart-sub">'+adsML+' — Daily CPL by campaign</div><div class="chart-container"><canvas id="c-campaigns"></canvas></div></div></div>'+(hasMultiOffer?'<div class="chart-row full"><div class="chart-card"><h3>Offer Comparison</h3><div class="chart-sub">'+adsML+' — Side-by-side performance of active offers</div><div class="offer-grid" id="offer-compare-grid"></div></div></div>':'')+'<div class="chart-row '+ageRowCols+'"><div class="chart-card"><h3>Audience by Age</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-age"></canvas></div></div>'+(hasGender?'<div class="chart-card"><h3>Gender Breakdown</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-gender"></canvas></div></div>':'')+'<div class="chart-card"><h3>Ad Placements</h3><div class="chart-sub">'+adsML+'</div><div class="chart-container"><canvas id="c-placements"></canvas></div></div></div><div class="chart-row full"><div class="chart-card"><h3>Ad Creative Leaderboard</h3><div class="chart-sub">'+adsML+' — Top 5 ads ranked by cost per lead</div><div id="ad-leaderboard-table"></div></div></div>'+LEGEND_ADS;
 
-  var camps = (m.campaigns||[]).filter(function(c){ return /OFFER\\s*\\d/i.test(c.name); });
-  var campLabels=camps.map(function(c){return c.name.length>30?c.name.substring(0,30)+'...':c.name;});
-  charts.camp = new Chart(document.getElementById('c-campaigns'),{type:'bar',data:{labels:campLabels,datasets:[
-    {label:'Spend ($)',data:camps.map(function(c){return c.spend;}),backgroundColor:C.beige,borderRadius:4,yAxisID:'y',order:2},
-    {label:'Leads',data:camps.map(function(c){return c.leads;}),backgroundColor:C.dark,borderRadius:4,yAxisID:'y1',order:1}
-  ]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{position:'left',grid:{color:'#f0ebe3'},ticks:{callback:function(v){return '$'+v;}}},y1:{position:'right',grid:{display:false}}},plugins:{legend:{labels:{usePointStyle:true,pointStyle:'circle'}}}}});
+  // Campaign daily CPL chart
+  var campDaily = metaData.campaignDaily || {};
+  var monthDates = Object.keys(campDaily).filter(function(d){ return d.startsWith(currentMonth); }).sort();
+  var campNames = {};
+  monthDates.forEach(function(d){ Object.keys(campDaily[d]).forEach(function(c){ campNames[c]=true; }); });
+  var campList = Object.keys(campNames).sort();
+  var campColors = [C.dark, C.coral, C.teal, C.accent, '#8b5cf6', '#f59e0b'];
+  var campDatasets = [];
+  campList.forEach(function(camp, i) {
+    var cplArr = monthDates.map(function(d){ var cd = campDaily[d]&&campDaily[d][camp]; return cd && cd.leads > 0 ? cd.spend / cd.leads : null; });
+    var totalSpend = 0, totalLeads = 0;
+    monthDates.forEach(function(d){ var cd = campDaily[d]&&campDaily[d][camp]; if(cd){ totalSpend+=cd.spend; totalLeads+=cd.leads; }});
+    var avgCplCamp = totalLeads > 0 ? totalSpend / totalLeads : 0;
+    var shortName = camp.replace(/^.*OFFER/i, 'OFFER').substring(0, 30);
+    campDatasets.push({label:shortName+' CPL',data:cplArr,borderColor:campColors[i%campColors.length],backgroundColor:'transparent',pointRadius:3,pointBackgroundColor:campColors[i%campColors.length],tension:0.3,borderWidth:2,spanGaps:true});
+    campDatasets.push({label:shortName+' Avg ('+fmtC(avgCplCamp)+')',data:monthDates.map(function(){return avgCplCamp;}),borderColor:campColors[i%campColors.length],borderDash:[8,4],borderWidth:1.5,pointRadius:0,fill:false,tension:0});
+  });
+  var campDayLabels = monthDates.map(function(d){ return parseLocalDate(d).getDate(); });
+  charts.camp = new Chart(document.getElementById('c-campaigns'),{type:'line',data:{labels:campDayLabels,datasets:campDatasets},options:{responsive:true,maintainAspectRatio:false,scales:{y:{grid:{color:'#f0ebe3'},ticks:{callback:function(v){return '$'+v.toFixed(0);}}},x:dailyXAxis()},plugins:{legend:{labels:{usePointStyle:true,pointStyle:'circle',font:{size:11}}}}}});
 
   if(hasMultiOffer) {
     document.getElementById('offer-compare-grid').innerHTML = m.offers.map(function(o) {

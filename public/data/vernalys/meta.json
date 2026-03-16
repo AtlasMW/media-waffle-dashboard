@@ -1,7 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:01:39+10:00",
+  "lastUpdated": "2026-03-16T20:32:40+10:00",
   "agencyFees": {
     "2025-07": 950,
     "2025-08": 950,
@@ -1311,58 +1311,7 @@
           "campaignPattern": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)"
         }
       ],
-      "ads": [
-        {
-          "adName": "OFFER 2 - IMG 2 | H1 C1",
-          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
-          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
-          "spend": 294.69,
-          "leads": 53,
-          "cpl": 5.56,
-          "uniqueCtr": 0.0,
-          "frequency": 2.29
-        },
-        {
-          "adName": "OFFER 2 - VIDEO | H1 C1",
-          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
-          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
-          "spend": 262.1,
-          "leads": 45,
-          "cpl": 5.82,
-          "uniqueCtr": 0.01,
-          "frequency": 1.79
-        },
-        {
-          "adName": "OFFER 3 - IMG 3| H1 C1",
-          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
-          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
-          "spend": 101.69,
-          "leads": 15,
-          "cpl": 6.78,
-          "uniqueCtr": 0.0,
-          "frequency": 1.76
-        },
-        {
-          "adName": "OFFER 3 - IMG 1 | H1 C1",
-          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
-          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
-          "spend": 130.7,
-          "leads": 19,
-          "cpl": 6.88,
-          "uniqueCtr": 0.02,
-          "frequency": 1.68
-        },
-        {
-          "adName": "OFFER 3 - IMG 3 | H1 C1",
-          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
-          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
-          "spend": 76.34,
-          "leads": 9,
-          "cpl": 8.48,
-          "uniqueCtr": 0.0,
-          "frequency": 1.59
-        }
-      ],
+      "ads": [],
       "demographics": [
         {
           "age": "18-24",
@@ -3666,6 +3615,1440 @@
       "cpm": 12.08
     }
   ],
+  "campaignDaily": {
+    "2025-07-22": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT": {
+        "spend": 19.39,
+        "leads": 1
+      },
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 9.98,
+        "leads": 1
+      }
+    },
+    "2025-07-23": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 32.82,
+        "leads": 0
+      }
+    },
+    "2025-07-24": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 32.45,
+        "leads": 3
+      }
+    },
+    "2025-07-25": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 35.03,
+        "leads": 1
+      }
+    },
+    "2025-07-26": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 35.78,
+        "leads": 6
+      }
+    },
+    "2025-07-27": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 40.65,
+        "leads": 4
+      }
+    },
+    "2025-07-28": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 34.31,
+        "leads": 2
+      }
+    },
+    "2025-07-29": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 34.2,
+        "leads": 1
+      }
+    },
+    "2025-07-30": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 34.13,
+        "leads": 1
+      }
+    },
+    "2025-07-31": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 30.99,
+        "leads": 2
+      }
+    },
+    "2025-08-01": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 19.7,
+        "leads": 1
+      }
+    },
+    "2025-08-02": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 17.32,
+        "leads": 1
+      }
+    },
+    "2025-08-03": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 20.95,
+        "leads": 1
+      }
+    },
+    "2025-08-04": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 16.85,
+        "leads": 1
+      }
+    },
+    "2025-08-05": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 14.21,
+        "leads": 1
+      }
+    },
+    "2025-08-06": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 12.47,
+        "leads": 0
+      }
+    },
+    "2025-08-07": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 11.65,
+        "leads": 0
+      }
+    },
+    "2025-08-08": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 11.37,
+        "leads": 2
+      }
+    },
+    "2025-08-09": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 10.4,
+        "leads": 1
+      }
+    },
+    "2025-08-10": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 14.54,
+        "leads": 0
+      }
+    },
+    "2025-08-11": {
+      "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]": {
+        "spend": 2.28,
+        "leads": 0
+      }
+    },
+    "2025-08-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.62,
+        "leads": 1
+      }
+    },
+    "2025-08-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.21,
+        "leads": 5
+      }
+    },
+    "2025-08-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.89,
+        "leads": 3
+      }
+    },
+    "2025-08-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 31.58,
+        "leads": 9
+      }
+    },
+    "2025-08-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.97,
+        "leads": 3
+      }
+    },
+    "2025-08-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.97,
+        "leads": 3
+      }
+    },
+    "2025-08-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.97,
+        "leads": 1
+      }
+    },
+    "2025-08-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.33,
+        "leads": 3
+      }
+    },
+    "2025-08-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.79,
+        "leads": 5
+      }
+    },
+    "2025-08-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.37,
+        "leads": 7
+      }
+    },
+    "2025-08-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 32.89,
+        "leads": 6
+      }
+    },
+    "2025-08-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.13,
+        "leads": 7
+      }
+    },
+    "2025-08-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.19,
+        "leads": 8
+      }
+    },
+    "2025-08-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.87,
+        "leads": 4
+      }
+    },
+    "2025-08-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.07,
+        "leads": 3
+      }
+    },
+    "2025-08-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 19.75,
+        "leads": 2
+      }
+    },
+    "2025-08-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 32.1,
+        "leads": 4
+      }
+    },
+    "2025-08-31": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 31.44,
+        "leads": 7
+      }
+    },
+    "2025-09-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.52,
+        "leads": 2
+      }
+    },
+    "2025-09-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.03,
+        "leads": 2
+      }
+    },
+    "2025-09-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.68,
+        "leads": 4
+      }
+    },
+    "2025-09-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.88,
+        "leads": 1
+      }
+    },
+    "2025-09-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.99,
+        "leads": 2
+      }
+    },
+    "2025-09-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.36,
+        "leads": 3
+      }
+    },
+    "2025-09-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.92,
+        "leads": 6
+      }
+    },
+    "2025-09-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.47,
+        "leads": 4
+      }
+    },
+    "2025-09-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.44,
+        "leads": 11
+      }
+    },
+    "2025-09-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.05,
+        "leads": 3
+      }
+    },
+    "2025-09-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.62,
+        "leads": 5
+      }
+    },
+    "2025-09-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.24,
+        "leads": 6
+      }
+    },
+    "2025-09-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.12,
+        "leads": 2
+      }
+    },
+    "2025-09-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 31.16,
+        "leads": 3
+      }
+    },
+    "2025-09-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.68,
+        "leads": 3
+      }
+    },
+    "2025-09-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.78,
+        "leads": 4
+      }
+    },
+    "2025-09-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.78,
+        "leads": 3
+      }
+    },
+    "2025-09-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.08,
+        "leads": 5
+      }
+    },
+    "2025-09-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.86,
+        "leads": 7
+      }
+    },
+    "2025-09-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.4,
+        "leads": 2
+      }
+    },
+    "2025-09-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.99,
+        "leads": 3
+      }
+    },
+    "2025-09-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.76,
+        "leads": 4
+      }
+    },
+    "2025-09-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.35,
+        "leads": 2
+      }
+    },
+    "2025-09-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.72,
+        "leads": 3
+      }
+    },
+    "2025-09-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.51,
+        "leads": 4
+      }
+    },
+    "2025-09-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.65,
+        "leads": 4
+      }
+    },
+    "2025-09-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.96,
+        "leads": 7
+      }
+    },
+    "2025-09-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.52,
+        "leads": 4
+      }
+    },
+    "2025-09-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.86,
+        "leads": 5
+      }
+    },
+    "2025-09-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.38,
+        "leads": 3
+      }
+    },
+    "2025-10-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.01,
+        "leads": 8
+      }
+    },
+    "2025-10-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.22,
+        "leads": 3
+      }
+    },
+    "2025-10-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.83,
+        "leads": 3
+      }
+    },
+    "2025-10-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.14,
+        "leads": 0
+      }
+    },
+    "2025-10-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.57,
+        "leads": 4
+      }
+    },
+    "2025-10-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.55,
+        "leads": 11
+      }
+    },
+    "2025-10-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.39,
+        "leads": 7
+      }
+    },
+    "2025-10-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.53,
+        "leads": 3
+      }
+    },
+    "2025-10-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.05,
+        "leads": 6
+      }
+    },
+    "2025-10-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.36,
+        "leads": 6
+      }
+    },
+    "2025-10-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.41,
+        "leads": 8
+      }
+    },
+    "2025-10-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.65,
+        "leads": 0
+      }
+    },
+    "2025-10-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.18,
+        "leads": 5
+      }
+    },
+    "2025-10-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.41,
+        "leads": 9
+      }
+    },
+    "2025-10-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.3,
+        "leads": 5
+      }
+    },
+    "2025-10-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.67,
+        "leads": 4
+      }
+    },
+    "2025-10-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.2,
+        "leads": 7
+      }
+    },
+    "2025-10-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.45,
+        "leads": 8
+      }
+    },
+    "2025-10-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.33,
+        "leads": 7
+      }
+    },
+    "2025-10-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.05,
+        "leads": 4
+      }
+    },
+    "2025-10-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.88,
+        "leads": 2
+      }
+    },
+    "2025-10-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.31,
+        "leads": 6
+      }
+    },
+    "2025-10-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.71,
+        "leads": 3
+      }
+    },
+    "2025-10-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.91,
+        "leads": 2
+      }
+    },
+    "2025-10-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.8,
+        "leads": 7
+      }
+    },
+    "2025-10-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.76,
+        "leads": 4
+      }
+    },
+    "2025-10-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.23,
+        "leads": 4
+      }
+    },
+    "2025-10-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.94,
+        "leads": 4
+      }
+    },
+    "2025-10-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.73,
+        "leads": 4
+      }
+    },
+    "2025-10-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.52,
+        "leads": 2
+      }
+    },
+    "2025-10-31": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.64,
+        "leads": 4
+      }
+    },
+    "2025-11-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.14,
+        "leads": 0
+      }
+    },
+    "2025-11-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.64,
+        "leads": 5
+      }
+    },
+    "2025-11-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.74,
+        "leads": 2
+      }
+    },
+    "2025-11-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.73,
+        "leads": 4
+      }
+    },
+    "2025-11-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.51,
+        "leads": 5
+      }
+    },
+    "2025-11-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.69,
+        "leads": 6
+      }
+    },
+    "2025-11-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.05,
+        "leads": 3
+      }
+    },
+    "2025-11-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.54,
+        "leads": 6
+      }
+    },
+    "2025-11-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.72,
+        "leads": 6
+      }
+    },
+    "2025-11-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.71,
+        "leads": 2
+      }
+    },
+    "2025-11-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.76,
+        "leads": 2
+      }
+    },
+    "2025-11-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.66,
+        "leads": 3
+      }
+    },
+    "2025-11-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.25,
+        "leads": 2
+      }
+    },
+    "2025-11-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.99,
+        "leads": 5
+      }
+    },
+    "2025-11-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.87,
+        "leads": 5
+      }
+    },
+    "2025-11-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.72,
+        "leads": 4
+      }
+    },
+    "2025-11-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.87,
+        "leads": 4
+      }
+    },
+    "2025-11-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.55,
+        "leads": 3
+      }
+    },
+    "2025-11-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.81,
+        "leads": 4
+      }
+    },
+    "2025-11-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.39,
+        "leads": 2
+      }
+    },
+    "2025-11-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.44,
+        "leads": 2
+      }
+    },
+    "2025-11-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.05,
+        "leads": 2
+      }
+    },
+    "2025-11-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 32.14,
+        "leads": 6
+      }
+    },
+    "2025-11-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.35,
+        "leads": 4
+      }
+    },
+    "2025-11-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.18,
+        "leads": 4
+      }
+    },
+    "2025-11-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.83,
+        "leads": 4
+      }
+    },
+    "2025-11-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.18,
+        "leads": 2
+      }
+    },
+    "2025-11-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.06,
+        "leads": 5
+      }
+    },
+    "2025-11-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.96,
+        "leads": 3
+      }
+    },
+    "2025-11-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 32.48,
+        "leads": 3
+      }
+    },
+    "2025-12-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.87,
+        "leads": 5
+      }
+    },
+    "2025-12-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.48,
+        "leads": 2
+      }
+    },
+    "2025-12-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.44,
+        "leads": 5
+      }
+    },
+    "2025-12-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.77,
+        "leads": 2
+      }
+    },
+    "2025-12-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.81,
+        "leads": 0
+      }
+    },
+    "2025-12-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.05,
+        "leads": 5
+      }
+    },
+    "2025-12-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.11,
+        "leads": 3
+      }
+    },
+    "2025-12-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.82,
+        "leads": 6
+      }
+    },
+    "2025-12-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.37,
+        "leads": 3
+      }
+    },
+    "2025-12-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.51,
+        "leads": 7
+      }
+    },
+    "2025-12-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.73,
+        "leads": 1
+      }
+    },
+    "2025-12-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.47,
+        "leads": 3
+      }
+    },
+    "2025-12-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.88,
+        "leads": 4
+      }
+    },
+    "2025-12-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.68,
+        "leads": 1
+      }
+    },
+    "2025-12-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.31,
+        "leads": 6
+      }
+    },
+    "2025-12-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.28,
+        "leads": 4
+      }
+    },
+    "2025-12-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.13,
+        "leads": 4
+      }
+    },
+    "2025-12-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.29,
+        "leads": 5
+      }
+    },
+    "2025-12-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.05,
+        "leads": 2
+      }
+    },
+    "2025-12-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.26,
+        "leads": 4
+      }
+    },
+    "2025-12-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.51,
+        "leads": 4
+      }
+    },
+    "2025-12-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.12,
+        "leads": 7
+      }
+    },
+    "2025-12-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.86,
+        "leads": 5
+      }
+    },
+    "2025-12-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.31,
+        "leads": 11
+      }
+    },
+    "2025-12-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.51,
+        "leads": 3
+      }
+    },
+    "2025-12-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.07,
+        "leads": 4
+      }
+    },
+    "2025-12-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.52,
+        "leads": 4
+      }
+    },
+    "2025-12-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.05,
+        "leads": 7
+      }
+    },
+    "2025-12-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.69,
+        "leads": 2
+      }
+    },
+    "2025-12-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.67,
+        "leads": 5
+      }
+    },
+    "2025-12-31": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.08,
+        "leads": 1
+      }
+    },
+    "2026-01-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.61,
+        "leads": 1
+      }
+    },
+    "2026-01-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.27,
+        "leads": 5
+      }
+    },
+    "2026-01-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.59,
+        "leads": 4
+      }
+    },
+    "2026-01-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.75,
+        "leads": 9
+      }
+    },
+    "2026-01-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.03,
+        "leads": 6
+      }
+    },
+    "2026-01-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.7,
+        "leads": 3
+      }
+    },
+    "2026-01-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.0,
+        "leads": 13
+      }
+    },
+    "2026-01-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.83,
+        "leads": 6
+      }
+    },
+    "2026-01-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.22,
+        "leads": 8
+      }
+    },
+    "2026-01-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.02,
+        "leads": 3
+      }
+    },
+    "2026-01-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.81,
+        "leads": 4
+      }
+    },
+    "2026-01-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.83,
+        "leads": 6
+      }
+    },
+    "2026-01-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.34,
+        "leads": 7
+      }
+    },
+    "2026-01-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.89,
+        "leads": 1
+      }
+    },
+    "2026-01-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.42,
+        "leads": 6
+      }
+    },
+    "2026-01-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.91,
+        "leads": 7
+      }
+    },
+    "2026-01-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.01,
+        "leads": 10
+      }
+    },
+    "2026-01-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.48,
+        "leads": 5
+      }
+    },
+    "2026-01-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.27,
+        "leads": 4
+      }
+    },
+    "2026-01-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.53,
+        "leads": 5
+      }
+    },
+    "2026-01-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.4,
+        "leads": 6
+      }
+    },
+    "2026-01-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.46,
+        "leads": 3
+      }
+    },
+    "2026-01-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.61,
+        "leads": 6
+      }
+    },
+    "2026-01-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.13,
+        "leads": 5
+      }
+    },
+    "2026-01-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.22,
+        "leads": 6
+      }
+    },
+    "2026-01-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.3,
+        "leads": 7
+      }
+    },
+    "2026-01-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.22,
+        "leads": 7
+      }
+    },
+    "2026-01-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.63,
+        "leads": 1
+      }
+    },
+    "2026-01-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.75,
+        "leads": 3
+      }
+    },
+    "2026-01-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.13,
+        "leads": 7
+      }
+    },
+    "2026-01-31": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.71,
+        "leads": 1
+      }
+    },
+    "2026-02-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.33,
+        "leads": 5
+      }
+    },
+    "2026-02-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.11,
+        "leads": 6
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 33.08,
+        "leads": 8
+      }
+    },
+    "2026-02-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 0.65,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 2.74,
+        "leads": 2
+      }
+    },
+    "2026-02-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 39.11,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 42.77,
+        "leads": 4
+      }
+    },
+    "2026-02-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.23,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 40.75,
+        "leads": 3
+      }
+    },
+    "2026-02-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.26,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 38.35,
+        "leads": 3
+      }
+    },
+    "2026-02-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.52,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 31.05,
+        "leads": 1
+      }
+    },
+    "2026-02-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.47,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 30.65,
+        "leads": 4
+      }
+    },
+    "2026-02-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.1,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 28.54,
+        "leads": 3
+      }
+    },
+    "2026-02-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.73,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 26.59,
+        "leads": 4
+      }
+    },
+    "2026-02-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.27,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 25.95,
+        "leads": 4
+      }
+    },
+    "2026-02-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.53,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 26.71,
+        "leads": 5
+      }
+    },
+    "2026-02-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.4,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 24.92,
+        "leads": 4
+      }
+    },
+    "2026-02-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.58,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 25.22,
+        "leads": 3
+      }
+    },
+    "2026-02-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.99,
+        "leads": 11
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 32.65,
+        "leads": 3
+      }
+    },
+    "2026-02-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.58,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 27.91,
+        "leads": 4
+      }
+    },
+    "2026-02-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.99,
+        "leads": 8
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 26.34,
+        "leads": 2
+      }
+    },
+    "2026-02-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.68,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 24.91,
+        "leads": 1
+      }
+    },
+    "2026-02-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.48,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 25.2,
+        "leads": 1
+      }
+    },
+    "2026-02-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.47,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 26.98,
+        "leads": 3
+      }
+    },
+    "2026-02-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.73,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 25.01,
+        "leads": 2
+      }
+    },
+    "2026-02-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.09,
+        "leads": 10
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 29.47,
+        "leads": 6
+      }
+    },
+    "2026-02-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.21,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 28.69,
+        "leads": 8
+      }
+    },
+    "2026-02-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.29,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 23.3,
+        "leads": 1
+      }
+    },
+    "2026-02-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.92,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 22.21,
+        "leads": 0
+      }
+    },
+    "2026-02-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.59,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 23.11,
+        "leads": 3
+      }
+    },
+    "2026-02-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.2,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 21.32,
+        "leads": 1
+      }
+    },
+    "2026-02-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.59,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 22.06,
+        "leads": 5
+      }
+    }
+  },
   "adsStartDate": "2025-07-22",
   "ltv": 827,
   "ltvDescription": "The estimated lifetime value of a customer based on average revenue data from Timely reports."

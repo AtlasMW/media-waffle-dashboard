@@ -1,7 +1,7 @@
 {
   "client": "The Hair Plus Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:03:15+10:00",
+  "lastUpdated": "2026-03-16T20:34:27+10:00",
   "agencyFees": {
     "2026-01": 0,
     "2026-02": 990
@@ -656,6 +656,212 @@
       "cpm": 19.78
     }
   ],
+  "campaignDaily": {
+    "2026-01-30": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 10.07,
+        "leads": 0
+      }
+    },
+    "2026-01-31": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 14.33,
+        "leads": 0
+      }
+    },
+    "2026-02-01": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 28.73,
+        "leads": 5
+      }
+    },
+    "2026-02-02": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 21.34,
+        "leads": 1
+      }
+    },
+    "2026-02-03": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 17.74,
+        "leads": 1
+      }
+    },
+    "2026-02-04": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 18.19,
+        "leads": 0
+      }
+    },
+    "2026-02-05": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 20.35,
+        "leads": 1
+      }
+    },
+    "2026-02-06": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 19.09,
+        "leads": 4
+      }
+    },
+    "2026-02-07": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 14.36,
+        "leads": 1
+      }
+    },
+    "2026-02-08": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 25.85,
+        "leads": 2
+      }
+    },
+    "2026-02-09": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 22.77,
+        "leads": 2
+      }
+    },
+    "2026-02-10": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 22.96,
+        "leads": 5
+      }
+    },
+    "2026-02-11": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 17.95,
+        "leads": 1
+      }
+    },
+    "2026-02-12": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 16.26,
+        "leads": 2
+      }
+    },
+    "2026-02-13": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 18.96,
+        "leads": 0
+      }
+    },
+    "2026-02-14": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 17.81,
+        "leads": 1
+      }
+    },
+    "2026-02-15": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 27.41,
+        "leads": 1
+      }
+    },
+    "2026-02-16": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 22.88,
+        "leads": 0
+      }
+    },
+    "2026-02-17": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 26.2,
+        "leads": 2
+      }
+    },
+    "2026-02-18": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 19.77,
+        "leads": 1
+      }
+    },
+    "2026-02-19": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 19.55,
+        "leads": 1
+      }
+    },
+    "2026-02-20": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 15.02,
+        "leads": 1
+      }
+    },
+    "2026-02-21": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 16.05,
+        "leads": 0
+      }
+    },
+    "2026-02-22": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 25.45,
+        "leads": 0
+      }
+    },
+    "2026-02-23": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 23.84,
+        "leads": 3
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 7.37,
+        "leads": 0
+      }
+    },
+    "2026-02-24": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 24.22,
+        "leads": 1
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 19.99,
+        "leads": 2
+      }
+    },
+    "2026-02-25": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 18.45,
+        "leads": 0
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 18.68,
+        "leads": 2
+      }
+    },
+    "2026-02-26": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 19.11,
+        "leads": 2
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 17.45,
+        "leads": 0
+      }
+    },
+    "2026-02-27": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 14.79,
+        "leads": 0
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 16.44,
+        "leads": 0
+      }
+    },
+    "2026-02-28": {
+      "LEADS // ABO //OFFER 1": {
+        "spend": 20.83,
+        "leads": 1
+      },
+      "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
+        "spend": 23.05,
+        "leads": 2
+      }
+    }
+  },
   "adsStartDate": "2026-01-30",
   "ltv": null,
   "ltvDescription": "The average revenue generated per client, calculated by dividing total revenue by the total number of clients."

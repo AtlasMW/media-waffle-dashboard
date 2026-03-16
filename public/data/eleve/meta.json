@@ -1,7 +1,7 @@
 {
   "client": "Eleve Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:02:31+10:00",
+  "lastUpdated": "2026-03-16T20:33:36+10:00",
   "agencyFees": {
     "2025-07": 800,
     "2025-08": 800,
@@ -3820,6 +3820,1520 @@
       "cpm": 20.55
     }
   ],
+  "campaignDaily": {
+    "2025-07-04": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 24.19,
+        "leads": 5
+      }
+    },
+    "2025-07-05": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 25.45,
+        "leads": 9
+      }
+    },
+    "2025-07-06": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 40.62,
+        "leads": 11
+      }
+    },
+    "2025-07-07": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 38.6,
+        "leads": 12
+      }
+    },
+    "2025-07-08": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 32.04,
+        "leads": 11
+      }
+    },
+    "2025-07-09": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 32.53,
+        "leads": 11
+      }
+    },
+    "2025-07-10": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 35.16,
+        "leads": 20
+      }
+    },
+    "2025-07-11": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 31.53,
+        "leads": 12
+      }
+    },
+    "2025-07-12": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.46,
+        "leads": 13
+      }
+    },
+    "2025-07-13": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 38.13,
+        "leads": 9
+      }
+    },
+    "2025-07-14": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 33.74,
+        "leads": 7
+      }
+    },
+    "2025-07-15": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 35.29,
+        "leads": 6
+      }
+    },
+    "2025-07-16": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 31.84,
+        "leads": 6
+      }
+    },
+    "2025-07-17": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.78,
+        "leads": 7
+      }
+    },
+    "2025-07-18": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.98,
+        "leads": 7
+      }
+    },
+    "2025-07-19": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 36.06,
+        "leads": 7
+      }
+    },
+    "2025-07-20": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 38.97,
+        "leads": 7
+      }
+    },
+    "2025-07-21": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 35.72,
+        "leads": 8
+      }
+    },
+    "2025-07-22": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.31,
+        "leads": 15
+      }
+    },
+    "2025-07-23": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 31.98,
+        "leads": 8
+      }
+    },
+    "2025-07-24": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 33.27,
+        "leads": 7
+      }
+    },
+    "2025-07-25": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.52,
+        "leads": 16
+      }
+    },
+    "2025-07-26": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 36.12,
+        "leads": 6
+      }
+    },
+    "2025-07-27": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 39.13,
+        "leads": 10
+      }
+    },
+    "2025-07-28": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 34.81,
+        "leads": 6
+      }
+    },
+    "2025-07-29": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 33.55,
+        "leads": 10
+      }
+    },
+    "2025-07-30": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 33.18,
+        "leads": 10
+      }
+    },
+    "2025-07-31": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 36.39,
+        "leads": 11
+      }
+    },
+    "2025-08-01": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 31.26,
+        "leads": 9
+      }
+    },
+    "2025-08-02": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 28.72,
+        "leads": 8
+      }
+    },
+    "2025-08-03": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 33.94,
+        "leads": 10
+      }
+    },
+    "2025-08-04": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 32.55,
+        "leads": 5
+      }
+    },
+    "2025-08-05": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 31.83,
+        "leads": 5
+      }
+    },
+    "2025-08-06": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 28.74,
+        "leads": 3
+      }
+    },
+    "2025-08-07": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 28.08,
+        "leads": 5
+      }
+    },
+    "2025-08-08": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 29.1,
+        "leads": 8
+      }
+    },
+    "2025-08-09": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 28.96,
+        "leads": 6
+      }
+    },
+    "2025-08-10": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 32.34,
+        "leads": 4
+      }
+    },
+    "2025-08-11": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 28.78,
+        "leads": 9
+      }
+    },
+    "2025-08-12": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 25.34,
+        "leads": 9
+      }
+    },
+    "2025-08-13": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 23.33,
+        "leads": 6
+      }
+    },
+    "2025-08-14": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 23.84,
+        "leads": 7
+      }
+    },
+    "2025-08-15": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 24.0,
+        "leads": 7
+      }
+    },
+    "2025-08-16": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 22.37,
+        "leads": 4
+      }
+    },
+    "2025-08-17": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 26.32,
+        "leads": 9
+      }
+    },
+    "2025-08-18": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 25.61,
+        "leads": 7
+      }
+    },
+    "2025-08-19": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 24.02,
+        "leads": 2
+      }
+    },
+    "2025-08-20": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 18.76,
+        "leads": 4
+      }
+    },
+    "2025-08-21": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 19.02,
+        "leads": 6
+      }
+    },
+    "2025-08-22": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 18.91,
+        "leads": 6
+      }
+    },
+    "2025-08-23": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 16.46,
+        "leads": 1
+      }
+    },
+    "2025-08-24": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 21.31,
+        "leads": 5
+      }
+    },
+    "2025-08-25": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 18.04,
+        "leads": 4
+      }
+    },
+    "2025-08-26": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 16.32,
+        "leads": 2
+      }
+    },
+    "2025-08-27": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 16.03,
+        "leads": 7
+      }
+    },
+    "2025-08-28": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 14.92,
+        "leads": 3
+      }
+    },
+    "2025-08-29": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 14.81,
+        "leads": 2
+      }
+    },
+    "2025-08-30": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 20.07,
+        "leads": 2
+      }
+    },
+    "2025-08-31": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 20.85,
+        "leads": 6
+      }
+    },
+    "2025-09-01": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 17.05,
+        "leads": 8
+      }
+    },
+    "2025-09-02": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 11.26,
+        "leads": 1
+      }
+    },
+    "2025-09-03": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 5.63,
+        "leads": 2
+      }
+    },
+    "2025-09-04": {
+      "TOF // LEADS // LAUNCH OFFER": {
+        "spend": 5.7,
+        "leads": 2
+      }
+    },
+    "2025-09-05": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 34.25,
+        "leads": 1
+      }
+    },
+    "2025-09-06": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 9.52,
+        "leads": 0
+      }
+    },
+    "2025-09-07": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.11,
+        "leads": 3
+      }
+    },
+    "2025-09-08": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 23.71,
+        "leads": 1
+      }
+    },
+    "2025-09-09": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 20.26,
+        "leads": 1
+      }
+    },
+    "2025-09-10": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.79,
+        "leads": 2
+      }
+    },
+    "2025-09-11": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.37,
+        "leads": 3
+      }
+    },
+    "2025-09-12": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 25.56,
+        "leads": 0
+      }
+    },
+    "2025-09-13": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.17,
+        "leads": 4
+      }
+    },
+    "2025-09-14": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.82,
+        "leads": 2
+      }
+    },
+    "2025-09-15": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 24.3,
+        "leads": 2
+      }
+    },
+    "2025-09-16": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 25.28,
+        "leads": 1
+      }
+    },
+    "2025-09-17": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 23.32,
+        "leads": 2
+      }
+    },
+    "2025-09-18": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 25.74,
+        "leads": 4
+      }
+    },
+    "2025-09-19": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 25.52,
+        "leads": 4
+      }
+    },
+    "2025-09-20": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 23.76,
+        "leads": 2
+      }
+    },
+    "2025-09-21": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 27.14,
+        "leads": 3
+      }
+    },
+    "2025-09-22": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.34,
+        "leads": 1
+      }
+    },
+    "2025-09-23": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 24.79,
+        "leads": 1
+      }
+    },
+    "2025-09-24": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 24.71,
+        "leads": 2
+      }
+    },
+    "2025-09-25": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 21.8,
+        "leads": 0
+      }
+    },
+    "2025-09-26": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 26.75,
+        "leads": 1
+      }
+    },
+    "2025-09-27": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 23.24,
+        "leads": 2
+      }
+    },
+    "2025-09-28": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 27.1,
+        "leads": 2
+      }
+    },
+    "2025-09-29": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 24.67,
+        "leads": 1
+      }
+    },
+    "2025-09-30": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 4.34,
+        "leads": 0
+      },
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.69,
+        "leads": 3
+      }
+    },
+    "2025-10-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.78,
+        "leads": 8
+      }
+    },
+    "2025-10-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.13,
+        "leads": 5
+      }
+    },
+    "2025-10-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.63,
+        "leads": 5
+      }
+    },
+    "2025-10-04": {
+      "LEADS // CBO // OFFER 2 - REJURAN": {
+        "spend": 0.0,
+        "leads": 0
+      },
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.14,
+        "leads": 10
+      }
+    },
+    "2025-10-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.07,
+        "leads": 2
+      }
+    },
+    "2025-10-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 30.06,
+        "leads": 12
+      }
+    },
+    "2025-10-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.86,
+        "leads": 0
+      }
+    },
+    "2025-10-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.76,
+        "leads": 9
+      }
+    },
+    "2025-10-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.92,
+        "leads": 2
+      }
+    },
+    "2025-10-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.47,
+        "leads": 6
+      }
+    },
+    "2025-10-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.19,
+        "leads": 9
+      }
+    },
+    "2025-10-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.78,
+        "leads": 2
+      }
+    },
+    "2025-10-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.97,
+        "leads": 9
+      }
+    },
+    "2025-10-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.88,
+        "leads": 7
+      }
+    },
+    "2025-10-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.83,
+        "leads": 8
+      }
+    },
+    "2025-10-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.1,
+        "leads": 9
+      }
+    },
+    "2025-10-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.41,
+        "leads": 8
+      }
+    },
+    "2025-10-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.89,
+        "leads": 8
+      }
+    },
+    "2025-10-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.26,
+        "leads": 7
+      }
+    },
+    "2025-10-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.68,
+        "leads": 7
+      }
+    },
+    "2025-10-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.55,
+        "leads": 8
+      }
+    },
+    "2025-10-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.93,
+        "leads": 9
+      }
+    },
+    "2025-10-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.79,
+        "leads": 5
+      }
+    },
+    "2025-10-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.21,
+        "leads": 11
+      }
+    },
+    "2025-10-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.41,
+        "leads": 3
+      }
+    },
+    "2025-10-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.17,
+        "leads": 2
+      }
+    },
+    "2025-10-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.37,
+        "leads": 12
+      }
+    },
+    "2025-10-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.61,
+        "leads": 2
+      }
+    },
+    "2025-10-29": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.49,
+        "leads": 7
+      }
+    },
+    "2025-10-30": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.56,
+        "leads": 7
+      }
+    },
+    "2025-10-31": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.55,
+        "leads": 3
+      }
+    },
+    "2025-11-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.1,
+        "leads": 6
+      }
+    },
+    "2025-11-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.18,
+        "leads": 5
+      }
+    },
+    "2025-11-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.69,
+        "leads": 16
+      }
+    },
+    "2025-11-04": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.9,
+        "leads": 6
+      }
+    },
+    "2025-11-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.09,
+        "leads": 12
+      }
+    },
+    "2025-11-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.45,
+        "leads": 8
+      }
+    },
+    "2025-11-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.75,
+        "leads": 4
+      }
+    },
+    "2025-11-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.5,
+        "leads": 8
+      }
+    },
+    "2025-11-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.18,
+        "leads": 1
+      }
+    },
+    "2025-11-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.21,
+        "leads": 4
+      }
+    },
+    "2025-11-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.57,
+        "leads": 1
+      }
+    },
+    "2025-11-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.44,
+        "leads": 2
+      }
+    },
+    "2025-11-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.02,
+        "leads": 4
+      }
+    },
+    "2025-11-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.92,
+        "leads": 5
+      }
+    },
+    "2025-11-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.37,
+        "leads": 2
+      }
+    },
+    "2025-11-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.09,
+        "leads": 4
+      }
+    },
+    "2025-11-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 30.21,
+        "leads": 6
+      }
+    },
+    "2025-11-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.24,
+        "leads": 6
+      }
+    },
+    "2025-11-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.46,
+        "leads": 5
+      }
+    },
+    "2025-11-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.92,
+        "leads": 0
+      }
+    },
+    "2025-11-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.08,
+        "leads": 4
+      }
+    },
+    "2025-11-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.85,
+        "leads": 8
+      }
+    },
+    "2025-11-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 30.46,
+        "leads": 2
+      }
+    },
+    "2025-11-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.59,
+        "leads": 7
+      }
+    },
+    "2025-11-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.99,
+        "leads": 6
+      }
+    },
+    "2025-11-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.61,
+        "leads": 10
+      }
+    },
+    "2025-11-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.7,
+        "leads": 3
+      }
+    },
+    "2025-11-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.87,
+        "leads": 1
+      }
+    },
+    "2025-11-29": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.75,
+        "leads": 6
+      }
+    },
+    "2025-11-30": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 33.06,
+        "leads": 5
+      }
+    },
+    "2025-12-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.77,
+        "leads": 6
+      }
+    },
+    "2025-12-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.39,
+        "leads": 5
+      }
+    },
+    "2025-12-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.6,
+        "leads": 7
+      }
+    },
+    "2025-12-04": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.67,
+        "leads": 7
+      }
+    },
+    "2025-12-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.14,
+        "leads": 1
+      }
+    },
+    "2025-12-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.15,
+        "leads": 3
+      }
+    },
+    "2025-12-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.94,
+        "leads": 4
+      }
+    },
+    "2025-12-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.19,
+        "leads": 5
+      }
+    },
+    "2025-12-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.11,
+        "leads": 3
+      }
+    },
+    "2025-12-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.23,
+        "leads": 8
+      }
+    },
+    "2025-12-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 14.33,
+        "leads": 6
+      }
+    },
+    "2025-12-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 13.85,
+        "leads": 1
+      }
+    },
+    "2025-12-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.12,
+        "leads": 3
+      }
+    },
+    "2025-12-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.3,
+        "leads": 0
+      }
+    },
+    "2025-12-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.51,
+        "leads": 5
+      }
+    },
+    "2025-12-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.28,
+        "leads": 3
+      }
+    },
+    "2025-12-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 14.9,
+        "leads": 3
+      }
+    },
+    "2025-12-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.75,
+        "leads": 4
+      }
+    },
+    "2025-12-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.12,
+        "leads": 0
+      }
+    },
+    "2025-12-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.61,
+        "leads": 5
+      }
+    },
+    "2025-12-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.36,
+        "leads": 2
+      }
+    },
+    "2025-12-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.45,
+        "leads": 0
+      }
+    },
+    "2025-12-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.63,
+        "leads": 0
+      }
+    },
+    "2025-12-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.55,
+        "leads": 1
+      }
+    },
+    "2025-12-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.03,
+        "leads": 1
+      }
+    },
+    "2025-12-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.91,
+        "leads": 1
+      }
+    },
+    "2025-12-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.06,
+        "leads": 2
+      }
+    },
+    "2025-12-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.09,
+        "leads": 3
+      }
+    },
+    "2025-12-29": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.57,
+        "leads": 5
+      }
+    },
+    "2025-12-30": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.17,
+        "leads": 3
+      }
+    },
+    "2025-12-31": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.36,
+        "leads": 2
+      }
+    },
+    "2026-01-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.8,
+        "leads": 2
+      }
+    },
+    "2026-01-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.67,
+        "leads": 4
+      }
+    },
+    "2026-01-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.01,
+        "leads": 6
+      }
+    },
+    "2026-01-04": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.14,
+        "leads": 5
+      }
+    },
+    "2026-01-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.54,
+        "leads": 5
+      }
+    },
+    "2026-01-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.8,
+        "leads": 3
+      }
+    },
+    "2026-01-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.82,
+        "leads": 6
+      }
+    },
+    "2026-01-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.02,
+        "leads": 1
+      }
+    },
+    "2026-01-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.15,
+        "leads": 5
+      }
+    },
+    "2026-01-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.21,
+        "leads": 4
+      }
+    },
+    "2026-01-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.64,
+        "leads": 8
+      }
+    },
+    "2026-01-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.38,
+        "leads": 6
+      }
+    },
+    "2026-01-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.07,
+        "leads": 5
+      }
+    },
+    "2026-01-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.53,
+        "leads": 2
+      }
+    },
+    "2026-01-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.79,
+        "leads": 2
+      }
+    },
+    "2026-01-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.94,
+        "leads": 3
+      }
+    },
+    "2026-01-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.53,
+        "leads": 5
+      }
+    },
+    "2026-01-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.23,
+        "leads": 10
+      }
+    },
+    "2026-01-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.07,
+        "leads": 4
+      }
+    },
+    "2026-01-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.86,
+        "leads": 11
+      }
+    },
+    "2026-01-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.6,
+        "leads": 7
+      }
+    },
+    "2026-01-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.12,
+        "leads": 6
+      }
+    },
+    "2026-01-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.88,
+        "leads": 7
+      }
+    },
+    "2026-01-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.79,
+        "leads": 4
+      }
+    },
+    "2026-01-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.47,
+        "leads": 4
+      }
+    },
+    "2026-01-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.71,
+        "leads": 5
+      }
+    },
+    "2026-01-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.04,
+        "leads": 1
+      }
+    },
+    "2026-01-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.48,
+        "leads": 2
+      }
+    },
+    "2026-01-29": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.09,
+        "leads": 3
+      }
+    },
+    "2026-01-30": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.67,
+        "leads": 4
+      }
+    },
+    "2026-01-31": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.44,
+        "leads": 4
+      }
+    },
+    "2026-02-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.62,
+        "leads": 8
+      }
+    },
+    "2026-02-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.37,
+        "leads": 5
+      }
+    },
+    "2026-02-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.39,
+        "leads": 3
+      }
+    },
+    "2026-02-04": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.75,
+        "leads": 8
+      }
+    },
+    "2026-02-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.77,
+        "leads": 6
+      }
+    },
+    "2026-02-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.62,
+        "leads": 2
+      }
+    },
+    "2026-02-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.92,
+        "leads": 5
+      }
+    },
+    "2026-02-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 31.14,
+        "leads": 6
+      }
+    },
+    "2026-02-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.67,
+        "leads": 12
+      }
+    },
+    "2026-02-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.7,
+        "leads": 7
+      }
+    },
+    "2026-02-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.79,
+        "leads": 4
+      }
+    },
+    "2026-02-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 26.27,
+        "leads": 6
+      }
+    },
+    "2026-02-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 25.78,
+        "leads": 6
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 8.3,
+        "leads": 1
+      }
+    },
+    "2026-02-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.15,
+        "leads": 9
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 12.64,
+        "leads": 1
+      }
+    },
+    "2026-02-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 29.69,
+        "leads": 5
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 17.28,
+        "leads": 2
+      }
+    },
+    "2026-02-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 28.07,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.68,
+        "leads": 7
+      }
+    },
+    "2026-02-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 27.31,
+        "leads": 6
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.88,
+        "leads": 2
+      }
+    },
+    "2026-02-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.92,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.5,
+        "leads": 4
+      }
+    },
+    "2026-02-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.16,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.14,
+        "leads": 1
+      }
+    },
+    "2026-02-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.32,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.49,
+        "leads": 0
+      }
+    },
+    "2026-02-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.0,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.86,
+        "leads": 1
+      }
+    },
+    "2026-02-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 23.61,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.56,
+        "leads": 4
+      }
+    },
+    "2026-02-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.78,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.2,
+        "leads": 3
+      }
+    },
+    "2026-02-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 24.66,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 17.35,
+        "leads": 3
+      }
+    },
+    "2026-02-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.34,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.0,
+        "leads": 1
+      }
+    },
+    "2026-02-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.88,
+        "leads": 5
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.02,
+        "leads": 3
+      }
+    },
+    "2026-02-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.96,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.5,
+        "leads": 2
+      }
+    },
+    "2026-02-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.07,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.16,
+        "leads": 1
+      }
+    }
+  },
   "adsStartDate": "2025-07-04",
   "ltv": null,
   "ltvDescription": "The average revenue generated per client, calculated by dividing total revenue by the total number of clients."

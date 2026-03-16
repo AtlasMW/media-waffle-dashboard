@@ -1,20 +1,20 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:00:21+10:00",
+  "lastUpdated": "2026-03-16T20:31:41+10:00",
   "agencyFees": {
     "2026-01": 1500,
     "2026-02": 1500
   },
   "monthly": {
     "2026-01": {
-      "spend": 1069.99,
-      "impressions": 36061,
+      "spend": 1239.29,
+      "impressions": 43978,
       "reach": 12139,
-      "leads": 28,
-      "cpl": 38.21,
-      "messages": 20,
-      "costPerMessage": 53.5,
+      "leads": 29,
+      "cpl": 42.73,
+      "messages": 21,
+      "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
       "leadConvPct": 0.16,
@@ -879,6 +879,324 @@
       "cpm": 31.95
     }
   ],
+  "campaignDaily": {
+    "2026-01-12": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 46.69,
+        "leads": 0
+      }
+    },
+    "2026-01-13": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 48.96,
+        "leads": 1
+      }
+    },
+    "2026-01-14": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 55.38,
+        "leads": 2
+      }
+    },
+    "2026-01-15": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 55.01,
+        "leads": 2
+      }
+    },
+    "2026-01-16": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 52.62,
+        "leads": 3
+      }
+    },
+    "2026-01-17": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 54.0,
+        "leads": 2
+      }
+    },
+    "2026-01-18": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 59.44,
+        "leads": 3
+      }
+    },
+    "2026-01-19": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 57.66,
+        "leads": 3
+      }
+    },
+    "2026-01-20": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 54.22,
+        "leads": 2
+      }
+    },
+    "2026-01-21": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 51.93,
+        "leads": 1
+      }
+    },
+    "2026-01-22": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 52.31,
+        "leads": 1
+      }
+    },
+    "2026-01-23": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 51.79,
+        "leads": 1
+      }
+    },
+    "2026-01-24": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 51.13,
+        "leads": 1
+      }
+    },
+    "2026-01-25": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 57.51,
+        "leads": 1
+      }
+    },
+    "2026-01-26": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 59.43,
+        "leads": 2
+      }
+    },
+    "2026-01-27": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 54.31,
+        "leads": 0
+      }
+    },
+    "2026-01-28": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 52.62,
+        "leads": 1
+      }
+    },
+    "2026-01-29": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 50.28,
+        "leads": 1
+      }
+    },
+    "2026-01-30": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 51.41,
+        "leads": 1
+      }
+    },
+    "2026-01-31": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 53.29,
+        "leads": 0
+      }
+    },
+    "2026-02-01": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 71.97,
+        "leads": 2
+      }
+    },
+    "2026-02-02": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 55.47,
+        "leads": 2
+      }
+    },
+    "2026-02-03": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 45.73,
+        "leads": 1
+      }
+    },
+    "2026-02-04": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 42.39,
+        "leads": 0
+      }
+    },
+    "2026-02-05": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 42.36,
+        "leads": 0
+      }
+    },
+    "2026-02-06": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 40.9,
+        "leads": 0
+      }
+    },
+    "2026-02-07": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 35.22,
+        "leads": 0
+      }
+    },
+    "2026-02-08": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 46.27,
+        "leads": 1
+      }
+    },
+    "2026-02-09": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 44.76,
+        "leads": 0
+      }
+    },
+    "2026-02-10": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 40.21,
+        "leads": 1
+      }
+    },
+    "2026-02-11": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 53.75,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 29.64,
+        "leads": 1
+      }
+    },
+    "2026-02-12": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 36.98,
+        "leads": 5
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 35.37,
+        "leads": 4
+      }
+    },
+    "2026-02-13": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 38.78,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 37.01,
+        "leads": 4
+      }
+    },
+    "2026-02-14": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 22.79,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 34.8,
+        "leads": 7
+      }
+    },
+    "2026-02-15": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 30.13,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 38.91,
+        "leads": 2
+      }
+    },
+    "2026-02-16": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 32.55,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.12,
+        "leads": 4
+      }
+    },
+    "2026-02-17": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 11.59,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 45.63,
+        "leads": 3
+      }
+    },
+    "2026-02-18": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.9,
+        "leads": 3
+      }
+    },
+    "2026-02-19": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.47,
+        "leads": 0
+      }
+    },
+    "2026-02-20": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 42.5,
+        "leads": 2
+      }
+    },
+    "2026-02-21": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.39,
+        "leads": 5
+      }
+    },
+    "2026-02-22": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 47.31,
+        "leads": 6
+      }
+    },
+    "2026-02-23": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 43.37,
+        "leads": 1
+      }
+    },
+    "2026-02-24": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 41.45,
+        "leads": 2
+      }
+    },
+    "2026-02-25": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.24,
+        "leads": 2
+      }
+    },
+    "2026-02-26": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 41.76,
+        "leads": 4
+      }
+    },
+    "2026-02-27": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 43.38,
+        "leads": 7
+      }
+    },
+    "2026-02-28": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.32,
+        "leads": 4
+      }
+    }
+  },
   "adsStartDate": "2026-01-12",
   "ltv": 1637,
   "ltvDescription": "The estimated lifetime value of a customer based on average LTV data from Phorest reports. Currently estimated at ~$1,637 per client."
