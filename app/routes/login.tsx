@@ -109,12 +109,12 @@ export default function Login() {
             color: '#3b3b3b',
             letterSpacing: '2px',
             lineHeight: 1.2,
-            marginBottom: '12px',
+            marginBottom: '6px',
           }}>
             Media Waffle
           </div>
           <p style={{
-            fontSize: '13px',
+            fontSize: '15px',
             color: '#8a8478',
             letterSpacing: '1px',
             fontFamily: "'Montserrat', sans-serif",
@@ -169,7 +169,7 @@ export default function Login() {
                 fontWeight: 700,
                 color: '#3b3b3b',
                 marginBottom: '24px',
-                textAlign: 'center',
+                textAlign: 'left',
                 fontFamily: "'Georgia', serif",
               }}>
                 Sign In
@@ -268,6 +268,7 @@ export default function Login() {
               >
                 {mode === "password" ? "Sign In" : "Send Login Link"}
               </button>
+              <div style={{ height: '16px' }} />
             </form>
           )}
         </div>

@@ -283,8 +283,8 @@ function fmtP(n) { return n.toFixed(2)+'%'; }
 function getMonthLabel(mk) { var p=mk.split('-').map(Number); return new Date(p[0],p[1]-1,1).toLocaleDateString('en-AU',{month:'long',year:'numeric'}); }
 function fmtPw(n) { return Math.round(n)+'%'; }
 function fmtN(n) { if(n>=1000000) return (n/1000000).toFixed(1)+'M'; if(n>=1000) return (n/1000).toFixed(1)+'K'; return n.toString(); }
-function parseLocalDate(s) { var p = s.split('-').map(Number); return new Date(p[0], p[1]-1, p[2]||1); }
-function fmtDate(d) { if(typeof d==='string') d=parseLocalDate(d); var dd=String(d.getDate()).padStart(2,'0'); var mm=String(d.getMonth()+1).padStart(2,'0'); return dd+'/'+mm+'/'+d.getFullYear(); }
+function parseLocalDate(s) { if(!s) return new Date(NaN); if(s.indexOf('-')>-1){ var p=s.split('-').map(Number); return new Date(p[0],p[1]-1,p[2]||1); } var d=new Date(s); if(!isNaN(d.getTime())) return d; return new Date(NaN); }
+function fmtDate(d) { if(!d) return '--'; if(typeof d==='string') d=parseLocalDate(d); if(isNaN(d.getTime())) return '--'; var dd=String(d.getDate()).padStart(2,'0'); var mm=String(d.getMonth()+1).padStart(2,'0'); return dd+'/'+mm+'/'+d.getFullYear(); }
 function fmtDateShort(d) { if(typeof d==='string') d=parseLocalDate(d); var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate()+' '+months[d.getMonth()]; }
 function fmtBucketLabel(startDate, endDate) { var s=typeof startDate==='string'?parseLocalDate(startDate):startDate; var e=typeof endDate==='string'?parseLocalDate(endDate):endDate; var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; if(s.getMonth()===e.getMonth()) return s.getDate()+'-'+e.getDate()+' '+months[s.getMonth()]; return s.getDate()+' '+months[s.getMonth()]+' - '+e.getDate()+' '+months[e.getMonth()]; }
 function prevMonth(m) { var p = m.split('-').map(Number); var d=new Date(p[0], p[1]-2, 1); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); }
