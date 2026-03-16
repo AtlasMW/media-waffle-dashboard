@@ -91,18 +91,35 @@ export default function Login() {
       fontFamily: "'Montserrat', sans-serif",
     }}>
       <div style={{ width: '100%', maxWidth: '420px' }}>
+        <style>{`
+          @font-face {
+            font-family: 'TT Ramillas';
+            src: url('/fonts/tt-ramillas-bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+          }
+        `}</style>
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <img
-            src="/mw-logo.png"
-            alt="Media Waffle"
-            style={{ height: '60px', margin: '0 auto 16px' }}
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
+          <div style={{
+            fontFamily: "'TT Ramillas', Georgia, serif",
+            fontWeight: 700,
+            fontSize: '36px',
+            color: '#3b3b3b',
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+            lineHeight: 1.2,
+            marginBottom: '12px',
+          }}>
+            Media Waffle
+          </div>
           <p style={{
-            fontSize: '14px',
+            fontSize: '13px',
             color: '#8a8478',
-            letterSpacing: '0.5px',
+            letterSpacing: '1px',
+            textTransform: 'uppercase',
+            fontFamily: "'Montserrat', sans-serif",
           }}>
             Client Dashboard
           </p>
