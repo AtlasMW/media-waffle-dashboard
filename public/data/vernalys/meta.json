@@ -1,7 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T02:02:56+10:00",
+  "lastUpdated": "2026-03-16T20:01:39+10:00",
   "agencyFees": {
     "2025-07": 950,
     "2025-08": 950,
@@ -1008,7 +1008,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 0,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         },
         {
           "name": "inbox - \ud83d\udd25HOT DEAL! Triple the Glow for only $159\u203c\ufe0f",
@@ -1030,7 +1030,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 9,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         },
         {
           "name": "inbox - \u0e23\u0e31\u0e01\u0e29\u0e32\u0e2a\u0e34\u0e27\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e27\u0e34\u0e18\u0e35 \u0e1c\u0e34\u0e27\u0e14\u0e35\u0e02\u0e36\u0e49\u0e19\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96",
@@ -1052,7 +1052,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 1,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         },
         {
           "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
@@ -1063,7 +1063,7 @@
           "cpl": 0,
           "uniqueCtr": 0.09,
           "messages": 8,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         }
       ],
       "offers": [
@@ -3666,6 +3666,6 @@
       "cpm": 12.08
     }
   ],
-  "ltv": 827,
-  "adsStartDate": "2025-07-22"
+  "adsStartDate": "2025-07-22",
+  "ltv": 827
 }

@@ -1,7 +1,7 @@
 {
   "client": "The Hair Plus Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T02:04:53+10:00",
+  "lastUpdated": "2026-03-16T20:03:15+10:00",
   "agencyFees": {
     "2026-01": 0,
     "2026-02": 990
@@ -28,7 +28,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 0,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         }
       ],
       "offers": [
@@ -656,6 +656,6 @@
       "cpm": 19.78
     }
   ],
-  "ltv": null,
-  "adsStartDate": "2026-01-30"
+  "adsStartDate": "2026-01-30",
+  "ltv": null
 }

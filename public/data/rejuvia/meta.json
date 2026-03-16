@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T02:04:38+10:00",
+  "lastUpdated": "2026-03-16T20:03:03+10:00",
   "agencyFees": {
     "2025-10": 1500,
     "2025-11": 1500,
@@ -1899,6 +1899,6 @@
       "cpm": 19.05
     }
   ],
-  "ltv": null,
-  "adsStartDate": "2025-10-03"
+  "adsStartDate": "2025-10-03",
+  "ltv": null
 }

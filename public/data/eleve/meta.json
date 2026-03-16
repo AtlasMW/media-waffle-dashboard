@@ -1,7 +1,7 @@
 {
   "client": "Eleve Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T02:04:05+10:00",
+  "lastUpdated": "2026-03-16T20:02:31+10:00",
   "agencyFees": {
     "2025-07": 800,
     "2025-08": 800,
@@ -914,7 +914,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 0,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         }
       ],
       "offers": [
@@ -3820,6 +3820,6 @@
       "cpm": 20.55
     }
   ],
-  "ltv": null,
-  "adsStartDate": "2025-07-04"
+  "adsStartDate": "2025-07-04",
+  "ltv": null
 }

@@ -19,7 +19,7 @@
         {
           "name": "OFFER 1",
           "leads": 26,
-          "cpl": 11.5,
+          "cpl": 38.21,
           "booked": 5,
           "spend": 1070.0
         }
@@ -227,14 +227,14 @@
         {
           "name": "OFFER 1",
           "leads": 56,
-          "cpl": 19.76,
+          "cpl": 53.23,
           "booked": 6,
           "spend": 691.86
         },
         {
           "name": "OFFER 2",
           "leads": 19,
-          "cpl": 6.8,
+          "cpl": 11.81,
           "booked": 2,
           "spend": 720.55
         }
