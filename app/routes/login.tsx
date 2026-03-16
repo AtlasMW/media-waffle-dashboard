@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { data, redirect, useActionData } from "react-router";
+import { useState, useEffect } from "react";
+import { data, redirect, useActionData, useNavigate, useRouteLoaderData } from "react-router";
 import type { Route } from "./+types/login";
 import { createSupabaseServerClient } from "~/lib/supabase.server";
+import { createBrowserClient } from "@supabase/ssr";
 
 export async function loader({ request }: Route.LoaderArgs) {
   const { supabase } = createSupabaseServerClient(request);
@@ -43,6 +44,42 @@ export default function Login() {
   const actionData = useActionData<typeof action>();
   const [mode, setMode] = useState<"password" | "magic">("password");
   const [submitted, setSubmitted] = useState(false);
+  const [hashStatus, setHashStatus] = useState<"idle" | "processing" | "error">("idle");
+  const [hashError, setHashError] = useState<string | null>(null);
+  const navigate = useNavigate();
+  const rootData = useRouteLoaderData("root") as { env: { SUPABASE_URL: string; SUPABASE_ANON_KEY: string } } | undefined;
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash || !rootData?.env) return;
+
+    const params = new URLSearchParams(hash.substring(1));
+    const accessToken = params.get("access_token");
+    const error = params.get("error");
+    const errorDesc = params.get("error_description");
+
+    if (error) {
+      setHashStatus("error");
+      setHashError(errorDesc?.replace(/\+/g, " ") || error);
+      window.history.replaceState(null, "", window.location.pathname);
+      return;
+    }
+
+    if (accessToken) {
+      setHashStatus("processing");
+      const refreshToken = params.get("refresh_token") || "";
+      const supabase = createBrowserClient(rootData.env.SUPABASE_URL, rootData.env.SUPABASE_ANON_KEY);
+      supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken }).then(({ error: sessionError }) => {
+        if (sessionError) {
+          setHashStatus("error");
+          setHashError(sessionError.message);
+        } else {
+          window.location.href = "/";
+        }
+      });
+      window.history.replaceState(null, "", window.location.pathname);
+    }
+  }, [rootData, navigate]);
 
   return (
     <div className="login-page min-h-screen flex items-center justify-center px-4">
@@ -53,7 +90,11 @@ export default function Login() {
         </div>
 
         <div className="bg-[var(--color-charcoal-800)] rounded-xl p-8 shadow-lg">
-          {actionData?.success && actionData?.mode === "magic" || (submitted && mode === "magic") ? (
+          {hashStatus === "processing" ? (
+            <div className="text-center">
+              <p className="text-[var(--color-cream-100)]">Signing you in...</p>
+            </div>
+          ) : hashStatus !== "processing" && (actionData?.success && actionData?.mode === "magic" || (submitted && mode === "magic")) ? (
             <div className="text-center">
               <h2 className="text-xl font-semibold text-[var(--color-cream-100)] mb-2">
                 Check your email
@@ -97,8 +138,8 @@ export default function Login() {
                   />
                 </>
               )}
-              {actionData?.error && (
-                <p className="text-red-400 text-sm mb-4">{actionData.error}</p>
+              {(hashError || actionData?.error) && (
+                <p className="text-red-400 text-sm mb-4">{hashError || actionData?.error}</p>
               )}
               <button
                 type="submit"
