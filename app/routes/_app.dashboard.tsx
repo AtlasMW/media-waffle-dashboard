@@ -722,7 +722,9 @@ function renderLeadsRange(l,pl,leads,days) {
   },options:{responsive:true,maintainAspectRatio:false,scales:{y:{position:'left',grid:{color:'#f0ebe3'}},y1:{position:'right',grid:{display:false},ticks:{callback:function(v){return '$'+v;}}}}}});
 }
 
-var LTV = 827;
+function getLTV() {
+  return metaData && metaData.ltv ? metaData.ltv : null;
+}
 
 function getAgencyFee(monthKey) {
   if (!metaData || !metaData.agencyFees) return 0;
@@ -755,19 +757,30 @@ function renderROIContent(tab, m, l, pm, pl, numMonths) {
   var bookings = l&&l.booked || 0;
   var moneyCollected = l&&l.moneyCollected || 0;
   var totalCost = adSpend + agencyFee;
-  var ltvRevenue = bookings * LTV;
-  var trueROI = totalCost > 0 ? (ltvRevenue / totalCost * 100) : 0;
+  var clientLTV = getLTV();
+  var hasLTV = clientLTV !== null;
+  var ltvRevenue = hasLTV ? bookings * clientLTV : 0;
+  var trueROI = hasLTV && totalCost > 0 ? (ltvRevenue / totalCost * 100) : 0;
   var roi = totalCost > 0 ? (moneyCollected / totalCost * 100) : 0;
   var roiColor = roi >= 100 ? 'var(--green)' : roi >= 50 ? 'var(--accent)' : 'var(--coral)';
-  var trueRoiColor = trueROI >= 100 ? 'var(--green)' : trueROI >= 50 ? 'var(--accent)' : 'var(--coral)';
+  var trueRoiColor = hasLTV ? (trueROI >= 100 ? 'var(--green)' : trueROI >= 50 ? 'var(--accent)' : 'var(--coral)') : '#999';
 
-  tab.innerHTML = '<div class="kpi-grid">'+roiKpi('Agency Fee',fmtCw(agencyFee))+roiKpi('Ad Spend',fmtC(adSpend))+roiKpi('Total Cost',fmtC(totalCost))+roiKpi('Bookings',bookings)+roiKpi('Money Collected',fmtCw(moneyCollected))+roiKpi('LTV Revenue',fmtCw(ltvRevenue))+'</div><div class="chart-row"><div class="chart-card"><h3>Return on Investment</h3><div class="chart-sub">Based on actual money collected</div><div style="text-align:center;padding:30px 0;"><div style="font-size:48px;font-weight:700;color:'+roiColor+';">'+roi.toFixed(1)+'%</div><div style="font-size:14px;color:#999;margin-top:8px;">ROI</div></div></div><div class="chart-card"><h3>TRUE ROI (Projected)</h3><div class="chart-sub">Based on bookings x LTV ($'+LTV+')</div><div style="text-align:center;padding:30px 0;"><div style="font-size:48px;font-weight:700;color:'+trueRoiColor+';">'+trueROI.toFixed(1)+'%</div><div style="font-size:14px;color:#999;margin-top:8px;">TRUE ROI</div></div></div></div><div class="chart-row full"><div class="chart-card"><h3>ROI Breakdown</h3><div class="chart-sub">Cost vs revenue comparison</div><div class="chart-container"><canvas id="c-roi-bar"></canvas></div></div></div><div class="chart-row full"><div class="chart-card" style="background:var(--beige-light);"><h3 style="margin-bottom:16px;">Metric Definitions</h3><div style="display:grid;gap:12px;font-size:13px;line-height:1.6;"><div><strong>Agency Fee:</strong> The monthly retainer paid to Media Waffle for management and strategy.</div><div><strong>Ad Spend:</strong> Total amount spent on Meta (Facebook/Instagram) advertising for the period.</div><div><strong>Total Cost:</strong> The combined investment: Ad Spend + Agency Fee. This is the total outlay for the period.</div><div><strong>Bookings:</strong> Number of confirmed appointments.</div><div><strong>Money Collected:</strong> Revenue generated from all confirmed appointments that came from leads during this period.</div><div><strong>LTV (Lifetime Value):</strong> The estimated lifetime value of a customer based on average revenue data from Timely reports. Currently estimated at ~$'+LTV+' per client.</div><div><strong>LTV Revenue:</strong> Projected total revenue: Bookings x LTV. Represents the expected long-term value of bookings made this period.</div><div><strong>ROI (Return on Investment):</strong> Money Collected / Total Cost x 100. Shows actual return based on cash already received. Below 100% means you haven\\'t recouped costs yet from collected revenue alone.</div><div><strong>TRUE ROI:</strong> LTV Revenue / Total Cost x 100. Shows projected return when accounting for the full lifetime value of each booking. This is the more accurate measure of campaign profitability.</div></div></div></div>';
+  var ltvRevenueDisplay = hasLTV ? fmtCw(ltvRevenue) : 'TBA';
+  var trueROIDisplay = hasLTV ? trueROI.toFixed(1)+'%' : 'TBA';
+  var ltvDescription = hasLTV ? 'Currently estimated at ~$'+clientLTV+' per client.' : 'Not yet determined for this client.';
+  var trueROISub = hasLTV ? 'Based on bookings x LTV ($'+clientLTV+')' : 'LTV not yet determined';
+
+  tab.innerHTML = '<div class="kpi-grid">'+roiKpi('Agency Fee',fmtCw(agencyFee))+roiKpi('Ad Spend',fmtC(adSpend))+roiKpi('Total Cost',fmtC(totalCost))+roiKpi('Bookings',bookings)+roiKpi('Money Collected',fmtCw(moneyCollected))+roiKpi('LTV Revenue',ltvRevenueDisplay)+'</div><div class="chart-row"><div class="chart-card"><h3>Return on Investment</h3><div class="chart-sub">Based on actual money collected</div><div style="text-align:center;padding:30px 0;"><div style="font-size:48px;font-weight:700;color:'+roiColor+';">'+roi.toFixed(1)+'%</div><div style="font-size:14px;color:#999;margin-top:8px;">ROI</div></div></div><div class="chart-card"><h3>TRUE ROI (Projected)</h3><div class="chart-sub">'+trueROISub+'</div><div style="text-align:center;padding:30px 0;"><div style="font-size:48px;font-weight:700;color:'+trueRoiColor+';">'+trueROIDisplay+'</div><div style="font-size:14px;color:#999;margin-top:8px;">TRUE ROI</div></div></div></div><div class="chart-row full"><div class="chart-card"><h3>ROI Breakdown</h3><div class="chart-sub">Cost vs revenue comparison</div><div class="chart-container"><canvas id="c-roi-bar"></canvas></div></div></div><div class="chart-row full"><div class="chart-card" style="background:var(--beige-light);"><h3 style="margin-bottom:16px;">Metric Definitions</h3><div style="display:grid;gap:12px;font-size:13px;line-height:1.6;"><div><strong>Agency Fee:</strong> The monthly retainer paid to Media Waffle for management and strategy.</div><div><strong>Ad Spend:</strong> Total amount spent on Meta (Facebook/Instagram) advertising for the period.</div><div><strong>Total Cost:</strong> The combined investment: Ad Spend + Agency Fee. This is the total outlay for the period.</div><div><strong>Bookings:</strong> Number of confirmed appointments.</div><div><strong>Money Collected:</strong> Revenue generated from all confirmed appointments that came from leads during this period.</div><div><strong>LTV (Lifetime Value):</strong> The estimated lifetime value of a customer based on average revenue data from Timely reports. '+ltvDescription+'</div><div><strong>LTV Revenue:</strong> Projected total revenue: Bookings x LTV. Represents the expected long-term value of bookings made this period.</div><div><strong>ROI (Return on Investment):</strong> Money Collected / Total Cost x 100. Shows actual return based on cash already received. Below 100% means you haven\\'t recouped costs yet from collected revenue alone.</div><div><strong>TRUE ROI:</strong> LTV Revenue / Total Cost x 100. Shows projected return when accounting for the full lifetime value of each booking. This is the more accurate measure of campaign profitability.</div></div></div></div>';
+
+  var barLabels = hasLTV ? ['Agency Fee','Ad Spend','Total Cost','Money Collected','LTV Revenue'] : ['Agency Fee','Ad Spend','Total Cost','Money Collected'];
+  var barData = hasLTV ? [agencyFee, adSpend, totalCost, moneyCollected, ltvRevenue] : [agencyFee, adSpend, totalCost, moneyCollected];
+  var barColors = hasLTV ? [C.accent, C.beige, C.coral, '#6ba378', '#35d45a'] : [C.accent, C.beige, C.coral, '#6ba378'];
 
   charts.roiBar = new Chart(document.getElementById('c-roi-bar'),{type:'bar',data:{
-    labels:['Agency Fee','Ad Spend','Total Cost','Money Collected','LTV Revenue'],
+    labels:barLabels,
     datasets:[{
-      data:[agencyFee, adSpend, totalCost, moneyCollected, ltvRevenue],
-      backgroundColor:[C.accent, C.beige, C.coral, '#6ba378', '#35d45a'],
+      data:barData,
+      backgroundColor:barColors,
       borderRadius:6
     }]
   },options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return fmtC(ctx.raw);}}}},scales:{x:{grid:{color:'#f0ebe3'},ticks:{callback:function(v){return '$'+v.toLocaleString();}}},y:{grid:{display:false}}}}});
