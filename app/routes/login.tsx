@@ -45,7 +45,7 @@ export default function Login() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[var(--color-charcoal-900)] px-4">
+    <div className="login-page min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-[var(--color-cream-100)]">Media Waffle</h1>
