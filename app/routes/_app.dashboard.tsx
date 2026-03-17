@@ -568,7 +568,7 @@ function renderAds(m,pm) {
     var totalSpend = 0, totalLeads = 0;
     monthDates.forEach(function(d){ var cd = campDaily[d]&&campDaily[d][camp]; if(cd){ totalSpend+=cd.spend; totalLeads+=cd.leads; }});
     var avgCplCamp = totalLeads > 0 ? totalSpend / totalLeads : 0;
-    var shortName = camp.replace(/^.*OFFER/i, 'OFFER').substring(0, 30);
+    var shortName = camp.replace(/^.*?(?=((?:AGE\s*\d+\+?\s*)?OFFER))/i, '').substring(0, 40);
     campDatasets.push({label:shortName+' CPL',data:cplArr,borderColor:campColors[i%campColors.length],backgroundColor:'transparent',pointRadius:3,pointBackgroundColor:campColors[i%campColors.length],tension:0.3,borderWidth:2,spanGaps:true});
     campDatasets.push({label:shortName+' Avg ('+fmtC(avgCplCamp)+')',data:monthDates.map(function(){return avgCplCamp;}),borderColor:campColors[i%campColors.length],borderDash:[8,4],borderWidth:1.5,pointRadius:0,fill:false,tension:0});
   });
