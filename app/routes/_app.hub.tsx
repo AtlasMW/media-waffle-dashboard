@@ -18,7 +18,7 @@ export async function loader({ request }: Route.LoaderArgs) {
   const { data: profile } = await supabase.from("profiles").select("role").eq("id", user.id).single();
   const isAdmin = profile?.role === "admin";
 
-  const { data: clientAccess } = await supabase.from("msg_client_users").select("client_id, role, msg_clients(id, name, slug, status)").eq("user_id", user.id);
+  const { data: clientAccess } = await supabase.from("msg_client_users").select("client_id, role, msg_clients(id, name, slug, status, ghl_location_id)").eq("user_id", user.id);
 
   if (!isAdmin && (!clientAccess || clientAccess.length === 0)) {
     return Response.redirect(new URL("/dashboard", request.url).toString());
@@ -120,6 +120,10 @@ export default function HubLayout() {
                 <NavLink prefetch="render" to={`/hub/${client.slug}/conversations`} style={({ isActive }) => navStyle(isActive)}>
                   <NavIcon d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" />
                   Conversations
+                </NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/escalations`} style={({ isActive }) => navStyle(isActive)}>
+                  <NavIcon d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  Escalations
                 </NavLink>
               </div>
             );

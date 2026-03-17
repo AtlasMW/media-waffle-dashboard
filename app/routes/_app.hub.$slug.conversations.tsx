@@ -6,7 +6,7 @@ export default function Conversations() {
   const data = allClientData[slug!] || {};
   const client = data.client || {};
   const logs = data.conversations?.logs || [];
-  const total = data.conversations?.total || 0;
+  const locationId = client.ghl_location_id || "";
 
   const actionColors: Record<string, { bg: string; color: string }> = {
     responded: { bg: "#e8f5e9", color: "#2e7d32" },
@@ -16,8 +16,13 @@ export default function Conversations() {
     ignored: { bg: "#f5f5f5", color: "#666" },
   };
 
+  function ghlLink(contactId: string) {
+    if (!contactId || !locationId) return null;
+    return `https://app.gohighlevel.com/v2/location/${locationId}/contacts/detail/${contactId}`;
+  }
+
   return (
-    <div style={{ maxWidth: 900 }}>
+    <div style={{ maxWidth: 960 }}>
       <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Conversations</h1>
       <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>{client.name}</p>
 
@@ -32,30 +37,41 @@ export default function Conversations() {
               <th style={th}>Inbound</th>
               <th style={th}>Outbound</th>
               <th style={th}>Action</th>
+              <th style={th}>GHL</th>
             </tr>
           </thead>
           <tbody>
-            {logs.map((log: any, i: number) => (
-              <tr key={log.id} style={{ background: i % 2 === 0 ? "white" : "#faf8f5" }}>
-                <td style={td}>{new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</td>
-                <td style={{ ...td, fontWeight: 600 }}>{log.contact_name || "-"}</td>
-                <td style={td}>{log.location_tag || "-"}</td>
-                <td style={td}>{(log.channel || "").replace("TYPE_", "")}</td>
-                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.inbound_text}>{log.inbound_text || "-"}</td>
-                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.outbound_text}>{log.outbound_text || "-"}</td>
-                <td style={td}>
-                  <span style={{
-                    padding: "3px 8px", borderRadius: 12, fontSize: 11, fontWeight: 600,
-                    background: actionColors[log.action]?.bg || "#f5f5f5",
-                    color: actionColors[log.action]?.color || "#666",
-                  }}>
-                    {log.action}
-                  </span>
-                </td>
-              </tr>
-            ))}
+            {logs.map((log: any, i: number) => {
+              const link = ghlLink(log.contact_id);
+              return (
+                <tr key={log.id} style={{ background: i % 2 === 0 ? "white" : "#faf8f5" }}>
+                  <td style={td}>{new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</td>
+                  <td style={{ ...td, fontWeight: 600 }}>{log.contact_name || "-"}</td>
+                  <td style={td}>{log.location_tag || "-"}</td>
+                  <td style={td}>{(log.channel || "").replace("TYPE_", "")}</td>
+                  <td style={{ ...td, maxWidth: 180, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.inbound_text}>{log.inbound_text || "-"}</td>
+                  <td style={{ ...td, maxWidth: 180, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.outbound_text}>{log.outbound_text || "-"}</td>
+                  <td style={td}>
+                    <span style={{
+                      padding: "3px 8px", borderRadius: 12, fontSize: 11, fontWeight: 600,
+                      background: actionColors[log.action]?.bg || "#f5f5f5",
+                      color: actionColors[log.action]?.color || "#666",
+                    }}>
+                      {log.action}
+                    </span>
+                  </td>
+                  <td style={td}>
+                    {link ? (
+                      <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: "#5b9ea6", fontSize: 12, fontWeight: 600, textDecoration: "none" }}>
+                        Open
+                      </a>
+                    ) : "-"}
+                  </td>
+                </tr>
+              );
+            })}
             {logs.length === 0 && (
-              <tr><td colSpan={7} style={{ ...td, textAlign: "center", color: "#8a8478", padding: 40 }}>No conversations yet</td></tr>
+              <tr><td colSpan={8} style={{ ...td, textAlign: "center", color: "#8a8478", padding: 40 }}>No conversations yet</td></tr>
             )}
           </tbody>
         </table>

@@ -23,6 +23,7 @@ export default [
       route(":slug/locations", "routes/_app.hub.$slug.locations.tsx"),
       route(":slug/services", "routes/_app.hub.$slug.services.tsx"),
       route(":slug/conversations", "routes/_app.hub.$slug.conversations.tsx"),
+      route(":slug/escalations", "routes/_app.hub.$slug.escalations.tsx"),
     ]),
   ]),
 ] satisfies RouteConfig;
