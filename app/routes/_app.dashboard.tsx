@@ -947,8 +947,8 @@ export default function ClientDashboard() {
               <select id="month-selector" onChange={() => (window as any)._dashboardChangeMonth?.()}></select>
               <button className="month-nav-btn" id="month-next" onClick={() => (window as any)._dashboardNavMonth?.(1)}>&#8594;</button>
             </div>
+            <span id="range-date-label" style={{fontSize:'12px',color:'#8a8478',marginRight:'10px',display:'none'}}></span>
             <div className="date-selector">
-              <span id="range-date-label" style={{fontSize:'12px',color:'#8a8478',marginRight:'8px',display:'none',background:'transparent'}}></span>
               <button className="date-btn" onClick={(e) => (window as any)._dashboardSetRange?.('90d', e.currentTarget)}>90D</button>
               <button className="date-btn active" onClick={(e) => (window as any)._dashboardSetRange?.('monthly', e.currentTarget)}>Monthly</button>
               <div className="custom-range-wrap">
