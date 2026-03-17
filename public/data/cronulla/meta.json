@@ -1,7 +1,7 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:31:41+10:00",
+  "lastUpdated": "2026-03-17T10:46:43+10:00",
   "agencyFees": {
     "2026-01": 1500,
     "2026-02": 1500
@@ -17,7 +17,7 @@
       "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
-      "leadConvPct": 0.16,
+      "leadConvPct": 27.88,
       "campaigns": [
         {
           "name": "OMG | Website purchases",
@@ -28,7 +28,7 @@
           "cpl": 169.29,
           "uniqueCtr": 3.27,
           "messages": 1,
-          "leadConvPct": 0.03
+          "leadConvPct": 0.99
         },
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -39,7 +39,7 @@
           "cpl": 38.21,
           "uniqueCtr": 0.03,
           "messages": 20,
-          "leadConvPct": 0.29
+          "leadConvPct": 933.33
         }
       ],
       "offers": [
@@ -218,7 +218,7 @@
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 0.54,
+      "leadConvPct": 822.22,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -229,7 +229,7 @@
           "cpl": 53.23,
           "uniqueCtr": 0.02,
           "messages": 10,
-          "leadConvPct": 0.15
+          "leadConvPct": 650.0
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
@@ -240,7 +240,7 @@
           "cpl": 11.81,
           "uniqueCtr": 0.11,
           "messages": 34,
-          "leadConvPct": 0.93
+          "leadConvPct": 871.43
         }
       ],
       "offers": [
@@ -398,6 +398,96 @@
     }
   },
   "daily": [
+    {
+      "date": "2026-01-01",
+      "spend": 33.54,
+      "impressions": 1718,
+      "reach": 1103,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 1.72,
+      "cpm": 19.53
+    },
+    {
+      "date": "2026-01-02",
+      "spend": 39.43,
+      "impressions": 1902,
+      "reach": 1131,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 1.68,
+      "cpm": 20.74
+    },
+    {
+      "date": "2026-01-03",
+      "spend": 40.39,
+      "impressions": 1778,
+      "reach": 1105,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 2.08,
+      "cpm": 22.72
+    },
+    {
+      "date": "2026-01-04",
+      "spend": 40.53,
+      "impressions": 1851,
+      "reach": 1068,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 3.46,
+      "cpm": 21.9
+    },
+    {
+      "date": "2026-01-05",
+      "spend": 15.39,
+      "impressions": 668,
+      "reach": 463,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0.65,
+      "cpm": 23.05
+    },
+    {
+      "date": "2026-01-06",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 1,
+      "messages": 1,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
+    {
+      "date": "2026-01-07",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
+    {
+      "date": "2026-01-08",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
+    {
+      "date": "2026-01-09",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 0,
+      "messages": 0,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
     {
       "date": "2026-01-12",
       "spend": 46.69,
@@ -1196,8 +1286,5 @@
         "leads": 4
       }
     }
-  },
-  "adsStartDate": "2026-01-12",
-  "ltv": 1637,
-  "ltvDescription": "The estimated lifetime value of a customer based on average LTV data from Phorest reports. Currently estimated at ~$1,637 per client."
+  }
 }

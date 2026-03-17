@@ -1,7 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T20:32:40+10:00",
+  "lastUpdated": "2026-03-17T10:46:26+10:00",
   "agencyFees": {
     "2025-07": 950,
     "2025-08": 950,
@@ -23,7 +23,7 @@
       "costPerMessage": 26.13,
       "uniqueCtr": 0.08,
       "cpm": 24.44,
-      "leadConvPct": 0.23,
+      "leadConvPct": 440.0,
       "campaigns": [
         {
           "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT",
@@ -34,7 +34,7 @@
           "cpl": 19.39,
           "uniqueCtr": 0.0,
           "messages": 0,
-          "leadConvPct": 0.11
+          "leadConvPct": 0
         },
         {
           "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
@@ -45,7 +45,7 @@
           "cpl": 15.25,
           "uniqueCtr": 0.08,
           "messages": 13,
-          "leadConvPct": 0.36
+          "leadConvPct": 420.0
         }
       ],
       "offers": [
@@ -191,7 +191,7 @@
       "costPerMessage": 11.78,
       "uniqueCtr": 0.09,
       "cpm": 15.34,
-      "leadConvPct": 0.43,
+      "leadConvPct": 635.71,
       "campaigns": [
         {
           "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
@@ -202,7 +202,7 @@
           "cpl": 18.97,
           "uniqueCtr": 0.0,
           "messages": 5,
-          "leadConvPct": 0.26
+          "leadConvPct": 0
         },
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -213,7 +213,7 @@
           "cpl": 5.98,
           "uniqueCtr": 0.11,
           "messages": 49,
-          "leadConvPct": 0.61
+          "leadConvPct": 578.57
         }
       ],
       "offers": [
@@ -364,7 +364,7 @@
       "costPerMessage": 12.61,
       "uniqueCtr": 0.07,
       "cpm": 13.35,
-      "leadConvPct": 0.58,
+      "leadConvPct": 835.71,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -375,7 +375,7 @@
           "cpl": 6.9,
           "uniqueCtr": 0.07,
           "messages": 64,
-          "leadConvPct": 0.58
+          "leadConvPct": 835.71
         }
       ],
       "offers": [
@@ -514,7 +514,7 @@
       "costPerMessage": 9.62,
       "uniqueCtr": 0.08,
       "cpm": 12.2,
-      "leadConvPct": 0.63,
+      "leadConvPct": 789.47,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -525,7 +525,7 @@
           "cpl": 5.58,
           "uniqueCtr": 0.08,
           "messages": 87,
-          "leadConvPct": 0.63
+          "leadConvPct": 789.47
         }
       ],
       "offers": [
@@ -664,7 +664,7 @@
       "costPerMessage": 7.07,
       "uniqueCtr": 0.03,
       "cpm": 14.12,
-      "leadConvPct": 0.46,
+      "leadConvPct": 1800.0,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -675,7 +675,7 @@
           "cpl": 7.53,
           "uniqueCtr": 0.03,
           "messages": 115,
-          "leadConvPct": 0.46
+          "leadConvPct": 1800.0
         }
       ],
       "offers": [
@@ -814,7 +814,7 @@
       "costPerMessage": 6.17,
       "uniqueCtr": 0.02,
       "cpm": 12.52,
-      "leadConvPct": 0.52,
+      "leadConvPct": 3125.0,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -825,7 +825,7 @@
           "cpl": 6.66,
           "uniqueCtr": 0.02,
           "messages": 135,
-          "leadConvPct": 0.52
+          "leadConvPct": 3125.0
         }
       ],
       "offers": [
@@ -964,7 +964,7 @@
       "costPerMessage": 7.65,
       "uniqueCtr": 0.1,
       "cpm": 9.99,
-      "leadConvPct": 0.1,
+      "leadConvPct": 296.83,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -975,7 +975,7 @@
           "cpl": 4.96,
           "uniqueCtr": 0.03,
           "messages": 142,
-          "leadConvPct": 0.57
+          "leadConvPct": 1650.0
         },
         {
           "name": "inbox",
@@ -986,7 +986,7 @@
           "cpl": 64.0,
           "uniqueCtr": 0.15,
           "messages": 38,
-          "leadConvPct": 0.05
+          "leadConvPct": 30.43
         },
         {
           "name": "inbox - all review",
@@ -997,7 +997,7 @@
           "cpl": 17.32,
           "uniqueCtr": 0.14,
           "messages": 27,
-          "leadConvPct": 0.12
+          "leadConvPct": 86.67
         },
         {
           "name": "Reach",
@@ -1019,7 +1019,7 @@
           "cpl": 87.52,
           "uniqueCtr": 0.49,
           "messages": 6,
-          "leadConvPct": 0.05
+          "leadConvPct": 11.11
         },
         {
           "name": "inbox - Saturday vibes \ud83d\ude0d\ud83d\udc96\ud83d\udc95",
@@ -1030,7 +1030,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 9,
-          "leadConvPct": 0.0
+          "leadConvPct": 0
         },
         {
           "name": "inbox - \u0e23\u0e31\u0e01\u0e29\u0e32\u0e2a\u0e34\u0e27\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e27\u0e34\u0e18\u0e35 \u0e1c\u0e34\u0e27\u0e14\u0e35\u0e02\u0e36\u0e49\u0e19\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96",
@@ -1041,7 +1041,7 @@
           "cpl": 53.63,
           "uniqueCtr": 0.25,
           "messages": 4,
-          "leadConvPct": 0.08
+          "leadConvPct": 33.33
         },
         {
           "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96",
@@ -1052,7 +1052,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 1,
-          "leadConvPct": 0.0
+          "leadConvPct": 0
         },
         {
           "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
@@ -1237,7 +1237,7 @@
       "costPerMessage": 6.83,
       "uniqueCtr": 0.08,
       "cpm": 11.96,
-      "leadConvPct": 0.25,
+      "leadConvPct": 645.45,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -1248,7 +1248,7 @@
           "cpl": 5.69,
           "uniqueCtr": 0.01,
           "messages": 127,
-          "leadConvPct": 0.53
+          "leadConvPct": 3900.0
         },
         {
           "name": "inbox - \ud83d\udd25HOT DEAL! Triple the Glow for only $159\u203c\ufe0f",
@@ -1259,7 +1259,7 @@
           "cpl": 43.68,
           "uniqueCtr": 0.87,
           "messages": 12,
-          "leadConvPct": 0.12
+          "leadConvPct": 13.64
         },
         {
           "name": "inbox - Saturday vibes \ud83d\ude0d\ud83d\udc96\ud83d\udc95",
@@ -1270,7 +1270,7 @@
           "cpl": 79.91,
           "uniqueCtr": 0.1,
           "messages": 8,
-          "leadConvPct": 0.03
+          "leadConvPct": 25.0
         },
         {
           "name": "inbox - \u0e23\u0e35\u0e27\u0e34\u0e27\u0e08\u0e32\u0e01\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e08\u0e23\u0e34\u0e07 \u2728\ud83d\udc96 - \u0e2a\u0e33\u0e40\u0e19\u0e32",
@@ -1281,7 +1281,7 @@
           "cpl": 32.32,
           "uniqueCtr": 0.07,
           "messages": 19,
-          "leadConvPct": 0.13
+          "leadConvPct": 200.0
         },
         {
           "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
@@ -1292,7 +1292,7 @@
           "cpl": 8.37,
           "uniqueCtr": 0.01,
           "messages": 89,
-          "leadConvPct": 0.45
+          "leadConvPct": 4400.0
         }
       ],
       "offers": [
@@ -1311,7 +1311,58 @@
           "campaignPattern": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)"
         }
       ],
-      "ads": [],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 294.69,
+          "leads": 53,
+          "cpl": 5.56,
+          "uniqueCtr": 0.0,
+          "frequency": 2.29
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 262.1,
+          "leads": 45,
+          "cpl": 5.82,
+          "uniqueCtr": 0.01,
+          "frequency": 1.79
+        },
+        {
+          "adName": "OFFER 3 - IMG 3| H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 101.69,
+          "leads": 15,
+          "cpl": 6.78,
+          "uniqueCtr": 0.0,
+          "frequency": 1.76
+        },
+        {
+          "adName": "OFFER 3 - IMG 1 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 130.7,
+          "leads": 19,
+          "cpl": 6.88,
+          "uniqueCtr": 0.02,
+          "frequency": 1.68
+        },
+        {
+          "adName": "OFFER 3 - IMG 3 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 76.34,
+          "leads": 9,
+          "cpl": 8.48,
+          "uniqueCtr": 0.0,
+          "frequency": 1.59
+        }
+      ],
       "demographics": [
         {
           "age": "18-24",
@@ -5048,8 +5099,5 @@
         "leads": 5
       }
     }
-  },
-  "adsStartDate": "2025-07-22",
-  "ltv": 827,
-  "ltvDescription": "The estimated lifetime value of a customer based on average revenue data from Timely reports."
+  }
 }

@@ -284,6 +284,7 @@ function getMonthLabel(mk) { var p=mk.split('-').map(Number); return new Date(p[
 function fmtPw(n) { return Math.round(n)+'%'; }
 function fmtN(n) { if(n>=1000000) return (n/1000000).toFixed(1)+'M'; if(n>=1000) return (n/1000).toFixed(1)+'K'; return n.toString(); }
 function parseLocalDate(s) { if(!s) return new Date(NaN); if(s.indexOf('-')>-1){ var p=s.split('-').map(Number); return new Date(p[0],p[1]-1,p[2]||1); } var d=new Date(s); if(!isNaN(d.getTime())) return d; return new Date(NaN); }
+function toISO(s) { var d=parseLocalDate(s); if(isNaN(d.getTime())) return ''; return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
 function fmtDate(d) { if(!d) return '--'; if(typeof d==='string') d=parseLocalDate(d); if(isNaN(d.getTime())) return '--'; var dd=String(d.getDate()).padStart(2,'0'); var mm=String(d.getMonth()+1).padStart(2,'0'); return dd+'/'+mm+'/'+d.getFullYear(); }
 function fmtDateShort(d) { if(typeof d==='string') d=parseLocalDate(d); var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate()+' '+months[d.getMonth()]; }
 function fmtBucketLabel(startDate, endDate) { var s=typeof startDate==='string'?parseLocalDate(startDate):startDate; var e=typeof endDate==='string'?parseLocalDate(endDate):endDate; var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; if(s.getMonth()===e.getMonth()) return s.getDate()+'-'+e.getDate()+' '+months[s.getMonth()]; return s.getDate()+' '+months[s.getMonth()]+' - '+e.getDate()+' '+months[e.getMonth()]; }
@@ -345,7 +346,7 @@ function getDailyInRange(range) {
 function getLeadsInRange(range) {
   var dr = getDateRange(range);
   if (!dr || !leadsData.allLeads) return [];
-  return leadsData.allLeads.filter(function(l){ return l.date >= dr.start && l.date <= dr.end; });
+  return leadsData.allLeads.filter(function(l){ var iso = toISO(l.date); return iso && iso >= dr.start && iso <= dr.end; });
 }
 
 function aggregateDaily(days) {
@@ -457,7 +458,7 @@ function render() {
       var prevStartStr = prevStart.toISOString().slice(0,10);
       var prevEndStr = prevEnd.toISOString().slice(0,10);
       var prevDays = (metaData.daily||[]).filter(function(d){ return d.date >= prevStartStr && d.date <= prevEndStr; });
-      var prevLeads = (leadsData.allLeads||[]).filter(function(ld){ return ld.date >= prevStartStr && ld.date <= prevEndStr; });
+      var prevLeads = (leadsData.allLeads||[]).filter(function(ld){ var iso=toISO(ld.date); return iso && iso >= prevStartStr && iso <= prevEndStr; });
       pm = aggregateDaily(prevDays);
       pl = aggregateLeads(prevLeads);
     }
