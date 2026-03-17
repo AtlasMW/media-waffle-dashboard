@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T11:18:43+10:00",
+  "lastUpdated": "2026-03-17T11:30:16+10:00",
   "agencyFees": {
     "2025-10": 1500,
     "2025-11": 1500,
@@ -20,7 +20,9 @@
       "costPerMessage": 7.39,
       "uniqueCtr": 0.28,
       "cpm": 15.95,
-      "leadConvPct": 1.28,
+      "linkClicks": 636,
+      "cpc": 0.89,
+      "leadConvPct": 18.87,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 1 - GRAND OPENING",
@@ -31,7 +33,9 @@
           "cpl": 4.74,
           "uniqueCtr": 0.28,
           "messages": 77,
-          "leadConvPct": 1.28
+          "linkClicks": 636,
+          "cpc": 0.89,
+          "leadConvPct": 18.87
         }
       ],
       "offers": [
@@ -180,7 +184,9 @@
       "costPerMessage": 22.61,
       "uniqueCtr": 0.12,
       "cpm": 28.89,
-      "leadConvPct": 0.4,
+      "linkClicks": 156,
+      "cpc": 2.46,
+      "leadConvPct": 10.26,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 3 - Face Series",
@@ -191,7 +197,9 @@
           "cpl": 29.41,
           "uniqueCtr": 0.03,
           "messages": 13,
-          "leadConvPct": 0.31
+          "linkClicks": 122,
+          "cpc": 2.17,
+          "leadConvPct": 7.38
         },
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -202,7 +210,9 @@
           "cpl": 17.09,
           "uniqueCtr": 0.21,
           "messages": 4,
-          "leadConvPct": 0.48
+          "linkClicks": 34,
+          "cpc": 3.52,
+          "leadConvPct": 20.59
         }
       ],
       "offers": [
@@ -221,7 +231,58 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [],
+      "ads": [
+        {
+          "adName": "IMG 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 7.46,
+          "leads": 1,
+          "cpl": 7.46,
+          "uniqueCtr": 0.0,
+          "frequency": 1.33
+        },
+        {
+          "adName": "VIDEO 1 | H1 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
+          "spend": 10.66,
+          "leads": 1,
+          "cpl": 10.66,
+          "uniqueCtr": 0.0,
+          "frequency": 1.23
+        },
+        {
+          "adName": "VIDEO 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
+          "spend": 11.84,
+          "leads": 1,
+          "cpl": 11.84,
+          "uniqueCtr": 0.0,
+          "frequency": 1.36
+        },
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 54.99,
+          "leads": 3,
+          "cpl": 18.33,
+          "uniqueCtr": 0.11,
+          "frequency": 1.81
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 57.18,
+          "leads": 3,
+          "cpl": 19.06,
+          "uniqueCtr": 0.21,
+          "frequency": 1.73
+        }
+      ],
       "demographics": [
         {
           "age": "18-24",
@@ -307,7 +368,9 @@
       "costPerMessage": 19.57,
       "uniqueCtr": 0.04,
       "cpm": 19.04,
-      "leadConvPct": 0.41,
+      "linkClicks": 345,
+      "cpc": 2.21,
+      "leadConvPct": 10.72,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -318,7 +381,9 @@
           "cpl": 20.63,
           "uniqueCtr": 0.04,
           "messages": 39,
-          "leadConvPct": 0.41
+          "linkClicks": 345,
+          "cpc": 2.21,
+          "leadConvPct": 10.72
         }
       ],
       "offers": [
@@ -330,7 +395,58 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [],
+      "ads": [
+        {
+          "adName": "IMG 2 | H2 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 21.88,
+          "leads": 3,
+          "cpl": 7.29,
+          "uniqueCtr": 0.0,
+          "frequency": 1.46
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 90.54,
+          "leads": 6,
+          "cpl": 15.09,
+          "uniqueCtr": 0.05,
+          "frequency": 2.71
+        },
+        {
+          "adName": "IMG 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 33.46,
+          "leads": 2,
+          "cpl": 16.73,
+          "uniqueCtr": 0.0,
+          "frequency": 2.07
+        },
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 494.1,
+          "leads": 24,
+          "cpl": 20.59,
+          "uniqueCtr": 0.04,
+          "frequency": 3.34
+        },
+        {
+          "adName": "IMG 3 | H2 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 49.46,
+          "leads": 1,
+          "cpl": 49.46,
+          "uniqueCtr": 0.0,
+          "frequency": 1.59
+        }
+      ],
       "demographics": [
         {
           "age": "18-24",
@@ -421,7 +537,9 @@
       "costPerMessage": 19.84,
       "uniqueCtr": 0.03,
       "cpm": 13.99,
-      "leadConvPct": 0.13,
+      "linkClicks": 71,
+      "cpc": 1.96,
+      "leadConvPct": 7.04,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -432,7 +550,9 @@
           "cpl": 27.77,
           "uniqueCtr": 0.03,
           "messages": 7,
-          "leadConvPct": 0.13
+          "linkClicks": 71,
+          "cpc": 1.96,
+          "leadConvPct": 7.04
         }
       ],
       "offers": [
@@ -444,7 +564,28 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [],
+      "ads": [
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 40.43,
+          "leads": 2,
+          "cpl": 20.21,
+          "uniqueCtr": 0.0,
+          "frequency": 1.65
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 73.23,
+          "leads": 3,
+          "cpl": 24.41,
+          "uniqueCtr": 0.05,
+          "frequency": 2.37
+        }
+      ],
       "demographics": [
         {
           "age": "18-24",
@@ -530,7 +671,9 @@
       "costPerMessage": 15.29,
       "uniqueCtr": 0.01,
       "cpm": 17.47,
-      "leadConvPct": 0.33,
+      "linkClicks": 246,
+      "cpc": 2.3,
+      "leadConvPct": 13.01,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 5 - Love Glow",
@@ -541,7 +684,9 @@
           "cpl": 22.12,
           "uniqueCtr": 0.01,
           "messages": 22,
-          "leadConvPct": 0.25
+          "linkClicks": 182,
+          "cpc": 2.43,
+          "leadConvPct": 10.99
         },
         {
           "name": "LEADS // CBO // OFFER 6 BROWS",
@@ -552,7 +697,9 @@
           "cpl": 10.29,
           "uniqueCtr": 0.0,
           "messages": 15,
-          "leadConvPct": 0.42
+          "linkClicks": 64,
+          "cpc": 1.93,
+          "leadConvPct": 18.75
         }
       ],
       "offers": [
@@ -712,6 +859,7 @@
       "reach": 1442,
       "leads": 9,
       "messages": 9,
+      "linkClicks": 44,
       "uniqueCtr": 0.35,
       "cpm": 21.03
     },
@@ -722,6 +870,7 @@
       "reach": 478,
       "leads": 5,
       "messages": 2,
+      "linkClicks": 30,
       "uniqueCtr": 0.42,
       "cpm": 14.12
     },
@@ -732,6 +881,7 @@
       "reach": 1386,
       "leads": 6,
       "messages": 3,
+      "linkClicks": 54,
       "uniqueCtr": 0.0,
       "cpm": 14.53
     },
@@ -742,6 +892,7 @@
       "reach": 1695,
       "leads": 8,
       "messages": 4,
+      "linkClicks": 38,
       "uniqueCtr": 0.24,
       "cpm": 14.05
     },
@@ -752,6 +903,7 @@
       "reach": 1432,
       "leads": 5,
       "messages": 3,
+      "linkClicks": 33,
       "uniqueCtr": 0.0,
       "cpm": 14.28
     },
@@ -762,6 +914,7 @@
       "reach": 1301,
       "leads": 5,
       "messages": 4,
+      "linkClicks": 35,
       "uniqueCtr": 0.08,
       "cpm": 15.03
     },
@@ -772,6 +925,7 @@
       "reach": 1218,
       "leads": 7,
       "messages": 6,
+      "linkClicks": 31,
       "uniqueCtr": 0.0,
       "cpm": 16.44
     },
@@ -782,6 +936,7 @@
       "reach": 1357,
       "leads": 8,
       "messages": 5,
+      "linkClicks": 37,
       "uniqueCtr": 0.07,
       "cpm": 15.44
     },
@@ -792,6 +947,7 @@
       "reach": 1472,
       "leads": 7,
       "messages": 4,
+      "linkClicks": 29,
       "uniqueCtr": 0.0,
       "cpm": 14.72
     },
@@ -802,6 +958,7 @@
       "reach": 1545,
       "leads": 5,
       "messages": 1,
+      "linkClicks": 36,
       "uniqueCtr": 0.0,
       "cpm": 15.47
     },
@@ -812,6 +969,7 @@
       "reach": 1702,
       "leads": 7,
       "messages": 4,
+      "linkClicks": 25,
       "uniqueCtr": 0.0,
       "cpm": 14.26
     },
@@ -822,6 +980,7 @@
       "reach": 1505,
       "leads": 6,
       "messages": 3,
+      "linkClicks": 31,
       "uniqueCtr": 0.13,
       "cpm": 14.1
     },
@@ -832,6 +991,7 @@
       "reach": 1390,
       "leads": 7,
       "messages": 5,
+      "linkClicks": 32,
       "uniqueCtr": 0.14,
       "cpm": 16.07
     },
@@ -842,6 +1002,7 @@
       "reach": 1231,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 18,
       "uniqueCtr": 0.0,
       "cpm": 17.19
     },
@@ -852,6 +1013,7 @@
       "reach": 1143,
       "leads": 5,
       "messages": 5,
+      "linkClicks": 27,
       "uniqueCtr": 0.17,
       "cpm": 17.72
     },
@@ -862,6 +1024,7 @@
       "reach": 1366,
       "leads": 3,
       "messages": 2,
+      "linkClicks": 16,
       "uniqueCtr": 0.07,
       "cpm": 16.95
     },
@@ -872,6 +1035,7 @@
       "reach": 1522,
       "leads": 8,
       "messages": 2,
+      "linkClicks": 29,
       "uniqueCtr": 0.07,
       "cpm": 16.87
     },
@@ -882,6 +1046,7 @@
       "reach": 1370,
       "leads": 5,
       "messages": 4,
+      "linkClicks": 23,
       "uniqueCtr": 0.15,
       "cpm": 15.66
     },
@@ -892,6 +1057,7 @@
       "reach": 1392,
       "leads": 4,
       "messages": 2,
+      "linkClicks": 20,
       "uniqueCtr": 0.07,
       "cpm": 16.31
     },
@@ -902,6 +1068,7 @@
       "reach": 1468,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 23,
       "uniqueCtr": 0.07,
       "cpm": 16.6
     },
@@ -912,6 +1079,7 @@
       "reach": 1299,
       "leads": 7,
       "messages": 6,
+      "linkClicks": 22,
       "uniqueCtr": 0.08,
       "cpm": 18.0
     },
@@ -922,6 +1090,7 @@
       "reach": 374,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.0,
       "cpm": 20.34
     },
@@ -932,6 +1101,7 @@
       "reach": 0,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -942,6 +1112,7 @@
       "reach": 469,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 23.42
     },
@@ -952,6 +1123,7 @@
       "reach": 656,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 22,
       "uniqueCtr": 0.0,
       "cpm": 25.59
     },
@@ -962,6 +1134,7 @@
       "reach": 731,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 18,
       "uniqueCtr": 0.0,
       "cpm": 26.49
     },
@@ -972,6 +1145,7 @@
       "reach": 1018,
       "leads": 1,
       "messages": 3,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 22.61
     },
@@ -982,6 +1156,7 @@
       "reach": 864,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 26.96
     },
@@ -992,6 +1167,7 @@
       "reach": 724,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 18,
       "uniqueCtr": 0.0,
       "cpm": 29.3
     },
@@ -1002,6 +1178,7 @@
       "reach": 754,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 9,
       "uniqueCtr": 0.13,
       "cpm": 28.71
     },
@@ -1012,6 +1189,7 @@
       "reach": 928,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 26.08
     },
@@ -1022,6 +1200,7 @@
       "reach": 803,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 31.47
     },
@@ -1032,6 +1211,7 @@
       "reach": 165,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 2,
       "uniqueCtr": 0.0,
       "cpm": 48.52
     },
@@ -1042,6 +1222,7 @@
       "reach": 313,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 1,
       "uniqueCtr": 0.0,
       "cpm": 36.29
     },
@@ -1052,6 +1233,7 @@
       "reach": 515,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 8,
       "uniqueCtr": 0.19,
       "cpm": 35.36
     },
@@ -1062,6 +1244,7 @@
       "reach": 743,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 9,
       "uniqueCtr": 0.13,
       "cpm": 33.71
     },
@@ -1072,6 +1255,7 @@
       "reach": 898,
       "leads": 4,
       "messages": 2,
+      "linkClicks": 16,
       "uniqueCtr": 0.11,
       "cpm": 32.21
     },
@@ -1082,6 +1266,7 @@
       "reach": 947,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 27.51
     },
@@ -1092,6 +1277,7 @@
       "reach": 1046,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 26.09
     },
@@ -1102,6 +1288,7 @@
       "reach": 950,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 23.21
     },
@@ -1112,6 +1299,7 @@
       "reach": 985,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 21.51
     },
@@ -1122,6 +1310,7 @@
       "reach": 963,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 5,
       "uniqueCtr": 0.0,
       "cpm": 23.22
     },
@@ -1132,6 +1321,7 @@
       "reach": 850,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 7,
       "uniqueCtr": 0.0,
       "cpm": 21.4
     },
@@ -1142,6 +1332,7 @@
       "reach": 1316,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 19.22
     },
@@ -1152,6 +1343,7 @@
       "reach": 1058,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 10,
       "uniqueCtr": 0.0,
       "cpm": 20.82
     },
@@ -1162,6 +1354,7 @@
       "reach": 1046,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 20.36
     },
@@ -1172,6 +1365,7 @@
       "reach": 979,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 11,
       "uniqueCtr": 0.1,
       "cpm": 21.21
     },
@@ -1182,6 +1376,7 @@
       "reach": 1024,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 19.57
     },
@@ -1192,6 +1387,7 @@
       "reach": 1145,
       "leads": 4,
       "messages": 3,
+      "linkClicks": 10,
       "uniqueCtr": 0.09,
       "cpm": 17.86
     },
@@ -1202,6 +1398,7 @@
       "reach": 1147,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 18.44
     },
@@ -1212,6 +1409,7 @@
       "reach": 1245,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 10,
       "uniqueCtr": 0.0,
       "cpm": 19.86
     },
@@ -1222,6 +1420,7 @@
       "reach": 1378,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 17.23
     },
@@ -1232,6 +1431,7 @@
       "reach": 1220,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 16,
       "uniqueCtr": 0.08,
       "cpm": 17.9
     },
@@ -1242,6 +1442,7 @@
       "reach": 1013,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 10,
       "uniqueCtr": 0.0,
       "cpm": 19.42
     },
@@ -1252,6 +1453,7 @@
       "reach": 1258,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 16.39
     },
@@ -1262,6 +1464,7 @@
       "reach": 1074,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 18.75
     },
@@ -1272,6 +1475,7 @@
       "reach": 1157,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 21,
       "uniqueCtr": 0.0,
       "cpm": 16.3
     },
@@ -1282,6 +1486,7 @@
       "reach": 1539,
       "leads": 3,
       "messages": 2,
+      "linkClicks": 19,
       "uniqueCtr": 0.0,
       "cpm": 17.05
     },
@@ -1292,6 +1497,7 @@
       "reach": 1091,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 15,
       "uniqueCtr": 0.09,
       "cpm": 16.91
     },
@@ -1302,6 +1508,7 @@
       "reach": 769,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 10,
       "uniqueCtr": 0.0,
       "cpm": 15.38
     },
@@ -1312,6 +1519,7 @@
       "reach": 798,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 15.67
     },
@@ -1322,6 +1530,7 @@
       "reach": 713,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 15.7
     },
@@ -1332,6 +1541,7 @@
       "reach": 627,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 19.09
     },
@@ -1342,6 +1552,7 @@
       "reach": 592,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 16.13
     },
@@ -1352,6 +1563,7 @@
       "reach": 750,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 17.52
     },
@@ -1362,6 +1574,7 @@
       "reach": 685,
       "leads": 1,
       "messages": 0,
+      "linkClicks": 18,
       "uniqueCtr": 0.0,
       "cpm": 17.07
     },
@@ -1372,6 +1585,7 @@
       "reach": 716,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 14.86
     },
@@ -1382,6 +1596,7 @@
       "reach": 704,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 14.5
     },
@@ -1392,6 +1607,7 @@
       "reach": 893,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 5,
       "uniqueCtr": 0.0,
       "cpm": 12.25
     },
@@ -1402,6 +1618,7 @@
       "reach": 939,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 7,
       "uniqueCtr": 0.0,
       "cpm": 12.5
     },
@@ -1412,6 +1629,7 @@
       "reach": 837,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 12.86
     },
@@ -1422,6 +1640,7 @@
       "reach": 959,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 13.63
     },
@@ -1432,6 +1651,7 @@
       "reach": 403,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.0,
       "cpm": 14.23
     },
@@ -1442,6 +1662,7 @@
       "reach": 240,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.0,
       "cpm": 17.39
     },
@@ -1452,6 +1673,7 @@
       "reach": 301,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 1,
       "uniqueCtr": 0.0,
       "cpm": 13.37
     },
@@ -1462,6 +1684,7 @@
       "reach": 291,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 2,
       "uniqueCtr": 0.0,
       "cpm": 14.49
     },
@@ -1472,6 +1695,7 @@
       "reach": 268,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.0,
       "cpm": 15.29
     },
@@ -1482,6 +1706,7 @@
       "reach": 217,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 2,
       "uniqueCtr": 0.0,
       "cpm": 14.04
     },
@@ -1492,6 +1717,7 @@
       "reach": 337,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.0,
       "cpm": 14.79
     },
@@ -1502,6 +1728,7 @@
       "reach": 258,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 1,
       "uniqueCtr": 0.0,
       "cpm": 16.59
     },
@@ -1512,6 +1739,7 @@
       "reach": 225,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 16.59
     },
@@ -1522,6 +1750,7 @@
       "reach": 270,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 0,
       "uniqueCtr": 0.0,
       "cpm": 12.42
     },
@@ -1532,6 +1761,7 @@
       "reach": 230,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 5,
       "uniqueCtr": 0.43,
       "cpm": 16.89
     },
@@ -1542,6 +1772,7 @@
       "reach": 253,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 16.24
     },
@@ -1552,6 +1783,7 @@
       "reach": 211,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 15.17
     },
@@ -1562,6 +1794,7 @@
       "reach": 314,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 2,
       "uniqueCtr": 0.0,
       "cpm": 15.9
     },
@@ -1572,6 +1805,7 @@
       "reach": 328,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 4,
       "uniqueCtr": 0.0,
       "cpm": 13.57
     },
@@ -1582,6 +1816,7 @@
       "reach": 82,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 1,
       "uniqueCtr": 0.0,
       "cpm": 14.85
     },
@@ -1592,6 +1827,7 @@
       "reach": 657,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 5,
       "uniqueCtr": 0.0,
       "cpm": 18.88
     },
@@ -1602,6 +1838,7 @@
       "reach": 1164,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 25,
       "uniqueCtr": 0.09,
       "cpm": 20.69
     },
@@ -1612,6 +1849,7 @@
       "reach": 1322,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 17.15
     },
@@ -1622,6 +1860,7 @@
       "reach": 1177,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 21.01
     },
@@ -1632,6 +1871,7 @@
       "reach": 1380,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 9,
       "uniqueCtr": 0.0,
       "cpm": 21.33
     },
@@ -1642,6 +1882,7 @@
       "reach": 1196,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 21.41
     },
@@ -1652,6 +1893,7 @@
       "reach": 1595,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 23,
       "uniqueCtr": 0.0,
       "cpm": 19.3
     },
@@ -1662,6 +1904,7 @@
       "reach": 1545,
       "leads": 3,
       "messages": 4,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 20.08
     },
@@ -1672,6 +1915,7 @@
       "reach": 1758,
       "leads": 2,
       "messages": 3,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 17.41
     },
@@ -1682,6 +1926,7 @@
       "reach": 1868,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 21,
       "uniqueCtr": 0.0,
       "cpm": 15.49
     },
@@ -1692,6 +1937,7 @@
       "reach": 1520,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 16.06
     },
@@ -1702,6 +1948,7 @@
       "reach": 2750,
       "leads": 2,
       "messages": 3,
+      "linkClicks": 24,
       "uniqueCtr": 0.0,
       "cpm": 11.1
     },
@@ -1712,6 +1959,7 @@
       "reach": 1162,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 5,
       "uniqueCtr": 0.0,
       "cpm": 8.9
     },
@@ -1722,6 +1970,7 @@
       "reach": 0,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -1732,6 +1981,7 @@
       "reach": 753,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 22.48
     },
@@ -1742,6 +1992,7 @@
       "reach": 1105,
       "leads": 2,
       "messages": 3,
+      "linkClicks": 18,
       "uniqueCtr": 0.0,
       "cpm": 17.59
     },
@@ -1752,6 +2003,7 @@
       "reach": 1005,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 17.8
     },
@@ -1762,6 +2014,7 @@
       "reach": 1019,
       "leads": 3,
       "messages": 4,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 18.49
     },
@@ -1772,6 +2025,7 @@
       "reach": 982,
       "leads": 3,
       "messages": 4,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 19.05
     }

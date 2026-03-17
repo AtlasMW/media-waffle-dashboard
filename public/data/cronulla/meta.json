@@ -1,7 +1,7 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T11:17:05+10:00",
+  "lastUpdated": "2026-03-17T11:28:47+10:00",
   "agencyFees": {
     "2026-01": 1500,
     "2026-02": 1500
@@ -17,7 +17,9 @@
       "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
-      "leadConvPct": 0.16,
+      "linkClicks": 354,
+      "cpc": 2.26,
+      "leadConvPct": 8.19,
       "campaigns": [
         {
           "name": "OMG | Website purchases",
@@ -28,7 +30,9 @@
           "cpl": 169.29,
           "uniqueCtr": 3.27,
           "messages": 1,
-          "leadConvPct": 0.03
+          "linkClicks": 101,
+          "cpc": 1.08,
+          "leadConvPct": 0.99
         },
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -39,7 +43,9 @@
           "cpl": 38.21,
           "uniqueCtr": 0.03,
           "messages": 20,
-          "leadConvPct": 0.29
+          "linkClicks": 253,
+          "cpc": 2.73,
+          "leadConvPct": 11.07
         }
       ],
       "offers": [
@@ -218,7 +224,9 @@
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 0.54,
+      "linkClicks": 577,
+      "cpc": 1.58,
+      "leadConvPct": 12.82,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -229,7 +237,9 @@
           "cpl": 53.23,
           "uniqueCtr": 0.02,
           "messages": 10,
-          "leadConvPct": 0.15
+          "linkClicks": 160,
+          "cpc": 2.79,
+          "leadConvPct": 8.12
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
@@ -240,7 +250,9 @@
           "cpl": 11.81,
           "uniqueCtr": 0.11,
           "messages": 34,
-          "leadConvPct": 0.93
+          "linkClicks": 417,
+          "cpc": 1.11,
+          "leadConvPct": 14.63
         }
       ],
       "offers": [
@@ -405,6 +417,7 @@
       "reach": 1103,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 19,
       "uniqueCtr": 1.72,
       "cpm": 19.53
     },
@@ -415,6 +428,7 @@
       "reach": 1131,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 19,
       "uniqueCtr": 1.68,
       "cpm": 20.74
     },
@@ -425,6 +439,7 @@
       "reach": 1105,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 23,
       "uniqueCtr": 2.08,
       "cpm": 22.72
     },
@@ -435,6 +450,7 @@
       "reach": 1068,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 37,
       "uniqueCtr": 3.46,
       "cpm": 21.9
     },
@@ -445,6 +461,7 @@
       "reach": 463,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 3,
       "uniqueCtr": 0.65,
       "cpm": 23.05
     },
@@ -455,6 +472,7 @@
       "reach": 0,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -465,6 +483,7 @@
       "reach": 0,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -475,6 +494,7 @@
       "reach": 0,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -485,6 +505,7 @@
       "reach": 0,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 0,
       "uniqueCtr": 0,
       "cpm": 0.0
     },
@@ -495,6 +516,7 @@
       "reach": 1175,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 13,
       "uniqueCtr": 0.09,
       "cpm": 25.4
     },
@@ -505,6 +527,7 @@
       "reach": 1088,
       "leads": 1,
       "messages": 0,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 30.57
     },
@@ -515,6 +538,7 @@
       "reach": 1187,
       "leads": 2,
       "messages": 0,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 33.0
     },
@@ -525,6 +549,7 @@
       "reach": 1318,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 31.25
     },
@@ -535,6 +560,7 @@
       "reach": 1196,
       "leads": 3,
       "messages": 2,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 32.32
     },
@@ -545,6 +571,7 @@
       "reach": 1200,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 34.69
     },
@@ -555,6 +582,7 @@
       "reach": 1343,
       "leads": 3,
       "messages": 1,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 33.54
     },
@@ -565,6 +593,7 @@
       "reach": 1512,
       "leads": 3,
       "messages": 2,
+      "linkClicks": 9,
       "uniqueCtr": 0.07,
       "cpm": 30.05
     },
@@ -575,6 +604,7 @@
       "reach": 1333,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 32.29
     },
@@ -585,6 +615,7 @@
       "reach": 1368,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 28.44
     },
@@ -595,6 +626,7 @@
       "reach": 1374,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 19,
       "uniqueCtr": 0.07,
       "cpm": 30.23
     },
@@ -605,6 +637,7 @@
       "reach": 1442,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 7,
       "uniqueCtr": 0.0,
       "cpm": 30.66
     },
@@ -615,6 +648,7 @@
       "reach": 1324,
       "leads": 1,
       "messages": 0,
+      "linkClicks": 16,
       "uniqueCtr": 0.0,
       "cpm": 33.06
     },
@@ -625,6 +659,7 @@
       "reach": 1779,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 26.46
     },
@@ -635,6 +670,7 @@
       "reach": 1744,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 16,
       "uniqueCtr": 0.0,
       "cpm": 27.28
     },
@@ -645,6 +681,7 @@
       "reach": 1578,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 26.94
     },
@@ -655,6 +692,7 @@
       "reach": 1438,
       "leads": 1,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 29.2
     },
@@ -665,6 +703,7 @@
       "reach": 1446,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 27.31
     },
@@ -675,6 +714,7 @@
       "reach": 1408,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 16,
       "uniqueCtr": 0.0,
       "cpm": 27.05
     },
@@ -685,6 +725,7 @@
       "reach": 1410,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 27.71
     },
@@ -695,6 +736,7 @@
       "reach": 1830,
       "leads": 2,
       "messages": 1,
+      "linkClicks": 17,
       "uniqueCtr": 0.0,
       "cpm": 29.57
     },
@@ -705,6 +747,7 @@
       "reach": 1384,
       "leads": 2,
       "messages": 3,
+      "linkClicks": 14,
       "uniqueCtr": 0.07,
       "cpm": 30.88
     },
@@ -715,6 +758,7 @@
       "reach": 1145,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 30.94
     },
@@ -725,6 +769,7 @@
       "reach": 1131,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 16,
       "uniqueCtr": 0.0,
       "cpm": 31.03
     },
@@ -735,6 +780,7 @@
       "reach": 1131,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 30.72
     },
@@ -745,6 +791,7 @@
       "reach": 1071,
       "leads": 0,
       "messages": 1,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 31.11
     },
@@ -755,6 +802,7 @@
       "reach": 773,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 7,
       "uniqueCtr": 0.0,
       "cpm": 38.91
     },
@@ -765,6 +813,7 @@
       "reach": 1349,
       "leads": 1,
       "messages": 0,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 28.29
     },
@@ -775,6 +824,7 @@
       "reach": 1036,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 34.72
     },
@@ -785,6 +835,7 @@
       "reach": 972,
       "leads": 1,
       "messages": 1,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 33.76
     },
@@ -795,6 +846,7 @@
       "reach": 1550,
       "leads": 1,
       "messages": 3,
+      "linkClicks": 26,
       "uniqueCtr": 0.06,
       "cpm": 41.37
     },
@@ -805,6 +857,7 @@
       "reach": 1254,
       "leads": 9,
       "messages": 5,
+      "linkClicks": 26,
       "uniqueCtr": 0.0,
       "cpm": 40.67
     },
@@ -815,6 +868,7 @@
       "reach": 1688,
       "leads": 4,
       "messages": 2,
+      "linkClicks": 42,
       "uniqueCtr": 0.06,
       "cpm": 34.36
     },
@@ -825,6 +879,7 @@
       "reach": 1260,
       "leads": 7,
       "messages": 2,
+      "linkClicks": 23,
       "uniqueCtr": 0.08,
       "cpm": 35.22
     },
@@ -835,6 +890,7 @@
       "reach": 1569,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 37,
       "uniqueCtr": 0.06,
       "cpm": 32.57
     },
@@ -845,6 +901,7 @@
       "reach": 1670,
       "leads": 4,
       "messages": 2,
+      "linkClicks": 32,
       "uniqueCtr": 0.0,
       "cpm": 32.24
     },
@@ -855,6 +912,7 @@
       "reach": 1231,
       "leads": 3,
       "messages": 2,
+      "linkClicks": 25,
       "uniqueCtr": 0.0,
       "cpm": 36.15
     },
@@ -865,6 +923,7 @@
       "reach": 1049,
       "leads": 3,
       "messages": 3,
+      "linkClicks": 17,
       "uniqueCtr": 0.0,
       "cpm": 30.81
     },
@@ -875,6 +934,7 @@
       "reach": 932,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 34.95
     },
@@ -885,6 +945,7 @@
       "reach": 857,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 28,
       "uniqueCtr": 0.0,
       "cpm": 40.55
     },
@@ -895,6 +956,7 @@
       "reach": 912,
       "leads": 5,
       "messages": 1,
+      "linkClicks": 26,
       "uniqueCtr": 0.0,
       "cpm": 35.42
     },
@@ -905,6 +967,7 @@
       "reach": 1148,
       "leads": 6,
       "messages": 2,
+      "linkClicks": 30,
       "uniqueCtr": 0.09,
       "cpm": 33.56
     },
@@ -915,6 +978,7 @@
       "reach": 1173,
       "leads": 1,
       "messages": 2,
+      "linkClicks": 28,
       "uniqueCtr": 0.0,
       "cpm": 30.47
     },
@@ -925,6 +989,7 @@
       "reach": 912,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 37.11
     },
@@ -935,6 +1000,7 @@
       "reach": 934,
       "leads": 2,
       "messages": 0,
+      "linkClicks": 19,
       "uniqueCtr": 0.0,
       "cpm": 34.75
     },
@@ -945,6 +1011,7 @@
       "reach": 947,
       "leads": 4,
       "messages": 2,
+      "linkClicks": 23,
       "uniqueCtr": 0.32,
       "cpm": 37.85
     },
@@ -955,6 +1022,7 @@
       "reach": 972,
       "leads": 7,
       "messages": 3,
+      "linkClicks": 24,
       "uniqueCtr": 0.0,
       "cpm": 35.19
     },
@@ -965,6 +1033,7 @@
       "reach": 1056,
       "leads": 4,
       "messages": 1,
+      "linkClicks": 23,
       "uniqueCtr": 0.0,
       "cpm": 31.95
     }
