@@ -1,16 +1,7 @@
-import { useLoaderData, useFetcher } from "react-router";
+import { useOutletContext, useParams, useFetcher } from "react-router";
 import type { Route } from "./+types/_app.hub.$slug.faqs";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 import { useState } from "react";
-
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { supabase } = createSupabaseServerClient(request);
-  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
-  if (!client) throw new Response("Not found", { status: 404 });
-  const { data: faqs } = await supabase.from("msg_faqs").select("*").eq("client_id", client.id).order("times_used", { ascending: false });
-  const { data: suggested } = await supabase.from("msg_learned_patterns").select("*").eq("client_id", client.id).eq("status", "pending_review");
-  return { client, faqs: faqs || [], suggested: suggested || [] };
-}
 
 export async function action({ request, params }: Route.ActionArgs) {
   const { supabase } = createSupabaseServerClient(request);
@@ -55,20 +46,25 @@ export async function action({ request, params }: Route.ActionArgs) {
 }
 
 export default function FAQs() {
-  const { client, faqs, suggested } = useLoaderData<typeof loader>();
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const { slug } = useParams();
+  const data = allClientData[slug!] || {};
+  const client = data.client || {};
+  const faqs = data.faqs || [];
+  const suggested = data.suggested || [];
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
+
   return (
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>FAQs</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | {faqs.length} total, {faqs.filter((f: any) => f.is_active).length} active</p>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add FAQ"}</button>
       </div>
 
-      {/* AI Suggestions */}
       {suggested.length > 0 && (
         <div style={{ background: "#fffde7", borderRadius: 12, padding: 20, marginBottom: 20, border: "1px solid #fff9c4" }}>
           <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 16, margin: "0 0 12px", color: "#f57f17" }}>AI Suggested FAQs ({suggested.length})</h3>
@@ -100,12 +96,6 @@ export default function FAQs() {
           <fetcher.Form method="post" onSubmit={() => setShowAdd(false)}>
             <input type="hidden" name="intent" value="add" />
             <div style={{ marginBottom: 12 }}>
-              <label style={labelStyle}>Category</label>
-              <select name="category" style={inputStyle}>
-                {["general", "pricing", "services", "booking", "objections"].map(c => <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)}</option>)}
-              </select>
-            </div>
-            <div style={{ marginBottom: 12 }}>
               <label style={labelStyle}>Question</label>
               <input name="question" required style={inputStyle} />
             </div>
@@ -113,6 +103,7 @@ export default function FAQs() {
               <label style={labelStyle}>Answer</label>
               <textarea name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} />
             </div>
+            <input type="hidden" name="category" value="general" />
             <button type="submit" style={btnPrimary}>Save FAQ</button>
           </fetcher.Form>
         </div>
@@ -129,7 +120,7 @@ export default function FAQs() {
               <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
               <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
               <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                {faq.category} | Used {faq.times_used}x | v{faq.version}
+                Used {faq.times_used}x
                 {faq.source === "learned" && " | AI Learned"}
               </div>
             </div>

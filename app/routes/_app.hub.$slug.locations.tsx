@@ -1,15 +1,7 @@
-import { useLoaderData, useFetcher } from "react-router";
+import { useOutletContext, useParams, useFetcher } from "react-router";
 import type { Route } from "./+types/_app.hub.$slug.locations";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 import { useState } from "react";
-
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { supabase } = createSupabaseServerClient(request);
-  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
-  if (!client) throw new Response("Not found", { status: 404 });
-  const { data: locations } = await supabase.from("msg_locations").select("*").eq("client_id", client.id).order("name");
-  return { client, locations: locations || [] };
-}
 
 export async function action({ request, params }: Route.ActionArgs) {
   const { supabase } = createSupabaseServerClient(request);
@@ -17,7 +9,6 @@ export async function action({ request, params }: Route.ActionArgs) {
   const intent = form.get("intent");
   const { data: client } = await supabase.from("msg_clients").select("id").eq("slug", params.slug).single();
   if (!client) return {};
-
   if (intent === "add") {
     await supabase.from("msg_locations").insert({
       client_id: client.id, name: form.get("name"), tag: form.get("tag"),
@@ -36,7 +27,11 @@ export async function action({ request, params }: Route.ActionArgs) {
 }
 
 export default function Locations() {
-  const { client, locations } = useLoaderData<typeof loader>();
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const { slug } = useParams();
+  const data = allClientData[slug!] || {};
+  const client = data.client || {};
+  const locations = data.locations || [];
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
 
@@ -45,7 +40,7 @@ export default function Locations() {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Locations</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | {locations.length} total</p>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btn}>{showAdd ? "Cancel" : "Add Location"}</button>
       </div>

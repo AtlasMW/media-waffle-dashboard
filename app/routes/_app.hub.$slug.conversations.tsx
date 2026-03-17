@@ -1,29 +1,12 @@
-import { useLoaderData } from "react-router";
-import type { Route } from "./+types/_app.hub.$slug.conversations";
-import { createSupabaseServerClient } from "../lib/supabase.server";
-
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { supabase } = createSupabaseServerClient(request);
-  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
-  if (!client) throw new Response("Not found", { status: 404 });
-  
-  const url = new URL(request.url);
-  const page = parseInt(url.searchParams.get("page") || "1");
-  const limit = 30;
-  const offset = (page - 1) * limit;
-
-  const { data: logs, count } = await supabase.from("msg_conversation_logs")
-    .select("*", { count: "exact" })
-    .eq("client_id", client.id)
-    .order("created_at", { ascending: false })
-    .range(offset, offset + limit - 1);
-
-  return { client, logs: logs || [], total: count || 0, page, limit };
-}
+import { useOutletContext, useParams } from "react-router";
 
 export default function Conversations() {
-  const { client, logs, total, page, limit } = useLoaderData<typeof loader>();
-  const totalPages = Math.ceil(total / limit);
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const { slug } = useParams();
+  const data = allClientData[slug!] || {};
+  const client = data.client || {};
+  const logs = data.conversations?.logs || [];
+  const total = data.conversations?.total || 0;
 
   const actionColors: Record<string, { bg: string; color: string }> = {
     responded: { bg: "#e8f5e9", color: "#2e7d32" },
@@ -36,7 +19,7 @@ export default function Conversations() {
   return (
     <div style={{ maxWidth: 900 }}>
       <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Conversations</h1>
-      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>{client.name} | {total} total</p>
+      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>{client.name}</p>
 
       <div style={{ background: "white", borderRadius: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, fontFamily: "'Montserrat', sans-serif" }}>
@@ -77,18 +60,9 @@ export default function Conversations() {
           </tbody>
         </table>
       </div>
-
-      {totalPages > 1 && (
-        <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 20 }}>
-          {page > 1 && <a href={`?page=${page - 1}`} style={pageBtn}>Previous</a>}
-          <span style={{ padding: "8px 16px", fontSize: 13, color: "#8a8478" }}>Page {page} of {totalPages}</span>
-          {page < totalPages && <a href={`?page=${page + 1}`} style={pageBtn}>Next</a>}
-        </div>
-      )}
     </div>
   );
 }
 
 const th: React.CSSProperties = { padding: "12px 14px", textAlign: "left", fontSize: 11, fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.5 };
 const td: React.CSSProperties = { padding: "10px 14px", borderBottom: "1px solid #eee8dc", fontSize: 13 };
-const pageBtn: React.CSSProperties = { padding: "8px 16px", background: "#3b3b3b", color: "#f5f0e8", borderRadius: 6, textDecoration: "none", fontSize: 12, fontWeight: 600 };

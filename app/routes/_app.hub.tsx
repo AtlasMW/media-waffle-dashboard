@@ -7,18 +7,44 @@ export async function loader({ request }: Route.LoaderArgs) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return Response.redirect(new URL("/login", request.url).toString());
 
-  // Check if user is admin or has messaging client access
   const { data: profile } = await supabase.from("profiles").select("role").eq("id", user.id).single();
   const isAdmin = profile?.role === "admin";
 
-  // Get messaging clients this user has access to
   const { data: clientAccess } = await supabase.from("msg_client_users").select("client_id, role, msg_clients(id, name, slug, status)").eq("user_id", user.id);
 
   if (!isAdmin && (!clientAccess || clientAccess.length === 0)) {
     return Response.redirect(new URL("/dashboard", request.url).toString());
   }
 
-  return { isAdmin, clients: clientAccess || [], userId: user.id };
+  // Pre-load ALL data for every messaging client so child routes are instant
+  const allClientData: Record<string, any> = {};
+  const clientList = (clientAccess || []).map((ca: any) => ca.msg_clients).filter(Boolean);
+
+  for (const client of clientList) {
+    const [brand, offers, faqs, locations, services, blocked, suggested, convLogs] = await Promise.all([
+      supabase.from("msg_brand_config").select("*").eq("client_id", client.id).single(),
+      supabase.from("msg_offers").select("*").eq("client_id", client.id).order("is_active", { ascending: false }).order("updated_at", { ascending: false }),
+      supabase.from("msg_faqs").select("*").eq("client_id", client.id).order("times_used", { ascending: false }),
+      supabase.from("msg_locations").select("*").eq("client_id", client.id).order("name"),
+      supabase.from("msg_services").select("*").eq("client_id", client.id).order("name"),
+      supabase.from("msg_blocked_topics").select("*").eq("client_id", client.id),
+      supabase.from("msg_learned_patterns").select("*").eq("client_id", client.id).eq("status", "pending_review"),
+      supabase.from("msg_conversation_logs").select("*").eq("client_id", client.id).order("created_at", { ascending: false }).limit(30),
+    ]);
+    allClientData[client.slug] = {
+      client,
+      brand: brand.data,
+      offers: offers.data || [],
+      faqs: faqs.data || [],
+      locations: locations.data || [],
+      services: services.data || [],
+      blocked: blocked.data || [],
+      suggested: suggested.data || [],
+      conversations: { logs: convLogs.data || [], total: convLogs.data?.length || 0 },
+    };
+  }
+
+  return { isAdmin, clients: clientAccess || [], userId: user.id, allClientData };
 }
 
 export default function HubLayout() {
@@ -64,15 +90,15 @@ export default function HubLayout() {
               <div key={client.id}>
                 <div style={sectionLabel}>{client.name}</div>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M12 2L2 7v10l10 5 10-5V7L12 2z" />
+                  <NavIcon d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z" />
                   Brand
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M20 12V6H4v6m16 0v6H4v-6m16 0H4" />
+                  <NavIcon d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" text="$" />
                   Offers
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-14v4m0 4h.01" />
+                  <NavIcon d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" text="?" />
                   FAQs
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>
@@ -112,13 +138,21 @@ export default function HubLayout() {
       </nav>
 
       <main style={{ marginLeft: 240, flex: 1, minHeight: "100vh", padding: 32, overflowY: "auto" }}>
-        <Outlet />
+        <Outlet context={{ allClientData: (useLoaderData<typeof loader>() as any).allClientData }} />
       </main>
     </div>
   );
 }
 
-function NavIcon({ d }: { d: string }) {
+function NavIcon({ d, text }: { d: string; text?: string }) {
+  if (text) {
+    return (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+        <circle cx="12" cy="12" r="10" />
+        <text x="12" y="17" textAnchor="middle" fill="currentColor" stroke="none" fontSize="14" fontWeight="700" fontFamily="Montserrat, sans-serif">{text}</text>
+      </svg>
+    );
+  }
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
       <path d={d} />

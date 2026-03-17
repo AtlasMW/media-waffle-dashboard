@@ -1,15 +1,7 @@
-import { useLoaderData, useFetcher } from "react-router";
+import { useOutletContext, useParams, useFetcher } from "react-router";
 import type { Route } from "./+types/_app.hub.$slug.services";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 import { useState } from "react";
-
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { supabase } = createSupabaseServerClient(request);
-  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
-  if (!client) throw new Response("Not found", { status: 404 });
-  const { data: services } = await supabase.from("msg_services").select("*").eq("client_id", client.id).order("name");
-  return { client, services: services || [] };
-}
 
 export async function action({ request, params }: Route.ActionArgs) {
   const { supabase } = createSupabaseServerClient(request);
@@ -17,7 +9,6 @@ export async function action({ request, params }: Route.ActionArgs) {
   const intent = form.get("intent");
   const { data: client } = await supabase.from("msg_clients").select("id").eq("slug", params.slug).single();
   if (!client) return {};
-
   if (intent === "add") {
     await supabase.from("msg_services").insert({
       client_id: client.id, name: form.get("name"),
@@ -35,7 +26,11 @@ export async function action({ request, params }: Route.ActionArgs) {
 }
 
 export default function Services() {
-  const { client, services } = useLoaderData<typeof loader>();
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const { slug } = useParams();
+  const data = allClientData[slug!] || {};
+  const client = data.client || {};
+  const services = data.services || [];
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
 
@@ -44,7 +39,7 @@ export default function Services() {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Services</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | {services.length} total</p>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btn}>{showAdd ? "Cancel" : "Add Service"}</button>
       </div>
@@ -55,7 +50,7 @@ export default function Services() {
             <input type="hidden" name="intent" value="add" />
             {[["Service Name","name",true],["Description","description"],["Price Range","price_range"],["Duration","duration"]].map(([l,n,r]: any) => (
               <div key={n} style={{ marginBottom: 12 }}>
-                <label style={label}>{l}</label>
+                <label style={labelSt}>{l}</label>
                 <input name={n} required={r} style={input} />
               </div>
             ))}
@@ -71,7 +66,8 @@ export default function Services() {
             {svc.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{svc.description}</div>}
             <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
               {svc.price_range && <span>{svc.price_range}</span>}
-              {svc.duration && <span> | {svc.duration}</span>}
+              {svc.price_range && svc.duration && <span> | </span>}
+              {svc.duration && <span>{svc.duration}</span>}
             </div>
           </div>
           <div style={{ display: "flex", gap: 6 }}>
@@ -96,7 +92,7 @@ export default function Services() {
 }
 
 const card: React.CSSProperties = { background: "white", borderRadius: 12, padding: 20, marginBottom: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" };
-const label: React.CSSProperties = { display: "block", fontSize: 12, fontWeight: 600, color: "#3b3b3b", marginBottom: 4 };
+const labelSt: React.CSSProperties = { display: "block", fontSize: 12, fontWeight: 600, color: "#3b3b3b", marginBottom: 4 };
 const input: React.CSSProperties = { width: "100%", padding: "8px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" };
 const btn: React.CSSProperties = { padding: "10px 20px", background: "#3b3b3b", color: "#f5f0e8", border: "none", borderRadius: 6, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
 const btnSm: React.CSSProperties = { padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };

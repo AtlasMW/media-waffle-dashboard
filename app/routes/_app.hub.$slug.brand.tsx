@@ -1,22 +1,12 @@
-import { useLoaderData, useFetcher } from "react-router";
+import { useOutletContext, useParams, useFetcher } from "react-router";
 import type { Route } from "./+types/_app.hub.$slug.brand";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 import { useState } from "react";
-
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { supabase } = createSupabaseServerClient(request);
-  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
-  if (!client) throw new Response("Not found", { status: 404 });
-  const { data: brand } = await supabase.from("msg_brand_config").select("*").eq("client_id", client.id).single();
-  const { data: blocked } = await supabase.from("msg_blocked_topics").select("*").eq("client_id", client.id);
-  return { client, brand, blocked: blocked || [] };
-}
 
 export async function action({ request, params }: Route.ActionArgs) {
   const { supabase } = createSupabaseServerClient(request);
   const form = await request.formData();
   const intent = form.get("intent");
-
   const { data: client } = await supabase.from("msg_clients").select("id").eq("slug", params.slug).single();
   if (!client) return { error: "Client not found" };
 
@@ -24,38 +14,31 @@ export async function action({ request, params }: Route.ActionArgs) {
     const updates: Record<string, any> = {};
     for (const [key, value] of form.entries()) {
       if (key === "intent") continue;
-      if (key === "emoji_allowed" || key === "deposit_required") {
-        updates[key] = value === "true";
-      } else if (key === "sms_char_limit" || key === "sms_max_messages" || key === "dm_max_messages") {
-        updates[key] = parseInt(value as string) || 0;
-      } else if (key === "custom_rules") {
-        updates[key] = value;
-      } else {
-        updates[key] = value;
-      }
+      if (key === "emoji_allowed" || key === "deposit_required") updates[key] = value === "true";
+      else if (key === "sms_char_limit" || key === "sms_max_messages" || key === "dm_max_messages") updates[key] = parseInt(value as string) || 0;
+      else updates[key] = value;
     }
     await supabase.from("msg_brand_config").update(updates).eq("client_id", client.id);
     return { success: true };
   }
-
   if (intent === "add_blocked") {
-    const topic = form.get("topic") as string;
-    const reason = form.get("reason") as string;
-    await supabase.from("msg_blocked_topics").insert({ client_id: client.id, topic, reason });
+    await supabase.from("msg_blocked_topics").insert({ client_id: client.id, topic: form.get("topic"), reason: form.get("reason") });
     return { success: true };
   }
-
   if (intent === "remove_blocked") {
-    const id = form.get("id") as string;
-    await supabase.from("msg_blocked_topics").delete().eq("id", id);
+    await supabase.from("msg_blocked_topics").delete().eq("id", form.get("id"));
     return { success: true };
   }
-
   return {};
 }
 
 export default function BrandConfig() {
-  const { client, brand, blocked } = useLoaderData<typeof loader>();
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const { slug } = useParams();
+  const data = allClientData[slug!] || {};
+  const client = data.client || {};
+  const brand = data.brand || {};
+  const blocked = data.blocked || [];
   const fetcher = useFetcher();
   const [saved, setSaved] = useState(false);
 
@@ -73,7 +56,7 @@ export default function BrandConfig() {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Brand Configuration</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | Version {brand?.version || 1}</p>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
         {saved && <span style={{ color: "#2e7d32", fontSize: 13, fontWeight: 600 }}>Saved</span>}
       </div>
@@ -84,12 +67,10 @@ export default function BrandConfig() {
           <SelectField label="Tone" name="tone" value={brand?.tone || "friendly"} options={["friendly", "professional", "casual"]} />
           <Field label="Greeting Style" name="greeting_style" value={brand?.greeting_style || "Hi [name]"} hint="Use [name] as placeholder for lead's first name" />
         </Card>
-
         <Card title="Contact Details">
           <Field label="Phone Number" name="phone_number" value={brand?.phone_number || ""} />
           <Field label="Escalation Phone" name="escalation_phone" value={brand?.escalation_phone || ""} hint="Phone number for escalation messages" />
         </Card>
-
         <Card title="Message Limits">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
             <Field label="SMS Char Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
@@ -98,18 +79,15 @@ export default function BrandConfig() {
           </div>
           <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
         </Card>
-
         <Card title="Booking Settings">
           <CheckboxField label="Require deposit for online booking" name="deposit_required" checked={brand?.deposit_required || false} />
           <TextArea label="Deposit Info Message" name="deposit_info" value={brand?.deposit_info || ""} hint="Message to include when mentioning booking links" />
           <Field label="Post-Booking Response" name="post_booking_response" value={brand?.post_booking_response || ""} hint="What to say when a lead confirms they booked" />
           <Field label="Returning Customer Note" name="returning_customer_note" value={brand?.returning_customer_note || ""} />
         </Card>
-
         <Card title="Custom Rules">
           <TextArea label="Custom Rules (JSON array)" name="custom_rules" value={typeof brand?.custom_rules === "string" ? brand.custom_rules : JSON.stringify(brand?.custom_rules || [], null, 2)} rows={6} hint="JSON array of rule strings the AI must follow" />
         </Card>
-
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Brand Configuration</button>
       </form>
 
@@ -139,7 +117,6 @@ export default function BrandConfig() {
   );
 }
 
-// UI Components
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
@@ -148,7 +125,6 @@ function Card({ title, children }: { title: string; children: React.ReactNode })
     </div>
   );
 }
-
 function Field({ label, name, value, hint, type }: { label: string; name: string; value: any; hint?: string; type?: string }) {
   return (
     <div style={{ marginBottom: 16 }}>
@@ -158,7 +134,6 @@ function Field({ label, name, value, hint, type }: { label: string; name: string
     </div>
   );
 }
-
 function TextArea({ label, name, value, hint, rows }: { label: string; name: string; value: any; hint?: string; rows?: number }) {
   return (
     <div style={{ marginBottom: 16 }}>
@@ -168,7 +143,6 @@ function TextArea({ label, name, value, hint, rows }: { label: string; name: str
     </div>
   );
 }
-
 function SelectField({ label, name, value, options }: { label: string; name: string; value: string; options: string[] }) {
   return (
     <div style={{ marginBottom: 16 }}>
@@ -179,7 +153,6 @@ function SelectField({ label, name, value, options }: { label: string; name: str
     </div>
   );
 }
-
 function CheckboxField({ label, name, checked }: { label: string; name: string; checked: boolean }) {
   const [isChecked, setIsChecked] = useState(checked);
   return (
