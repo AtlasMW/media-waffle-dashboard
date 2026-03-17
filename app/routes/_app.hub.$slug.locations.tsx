@@ -44,8 +44,8 @@ export default function Locations() {
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Locations — {locations.length} total</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Locations | {locations.length} total</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btn}>{showAdd ? "Cancel" : "Add Location"}</button>
       </div>
@@ -82,7 +82,7 @@ export default function Locations() {
                 {loc.general_booking_link && <div>General: <a href={loc.general_booking_link} target="_blank" style={{ color: "#5b9ea6" }}>{loc.general_booking_link}</a></div>}
               </div>
               <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                {loc.booking_system} — Pipeline: {loc.ghl_pipeline_id || "—"}
+                {loc.booking_system} | Pipeline: {loc.ghl_pipeline_id || "-"}
               </div>
             </div>
             <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>

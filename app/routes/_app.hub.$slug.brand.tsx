@@ -72,8 +72,8 @@ export default function BrandConfig() {
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Brand Configuration — Version {brand?.version || 1}</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Brand Configuration | Version {brand?.version || 1}</p>
         </div>
         {saved && <span style={{ color: "#2e7d32", fontSize: 13, fontWeight: 600 }}>Saved</span>}
       </div>
@@ -143,7 +143,7 @@ export default function BrandConfig() {
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
-      <h3 style={{ fontFamily: "'Georgia', serif", fontSize: 16, color: "#3b3b3b", marginTop: 0, marginBottom: 16 }}>{title}</h3>
+      <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 16, color: "#3b3b3b", marginTop: 0, marginBottom: 16 }}>{title}</h3>
       {children}
     </div>
   );

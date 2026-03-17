@@ -25,7 +25,7 @@ export default function HubOverview() {
 
   return (
     <div>
-      <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 28, color: "#3b3b3b", marginBottom: 8 }}>AI Messaging Hub</h1>
+      <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", marginBottom: 8 }}>AI Messaging Hub</h1>
       <p style={{ color: "#8a8478", fontSize: 14, marginBottom: 32 }}>Manage AI messaging systems for all clients</p>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 20 }}>
@@ -37,7 +37,7 @@ export default function HubOverview() {
             boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
           }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-              <h3 style={{ fontFamily: "'Georgia', serif", fontSize: 18, color: "#3b3b3b", margin: 0 }}>{client.name}</h3>
+              <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 18, color: "#3b3b3b", margin: 0 }}>{client.name}</h3>
               <span style={{
                 fontSize: 11,
                 fontWeight: 600,

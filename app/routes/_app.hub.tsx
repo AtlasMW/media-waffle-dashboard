@@ -31,61 +31,70 @@ export default function HubLayout() {
       fontFamily: "'Montserrat', sans-serif",
       background: "#f5f0e8",
     }}>
-      {/* Sidebar */}
+      {/* Sidebar - matches client dashboard design */}
       <nav style={{
-        width: 260,
-        background: "#3b3b3b",
-        color: "#f5f0e8",
-        padding: "24px 0",
+        width: 240,
+        background: "#ffffff",
+        borderRight: "1px solid #ddd5c4",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        bottom: 0,
         display: "flex",
         flexDirection: "column",
-        flexShrink: 0,
+        zIndex: 40,
       }}>
-        <div style={{ padding: "0 24px 24px", borderBottom: "1px solid rgba(245,240,232,0.1)" }}>
-          <img src="/mw-logo.png" alt="Media Waffle" style={{ height: 32, marginBottom: 8 }} onError={(e) => (e.currentTarget.style.display = "none")} />
-          <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "'Georgia', serif" }}>AI Messaging Hub</div>
-          <div style={{ fontSize: 11, color: "#c4a882", marginTop: 4 }}>Powered by Media Waffle</div>
+        <div style={{ padding: "24px 24px 20px", borderBottom: "1px solid #ddd5c4" }}>
+          <img src="/mw-logo.png" alt="Media Waffle" style={{ height: 28, marginBottom: 8 }} onError={(e) => (e.currentTarget.style.display = "none")} />
+          <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 2.5, textTransform: "uppercase", color: "#3b3b3b" }}>Media Waffle</div>
+          <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", color: "#c4a882", marginTop: 4 }}>AI Messaging Hub</div>
         </div>
 
-        <div style={{ padding: "16px 24px 8px", fontSize: 10, textTransform: "uppercase", letterSpacing: 1.5, color: "#8a8478" }}>
-          Navigation
-        </div>
+        <div style={{ padding: "16px 12px", flex: 1, overflowY: "auto" }}>
+          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#aaa", padding: "12px 12px 6px" }}>
+            Navigation
+          </div>
 
-        <NavLink to="/hub" end style={({ isActive }) => navStyle(isActive)}>
-          <span>Overview</span>
-        </NavLink>
+          <NavLink to="/hub" end style={({ isActive }) => navStyle(isActive)}>
+            Overview
+          </NavLink>
 
-        {clients.map((ca: any) => {
-          const client = ca.msg_clients;
-          if (!client) return null;
-          return (
-            <div key={client.id}>
-              <div style={{ padding: "16px 24px 8px", fontSize: 10, textTransform: "uppercase", letterSpacing: 1.5, color: "#8a8478" }}>
-                {client.name}
+          {clients.map((ca: any) => {
+            const client = ca.msg_clients;
+            if (!client) return null;
+            return (
+              <div key={client.id}>
+                <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#aaa", padding: "16px 12px 6px" }}>
+                  {client.name}
+                </div>
+                <NavLink to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>Brand</NavLink>
+                <NavLink to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>Offers</NavLink>
+                <NavLink to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>FAQs</NavLink>
+                <NavLink to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>Locations</NavLink>
+                <NavLink to={`/hub/${client.slug}/services`} style={({ isActive }) => navStyle(isActive)}>Services</NavLink>
+                <NavLink to={`/hub/${client.slug}/conversations`} style={({ isActive }) => navStyle(isActive)}>Conversations</NavLink>
               </div>
-              <NavLink to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>Brand</NavLink>
-              <NavLink to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>Offers</NavLink>
-              <NavLink to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>FAQs</NavLink>
-              <NavLink to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>Locations</NavLink>
-              <NavLink to={`/hub/${client.slug}/services`} style={({ isActive }) => navStyle(isActive)}>Services</NavLink>
-              <NavLink to={`/hub/${client.slug}/conversations`} style={({ isActive }) => navStyle(isActive)}>Conversations</NavLink>
-            </div>
-          );
-        })}
+            );
+          })}
 
-        {isAdmin && (
-          <>
-            <div style={{ padding: "16px 24px 8px", fontSize: 10, textTransform: "uppercase", letterSpacing: 1.5, color: "#8a8478", marginTop: "auto" }}>
-              Admin
-            </div>
-            <NavLink to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>All Clients</NavLink>
-            <NavLink to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>New Client</NavLink>
-          </>
-        )}
+          {isAdmin && (
+            <>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#aaa", padding: "16px 12px 6px", marginTop: "auto" }}>
+                Admin
+              </div>
+              <NavLink to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>All Clients</NavLink>
+              <NavLink to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>New Client</NavLink>
+            </>
+          )}
+        </div>
+
+        <div style={{ padding: "16px 12px", borderTop: "1px solid #ddd5c4" }}>
+          <div style={{ fontSize: 11, color: "#999", fontWeight: 500 }}>Messaging Hub</div>
+        </div>
       </nav>
 
       {/* Main content */}
-      <main style={{ flex: 1, padding: 32, overflowY: "auto" }}>
+      <main style={{ marginLeft: 240, flex: 1, minHeight: "100vh", padding: 32, overflowY: "auto" }}>
         <Outlet />
       </main>
     </div>
@@ -94,14 +103,18 @@ export default function HubLayout() {
 
 function navStyle(isActive: boolean): React.CSSProperties {
   return {
-    display: "block",
-    padding: "10px 24px",
-    color: isActive ? "#f5f0e8" : "#b0a89a",
+    display: "flex",
+    alignItems: "center",
+    gap: 12,
+    padding: "10px 14px",
+    borderRadius: 8,
+    fontSize: 14,
+    fontWeight: 500,
+    color: isActive ? "white" : "#5a5a5a",
+    background: isActive ? "#3b3b3b" : "transparent",
     textDecoration: "none",
-    fontSize: 13,
-    fontWeight: isActive ? 600 : 400,
-    background: isActive ? "rgba(196,168,130,0.15)" : "transparent",
-    borderLeft: isActive ? "3px solid #c4a882" : "3px solid transparent",
-    transition: "all 0.15s",
+    cursor: "pointer",
+    transition: "all 0.2s",
+    marginBottom: 2,
   };
 }

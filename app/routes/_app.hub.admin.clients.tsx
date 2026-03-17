@@ -51,7 +51,7 @@ export default function AdminClients() {
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 32 }}>
         <div>
-          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 28, color: "#3b3b3b", margin: 0 }}>All Clients</h1>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", margin: 0 }}>All Clients</h1>
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{clients.length} messaging clients configured</p>
         </div>
         <a href="/hub/admin/onboarding" style={btnPrimary}>Onboard New Client</a>

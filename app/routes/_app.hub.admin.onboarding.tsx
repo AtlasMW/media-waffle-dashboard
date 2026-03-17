@@ -81,7 +81,7 @@ export default function Onboarding() {
       <div style={{ maxWidth: 600 }}>
         <div style={{ background: "#e8f5e9", borderRadius: 12, padding: 32, textAlign: "center" }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>&#10003;</div>
-          <h2 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#2e7d32", marginBottom: 8 }}>Client Created</h2>
+          <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#2e7d32", marginBottom: 8 }}>Client Created</h2>
           <p style={{ color: "#666", marginBottom: 24 }}>Now configure their locations, offers, and FAQs.</p>
           <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
             <a href={`/hub/${result.clientSlug}/brand`} style={btnPrimary}>Configure Brand</a>
@@ -94,7 +94,7 @@ export default function Onboarding() {
 
   return (
     <div style={{ maxWidth: 600 }}>
-      <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 28, color: "#3b3b3b", margin: "0 0 8px" }}>Onboard New Client</h1>
+      <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", margin: "0 0 8px" }}>Onboard New Client</h1>
       <p style={{ color: "#8a8478", fontSize: 13, marginBottom: 32 }}>Set up a new AI messaging client. You can configure details after creation.</p>
 
       {result?.error && (
@@ -152,7 +152,7 @@ function Card({ title, step, current, children }: { title: string; step: number;
     <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
         <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#3b3b3b", color: "#f5f0e8", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700 }}>{step}</div>
-        <h3 style={{ fontFamily: "'Georgia', serif", fontSize: 16, color: "#3b3b3b", margin: 0 }}>{title}</h3>
+        <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 16, color: "#3b3b3b", margin: 0 }}>{title}</h3>
       </div>
       {children}
     </div>

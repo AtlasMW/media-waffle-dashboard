@@ -67,8 +67,8 @@ export default function FAQs() {
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>FAQs — {faqs.length} total, {faqs.filter((f: any) => f.is_active).length} active</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>FAQs | {faqs.length} total, {faqs.filter((f: any) => f.is_active).length} active</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add FAQ"}</button>
       </div>
@@ -76,7 +76,7 @@ export default function FAQs() {
       {/* AI Suggestions */}
       {suggested.length > 0 && (
         <div style={{ background: "#fffde7", borderRadius: 12, padding: 20, marginBottom: 20, border: "1px solid #fff9c4" }}>
-          <h3 style={{ fontFamily: "'Georgia', serif", fontSize: 16, margin: "0 0 12px", color: "#f57f17" }}>AI Suggested FAQs ({suggested.length})</h3>
+          <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 16, margin: "0 0 12px", color: "#f57f17" }}>AI Suggested FAQs ({suggested.length})</h3>
           <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>Based on common questions from lead conversations</p>
           {suggested.map((s: any) => (
             <div key={s.id} style={{ background: "white", borderRadius: 8, padding: 12, marginBottom: 8 }}>
@@ -147,8 +147,8 @@ export default function FAQs() {
               <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
               <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
               <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                {faq.category} — Used {faq.times_used}x — v{faq.version}
-                {faq.source === "learned" && " — AI Learned"}
+                {faq.category} | Used {faq.times_used}x | v{faq.version}
+                {faq.source === "learned" && " | AI Learned"}
               </div>
             </div>
             <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12 }}>

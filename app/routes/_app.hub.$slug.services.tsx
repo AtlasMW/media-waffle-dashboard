@@ -43,8 +43,8 @@ export default function Services() {
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Services — {services.length} total</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Services | {services.length} total</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btn}>{showAdd ? "Cancel" : "Add Service"}</button>
       </div>
@@ -71,7 +71,7 @@ export default function Services() {
             {svc.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{svc.description}</div>}
             <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
               {svc.price_range && <span>{svc.price_range}</span>}
-              {svc.duration && <span> — {svc.duration}</span>}
+              {svc.duration && <span> | {svc.duration}</span>}
             </div>
           </div>
           <div style={{ display: "flex", gap: 6 }}>

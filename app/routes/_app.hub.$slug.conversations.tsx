@@ -35,8 +35,8 @@ export default function Conversations() {
 
   return (
     <div style={{ maxWidth: 900 }}>
-      <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>Conversation Log — {total} total</p>
+      <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>Conversation Log | {total} total</p>
 
       <div style={{ background: "white", borderRadius: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, fontFamily: "'Montserrat', sans-serif" }}>
@@ -55,11 +55,11 @@ export default function Conversations() {
             {logs.map((log: any, i: number) => (
               <tr key={log.id} style={{ background: i % 2 === 0 ? "white" : "#faf8f5" }}>
                 <td style={td}>{new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</td>
-                <td style={{ ...td, fontWeight: 600 }}>{log.contact_name || "—"}</td>
-                <td style={td}>{log.location_tag || "—"}</td>
+                <td style={{ ...td, fontWeight: 600 }}>{log.contact_name || "-"}</td>
+                <td style={td}>{log.location_tag || "-"}</td>
                 <td style={td}>{(log.channel || "").replace("TYPE_", "")}</td>
-                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.inbound_text}>{log.inbound_text || "—"}</td>
-                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.outbound_text}>{log.outbound_text || "—"}</td>
+                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.inbound_text}>{log.inbound_text || "-"}</td>
+                <td style={{ ...td, maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} title={log.outbound_text}>{log.outbound_text || "-"}</td>
                 <td style={td}>
                   <span style={{
                     padding: "3px 8px", borderRadius: 12, fontSize: 11, fontWeight: 600,
