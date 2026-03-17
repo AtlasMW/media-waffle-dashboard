@@ -125,23 +125,21 @@ export default function FAQs() {
               </div>
             </div>
             <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12 }}>
-              <fetcher.Form method="post">
-                <input type="hidden" name="intent" value="toggle" />
-                <input type="hidden" name="id" value={faq.id} />
-                <input type="hidden" name="is_active" value={String(faq.is_active)} />
-                <button type="submit" style={{ ...btnSmall, background: faq.is_active ? "#fff3e0" : "#e8f5e9", color: faq.is_active ? "#ef6c00" : "#2e7d32" }}>
-                  {faq.is_active ? "Off" : "On"}
-                </button>
-              </fetcher.Form>
-              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete?")) e.preventDefault(); }}>
+              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this FAQ?")) e.preventDefault(); }}>
                 <input type="hidden" name="intent" value="delete" />
                 <input type="hidden" name="id" value={faq.id} />
-                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>X</button>
+                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
               </fetcher.Form>
             </div>
           </div>
         </div>
       ))}
+
+      {!showAdd && faqs.length > 3 && (
+        <div style={{ marginTop: 20, textAlign: "center" }}>
+          <button onClick={() => setShowAdd(true)} style={btnPrimary}>Add FAQ</button>
+        </div>
+      )}
     </div>
   );
 }

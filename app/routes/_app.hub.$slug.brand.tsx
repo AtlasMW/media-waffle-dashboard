@@ -97,6 +97,11 @@ export default function BrandConfig() {
           <Field label="Post-Booking Response" name="post_booking_response" value={brand?.post_booking_response || ""} hint="What to say when a lead confirms they booked" />
           <Field label="Returning Customer Note" name="returning_customer_note" value={brand?.returning_customer_note || ""} />
         </Card>
+        <Card title="GHL Trigger Tags">
+          <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>The AI will only respond to contacts that have ALL of these tags in GHL. The contact must also have a location tag matching one of your configured locations.</p>
+          <TextArea label="Trigger Tags (JSON array)" name="trigger_tags" value={typeof brand?.trigger_tags === "string" ? brand.trigger_tags : JSON.stringify(brand?.trigger_tags || ["hot lead", "meta lead"], null, 2)} rows={3} hint='e.g. ["hot lead", "meta lead"] - contact must have all listed tags' />
+        </Card>
+
         <Card title="Custom Rules">
           <TextArea label="Custom Rules (JSON array)" name="custom_rules" value={typeof brand?.custom_rules === "string" ? brand.custom_rules : JSON.stringify(brand?.custom_rules || [], null, 2)} rows={6} hint="JSON array of rule strings the AI must follow" />
         </Card>
