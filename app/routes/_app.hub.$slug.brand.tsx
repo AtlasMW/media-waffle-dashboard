@@ -76,7 +76,7 @@ export default function BrandIdentity() {
       <form onSubmit={handleSubmit}>
         <Card title="Assistant Identity">
           <Field label="Assistant Name" name="assistant_name" value={brand?.assistant_name || ""} hint="The name your AI assistant uses (e.g. Cassie)" />
-          <TextArea label="Tone" name="tone" value={brand?.tone || "friendly"} rows={3} hint="Describe how the assistant should sound (e.g. friendly, warm and professional, keeps it brief)" />
+          <TextArea label="Brand Voice" name="tone" value={brand?.tone || "friendly"} rows={3} hint="Describe how the assistant should sound (e.g. friendly, warm and professional, keeps it brief)" />
           <Field label="Greeting Style" name="greeting_style" value={brand?.greeting_style || "Hi [name]"} hint="Use [name] as placeholder for lead's first name" />
         </Card>
 
@@ -147,7 +147,7 @@ function RulesSection({ brand, blocked }: { brand: any; blocked: any[] }) {
   return (
     <div>
       {/* CUSTOM RULES */}
-      <Card title="Custom Rules">
+      <Card title="Conversation Rules">
         <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 16 }}>
           Behavioural instructions that control how the AI responds. These are injected directly into the system prompt.
         </p>
