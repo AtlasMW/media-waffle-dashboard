@@ -45,9 +45,7 @@ export default function HubLayout() {
         zIndex: 40,
       }}>
         <div style={{ padding: "24px 24px 20px", borderBottom: "1px solid #ddd5c4" }}>
-          <img src="/mw-logo.png" alt="Media Waffle" style={{ height: 28, marginBottom: 8 }} onError={(e) => (e.currentTarget.style.display = "none")} />
-          <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 2.5, textTransform: "uppercase", color: "#3b3b3b" }}>Media Waffle</div>
-          <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", color: "#c4a882", marginTop: 4 }}>AI Messaging Hub</div>
+          <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", color: "#c4a882" }}>AI Messaging Hub</div>
         </div>
 
         <div style={{ padding: "16px 12px", flex: 1, overflowY: "auto" }}>
@@ -55,7 +53,7 @@ export default function HubLayout() {
             Navigation
           </div>
 
-          <NavLink to="/hub" end style={({ isActive }) => navStyle(isActive)}>
+          <NavLink prefetch="intent" to="/hub" end style={({ isActive }) => navStyle(isActive)}>
             Overview
           </NavLink>
 
@@ -67,12 +65,12 @@ export default function HubLayout() {
                 <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#aaa", padding: "16px 12px 6px" }}>
                   {client.name}
                 </div>
-                <NavLink to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>Brand</NavLink>
-                <NavLink to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>Offers</NavLink>
-                <NavLink to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>FAQs</NavLink>
-                <NavLink to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>Locations</NavLink>
-                <NavLink to={`/hub/${client.slug}/services`} style={({ isActive }) => navStyle(isActive)}>Services</NavLink>
-                <NavLink to={`/hub/${client.slug}/conversations`} style={({ isActive }) => navStyle(isActive)}>Conversations</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>Brand</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>Offers</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>FAQs</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>Locations</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/services`} style={({ isActive }) => navStyle(isActive)}>Services</NavLink>
+                <NavLink prefetch="render" to={`/hub/${client.slug}/conversations`} style={({ isActive }) => navStyle(isActive)}>Conversations</NavLink>
               </div>
             );
           })}
@@ -82,8 +80,8 @@ export default function HubLayout() {
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#aaa", padding: "16px 12px 6px", marginTop: "auto" }}>
                 Admin
               </div>
-              <NavLink to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>All Clients</NavLink>
-              <NavLink to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>New Client</NavLink>
+              <NavLink prefetch="intent" to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>All Clients</NavLink>
+              <NavLink prefetch="intent" to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>New Client</NavLink>
             </>
           )}
         </div>
