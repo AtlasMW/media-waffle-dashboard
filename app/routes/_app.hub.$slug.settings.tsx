@@ -21,14 +21,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     await supabase.from("msg_brand_config").update(updates).eq("client_id", client.id);
     return { success: true };
   }
-  if (intent === "add_blocked") {
-    await supabase.from("msg_blocked_topics").insert({ client_id: client.id, topic: form.get("topic"), reason: form.get("reason") });
-    return { success: true };
-  }
-  if (intent === "remove_blocked") {
-    await supabase.from("msg_blocked_topics").delete().eq("id", form.get("id"));
-    return { success: true };
-  }
+
   return {};
 }
 
@@ -38,7 +31,6 @@ export default function Settings() {
   const data = allClientData[slug!] || {};
   const client = data.client || {};
   const brand = data.brand || {};
-  const blocked = data.blocked || [];
   const fetcher = useFetcher();
   const [saved, setSaved] = useState(false);
 
@@ -111,28 +103,7 @@ export default function Settings() {
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Settings</button>
       </form>
 
-      <Card title="Blocked Topics">
-        <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 16 }}>Topics the AI must never discuss with leads</p>
-        {blocked.map((b: any) => (
-          <div key={b.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #eee8dc" }}>
-            <div>
-              <div style={{ fontWeight: 600, fontSize: 13 }}>{b.topic}</div>
-              <div style={{ fontSize: 12, color: "#8a8478" }}>{b.reason}</div>
-            </div>
-            <fetcher.Form method="post">
-              <input type="hidden" name="intent" value="remove_blocked" />
-              <input type="hidden" name="id" value={b.id} />
-              <button type="submit" style={{ ...btnDanger, fontSize: 11 }}>Remove</button>
-            </fetcher.Form>
-          </div>
-        ))}
-        <fetcher.Form method="post" className="hub-form-row" style={{ marginTop: 12 }}>
-          <input type="hidden" name="intent" value="add_blocked" />
-          <input name="topic" placeholder="Topic" required style={inputStyle} />
-          <input name="reason" placeholder="Reason" style={inputStyle} />
-          <button type="submit" style={btnPrimary}>Add</button>
-        </fetcher.Form>
-      </Card>
+
     </div>
   );
 }
@@ -205,4 +176,4 @@ const labelStyle: React.CSSProperties = { display: "block", fontSize: 12, fontWe
 const inputStyle: React.CSSProperties = { width: "100%", padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" };
 const hintStyle: React.CSSProperties = { fontSize: 11, color: "#8a8478", marginTop: 4 };
 const btnPrimary: React.CSSProperties = { padding: "10px 20px", background: "#3b3b3b", color: "#f5f0e8", border: "none", borderRadius: 6, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
-const btnDanger: React.CSSProperties = { padding: "6px 12px", background: "#c47a6c", color: "white", border: "none", borderRadius: 4, fontSize: 12, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+

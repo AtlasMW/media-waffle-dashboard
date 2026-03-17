@@ -19,6 +19,28 @@ export async function action({ request, params }: Route.ActionArgs) {
     await supabase.from("msg_brand_config").update(updates).eq("client_id", client.id);
     return { success: true };
   }
+
+  // Custom rules (stored as JSON array in brand_config.custom_rules)
+  if (intent === "save_rules") {
+    const rulesJson = form.get("rules") as string;
+    await supabase.from("msg_brand_config").update({ custom_rules: rulesJson }).eq("client_id", client.id);
+    return { success: true };
+  }
+
+  // Blocked topics CRUD
+  if (intent === "add_blocked") {
+    await supabase.from("msg_blocked_topics").insert({ client_id: client.id, topic: form.get("topic"), reason: form.get("reason") || null });
+    return { success: true };
+  }
+  if (intent === "update_blocked") {
+    await supabase.from("msg_blocked_topics").update({ topic: form.get("topic"), reason: form.get("reason") || null }).eq("id", form.get("id"));
+    return { success: true };
+  }
+  if (intent === "remove_blocked") {
+    await supabase.from("msg_blocked_topics").delete().eq("id", form.get("id"));
+    return { success: true };
+  }
+
   return {};
 }
 
@@ -28,6 +50,7 @@ export default function BrandIdentity() {
   const data = allClientData[slug!] || {};
   const client = data.client || {};
   const brand = data.brand || {};
+  const blocked = data.blocked || [];
   const fetcher = useFetcher();
   const [saved, setSaved] = useState(false);
 
@@ -60,11 +83,221 @@ export default function BrandIdentity() {
         <Card title="Response Behaviour">
           <Field label="Post-Booking Response" name="post_booking_response" value={brand?.post_booking_response || ""} hint="What to say when a lead confirms they booked" />
           <Field label="Returning Customer Note" name="returning_customer_note" value={brand?.returning_customer_note || ""} hint="Message for leads who want to use the offer again" />
-          <TextArea label="Custom Rules" name="custom_rules" value={typeof brand?.custom_rules === "string" ? brand.custom_rules : JSON.stringify(brand?.custom_rules || [], null, 2)} rows={4} hint='JSON array of additional rules (e.g. ["Never mention competitors", "Always ask about preferred time"])' />
         </Card>
 
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Brand Identity</button>
       </form>
+
+      {/* ==================== RULES & RESTRICTIONS ==================== */}
+      <RulesSection brand={brand} blocked={blocked} />
+    </div>
+  );
+}
+
+// ==================== RULES & RESTRICTIONS ====================
+function RulesSection({ brand, blocked }: { brand: any; blocked: any[] }) {
+  const fetcher = useFetcher();
+
+  // Parse custom rules from JSON string or array
+  const parseRules = (): string[] => {
+    const raw = brand?.custom_rules;
+    if (Array.isArray(raw)) return raw;
+    if (typeof raw === "string") { try { return JSON.parse(raw); } catch { return []; } }
+    return [];
+  };
+
+  const [rules, setRules] = useState<string[]>(parseRules());
+  const [addingRule, setAddingRule] = useState(false);
+  const [newRule, setNewRule] = useState("");
+  const [editingRule, setEditingRule] = useState<number | null>(null);
+  const [editRuleText, setEditRuleText] = useState("");
+
+  const [addingBlocked, setAddingBlocked] = useState(false);
+  const [editingBlocked, setEditingBlocked] = useState<string | null>(null);
+  const [editBlockedTopic, setEditBlockedTopic] = useState("");
+  const [editBlockedReason, setEditBlockedReason] = useState("");
+
+  const saveRules = (updated: string[]) => {
+    setRules(updated);
+    const formData = new FormData();
+    formData.set("intent", "save_rules");
+    formData.set("rules", JSON.stringify(updated));
+    fetcher.submit(formData, { method: "post" });
+  };
+
+  const addRule = () => {
+    if (!newRule.trim()) return;
+    saveRules([...rules, newRule.trim()]);
+    setNewRule("");
+    setAddingRule(false);
+  };
+
+  const updateRule = (idx: number) => {
+    if (!editRuleText.trim()) return;
+    const updated = [...rules];
+    updated[idx] = editRuleText.trim();
+    saveRules(updated);
+    setEditingRule(null);
+  };
+
+  const deleteRule = (idx: number) => {
+    saveRules(rules.filter((_, i) => i !== idx));
+  };
+
+  return (
+    <div>
+      {/* CUSTOM RULES */}
+      <Card title="Custom Rules">
+        <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 16 }}>
+          Behavioural instructions that control how the AI responds. These are injected directly into the system prompt.
+        </p>
+
+        {rules.length === 0 && !addingRule && (
+          <div style={{ padding: 20, textAlign: "center", color: "#b0a89a", fontSize: 13 }}>No custom rules yet</div>
+        )}
+
+        {rules.map((rule, idx) => (
+          <div key={idx} style={ruleRow}>
+            {editingRule === idx ? (
+              <div style={{ flex: 1 }}>
+                <textarea
+                  value={editRuleText}
+                  onChange={e => setEditRuleText(e.target.value)}
+                  rows={2}
+                  style={{ ...inputStyle, resize: "vertical", marginBottom: 8 }}
+                  autoFocus
+                />
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="button" onClick={() => updateRule(idx)} style={btnSave}>Save</button>
+                  <button type="button" onClick={() => setEditingRule(null)} style={btnCancel}>Cancel</button>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div style={{ flex: 1, fontSize: 13, color: "#3b3b3b", lineHeight: 1.5 }}>{rule}</div>
+                <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12 }}>
+                  <button type="button" onClick={() => { setEditingRule(idx); setEditRuleText(rule); }} style={btnEdit}>Edit</button>
+                  <button type="button" onClick={() => { if (confirm("Delete this rule?")) deleteRule(idx); }} style={btnDelete}>Delete</button>
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+
+        {addingRule ? (
+          <div style={{ marginTop: 12 }}>
+            <textarea
+              value={newRule}
+              onChange={e => setNewRule(e.target.value)}
+              rows={2}
+              placeholder="e.g. Always ask about their preferred appointment time"
+              style={{ ...inputStyle, resize: "vertical", marginBottom: 8 }}
+              autoFocus
+            />
+            <div style={{ display: "flex", gap: 8 }}>
+              <button type="button" onClick={addRule} style={btnSave}>Add Rule</button>
+              <button type="button" onClick={() => { setAddingRule(false); setNewRule(""); }} style={btnCancel}>Cancel</button>
+            </div>
+          </div>
+        ) : (
+          <button type="button" onClick={() => setAddingRule(true)} style={{ ...btnPrimary, marginTop: 12 }}>Add Rule</button>
+        )}
+      </Card>
+
+      {/* BLOCKED TOPICS */}
+      <Card title="Blocked Topics">
+        <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 16 }}>
+          Topics the AI must never discuss with leads. If a lead asks about these, the AI will deflect or escalate.
+        </p>
+
+        {blocked.length === 0 && !addingBlocked && (
+          <div style={{ padding: 20, textAlign: "center", color: "#b0a89a", fontSize: 13 }}>No blocked topics yet</div>
+        )}
+
+        {blocked.map((b: any) => (
+          <div key={b.id} style={ruleRow}>
+            {editingBlocked === b.id ? (
+              <div style={{ flex: 1 }}>
+                <div style={{ marginBottom: 8 }}>
+                  <label style={labelSmall}>Topic</label>
+                  <input value={editBlockedTopic} onChange={e => setEditBlockedTopic(e.target.value)} style={inputStyle} autoFocus />
+                </div>
+                <div style={{ marginBottom: 8 }}>
+                  <label style={labelSmall}>Reason (optional)</label>
+                  <input value={editBlockedReason} onChange={e => setEditBlockedReason(e.target.value)} style={inputStyle} />
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="button" onClick={() => {
+                    if (!editBlockedTopic.trim()) return;
+                    const formData = new FormData();
+                    formData.set("intent", "update_blocked");
+                    formData.set("id", b.id);
+                    formData.set("topic", editBlockedTopic.trim());
+                    formData.set("reason", editBlockedReason.trim());
+                    fetcher.submit(formData, { method: "post" });
+                    setEditingBlocked(null);
+                  }} style={btnSave}>Save</button>
+                  <button type="button" onClick={() => setEditingBlocked(null)} style={btnCancel}>Cancel</button>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>{b.topic}</div>
+                  {b.reason && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 2 }}>{b.reason}</div>}
+                </div>
+                <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12 }}>
+                  <button type="button" onClick={() => { setEditingBlocked(b.id); setEditBlockedTopic(b.topic); setEditBlockedReason(b.reason || ""); }} style={btnEdit}>Edit</button>
+                  <button type="button" onClick={() => {
+                    if (!confirm("Delete this blocked topic?")) return;
+                    const formData = new FormData();
+                    formData.set("intent", "remove_blocked");
+                    formData.set("id", b.id);
+                    fetcher.submit(formData, { method: "post" });
+                  }} style={btnDelete}>Delete</button>
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+
+        {addingBlocked ? (
+          <AddBlockedForm
+            onSave={(topic, reason) => {
+              const formData = new FormData();
+              formData.set("intent", "add_blocked");
+              formData.set("topic", topic);
+              formData.set("reason", reason);
+              fetcher.submit(formData, { method: "post" });
+              setAddingBlocked(false);
+            }}
+            onCancel={() => setAddingBlocked(false)}
+          />
+        ) : (
+          <button type="button" onClick={() => setAddingBlocked(true)} style={{ ...btnPrimary, marginTop: 12 }}>Add Blocked Topic</button>
+        )}
+      </Card>
+    </div>
+  );
+}
+
+function AddBlockedForm({ onSave, onCancel }: { onSave: (topic: string, reason: string) => void; onCancel: () => void }) {
+  const [topic, setTopic] = useState("");
+  const [reason, setReason] = useState("");
+  return (
+    <div style={{ marginTop: 12 }}>
+      <div style={{ marginBottom: 8 }}>
+        <label style={labelSmall}>Topic</label>
+        <input value={topic} onChange={e => setTopic(e.target.value)} placeholder="e.g. Competitor pricing" style={inputStyle} autoFocus />
+      </div>
+      <div style={{ marginBottom: 8 }}>
+        <label style={labelSmall}>Reason (optional)</label>
+        <input value={reason} onChange={e => setReason(e.target.value)} placeholder="Why this topic is blocked" style={inputStyle} />
+      </div>
+      <div style={{ display: "flex", gap: 8 }}>
+        <button type="button" onClick={() => { if (topic.trim()) onSave(topic.trim(), reason.trim()); }} style={btnSave}>Add Topic</button>
+        <button type="button" onClick={onCancel} style={btnCancel}>Cancel</button>
+      </div>
     </div>
   );
 }
@@ -96,7 +329,13 @@ function TextArea({ label, name, value, hint, rows }: { label: string; name: str
   );
 }
 
+const ruleRow: React.CSSProperties = { display: "flex", alignItems: "flex-start", justifyContent: "space-between", padding: "12px 0", borderBottom: "1px solid #eee8dc" };
 const labelStyle: React.CSSProperties = { display: "block", fontSize: 12, fontWeight: 600, color: "#3b3b3b", marginBottom: 6 };
-const inputStyle: React.CSSProperties = { width: "100%", padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" };
+const labelSmall: React.CSSProperties = { display: "block", fontSize: 11, fontWeight: 600, color: "#8a8478", marginBottom: 4 };
+const inputStyle: React.CSSProperties = { width: "100%", padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" as any };
 const hintStyle: React.CSSProperties = { fontSize: 11, color: "#8a8478", marginTop: 4 };
 const btnPrimary: React.CSSProperties = { padding: "10px 20px", background: "#3b3b3b", color: "#f5f0e8", border: "none", borderRadius: 6, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const btnEdit: React.CSSProperties = { padding: "5px 12px", background: "#eee8dc", color: "#3b3b3b", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const btnDelete: React.CSSProperties = { padding: "5px 12px", background: "#ffebee", color: "#c62828", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const btnSave: React.CSSProperties = { padding: "8px 16px", background: "#2e7d32", color: "white", border: "none", borderRadius: 6, fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const btnCancel: React.CSSProperties = { padding: "8px 16px", background: "#f5f5f5", color: "#666", border: "none", borderRadius: 6, fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
