@@ -62,6 +62,7 @@ const HUB_CSS = `
 }
 .hub-overlay { display: none; }
 .hub-hamburger { display: none; }
+.hub-close-btn { display: none; }
 .hub-main { margin-left: 240px; flex: 1; min-height: 100vh; padding: 32px; overflow-y: auto; }
 
 @media (max-width: 768px) {
@@ -73,14 +74,15 @@ const HUB_CSS = `
   .hub-sidebar.open { transform: translateX(0); }
   .hub-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 35; }
   .hub-overlay.open { display: block; }
+  .hub-close-btn { display: block; }
   .hub-hamburger {
     display: flex; align-items: center; justify-content: center;
-    position: fixed; top: 12px; left: 12px; z-index: 50;
+    position: fixed; top: 12px; right: 12px; z-index: 50;
     width: 40px; height: 40px; border-radius: 8px;
     background: #fff; border: 1px solid #ddd5c4; cursor: pointer;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   }
-  .hub-main { margin-left: 0; padding: 16px; padding-top: 64px; }
+  .hub-main { margin-left: 0; padding: 16px; padding-top: 16px; }
 }
 
 /* Responsive tables */
@@ -144,12 +146,9 @@ export default function HubLayout() {
       <style dangerouslySetInnerHTML={{ __html: HUB_CSS }} />
       <div className="hub-wrap">
         {/* Hamburger button - mobile only */}
-        <button className="hub-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+        <button className="hub-hamburger" onClick={() => setMenuOpen(true)} aria-label="Menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b3b3b" strokeWidth="2" strokeLinecap="round">
-            {menuOpen
-              ? <><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></>
-              : <><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></>
-            }
+            <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
 
@@ -158,9 +157,16 @@ export default function HubLayout() {
 
         {/* Sidebar */}
         <nav className={`hub-sidebar ${menuOpen ? "open" : ""}`}>
-          <div style={{ padding: "24px 24px 20px", borderBottom: "1px solid #ddd5c4" }}>
-            <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 2.5, textTransform: "uppercase", color: "#3b3b3b" }}>Media Waffle</div>
-            <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", color: "#c4a882", marginTop: 4 }}>AI Messaging Hub</div>
+          <div style={{ padding: "24px 24px 20px", borderBottom: "1px solid #ddd5c4", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+            <div>
+              <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 2.5, textTransform: "uppercase", color: "#3b3b3b" }}>Media Waffle</div>
+              <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", color: "#c4a882", marginTop: 4 }}>AI Messaging Hub</div>
+            </div>
+            <button className="hub-close-btn" onClick={() => setMenuOpen(false)} aria-label="Close menu" style={{ background: "none", border: "none", cursor: "pointer", padding: 4 }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b3b3b" strokeWidth="2" strokeLinecap="round">
+                <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
           </div>
 
           <div style={{ padding: "16px 12px", flex: 1, overflowY: "auto" }}>
