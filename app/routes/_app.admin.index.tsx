@@ -21,7 +21,7 @@ export async function loader({ request }: Route.LoaderArgs) {
 const CLIENTS = [
   { slug: "vernalys", name: "Vernalys Skin & Laser Clinic", status: "active", startDate: "2025-07", fee: 950 },
   { slug: "cronulla", name: "Cronulla Skin Sanctuary", status: "active", startDate: "2026-01", fee: 1500 },
-  { slug: "eleve", name: "Eleve Cosmetics", status: "active", startDate: "2025-07", fee: 1000 },
+  { slug: "eleve", name: "Élevé Cosmetics", status: "active", startDate: "2025-07", fee: 1000 },
   { slug: "rejuvia", name: "Rejuvia Beauty & Aesthetics", status: "active", startDate: "2025-10", fee: 1500 },
   { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990 },
 ];
