@@ -99,7 +99,17 @@ export default function BrandConfig() {
         </Card>
         <Card title="GHL Trigger Tags">
           <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>The AI will only respond to contacts that have ALL of these tags in GHL. The contact must also have a location tag matching one of your configured locations.</p>
-          <TextArea label="Trigger Tags (JSON array)" name="trigger_tags" value={typeof brand?.trigger_tags === "string" ? brand.trigger_tags : JSON.stringify(brand?.trigger_tags || ["hot lead", "meta lead"], null, 2)} rows={3} hint='e.g. ["hot lead", "meta lead"] - contact must have all listed tags' />
+          <TagInput
+            label="Required Tags"
+            name="trigger_tags"
+            initial={(() => {
+              const raw = brand?.trigger_tags;
+              if (Array.isArray(raw)) return raw;
+              if (typeof raw === "string") { try { return JSON.parse(raw); } catch { return ["hot lead", "meta lead"]; } }
+              return ["hot lead", "meta lead"];
+            })()}
+            hint="Type a tag name and press Enter to add it"
+          />
         </Card>
 
         <Card title="Custom Rules">
@@ -160,6 +170,60 @@ function TextArea({ label, name, value, hint, rows }: { label: string; name: str
     </div>
   );
 }
+function TagInput({ label, name, initial, hint }: { label: string; name: string; initial: string[]; hint?: string }) {
+  const [tags, setTags] = useState<string[]>(initial);
+  const [input, setInput] = useState("");
+
+  const addTag = () => {
+    const val = input.trim().toLowerCase();
+    if (val && !tags.includes(val)) {
+      setTags([...tags, val]);
+      setInput("");
+    }
+  };
+
+  const removeTag = (tag: string) => {
+    setTags(tags.filter(t => t !== tag));
+  };
+
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <label style={labelStyle}>{label}</label>
+      <input type="hidden" name={name} value={JSON.stringify(tags)} />
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 8 }}>
+        {tags.map(tag => (
+          <span key={tag} style={{
+            display: "inline-flex", alignItems: "center", gap: 6,
+            padding: "6px 12px", background: "#3b3b3b", color: "#f5f0e8",
+            borderRadius: 20, fontSize: 12, fontWeight: 600,
+          }}>
+            {tag}
+            <button type="button" onClick={() => removeTag(tag)} style={{
+              background: "none", border: "none", color: "#f5f0e8", cursor: "pointer",
+              fontSize: 14, lineHeight: 1, padding: 0, opacity: 0.7,
+            }}>x</button>
+          </span>
+        ))}
+      </div>
+      <div style={{ display: "flex", gap: 8 }}>
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); addTag(); } }}
+          placeholder="Type a tag and press Enter"
+          style={{ ...inputStyle, flex: 1 }}
+        />
+        <button type="button" onClick={addTag} style={{
+          padding: "10px 16px", background: "#eee8dc", color: "#3b3b3b", border: "none",
+          borderRadius: 6, fontSize: 12, fontWeight: 600, cursor: "pointer",
+          fontFamily: "'Montserrat', sans-serif",
+        }}>Add</button>
+      </div>
+      {hint && <div style={hintStyle}>{hint}</div>}
+    </div>
+  );
+}
+
 function CheckboxField({ label, name, checked }: { label: string; name: string; checked: boolean }) {
   const [isChecked, setIsChecked] = useState(checked);
   return (

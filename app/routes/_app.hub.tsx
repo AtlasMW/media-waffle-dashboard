@@ -26,7 +26,7 @@ export async function loader({ request }: Route.LoaderArgs) {
   const clientList = (clientAccess || []).map((ca: any) => ca.msg_clients).filter(Boolean);
 
   for (const client of clientList) {
-    const [brand, offers, faqs, locations, services, blocked, suggested, convLogs] = await Promise.all([
+    const [brand, offers, faqs, locations, services, blocked, suggested, convLogs, trainingExamples] = await Promise.all([
       supabase.from("msg_brand_config").select("*").eq("client_id", client.id).single(),
       supabase.from("msg_offers").select("*").eq("client_id", client.id).order("is_active", { ascending: false }).order("updated_at", { ascending: false }),
       supabase.from("msg_faqs").select("*").eq("client_id", client.id).order("times_used", { ascending: false }),
@@ -35,6 +35,7 @@ export async function loader({ request }: Route.LoaderArgs) {
       supabase.from("msg_blocked_topics").select("*").eq("client_id", client.id),
       supabase.from("msg_learned_patterns").select("*").eq("client_id", client.id).eq("status", "pending_review"),
       supabase.from("msg_conversation_logs").select("*").eq("client_id", client.id).order("created_at", { ascending: false }).limit(30),
+      supabase.from("msg_training_examples").select("*").eq("client_id", client.id).order("created_at", { ascending: false }),
     ]);
     allClientData[client.slug] = {
       client,
@@ -46,6 +47,7 @@ export async function loader({ request }: Route.LoaderArgs) {
       blocked: blocked.data || [],
       suggested: suggested.data || [],
       conversations: { logs: convLogs.data || [], total: convLogs.data?.length || 0 },
+      trainingExamples: trainingExamples.data || [],
     };
   }
 
@@ -209,6 +211,10 @@ export default function HubLayout() {
                   <NavLink prefetch="render" to={`/hub/${client.slug}/escalations`} style={({ isActive }) => navStyle(isActive)}>
                     <NavIcon d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
                     Escalations
+                  </NavLink>
+                  <NavLink prefetch="render" to={`/hub/${client.slug}/training`} style={({ isActive }) => navStyle(isActive)}>
+                    <NavIcon d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3" />
+                    AI Training
                   </NavLink>
                 </div>
               );
