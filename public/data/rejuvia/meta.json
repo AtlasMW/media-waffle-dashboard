@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T10:47:17+10:00",
+  "lastUpdated": "2026-03-17T11:01:11+10:00",
   "agencyFees": {
     "2025-10": 1500,
     "2025-11": 1500,
@@ -20,7 +20,7 @@
       "costPerMessage": 7.39,
       "uniqueCtr": 0.28,
       "cpm": 15.95,
-      "leadConvPct": 461.54,
+      "leadConvPct": 1.28,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 1 - GRAND OPENING",
@@ -31,7 +31,7 @@
           "cpl": 4.74,
           "uniqueCtr": 0.28,
           "messages": 77,
-          "leadConvPct": 461.54
+          "leadConvPct": 1.28
         }
       ],
       "offers": [
@@ -180,7 +180,7 @@
       "costPerMessage": 22.61,
       "uniqueCtr": 0.12,
       "cpm": 28.89,
-      "leadConvPct": 400.0,
+      "leadConvPct": 0.48,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 3 - Face Series",
@@ -191,7 +191,7 @@
           "cpl": 29.41,
           "uniqueCtr": 0.03,
           "messages": 13,
-          "leadConvPct": 900.0
+          "leadConvPct": 0.31
         },
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -202,7 +202,7 @@
           "cpl": 17.09,
           "uniqueCtr": 0.21,
           "messages": 4,
-          "leadConvPct": 233.33
+          "leadConvPct": 0.48
         }
       ],
       "offers": [
@@ -358,7 +358,7 @@
       "costPerMessage": 19.57,
       "uniqueCtr": 0.04,
       "cpm": 19.04,
-      "leadConvPct": 925.0,
+      "leadConvPct": 0.41,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -369,7 +369,7 @@
           "cpl": 20.63,
           "uniqueCtr": 0.04,
           "messages": 39,
-          "leadConvPct": 925.0
+          "leadConvPct": 0.41
         }
       ],
       "offers": [
@@ -523,7 +523,7 @@
       "costPerMessage": 19.84,
       "uniqueCtr": 0.03,
       "cpm": 13.99,
-      "leadConvPct": 500.0,
+      "leadConvPct": 0.13,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
@@ -534,7 +534,7 @@
           "cpl": 27.77,
           "uniqueCtr": 0.03,
           "messages": 7,
-          "leadConvPct": 500.0
+          "leadConvPct": 0.13
         }
       ],
       "offers": [
@@ -653,7 +653,7 @@
       "costPerMessage": 15.29,
       "uniqueCtr": 0.01,
       "cpm": 17.47,
-      "leadConvPct": 3200.0,
+      "leadConvPct": 0.35,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 5 - Love Glow",
@@ -664,7 +664,7 @@
           "cpl": 22.12,
           "uniqueCtr": 0.01,
           "messages": 22,
-          "leadConvPct": 2000.0
+          "leadConvPct": 0.25
         },
         {
           "name": "LEADS // CBO // OFFER 6 BROWS",
@@ -675,7 +675,7 @@
           "cpl": 10.29,
           "uniqueCtr": 0.0,
           "messages": 15,
-          "leadConvPct": 0
+          "leadConvPct": 0.42
         }
       ],
       "offers": [

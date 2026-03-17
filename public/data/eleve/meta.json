@@ -1,7 +1,7 @@
 {
   "client": "\u00c9lev\u00e9 Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T10:48:46+10:00",
+  "lastUpdated": "2026-03-17T11:00:36+10:00",
   "agencyFees": {
     "2025-07": 800,
     "2025-08": 800,
@@ -23,7 +23,7 @@
       "costPerMessage": 21.36,
       "uniqueCtr": 0.06,
       "cpm": 24.28,
-      "leadConvPct": 3337.5,
+      "leadConvPct": 1.99,
       "campaigns": [
         {
           "name": "TOF // LEADS // LAUNCH OFFER",
@@ -34,7 +34,7 @@
           "cpl": 3.6,
           "uniqueCtr": 0.06,
           "messages": 45,
-          "leadConvPct": 3337.5
+          "leadConvPct": 1.99
         }
       ],
       "offers": [
@@ -188,7 +188,7 @@
       "costPerMessage": 43.8,
       "uniqueCtr": 0.02,
       "cpm": 22.72,
-      "leadConvPct": 5700.0,
+      "leadConvPct": 1.3,
       "campaigns": [
         {
           "name": "TOF // LEADS // LAUNCH OFFER",
@@ -199,7 +199,7 @@
           "cpl": 4.35,
           "uniqueCtr": 0.02,
           "messages": 17,
-          "leadConvPct": 5700.0
+          "leadConvPct": 1.3
         }
       ],
       "offers": [
@@ -348,7 +348,7 @@
       "costPerMessage": 45.45,
       "uniqueCtr": 0.02,
       "cpm": 25.54,
-      "leadConvPct": 3050.0,
+      "leadConvPct": 0.58,
       "campaigns": [
         {
           "name": "TOF // LEADS // LAUNCH OFFER",
@@ -359,7 +359,7 @@
           "cpl": 3.05,
           "uniqueCtr": 0.0,
           "messages": 1,
-          "leadConvPct": 0
+          "leadConvPct": 0.82
         },
         {
           "name": "LEADS // CBO // OFFER 2 - REJURAN",
@@ -370,7 +370,7 @@
           "cpl": 13.87,
           "uniqueCtr": 0.02,
           "messages": 12,
-          "leadConvPct": 2250.0
+          "leadConvPct": 0.49
         },
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -381,7 +381,7 @@
           "cpl": 5.9,
           "uniqueCtr": 0.0,
           "messages": 2,
-          "leadConvPct": 0
+          "leadConvPct": 0.53
         }
       ],
       "offers": [
@@ -539,7 +539,7 @@
       "costPerMessage": 24.4,
       "uniqueCtr": 0.01,
       "cpm": 20.67,
-      "leadConvPct": 20200.0,
+      "leadConvPct": 1.43,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 2 - REJURAN",
@@ -561,7 +561,7 @@
           "cpl": 4.11,
           "uniqueCtr": 0.01,
           "messages": 34,
-          "leadConvPct": 20200.0
+          "leadConvPct": 1.43
         }
       ],
       "offers": [
@@ -732,7 +732,7 @@
       "costPerMessage": 7.56,
       "uniqueCtr": 0.0,
       "cpm": 26.75,
-      "leadConvPct": 0,
+      "leadConvPct": 1.2,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -743,7 +743,7 @@
           "cpl": 5.2,
           "uniqueCtr": 0.0,
           "messages": 108,
-          "leadConvPct": 0
+          "leadConvPct": 1.2
         }
       ],
       "offers": [
@@ -892,7 +892,7 @@
       "costPerMessage": 6.39,
       "uniqueCtr": 0.01,
       "cpm": 21.64,
-      "leadConvPct": 9900.0,
+      "leadConvPct": 0.8,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -903,7 +903,7 @@
           "cpl": 5.58,
           "uniqueCtr": 0.01,
           "messages": 93,
-          "leadConvPct": 9900.0
+          "leadConvPct": 0.96
         },
         {
           "name": "Engagement // CBO // Socials",
@@ -914,7 +914,7 @@
           "cpl": 0,
           "uniqueCtr": 0.0,
           "messages": 0,
-          "leadConvPct": 0
+          "leadConvPct": 0.0
         }
       ],
       "offers": [
@@ -1068,7 +1068,7 @@
       "costPerMessage": 4.94,
       "uniqueCtr": 0.01,
       "cpm": 18.07,
-      "leadConvPct": 7250.0,
+      "leadConvPct": 0.87,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -1079,7 +1079,7 @@
           "cpl": 4.61,
           "uniqueCtr": 0.01,
           "messages": 139,
-          "leadConvPct": 7200.0
+          "leadConvPct": 1.08
         },
         {
           "name": "Engagement // CBO // Socials",
@@ -1090,7 +1090,7 @@
           "cpl": 38.36,
           "uniqueCtr": 0.0,
           "messages": 3,
-          "leadConvPct": 0
+          "leadConvPct": 0.03
         }
       ],
       "offers": [
@@ -1244,7 +1244,7 @@
       "costPerMessage": 6.11,
       "uniqueCtr": 0.02,
       "cpm": 20.45,
-      "leadConvPct": 4025.0,
+      "leadConvPct": 1.0,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -1255,7 +1255,7 @@
           "cpl": 5.44,
           "uniqueCtr": 0.01,
           "messages": 112,
-          "leadConvPct": 6250.0
+          "leadConvPct": 0.91
         },
         {
           "name": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
@@ -1266,7 +1266,7 @@
           "cpl": 6.4,
           "uniqueCtr": 0.03,
           "messages": 37,
-          "leadConvPct": 1800.0
+          "leadConvPct": 0.55
         }
       ],
       "offers": [

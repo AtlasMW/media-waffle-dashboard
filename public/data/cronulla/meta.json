@@ -1,7 +1,7 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T10:46:43+10:00",
+  "lastUpdated": "2026-03-17T10:59:42+10:00",
   "agencyFees": {
     "2026-01": 1500,
     "2026-02": 1500
@@ -17,7 +17,7 @@
       "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
-      "leadConvPct": 27.88,
+      "leadConvPct": 0.24,
       "campaigns": [
         {
           "name": "OMG | Website purchases",
@@ -28,7 +28,7 @@
           "cpl": 169.29,
           "uniqueCtr": 3.27,
           "messages": 1,
-          "leadConvPct": 0.99
+          "leadConvPct": 0.03
         },
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -39,7 +39,7 @@
           "cpl": 38.21,
           "uniqueCtr": 0.03,
           "messages": 20,
-          "leadConvPct": 933.33
+          "leadConvPct": 0.29
         }
       ],
       "offers": [
@@ -218,7 +218,7 @@
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 822.22,
+      "leadConvPct": 0.62,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
@@ -229,7 +229,7 @@
           "cpl": 53.23,
           "uniqueCtr": 0.02,
           "messages": 10,
-          "leadConvPct": 650.0
+          "leadConvPct": 0.15
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
@@ -240,7 +240,7 @@
           "cpl": 11.81,
           "uniqueCtr": 0.11,
           "messages": 34,
-          "leadConvPct": 871.43
+          "leadConvPct": 0.93
         }
       ],
       "offers": [
