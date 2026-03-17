@@ -15,6 +15,8 @@ export default [
     route("dashboard", "routes/_app.dashboard.tsx"),
     route("hub", "routes/_app.hub.tsx", [
       index("routes/_app.hub._index.tsx"),
+      route("admin/clients", "routes/_app.hub.admin.clients.tsx"),
+      route("admin/onboarding", "routes/_app.hub.admin.onboarding.tsx"),
       route(":slug/brand", "routes/_app.hub.$slug.brand.tsx"),
       route(":slug/offers", "routes/_app.hub.$slug.offers.tsx"),
       route(":slug/faqs", "routes/_app.hub.$slug.faqs.tsx"),
