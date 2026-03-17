@@ -1,7 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T10:59:26+10:00",
+  "lastUpdated": "2026-03-17T11:16:46+10:00",
   "agencyFees": {
     "2025-07": 950,
     "2025-08": 950,
@@ -23,7 +23,7 @@
       "costPerMessage": 26.13,
       "uniqueCtr": 0.08,
       "cpm": 24.44,
-      "leadConvPct": 0.35,
+      "leadConvPct": 0.23,
       "campaigns": [
         {
           "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT",
@@ -191,7 +191,7 @@
       "costPerMessage": 11.78,
       "uniqueCtr": 0.09,
       "cpm": 15.34,
-      "leadConvPct": 0.58,
+      "leadConvPct": 0.43,
       "campaigns": [
         {
           "name": "TOF // LEAD // A+CB // OFFER 1 - PAYOT [NEW]",
@@ -964,7 +964,7 @@
       "costPerMessage": 7.65,
       "uniqueCtr": 0.1,
       "cpm": 9.99,
-      "leadConvPct": 0.28,
+      "leadConvPct": 0.17,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
@@ -1237,7 +1237,7 @@
       "costPerMessage": 6.83,
       "uniqueCtr": 0.08,
       "cpm": 11.96,
-      "leadConvPct": 0.5,
+      "leadConvPct": 0.25,
       "campaigns": [
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",

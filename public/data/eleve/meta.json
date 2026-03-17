@@ -1,7 +1,7 @@
 {
   "client": "\u00c9lev\u00e9 Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T11:00:36+10:00",
+  "lastUpdated": "2026-03-17T11:18:00+10:00",
   "agencyFees": {
     "2025-07": 800,
     "2025-08": 800,
@@ -348,7 +348,7 @@
       "costPerMessage": 45.45,
       "uniqueCtr": 0.02,
       "cpm": 25.54,
-      "leadConvPct": 0.58,
+      "leadConvPct": 0.61,
       "campaigns": [
         {
           "name": "TOF // LEADS // LAUNCH OFFER",
@@ -892,7 +892,7 @@
       "costPerMessage": 6.39,
       "uniqueCtr": 0.01,
       "cpm": 21.64,
-      "leadConvPct": 0.8,
+      "leadConvPct": 0.96,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -1068,7 +1068,7 @@
       "costPerMessage": 4.94,
       "uniqueCtr": 0.01,
       "cpm": 18.07,
-      "leadConvPct": 0.87,
+      "leadConvPct": 0.56,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
@@ -1244,7 +1244,7 @@
       "costPerMessage": 6.11,
       "uniqueCtr": 0.02,
       "cpm": 20.45,
-      "leadConvPct": 1.0,
+      "leadConvPct": 0.73,
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",

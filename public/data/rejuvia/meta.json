@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T11:01:11+10:00",
+  "lastUpdated": "2026-03-17T11:18:43+10:00",
   "agencyFees": {
     "2025-10": 1500,
     "2025-11": 1500,
@@ -180,7 +180,7 @@
       "costPerMessage": 22.61,
       "uniqueCtr": 0.12,
       "cpm": 28.89,
-      "leadConvPct": 0.48,
+      "leadConvPct": 0.4,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 3 - Face Series",
@@ -221,58 +221,7 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [
-        {
-          "adName": "IMG 1 | H1 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 7.46,
-          "leads": 1,
-          "cpl": 7.46,
-          "uniqueCtr": 0.0,
-          "frequency": 1.33
-        },
-        {
-          "adName": "VIDEO 1 | H1 - C1 - Copy",
-          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
-          "spend": 10.66,
-          "leads": 1,
-          "cpl": 10.66,
-          "uniqueCtr": 0.0,
-          "frequency": 1.23
-        },
-        {
-          "adName": "VIDEO 1 | H1 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
-          "spend": 11.84,
-          "leads": 1,
-          "cpl": 11.84,
-          "uniqueCtr": 0.0,
-          "frequency": 1.36
-        },
-        {
-          "adName": "IMG 3 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 54.99,
-          "leads": 3,
-          "cpl": 18.33,
-          "uniqueCtr": 0.11,
-          "frequency": 1.81
-        },
-        {
-          "adName": "IMG 2 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 57.18,
-          "leads": 3,
-          "cpl": 19.06,
-          "uniqueCtr": 0.21,
-          "frequency": 1.73
-        }
-      ],
+      "ads": [],
       "demographics": [
         {
           "age": "18-24",
@@ -381,58 +330,7 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [
-        {
-          "adName": "IMG 2 | H2 - C1 - Copy",
-          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 21.88,
-          "leads": 3,
-          "cpl": 7.29,
-          "uniqueCtr": 0.0,
-          "frequency": 1.46
-        },
-        {
-          "adName": "IMG 2 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 90.54,
-          "leads": 6,
-          "cpl": 15.09,
-          "uniqueCtr": 0.05,
-          "frequency": 2.71
-        },
-        {
-          "adName": "IMG 1 | H1 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 33.46,
-          "leads": 2,
-          "cpl": 16.73,
-          "uniqueCtr": 0.0,
-          "frequency": 2.07
-        },
-        {
-          "adName": "IMG 3 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 494.1,
-          "leads": 24,
-          "cpl": 20.59,
-          "uniqueCtr": 0.04,
-          "frequency": 3.34
-        },
-        {
-          "adName": "IMG 3 | H2 - C1 - Copy",
-          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 49.46,
-          "leads": 1,
-          "cpl": 49.46,
-          "uniqueCtr": 0.0,
-          "frequency": 1.59
-        }
-      ],
+      "ads": [],
       "demographics": [
         {
           "age": "18-24",
@@ -546,28 +444,7 @@
           "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
         }
       ],
-      "ads": [
-        {
-          "adName": "IMG 3 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 40.43,
-          "leads": 2,
-          "cpl": 20.21,
-          "uniqueCtr": 0.0,
-          "frequency": 1.65
-        },
-        {
-          "adName": "IMG 2 | H2 - C1",
-          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
-          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
-          "spend": 73.23,
-          "leads": 3,
-          "cpl": 24.41,
-          "uniqueCtr": 0.05,
-          "frequency": 2.37
-        }
-      ],
+      "ads": [],
       "demographics": [
         {
           "age": "18-24",
@@ -653,7 +530,7 @@
       "costPerMessage": 15.29,
       "uniqueCtr": 0.01,
       "cpm": 17.47,
-      "leadConvPct": 0.35,
+      "leadConvPct": 0.33,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 5 - Love Glow",

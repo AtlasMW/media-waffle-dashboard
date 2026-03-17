@@ -1,7 +1,7 @@
 {
   "client": "The Hair Plus Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T11:01:28+10:00",
+  "lastUpdated": "2026-03-17T11:19:11+10:00",
   "agencyFees": {
     "2026-01": 0,
     "2026-02": 990
@@ -17,7 +17,7 @@
       "costPerMessage": 0,
       "uniqueCtr": 0.0,
       "cpm": 24.3,
-      "leadConvPct": 0.0,
+      "leadConvPct": 0,
       "campaigns": [
         {
           "name": "LEADS // ABO //OFFER 1",
@@ -131,7 +131,7 @@
       "costPerMessage": 339.45,
       "uniqueCtr": 0.16,
       "cpm": 23.66,
-      "leadConvPct": 0.43,
+      "leadConvPct": 0.33,
       "campaigns": [
         {
           "name": "LEADS // ABO //OFFER 1",

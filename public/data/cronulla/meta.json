@@ -1,7 +1,7 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-17T10:59:42+10:00",
+  "lastUpdated": "2026-03-17T11:17:05+10:00",
   "agencyFees": {
     "2026-01": 1500,
     "2026-02": 1500
@@ -17,7 +17,7 @@
       "costPerMessage": 59.01,
       "uniqueCtr": 0.86,
       "cpm": 28.18,
-      "leadConvPct": 0.24,
+      "leadConvPct": 0.16,
       "campaigns": [
         {
           "name": "OMG | Website purchases",
@@ -218,7 +218,7 @@
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 0.62,
+      "leadConvPct": 0.54,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
