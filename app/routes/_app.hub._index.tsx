@@ -28,7 +28,7 @@ export default function HubOverview() {
       <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", marginBottom: 8 }}>AI Messaging Hub</h1>
       <p style={{ color: "#8a8478", fontSize: 14, marginBottom: 32 }}>Manage AI messaging systems for all clients</p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 20 }}>
+      <div className="hub-grid-cards">
         {clients.map((client: any) => (
           <div key={client.id} style={{
             background: "white",

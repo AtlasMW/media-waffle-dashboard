@@ -49,7 +49,7 @@ export default function AdminClients() {
 
   return (
     <div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 32 }}>
+      <div className="hub-page-header" style={{ marginBottom: 32 }}>
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", margin: 0 }}>All Clients</h1>
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{clients.length} messaging clients configured</p>
@@ -58,7 +58,7 @@ export default function AdminClients() {
       </div>
 
       {/* Summary cards */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 32 }}>
+      <div className="hub-grid-4" style={{ marginBottom: 32 }}>
         {[
           { label: "Active Clients", value: clients.filter((c: any) => c.status === "active").length, color: "#2e7d32" },
           { label: "This Week", value: Object.values(stats).reduce((s: number, v: any) => s + v.week, 0), color: "#1565c0" },
@@ -73,7 +73,7 @@ export default function AdminClients() {
       </div>
 
       {/* Client table */}
-      <div style={{ background: "white", borderRadius: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden" }}>
+      <div className="hub-table-wrap" style={{ background: "white", borderRadius: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, fontFamily: "'Montserrat', sans-serif" }}>
           <thead>
             <tr style={{ background: "#3b3b3b", color: "#f5f0e8" }}>

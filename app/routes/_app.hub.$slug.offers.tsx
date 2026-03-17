@@ -36,8 +36,8 @@ export default function Offers() {
   const [showAdd, setShowAdd] = useState(false);
 
   return (
-    <div style={{ maxWidth: 720 }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
+    <div style={{ maxWidth: 720, width: "100%" }}>
+      <div className="hub-page-header">
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Offers</h1>
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
@@ -70,7 +70,7 @@ export default function Offers() {
 
       {offers.map((offer: any) => (
         <div key={offer.id} style={{ background: "white", borderRadius: 12, padding: 20, marginBottom: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", opacity: offer.is_active ? 1 : 0.5 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" as any }}>
             <div>
               <div style={{ fontWeight: 700, fontSize: 15, color: "#3b3b3b" }}>{offer.name}</div>
               {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}

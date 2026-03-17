@@ -52,8 +52,8 @@ export default function BrandConfig() {
   };
 
   return (
-    <div style={{ maxWidth: 720 }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
+    <div style={{ maxWidth: 720, width: "100%" }}>
+      <div className="hub-page-header">
         <div>
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Brand Configuration</h1>
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
@@ -74,14 +74,14 @@ export default function BrandConfig() {
         <Card title="Message Limits">
           <div style={{ marginBottom: 20 }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: "#3b3b3b", marginBottom: 12 }}>SMS</div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+            <div className="hub-grid-2">
               <Field label="Character Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
               <Field label="Max Messages" name="sms_max_messages" value={brand?.sms_max_messages || 7} type="number" />
             </div>
           </div>
           <div style={{ borderTop: "1px solid #eee8dc", paddingTop: 20 }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: "#3b3b3b", marginBottom: 12 }}>Social Media DMs</div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+            <div className="hub-grid-2">
               <div style={{ marginBottom: 16 }}>
                 <label style={labelStyle}>Character Limit</label>
                 <div style={{ padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, background: "#faf8f5", color: "#8a8478" }}>None</div>
@@ -118,7 +118,7 @@ export default function BrandConfig() {
             </fetcher.Form>
           </div>
         ))}
-        <fetcher.Form method="post" style={{ display: "flex", gap: 8, marginTop: 12 }}>
+        <fetcher.Form method="post" className="hub-form-row" style={{ marginTop: 12 }}>
           <input type="hidden" name="intent" value="add_blocked" />
           <input name="topic" placeholder="Topic" required style={inputStyle} />
           <input name="reason" placeholder="Reason" style={inputStyle} />

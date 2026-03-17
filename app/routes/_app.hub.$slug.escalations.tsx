@@ -42,12 +42,12 @@ export default function Escalations() {
   }
 
   return (
-    <div style={{ maxWidth: 800 }}>
+    <div style={{ maxWidth: 800, width: "100%" }}>
       <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Escalations</h1>
       <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>{client.name}</p>
 
       {/* Summary */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
+      <div className="hub-grid-2" style={{ marginBottom: 24 }}>
         <div style={{ background: "white", borderRadius: 12, padding: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
           <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 4 }}>Open</div>
           <div style={{ fontSize: 32, fontWeight: 700, color: open.length > 0 ? "#ef6c00" : "#2e7d32" }}>{open.length}</div>
@@ -91,8 +91,8 @@ export default function Escalations() {
                   )}
                 </div>
 
-                <div style={{ display: "flex", gap: 8, alignItems: "flex-end" }}>
-                  <fetcher.Form method="post" style={{ display: "flex", gap: 8, flex: 1, alignItems: "flex-end" }}>
+                <div className="hub-resolve-row">
+                  <fetcher.Form method="post" className="hub-resolve-row" style={{ flex: 1 }}>
                     <input type="hidden" name="intent" value="resolve" />
                     <input type="hidden" name="id" value={esc.id} />
                     <div style={{ flex: 1 }}>

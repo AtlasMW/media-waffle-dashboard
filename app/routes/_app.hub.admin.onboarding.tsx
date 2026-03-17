@@ -78,7 +78,7 @@ export default function Onboarding() {
 
   if (result?.success) {
     return (
-      <div style={{ maxWidth: 600 }}>
+      <div style={{ maxWidth: 600, width: "100%" }}>
         <div style={{ background: "#e8f5e9", borderRadius: 12, padding: 32, textAlign: "center" }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>&#10003;</div>
           <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#2e7d32", marginBottom: 8 }}>Client Created</h2>
@@ -93,7 +93,7 @@ export default function Onboarding() {
   }
 
   return (
-    <div style={{ maxWidth: 600 }}>
+    <div style={{ maxWidth: 600, width: "100%" }}>
       <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 28, color: "#3b3b3b", margin: "0 0 8px" }}>Onboard New Client</h1>
       <p style={{ color: "#8a8478", fontSize: 13, marginBottom: 32 }}>Set up a new AI messaging client. You can configure details after creation.</p>
 
