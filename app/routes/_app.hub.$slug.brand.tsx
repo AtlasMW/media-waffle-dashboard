@@ -1,0 +1,200 @@
+import { useLoaderData, useFetcher } from "react-router";
+import type { Route } from "./+types/_app.hub.$slug.brand";
+import { createSupabaseServerClient } from "../lib/supabase.server";
+import { useState } from "react";
+
+export async function loader({ request, params }: Route.LoaderArgs) {
+  const { supabase } = createSupabaseServerClient(request);
+  const { data: client } = await supabase.from("msg_clients").select("*").eq("slug", params.slug).single();
+  if (!client) throw new Response("Not found", { status: 404 });
+  const { data: brand } = await supabase.from("msg_brand_config").select("*").eq("client_id", client.id).single();
+  const { data: blocked } = await supabase.from("msg_blocked_topics").select("*").eq("client_id", client.id);
+  return { client, brand, blocked: blocked || [] };
+}
+
+export async function action({ request, params }: Route.ActionArgs) {
+  const { supabase } = createSupabaseServerClient(request);
+  const form = await request.formData();
+  const intent = form.get("intent");
+
+  const { data: client } = await supabase.from("msg_clients").select("id").eq("slug", params.slug).single();
+  if (!client) return { error: "Client not found" };
+
+  if (intent === "save_brand") {
+    const updates: Record<string, any> = {};
+    for (const [key, value] of form.entries()) {
+      if (key === "intent") continue;
+      if (key === "emoji_allowed" || key === "deposit_required") {
+        updates[key] = value === "true";
+      } else if (key === "sms_char_limit" || key === "sms_max_messages" || key === "dm_max_messages") {
+        updates[key] = parseInt(value as string) || 0;
+      } else if (key === "custom_rules") {
+        updates[key] = value;
+      } else {
+        updates[key] = value;
+      }
+    }
+    await supabase.from("msg_brand_config").update(updates).eq("client_id", client.id);
+    return { success: true };
+  }
+
+  if (intent === "add_blocked") {
+    const topic = form.get("topic") as string;
+    const reason = form.get("reason") as string;
+    await supabase.from("msg_blocked_topics").insert({ client_id: client.id, topic, reason });
+    return { success: true };
+  }
+
+  if (intent === "remove_blocked") {
+    const id = form.get("id") as string;
+    await supabase.from("msg_blocked_topics").delete().eq("id", id);
+    return { success: true };
+  }
+
+  return {};
+}
+
+export default function BrandConfig() {
+  const { client, brand, blocked } = useLoaderData<typeof loader>();
+  const fetcher = useFetcher();
+  const [saved, setSaved] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    formData.set("intent", "save_brand");
+    fetcher.submit(formData, { method: "post" });
+    setSaved(true);
+    setTimeout(() => setSaved(false), 2000);
+  };
+
+  return (
+    <div style={{ maxWidth: 720 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
+        <div>
+          <h1 style={{ fontFamily: "'Georgia', serif", fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Brand Configuration — Version {brand?.version || 1}</p>
+        </div>
+        {saved && <span style={{ color: "#2e7d32", fontSize: 13, fontWeight: 600 }}>Saved</span>}
+      </div>
+
+      <form onSubmit={handleSubmit}>
+        <Card title="Assistant Identity">
+          <Field label="Assistant Name" name="assistant_name" value={brand?.assistant_name || ""} hint="The name your AI assistant uses (e.g. Cassie)" />
+          <SelectField label="Tone" name="tone" value={brand?.tone || "friendly"} options={["friendly", "professional", "casual"]} />
+          <Field label="Greeting Style" name="greeting_style" value={brand?.greeting_style || "Hi [name]"} hint="Use [name] as placeholder for lead's first name" />
+        </Card>
+
+        <Card title="Contact Details">
+          <Field label="Phone Number" name="phone_number" value={brand?.phone_number || ""} />
+          <Field label="Escalation Phone" name="escalation_phone" value={brand?.escalation_phone || ""} hint="Phone number for escalation messages" />
+        </Card>
+
+        <Card title="Message Limits">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
+            <Field label="SMS Char Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
+            <Field label="SMS Max Messages" name="sms_max_messages" value={brand?.sms_max_messages || 7} type="number" />
+            <Field label="DM Max Messages" name="dm_max_messages" value={brand?.dm_max_messages || 10} type="number" />
+          </div>
+          <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
+        </Card>
+
+        <Card title="Booking Settings">
+          <CheckboxField label="Require deposit for online booking" name="deposit_required" checked={brand?.deposit_required || false} />
+          <TextArea label="Deposit Info Message" name="deposit_info" value={brand?.deposit_info || ""} hint="Message to include when mentioning booking links" />
+          <Field label="Post-Booking Response" name="post_booking_response" value={brand?.post_booking_response || ""} hint="What to say when a lead confirms they booked" />
+          <Field label="Returning Customer Note" name="returning_customer_note" value={brand?.returning_customer_note || ""} />
+        </Card>
+
+        <Card title="Custom Rules">
+          <TextArea label="Custom Rules (JSON array)" name="custom_rules" value={typeof brand?.custom_rules === "string" ? brand.custom_rules : JSON.stringify(brand?.custom_rules || [], null, 2)} rows={6} hint="JSON array of rule strings the AI must follow" />
+        </Card>
+
+        <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Brand Configuration</button>
+      </form>
+
+      <Card title="Blocked Topics">
+        <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 16 }}>Topics the AI must never discuss with leads</p>
+        {blocked.map((b: any) => (
+          <div key={b.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #eee8dc" }}>
+            <div>
+              <div style={{ fontWeight: 600, fontSize: 13 }}>{b.topic}</div>
+              <div style={{ fontSize: 12, color: "#8a8478" }}>{b.reason}</div>
+            </div>
+            <fetcher.Form method="post">
+              <input type="hidden" name="intent" value="remove_blocked" />
+              <input type="hidden" name="id" value={b.id} />
+              <button type="submit" style={{ ...btnDanger, fontSize: 11 }}>Remove</button>
+            </fetcher.Form>
+          </div>
+        ))}
+        <fetcher.Form method="post" style={{ display: "flex", gap: 8, marginTop: 12 }}>
+          <input type="hidden" name="intent" value="add_blocked" />
+          <input name="topic" placeholder="Topic" required style={inputStyle} />
+          <input name="reason" placeholder="Reason" style={inputStyle} />
+          <button type="submit" style={btnPrimary}>Add</button>
+        </fetcher.Form>
+      </Card>
+    </div>
+  );
+}
+
+// UI Components
+function Card({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+      <h3 style={{ fontFamily: "'Georgia', serif", fontSize: 16, color: "#3b3b3b", marginTop: 0, marginBottom: 16 }}>{title}</h3>
+      {children}
+    </div>
+  );
+}
+
+function Field({ label, name, value, hint, type }: { label: string; name: string; value: any; hint?: string; type?: string }) {
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <label style={labelStyle}>{label}</label>
+      <input name={name} defaultValue={value} type={type || "text"} style={inputStyle} />
+      {hint && <div style={hintStyle}>{hint}</div>}
+    </div>
+  );
+}
+
+function TextArea({ label, name, value, hint, rows }: { label: string; name: string; value: any; hint?: string; rows?: number }) {
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <label style={labelStyle}>{label}</label>
+      <textarea name={name} defaultValue={value} rows={rows || 3} style={{ ...inputStyle, resize: "vertical", minHeight: 60 }} />
+      {hint && <div style={hintStyle}>{hint}</div>}
+    </div>
+  );
+}
+
+function SelectField({ label, name, value, options }: { label: string; name: string; value: string; options: string[] }) {
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <label style={labelStyle}>{label}</label>
+      <select name={name} defaultValue={value} style={inputStyle}>
+        {options.map(o => <option key={o} value={o}>{o.charAt(0).toUpperCase() + o.slice(1)}</option>)}
+      </select>
+    </div>
+  );
+}
+
+function CheckboxField({ label, name, checked }: { label: string; name: string; checked: boolean }) {
+  const [isChecked, setIsChecked] = useState(checked);
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#3b3b3b", cursor: "pointer" }}>
+        <input type="hidden" name={name} value={isChecked ? "true" : "false"} />
+        <input type="checkbox" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} style={{ accentColor: "#3b3b3b" }} />
+        {label}
+      </label>
+    </div>
+  );
+}
+
+const labelStyle: React.CSSProperties = { display: "block", fontSize: 12, fontWeight: 600, color: "#3b3b3b", marginBottom: 6 };
+const inputStyle: React.CSSProperties = { width: "100%", padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" };
+const hintStyle: React.CSSProperties = { fontSize: 11, color: "#8a8478", marginTop: 4 };
+const btnPrimary: React.CSSProperties = { padding: "10px 20px", background: "#3b3b3b", color: "#f5f0e8", border: "none", borderRadius: 6, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const btnDanger: React.CSSProperties = { padding: "6px 12px", background: "#c47a6c", color: "white", border: "none", borderRadius: 4, fontSize: 12, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };

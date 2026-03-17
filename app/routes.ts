@@ -13,5 +13,14 @@ export default [
       route("invite", "routes/_app.admin.invite.tsx"),
     ]),
     route("dashboard", "routes/_app.dashboard.tsx"),
+    route("hub", "routes/_app.hub.tsx", [
+      index("routes/_app.hub._index.tsx"),
+      route(":slug/brand", "routes/_app.hub.$slug.brand.tsx"),
+      route(":slug/offers", "routes/_app.hub.$slug.offers.tsx"),
+      route(":slug/faqs", "routes/_app.hub.$slug.faqs.tsx"),
+      route(":slug/locations", "routes/_app.hub.$slug.locations.tsx"),
+      route(":slug/services", "routes/_app.hub.$slug.services.tsx"),
+      route(":slug/conversations", "routes/_app.hub.$slug.conversations.tsx"),
+    ]),
   ]),
 ] satisfies RouteConfig;
