@@ -142,28 +142,26 @@ export async function action({ request, params }: Route.ActionArgs) {
     });
     messages.push({ role: "user", content: message });
 
-    // Call Anthropic
-    const anthropicKey = process.env.ANTHROPIC_API_KEY;
-    if (!anthropicKey) return { error: "Anthropic API key not configured" };
+    // Call AI via Supabase Edge Function (handles API auth)
+    const supabaseUrl = process.env.SUPABASE_URL || "https://lavpnfluvywcjeiyuash.supabase.co";
+    const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2MDEzODcsImV4cCI6MjA4OTE3NzM4N30.X_GTCS1TY8aA9UeF7s76KtMYFymii_gLRceqLP09Ep0";
 
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch(`${supabaseUrl}/functions/v1/ai-sandbox`, {
         method: "POST",
         headers: {
-          "x-api-key": anthropicKey,
-          "anthropic-version": "2023-06-01",
+          "Authorization": `Bearer ${supabaseAnonKey}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 300,
           system: prompt,
           messages,
         }),
       });
       const data = await res.json();
-      const reply = data.content?.[0]?.text?.trim() || "Error: No response generated";
-      return { reply, prompt_length: prompt.length };
+      if (data.error) return { error: data.error };
+      if (!data.reply) return { error: "No response generated" };
+      return { reply: data.reply, prompt_length: prompt.length };
     } catch (e: any) {
       return { error: `API error: ${e.message}` };
     }
