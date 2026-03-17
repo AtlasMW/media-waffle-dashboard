@@ -427,11 +427,13 @@ function aggregateLeads(leads) {
 function render() {
   destroyCharts();
   var sub = document.getElementById('range-subtitle');
+  var rdl = document.getElementById('range-date-label');
   if (currentRange === 'monthly') {
     var p = currentMonth.split('-').map(Number);
     var mStart = new Date(p[0], p[1] - 1, 1);
     var mEnd = new Date(p[0], p[1], 0);
     sub.textContent = fmtDate(mStart) + ' \\u2013 ' + fmtDate(mEnd);
+    if(rdl) rdl.style.display='none';
     var m = metaData.monthly[currentMonth], l = enrichLeadData(leadsData.monthly[currentMonth]);
     var pm = metaData.monthly[prevMonth(currentMonth)], pl = enrichLeadData(leadsData.monthly[prevMonth(currentMonth)]);
     if (currentTab === 'overview') renderOverview(m, l, pm, pl);
@@ -441,6 +443,7 @@ function render() {
   } else {
     var dr = getDateRange(currentRange);
     sub.textContent = dr ? dr.label : 'Performance Dashboard';
+    if(rdl && dr) { rdl.textContent = dr.label; rdl.style.display='inline'; } else if(rdl) { rdl.style.display='none'; }
     var days = getDailyInRange(currentRange);
     var leads = getLeadsInRange(currentRange);
     var m = aggregateDaily(days);
@@ -944,6 +947,7 @@ export default function ClientDashboard() {
               <button className="month-nav-btn" id="month-next" onClick={() => (window as any)._dashboardNavMonth?.(1)}>&#8594;</button>
             </div>
             <div className="date-selector">
+              <span id="range-date-label" style={{fontSize:'12px',color:'#8a8478',marginRight:'8px',display:'none'}}></span>
               <button className="date-btn" onClick={(e) => (window as any)._dashboardSetRange?.('90d', e.currentTarget)}>90D</button>
               <button className="date-btn active" onClick={(e) => (window as any)._dashboardSetRange?.('monthly', e.currentTarget)}>Monthly</button>
               <div className="custom-range-wrap">
