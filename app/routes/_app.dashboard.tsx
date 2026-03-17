@@ -286,6 +286,7 @@ function fmtN(n) { if(n>=1000000) return (n/1000000).toFixed(1)+'M'; if(n>=1000)
 function parseLocalDate(s) { if(!s) return new Date(NaN); if(s.indexOf('-')>-1){ var p=s.split('-').map(Number); return new Date(p[0],p[1]-1,p[2]||1); } var d=new Date(s); if(!isNaN(d.getTime())) return d; return new Date(NaN); }
 function toISO(s) { var d=parseLocalDate(s); if(isNaN(d.getTime())) return ''; return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
 function fmtDate(d) { if(!d) return '--'; if(typeof d==='string') d=parseLocalDate(d); if(isNaN(d.getTime())) return '--'; var dd=String(d.getDate()).padStart(2,'0'); var mm=String(d.getMonth()+1).padStart(2,'0'); return dd+'/'+mm+'/'+d.getFullYear(); }
+function fmtDateLong(d) { if(!d) return '--'; if(typeof d==='string') d=parseLocalDate(d); if(isNaN(d.getTime())) return '--'; var months=['January','February','March','April','May','June','July','August','September','October','November','December']; return d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear(); }
 function fmtDateShort(d) { if(typeof d==='string') d=parseLocalDate(d); var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate()+' '+months[d.getMonth()]; }
 function fmtBucketLabel(startDate, endDate) { var s=typeof startDate==='string'?parseLocalDate(startDate):startDate; var e=typeof endDate==='string'?parseLocalDate(endDate):endDate; var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; if(s.getMonth()===e.getMonth()) return s.getDate()+'-'+e.getDate()+' '+months[s.getMonth()]; return s.getDate()+' '+months[s.getMonth()]+' - '+e.getDate()+' '+months[e.getMonth()]; }
 function prevMonth(m) { var p = m.split('-').map(Number); var d=new Date(p[0], p[1]-2, 1); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); }
@@ -443,7 +444,7 @@ function render() {
   } else {
     var dr = getDateRange(currentRange);
     sub.textContent = dr ? dr.label : 'Performance Dashboard';
-    if(rdl && dr) { rdl.textContent = dr.label; rdl.style.display='inline'; } else if(rdl) { rdl.style.display='none'; }
+    if(rdl && dr) { rdl.textContent = fmtDateLong(dr.start)+' - '+fmtDateLong(dr.end); rdl.style.display='inline'; } else if(rdl) { rdl.style.display='none'; }
     var days = getDailyInRange(currentRange);
     var leads = getLeadsInRange(currentRange);
     var m = aggregateDaily(days);
@@ -947,7 +948,7 @@ export default function ClientDashboard() {
               <button className="month-nav-btn" id="month-next" onClick={() => (window as any)._dashboardNavMonth?.(1)}>&#8594;</button>
             </div>
             <div className="date-selector">
-              <span id="range-date-label" style={{fontSize:'12px',color:'#8a8478',marginRight:'8px',display:'none'}}></span>
+              <span id="range-date-label" style={{fontSize:'12px',color:'#8a8478',marginRight:'8px',display:'none',background:'transparent'}}></span>
               <button className="date-btn" onClick={(e) => (window as any)._dashboardSetRange?.('90d', e.currentTarget)}>90D</button>
               <button className="date-btn active" onClick={(e) => (window as any)._dashboardSetRange?.('monthly', e.currentTarget)}>Monthly</button>
               <div className="custom-range-wrap">
