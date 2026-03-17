@@ -58,17 +58,12 @@ export default function FAQs() {
   const { client, faqs, suggested } = useLoaderData<typeof loader>();
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
-  const [filter, setFilter] = useState("all");
-
-  const categories = ["all", "general", "pricing", "services", "booking", "objections"];
-  const filtered = filter === "all" ? faqs : faqs.filter((f: any) => f.category === filter);
-
   return (
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>FAQs | {faqs.length} total, {faqs.filter((f: any) => f.is_active).length} active</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>FAQs</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | {faqs.length} total, {faqs.filter((f: any) => f.is_active).length} active</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add FAQ"}</button>
       </div>
@@ -107,7 +102,7 @@ export default function FAQs() {
             <div style={{ marginBottom: 12 }}>
               <label style={labelStyle}>Category</label>
               <select name="category" style={inputStyle}>
-                {categories.filter(c => c !== "all").map(c => <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)}</option>)}
+                {["general", "pricing", "services", "booking", "objections"].map(c => <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)}</option>)}
               </select>
             </div>
             <div style={{ marginBottom: 12 }}>
@@ -123,20 +118,7 @@ export default function FAQs() {
         </div>
       )}
 
-      {/* Category filter */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-        {categories.map(c => (
-          <button key={c} onClick={() => setFilter(c)} style={{
-            padding: "6px 14px", borderRadius: 20, border: "none", fontSize: 12, fontWeight: 600, cursor: "pointer",
-            background: filter === c ? "#3b3b3b" : "#eee8dc", color: filter === c ? "#f5f0e8" : "#3b3b3b",
-            fontFamily: "'Montserrat', sans-serif",
-          }}>
-            {c.charAt(0).toUpperCase() + c.slice(1)}
-          </button>
-        ))}
-      </div>
-
-      {filtered.map((faq: any) => (
+      {faqs.map((faq: any) => (
         <div key={faq.id} style={{
           background: "white", borderRadius: 8, padding: 16, marginBottom: 8,
           boxShadow: "0 1px 2px rgba(0,0,0,0.04)", opacity: faq.is_active ? 1 : 0.5,

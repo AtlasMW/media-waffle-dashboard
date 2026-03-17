@@ -50,8 +50,8 @@ export default function Offers() {
     <div style={{ maxWidth: 720 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>Offers | {offers.length} total</p>
+          <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Offers</h1>
+          <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name} | {offers.length} total</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add Offer"}</button>
       </div>

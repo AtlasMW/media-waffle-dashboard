@@ -35,8 +35,8 @@ export default function Conversations() {
 
   return (
     <div style={{ maxWidth: 900 }}>
-      <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>{client.name}</h1>
-      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>Conversation Log | {total} total</p>
+      <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Conversations</h1>
+      <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 24px" }}>{client.name} | {total} total</p>
 
       <div style={{ background: "white", borderRadius: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", overflow: "hidden" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, fontFamily: "'Montserrat', sans-serif" }}>
