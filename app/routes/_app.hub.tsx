@@ -2,6 +2,14 @@ import { Outlet, useLoaderData, NavLink } from "react-router";
 import type { Route } from "./+types/_app.hub";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 
+// Prevent re-running the parent loader when switching between child tabs
+export function shouldRevalidate({ currentUrl, nextUrl, formAction }: any) {
+  // Only revalidate if a form was submitted (action) to refresh data
+  if (formAction) return true;
+  // Don't revalidate on simple navigation between tabs
+  return false;
+}
+
 export async function loader({ request }: Route.LoaderArgs) {
   const { supabase } = createSupabaseServerClient(request);
   const { data: { user } } = await supabase.auth.getUser();
@@ -94,11 +102,11 @@ export default function HubLayout() {
                   Brand
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/offers`} style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" text="$" />
+                  <NavIcon text="$" />
                   Offers
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/faqs`} style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" text="?" />
+                  <NavIcon text="?" />
                   FAQs
                 </NavLink>
                 <NavLink prefetch="render" to={`/hub/${client.slug}/locations`} style={({ isActive }) => navStyle(isActive)}>
@@ -144,13 +152,10 @@ export default function HubLayout() {
   );
 }
 
-function NavIcon({ d, text }: { d: string; text?: string }) {
+function NavIcon({ d, text }: { d?: string; text?: string }) {
   if (text) {
     return (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-        <circle cx="12" cy="12" r="10" />
-        <text x="12" y="17" textAnchor="middle" fill="currentColor" stroke="none" fontSize="14" fontWeight="700" fontFamily="Montserrat, sans-serif">{text}</text>
-      </svg>
+      <span style={{ width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: 16, fontWeight: 700, fontFamily: "'Montserrat', sans-serif" }}>{text}</span>
     );
   }
   return (

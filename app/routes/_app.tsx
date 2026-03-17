@@ -2,6 +2,11 @@ import { Outlet, redirect, useLoaderData } from "react-router";
 import type { Route } from "./+types/_app";
 import { createSupabaseServerClient } from "~/lib/supabase.server";
 
+export function shouldRevalidate({ formAction }: any) {
+  if (formAction) return true;
+  return false;
+}
+
 export async function loader({ request }: Route.LoaderArgs) {
   const { supabase, headers } = createSupabaseServerClient(request);
   const { data: { user } } = await supabase.auth.getUser();
