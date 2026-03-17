@@ -155,7 +155,7 @@ export default function HubLayout() {
 function NavIcon({ d, text }: { d?: string; text?: string }) {
   if (text) {
     return (
-      <span style={{ width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: 16, fontWeight: 700, fontFamily: "'Montserrat', sans-serif" }}>{text}</span>
+      <span style={{ width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: 16, fontWeight: 400, fontFamily: "'Montserrat', sans-serif" }}>{text}</span>
     );
   }
   return (

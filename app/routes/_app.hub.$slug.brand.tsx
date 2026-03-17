@@ -64,7 +64,7 @@ export default function BrandConfig() {
       <form onSubmit={handleSubmit}>
         <Card title="Assistant Identity">
           <Field label="Assistant Name" name="assistant_name" value={brand?.assistant_name || ""} hint="The name your AI assistant uses (e.g. Cassie)" />
-          <SelectField label="Tone" name="tone" value={brand?.tone || "friendly"} options={["friendly", "professional", "casual"]} />
+          <TextArea label="Tone" name="tone" value={brand?.tone || "friendly"} rows={3} hint="Describe how the assistant should sound (e.g. friendly, warm and professional, keeps it brief)" />
           <Field label="Greeting Style" name="greeting_style" value={brand?.greeting_style || "Hi [name]"} hint="Use [name] as placeholder for lead's first name" />
         </Card>
         <Card title="Contact Details">
@@ -72,12 +72,24 @@ export default function BrandConfig() {
           <Field label="Escalation Phone" name="escalation_phone" value={brand?.escalation_phone || ""} hint="Phone number for escalation messages" />
         </Card>
         <Card title="Message Limits">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
-            <Field label="SMS Char Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
-            <Field label="SMS Max Messages" name="sms_max_messages" value={brand?.sms_max_messages || 7} type="number" />
-            <Field label="DM Max Messages" name="dm_max_messages" value={brand?.dm_max_messages || 10} type="number" />
+          <div style={{ marginBottom: 20 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: "#3b3b3b", marginBottom: 12 }}>SMS</div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <Field label="Character Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
+              <Field label="Max Messages" name="sms_max_messages" value={brand?.sms_max_messages || 7} type="number" />
+            </div>
           </div>
-          <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
+          <div style={{ borderTop: "1px solid #eee8dc", paddingTop: 20 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: "#3b3b3b", marginBottom: 12 }}>Social Media DMs</div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div style={{ marginBottom: 16 }}>
+                <label style={labelStyle}>Character Limit</label>
+                <div style={{ padding: "10px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, background: "#faf8f5", color: "#8a8478" }}>None</div>
+              </div>
+              <Field label="Max Messages" name="dm_max_messages" value={brand?.dm_max_messages || 10} type="number" />
+            </div>
+            <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
+          </div>
         </Card>
         <Card title="Booking Settings">
           <CheckboxField label="Require deposit for online booking" name="deposit_required" checked={brand?.deposit_required || false} />
@@ -140,16 +152,6 @@ function TextArea({ label, name, value, hint, rows }: { label: string; name: str
       <label style={labelStyle}>{label}</label>
       <textarea name={name} defaultValue={value} rows={rows || 3} style={{ ...inputStyle, resize: "vertical", minHeight: 60 }} />
       {hint && <div style={hintStyle}>{hint}</div>}
-    </div>
-  );
-}
-function SelectField({ label, name, value, options }: { label: string; name: string; value: string; options: string[] }) {
-  return (
-    <div style={{ marginBottom: 16 }}>
-      <label style={labelStyle}>{label}</label>
-      <select name={name} defaultValue={value} style={inputStyle}>
-        {options.map(o => <option key={o} value={o}>{o.charAt(0).toUpperCase() + o.slice(1)}</option>)}
-      </select>
     </div>
   );
 }
