@@ -12,7 +12,7 @@ export default [
       route("clients/:slug", "routes/_app.admin.clients.$slug.tsx"),
       route("invite", "routes/_app.admin.invite.tsx"),
     ]),
-    route("dashboard", "routes/_app.dashboard.tsx"),
+    route("dashboard/:slug?", "routes/_app.dashboard.tsx"),
     route("hub", "routes/_app.hub.tsx", [
       index("routes/_app.hub._index.tsx"),
       route("admin/clients", "routes/_app.hub.admin.clients.tsx"),
