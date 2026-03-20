@@ -597,7 +597,7 @@ function TrainingExamples({ slug }: { slug: string }) {
 
   const sourceLabels: Record<string, { bg: string; color: string; label: string }> = {
     sandbox: { bg: "#e3f2fd", color: "#1565c0", label: "Sandbox" },
-    production: { bg: "#fff3e0", color: "#ef6c00", label: "Production" },
+    production: { bg: "#fff3e0", color: "#ef6c00", label: "Review" },
     manual: { bg: "#eee8dc", color: "#3b3b3b", label: "Manual" },
   };
 
@@ -663,7 +663,7 @@ function TrainingExamples({ slug }: { slug: string }) {
               <div style={{ fontSize: 13, color: "#3b3b3b", fontWeight: 500 }}>{ex.inbound_text}</div>
             </div>
 
-            {ex.bad_response && (
+            {false && ex.bad_response && (
               <div style={{ marginBottom: 8 }}>
                 <div style={{ fontSize: 11, color: "#c62828", marginBottom: 2 }}>Bad response:</div>
                 <div style={{ fontSize: 13, color: "#999", textDecoration: "line-through" }}>{ex.bad_response}</div>
