@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { redirect } from "react-router";
+import { redirect, useFetcher } from "react-router";
 import type { Route } from "./+types/_app.admin.index";
 import { createSupabaseServerClient } from "~/lib/supabase.server";
 
@@ -16,6 +16,63 @@ export async function loader({ request }: Route.LoaderArgs) {
 
   if (profile?.role !== "admin") return redirect("/dashboard");
   return null;
+}
+
+export async function action({ request }: Route.ActionArgs) {
+  const form = await request.formData();
+  const intent = form.get("intent");
+
+  if (intent === "create_client_account") {
+    const email = (form.get("email") as string || "").trim();
+    const password = form.get("password") as string || "";
+    const clientSlug = form.get("clientSlug") as string || "";
+
+    if (!email || !password || !clientSlug) {
+      return { error: "Email, password, and client are required" };
+    }
+
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+
+    const createRes = await fetch(`${SB_URL}/auth/v1/admin/users`, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password, email_confirm: true }),
+    });
+    const userData = await createRes.json();
+    if (!userData.id) {
+      return { error: userData.msg || userData.message || "Failed to create account" };
+    }
+
+    await fetch(`${SB_URL}/rest/v1/profiles?id=eq.${userData.id}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({ role: "client", client_slug: clientSlug }),
+    });
+
+    const clientRes = await fetch(`${SB_URL}/rest/v1/msg_clients?slug=eq.${clientSlug}&select=id`, {
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY },
+    });
+    const clients = await clientRes.json();
+    if (clients && clients.length > 0) {
+      await fetch(`${SB_URL}/rest/v1/msg_client_users`, {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json" },
+        body: JSON.stringify({ client_id: clients[0].id, user_id: userData.id, role: "owner" }),
+      });
+    }
+
+    const origin = new URL(request.url).origin;
+    return {
+      created: true,
+      email,
+      clientSlug,
+      reportingLink: `${origin}/dashboard/${clientSlug}`,
+      messagingLink: `${origin}/hub/${clientSlug}/brand`,
+    };
+  }
+
+  return {};
 }
 
 const CLIENTS = [
@@ -53,11 +110,11 @@ export default function AdminHub() {
   const [toastMsg, setToastMsg] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [inviteSlug, setInviteSlug] = useState<string | null>(null);
-  const [inviteName, setInviteName] = useState('');
-  const [inviteEmail, setInviteEmail] = useState('');
-  const [inviteLink, setInviteLink] = useState('');
-  const [inviteLoading, setInviteLoading] = useState(false);
+  const [setupSlug, setSetupSlug] = useState<string | null>(null);
+  const [setupName, setSetupName] = useState('');
+  const [setupEmail, setSetupEmail] = useState('');
+  const [setupPassword, setSetupPassword] = useState('');
+  const setupFetcher = useFetcher();
   const templateRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -85,40 +142,16 @@ export default function AdminHub() {
     window.location.href = '/dashboard?client=' + slug;
   }
 
-  function openInviteModal(slug: string) {
+  function openSetupModal(slug: string) {
     const client = CLIENTS.find(c => c.slug === slug);
-    setInviteSlug(slug);
-    setInviteName(client?.name || '');
-    setInviteEmail('');
-    setInviteLink('');
-    setInviteLoading(false);
+    setSetupSlug(slug);
+    setSetupName(client?.name || '');
+    setSetupEmail('');
+    setSetupPassword('');
   }
 
-  async function generateLink() {
-    if (!inviteEmail || !inviteSlug) return;
-    setInviteLoading(true);
-    setInviteLink('');
-    try {
-      const form = new FormData();
-      form.set('email', inviteEmail);
-      form.set('clientSlug', inviteSlug);
-      form.set('displayName', inviteName);
-      const res = await fetch('/api/generate-link', { method: 'POST', body: form });
-      const data = await res.json();
-      if (data.link) {
-        setInviteLink(data.link);
-        showToast('Login link generated');
-      } else {
-        showToast('Error: ' + (data.error || 'Unknown error'));
-      }
-    } catch (e) {
-      showToast('Failed to generate link');
-    }
-    setInviteLoading(false);
-  }
-
-  function copyInviteLink() {
-    navigator.clipboard.writeText(inviteLink).then(() => showToast('Login link copied')).catch(() => showToast('Login link copied'));
+  function copyToClipboard(text: string, label: string) {
+    navigator.clipboard.writeText(text).then(() => showToast(label + ' copied')).catch(() => showToast(label + ' copied'));
   }
 
   function copyTemplate() {
@@ -316,7 +349,7 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width:'14px',height:'14px',flexShrink:0}}><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                         Copy Link
                       </button>
-                      <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openInviteModal(c.slug); }} style={{flex:1,display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',padding:'10px 16px',background:'var(--green-light)',color:'var(--green)'}}>
+                      <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openSetupModal(c.slug); }} style={{flex:1,display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',padding:'10px 16px',background:'var(--green-light)',color:'var(--green)'}}>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width:'14px',height:'14px',flexShrink:0}}><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
                         Setup Access
                       </button>
@@ -376,49 +409,61 @@ Any notes:`} />
         </div>
       </div>
 
-      {/* Invite Modal */}
-      {inviteSlug && (
-        <div className="modal-overlay open" onClick={(e) => { if (e.target === e.currentTarget) setInviteSlug(null); }}>
-          <div className="modal" style={{maxWidth:'480px'}}>
+      {/* Setup Access Modal */}
+      {setupSlug && (
+        <div className="modal-overlay open" onClick={(e) => { if (e.target === e.currentTarget) setSetupSlug(null); }}>
+          <div className="modal" style={{maxWidth:'520px'}}>
             <div className="modal-header">
-              <h2 style={{fontFamily:'Georgia,serif',fontSize:'18px'}}>Generate Login Link</h2>
-              <button onClick={() => setInviteSlug(null)} style={{background:'none',border:'none',cursor:'pointer',padding:'4px'}}>
+              <h2 style={{fontFamily:"'Montserrat',sans-serif",fontSize:'18px',fontWeight:700}}>Client Access Setup</h2>
+              <button onClick={() => setSetupSlug(null)} style={{background:'none',border:'none',cursor:'pointer',padding:'4px'}}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="var(--dark)" strokeWidth="2" style={{width:'20px',height:'20px'}}><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
               </button>
             </div>
             <div className="modal-body">
-              <p style={{color:'var(--dark-light)',marginBottom:'16px',fontSize:'13px'}}>{inviteName}</p>
-              {!inviteLink ? (
+              <p style={{color:'var(--dark-light)',marginBottom:'20px',fontSize:'14px',fontWeight:600}}>{setupName}</p>
+
+              {(setupFetcher.data as any)?.created ? (
                 <>
-                  <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Client Email</label>
-                  <input
-                    type="email"
-                    value={inviteEmail}
-                    onChange={(e) => setInviteEmail(e.target.value)}
-                    placeholder="client@example.com"
-                    style={{width:'100%',padding:'10px 14px',border:'1px solid var(--beige)',borderRadius:'8px',fontFamily:'inherit',fontSize:'14px',color:'var(--dark)',marginBottom:'16px',outline:'none'}}
-                  />
-                  <button className="btn btn-primary" onClick={generateLink} disabled={inviteLoading || !inviteEmail} style={{width:'100%',padding:'12px',opacity:inviteLoading?0.6:1}}>
-                    {inviteLoading ? 'Generating...' : 'Generate Login Link'}
-                  </button>
+                  <div style={{background:'var(--green-light)',borderRadius:'8px',padding:'16px',marginBottom:'20px'}}>
+                    <div style={{fontSize:'13px',fontWeight:600,color:'var(--green)',marginBottom:'4px'}}>Account created successfully</div>
+                    <div style={{fontSize:'12px',color:'var(--dark-light)'}}>Email: {(setupFetcher.data as any).email}</div>
+                  </div>
+                  <div style={{marginBottom:'16px'}}>
+                    <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Reporting Dashboard Link</label>
+                    <div style={{display:'flex',gap:'8px',alignItems:'center'}}>
+                      <div style={{flex:1,background:'var(--beige-light)',borderRadius:'8px',padding:'10px 14px',fontSize:'12px',color:'var(--dark)',wordBreak:'break-all'}}>{(setupFetcher.data as any).reportingLink}</div>
+                      <button className="btn btn-secondary" onClick={() => copyToClipboard((setupFetcher.data as any).reportingLink, 'Reporting link')} style={{padding:'10px 14px',flexShrink:0}}>Copy</button>
+                    </div>
+                  </div>
+                  <div style={{marginBottom:'20px'}}>
+                    <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>AI Messaging Hub Link</label>
+                    <div style={{display:'flex',gap:'8px',alignItems:'center'}}>
+                      <div style={{flex:1,background:'var(--beige-light)',borderRadius:'8px',padding:'10px 14px',fontSize:'12px',color:'var(--dark)',wordBreak:'break-all'}}>{(setupFetcher.data as any).messagingLink}</div>
+                      <button className="btn btn-secondary" onClick={() => copyToClipboard((setupFetcher.data as any).messagingLink, 'Messaging link')} style={{padding:'10px 14px',flexShrink:0}}>Copy</button>
+                    </div>
+                  </div>
+                  <button className="btn btn-secondary" onClick={() => setSetupSlug(null)} style={{width:'100%',padding:'12px'}}>Done</button>
                 </>
               ) : (
-                <>
-                  <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Login Link (one-time use)</label>
-                  <div style={{background:'var(--beige-light)',borderRadius:'8px',padding:'12px',wordBreak:'break-all',fontSize:'12px',color:'var(--dark)',marginBottom:'16px',lineHeight:'1.6'}}>
-                    {inviteLink}
+                <setupFetcher.Form method="post">
+                  <input type="hidden" name="intent" value="create_client_account" />
+                  <input type="hidden" name="clientSlug" value={setupSlug} />
+                  <div style={{marginBottom:'14px'}}>
+                    <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Client Email</label>
+                    <input type="email" name="email" value={setupEmail} onChange={(e) => setSetupEmail(e.target.value)} placeholder="client@example.com" required style={{width:'100%',padding:'10px 14px',border:'1px solid var(--beige)',borderRadius:'8px',fontFamily:'inherit',fontSize:'14px',color:'var(--dark)',outline:'none'}} />
                   </div>
-                  <div style={{display:'flex',gap:'10px'}}>
-                    <button className="btn btn-primary" onClick={copyInviteLink} style={{flex:1,padding:'12px'}}>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                      Copy Link
-                    </button>
-                    <button className="btn btn-secondary" onClick={() => { setInviteLink(''); setInviteEmail(''); }} style={{flex:1,padding:'12px'}}>
-                      Generate New
-                    </button>
+                  <div style={{marginBottom:'20px'}}>
+                    <label style={{fontSize:'11px',fontWeight:600,color:'#999',textTransform:'uppercase',letterSpacing:'1px',display:'block',marginBottom:'6px'}}>Password</label>
+                    <input type="text" name="password" value={setupPassword} onChange={(e) => setSetupPassword(e.target.value)} placeholder="Set a password for the client" required style={{width:'100%',padding:'10px 14px',border:'1px solid var(--beige)',borderRadius:'8px',fontFamily:'inherit',fontSize:'14px',color:'var(--dark)',outline:'none'}} />
+                    <p style={{fontSize:'11px',color:'#999',marginTop:'6px'}}>You set the password. Share it with the client along with their dashboard link.</p>
                   </div>
-                  <p style={{fontSize:'11px',color:'#999',marginTop:'12px'}}>Send this link to the client. It will log them in directly to their dashboard. Links expire after 24 hours.</p>
-                </>
+                  {(setupFetcher.data as any)?.error && (
+                    <div style={{background:'#ffebee',borderRadius:'8px',padding:'12px',marginBottom:'16px',fontSize:'13px',color:'#c62828'}}>{(setupFetcher.data as any).error}</div>
+                  )}
+                  <button type="submit" className="btn btn-primary" disabled={setupFetcher.state === 'submitting' || !setupEmail || !setupPassword} style={{width:'100%',padding:'12px',opacity:(setupFetcher.state === 'submitting' || !setupEmail || !setupPassword)?0.6:1}}>
+                    {setupFetcher.state === 'submitting' ? 'Creating Account...' : 'Create Account and Get Links'}
+                  </button>
+                </setupFetcher.Form>
               )}
             </div>
           </div>
