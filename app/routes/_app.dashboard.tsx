@@ -1,5 +1,27 @@
 import { useEffect, useRef } from "react";
-import { useRouteLoaderData } from "react-router";
+import { useRouteLoaderData, useParams } from "react-router";
+import type { Route } from "./+types/_app.dashboard";
+import { createSupabaseServerClient } from "~/lib/supabase.server";
+
+export async function loader({ request, params }: Route.LoaderArgs) {
+  const { supabase } = createSupabaseServerClient(request);
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return Response.redirect(new URL("/login", request.url).toString());
+
+  const { data: profile } = await supabase.from("profiles").select("role, client_slug").eq("id", user.id).single();
+
+  // Admin can access any dashboard
+  if (profile?.role === "admin") return { allowed: true, slug: params.slug || profile?.client_slug };
+
+  // Client can only access their own dashboard
+  const requestedSlug = params.slug || new URL(request.url).searchParams.get("client");
+  if (requestedSlug && profile?.client_slug && requestedSlug !== profile.client_slug) {
+    // Redirect to their own dashboard
+    return Response.redirect(new URL(`/dashboard/${profile.client_slug}`, request.url).toString());
+  }
+
+  return { allowed: true, slug: profile?.client_slug || requestedSlug };
+}
 
 const CSS = `
 :root {
