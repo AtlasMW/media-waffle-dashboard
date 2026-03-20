@@ -142,12 +142,15 @@ export default function AdminHub() {
     window.location.href = '/dashboard?client=' + slug;
   }
 
+  const [setupKey, setSetupKey] = useState(0);
+
   function openSetupModal(slug: string) {
     const client = CLIENTS.find(c => c.slug === slug);
     setSetupSlug(slug);
     setSetupName(client?.name || '');
     setSetupEmail('');
     setSetupPassword('');
+    setSetupKey(k => k + 1);
   }
 
   function copyToClipboard(text: string, label: string) {
@@ -410,7 +413,7 @@ Any notes:`} />
       </div>
 
       {/* Setup Access Modal */}
-      {setupSlug && (
+      {setupSlug && (<div key={setupKey}>
         <div className="modal-overlay open" onClick={(e) => { if (e.target === e.currentTarget) setSetupSlug(null); }}>
           <div className="modal" style={{maxWidth:'520px'}}>
             <div className="modal-header">
@@ -468,7 +471,7 @@ Any notes:`} />
             </div>
           </div>
         </div>
-      )}
+      </div>)}
 
       <div className={`toast${toastVisible ? ' show' : ''}`}>{toastMsg}</div>
     </>
