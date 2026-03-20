@@ -386,7 +386,7 @@ export default function Training() {
                   {/* Correction form */}
                   {correcting === i && (
                     <CorrectionForm
-                      onSave={(correct, notes) => saveCorrection(i, correct, notes)}
+                      onSave={(correct, notes, correctionType) => saveCorrection(i, correct, notes, correctionType)}
                       onCancel={() => setCorrecting(null)}
                       badResponse={msg.content}
                     />
@@ -471,7 +471,7 @@ export default function Training() {
 
               {reviewingLog === log.id ? (
                 <CorrectionForm
-                  onSave={(correct, notes) => {
+                  onSave={(correct, notes, correctionType) => {
                     const formData = new FormData();
                     formData.set("intent", "rate_production");
                     formData.set("log_id", log.id);
@@ -479,6 +479,7 @@ export default function Training() {
                     formData.set("inbound_text", log.inbound_text);
                     formData.set("bad_response", log.outbound_text);
                     formData.set("correct_response", correct);
+                    formData.set("correction_type", correctionType);
                     formData.set("notes", notes);
                     fetcher.submit(formData, { method: "post" });
                     setReviewingLog(null);
@@ -501,17 +502,34 @@ export default function Training() {
 }
 
 // ==================== CORRECTION FORM ====================
-function CorrectionForm({ onSave, onCancel, badResponse }: { onSave: (correct: string, notes: string) => void; onCancel: () => void; badResponse: string }) {
+function CorrectionForm({ onSave, onCancel, badResponse }: { onSave: (correct: string, notes: string, correctionType: string) => void; onCancel: () => void; badResponse: string }) {
   const [correct, setCorrect] = useState("");
   const [notes, setNotes] = useState("");
+  const [correctionType, setCorrectionType] = useState<"exact" | "instruction">("exact");
+
+  const toggleStyle = (active: boolean): React.CSSProperties => ({
+    flex: 1, padding: "6px 12px", borderRadius: 6, border: "none", fontSize: 12, fontWeight: 600,
+    cursor: "pointer", fontFamily: "'Montserrat', sans-serif", transition: "all 0.15s",
+    background: active ? "#3b3b3b" : "transparent",
+    color: active ? "#f5f0e8" : "#8a8478",
+  });
 
   return (
     <div style={{ background: "#fff8f0", borderRadius: 8, padding: 14, marginTop: 8, border: "1px solid #ffe0b2" }}>
       <div style={{ fontSize: 12, fontWeight: 600, color: "#ef6c00", marginBottom: 8 }}>What should the AI have said instead?</div>
+      <div style={{ display: "flex", gap: 2, marginBottom: 10, background: "#eee8dc", borderRadius: 6, padding: 3 }}>
+        <button onClick={() => setCorrectionType("exact")} style={toggleStyle(correctionType === "exact")}>Exact Response</button>
+        <button onClick={() => setCorrectionType("instruction")} style={toggleStyle(correctionType === "instruction")}>Instruction</button>
+      </div>
+      <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 6 }}>
+        {correctionType === "exact"
+          ? "Type the exact response the AI should use (word for word)."
+          : "Give the AI guidance on what to do differently (e.g. don't mention deposits, keep it shorter, etc)."}
+      </div>
       <textarea
         value={correct}
         onChange={e => setCorrect(e.target.value)}
-        placeholder="Type the correct response..."
+        placeholder={correctionType === "exact" ? "Type the correct response..." : "e.g. Keep the response shorter and don't repeat the offer details..."}
         rows={3}
         style={{ width: "100%", padding: "8px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "white", boxSizing: "border-box", resize: "vertical", marginBottom: 8 }}
       />
@@ -522,7 +540,7 @@ function CorrectionForm({ onSave, onCancel, badResponse }: { onSave: (correct: s
         style={{ width: "100%", padding: "8px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "white", boxSizing: "border-box", marginBottom: 8 }}
       />
       <div style={{ display: "flex", gap: 8 }}>
-        <button onClick={() => { if (correct.trim()) onSave(correct.trim(), notes.trim()); }} style={{
+        <button onClick={() => { if (correct.trim()) onSave(correct.trim(), notes.trim(), correctionType); }} style={{
           padding: "8px 16px", background: "#2e7d32", color: "white", border: "none", borderRadius: 6,
           fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif",
         }}>Save Correction</button>
