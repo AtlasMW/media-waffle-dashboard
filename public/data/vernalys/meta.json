@@ -5379,5 +5379,7 @@
         "leads": 5
       }
     }
-  }
+  },
+  "ltv": 827,
+  "ltvDescription": "Based on average revenue per client tracked through Timely."
 }
