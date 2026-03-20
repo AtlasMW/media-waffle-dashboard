@@ -1,3 +1,47 @@
 {
-  "monthly": {}
+  "client": "Oceanelle Medispa",
+  "monthly": {
+    "2026-02": {
+      "totalLeads": 1,
+      "responded": 1,
+      "noContact": 0,
+      "inFollowUp": 0,
+      "respondedPct": 100,
+      "booked": 0,
+      "bookedPct": 0,
+      "confirmed": 0,
+      "noShow": 0,
+      "cancelled": 0,
+      "rebooked": 0,
+      "moneyCollected": 0,
+      "budget": 552.87,
+      "offers": [
+        {
+          "name": "OFFER 1",
+          "leads": 1,
+          "cpl": 0,
+          "booked": 0,
+          "spend": 0
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-02-27",
+          "name": "raechel n jarrod davies",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        }
+      ]
+    }
+  },
+  "allLeads": [
+    {
+      "date": "2026-02-27",
+      "name": "raechel n jarrod davies",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    }
+  ]
 }
