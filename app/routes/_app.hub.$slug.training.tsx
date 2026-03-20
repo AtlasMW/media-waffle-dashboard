@@ -189,16 +189,35 @@ export async function action({ request, params }: Route.ActionArgs) {
   if (intent === "rate_production") {
     const logId = form.get("log_id") as string;
     const rating = form.get("rating") as string;
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+
+    // Mark the log as reviewed
+    const reviewStatus = rating === "bad" ? "corrected" : rating === "dismissed" ? "dismissed" : "good";
+    await fetch(`${SB_URL}/rest/v1/msg_conversation_logs?id=eq.${logId}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ review_status: reviewStatus }),
+    });
+
     if (rating === "bad") {
       // Save the correction as a training example
-      await supabase.from("msg_training_examples").insert({
-        client_id: client.id,
-        inbound_text: form.get("inbound_text"),
-        bad_response: form.get("bad_response"),
-        correct_response: form.get("correct_response"),
-        notes: form.get("notes") || null,
-        source: "production",
-        is_active: true,
+      await fetch(`${SB_URL}/rest/v1/msg_training_examples`, {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          client_id: client.id,
+          inbound_text: form.get("inbound_text"),
+          bad_response: form.get("bad_response"),
+          correct_response: form.get("correct_response"),
+          correction_type: form.get("correction_type") || "exact",
+          conversation_stage: "general",
+          priority: 10,
+          requires_location: (form.get("correct_response") || "").toString().includes("[booking_link]"),
+          notes: form.get("notes") || null,
+          source: "production",
+          is_active: true,
+        }),
       });
     }
     return { rated: true };
