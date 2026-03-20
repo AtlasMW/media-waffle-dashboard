@@ -34,7 +34,7 @@ export async function loader({ request }: Route.LoaderArgs) {
       supabase.from("msg_services").select("*").eq("client_id", client.id).order("name"),
       supabase.from("msg_blocked_topics").select("*").eq("client_id", client.id),
       supabase.from("msg_learned_patterns").select("*").eq("client_id", client.id).eq("status", "pending_review"),
-      supabase.from("msg_conversation_logs").select("*").eq("client_id", client.id).order("created_at", { ascending: false }).limit(30),
+      supabase.from("msg_conversation_logs").select("*").eq("client_id", client.id).order("created_at", { ascending: false }).limit(50),
       supabase.from("msg_training_examples").select("*").eq("client_id", client.id).order("created_at", { ascending: false }),
     ]);
     allClientData[client.slug] = {

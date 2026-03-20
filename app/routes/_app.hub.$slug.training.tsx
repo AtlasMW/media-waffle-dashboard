@@ -449,13 +449,14 @@ export default function Training() {
         <div>
           <p style={{ fontSize: 13, color: "#8a8478", marginBottom: 16 }}>Review real AI responses and flag ones that need correction. Corrections become training examples.</p>
 
-          {conversations.filter((l: any) => l.action === "responded" && l.outbound_text).length === 0 && (
-            <div style={{ background: "white", borderRadius: 12, padding: 40, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
-              <div style={{ fontSize: 13, color: "#8a8478" }}>No AI responses to review yet. Responses will appear here once the messaging engine is live.</div>
-            </div>
-          )}
-
-          {conversations.filter((l: any) => l.action === "responded" && l.outbound_text).map((log: any) => (
+          {(() => {
+            const unreviewed = conversations.filter((l: any) => l.action === "responded" && l.outbound_text && !l.review_status);
+            if (unreviewed.length === 0) return (
+              <div style={{ background: "white", borderRadius: 12, padding: 40, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+                <div style={{ fontSize: 13, color: "#8a8478" }}>All responses have been reviewed. New responses will appear here as the engine handles leads.</div>
+              </div>
+            );
+            return (<><div style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>{unreviewed.length} response{unreviewed.length !== 1 ? "s" : ""} to review</div>{unreviewed.map((log: any) => (
             <div key={log.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
               <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 8 }}>
                 {log.contact_name} | {log.location_tag} | {(log.channel || "").replace("TYPE_", "")} | {new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}
@@ -494,7 +495,8 @@ export default function Training() {
                 </div>
               )}
             </div>
-          ))}
+          ))}</>);
+          })()}
         </div>
       )}
     </div>
