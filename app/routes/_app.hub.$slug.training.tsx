@@ -186,6 +186,25 @@ export async function action({ request, params }: Route.ActionArgs) {
     return { deleted: true };
   }
 
+  if (intent === "update_example") {
+    const id = form.get("id") as string;
+    const updates: any = {};
+    if (form.get("inbound_text")) updates.inbound_text = form.get("inbound_text");
+    if (form.get("correct_response")) updates.correct_response = form.get("correct_response");
+    if (form.get("correction_type")) updates.correction_type = form.get("correction_type");
+    if (form.get("notes") !== null) updates.notes = form.get("notes") || null;
+    updates.requires_location = (form.get("correct_response") || "").toString().includes("[booking_link]");
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    const res = await fetch(`${SB_URL}/rest/v1/msg_training_examples?id=eq.${id}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify(updates),
+    });
+    if (!res.ok) return { error: "Failed to update" };
+    return { updated: true };
+  }
+
   if (intent === "rate_production") {
     const logId = form.get("log_id") as string;
     const rating = form.get("rating") as string;
@@ -594,6 +613,7 @@ function TrainingExamples({ slug }: { slug: string }) {
   const examples = data.trainingExamples || [];
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
 
   const sourceLabels: Record<string, { bg: string; color: string; label: string }> = {
     sandbox: { bg: "#e3f2fd", color: "#1565c0", label: "Sandbox" },
@@ -644,18 +664,55 @@ function TrainingExamples({ slug }: { slug: string }) {
 
       {examples.map((ex: any) => {
         const src = sourceLabels[ex.source] || sourceLabels.manual;
+
+        if (editingId === ex.id) {
+          return (
+            <div key={ex.id} style={{ background: "#faf8f5", borderRadius: 12, padding: 20, marginBottom: 10, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", border: "2px solid #c4a882" }}>
+              <fetcher.Form method="post" onSubmit={() => setEditingId(null)}>
+                <input type="hidden" name="intent" value="update_example" />
+                <input type="hidden" name="id" value={ex.id} />
+                <div style={{ marginBottom: 10 }}>
+                  <label style={labelSm}>When the lead says</label>
+                  <input name="inbound_text" defaultValue={ex.inbound_text} style={inputFull} />
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <label style={labelSm}>Type</label>
+                  <select name="correction_type" defaultValue={ex.correction_type || "exact"} style={inputFull}>
+                    <option value="exact">Exact Response</option>
+                    <option value="instruction">Instruction</option>
+                  </select>
+                </div>
+                <div style={{ marginBottom: 10 }}>
+                  <label style={labelSm}>Response / Instruction</label>
+                  <textarea name="correct_response" defaultValue={ex.correct_response} rows={3} style={{ ...inputFull, resize: "vertical" }} />
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelSm}>Notes (optional)</label>
+                  <input name="notes" defaultValue={ex.notes || ""} style={inputFull} />
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="button" onClick={() => setEditingId(null)} style={{ ...btnPrimary, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
+                </div>
+              </fetcher.Form>
+            </div>
+          );
+        }
+
         return (
           <div key={ex.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 10, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", borderLeft: "3px solid #c4a882" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
               <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
                 <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: src.bg, color: src.color }}>{src.label}</span>
-                {ex.scenario && <span style={{ fontSize: 11, color: "#8a8478" }}>{ex.scenario}</span>}
               </div>
-              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this training example?")) e.preventDefault(); }}>
-                <input type="hidden" name="intent" value="delete_example" />
-                <input type="hidden" name="id" value={ex.id} />
-                <button type="submit" style={{ background: "none", border: "none", color: "#c62828", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Delete</button>
-              </fetcher.Form>
+              <div style={{ display: "flex", gap: 10 }}>
+                <button onClick={() => setEditingId(ex.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
+                <fetcher.Form method="post" style={{ display: "inline" }} onSubmit={(e) => { if (!confirm("Delete this training example?")) e.preventDefault(); }}>
+                  <input type="hidden" name="intent" value="delete_example" />
+                  <input type="hidden" name="id" value={ex.id} />
+                  <button type="submit" style={{ background: "none", border: "none", color: "#c62828", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Delete</button>
+                </fetcher.Form>
+              </div>
             </div>
 
             <div style={{ marginBottom: 8 }}>
@@ -663,16 +720,11 @@ function TrainingExamples({ slug }: { slug: string }) {
               <div style={{ fontSize: 13, color: "#3b3b3b", fontWeight: 500 }}>{ex.inbound_text}</div>
             </div>
 
-            {false && ex.bad_response && (
-              <div style={{ marginBottom: 8 }}>
-                <div style={{ fontSize: 11, color: "#c62828", marginBottom: 2 }}>Bad response:</div>
-                <div style={{ fontSize: 13, color: "#999", textDecoration: "line-through" }}>{ex.bad_response}</div>
-              </div>
-            )}
-
             <div style={{ marginBottom: 4 }}>
-              <div style={{ fontSize: 11, color: "#2e7d32", marginBottom: 2 }}>Correct response:</div>
-              <div style={{ fontSize: 13, color: "#3b3b3b" }}>{ex.correct_response}</div>
+              <div style={{ fontSize: 11, color: ex.correction_type === "instruction" ? "#7b1fa2" : "#2e7d32", marginBottom: 2 }}>
+                {ex.correction_type === "instruction" ? "Instruction:" : "Correct response:"}
+              </div>
+              <div style={{ fontSize: 13, color: "#3b3b3b", fontStyle: ex.correction_type === "instruction" ? "italic" : "normal" }}>{ex.correct_response}</div>
             </div>
 
             {ex.notes && (
