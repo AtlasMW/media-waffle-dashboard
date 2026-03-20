@@ -26,6 +26,7 @@ const CLIENTS = [
   { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990 },
   { slug: "oceanelle", name: "Oceanelle Medispa", status: "active", startDate: "2026-03", fee: 990, hasReporting: true, hasMessaging: false },
   { slug: "livingskin", name: "Living Skin Clinic", status: "active", startDate: "2025-11", fee: 950, hasReporting: true, hasMessaging: false },
+  { slug: "mb-luxury", name: "MB Luxury Spa", status: "active", startDate: "2026-03", fee: 0, hasReporting: false, hasMessaging: true },
 ];
 
 function fmtC(v: number) { return '$' + Number(v).toLocaleString('en-AU', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
@@ -184,7 +185,7 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
 .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
 .section-title { font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
 .section-count { font-size: 13px; color: #999; font-weight: 500; }
-.client-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+.client-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 24px; }
 .client-tile { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; transition: all 0.25s ease; cursor: pointer; position: relative; }
 .client-tile:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
 .tile-accent { height: 4px; background: var(--dark); }
@@ -197,7 +198,8 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
 .tile-metrics { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px; }
 .tile-metric-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #aaa; margin-bottom: 2px; }
 .tile-metric-value { font-size: 16px; font-weight: 700; color: var(--dark); }
-.tile-actions { display: flex; gap: 10px; padding-top: 16px; border-top: 1px solid var(--beige-light); }
+.tile-actions { display: flex; gap: 10px; padding-top: 16px; border-top: 1px solid var(--beige-light); flex-wrap: nowrap; }
+.btn { white-space: nowrap; }
 .btn { flex: 1; padding: 10px 16px; border-radius: 8px; font-family: inherit; font-size: 12px; font-weight: 600; border: none; cursor: pointer; transition: all 0.2s; text-align: center; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
 .btn-primary { background: var(--dark); color: white; }
 .btn-primary:hover { background: #2a2a2a; }
