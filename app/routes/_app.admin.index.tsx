@@ -19,11 +19,11 @@ export async function loader({ request }: Route.LoaderArgs) {
 }
 
 const CLIENTS = [
-  { slug: "vernalys", name: "Vernalys Skin & Laser Clinic", status: "active", startDate: "2025-07", fee: 950 },
-  { slug: "cronulla", name: "Cronulla Skin Sanctuary", status: "active", startDate: "2026-01", fee: 1500 },
-  { slug: "eleve", name: "Élevé Cosmetics", status: "active", startDate: "2025-07", fee: 1000 },
-  { slug: "rejuvia", name: "Rejuvia Beauty & Aesthetics", status: "active", startDate: "2025-10", fee: 1500 },
-  { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990 },
+  { slug: "vernalys", name: "Vernalys Skin & Laser Clinic", status: "active", startDate: "2025-07", fee: 950, hasReporting: true, hasMessaging: false },
+  { slug: "cronulla", name: "Cronulla Skin Sanctuary", status: "active", startDate: "2026-01", fee: 1500, hasReporting: true, hasMessaging: false },
+  { slug: "eleve", name: "Élevé Cosmetics", status: "active", startDate: "2025-07", fee: 1000, hasReporting: true, hasMessaging: false },
+  { slug: "rejuvia", name: "Rejuvia Beauty & Aesthetics", status: "active", startDate: "2025-10", fee: 1500, hasReporting: true, hasMessaging: false },
+  { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990, hasReporting: true, hasMessaging: false },
   { slug: "oceanelle", name: "Oceanelle Medispa", status: "active", startDate: "2026-03", fee: 990, hasReporting: true, hasMessaging: false },
   { slug: "livingskin", name: "Living Skin Clinic", status: "active", startDate: "2025-11", fee: 950, hasReporting: true, hasMessaging: false },
   { slug: "mbluxury", name: "MB Luxury Spa", status: "active", startDate: "2025-09", fee: 1000, hasReporting: true, hasMessaging: true },
@@ -316,7 +316,7 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width:'14px',height:'14px',flexShrink:0}}><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
                         Copy Link
                       </button>
-                      <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openSetupModal(c.slug); }} style={{flex:1,display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',padding:'10px 16px',background:'var(--green-light)',color:'var(--green)'}}>
+                      <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openInviteModal(c.slug); }} style={{flex:1,display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',padding:'10px 16px',background:'var(--green-light)',color:'var(--green)'}}>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width:'14px',height:'14px',flexShrink:0}}><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
                         Setup Access
                       </button>
