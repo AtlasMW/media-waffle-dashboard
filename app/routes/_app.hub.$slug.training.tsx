@@ -571,11 +571,11 @@ function TrainingExamples({ slug }: { slug: string }) {
 
   return (
     <div>
-      <div className="hub-page-header" style={{ marginBottom: 16 }}>
-        <p style={{ fontSize: 13, color: "#8a8478" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
+        <p style={{ fontSize: 13, color: "#8a8478", flex: 1, marginRight: 16 }}>
           Training examples teach the AI how to respond correctly. Each correction you make in the sandbox or from reviewing production responses appears here.
         </p>
-        <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add Example"}</button>
+        <button onClick={() => setShowAdd(!showAdd)} style={{ ...btnPrimary, whiteSpace: "nowrap" }}>{showAdd ? "Cancel" : "Add Example"}</button>
       </div>
 
       {showAdd && (
