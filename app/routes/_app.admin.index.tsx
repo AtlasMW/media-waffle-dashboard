@@ -26,7 +26,8 @@ const CLIENTS = [
   { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990 },
   { slug: "oceanelle", name: "Oceanelle Medispa", status: "active", startDate: "2026-03", fee: 990, hasReporting: true, hasMessaging: false },
   { slug: "livingskin", name: "Living Skin Clinic", status: "active", startDate: "2025-11", fee: 950, hasReporting: true, hasMessaging: false },
-  { slug: "mb-luxury", name: "MB Luxury Spa", status: "active", startDate: "2026-03", fee: 0, hasReporting: false, hasMessaging: true },
+  { slug: "mbluxury", name: "MB Luxury Spa", status: "active", startDate: "2025-09", fee: 1000, hasReporting: true, hasMessaging: true },
+  { slug: "wildflower", name: "Wildflower Skin Clinic", status: "active", startDate: "2024-03", fee: 1200, hasReporting: true, hasMessaging: false },
 ];
 
 function fmtC(v: number) { return '$' + Number(v).toLocaleString('en-AU', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
@@ -301,27 +302,29 @@ body { font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(
                       <div className="tile-metric-value">{cpl}</div>
                     </div>
                   </div>
-                  <div className="tile-actions">
+                  <div style={{paddingTop:'16px',borderTop:'1px solid var(--beige-light)'}}>
                     {c.hasReporting && (
-                      <a className="btn btn-primary" href={'/dashboard/' + c.slug} onClick={(e) => e.stopPropagation()}>
+                      <a className="btn btn-primary" href={'/dashboard/' + c.slug} onClick={(e) => e.stopPropagation()} style={{display:'flex',width:'100%',marginBottom:'8px'}}>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
                         Reporting
                       </a>
                     )}
                     {c.hasMessaging && (
-                      <a className="btn btn-primary" href={'/hub/' + c.slug + '/brand'} onClick={(e) => e.stopPropagation()} style={{background:'#5b9ea6'}}>
+                      <a className="btn btn-primary" href={'/hub/' + (c.slug === 'mbluxury' ? 'mb-luxury' : c.slug) + '/brand'} onClick={(e) => e.stopPropagation()} style={{display:'flex',width:'100%',marginBottom:'8px',background:'#5b9ea6'}}>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/></svg>
                         AI Messaging
                       </a>
                     )}
-                    <button className="btn btn-secondary" onClick={(e) => copyLink(c.slug, e)}>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                      Copy Link
-                    </button>
-                    <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openSetupModal(c.slug); }} style={{background:'var(--green-light)',color:'var(--green)'}}>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
-                      Setup Access
-                    </button>
+                    <div style={{display:'flex',gap:'8px'}}>
+                      <button className="btn btn-secondary" onClick={(e) => copyLink(c.slug, e)} style={{flex:1}}>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        Copy Link
+                      </button>
+                      <button className="btn btn-secondary" onClick={(e) => { e.stopPropagation(); openSetupModal(c.slug); }} style={{flex:1,background:'var(--green-light)',color:'var(--green)'}}>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                        Setup Access
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
