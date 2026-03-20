@@ -24,6 +24,7 @@ const CLIENTS = [
   { slug: "eleve", name: "Élevé Cosmetics", status: "active", startDate: "2025-07", fee: 1000 },
   { slug: "rejuvia", name: "Rejuvia Beauty & Aesthetics", status: "active", startDate: "2025-10", fee: 1500 },
   { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990 },
+  { slug: "oceanelle", name: "Oceanelle Medispa", status: "active", startDate: "2026-03", fee: 990, hasReporting: true, hasMessaging: false },
 ];
 
 function fmtC(v: number) { return '$' + Number(v).toLocaleString('en-AU', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
