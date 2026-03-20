@@ -458,8 +458,17 @@ export default function Training() {
             );
             return (<><div style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>{unreviewed.length} response{unreviewed.length !== 1 ? "s" : ""} to review</div>{unreviewed.map((log: any) => (
             <div key={log.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
-              <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 8 }}>
-                {log.contact_name} | {log.location_tag} | {(log.channel || "").replace("TYPE_", "")} | {new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+                <div style={{ fontSize: 11, color: "#8a8478" }}>
+                  {log.contact_name} | {log.location_tag} | {(log.channel || "").replace("TYPE_", "")} | {new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}
+                </div>
+                <button onClick={() => {
+                  const formData = new FormData();
+                  formData.set("intent", "rate_production");
+                  formData.set("log_id", log.id);
+                  formData.set("rating", "dismissed");
+                  fetcher.submit(formData, { method: "post" });
+                }} style={{ background: "none", border: "none", color: "#bbb", cursor: "pointer", fontSize: 18, lineHeight: 1, padding: "2px 6px" }} title="Dismiss">x</button>
               </div>
               <div style={{ background: "#faf8f5", borderRadius: 8, padding: 12, marginBottom: 8 }}>
                 <div style={{ fontSize: 12, color: "#8a8478", marginBottom: 2 }}>Lead:</div>
