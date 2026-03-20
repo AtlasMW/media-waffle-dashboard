@@ -18,7 +18,22 @@ export async function action({ request, params }: Route.ActionArgs) {
       else if (key === "sms_char_limit" || key === "sms_max_messages" || key === "dm_max_messages") updates[key] = parseInt(value as string) || 0;
       else updates[key] = value;
     }
-    await supabase.from("msg_brand_config").update(updates).eq("client_id", client.id);
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    const res = await fetch(`${SB_URL}/rest/v1/msg_brand_config?client_id=eq.${client.id}`, {
+      method: "PATCH",
+      headers: {
+        "Authorization": `Bearer ${SB_SERVICE_KEY}`,
+        "apikey": SB_SERVICE_KEY,
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal",
+      },
+      body: JSON.stringify(updates),
+    });
+    if (!res.ok) {
+      const errText = await res.text();
+      return { error: `Save failed: ${errText}` };
+    }
     return { success: true };
   }
 
