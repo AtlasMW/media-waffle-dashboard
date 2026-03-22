@@ -1,0 +1,526 @@
+{
+  "client": "Rejuvia Beauty & Aesthetics",
+  "currency": "AUD",
+  "lastUpdated": "2026-03-23T02:04:23+10:00",
+  "agencyFees": {
+    "2026-02": 0
+  },
+  "monthly": {
+    "2026-02": {
+      "spend": 565.84,
+      "impressions": 32392,
+      "reach": 9263,
+      "leads": 32,
+      "cpl": 17.68,
+      "messages": 37,
+      "costPerMessage": 15.29,
+      "uniqueCtr": 0.01,
+      "cpm": 17.47,
+      "linkClicks": 246,
+      "cpc": 2.3,
+      "leadConvPct": 13.01,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 5 - Love Glow",
+          "spend": 442.31,
+          "impressions": 25860,
+          "reach": 8162,
+          "leads": 20,
+          "cpl": 22.12,
+          "uniqueCtr": 0.01,
+          "messages": 22,
+          "linkClicks": 182,
+          "cpc": 2.43,
+          "leadConvPct": 10.99
+        },
+        {
+          "name": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 123.53,
+          "impressions": 6532,
+          "reach": 2828,
+          "leads": 12,
+          "cpl": 10.29,
+          "uniqueCtr": 0.0,
+          "messages": 15,
+          "linkClicks": 64,
+          "cpc": 1.93,
+          "leadConvPct": 18.75
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 5 - Love Glow",
+          "leads": 20,
+          "cpl": 22.12,
+          "spend": 442.31,
+          "campaignPattern": "LEADS // CBO // OFFER 5 - Love Glow"
+        },
+        {
+          "name": "LEADS // CBO // OFFER 6 BROWS",
+          "leads": 12,
+          "cpl": 10.29,
+          "spend": 123.53,
+          "campaignPattern": "LEADS // CBO // OFFER 6 BROWS"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 2 | H1 & 2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 18+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 20.36,
+          "leads": 4,
+          "cpl": 5.09,
+          "uniqueCtr": 0.0,
+          "frequency": 1.37
+        },
+        {
+          "adName": "IMG 2 | H1 & 2 - C1 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 55.69,
+          "leads": 7,
+          "cpl": 7.96,
+          "uniqueCtr": 0.0,
+          "frequency": 1.51
+        },
+        {
+          "adName": "IMG 2 | H1 - C1-2 H1-4",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 5 - Love Glow",
+          "spend": 18.2,
+          "leads": 1,
+          "cpl": 18.2,
+          "uniqueCtr": 0.0,
+          "frequency": 1.56
+        },
+        {
+          "adName": "IMG 1 | H1 - C1-2 H1-4 - Copy",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 5 - Love Glow",
+          "spend": 331.07,
+          "leads": 17,
+          "cpl": 19.47,
+          "uniqueCtr": 0.0,
+          "frequency": 2.71
+        },
+        {
+          "adName": "IMG 1 | H1 & 3 - C1 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 22.36,
+          "leads": 1,
+          "cpl": 22.36,
+          "uniqueCtr": 0.0,
+          "frequency": 1.69
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 29.67,
+          "leads": 0
+        },
+        {
+          "age": "25-34",
+          "spend": 96.96,
+          "leads": 10
+        },
+        {
+          "age": "35-44",
+          "spend": 118.12,
+          "leads": 9
+        },
+        {
+          "age": "45-54",
+          "spend": 115.45,
+          "leads": 8
+        },
+        {
+          "age": "55-64",
+          "spend": 106.25,
+          "leads": 3
+        },
+        {
+          "age": "65+",
+          "spend": 99.39,
+          "leads": 2
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 42.4,
+          "leads": 3
+        },
+        {
+          "name": "Facebook Facebook Reels Overlay",
+          "spend": 0.03,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 32.98,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 318.4,
+          "leads": 19
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 1.69,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 43.88,
+          "leads": 3
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.01,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 32.64,
+          "leads": 4
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 93.8,
+          "leads": 3
+        }
+      ]
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-02-04",
+      "spend": 14.14,
+      "impressions": 749,
+      "reach": 657,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 18.88
+    },
+    {
+      "date": "2026-02-05",
+      "spend": 38.67,
+      "impressions": 1869,
+      "reach": 1164,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 25,
+      "uniqueCtr": 0.09,
+      "cpm": 20.69
+    },
+    {
+      "date": "2026-02-06",
+      "spend": 32.7,
+      "impressions": 1907,
+      "reach": 1322,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 17.15
+    },
+    {
+      "date": "2026-02-07",
+      "spend": 32.42,
+      "impressions": 1543,
+      "reach": 1177,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 14,
+      "uniqueCtr": 0.0,
+      "cpm": 21.01
+    },
+    {
+      "date": "2026-02-08",
+      "spend": 40.64,
+      "impressions": 1905,
+      "reach": 1380,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 21.33
+    },
+    {
+      "date": "2026-02-09",
+      "spend": 34.24,
+      "impressions": 1599,
+      "reach": 1196,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 21.41
+    },
+    {
+      "date": "2026-02-10",
+      "spend": 41.77,
+      "impressions": 2164,
+      "reach": 1595,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 23,
+      "uniqueCtr": 0.0,
+      "cpm": 19.3
+    },
+    {
+      "date": "2026-02-11",
+      "spend": 40.87,
+      "impressions": 2035,
+      "reach": 1545,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 20.08
+    },
+    {
+      "date": "2026-02-12",
+      "spend": 40.35,
+      "impressions": 2317,
+      "reach": 1758,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 17.41
+    },
+    {
+      "date": "2026-02-13",
+      "spend": 37.61,
+      "impressions": 2428,
+      "reach": 1868,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 15.49
+    },
+    {
+      "date": "2026-02-14",
+      "spend": 33.45,
+      "impressions": 2083,
+      "reach": 1520,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 14,
+      "uniqueCtr": 0.0,
+      "cpm": 16.06
+    },
+    {
+      "date": "2026-02-15",
+      "spend": 43.49,
+      "impressions": 3917,
+      "reach": 2750,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 24,
+      "uniqueCtr": 0.0,
+      "cpm": 11.1
+    },
+    {
+      "date": "2026-02-16",
+      "spend": 11.96,
+      "impressions": 1344,
+      "reach": 1162,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 8.9
+    },
+    {
+      "date": "2026-02-17",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 0,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
+    {
+      "date": "2026-02-24",
+      "spend": 24.77,
+      "impressions": 1102,
+      "reach": 753,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 22.48
+    },
+    {
+      "date": "2026-02-25",
+      "spend": 26.89,
+      "impressions": 1529,
+      "reach": 1105,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 17.59
+    },
+    {
+      "date": "2026-02-26",
+      "spend": 24.31,
+      "impressions": 1366,
+      "reach": 1005,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 17.8
+    },
+    {
+      "date": "2026-02-27",
+      "spend": 24.19,
+      "impressions": 1308,
+      "reach": 1019,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 18.49
+    },
+    {
+      "date": "2026-02-28",
+      "spend": 23.37,
+      "impressions": 1227,
+      "reach": 982,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 19.05
+    }
+  ],
+  "campaignDaily": {
+    "2026-02-04": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 14.14,
+        "leads": 0
+      }
+    },
+    "2026-02-05": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 38.67,
+        "leads": 3
+      }
+    },
+    "2026-02-06": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 32.7,
+        "leads": 1
+      }
+    },
+    "2026-02-07": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 32.42,
+        "leads": 1
+      }
+    },
+    "2026-02-08": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.64,
+        "leads": 2
+      }
+    },
+    "2026-02-09": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 34.24,
+        "leads": 1
+      }
+    },
+    "2026-02-10": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 41.77,
+        "leads": 2
+      }
+    },
+    "2026-02-11": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.87,
+        "leads": 3
+      }
+    },
+    "2026-02-12": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 40.35,
+        "leads": 2
+      }
+    },
+    "2026-02-13": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 37.61,
+        "leads": 1
+      }
+    },
+    "2026-02-14": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 33.45,
+        "leads": 0
+      }
+    },
+    "2026-02-15": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 43.49,
+        "leads": 2
+      }
+    },
+    "2026-02-16": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 11.96,
+        "leads": 2
+      }
+    },
+    "2026-02-17": {
+      "LEADS // CBO // OFFER 5 - Love Glow": {
+        "spend": 0.0,
+        "leads": 0
+      }
+    },
+    "2026-02-24": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.77,
+        "leads": 1
+      }
+    },
+    "2026-02-25": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 26.89,
+        "leads": 2
+      }
+    },
+    "2026-02-26": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.31,
+        "leads": 3
+      }
+    },
+    "2026-02-27": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 24.19,
+        "leads": 3
+      }
+    },
+    "2026-02-28": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 23.37,
+        "leads": 3
+      }
+    }
+  }
+}
