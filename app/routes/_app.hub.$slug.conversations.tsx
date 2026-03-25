@@ -64,6 +64,17 @@ export default function Conversations() {
     contactMap.get(key)!.logs.push(log);
   }
 
+  // Disambiguate contacts with the same display name
+  const nameCount = new Map<string, number>();
+  for (const c of contactMap.values()) {
+    nameCount.set(c.name, (nameCount.get(c.name) || 0) + 1);
+  }
+  for (const c of contactMap.values()) {
+    if ((nameCount.get(c.name) || 0) > 1 && c.contactId) {
+      c.name = `${c.name} (${c.contactId.slice(-4)})`;
+    }
+  }
+
   const contacts = Array.from(contactMap.values());
 
   // Filter
