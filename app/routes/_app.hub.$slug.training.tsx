@@ -168,12 +168,18 @@ export async function action({ request, params }: Route.ActionArgs) {
   }
 
   if (intent === "save_correction") {
+    const correctionType = (form.get("correction_type") as string) || "exact";
+    const inboundText = (form.get("inbound_text") as string) || (correctionType === "instruction" ? "System rule" : "");
+    const priority = correctionType === "instruction" ? 20 : 10;
     await supabase.from("msg_training_examples").insert({
       client_id: client.id,
       scenario: form.get("scenario") || null,
-      inbound_text: form.get("inbound_text"),
+      inbound_text: inboundText,
       bad_response: form.get("bad_response") || null,
       correct_response: form.get("correct_response"),
+      correction_type: correctionType,
+      conversation_stage: form.get("conversation_stage") || "general",
+      priority,
       notes: form.get("notes") || null,
       source: form.get("source") || "sandbox",
       is_active: true,
@@ -327,6 +333,7 @@ export default function Training() {
         {[
           { key: "sandbox" as const, label: "Test Sandbox" },
           { key: "examples" as const, label: "Knowledge Base" },
+          { key: "rules" as const, label: "System Rules" },
           { key: "review" as const, label: "Review Responses" },
         ].map(t => (
           <button key={t.key} onClick={() => setTab(t.key)} style={{
@@ -482,6 +489,11 @@ export default function Training() {
         <TrainingExamples slug={slug!} />
       )}
 
+      {/* ==================== SYSTEM RULES ==================== */}
+      {tab === "rules" && (
+        <SystemRules slug={slug!} />
+      )}
+
       {/* ==================== REVIEW PRODUCTION ==================== */}
       {tab === "review" && (
         <div>
@@ -610,7 +622,9 @@ function CorrectionForm({ onSave, onCancel, badResponse }: { onSave: (correct: s
 function TrainingExamples({ slug }: { slug: string }) {
   const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
   const data = allClientData[slug] || {};
-  const examples = data.trainingExamples || [];
+  const allExamples = data.trainingExamples || [];
+  // Filter out instructions -- those show in System Rules tab
+  const examples = allExamples.filter((e: any) => e.correction_type !== "instruction");
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -636,22 +650,28 @@ function TrainingExamples({ slug }: { slug: string }) {
             <input type="hidden" name="intent" value="save_correction" />
             <input type="hidden" name="source" value="manual" />
             <div style={{ marginBottom: 12 }}>
+              <label style={labelSm}>Type</label>
+              <select name="correction_type" defaultValue="exact" style={inputFull} onChange={(e) => {
+                const trigger = document.getElementById('kb-trigger-field') as HTMLElement;
+                if (trigger) trigger.style.display = e.target.value === 'instruction' ? 'none' : 'block';
+              }}>
+                <option value="exact">Exact Response (when lead says X, respond with Y)</option>
+                <option value="instruction">Instruction (general rule for the AI to follow)</option>
+              </select>
+            </div>
+            <div id="kb-trigger-field" style={{ marginBottom: 12 }}>
               <label style={labelSm}>When the lead says</label>
-              <input name="inbound_text" required placeholder='e.g. "How much does it cost?"' style={inputFull} />
+              <input name="inbound_text" placeholder='e.g. "How much does it cost?"' style={inputFull} />
             </div>
             <div style={{ marginBottom: 12 }}>
-              <label style={labelSm}>The AI should respond with</label>
-              <textarea name="correct_response" required rows={3} placeholder="Type the ideal response..." style={{ ...inputFull, resize: "vertical" }} />
+              <label style={labelSm}>Response / Instruction</label>
+              <textarea name="correct_response" required rows={3} placeholder="Type the exact response or instruction for the AI..." style={{ ...inputFull, resize: "vertical" }} />
             </div>
             <div style={{ marginBottom: 12 }}>
               <label style={labelSm}>Notes (optional)</label>
-              <input name="notes" placeholder="Why this response is correct" style={inputFull} />
+              <input name="notes" placeholder="Why this response or rule exists" style={inputFull} />
             </div>
-            <div style={{ marginBottom: 12 }}>
-              <label style={labelSm}>Scenario (optional)</label>
-              <input name="scenario" placeholder="e.g. aitkenvale | SMS" style={inputFull} />
-            </div>
-            <button type="submit" style={btnPrimary}>Save Example</button>
+            <button type="submit" style={btnPrimary}>Save</button>
           </fetcher.Form>
         </div>
       )}
@@ -730,6 +750,102 @@ function TrainingExamples({ slug }: { slug: string }) {
             {ex.notes && (
               <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6, fontStyle: "italic" }}>{ex.notes}</div>
             )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ==================== SYSTEM RULES ====================
+function SystemRules({ slug }: { slug: string }) {
+  const { allClientData } = useOutletContext<{ allClientData: Record<string, any> }>();
+  const data = allClientData[slug] || {};
+  const examples = data.trainingExamples || [];
+  const fetcher = useFetcher();
+  const [showAdd, setShowAdd] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
+
+  // System rules are instruction-type training examples
+  const rules = examples.filter((e: any) => e.correction_type === "instruction");
+
+  return (
+    <div>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
+        <p style={{ fontSize: 13, color: "#8a8478", flex: 1, marginRight: 16 }}>
+          System rules control how the AI behaves. These are behavioural instructions that override other responses. Use these for things like "never mention deposits unless asked" or "always escalate sensitive topics".
+        </p>
+        <button onClick={() => setShowAdd(!showAdd)} style={{ ...btnPrimary, whiteSpace: "nowrap" }}>{showAdd ? "Cancel" : "Add Rule"}</button>
+      </div>
+
+      {showAdd && (
+        <div style={{ background: "white", borderRadius: 12, padding: 20, marginBottom: 16, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+          <fetcher.Form method="post" onSubmit={() => setShowAdd(false)}>
+            <input type="hidden" name="intent" value="save_correction" />
+            <input type="hidden" name="source" value="manual" />
+            <input type="hidden" name="correction_type" value="instruction" />
+            <input type="hidden" name="conversation_stage" value="general" />
+            <input type="hidden" name="priority" value="20" />
+            <input type="hidden" name="inbound_text" value="System rule" />
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelSm}>Rule</label>
+              <textarea name="correct_response" required rows={3} placeholder="e.g. Never mention deposits unless the lead specifically asks about payment..." style={{ ...inputFull, resize: "vertical" }} />
+            </div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelSm}>Notes (optional)</label>
+              <input name="notes" placeholder="Why this rule exists" style={inputFull} />
+            </div>
+            <button type="submit" style={btnPrimary}>Save Rule</button>
+          </fetcher.Form>
+        </div>
+      )}
+
+      {rules.length === 0 && !showAdd && (
+        <div style={{ background: "white", borderRadius: 12, padding: 40, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+          <div style={{ fontSize: 13, color: "#8a8478" }}>No system rules yet. Add rules to control how the AI behaves.</div>
+        </div>
+      )}
+
+      {rules.map((rule: any) => {
+        if (editingId === rule.id) {
+          return (
+            <div key={rule.id} style={{ background: "#faf8f5", borderRadius: 12, padding: 20, marginBottom: 10, border: "2px solid #7b1fa2" }}>
+              <fetcher.Form method="post" onSubmit={() => setEditingId(null)}>
+                <input type="hidden" name="intent" value="update_example" />
+                <input type="hidden" name="id" value={rule.id} />
+                <input type="hidden" name="correction_type" value="instruction" />
+                <div style={{ marginBottom: 10 }}>
+                  <label style={labelSm}>Rule</label>
+                  <textarea name="correct_response" defaultValue={rule.correct_response} rows={3} style={{ ...inputFull, resize: "vertical" }} />
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelSm}>Notes</label>
+                  <input name="notes" defaultValue={rule.notes || ""} style={inputFull} />
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="button" onClick={() => setEditingId(null)} style={{ ...btnPrimary, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
+                </div>
+              </fetcher.Form>
+            </div>
+          );
+        }
+        return (
+          <div key={rule.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 10, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", borderLeft: "3px solid #7b1fa2" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 13, color: "#3b3b3b", fontStyle: "italic" }}>{rule.correct_response}</div>
+                {rule.notes && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>{rule.notes}</div>}
+              </div>
+              <div style={{ display: "flex", gap: 10, flexShrink: 0, marginLeft: 12 }}>
+                <button onClick={() => setEditingId(rule.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
+                <fetcher.Form method="post" style={{ display: "inline" }} onSubmit={(e) => { if (!confirm("Delete this rule?")) e.preventDefault(); }}>
+                  <input type="hidden" name="intent" value="delete_example" />
+                  <input type="hidden" name="id" value={rule.id} />
+                  <button type="submit" style={{ background: "none", border: "none", color: "#c62828", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Delete</button>
+                </fetcher.Form>
+              </div>
+            </div>
           </div>
         );
       })}

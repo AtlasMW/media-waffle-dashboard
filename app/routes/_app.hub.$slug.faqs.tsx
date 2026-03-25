@@ -23,6 +23,14 @@ export async function action({ request, params }: Route.ActionArgs) {
     const id = form.get("id") as string;
     const active = form.get("is_active") === "true";
     await supabase.from("msg_faqs").update({ is_active: !active }).eq("id", id);
+  } else if (intent === "update") {
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    await fetch(`${SB_URL}/rest/v1/msg_faqs?id=eq.${form.get("id")}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ question: form.get("question"), answer: form.get("answer") }),
+    });
   } else if (intent === "delete") {
     await supabase.from("msg_faqs").delete().eq("id", form.get("id"));
   } else if (intent === "approve_suggestion") {
@@ -54,6 +62,7 @@ export default function FAQs() {
   const suggested = data.suggested || [];
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
 
   return (
     <div style={{ maxWidth: 720, width: "100%" }}>
@@ -109,31 +118,56 @@ export default function FAQs() {
         </div>
       )}
 
-      {faqs.map((faq: any) => (
-        <div key={faq.id} style={{
-          background: "white", borderRadius: 8, padding: 16, marginBottom: 8,
-          boxShadow: "0 1px 2px rgba(0,0,0,0.04)", opacity: faq.is_active ? 1 : 0.5,
-          borderLeft: `3px solid ${faq.source === "learned" ? "#f57f17" : "#c4a882"}`,
-        }}>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
-              <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
-              <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                Used {faq.times_used}x
-                {faq.source === "learned" && " | AI Learned"}
-              </div>
-            </div>
-            <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12 }}>
-              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this FAQ?")) e.preventDefault(); }}>
-                <input type="hidden" name="intent" value="delete" />
+      {faqs.map((faq: any) => {
+        if (editingId === faq.id) {
+          return (
+            <div key={faq.id} style={{ background: "#faf8f5", borderRadius: 8, padding: 20, marginBottom: 8, border: "2px solid #c4a882" }}>
+              <fetcher.Form method="post" onSubmit={() => setEditingId(null)}>
+                <input type="hidden" name="intent" value="update" />
                 <input type="hidden" name="id" value={faq.id} />
-                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
+                <div style={{ marginBottom: 10 }}>
+                  <label style={labelStyle}>Question</label>
+                  <input name="question" defaultValue={faq.question} style={inputStyle} />
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelStyle}>Answer</label>
+                  <textarea name="answer" defaultValue={faq.answer} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="button" onClick={() => setEditingId(null)} style={{ ...btnSmall, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
+                </div>
               </fetcher.Form>
             </div>
+          );
+        }
+        return (
+          <div key={faq.id} style={{
+            background: "white", borderRadius: 8, padding: 16, marginBottom: 8,
+            boxShadow: "0 1px 2px rgba(0,0,0,0.04)", opacity: faq.is_active ? 1 : 0.5,
+            borderLeft: `3px solid ${faq.source === "learned" ? "#f57f17" : "#c4a882"}`,
+          }}>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
+                <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
+                <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
+                  Used {faq.times_used}x
+                  {faq.source === "learned" && " | AI Learned"}
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 6, flexShrink: 0, marginLeft: 12, alignItems: "flex-start" }}>
+                <button onClick={() => setEditingId(faq.id)} style={{ ...btnSmall, background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
+                <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this FAQ?")) e.preventDefault(); }}>
+                  <input type="hidden" name="intent" value="delete" />
+                  <input type="hidden" name="id" value={faq.id} />
+                  <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
+                </fetcher.Form>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
 
       {!showAdd && faqs.length > 3 && (
         <div style={{ marginTop: 20, textAlign: "center" }}>
