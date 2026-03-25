@@ -64,14 +64,13 @@ export default function Conversations() {
     contactMap.get(key)!.logs.push(log);
   }
 
-  // Disambiguate contacts with the same display name
-  const nameCount = new Map<string, number>();
+  // Format names: "Tommy Jones" -> "Tommy J.", no last name -> just first name
   for (const c of contactMap.values()) {
-    nameCount.set(c.name, (nameCount.get(c.name) || 0) + 1);
-  }
-  for (const c of contactMap.values()) {
-    if ((nameCount.get(c.name) || 0) > 1 && c.contactId) {
-      c.name = `${c.name} (${c.contactId.slice(-4)})`;
+    const parts = (c.name || "").trim().split(/\s+/);
+    if (parts.length > 1) {
+      c.name = `${parts[0]} ${parts[parts.length - 1][0]}.`;
+    } else {
+      c.name = parts[0] || "Unknown";
     }
   }
 
