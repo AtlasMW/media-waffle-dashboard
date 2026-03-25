@@ -183,52 +183,100 @@ export default function Conversations() {
               </div>
             </div>
 
-            {/* Expanded message history */}
+            {/* Expanded chat thread */}
             {isExpanded && (
-              <div style={{ borderTop: "1px solid #eee8dc", padding: "12px 16px", background: "#faf8f5" }}>
-                {contact.logs.slice().reverse().map((log: any, i: number) => (
-                  <div key={log.id || i} style={{ marginBottom: i < contact.logs.length - 1 ? 16 : 0 }}>
-                    <div style={{ fontSize: 10, color: "#b0a89a", marginBottom: 6, fontWeight: 600 }}>
-                      {formatTime(log.created_at)}
-                      <span style={{
-                        marginLeft: 8, padding: "1px 6px", borderRadius: 8, fontSize: 9,
-                        background: actionColors[log.action]?.bg || "#f5f5f5",
-                        color: actionColors[log.action]?.color || "#666",
-                      }}>
-                        {actionColors[log.action]?.label || log.action}
-                      </span>
-                    </div>
+              <div style={{ borderTop: "1px solid #eee8dc", background: "#faf8f5" }}>
+                {/* Chat messages - continuous thread */}
+                <div style={{ padding: "16px 16px 12px", maxHeight: 400, overflowY: "auto" }}>
+                  {contact.logs.slice().reverse().map((log: any, i: number) => {
+                    const prevLog = i > 0 ? contact.logs.slice().reverse()[i - 1] : null;
+                    const showDate = !prevLog || new Date(log.created_at).toDateString() !== new Date(prevLog.created_at).toDateString();
 
-                    {/* Inbound message */}
-                    {log.inbound_text && (
-                      <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: 6 }}>
-                        <div style={{
-                          maxWidth: "85%", padding: "10px 14px", borderRadius: 12,
-                          borderBottomLeftRadius: 4, background: "white",
-                          fontSize: 13, lineHeight: 1.5, color: "#3b3b3b",
-                          border: "1px solid #eee8dc",
-                        }}>
-                          <div style={{ fontSize: 10, color: "#8a8478", marginBottom: 4, fontWeight: 600 }}>Lead</div>
-                          {log.inbound_text}
-                        </div>
-                      </div>
-                    )}
+                    return (
+                      <div key={log.id || i}>
+                        {/* Date separator */}
+                        {showDate && (
+                          <div style={{ textAlign: "center", margin: "12px 0 8px", position: "relative" }}>
+                            <span style={{ background: "#faf8f5", padding: "0 12px", fontSize: 10, color: "#b0a89a", fontWeight: 600, position: "relative", zIndex: 1 }}>
+                              {new Date(log.created_at).toLocaleDateString("en-AU", { weekday: "short", day: "2-digit", month: "short" })}
+                            </span>
+                          </div>
+                        )}
 
-                    {/* Outbound message */}
-                    {log.outbound_text && (
-                      <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                        <div style={{
-                          maxWidth: "85%", padding: "10px 14px", borderRadius: 12,
-                          borderBottomRightRadius: 4, background: "#3b3b3b",
-                          fontSize: 13, lineHeight: 1.5, color: "#f5f0e8",
-                        }}>
-                          <div style={{ fontSize: 10, color: "#b0a89a", marginBottom: 4, fontWeight: 600 }}>AI</div>
-                          {log.outbound_text}
-                        </div>
+                        {/* Inbound bubble */}
+                        {log.inbound_text && (
+                          <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: 4 }}>
+                            <div style={{ maxWidth: "80%" }}>
+                              <div style={{
+                                padding: "8px 12px", borderRadius: "12px 12px 12px 4px",
+                                background: "white", border: "1px solid #eee8dc",
+                                fontSize: 13, lineHeight: 1.5, color: "#3b3b3b",
+                              }}>
+                                {log.inbound_text}
+                              </div>
+                              <div style={{ fontSize: 9, color: "#b0a89a", marginTop: 2, paddingLeft: 4 }}>
+                                {new Date(log.created_at).toLocaleTimeString("en-AU", { hour: "2-digit", minute: "2-digit" })}
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Outbound bubble */}
+                        {log.outbound_text && (
+                          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
+                            <div style={{ maxWidth: "80%" }}>
+                              <div style={{
+                                padding: "8px 12px", borderRadius: "12px 12px 4px 12px",
+                                background: "#3b3b3b", fontSize: 13, lineHeight: 1.5, color: "#f5f0e8",
+                              }}>
+                                {log.outbound_text}
+                              </div>
+                              <div style={{ fontSize: 9, color: "#b0a89a", marginTop: 2, textAlign: "right", paddingRight: 4 }}>
+                                {new Date(log.created_at).toLocaleTimeString("en-AU", { hour: "2-digit", minute: "2-digit" })}
+                                {log.action && log.action !== "responded" && (
+                                  <span style={{
+                                    marginLeft: 6, padding: "1px 5px", borderRadius: 6, fontSize: 8,
+                                    background: actionColors[log.action]?.bg || "#f5f5f5",
+                                    color: actionColors[log.action]?.color || "#666",
+                                  }}>
+                                    {actionColors[log.action]?.label || log.action}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Escalation / action-only entries (no outbound text) */}
+                        {!log.outbound_text && log.action === "escalated" && (
+                          <div style={{ textAlign: "center", margin: "6px 0" }}>
+                            <span style={{ fontSize: 10, color: "#ef6c00", fontWeight: 600, background: "#fff3e0", padding: "2px 10px", borderRadius: 8 }}>
+                              Escalated to owner
+                            </span>
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                ))}
+                    );
+                  })}
+                </div>
+
+                {/* Thread summary footer */}
+                <div style={{ borderTop: "1px solid #eee8dc", padding: "8px 16px", display: "flex", gap: 16, flexWrap: "wrap" }}>
+                  <span style={{ fontSize: 10, color: "#b0a89a" }}>
+                    {contact.logs.length} exchange{contact.logs.length !== 1 ? "s" : ""}
+                  </span>
+                  <span style={{ fontSize: 10, color: "#b0a89a" }}>
+                    First: {new Date(contact.logs[contact.logs.length - 1]?.created_at).toLocaleDateString("en-AU", { day: "2-digit", month: "short" })}
+                  </span>
+                  <span style={{ fontSize: 10, color: "#b0a89a" }}>
+                    Last: {new Date(contact.logs[0]?.created_at).toLocaleDateString("en-AU", { day: "2-digit", month: "short" })}
+                  </span>
+                  {link && (
+                    <a href={link} target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "#5b9ea6", fontWeight: 600, textDecoration: "none", marginLeft: "auto" }}>
+                      View full history in GHL &rarr;
+                    </a>
+                  )}
+                </div>
               </div>
             )}
           </div>
