@@ -161,9 +161,8 @@ export default function Onboarding() {
 }
 
 function Card({ title, step, current, children }: { title: string; step: number; current: number; children: React.ReactNode }) {
-  if (step !== current) return null;
   return (
-    <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+    <div style={{ background: "white", borderRadius: 12, padding: 24, marginBottom: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", display: step === current ? "block" : "none" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
         <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#3b3b3b", color: "#f5f0e8", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700 }}>{step}</div>
         <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 16, color: "#3b3b3b", margin: 0 }}>{title}</h3>
