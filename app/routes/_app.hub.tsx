@@ -173,10 +173,6 @@ export default function HubLayout() {
 
           <div style={{ padding: "16px 12px", flex: 1, overflowY: "auto" }}>
             <div style={sectionLabel}>Admin</div>
-            <NavLink prefetch="intent" to="/hub" end style={({ isActive }) => navStyle(isActive)}>
-              <NavIcon d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" />
-              Overview
-            </NavLink>
 
             {isAdmin && (
               <>
@@ -191,22 +187,28 @@ export default function HubLayout() {
               </>
             )}
 
-            {/* Client list */}
-            <div style={sectionLabel}>Clients</div>
-            {clients.map((ca: any) => {
-              const client = ca.msg_clients;
-              if (!client) return null;
-              return (
-                <NavLink key={client.id} prefetch="render" to={`/hub/${client.slug}/brand`} style={({ isActive }) => {
+            {/* Client dropdown */}
+            <div style={{ ...sectionLabel, marginTop: 16 }}>Select Client</div>
+            <div style={{ padding: "0 4px", marginBottom: 8 }}>
+              <select 
+                style={{ width: "100%", padding: "8px 10px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 12, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", color: "#3b3b3b", cursor: "pointer" }}
+                value={(() => {
                   const currentPath = typeof window !== "undefined" ? window.location.pathname : "";
-                  const isClientActive = currentPath.startsWith(`/hub/${client.slug}`);
-                  return navStyle(isClientActive);
-                }}>
-                  <NavIcon d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z" />
-                  {client.name}
-                </NavLink>
-              );
-            })}
+                  const match = clients.find((ca: any) => ca.msg_clients && currentPath.startsWith(`/hub/${ca.msg_clients.slug}`));
+                  return match?.msg_clients?.slug || "";
+                })()}
+                onChange={(e) => {
+                  if (e.target.value) window.location.href = `/hub/${e.target.value}/brand`;
+                }}
+              >
+                <option value="">-- Select client --</option>
+                {clients.map((ca: any) => {
+                  const client = ca.msg_clients;
+                  if (!client) return null;
+                  return <option key={client.id} value={client.slug}>{client.name}</option>;
+                })}
+              </select>
+            </div>
 
             {/* Active client tabs - only show when inside a client */}
             {(() => {
