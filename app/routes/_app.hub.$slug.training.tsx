@@ -52,6 +52,12 @@ export async function action({ request, params }: Route.ActionArgs) {
       prompt += `You respond to people who message us on Facebook or Instagram with general enquiries about our services.\n`;
       prompt += `You should be helpful but conservative. If you are not sure about the answer, escalate rather than guess.\n`;
       prompt += `Use the general booking link when directing people to book, not the promo link.\n\n`;
+      prompt += `## Location Clarification (IMPORTANT)\n`;
+      prompt += `We have multiple locations. Before providing any booking link or address:\n`;
+      prompt += `1. Check if the lead has already mentioned a location in the conversation.\n`;
+      prompt += `2. If yes, use that location's details and general booking link.\n`;
+      prompt += `3. If no, ask which location they prefer. Keep it natural, e.g. "We have two locations — Aitkenvale and Fairfield. Which one works best for you?"\n`;
+      prompt += `4. Do NOT guess or default to a location. Always clarify first.\n\n`;
     } else {
       prompt += `You are ${assistantName}, a ${brand.tone || "friendly"} messaging assistant for ${clientName}.\n`;
       prompt += `You respond to leads who have enquired about our services.\n\n`;
