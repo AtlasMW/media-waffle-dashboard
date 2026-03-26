@@ -14,7 +14,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     const updates: Record<string, any> = {};
     for (const [key, value] of form.entries()) {
       if (key === "intent") continue;
-      if (key === "emoji_allowed" || key === "deposit_required") updates[key] = value === "true";
+      if (key === "emoji_allowed" || key === "sms_emoji_allowed" || key === "deposit_required") updates[key] = value === "true";
       else if (key === "sms_char_limit" || key === "sms_max_messages" || key === "dm_max_messages") updates[key] = parseInt(value as string) || 0;
       else updates[key] = value;
     }
@@ -92,10 +92,11 @@ export default function Settings() {
               <Field label="Max Messages" name="dm_max_messages" value={brand?.dm_max_messages || 10} type="number" />
             </div>
             <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
+            <CheckboxField label="Allow emojis in SMS" name="sms_emoji_allowed" checked={brand?.sms_emoji_allowed || false} />
           </div>
         </Card>
 
-        <Card title="Booking Settings">
+        <Card title="Refund Policy and Deposit Policy">
           <CheckboxField label="Require deposit for online booking" name="deposit_required" checked={brand?.deposit_required || false} />
           <TextArea label="Deposit Info Message" name="deposit_info" value={brand?.deposit_info || ""} hint="Message to include when mentioning booking links" />
         </Card>

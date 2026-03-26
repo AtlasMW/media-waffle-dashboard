@@ -98,7 +98,7 @@ export default function BrandIdentity() {
 
         <Card title="Response Behaviour">
           <Field label="Post-Booking Response" name="post_booking_response" value={brand?.post_booking_response || ""} hint="What to say when a lead confirms they booked" />
-          <Field label="Returning Customer Note" name="returning_customer_note" value={brand?.returning_customer_note || ""} hint="Message for leads who want to use the offer again" />
+
         </Card>
 
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Brand Identity</button>
