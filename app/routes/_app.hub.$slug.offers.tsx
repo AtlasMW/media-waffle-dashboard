@@ -46,7 +46,7 @@ function OfferCard({ offer, offerTags, onEdit, fetcher }: any) {
           <button 
             type="submit" 
             title={offer.is_active ? "Deactivate" : "Activate"}
-            style={{ ...iconButton, color: offer.is_active ? "#ef6c00" : "#2e7d32" }}
+            style={{ ...iconButton, background: offer.is_active ? "#fff3e0" : "#e8f5e9", color: offer.is_active ? "#ef6c00" : "#2e7d32" }}
           >
             {offer.is_active ? <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
           </button>
@@ -57,7 +57,7 @@ function OfferCard({ offer, offerTags, onEdit, fetcher }: any) {
           <button 
             type="submit" 
             title="Delete"
-            style={{ ...iconButton, color: "#c62828" }}
+            style={{ ...iconButton, background: "#ffebee", color: "#c62828" }}
           >
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
           </button>
@@ -152,7 +152,7 @@ function ServiceCard({ service, onEdit, fetcher }: any) {
           <button 
             type="submit" 
             title={service.is_active ? "Deactivate" : "Activate"}
-            style={{ ...iconButton, color: service.is_active ? "#ef6c00" : "#2e7d32" }}
+            style={{ ...iconButton, background: service.is_active ? "#fff3e0" : "#e8f5e9", color: service.is_active ? "#ef6c00" : "#2e7d32" }}
           >
             {service.is_active ? <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
           </button>
@@ -163,7 +163,7 @@ function ServiceCard({ service, onEdit, fetcher }: any) {
           <button 
             type="submit" 
             title="Delete"
-            style={{ ...iconButton, color: "#c62828" }}
+            style={{ ...iconButton, background: "#ffebee", color: "#c62828" }}
           >
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
           </button>
