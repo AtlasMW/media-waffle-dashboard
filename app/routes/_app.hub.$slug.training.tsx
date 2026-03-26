@@ -181,6 +181,7 @@ export async function action({ request, params }: Route.ActionArgs) {
       conversation_stage: form.get("conversation_stage") || "general",
       priority,
       notes: form.get("notes") || null,
+      profile: form.get("profile") || "shared",
       source: form.get("source") || "sandbox",
       is_active: true,
     });
@@ -628,6 +629,8 @@ function TrainingExamples({ slug }: { slug: string }) {
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [profileFilter, setProfileFilter] = useState<string>("all");
+  const filteredExamples = profileFilter === "all" ? examples : examples.filter((e: any) => e.profile === profileFilter);
 
   const sourceLabels: Record<string, { bg: string; color: string; label: string }> = {
     sandbox: { bg: "#e3f2fd", color: "#1565c0", label: "Sandbox" },
@@ -642,6 +645,20 @@ function TrainingExamples({ slug }: { slug: string }) {
           Training examples teach the AI how to respond correctly. Each correction you make in the sandbox or from reviewing production responses appears here.
         </p>
         <button onClick={() => setShowAdd(!showAdd)} style={{ ...btnPrimary, whiteSpace: "nowrap" }}>{showAdd ? "Cancel" : "Add Example"}</button>
+      </div>
+
+      {/* Profile filter */}
+      <div style={{ display: "flex", gap: 4, marginBottom: 16, background: "#eee8dc", borderRadius: 8, padding: 4 }}>
+        {[{ key: "all", label: "All" }, { key: "shared", label: "Shared" }, { key: "promo", label: "Promo" }, { key: "general", label: "General" }].map(t => (
+          <button key={t.key} onClick={() => setProfileFilter(t.key)} style={{
+            flex: 1, padding: "6px 10px", borderRadius: 6, border: "none", fontSize: 11, fontWeight: 600,
+            cursor: "pointer", fontFamily: "'Montserrat', sans-serif",
+            background: profileFilter === t.key ? "#3b3b3b" : "transparent",
+            color: profileFilter === t.key ? "#f5f0e8" : "#5a5a5a",
+          }}>
+            {t.label}
+          </button>
+        ))}
       </div>
 
       {showAdd && (
@@ -671,18 +688,26 @@ function TrainingExamples({ slug }: { slug: string }) {
               <label style={labelSm}>Notes (optional)</label>
               <input name="notes" placeholder="Why this response or rule exists" style={inputFull} />
             </div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelSm}>Profile</label>
+              <select name="profile" defaultValue="shared" style={inputFull}>
+                <option value="shared">Shared (both profiles)</option>
+                <option value="promo">Promo only</option>
+                <option value="general">General only</option>
+              </select>
+            </div>
             <button type="submit" style={btnPrimary}>Save</button>
           </fetcher.Form>
         </div>
       )}
 
-      {examples.length === 0 && (
+      {filteredExamples.length === 0 && (
         <div style={{ background: "white", borderRadius: 12, padding: 40, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
           <div style={{ fontSize: 13, color: "#8a8478" }}>No training examples yet. Use the sandbox to test responses and correct any that need fixing.</div>
         </div>
       )}
 
-      {examples.map((ex: any) => {
+      {filteredExamples.map((ex: any) => {
         const src = sourceLabels[ex.source] || sourceLabels.manual;
 
         if (editingId === ex.id) {
@@ -794,6 +819,14 @@ function SystemRules({ slug }: { slug: string }) {
             <div style={{ marginBottom: 12 }}>
               <label style={labelSm}>Notes (optional)</label>
               <input name="notes" placeholder="Why this rule exists" style={inputFull} />
+            </div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelSm}>Profile</label>
+              <select name="profile" defaultValue="shared" style={inputFull}>
+                <option value="shared">Shared (both profiles)</option>
+                <option value="promo">Promo only</option>
+                <option value="general">General only</option>
+              </select>
             </div>
             <button type="submit" style={btnPrimary}>Save Rule</button>
           </fetcher.Form>

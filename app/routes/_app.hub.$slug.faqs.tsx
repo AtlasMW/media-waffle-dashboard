@@ -16,6 +16,7 @@ export async function action({ request, params }: Route.ActionArgs) {
       category: form.get("category") || "general",
       question: form.get("question"),
       answer: form.get("answer"),
+      profile: form.get("profile") || "shared",
       source: "manual",
       is_active: true,
     });
@@ -29,7 +30,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     await fetch(`${SB_URL}/rest/v1/msg_faqs?id=eq.${form.get("id")}`, {
       method: "PATCH",
       headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
-      body: JSON.stringify({ question: form.get("question"), answer: form.get("answer") }),
+      body: JSON.stringify({ question: form.get("question"), answer: form.get("answer"), ...(form.get("profile") ? { profile: form.get("profile") } : {}) }),
     });
   } else if (intent === "delete") {
     await supabase.from("msg_faqs").delete().eq("id", form.get("id"));
@@ -63,6 +64,22 @@ export default function FAQs() {
   const fetcher = useFetcher();
   const [showAdd, setShowAdd] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [profileFilter, setProfileFilter] = useState<string>("all");
+
+  const profileTabs = [
+    { key: "all", label: "All" },
+    { key: "shared", label: "Shared" },
+    { key: "promo", label: "Promo" },
+    { key: "general", label: "General" },
+  ];
+
+  const filteredFaqs = profileFilter === "all" ? faqs : faqs.filter((f: any) => f.profile === profileFilter);
+
+  const profileColors: Record<string, { bg: string; color: string }> = {
+    shared: { bg: "#eee8dc", color: "#3b3b3b" },
+    promo: { bg: "#e3f2fd", color: "#1565c0" },
+    general: { bg: "#e8f5e9", color: "#2e7d32" },
+  };
 
   return (
     <div style={{ maxWidth: 720, width: "100%" }}>
@@ -72,6 +89,21 @@ export default function FAQs() {
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} style={btnPrimary}>{showAdd ? "Cancel" : "Add FAQ"}</button>
+      </div>
+
+      {/* Profile filter tabs */}
+      <div style={{ display: "flex", gap: 4, marginBottom: 20, background: "#eee8dc", borderRadius: 8, padding: 4 }}>
+        {profileTabs.map(t => (
+          <button key={t.key} onClick={() => setProfileFilter(t.key)} style={{
+            flex: 1, padding: "8px 12px", borderRadius: 6, border: "none", fontSize: 12, fontWeight: 600,
+            cursor: "pointer", fontFamily: "'Montserrat', sans-serif",
+            background: profileFilter === t.key ? "#3b3b3b" : "transparent",
+            color: profileFilter === t.key ? "#f5f0e8" : "#5a5a5a",
+            transition: "all 0.15s",
+          }}>
+            {t.label} {t.key !== "all" && `(${faqs.filter((f: any) => f.profile === t.key).length})`}
+          </button>
+        ))}
       </div>
 
       {suggested.length > 0 && (
@@ -112,13 +144,22 @@ export default function FAQs() {
               <label style={labelStyle}>Answer</label>
               <textarea name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} />
             </div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelStyle}>Profile</label>
+              <select name="profile" defaultValue="shared" style={inputStyle}>
+                <option value="shared">Shared (both profiles)</option>
+                <option value="promo">Promo only</option>
+                <option value="general">General only</option>
+              </select>
+            </div>
             <input type="hidden" name="category" value="general" />
             <button type="submit" style={btnPrimary}>Save FAQ</button>
           </fetcher.Form>
         </div>
       )}
 
-      {faqs.map((faq: any) => {
+      {filteredFaqs.map((faq: any) => {
+        const pc = profileColors[faq.profile] || profileColors.shared;
         if (editingId === faq.id) {
           return (
             <div key={faq.id} style={{ background: "#faf8f5", borderRadius: 8, padding: 20, marginBottom: 8, border: "2px solid #c4a882" }}>
@@ -132,6 +173,14 @@ export default function FAQs() {
                 <div style={{ marginBottom: 12 }}>
                   <label style={labelStyle}>Answer</label>
                   <textarea name="answer" defaultValue={faq.answer} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelStyle}>Profile</label>
+                  <select name="profile" defaultValue={faq.profile || "shared"} style={inputStyle}>
+                    <option value="shared">Shared (both profiles)</option>
+                    <option value="promo">Promo only</option>
+                    <option value="general">General only</option>
+                  </select>
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
                   <button type="submit" style={btnPrimary}>Save</button>
@@ -149,7 +198,12 @@ export default function FAQs() {
           }}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
+                  <span style={{ padding: "1px 6px", borderRadius: 8, fontSize: 9, fontWeight: 600, background: pc.bg, color: pc.color, flexShrink: 0 }}>
+                    {(faq.profile || "shared").toUpperCase()}
+                  </span>
+                </div>
                 <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
                 <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
                   Used {faq.times_used}x
