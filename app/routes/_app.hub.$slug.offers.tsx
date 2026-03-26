@@ -35,8 +35,36 @@ export async function action({ request, params }: Route.ActionArgs) {
   } else if (intent === "toggle_offer") {
     const active = form.get("is_active") === "true";
     await supabase.from("msg_offers").update({ is_active: !active }).eq("id", form.get("id"));
+  } else if (intent === "edit_offer") {
+    const tagsRaw = (form.get("trigger_tags") as string || "").trim();
+    const tags = tagsRaw ? tagsRaw.split(",").map((t: string) => t.trim()).filter(Boolean) : [];
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    await fetch(`${SB_URL}/rest/v1/msg_offers?id=eq.${form.get("id")}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({
+        name: form.get("name"), short_name: form.get("short_name") || null,
+        price: form.get("price") || null, description: form.get("description") || null,
+        terms: form.get("terms") || null, booking_link: form.get("booking_link") || null,
+        trigger_tags: JSON.stringify(tags),
+        health_rebate_eligible: form.get("health_rebate_eligible") === "true",
+        one_per_customer: form.get("one_per_customer") === "true",
+      }),
+    });
   } else if (intent === "delete_offer") {
     await supabase.from("msg_offers").delete().eq("id", form.get("id"));
+  } else if (intent === "edit_service") {
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    await fetch(`${SB_URL}/rest/v1/msg_services?id=eq.${form.get("id")}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({
+        name: form.get("name"), description: form.get("description") || null,
+        price_range: form.get("price_range") || null, duration: form.get("duration") || null,
+      }),
+    });
   }
 
   // Service actions
@@ -67,6 +95,8 @@ export default function OffersAndServices() {
   const fetcher = useFetcher();
   const [showAddOffer, setShowAddOffer] = useState(false);
   const [showAddService, setShowAddService] = useState(false);
+  const [editingOfferId, setEditingOfferId] = useState<string | null>(null);
+  const [editingServiceId, setEditingServiceId] = useState<string | null>(null);
 
   return (
     <div style={{ maxWidth: 720, width: "100%" }}>
@@ -110,56 +140,78 @@ export default function OffersAndServices() {
         <div style={{ ...card, textAlign: "center", color: "#8a8478", padding: 32, marginBottom: 16 }}>No offers yet</div>
       )}
 
-      {offers.map((offer: any) => (
-        <div key={offer.id} style={{ ...card, marginBottom: 10, opacity: offer.is_active ? 1 : 0.5 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" as any }}>
-            <div style={{ flex: 1, minWidth: 200 }}>
-              <div style={{ fontWeight: 700, fontSize: 15, color: "#3b3b3b" }}>{offer.name}</div>
-              {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}
-              {offer.description && <div style={{ fontSize: 13, color: "#666", marginTop: 8, lineHeight: 1.5 }}>{offer.description}</div>}
-              {offer.terms && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>Terms: {offer.terms}</div>}
-              {/* Trigger tags */}
-              <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                <span style={{ fontSize: 11, fontWeight: 600, color: "#8a8478" }}>Trigger tags:</span>
-                {(() => {
-                  let tags: string[] = [];
-                  try { tags = typeof offer.trigger_tags === "string" ? JSON.parse(offer.trigger_tags) : (offer.trigger_tags || []); } catch {}
-                  return tags.length > 0 ? tags.map((tag: string) => (
+      {offers.map((offer: any) => {
+        const offerTags = (() => { try { return typeof offer.trigger_tags === "string" ? JSON.parse(offer.trigger_tags) : (offer.trigger_tags || []); } catch { return []; } })();
+        
+        if (editingOfferId === offer.id) {
+          return (
+            <div key={offer.id} style={{ ...card, marginBottom: 10, border: "2px solid #c4a882" }}>
+              <fetcher.Form method="post" onSubmit={() => setEditingOfferId(null)}>
+                <input type="hidden" name="intent" value="edit_offer" />
+                <input type="hidden" name="id" value={offer.id} />
+                {[["Name","name",offer.name],["Short Name","short_name",offer.short_name],["Price","price",offer.price]].map(([l,n,v]: any) => (
+                  <div key={n} style={{ marginBottom: 12 }}><label style={labelStyle}>{l}</label><input name={n} defaultValue={v || ""} style={inputStyle} /></div>
+                ))}
+                <div style={{ marginBottom: 12 }}><label style={labelStyle}>Description</label><textarea name="description" defaultValue={offer.description || ""} rows={3} style={{ ...inputStyle, resize: "vertical" }} /></div>
+                <div style={{ marginBottom: 12 }}><label style={labelStyle}>Terms</label><textarea name="terms" defaultValue={offer.terms || ""} rows={2} style={{ ...inputStyle, resize: "vertical" }} /></div>
+                <div style={{ marginBottom: 12 }}><label style={labelStyle}>Booking Link</label><input name="booking_link" defaultValue={offer.booking_link || ""} style={inputStyle} /></div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelStyle}>GHL Trigger Tags</label>
+                  <input name="trigger_tags" defaultValue={offerTags.join(", ")} placeholder="hot lead, meta lead" style={inputStyle} />
+                </div>
+                <div style={{ display: "flex", gap: 16, marginBottom: 16 }}>
+                  <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="health_rebate_eligible" value="true" defaultChecked={offer.health_rebate_eligible} /> Health rebate eligible</label>
+                  <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="one_per_customer" value="true" defaultChecked={offer.one_per_customer} /> One per customer</label>
+                </div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="button" onClick={() => setEditingOfferId(null)} style={{ ...btnSmall, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
+                </div>
+              </fetcher.Form>
+            </div>
+          );
+        }
+        
+        return (
+          <div key={offer.id} style={{ ...card, marginBottom: 10, opacity: offer.is_active ? 1 : 0.5 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" as any }}>
+              <div style={{ flex: 1, minWidth: 200 }}>
+                <div style={{ fontWeight: 700, fontSize: 15, color: "#3b3b3b" }}>{offer.name}</div>
+                {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}
+                {offer.description && <div style={{ fontSize: 13, color: "#666", marginTop: 8, lineHeight: 1.5 }}>{offer.description}</div>}
+                {offer.terms && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>Terms: {offer.terms}</div>}
+                <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+                  <span style={{ fontSize: 11, fontWeight: 600, color: "#8a8478" }}>Trigger tags:</span>
+                  {offerTags.length > 0 ? offerTags.map((tag: string) => (
                     <span key={tag} style={{ padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600, background: "#e3f2fd", color: "#1565c0" }}>{tag}</span>
-                  )) : <span style={{ fontSize: 11, color: "#b0a89a", fontStyle: "italic" }}>none set</span>;
-                })()}
-                <fetcher.Form method="post" style={{ display: "inline" }}>
-                  <input type="hidden" name="intent" value="update_offer_tags" />
+                  )) : <span style={{ fontSize: 11, color: "#b0a89a", fontStyle: "italic" }}>none set</span>}
+                </div>
+                <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
+                  Updated {new Date(offer.updated_at).toLocaleDateString("en-AU")}
+                  {offer.one_per_customer && " | One per customer"}
+                  {offer.health_rebate_eligible && " | Health rebate eligible"}
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 6, flexShrink: 0, marginTop: 4 }}>
+                <button onClick={() => setEditingOfferId(offer.id)} style={{ ...btnSmall, background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
+                <fetcher.Form method="post">
+                  <input type="hidden" name="intent" value="toggle_offer" />
                   <input type="hidden" name="id" value={offer.id} />
-                  <input name="trigger_tags" defaultValue={(() => { try { const t = typeof offer.trigger_tags === "string" ? JSON.parse(offer.trigger_tags) : (offer.trigger_tags || []); return t.join(", "); } catch { return ""; } })()} 
-                    placeholder="hot lead, meta lead" style={{ padding: "2px 8px", border: "1px solid #ddd5c4", borderRadius: 4, fontSize: 11, width: 160, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5" }} />
-                  <button type="submit" style={{ ...btnSmall, padding: "2px 8px", fontSize: 10, marginLeft: 4 }}>Update</button>
+                  <input type="hidden" name="is_active" value={String(offer.is_active)} />
+                  <button type="submit" style={{ ...btnSmall, background: offer.is_active ? "#fff3e0" : "#e8f5e9", color: offer.is_active ? "#ef6c00" : "#2e7d32" }}>
+                    {offer.is_active ? "Deactivate" : "Activate"}
+                  </button>
+                </fetcher.Form>
+                <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this offer?")) e.preventDefault(); }}>
+                  <input type="hidden" name="intent" value="delete_offer" />
+                  <input type="hidden" name="id" value={offer.id} />
+                  <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
                 </fetcher.Form>
               </div>
-              <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                Updated {new Date(offer.updated_at).toLocaleDateString("en-AU")}
-                {offer.one_per_customer && " | One per customer"}
-                {offer.health_rebate_eligible && " | Health rebate eligible"}
-              </div>
-            </div>
-            <div style={{ display: "flex", gap: 8, flexShrink: 0, marginTop: 4 }}>
-              <fetcher.Form method="post">
-                <input type="hidden" name="intent" value="toggle_offer" />
-                <input type="hidden" name="id" value={offer.id} />
-                <input type="hidden" name="is_active" value={String(offer.is_active)} />
-                <button type="submit" style={{ ...btnSmall, background: offer.is_active ? "#fff3e0" : "#e8f5e9", color: offer.is_active ? "#ef6c00" : "#2e7d32" }}>
-                  {offer.is_active ? "Deactivate" : "Activate"}
-                </button>
-              </fetcher.Form>
-              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this offer?")) e.preventDefault(); }}>
-                <input type="hidden" name="intent" value="delete_offer" />
-                <input type="hidden" name="id" value={offer.id} />
-                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
-              </fetcher.Form>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
 
       {/* ==================== DIVIDER ==================== */}
       <div style={{ borderTop: "2px solid #ddd5c4", margin: "32px 0" }} />
@@ -189,34 +241,54 @@ export default function OffersAndServices() {
         <div style={{ ...card, textAlign: "center", color: "#8a8478", padding: 32 }}>No services yet</div>
       )}
 
-      {services.map((svc: any) => (
-        <div key={svc.id} style={{ ...card, marginBottom: 10, opacity: svc.is_active ? 1 : 0.5, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" as any }}>
-          <div style={{ flex: 1, minWidth: 200 }}>
-            <div style={{ fontWeight: 600, fontSize: 14, color: "#3b3b3b" }}>{svc.name}</div>
-            {svc.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{svc.description}</div>}
-            <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
-              {svc.price_range && <span>{svc.price_range}</span>}
-              {svc.price_range && svc.duration && <span> | </span>}
-              {svc.duration && <span>{svc.duration}</span>}
+      {services.map((svc: any) => {
+        if (editingServiceId === svc.id) {
+          return (
+            <div key={svc.id} style={{ ...card, marginBottom: 10, border: "2px solid #c4a882" }}>
+              <fetcher.Form method="post" onSubmit={() => setEditingServiceId(null)}>
+                <input type="hidden" name="intent" value="edit_service" />
+                <input type="hidden" name="id" value={svc.id} />
+                {[["Service Name","name",svc.name],["Description","description",svc.description],["Price Range","price_range",svc.price_range],["Duration","duration",svc.duration]].map(([l,n,v]: any) => (
+                  <div key={n} style={{ marginBottom: 12 }}><label style={labelStyle}>{l}</label><input name={n} defaultValue={v || ""} style={inputStyle} /></div>
+                ))}
+                <div style={{ display: "flex", gap: 8 }}>
+                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="button" onClick={() => setEditingServiceId(null)} style={{ ...btnSmall, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
+                </div>
+              </fetcher.Form>
+            </div>
+          );
+        }
+        return (
+          <div key={svc.id} style={{ ...card, marginBottom: 10, opacity: svc.is_active ? 1 : 0.5, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" as any }}>
+            <div style={{ flex: 1, minWidth: 200 }}>
+              <div style={{ fontWeight: 600, fontSize: 14, color: "#3b3b3b" }}>{svc.name}</div>
+              {svc.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{svc.description}</div>}
+              <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
+                {svc.price_range && <span>{svc.price_range}</span>}
+                {svc.price_range && svc.duration && <span> | </span>}
+                {svc.duration && <span>{svc.duration}</span>}
+              </div>
+            </div>
+            <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
+              <button onClick={() => setEditingServiceId(svc.id)} style={{ ...btnSmall, background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
+              <fetcher.Form method="post">
+                <input type="hidden" name="intent" value="toggle_service" />
+                <input type="hidden" name="id" value={svc.id} />
+                <input type="hidden" name="is_active" value={String(svc.is_active)} />
+                <button type="submit" style={{ ...btnSmall, background: svc.is_active ? "#fff3e0" : "#e8f5e9", color: svc.is_active ? "#ef6c00" : "#2e7d32" }}>
+                  {svc.is_active ? "Deactivate" : "Activate"}
+                </button>
+              </fetcher.Form>
+              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete?")) e.preventDefault(); }}>
+                <input type="hidden" name="intent" value="delete_service" />
+                <input type="hidden" name="id" value={svc.id} />
+                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
+              </fetcher.Form>
             </div>
           </div>
-          <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
-            <fetcher.Form method="post">
-              <input type="hidden" name="intent" value="toggle_service" />
-              <input type="hidden" name="id" value={svc.id} />
-              <input type="hidden" name="is_active" value={String(svc.is_active)} />
-              <button type="submit" style={{ ...btnSmall, background: svc.is_active ? "#fff3e0" : "#e8f5e9", color: svc.is_active ? "#ef6c00" : "#2e7d32" }}>
-                {svc.is_active ? "Off" : "On"}
-              </button>
-            </fetcher.Form>
-            <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete?")) e.preventDefault(); }}>
-              <input type="hidden" name="intent" value="delete_service" />
-              <input type="hidden" name="id" value={svc.id} />
-              <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
-            </fetcher.Form>
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

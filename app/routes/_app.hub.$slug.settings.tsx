@@ -100,9 +100,7 @@ export default function Settings() {
           <TextArea label="Deposit Info Message" name="deposit_info" value={brand?.deposit_info || ""} hint="Message to include when mentioning booking links" />
         </Card>
 
-        <Card title="GHL Trigger Tags">
-          <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 0 }}>Trigger tags are now configured per offer on the <strong>Offers</strong> page. Each offer has its own set of trigger tags so different campaigns can target different leads.</p>
-        </Card>
+
 
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Settings</button>
       </form>
