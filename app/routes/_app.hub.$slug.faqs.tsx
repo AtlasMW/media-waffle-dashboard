@@ -15,7 +15,7 @@ export async function action({ request, params }: Route.ActionArgs) {
       client_id: client.id,
       category: form.get("category") || "general",
       question: form.get("question"),
-      answer: form.get("answer"),
+      answer: form.get("answer") || (form.get("response_type") === "escalate" ? "Escalate to owner" : ""),
       response_type: form.get("response_type") || "direct",
       profile: form.get("profile") || "shared",
       source: "manual",
@@ -143,15 +143,35 @@ export default function FAQs() {
             </div>
             <div style={{ marginBottom: 12 }}>
               <label style={labelStyle}>Response Type</label>
-              <select name="response_type" defaultValue="direct" style={inputStyle}>
+              <select name="response_type" id="add-response-type" defaultValue="direct" style={inputStyle} onChange={(e) => {
+                const answerDiv = document.getElementById("add-answer-field")!;
+                const answerLabel = document.getElementById("add-answer-label")!;
+                const answerInput = document.getElementById("add-answer-input") as HTMLTextAreaElement;
+                if (e.target.value === "escalate") {
+                  answerLabel.textContent = "Reason (optional)";
+                  answerInput.placeholder = "e.g. Medical question, Sensitive topic";
+                  answerInput.required = false;
+                  answerInput.rows = 1;
+                } else if (e.target.value === "instruction") {
+                  answerLabel.textContent = "Instruction";
+                  answerInput.placeholder = "e.g. Check Fresha for availability, then direct to booking page";
+                  answerInput.required = true;
+                  answerInput.rows = 3;
+                } else {
+                  answerLabel.textContent = "Answer";
+                  answerInput.placeholder = "The exact reply to send to the lead";
+                  answerInput.required = true;
+                  answerInput.rows = 3;
+                }
+              }}>
                 <option value="direct">Direct Response (send this answer to the lead)</option>
                 <option value="escalate">Escalate (do not reply, escalate to owner)</option>
                 <option value="instruction">Instruction (tells AI how to behave, never sent)</option>
               </select>
             </div>
-            <div style={{ marginBottom: 12 }}>
-              <label style={labelStyle}>Answer / Instruction</label>
-              <textarea name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} placeholder="Direct: the exact reply to send. Escalate: reason for escalation. Instruction: rule for the AI." />
+            <div id="add-answer-field" style={{ marginBottom: 12 }}>
+              <label id="add-answer-label" style={labelStyle}>Answer</label>
+              <textarea id="add-answer-input" name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} placeholder="The exact reply to send to the lead" />
             </div>
             <div style={{ marginBottom: 12 }}>
               <label style={labelStyle}>Profile</label>
@@ -181,15 +201,18 @@ export default function FAQs() {
                 </div>
                 <div style={{ marginBottom: 12 }}>
                   <label style={labelStyle}>Response Type</label>
-                  <select name="response_type" defaultValue={faq.response_type || "direct"} style={inputStyle}>
+                  <select name="response_type" defaultValue={faq.response_type || "direct"} style={inputStyle} onChange={(e) => {
+                    const label = (e.target as HTMLSelectElement).closest("div")?.parentElement?.querySelector(`[data-edit-label="${faq.id}"]`);
+                    if (label) label.textContent = e.target.value === "escalate" ? "Reason (optional)" : e.target.value === "instruction" ? "Instruction" : "Answer";
+                  }}>
                     <option value="direct">Direct Response</option>
                     <option value="escalate">Escalate</option>
                     <option value="instruction">Instruction</option>
                   </select>
                 </div>
                 <div style={{ marginBottom: 12 }}>
-                  <label style={labelStyle}>Answer / Instruction</label>
-                  <textarea name="answer" defaultValue={faq.answer} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
+                  <label data-edit-label={faq.id} style={labelStyle}>{faq.response_type === "escalate" ? "Reason (optional)" : faq.response_type === "instruction" ? "Instruction" : "Answer"}</label>
+                  <textarea name="answer" defaultValue={faq.answer} rows={faq.response_type === "escalate" ? 1 : 3} style={{ ...inputStyle, resize: "vertical" }} />
                 </div>
                 <div style={{ marginBottom: 12 }}>
                   <label style={labelStyle}>Profile</label>
