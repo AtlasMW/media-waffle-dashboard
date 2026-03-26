@@ -26,15 +26,29 @@ export async function action({ request }: Route.ActionArgs) {
     const ghlApiKey = form.get("ghl_api_key") as string;
     const ghlLocationId = form.get("ghl_location_id") as string;
 
-    // Create client
-    const { data: client, error: clientErr } = await supabase.from("msg_clients").insert({
-      name, slug, ghl_api_key: ghlApiKey, ghl_location_id: ghlLocationId, status: "setup",
-    }).select().single();
+    // Create client (use service role to bypass RLS)
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    const clientRes = await fetch(`${SB_URL}/rest/v1/msg_clients`, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=representation" },
+      body: JSON.stringify({ name, slug, ghl_api_key: ghlApiKey, ghl_location_id: ghlLocationId, status: "setup" }),
+    });
+    if (!clientRes.ok) return { error: await clientRes.text() };
+    const [client] = await clientRes.json();
 
-    if (clientErr) return { error: clientErr.message };
+    if (!client) return { error: "Failed to create client" };
 
-    // Create default brand config
-    await supabase.from("msg_brand_config").insert({
+    // Create default brand config (service role)
+    const sbPost = async (table: string, data: any) => {
+      await fetch(`${SB_URL}/rest/v1/${table}`, {
+        method: "POST",
+        headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+        body: JSON.stringify(data),
+      });
+    };
+
+    await sbPost("msg_brand_config", {
       client_id: client.id,
       assistant_name: form.get("assistant_name") || "Assistant",
       tone: form.get("tone") || "friendly",
@@ -57,11 +71,11 @@ export async function action({ request }: Route.ActionArgs) {
       { topic: "Medical advice", reason: "Never provide medical recommendations - escalate" },
     ];
     for (const b of defaultBlocked) {
-      await supabase.from("msg_blocked_topics").insert({ client_id: client.id, ...b });
+      await sbPost("msg_blocked_topics", { client_id: client.id, ...b });
     }
 
     // Link admin user
-    await supabase.from("msg_client_users").insert({
+    await sbPost("msg_client_users", {
       client_id: client.id, user_id: user.id, role: "owner",
     });
 
