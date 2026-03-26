@@ -81,6 +81,7 @@ export default function Settings() {
               <Field label="Character Limit" name="sms_char_limit" value={brand?.sms_char_limit || 160} type="number" />
               <Field label="Max Messages" name="sms_max_messages" value={brand?.sms_max_messages || 7} type="number" />
             </div>
+            <CheckboxField label="Allow emojis in SMS" name="sms_emoji_allowed" checked={brand?.sms_emoji_allowed || false} />
           </div>
           <div style={{ borderTop: "1px solid #eee8dc", paddingTop: 20 }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: "#3b3b3b", marginBottom: 12 }}>Social Media DMs</div>
@@ -92,13 +93,12 @@ export default function Settings() {
               <Field label="Max Messages" name="dm_max_messages" value={brand?.dm_max_messages || 10} type="number" />
             </div>
             <CheckboxField label="Allow emojis in DMs" name="emoji_allowed" checked={brand?.emoji_allowed || false} />
-            <CheckboxField label="Allow emojis in SMS" name="sms_emoji_allowed" checked={brand?.sms_emoji_allowed || false} />
           </div>
         </Card>
 
-        <Card title="Refund Policy and Deposit Policy">
-          <CheckboxField label="Require deposit for online booking" name="deposit_required" checked={brand?.deposit_required || false} />
-          <TextArea label="Deposit Info Message" name="deposit_info" value={brand?.deposit_info || ""} hint="Message to include when mentioning booking links" />
+        <Card title="Refund Policy">
+          <TextArea label="Refund Policy" name="refund_policy" value={brand?.refund_policy || ""} hint="The refund policy the AI will reference when leads ask about refunds" />
+          <TextArea label="Deposit Terms" name="deposit_info" value={brand?.deposit_info || ""} hint="Deposit terms the AI will reference when leads ask about deposits or payment" />
         </Card>
 
 
