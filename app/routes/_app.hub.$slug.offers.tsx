@@ -12,12 +12,25 @@ export async function action({ request, params }: Route.ActionArgs) {
 
   // Offer actions
   if (intent === "add_offer") {
+    const tagsRaw = (form.get("trigger_tags") as string || "").trim();
+    const tags = tagsRaw ? tagsRaw.split(",").map((t: string) => t.trim()).filter(Boolean) : [];
     await supabase.from("msg_offers").insert({
       client_id: client.id, name: form.get("name"), short_name: form.get("short_name") || null,
       price: form.get("price") || null, description: form.get("description") || null,
       terms: form.get("terms") || null, booking_link: form.get("booking_link") || null,
+      trigger_tags: JSON.stringify(tags),
       health_rebate_eligible: form.get("health_rebate_eligible") === "true",
       one_per_customer: form.get("one_per_customer") === "true", is_active: true,
+    });
+  } else if (intent === "update_offer_tags") {
+    const tagsRaw = (form.get("trigger_tags") as string || "").trim();
+    const tags = tagsRaw ? tagsRaw.split(",").map((t: string) => t.trim()).filter(Boolean) : [];
+    const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
+    const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
+    await fetch(`${SB_URL}/rest/v1/msg_offers?id=eq.${form.get("id")}`, {
+      method: "PATCH",
+      headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ trigger_tags: JSON.stringify(tags) }),
     });
   } else if (intent === "toggle_offer") {
     const active = form.get("is_active") === "true";
@@ -79,6 +92,11 @@ export default function OffersAndServices() {
             <div style={{ marginBottom: 12 }}><label style={labelStyle}>Description</label><textarea name="description" rows={3} style={{ ...inputStyle, resize: "vertical" }} /></div>
             <div style={{ marginBottom: 12 }}><label style={labelStyle}>Terms</label><textarea name="terms" rows={2} style={{ ...inputStyle, resize: "vertical" }} /></div>
             <div style={{ marginBottom: 12 }}><label style={labelStyle}>Booking Link</label><input name="booking_link" style={inputStyle} /></div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelStyle}>GHL Trigger Tags</label>
+              <input name="trigger_tags" placeholder="e.g. hot lead, meta lead (comma separated)" style={inputStyle} />
+              <div style={{ fontSize: 11, color: "#8a8478", marginTop: 4 }}>Leads with ALL these tags will receive this offer's promo messaging</div>
+            </div>
             <div style={{ display: "flex", gap: 16, marginBottom: 16 }}>
               <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="health_rebate_eligible" value="true" /> Health rebate eligible</label>
               <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="one_per_customer" value="true" /> One per customer</label>
@@ -100,7 +118,25 @@ export default function OffersAndServices() {
               {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}
               {offer.description && <div style={{ fontSize: 13, color: "#666", marginTop: 8, lineHeight: 1.5 }}>{offer.description}</div>}
               {offer.terms && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>Terms: {offer.terms}</div>}
-              <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 8 }}>
+              {/* Trigger tags */}
+              <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: "#8a8478" }}>Trigger tags:</span>
+                {(() => {
+                  let tags: string[] = [];
+                  try { tags = typeof offer.trigger_tags === "string" ? JSON.parse(offer.trigger_tags) : (offer.trigger_tags || []); } catch {}
+                  return tags.length > 0 ? tags.map((tag: string) => (
+                    <span key={tag} style={{ padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600, background: "#e3f2fd", color: "#1565c0" }}>{tag}</span>
+                  )) : <span style={{ fontSize: 11, color: "#b0a89a", fontStyle: "italic" }}>none set</span>;
+                })()}
+                <fetcher.Form method="post" style={{ display: "inline" }}>
+                  <input type="hidden" name="intent" value="update_offer_tags" />
+                  <input type="hidden" name="id" value={offer.id} />
+                  <input name="trigger_tags" defaultValue={(() => { try { const t = typeof offer.trigger_tags === "string" ? JSON.parse(offer.trigger_tags) : (offer.trigger_tags || []); return t.join(", "); } catch { return ""; } })()} 
+                    placeholder="hot lead, meta lead" style={{ padding: "2px 8px", border: "1px solid #ddd5c4", borderRadius: 4, fontSize: 11, width: 160, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5" }} />
+                  <button type="submit" style={{ ...btnSmall, padding: "2px 8px", fontSize: 10, marginLeft: 4 }}>Update</button>
+                </fetcher.Form>
+              </div>
+              <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
                 Updated {new Date(offer.updated_at).toLocaleDateString("en-AU")}
                 {offer.one_per_customer && " | One per customer"}
                 {offer.health_rebate_eligible && " | Health rebate eligible"}

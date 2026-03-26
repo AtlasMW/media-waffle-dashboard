@@ -101,18 +101,7 @@ export default function Settings() {
         </Card>
 
         <Card title="GHL Trigger Tags">
-          <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>The AI will only respond to contacts that have ALL of these tags in GHL. The contact must also have a location tag matching one of your configured locations.</p>
-          <TagInput
-            label="Required Tags"
-            name="trigger_tags"
-            initial={(() => {
-              const raw = brand?.trigger_tags;
-              if (Array.isArray(raw)) return raw;
-              if (typeof raw === "string") { try { return JSON.parse(raw); } catch { return ["hot lead", "meta lead"]; } }
-              return ["hot lead", "meta lead"];
-            })()}
-            hint="Type a tag name and press Enter to add it"
-          />
+          <p style={{ fontSize: 12, color: "#8a8478", marginBottom: 0 }}>Trigger tags are now configured per offer on the <strong>Offers</strong> page. Each offer has its own set of trigger tags so different campaigns can target different leads.</p>
         </Card>
 
         <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Settings</button>
