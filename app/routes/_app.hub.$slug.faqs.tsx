@@ -16,6 +16,7 @@ export async function action({ request, params }: Route.ActionArgs) {
       category: form.get("category") || "general",
       question: form.get("question"),
       answer: form.get("answer"),
+      response_type: form.get("response_type") || "direct",
       profile: form.get("profile") || "shared",
       source: "manual",
       is_active: true,
@@ -30,7 +31,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     await fetch(`${SB_URL}/rest/v1/msg_faqs?id=eq.${form.get("id")}`, {
       method: "PATCH",
       headers: { "Authorization": `Bearer ${SB_KEY}`, "apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
-      body: JSON.stringify({ question: form.get("question"), answer: form.get("answer"), ...(form.get("profile") ? { profile: form.get("profile") } : {}) }),
+      body: JSON.stringify({ question: form.get("question"), answer: form.get("answer"), ...(form.get("profile") ? { profile: form.get("profile") } : {}), ...(form.get("response_type") ? { response_type: form.get("response_type") } : {}) }),
     });
   } else if (intent === "delete") {
     await supabase.from("msg_faqs").delete().eq("id", form.get("id"));
@@ -141,8 +142,16 @@ export default function FAQs() {
               <input name="question" required style={inputStyle} />
             </div>
             <div style={{ marginBottom: 12 }}>
-              <label style={labelStyle}>Answer</label>
-              <textarea name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} />
+              <label style={labelStyle}>Response Type</label>
+              <select name="response_type" defaultValue="direct" style={inputStyle}>
+                <option value="direct">Direct Response (send this answer to the lead)</option>
+                <option value="escalate">Escalate (do not reply, escalate to owner)</option>
+                <option value="instruction">Instruction (tells AI how to behave, never sent)</option>
+              </select>
+            </div>
+            <div style={{ marginBottom: 12 }}>
+              <label style={labelStyle}>Answer / Instruction</label>
+              <textarea name="answer" required rows={3} style={{ ...inputStyle, resize: "vertical" }} placeholder="Direct: the exact reply to send. Escalate: reason for escalation. Instruction: rule for the AI." />
             </div>
             <div style={{ marginBottom: 12 }}>
               <label style={labelStyle}>Profile</label>
@@ -171,7 +180,15 @@ export default function FAQs() {
                   <input name="question" defaultValue={faq.question} style={inputStyle} />
                 </div>
                 <div style={{ marginBottom: 12 }}>
-                  <label style={labelStyle}>Answer</label>
+                  <label style={labelStyle}>Response Type</label>
+                  <select name="response_type" defaultValue={faq.response_type || "direct"} style={inputStyle}>
+                    <option value="direct">Direct Response</option>
+                    <option value="escalate">Escalate</option>
+                    <option value="instruction">Instruction</option>
+                  </select>
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelStyle}>Answer / Instruction</label>
                   <textarea name="answer" defaultValue={faq.answer} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
                 </div>
                 <div style={{ marginBottom: 12 }}>
@@ -198,11 +215,17 @@ export default function FAQs() {
           }}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div style={{ flex: 1 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                   <div style={{ fontWeight: 600, fontSize: 13, color: "#3b3b3b" }}>Q: {faq.question}</div>
                   <span style={{ padding: "1px 6px", borderRadius: 8, fontSize: 9, fontWeight: 600, background: pc.bg, color: pc.color, flexShrink: 0 }}>
                     {(faq.profile || "shared").toUpperCase()}
                   </span>
+                  {faq.response_type === "escalate" && (
+                    <span style={{ padding: "1px 6px", borderRadius: 8, fontSize: 9, fontWeight: 600, background: "#fff3e0", color: "#ef6c00", flexShrink: 0 }}>ESCALATE</span>
+                  )}
+                  {faq.response_type === "instruction" && (
+                    <span style={{ padding: "1px 6px", borderRadius: 8, fontSize: 9, fontWeight: 600, background: "#f3e5f5", color: "#7b1fa2", flexShrink: 0 }}>INSTRUCTION</span>
+                  )}
                 </div>
                 <div style={{ fontSize: 13, color: "#666", marginTop: 6, lineHeight: 1.5 }}>A: {faq.answer}</div>
                 <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
