@@ -869,11 +869,11 @@ function TrainingExamples({ slug }: { slug: string }) {
                 {ex.correction_type === "escalate" && <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: "#fff3e0", color: "#ef6c00" }}>ESCALATE</span>}
               </div>
               <div style={{ display: "flex", gap: 10 }}>
-                <button onClick={() => setEditingId(ex.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
+                <button onClick={() => setEditingId(ex.id)} style={{ padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif", background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
                 <fetcher.Form method="post" style={{ display: "inline" }} onSubmit={(e) => { if (!confirm("Delete this training example?")) e.preventDefault(); }}>
                   <input type="hidden" name="intent" value="delete_example" />
                   <input type="hidden" name="id" value={ex.id} />
-                  <button type="submit" style={{ background: "none", border: "none", color: "#c62828", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Delete</button>
+                  <button type="submit" style={{ padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif", background: "#ffebee", color: "#c62828" }}>Delete</button>
                 </fetcher.Form>
               </div>
             </div>
@@ -989,11 +989,11 @@ function SystemRules({ slug }: { slug: string }) {
                 {rule.notes && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>{rule.notes}</div>}
               </div>
               <div style={{ display: "flex", gap: 10, flexShrink: 0, marginLeft: 12 }}>
-                <button onClick={() => setEditingId(rule.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
+                <button onClick={() => setEditingId(rule.id)} style={{ padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif", background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
                 <fetcher.Form method="post" style={{ display: "inline" }} onSubmit={(e) => { if (!confirm("Delete this rule?")) e.preventDefault(); }}>
                   <input type="hidden" name="intent" value="delete_example" />
                   <input type="hidden" name="id" value={rule.id} />
-                  <button type="submit" style={{ background: "none", border: "none", color: "#c62828", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Delete</button>
+                  <button type="submit" style={{ padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif", background: "#ffebee", color: "#c62828" }}>Delete</button>
                 </fetcher.Form>
               </div>
             </div>
