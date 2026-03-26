@@ -154,11 +154,25 @@ export async function action({ request, params }: Route.ActionArgs) {
       prompt += `\n`;
     }
 
-    // Training examples
-    if (profileTraining.length > 0) {
-      prompt += `## Training Examples (Follow These Closely)\n`;
-      prompt += `These are verified correct responses. Match this style and approach:\n\n`;
-      profileTraining.forEach((t: any) => {
+    // System rules FIRST (highest priority)
+    const instructions = profileTraining.filter((t: any) => t.correction_type === "instruction");
+    const exactExamples = profileTraining.filter((t: any) => t.correction_type !== "instruction");
+    
+    if (instructions.length > 0) {
+      prompt += `## SYSTEM RULES (HIGHEST PRIORITY — OVERRIDE ALL TRAINING EXAMPLES BELOW)\n`;
+      prompt += `These rules MUST be followed. If a rule conflicts with a training example below, the rule wins.\n\n`;
+      instructions.forEach((t: any) => {
+        prompt += `- RULE: ${t.correct_response}\n`;
+        if (t.notes) prompt += `  Context: ${t.notes}\n`;
+      });
+      prompt += `\n`;
+    }
+    
+    // Training examples AFTER rules
+    if (exactExamples.length > 0) {
+      prompt += `## Training Examples (Reference Responses)\n`;
+      prompt += `Use these ONLY when the lead's message closely matches. If no match and no FAQ covers the question, follow SYSTEM RULES above.\n\n`;
+      exactExamples.forEach((t: any) => {
         prompt += `Lead: "${t.inbound_text}"\n`;
         prompt += `Correct response: "${t.correct_response}"\n`;
         if (t.notes) prompt += `Note: ${t.notes}\n`;
