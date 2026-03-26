@@ -255,6 +255,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     if (form.get("correct_response")) updates.correct_response = form.get("correct_response");
     if (form.get("correction_type")) updates.correction_type = form.get("correction_type");
     if (form.get("notes") !== null) updates.notes = form.get("notes") || null;
+    if (form.get("profile")) updates.profile = form.get("profile");
     updates.requires_location = (form.get("correct_response") || "").toString().includes("[booking_link]");
     const SB_URL = "https://lavpnfluvywcjeiyuash.supabase.co";
     const SB_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdnBuZmx1dnl3Y2plaXl1YXNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzYwMTM4NywiZXhwIjoyMDg5MTc3Mzg3fQ.DtJLCeAdfxABizPVJWZ_jZ9ma02g3dyj3dv1HaZbJ2g";
@@ -828,9 +829,17 @@ function TrainingExamples({ slug }: { slug: string }) {
                   <label style={labelSm}>Response / Instruction</label>
                   <textarea name="correct_response" defaultValue={ex.correct_response} rows={3} style={{ ...inputFull, resize: "vertical" }} />
                 </div>
-                <div style={{ marginBottom: 12 }}>
+                <div style={{ marginBottom: 10 }}>
                   <label style={labelSm}>Notes (optional)</label>
                   <input name="notes" defaultValue={ex.notes || ""} style={inputFull} />
+                </div>
+                <div style={{ marginBottom: 12 }}>
+                  <label style={labelSm}>Profile</label>
+                  <select name="profile" defaultValue={ex.profile || "shared"} style={inputFull}>
+                    <option value="shared">Shared (both profiles)</option>
+                    <option value="promo">Promo only</option>
+                    <option value="general">General only</option>
+                  </select>
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
                   <button type="submit" style={btnPrimary}>Save</button>
@@ -844,8 +853,9 @@ function TrainingExamples({ slug }: { slug: string }) {
         return (
           <div key={ex.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 10, boxShadow: "0 1px 3px rgba(0,0,0,0.06)", borderLeft: "3px solid #c4a882" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
-              <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+              <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
                 <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: src.bg, color: src.color }}>{src.label}</span>
+                <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: (ex.profile === "promo" ? "#e3f2fd" : ex.profile === "general" ? "#e8f5e9" : "#eee8dc"), color: (ex.profile === "promo" ? "#1565c0" : ex.profile === "general" ? "#2e7d32" : "#3b3b3b") }}>{(ex.profile || "shared").toUpperCase()}</span>
               </div>
               <div style={{ display: "flex", gap: 10 }}>
                 <button onClick={() => setEditingId(ex.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
