@@ -172,18 +172,55 @@ export default function HubLayout() {
           </div>
 
           <div style={{ padding: "16px 12px", flex: 1, overflowY: "auto" }}>
-            <div style={sectionLabel}>Navigation</div>
+            <div style={sectionLabel}>Admin</div>
             <NavLink prefetch="intent" to="/hub" end style={({ isActive }) => navStyle(isActive)}>
               <NavIcon d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" />
               Overview
             </NavLink>
 
+            {isAdmin && (
+              <>
+                <NavLink prefetch="intent" to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>
+                  <NavIcon d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zm14 10v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                  All Clients
+                </NavLink>
+                <NavLink prefetch="intent" to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>
+                  <NavIcon d="M12 5v14m-7-7h14" />
+                  New Client
+                </NavLink>
+              </>
+            )}
+
+            {/* Client list */}
+            <div style={sectionLabel}>Clients</div>
             {clients.map((ca: any) => {
               const client = ca.msg_clients;
               if (!client) return null;
               return (
-                <div key={client.id}>
-                  <div style={sectionLabel}>{client.name}</div>
+                <NavLink key={client.id} prefetch="render" to={`/hub/${client.slug}/brand`} style={({ isActive }) => {
+                  const currentPath = typeof window !== "undefined" ? window.location.pathname : "";
+                  const isClientActive = currentPath.startsWith(`/hub/${client.slug}`);
+                  return navStyle(isClientActive);
+                }}>
+                  <NavIcon d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z" />
+                  {client.name}
+                </NavLink>
+              );
+            })}
+
+            {/* Active client tabs - only show when inside a client */}
+            {(() => {
+              const activeClient = clients.find((ca: any) => {
+                const c = ca.msg_clients;
+                if (!c) return false;
+                const currentPath = typeof window !== "undefined" ? window.location.pathname : "";
+                return currentPath.startsWith(`/hub/${c.slug}`);
+              });
+              if (!activeClient) return null;
+              const client = activeClient.msg_clients;
+              return (
+                <>
+                  <div style={{ ...sectionLabel, marginTop: 16 }}>{client.name}</div>
                   <NavLink prefetch="render" to={`/hub/${client.slug}/brand`} style={({ isActive }) => navStyle(isActive)}>
                     <NavIcon d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z" />
                     Brand Identity
@@ -216,23 +253,9 @@ export default function HubLayout() {
                     <NavIcon text="?" />
                     FAQs
                   </NavLink>
-                </div>
+                </>
               );
-            })}
-
-            {isAdmin && (
-              <>
-                <div style={sectionLabel}>Admin</div>
-                <NavLink prefetch="intent" to="/hub/admin/clients" style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zm14 10v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-                  All Clients
-                </NavLink>
-                <NavLink prefetch="intent" to="/hub/admin/onboarding" style={({ isActive }) => navStyle(isActive)}>
-                  <NavIcon d="M12 5v14m-7-7h14" />
-                  New Client
-                </NavLink>
-              </>
-            )}
+            })()}
           </div>
 
           <div style={{ padding: "16px 16px", borderTop: "1px solid #ddd5c4" }}>
