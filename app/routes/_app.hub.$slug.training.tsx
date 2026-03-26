@@ -547,11 +547,43 @@ export default function Training() {
 
       {/* ==================== REVIEW PRODUCTION ==================== */}
       {tab === "review" && (
+        <ReviewResponses conversations={conversations} fetcher={fetcher} reviewingLog={reviewingLog} setReviewingLog={setReviewingLog} />
+      )}
+      </div>
+  );
+}
+
+// ==================== REVIEW RESPONSES (extracted for profile filter state) ====================
+function ReviewResponses({ conversations, fetcher, reviewingLog, setReviewingLog }: { conversations: any[]; fetcher: any; reviewingLog: string | null; setReviewingLog: (v: string | null) => void }) {
+  const [reviewProfile, setReviewProfile] = useState<string>("all");
+  
+  const profileColors: Record<string, { bg: string; color: string; label: string }> = {
+    promo: { bg: "#e3f2fd", color: "#1565c0", label: "PROMO" },
+    general: { bg: "#e8f5e9", color: "#2e7d32", label: "GENERAL" },
+    unknown: { bg: "#f5f5f5", color: "#999", label: "LEGACY" },
+  };
+
+  return (
         <div>
           <p style={{ fontSize: 13, color: "#8a8478", marginBottom: 16 }}>Review real AI responses and flag ones that need correction. Corrections become training examples.</p>
 
+          {/* Profile filter */}
+          <div style={{ display: "flex", gap: 4, marginBottom: 16, background: "#eee8dc", borderRadius: 8, padding: 4 }}>
+            {[{ key: "all", label: "All" }, { key: "promo", label: "Promo" }, { key: "general", label: "General" }].map(t => (
+              <button key={t.key} onClick={() => setReviewProfile(t.key)} style={{
+                flex: 1, padding: "6px 10px", borderRadius: 6, border: "none", fontSize: 11, fontWeight: 600,
+                cursor: "pointer", fontFamily: "'Montserrat', sans-serif",
+                background: reviewProfile === t.key ? "#3b3b3b" : "transparent",
+                color: reviewProfile === t.key ? "#f5f0e8" : "#5a5a5a",
+              }}>
+                {t.label} ({conversations.filter((l: any) => l.action === "responded" && l.outbound_text && !l.review_status && (t.key === "all" || (l.profile || "unknown") === t.key)).length})
+              </button>
+            ))}
+          </div>
+
           {(() => {
-            const unreviewed = conversations.filter((l: any) => l.action === "responded" && l.outbound_text && !l.review_status);
+            const allUnreviewed = conversations.filter((l: any) => l.action === "responded" && l.outbound_text && !l.review_status);
+            const unreviewed = reviewProfile === "all" ? allUnreviewed : allUnreviewed.filter((l: any) => (l.profile || "unknown") === reviewProfile);
             if (unreviewed.length === 0) return (
               <div style={{ background: "white", borderRadius: 12, padding: 40, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
                 <div style={{ fontSize: 13, color: "#8a8478" }}>All responses have been reviewed. New responses will appear here as the engine handles leads.</div>
@@ -559,8 +591,11 @@ export default function Training() {
             );
             return (<><div style={{ fontSize: 12, color: "#8a8478", marginBottom: 12 }}>{unreviewed.length} response{unreviewed.length !== 1 ? "s" : ""} to review</div>{unreviewed.map((log: any) => (
             <div key={log.id} style={{ background: "white", borderRadius: 12, padding: 16, marginBottom: 12, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
-              <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 8 }}>
-                {log.contact_name} | {log.location_tag} | {(log.channel || "").replace("TYPE_", "")} | {new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}
+              <div style={{ fontSize: 11, color: "#8a8478", marginBottom: 8, display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                <span>{log.contact_name} | {log.location_tag} | {(log.channel || "").replace("TYPE_", "")} | {new Date(log.created_at).toLocaleString("en-AU", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</span>
+                {(() => { const pc = profileColors[(log.profile || "unknown")] || profileColors.unknown; return (
+                  <span style={{ padding: "1px 6px", borderRadius: 8, fontSize: 9, fontWeight: 600, background: pc.bg, color: pc.color }}>{pc.label}</span>
+                ); })()}
               </div>
               <div style={{ background: "#faf8f5", borderRadius: 8, padding: 12, marginBottom: 8 }}>
                 <div style={{ fontSize: 12, color: "#8a8478", marginBottom: 2 }}>Lead:</div>
@@ -612,8 +647,6 @@ export default function Training() {
           ))}</>);
           })()}
         </div>
-      )}
-    </div>
   );
 }
 
