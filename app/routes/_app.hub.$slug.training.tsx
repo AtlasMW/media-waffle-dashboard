@@ -768,9 +768,18 @@ function TrainingExamples({ slug }: { slug: string }) {
               <label style={labelSm}>Type</label>
               <select name="correction_type" defaultValue="exact" style={inputFull} onChange={(e) => {
                 const trigger = document.getElementById('kb-trigger-field') as HTMLElement;
+                const respLabel = document.getElementById('kb-response-label') as HTMLElement;
+                const respInput = document.getElementById('kb-response-input') as HTMLTextAreaElement;
                 if (trigger) trigger.style.display = e.target.value === 'instruction' ? 'none' : 'block';
+                if (respLabel) respLabel.textContent = e.target.value === 'escalate' ? 'Reason (optional)' : e.target.value === 'instruction' ? 'Instruction' : 'Response';
+                if (respInput) {
+                  respInput.required = e.target.value !== 'escalate';
+                  respInput.rows = e.target.value === 'escalate' ? 1 : 3;
+                  respInput.placeholder = e.target.value === 'escalate' ? 'e.g. Medical question, Sensitive topic' : e.target.value === 'instruction' ? 'e.g. Keep responses under 160 characters for SMS' : 'Type the exact response...';
+                }
               }}>
                 <option value="exact">Exact Response (when lead says X, respond with Y)</option>
+                <option value="escalate">Escalate (do not reply, escalate to owner)</option>
                 <option value="instruction">Instruction (general rule for the AI to follow)</option>
               </select>
             </div>
@@ -779,8 +788,8 @@ function TrainingExamples({ slug }: { slug: string }) {
               <input name="inbound_text" placeholder='e.g. "How much does it cost?"' style={inputFull} />
             </div>
             <div style={{ marginBottom: 12 }}>
-              <label style={labelSm}>Response / Instruction</label>
-              <textarea name="correct_response" required rows={3} placeholder="Type the exact response or instruction for the AI..." style={{ ...inputFull, resize: "vertical" }} />
+              <label id="kb-response-label" style={labelSm}>Response</label>
+              <textarea id="kb-response-input" name="correct_response" required rows={3} placeholder="Type the exact response..." style={{ ...inputFull, resize: "vertical" }} />
             </div>
             <div style={{ marginBottom: 12 }}>
               <label style={labelSm}>Notes (optional)</label>
@@ -822,6 +831,7 @@ function TrainingExamples({ slug }: { slug: string }) {
                   <label style={labelSm}>Type</label>
                   <select name="correction_type" defaultValue={ex.correction_type || "exact"} style={inputFull}>
                     <option value="exact">Exact Response</option>
+                    <option value="escalate">Escalate</option>
                     <option value="instruction">Instruction</option>
                   </select>
                 </div>
@@ -856,6 +866,7 @@ function TrainingExamples({ slug }: { slug: string }) {
               <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
                 <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: src.bg, color: src.color }}>{src.label}</span>
                 <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: (ex.profile === "promo" ? "#e3f2fd" : ex.profile === "general" ? "#e8f5e9" : "#eee8dc"), color: (ex.profile === "promo" ? "#1565c0" : ex.profile === "general" ? "#2e7d32" : "#3b3b3b") }}>{(ex.profile || "shared").toUpperCase()}</span>
+                {ex.correction_type === "escalate" && <span style={{ padding: "2px 8px", borderRadius: 12, fontSize: 10, fontWeight: 600, background: "#fff3e0", color: "#ef6c00" }}>ESCALATE</span>}
               </div>
               <div style={{ display: "flex", gap: 10 }}>
                 <button onClick={() => setEditingId(ex.id)} style={{ background: "none", border: "none", color: "#1565c0", cursor: "pointer", fontSize: 12, fontWeight: 600 }}>Edit</button>
@@ -873,8 +884,8 @@ function TrainingExamples({ slug }: { slug: string }) {
             </div>
 
             <div style={{ marginBottom: 4 }}>
-              <div style={{ fontSize: 11, color: ex.correction_type === "instruction" ? "#7b1fa2" : "#2e7d32", marginBottom: 2 }}>
-                {ex.correction_type === "instruction" ? "Instruction:" : "Correct response:"}
+              <div style={{ fontSize: 11, color: ex.correction_type === "instruction" ? "#7b1fa2" : ex.correction_type === "escalate" ? "#ef6c00" : "#2e7d32", marginBottom: 2 }}>
+                {ex.correction_type === "instruction" ? "Instruction:" : ex.correction_type === "escalate" ? "Escalate reason:" : "Correct response:"}
               </div>
               <div style={{ fontSize: 13, color: "#3b3b3b", fontStyle: ex.correction_type === "instruction" ? "italic" : "normal" }}>{ex.correct_response}</div>
             </div>
