@@ -3,6 +3,187 @@ import type { Route } from "./+types/_app.hub.$slug.offers";
 import { createSupabaseServerClient } from "../lib/supabase.server";
 import { useState } from "react";
 
+// OfferCard component with icon buttons and tag management
+function OfferCard({ offer, offerTags, onEdit, fetcher }: any) {
+  const [newTag, setNewTag] = useState("");
+
+  const handleRemoveTag = (tagToRemove: string) => {
+    const remainingTags = offerTags.filter((t: string) => t !== tagToRemove);
+    const formData = new FormData();
+    formData.append("intent", "update_offer_tags");
+    formData.append("id", offer.id);
+    formData.append("trigger_tags", remainingTags.join(", "));
+    fetcher.submit(formData, { method: "post" });
+  };
+
+  const handleAddTag = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newTag.trim()) return;
+    const allTags = [...offerTags, newTag.trim()];
+    const formData = new FormData();
+    formData.append("intent", "update_offer_tags");
+    formData.append("id", offer.id);
+    formData.append("trigger_tags", allTags.join(", "));
+    fetcher.submit(formData, { method: "post" });
+    setNewTag("");
+  };
+
+  return (
+    <div style={{ ...card, marginBottom: 10, opacity: offer.is_active ? 1 : 0.5, position: "relative" }}>
+      {/* Icon action buttons in top right */}
+      <div style={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 6 }}>
+        <button 
+          onClick={onEdit} 
+          title="Edit"
+          style={iconButton}
+        >
+          ✏️
+        </button>
+        <fetcher.Form method="post" style={{ display: "inline" }}>
+          <input type="hidden" name="intent" value="toggle_offer" />
+          <input type="hidden" name="id" value={offer.id} />
+          <input type="hidden" name="is_active" value={String(offer.is_active)} />
+          <button 
+            type="submit" 
+            title={offer.is_active ? "Deactivate" : "Activate"}
+            style={iconButton}
+          >
+            {offer.is_active ? "⏸" : "▶"}
+          </button>
+        </fetcher.Form>
+        <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this offer?")) e.preventDefault(); }} style={{ display: "inline" }}>
+          <input type="hidden" name="intent" value="delete_offer" />
+          <input type="hidden" name="id" value={offer.id} />
+          <button 
+            type="submit" 
+            title="Delete"
+            style={iconButton}
+          >
+            🗑
+          </button>
+        </fetcher.Form>
+      </div>
+
+      {/* Card content */}
+      <div style={{ paddingRight: 80 }}>
+        <div style={{ fontWeight: 700, fontSize: 15, color: "#3b3b3b" }}>{offer.name}</div>
+        {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}
+        {offer.description && <div style={{ fontSize: 13, color: "#666", marginTop: 8, lineHeight: 1.5 }}>{offer.description}</div>}
+        {offer.terms && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>Terms: {offer.terms}</div>}
+        
+        {/* Tag management UI */}
+        <div style={{ marginTop: 12 }}>
+          <div style={{ fontSize: 11, fontWeight: 600, color: "#8a8478", marginBottom: 6 }}>Trigger tags:</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>
+            {offerTags.length > 0 ? offerTags.map((tag: string) => (
+              <div key={tag} style={tagPill}>
+                <span>{tag}</span>
+                <button 
+                  onClick={() => handleRemoveTag(tag)}
+                  style={tagRemoveButton}
+                  title="Remove tag"
+                >
+                  ×
+                </button>
+              </div>
+            )) : <span style={{ fontSize: 11, color: "#b0a89a", fontStyle: "italic" }}>no tags set</span>}
+          </div>
+          <form onSubmit={handleAddTag} style={{ display: "flex", gap: 6, alignItems: "center" }}>
+            <input 
+              type="text"
+              value={newTag}
+              onChange={(e) => setNewTag(e.target.value)}
+              placeholder="Add tag..."
+              style={{ 
+                padding: "4px 8px", 
+                border: "1px solid #ddd5c4", 
+                borderRadius: 4, 
+                fontSize: 11, 
+                fontFamily: "'Montserrat', sans-serif",
+                width: 120
+              }}
+            />
+            <button 
+              type="submit"
+              style={{ 
+                padding: "4px 12px", 
+                background: "#3b3b3b", 
+                color: "#f5f0e8", 
+                border: "none", 
+                borderRadius: 4, 
+                fontSize: 11, 
+                fontWeight: 600, 
+                cursor: "pointer",
+                fontFamily: "'Montserrat', sans-serif"
+              }}
+            >
+              Add
+            </button>
+          </form>
+        </div>
+
+        <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 8 }}>
+          Updated {new Date(offer.updated_at).toLocaleDateString("en-AU")}
+          {offer.one_per_customer && " | One per customer"}
+          {offer.health_rebate_eligible && " | Health rebate eligible"}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ServiceCard component with icon buttons
+function ServiceCard({ service, onEdit, fetcher }: any) {
+  return (
+    <div style={{ ...card, marginBottom: 10, opacity: service.is_active ? 1 : 0.5, position: "relative" }}>
+      {/* Icon action buttons in top right */}
+      <div style={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 6 }}>
+        <button 
+          onClick={onEdit} 
+          title="Edit"
+          style={iconButton}
+        >
+          ✏️
+        </button>
+        <fetcher.Form method="post" style={{ display: "inline" }}>
+          <input type="hidden" name="intent" value="toggle_service" />
+          <input type="hidden" name="id" value={service.id} />
+          <input type="hidden" name="is_active" value={String(service.is_active)} />
+          <button 
+            type="submit" 
+            title={service.is_active ? "Deactivate" : "Activate"}
+            style={iconButton}
+          >
+            {service.is_active ? "⏸" : "▶"}
+          </button>
+        </fetcher.Form>
+        <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this service?")) e.preventDefault(); }} style={{ display: "inline" }}>
+          <input type="hidden" name="intent" value="delete_service" />
+          <input type="hidden" name="id" value={service.id} />
+          <button 
+            type="submit" 
+            title="Delete"
+            style={iconButton}
+          >
+            🗑
+          </button>
+        </fetcher.Form>
+      </div>
+
+      {/* Card content */}
+      <div style={{ paddingRight: 80 }}>
+        <div style={{ fontWeight: 600, fontSize: 14, color: "#3b3b3b" }}>{service.name}</div>
+        {service.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{service.description}</div>}
+        <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
+          {service.price_range && <span>{service.price_range}</span>}
+          {service.price_range && service.duration && <span> | </span>}
+          {service.duration && <span>{service.duration}</span>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export async function action({ request, params }: Route.ActionArgs) {
   const { supabase } = createSupabaseServerClient(request);
   const form = await request.formData();
@@ -173,43 +354,13 @@ export default function OffersAndServices() {
         }
         
         return (
-          <div key={offer.id} style={{ ...card, marginBottom: 10, opacity: offer.is_active ? 1 : 0.5 }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" as any }}>
-              <div style={{ flex: 1, minWidth: 200 }}>
-                <div style={{ fontWeight: 700, fontSize: 15, color: "#3b3b3b" }}>{offer.name}</div>
-                {offer.price && <div style={{ fontSize: 18, fontWeight: 700, color: "#c4a882", marginTop: 4 }}>{offer.price}</div>}
-                {offer.description && <div style={{ fontSize: 13, color: "#666", marginTop: 8, lineHeight: 1.5 }}>{offer.description}</div>}
-                {offer.terms && <div style={{ fontSize: 12, color: "#8a8478", marginTop: 6 }}>Terms: {offer.terms}</div>}
-                <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-                  <span style={{ fontSize: 11, fontWeight: 600, color: "#8a8478" }}>Trigger tags:</span>
-                  {offerTags.length > 0 ? offerTags.map((tag: string) => (
-                    <span key={tag} style={{ padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600, background: "#e3f2fd", color: "#1565c0" }}>{tag}</span>
-                  )) : <span style={{ fontSize: 11, color: "#b0a89a", fontStyle: "italic" }}>none set</span>}
-                </div>
-                <div style={{ fontSize: 11, color: "#b0a89a", marginTop: 6 }}>
-                  Updated {new Date(offer.updated_at).toLocaleDateString("en-AU")}
-                  {offer.one_per_customer && " | One per customer"}
-                  {offer.health_rebate_eligible && " | Health rebate eligible"}
-                </div>
-              </div>
-              <div style={{ display: "flex", gap: 6, flexShrink: 0, marginTop: 4 }}>
-                <button onClick={() => setEditingOfferId(offer.id)} style={{ ...btnSmall, background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
-                <fetcher.Form method="post">
-                  <input type="hidden" name="intent" value="toggle_offer" />
-                  <input type="hidden" name="id" value={offer.id} />
-                  <input type="hidden" name="is_active" value={String(offer.is_active)} />
-                  <button type="submit" style={{ ...btnSmall, background: offer.is_active ? "#fff3e0" : "#e8f5e9", color: offer.is_active ? "#ef6c00" : "#2e7d32" }}>
-                    {offer.is_active ? "Deactivate" : "Activate"}
-                  </button>
-                </fetcher.Form>
-                <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete this offer?")) e.preventDefault(); }}>
-                  <input type="hidden" name="intent" value="delete_offer" />
-                  <input type="hidden" name="id" value={offer.id} />
-                  <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
-                </fetcher.Form>
-              </div>
-            </div>
-          </div>
+          <OfferCard 
+            key={offer.id} 
+            offer={offer} 
+            offerTags={offerTags}
+            onEdit={() => setEditingOfferId(offer.id)}
+            fetcher={fetcher}
+          />
         );
       })}
 
@@ -260,33 +411,12 @@ export default function OffersAndServices() {
           );
         }
         return (
-          <div key={svc.id} style={{ ...card, marginBottom: 10, opacity: svc.is_active ? 1 : 0.5, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" as any }}>
-            <div style={{ flex: 1, minWidth: 200 }}>
-              <div style={{ fontWeight: 600, fontSize: 14, color: "#3b3b3b" }}>{svc.name}</div>
-              {svc.description && <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>{svc.description}</div>}
-              <div style={{ fontSize: 12, color: "#8a8478", marginTop: 4 }}>
-                {svc.price_range && <span>{svc.price_range}</span>}
-                {svc.price_range && svc.duration && <span> | </span>}
-                {svc.duration && <span>{svc.duration}</span>}
-              </div>
-            </div>
-            <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
-              <button onClick={() => setEditingServiceId(svc.id)} style={{ ...btnSmall, background: "#e3f2fd", color: "#1565c0" }}>Edit</button>
-              <fetcher.Form method="post">
-                <input type="hidden" name="intent" value="toggle_service" />
-                <input type="hidden" name="id" value={svc.id} />
-                <input type="hidden" name="is_active" value={String(svc.is_active)} />
-                <button type="submit" style={{ ...btnSmall, background: svc.is_active ? "#fff3e0" : "#e8f5e9", color: svc.is_active ? "#ef6c00" : "#2e7d32" }}>
-                  {svc.is_active ? "Deactivate" : "Activate"}
-                </button>
-              </fetcher.Form>
-              <fetcher.Form method="post" onSubmit={(e) => { if (!confirm("Delete?")) e.preventDefault(); }}>
-                <input type="hidden" name="intent" value="delete_service" />
-                <input type="hidden" name="id" value={svc.id} />
-                <button type="submit" style={{ ...btnSmall, background: "#ffebee", color: "#c62828" }}>Delete</button>
-              </fetcher.Form>
-            </div>
-          </div>
+          <ServiceCard
+            key={svc.id}
+            service={svc}
+            onEdit={() => setEditingServiceId(svc.id)}
+            fetcher={fetcher}
+          />
         );
       })}
     </div>
@@ -298,3 +428,6 @@ const labelStyle: React.CSSProperties = { display: "block", fontSize: 12, fontWe
 const inputStyle: React.CSSProperties = { width: "100%", padding: "8px 12px", border: "1px solid #ddd5c4", borderRadius: 6, fontSize: 13, fontFamily: "'Montserrat', sans-serif", background: "#faf8f5", boxSizing: "border-box" };
 const btnPrimary: React.CSSProperties = { padding: "10px 20px", background: "#3b3b3b", color: "#f5f0e8", border: "none", borderRadius: 6, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
 const btnSmall: React.CSSProperties = { padding: "6px 12px", border: "none", borderRadius: 4, fontSize: 11, fontWeight: 600, cursor: "pointer", fontFamily: "'Montserrat', sans-serif" };
+const iconButton: React.CSSProperties = { width: 24, height: 24, borderRadius: "50%", border: "none", background: "#e8e8e8", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, padding: 0 };
+const tagPill: React.CSSProperties = { padding: "2px 8px", borderRadius: 10, fontSize: 11, fontWeight: 600, background: "#e3f2fd", color: "#1565c0", display: "inline-flex", alignItems: "center", gap: 4 };
+const tagRemoveButton: React.CSSProperties = { background: "none", border: "none", cursor: "pointer", fontSize: 14, lineHeight: 1, padding: 0, color: "#1565c0", fontWeight: 700 };
