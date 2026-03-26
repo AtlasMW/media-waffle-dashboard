@@ -182,7 +182,7 @@ export default function FAQs() {
               </select>
             </div>
             <input type="hidden" name="category" value="general" />
-            <button type="submit" style={btnPrimary}>Save FAQ</button>
+            <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save FAQ"}</button>
           </fetcher.Form>
         </div>
       )}
@@ -223,7 +223,7 @@ export default function FAQs() {
                   </select>
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
-                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save"}</button>
                   <button type="button" onClick={() => setEditingId(null)} style={{ ...btnSmall, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
                 </div>
               </fetcher.Form>

@@ -312,7 +312,7 @@ export default function OffersAndServices() {
               <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="health_rebate_eligible" value="true" /> Health rebate eligible</label>
               <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 6 }}><input type="checkbox" name="one_per_customer" value="true" /> One per customer</label>
             </div>
-            <button type="submit" style={btnPrimary}>Save Offer</button>
+            <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save Offer"}</button>
           </fetcher.Form>
         </div>
       )}
@@ -383,7 +383,7 @@ export default function OffersAndServices() {
                 <input name={n} required={r} style={inputStyle} />
               </div>
             ))}
-            <button type="submit" style={btnPrimary}>Save Service</button>
+            <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save Service"}</button>
           </fetcher.Form>
         </div>
       )}

@@ -803,7 +803,7 @@ function TrainingExamples({ slug }: { slug: string }) {
                 <option value="general">General only</option>
               </select>
             </div>
-            <button type="submit" style={btnPrimary}>Save</button>
+            <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save"}</button>
           </fetcher.Form>
         </div>
       )}
@@ -852,7 +852,7 @@ function TrainingExamples({ slug }: { slug: string }) {
                   </select>
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
-                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save"}</button>
                   <button type="button" onClick={() => setEditingId(null)} style={{ ...btnPrimary, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
                 </div>
               </fetcher.Form>
@@ -946,7 +946,7 @@ function SystemRules({ slug }: { slug: string }) {
                 <option value="general">General only</option>
               </select>
             </div>
-            <button type="submit" style={btnPrimary}>Save Rule</button>
+            <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save Rule"}</button>
           </fetcher.Form>
         </div>
       )}
@@ -974,7 +974,7 @@ function SystemRules({ slug }: { slug: string }) {
                   <input name="notes" defaultValue={rule.notes || ""} style={inputFull} />
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
-                  <button type="submit" style={btnPrimary}>Save</button>
+                  <button type="submit" style={{ ...btnPrimary, background: fetcher.state === "submitting" ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>{fetcher.state === "submitting" ? "Saving..." : "Save"}</button>
                   <button type="button" onClick={() => setEditingId(null)} style={{ ...btnPrimary, background: "#eee8dc", color: "#3b3b3b" }}>Cancel</button>
                 </div>
               </fetcher.Form>

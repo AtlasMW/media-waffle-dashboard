@@ -65,7 +65,7 @@ export default function Settings() {
           <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: "#3b3b3b", margin: 0 }}>Settings</h1>
           <p style={{ color: "#8a8478", fontSize: 13, margin: "4px 0 0" }}>{client.name}</p>
         </div>
-        {saved && <span style={{ color: "#2e7d32", fontSize: 13, fontWeight: 600 }}>Saved</span>}
+
       </div>
 
       <form onSubmit={handleSubmit}>
@@ -103,7 +103,9 @@ export default function Settings() {
 
 
 
-        <button type="submit" style={{ ...btnPrimary, marginBottom: 32 }}>Save Settings</button>
+        <button type="submit" style={{ ...btnPrimary, marginBottom: 32, background: saved ? "#2e7d32" : "#3b3b3b", transition: "all 0.3s" }}>
+          {saved ? "✓ Saved" : fetcher.state === "submitting" ? "Saving..." : "Save Settings"}
+        </button>
       </form>
 
 
