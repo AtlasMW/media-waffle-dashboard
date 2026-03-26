@@ -16,6 +16,7 @@ export async function action({ request, params }: Route.ActionArgs) {
     const contactName = form.get("contact_name") as string || "Test Lead";
     const location = form.get("location") as string || "";
     const channel = form.get("channel") as string || "SMS";
+    const testProfile = form.get("profile") as string || "promo";
     const history = form.get("history") as string || "[]";
 
     // Fetch client config
@@ -41,9 +42,20 @@ export async function action({ request, params }: Route.ActionArgs) {
     const assistantName = brand.assistant_name || "Assistant";
     const clientName = (await supabase.from("msg_clients").select("name").eq("id", client.id).single()).data?.name || "Client";
 
+    // Filter FAQs and training by profile
+    const profileFaqs = faqs.filter((f: any) => !f.profile || f.profile === "shared" || f.profile === testProfile);
+    const profileTraining = training.filter((t: any) => !t.profile || t.profile === "shared" || t.profile === testProfile);
+
     let prompt = `# ${assistantName} - AI Messaging Assistant for ${clientName}\n\n`;
-    prompt += `You are ${assistantName}, a ${brand.tone || "friendly"} messaging assistant for ${clientName}.\n`;
-    prompt += `You respond to leads who have enquired about our services.\n\n`;
+    if (testProfile === "general") {
+      prompt += `You are ${assistantName}, a ${brand.tone || "friendly"} messaging assistant for ${clientName}.\n`;
+      prompt += `You respond to people who message us on Facebook or Instagram with general enquiries about our services.\n`;
+      prompt += `You should be helpful but conservative. If you are not sure about the answer, escalate rather than guess.\n`;
+      prompt += `Use the general booking link when directing people to book, not the promo link.\n\n`;
+    } else {
+      prompt += `You are ${assistantName}, a ${brand.tone || "friendly"} messaging assistant for ${clientName}.\n`;
+      prompt += `You respond to leads who have enquired about our services.\n\n`;
+    }
     prompt += `## CRITICAL SAFETY RULES\n`;
     prompt += `- You are ${assistantName}. NEVER say you are an AI, chatbot, bot, or automated system.\n`;
     prompt += `- NEVER reference any other business outside ${clientName}.\n`;
@@ -106,18 +118,41 @@ export async function action({ request, params }: Route.ActionArgs) {
       prompt += `\n`;
     }
 
-    if (faqs.length > 0) {
-      prompt += `## FAQs\n`;
-      faqs.slice(0, 20).forEach((f: any) => {
-        prompt += `Q: ${f.question}\nA: ${f.answer}\n\n`;
+    // FAQs separated by response type
+    const directFaqs = profileFaqs.filter((f: any) => !f.response_type || f.response_type === "direct");
+    const escalateFaqs = profileFaqs.filter((f: any) => f.response_type === "escalate");
+    const instructionFaqs = profileFaqs.filter((f: any) => f.response_type === "instruction");
+
+    if (directFaqs.length > 0) {
+      prompt += `## Frequently Asked Questions (Direct Responses)\n`;
+      prompt += `Use these answers when the lead asks the matching question. Send the answer as your response.\n\n`;
+      directFaqs.forEach((f: any) => {
+        prompt += `**Q: ${f.question}**\nA: ${f.answer}\n\n`;
       });
     }
 
+    if (escalateFaqs.length > 0) {
+      prompt += `## Escalation Topics (DO NOT RESPOND — ESCALATE IMMEDIATELY)\n`;
+      prompt += `If the lead asks about ANY of these topics, return ONLY: ESCALATE: [topic]. Do NOT send any message.\n\n`;
+      escalateFaqs.forEach((f: any) => {
+        prompt += `- **${f.question}** → ESCALATE immediately. Reason: ${f.answer}\n`;
+      });
+      prompt += `\n`;
+    }
+
+    if (instructionFaqs.length > 0) {
+      prompt += `## FAQ Instructions (Rules, NOT text to send)\n`;
+      instructionFaqs.forEach((f: any) => {
+        prompt += `- When asked about **${f.question}**: ${f.answer}\n`;
+      });
+      prompt += `\n`;
+    }
+
     // Training examples
-    if (training.length > 0) {
+    if (profileTraining.length > 0) {
       prompt += `## Training Examples (Follow These Closely)\n`;
       prompt += `These are verified correct responses. Match this style and approach:\n\n`;
-      training.forEach((t: any) => {
+      profileTraining.forEach((t: any) => {
         prompt += `Lead: "${t.inbound_text}"\n`;
         prompt += `Correct response: "${t.correct_response}"\n`;
         if (t.notes) prompt += `Note: ${t.notes}\n`;
@@ -267,6 +302,7 @@ export default function Training() {
   const [contactName, setContactName] = useState("Sarah");
   const [selectedLocation, setSelectedLocation] = useState(locations[0]?.tag || "");
   const [channel, setChannel] = useState("SMS");
+  const [testProfile, setTestProfile] = useState("promo");
   const [correcting, setCorrecting] = useState<number | null>(null);
   const [reviewingLog, setReviewingLog] = useState<string | null>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
@@ -297,6 +333,7 @@ export default function Training() {
     formData.set("contact_name", contactName);
     formData.set("location", selectedLocation);
     formData.set("channel", channel);
+    formData.set("profile", testProfile);
     formData.set("history", JSON.stringify(chatHistory));
     fetcher.submit(formData, { method: "post" });
 
@@ -373,6 +410,13 @@ export default function Training() {
                   <option value="SMS">SMS</option>
                   <option value="FB">Facebook DM</option>
                   <option value="IG">Instagram DM</option>
+                </select>
+              </div>
+              <div>
+                <label style={labelSm}>Profile</label>
+                <select value={testProfile} onChange={e => { setTestProfile(e.target.value); setChatHistory([]); }} style={{ ...inputSm, background: testProfile === "general" ? "#e8f5e9" : "#e3f2fd" }}>
+                  <option value="promo">Promo Lead</option>
+                  <option value="general">General Enquiry</option>
                 </select>
               </div>
             </div>
