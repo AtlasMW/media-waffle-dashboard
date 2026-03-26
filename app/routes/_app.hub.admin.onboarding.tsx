@@ -32,7 +32,7 @@ export async function action({ request }: Route.ActionArgs) {
     const clientRes = await fetch(`${SB_URL}/rest/v1/msg_clients`, {
       method: "POST",
       headers: { "Authorization": `Bearer ${SB_SERVICE_KEY}`, "apikey": SB_SERVICE_KEY, "Content-Type": "application/json", "Prefer": "return=representation" },
-      body: JSON.stringify({ name, slug, ghl_api_key: ghlApiKey, ghl_location_id: ghlLocationId, status: "setup" }),
+      body: JSON.stringify({ name, slug, ghl_api_key: ghlApiKey, ghl_location_id: ghlLocationId, status: "active" }),
     });
     if (!clientRes.ok) return { error: await clientRes.text() };
     const [client] = await clientRes.json();
