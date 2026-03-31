@@ -1,9 +1,10 @@
 {
   "client": "\u00c9lev\u00e9 Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-03-30T02:00:29+10:00",
+  "lastUpdated": "2026-04-01T06:00:49+10:00",
   "agencyFees": {
-    "2026-02": 1000
+    "2026-02": 1000,
+    "2026-03": 1000
   },
   "monthly": {
     "2026-02": {
@@ -192,6 +193,213 @@
           "name": "Instagram Instagram Stories",
           "spend": 747.24,
           "leads": 132
+        }
+      ]
+    },
+    "2026-03": {
+      "spend": 1178.22,
+      "impressions": 57822,
+      "reach": 22659,
+      "leads": 162,
+      "cpl": 7.27,
+      "messages": 172,
+      "costPerMessage": 6.85,
+      "uniqueCtr": 0.0,
+      "cpm": 20.38,
+      "linkClicks": 1129,
+      "cpc": 1.04,
+      "leadConvPct": 14.35,
+      "campaigns": [
+        {
+          "name": "LEADS // AD+ // ABO // OFFER 3",
+          "spend": 568.78,
+          "impressions": 26965,
+          "reach": 13747,
+          "leads": 86,
+          "cpl": 6.61,
+          "uniqueCtr": 0.0,
+          "messages": 96,
+          "linkClicks": 329,
+          "cpc": 1.73,
+          "leadConvPct": 26.14
+        },
+        {
+          "name": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
+          "spend": 466.26,
+          "impressions": 21734,
+          "reach": 11633,
+          "leads": 76,
+          "cpl": 6.13,
+          "uniqueCtr": 0.0,
+          "messages": 72,
+          "linkClicks": 274,
+          "cpc": 1.7,
+          "leadConvPct": 27.74
+        },
+        {
+          "name": "IG // MBO // LIPS",
+          "spend": 143.18,
+          "impressions": 9123,
+          "reach": 4431,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.0,
+          "messages": 4,
+          "linkClicks": 526,
+          "cpc": 0.27,
+          "leadConvPct": 0.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // AD+ // ABO // OFFER 3",
+          "leads": 86,
+          "cpl": 6.61,
+          "spend": 568.78,
+          "campaignPattern": "LEADS // AD+ // ABO // OFFER 3"
+        },
+        {
+          "name": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
+          "leads": 76,
+          "cpl": 6.13,
+          "spend": 466.26,
+          "campaignPattern": "LEADS // AD+ // ABO // AGE 35+ OFFER 3"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 3 | Offer 3 - 30%",
+          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "campaignName": "LEADS // AD+ // ABO // OFFER 3",
+          "spend": 40.43,
+          "leads": 9,
+          "cpl": 4.49,
+          "uniqueCtr": 0.0,
+          "frequency": 1.17
+        },
+        {
+          "adName": "IMG 1 | Offer 3 - 30%",
+          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
+          "spend": 254.06,
+          "leads": 47,
+          "cpl": 5.41,
+          "uniqueCtr": 0.0,
+          "frequency": 1.6
+        },
+        {
+          "adName": "IMG 2 | Offer 3 - 30%",
+          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "campaignName": "LEADS // AD+ // ABO // OFFER 3",
+          "spend": 48.19,
+          "leads": 8,
+          "cpl": 6.02,
+          "uniqueCtr": 0.0,
+          "frequency": 1.23
+        },
+        {
+          "adName": "IMG 1 | Offer 3 - 30%",
+          "adSetName": "DT BEAUTY SALON // AD+ // ALL 18+ // RICHMOND",
+          "campaignName": "LEADS // AD+ // ABO // OFFER 3",
+          "spend": 65.02,
+          "leads": 10,
+          "cpl": 6.5,
+          "uniqueCtr": 0.0,
+          "frequency": 1.21
+        },
+        {
+          "adName": "IMG 3 | Offer 3 - 30%",
+          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
+          "spend": 26.39,
+          "leads": 4,
+          "cpl": 6.6,
+          "uniqueCtr": 0.0,
+          "frequency": 1.13
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 340.33,
+          "leads": 48
+        },
+        {
+          "age": "25-34",
+          "spend": 560.73,
+          "leads": 76
+        },
+        {
+          "age": "35-44",
+          "spend": 194.29,
+          "leads": 28
+        },
+        {
+          "age": "45-54",
+          "spend": 50.96,
+          "leads": 7
+        },
+        {
+          "age": "55-64",
+          "spend": 20.77,
+          "leads": 3
+        },
+        {
+          "age": "65+",
+          "spend": 11.11,
+          "leads": 0
+        },
+        {
+          "age": "Unknown",
+          "spend": 0.03,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 7.91,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 2.46,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 16.87,
+          "leads": 4
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.2,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 216.87,
+          "leads": 10
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.19,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Lead Gen Multi Submit",
+          "spend": 1.51,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 88.74,
+          "leads": 15
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 843.47,
+          "leads": 133
         }
       ]
     }
@@ -504,6 +712,347 @@
       "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 20.55
+    },
+    {
+      "date": "2026-03-01",
+      "spend": 38.43,
+      "impressions": 1807,
+      "reach": 1505,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 23,
+      "uniqueCtr": 0.0,
+      "cpm": 21.27
+    },
+    {
+      "date": "2026-03-02",
+      "spend": 36.43,
+      "impressions": 1669,
+      "reach": 1347,
+      "leads": 6,
+      "messages": 7,
+      "linkClicks": 26,
+      "uniqueCtr": 0.0,
+      "cpm": 21.83
+    },
+    {
+      "date": "2026-03-03",
+      "spend": 39.19,
+      "impressions": 1895,
+      "reach": 1547,
+      "leads": 6,
+      "messages": 8,
+      "linkClicks": 39,
+      "uniqueCtr": 0.0,
+      "cpm": 20.68
+    },
+    {
+      "date": "2026-03-04",
+      "spend": 41.72,
+      "impressions": 1868,
+      "reach": 1547,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 31,
+      "uniqueCtr": 0.0,
+      "cpm": 22.33
+    },
+    {
+      "date": "2026-03-05",
+      "spend": 34.97,
+      "impressions": 1624,
+      "reach": 1368,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 26,
+      "uniqueCtr": 0.0,
+      "cpm": 21.53
+    },
+    {
+      "date": "2026-03-06",
+      "spend": 38.6,
+      "impressions": 1792,
+      "reach": 1472,
+      "leads": 9,
+      "messages": 8,
+      "linkClicks": 37,
+      "uniqueCtr": 0.0,
+      "cpm": 21.54
+    },
+    {
+      "date": "2026-03-07",
+      "spend": 32.85,
+      "impressions": 1564,
+      "reach": 1333,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 21.0
+    },
+    {
+      "date": "2026-03-08",
+      "spend": 42.35,
+      "impressions": 2033,
+      "reach": 1650,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 36,
+      "uniqueCtr": 0.0,
+      "cpm": 20.83
+    },
+    {
+      "date": "2026-03-09",
+      "spend": 44.18,
+      "impressions": 2355,
+      "reach": 1963,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 44,
+      "uniqueCtr": 0.0,
+      "cpm": 18.76
+    },
+    {
+      "date": "2026-03-10",
+      "spend": 41.82,
+      "impressions": 1961,
+      "reach": 1634,
+      "leads": 9,
+      "messages": 10,
+      "linkClicks": 43,
+      "uniqueCtr": 0.0,
+      "cpm": 21.33
+    },
+    {
+      "date": "2026-03-11",
+      "spend": 32.35,
+      "impressions": 1629,
+      "reach": 1353,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 29,
+      "uniqueCtr": 0.0,
+      "cpm": 19.86
+    },
+    {
+      "date": "2026-03-12",
+      "spend": 35.11,
+      "impressions": 1633,
+      "reach": 1364,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 37,
+      "uniqueCtr": 0.0,
+      "cpm": 21.5
+    },
+    {
+      "date": "2026-03-13",
+      "spend": 34.65,
+      "impressions": 1455,
+      "reach": 1234,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 38,
+      "uniqueCtr": 0.0,
+      "cpm": 23.81
+    },
+    {
+      "date": "2026-03-14",
+      "spend": 34.99,
+      "impressions": 1792,
+      "reach": 1537,
+      "leads": 9,
+      "messages": 9,
+      "linkClicks": 37,
+      "uniqueCtr": 0.0,
+      "cpm": 19.53
+    },
+    {
+      "date": "2026-03-15",
+      "spend": 42.39,
+      "impressions": 2216,
+      "reach": 1870,
+      "leads": 7,
+      "messages": 7,
+      "linkClicks": 45,
+      "uniqueCtr": 0.0,
+      "cpm": 19.13
+    },
+    {
+      "date": "2026-03-16",
+      "spend": 43.13,
+      "impressions": 2184,
+      "reach": 1835,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 46,
+      "uniqueCtr": 0.0,
+      "cpm": 19.75
+    },
+    {
+      "date": "2026-03-17",
+      "spend": 39.28,
+      "impressions": 1890,
+      "reach": 1604,
+      "leads": 4,
+      "messages": 6,
+      "linkClicks": 32,
+      "uniqueCtr": 0.0,
+      "cpm": 20.78
+    },
+    {
+      "date": "2026-03-18",
+      "spend": 32.94,
+      "impressions": 1463,
+      "reach": 1266,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 40,
+      "uniqueCtr": 0.0,
+      "cpm": 22.52
+    },
+    {
+      "date": "2026-03-19",
+      "spend": 34.03,
+      "impressions": 1620,
+      "reach": 1380,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 25,
+      "uniqueCtr": 0.0,
+      "cpm": 21.01
+    },
+    {
+      "date": "2026-03-20",
+      "spend": 34.47,
+      "impressions": 1690,
+      "reach": 1462,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 34,
+      "uniqueCtr": 0.0,
+      "cpm": 20.4
+    },
+    {
+      "date": "2026-03-21",
+      "spend": 39.45,
+      "impressions": 1827,
+      "reach": 1575,
+      "leads": 4,
+      "messages": 3,
+      "linkClicks": 41,
+      "uniqueCtr": 0.0,
+      "cpm": 21.59
+    },
+    {
+      "date": "2026-03-22",
+      "spend": 43.98,
+      "impressions": 2232,
+      "reach": 1845,
+      "leads": 7,
+      "messages": 6,
+      "linkClicks": 41,
+      "uniqueCtr": 0.0,
+      "cpm": 19.7
+    },
+    {
+      "date": "2026-03-23",
+      "spend": 39.08,
+      "impressions": 2025,
+      "reach": 1655,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 38,
+      "uniqueCtr": 0.0,
+      "cpm": 19.3
+    },
+    {
+      "date": "2026-03-24",
+      "spend": 39.49,
+      "impressions": 1955,
+      "reach": 1688,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 37,
+      "uniqueCtr": 0.0,
+      "cpm": 20.2
+    },
+    {
+      "date": "2026-03-25",
+      "spend": 36.88,
+      "impressions": 1751,
+      "reach": 1483,
+      "leads": 8,
+      "messages": 7,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 21.06
+    },
+    {
+      "date": "2026-03-26",
+      "spend": 32.74,
+      "impressions": 1554,
+      "reach": 1328,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 30,
+      "uniqueCtr": 0.0,
+      "cpm": 21.07
+    },
+    {
+      "date": "2026-03-27",
+      "spend": 34.27,
+      "impressions": 1732,
+      "reach": 1497,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 22,
+      "uniqueCtr": 0.0,
+      "cpm": 19.79
+    },
+    {
+      "date": "2026-03-28",
+      "spend": 39.13,
+      "impressions": 2078,
+      "reach": 1845,
+      "leads": 5,
+      "messages": 4,
+      "linkClicks": 46,
+      "uniqueCtr": 0.0,
+      "cpm": 18.83
+    },
+    {
+      "date": "2026-03-29",
+      "spend": 43.71,
+      "impressions": 2488,
+      "reach": 2170,
+      "leads": 9,
+      "messages": 12,
+      "linkClicks": 46,
+      "uniqueCtr": 0.0,
+      "cpm": 17.57
+    },
+    {
+      "date": "2026-03-30",
+      "spend": 41.53,
+      "impressions": 2264,
+      "reach": 1878,
+      "leads": 6,
+      "messages": 7,
+      "linkClicks": 42,
+      "uniqueCtr": 0.0,
+      "cpm": 18.34
+    },
+    {
+      "date": "2026-03-31",
+      "spend": 34.08,
+      "impressions": 1776,
+      "reach": 1520,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 48,
+      "uniqueCtr": 0.0,
+      "cpm": 19.19
     }
   ],
   "campaignDaily": {
@@ -736,6 +1285,316 @@
       },
       "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
         "spend": 14.16,
+        "leads": 1
+      }
+    },
+    "2026-03-01": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 22.27,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.16,
+        "leads": 3
+      }
+    },
+    "2026-03-02": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.78,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.65,
+        "leads": 4
+      }
+    },
+    "2026-03-03": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.73,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.51,
+        "leads": 3
+      }
+    },
+    "2026-03-04": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 21.01,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.05,
+        "leads": 5
+      }
+    },
+    "2026-03-05": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.18,
+        "leads": 0
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.4,
+        "leads": 1
+      }
+    },
+    "2026-03-06": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.63,
+        "leads": 6
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.52,
+        "leads": 3
+      }
+    },
+    "2026-03-07": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 14.54,
+        "leads": 0
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.42,
+        "leads": 1
+      }
+    },
+    "2026-03-08": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.77,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.84,
+        "leads": 3
+      }
+    },
+    "2026-03-09": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.47,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 18.01,
+        "leads": 1
+      }
+    },
+    "2026-03-10": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.32,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 17.83,
+        "leads": 5
+      }
+    },
+    "2026-03-11": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.44,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 12.19,
+        "leads": 1
+      }
+    },
+    "2026-03-12": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.18,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.12,
+        "leads": 2
+      }
+    },
+    "2026-03-13": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.64,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.06,
+        "leads": 2
+      }
+    },
+    "2026-03-14": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.88,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.73,
+        "leads": 6
+      }
+    },
+    "2026-03-15": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.91,
+        "leads": 6
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.86,
+        "leads": 1
+      }
+    },
+    "2026-03-16": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.68,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.44,
+        "leads": 2
+      }
+    },
+    "2026-03-17": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.49,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.79,
+        "leads": 3
+      }
+    },
+    "2026-03-18": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.27,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 12.79,
+        "leads": 2
+      }
+    },
+    "2026-03-19": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.63,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.01,
+        "leads": 0
+      }
+    },
+    "2026-03-20": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 15.14,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.99,
+        "leads": 2
+      }
+    },
+    "2026-03-21": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.77,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.02,
+        "leads": 0
+      }
+    },
+    "2026-03-22": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.33,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 17.7,
+        "leads": 6
+      }
+    },
+    "2026-03-23": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.98,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.46,
+        "leads": 2
+      }
+    },
+    "2026-03-24": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.69,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.18,
+        "leads": 2
+      }
+    },
+    "2026-03-25": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.59,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 14.41,
+        "leads": 4
+      }
+    },
+    "2026-03-26": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 14.61,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.41,
+        "leads": 1
+      }
+    },
+    "2026-03-27": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 17.13,
+        "leads": 1
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 13.04,
+        "leads": 3
+      }
+    },
+    "2026-03-28": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 18.5,
+        "leads": 3
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 15.58,
+        "leads": 2
+      }
+    },
+    "2026-03-29": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 20.44,
+        "leads": 6
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 17.45,
+        "leads": 3
+      }
+    },
+    "2026-03-30": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 19.33,
+        "leads": 4
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 16.8,
+        "leads": 2
+      }
+    },
+    "2026-03-31": {
+      "LEADS // AD+ // ABO // OFFER 3": {
+        "spend": 16.45,
+        "leads": 2
+      },
+      "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
+        "spend": 12.84,
         "leads": 1
       }
     }
