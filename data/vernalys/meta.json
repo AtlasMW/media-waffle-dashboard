@@ -1,9 +1,10 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-03-30T02:00:13+10:00",
+  "lastUpdated": "2026-04-01T06:00:20+10:00",
   "agencyFees": {
-    "2026-02": 950
+    "2026-02": 950,
+    "2026-03": 950
   },
   "monthly": {
     "2026-02": {
@@ -251,6 +252,185 @@
           "name": "Instagram Instagram Stories",
           "spend": 486.61,
           "leads": 52
+        }
+      ]
+    },
+    "2026-03": {
+      "spend": 1407.78,
+      "impressions": 115703,
+      "reach": 41298,
+      "leads": 175,
+      "cpl": 8.04,
+      "messages": 185,
+      "costPerMessage": 7.61,
+      "uniqueCtr": 0.01,
+      "cpm": 12.17,
+      "linkClicks": 1087,
+      "cpc": 1.3,
+      "leadConvPct": 16.1,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 773.98,
+          "impressions": 65591,
+          "reach": 26711,
+          "leads": 114,
+          "cpl": 6.79,
+          "uniqueCtr": 0.02,
+          "messages": 121,
+          "linkClicks": 673,
+          "cpc": 1.15,
+          "leadConvPct": 16.94
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 633.8,
+          "impressions": 50112,
+          "reach": 17250,
+          "leads": 61,
+          "cpl": 10.39,
+          "uniqueCtr": 0.0,
+          "messages": 64,
+          "linkClicks": 414,
+          "cpc": 1.53,
+          "leadConvPct": 14.73
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 114,
+          "cpl": 6.79,
+          "spend": 773.98,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "leads": 61,
+          "cpl": 10.39,
+          "spend": 633.8,
+          "campaignPattern": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 26.47,
+          "leads": 5,
+          "cpl": 5.29,
+          "uniqueCtr": 0.0,
+          "frequency": 1.16
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 33.25,
+          "leads": 6,
+          "cpl": 5.54,
+          "uniqueCtr": 0.0,
+          "frequency": 1.68
+        },
+        {
+          "adName": "OFFER 2 - VIDEO | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 482.51,
+          "leads": 73,
+          "cpl": 6.61,
+          "uniqueCtr": 0.03,
+          "frequency": 1.88
+        },
+        {
+          "adName": "OFFER 2 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 192.39,
+          "leads": 25,
+          "cpl": 7.7,
+          "uniqueCtr": 0.0,
+          "frequency": 2.13
+        },
+        {
+          "adName": "OFFER 3 - IMG 3 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 96.92,
+          "leads": 10,
+          "cpl": 9.69,
+          "uniqueCtr": 0.0,
+          "frequency": 1.9
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 258.84,
+          "leads": 28
+        },
+        {
+          "age": "25-34",
+          "spend": 580.49,
+          "leads": 78
+        },
+        {
+          "age": "35-44",
+          "spend": 368.0,
+          "leads": 43
+        },
+        {
+          "age": "45-54",
+          "spend": 143.29,
+          "leads": 20
+        },
+        {
+          "age": "55-64",
+          "spend": 33.38,
+          "leads": 3
+        },
+        {
+          "age": "65+",
+          "spend": 23.77,
+          "leads": 3
+        },
+        {
+          "age": "Unknown",
+          "spend": 0.01,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 183.95,
+          "leads": 20
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 27.56,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 115.68,
+          "leads": 16
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 137.01,
+          "leads": 13
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 441.03,
+          "leads": 59
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 502.54,
+          "leads": 66
         }
       ]
     }
@@ -563,6 +743,347 @@
       "linkClicks": 22,
       "uniqueCtr": 0.0,
       "cpm": 12.08
+    },
+    {
+      "date": "2026-03-01",
+      "spend": 52.71,
+      "impressions": 4918,
+      "reach": 4069,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 39,
+      "uniqueCtr": 0.02,
+      "cpm": 10.72
+    },
+    {
+      "date": "2026-03-02",
+      "spend": 53.11,
+      "impressions": 4839,
+      "reach": 3935,
+      "leads": 11,
+      "messages": 11,
+      "linkClicks": 60,
+      "uniqueCtr": 0.03,
+      "cpm": 10.98
+    },
+    {
+      "date": "2026-03-03",
+      "spend": 44.75,
+      "impressions": 4227,
+      "reach": 3620,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 28,
+      "uniqueCtr": 0.0,
+      "cpm": 10.59
+    },
+    {
+      "date": "2026-03-04",
+      "spend": 46.66,
+      "impressions": 4069,
+      "reach": 3242,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 33,
+      "uniqueCtr": 0.0,
+      "cpm": 11.47
+    },
+    {
+      "date": "2026-03-05",
+      "spend": 41.74,
+      "impressions": 3548,
+      "reach": 2955,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 25,
+      "uniqueCtr": 0.0,
+      "cpm": 11.76
+    },
+    {
+      "date": "2026-03-06",
+      "spend": 42.63,
+      "impressions": 3503,
+      "reach": 2957,
+      "leads": 7,
+      "messages": 7,
+      "linkClicks": 44,
+      "uniqueCtr": 0.0,
+      "cpm": 12.17
+    },
+    {
+      "date": "2026-03-07",
+      "spend": 40.15,
+      "impressions": 3223,
+      "reach": 2697,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 45,
+      "uniqueCtr": 0.0,
+      "cpm": 12.46
+    },
+    {
+      "date": "2026-03-08",
+      "spend": 50.35,
+      "impressions": 3911,
+      "reach": 3206,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 46,
+      "uniqueCtr": 0.0,
+      "cpm": 12.87
+    },
+    {
+      "date": "2026-03-09",
+      "spend": 46.14,
+      "impressions": 3707,
+      "reach": 3052,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 27,
+      "uniqueCtr": 0.0,
+      "cpm": 12.45
+    },
+    {
+      "date": "2026-03-10",
+      "spend": 3.72,
+      "impressions": 377,
+      "reach": 355,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 9.87
+    },
+    {
+      "date": "2026-03-11",
+      "spend": 25.73,
+      "impressions": 2032,
+      "reach": 1825,
+      "leads": 8,
+      "messages": 7,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 12.66
+    },
+    {
+      "date": "2026-03-12",
+      "spend": 71.72,
+      "impressions": 6154,
+      "reach": 5137,
+      "leads": 5,
+      "messages": 8,
+      "linkClicks": 58,
+      "uniqueCtr": 0.0,
+      "cpm": 11.65
+    },
+    {
+      "date": "2026-03-13",
+      "spend": 60.95,
+      "impressions": 4965,
+      "reach": 4317,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 51,
+      "uniqueCtr": 0.0,
+      "cpm": 12.28
+    },
+    {
+      "date": "2026-03-14",
+      "spend": 56.33,
+      "impressions": 4496,
+      "reach": 3691,
+      "leads": 7,
+      "messages": 9,
+      "linkClicks": 39,
+      "uniqueCtr": 0.03,
+      "cpm": 12.53
+    },
+    {
+      "date": "2026-03-15",
+      "spend": 54.72,
+      "impressions": 4196,
+      "reach": 3489,
+      "leads": 8,
+      "messages": 9,
+      "linkClicks": 38,
+      "uniqueCtr": 0.0,
+      "cpm": 13.04
+    },
+    {
+      "date": "2026-03-16",
+      "spend": 46.05,
+      "impressions": 3856,
+      "reach": 3187,
+      "leads": 6,
+      "messages": 5,
+      "linkClicks": 37,
+      "uniqueCtr": 0.0,
+      "cpm": 11.94
+    },
+    {
+      "date": "2026-03-17",
+      "spend": 43.95,
+      "impressions": 3592,
+      "reach": 2972,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 41,
+      "uniqueCtr": 0.0,
+      "cpm": 12.24
+    },
+    {
+      "date": "2026-03-18",
+      "spend": 43.18,
+      "impressions": 3422,
+      "reach": 2866,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 34,
+      "uniqueCtr": 0.0,
+      "cpm": 12.62
+    },
+    {
+      "date": "2026-03-19",
+      "spend": 43.69,
+      "impressions": 3242,
+      "reach": 2667,
+      "leads": 7,
+      "messages": 7,
+      "linkClicks": 39,
+      "uniqueCtr": 0.0,
+      "cpm": 13.48
+    },
+    {
+      "date": "2026-03-20",
+      "spend": 39.13,
+      "impressions": 2803,
+      "reach": 2298,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 19,
+      "uniqueCtr": 0.0,
+      "cpm": 13.96
+    },
+    {
+      "date": "2026-03-21",
+      "spend": 44.22,
+      "impressions": 3157,
+      "reach": 2552,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 26,
+      "uniqueCtr": 0.0,
+      "cpm": 14.01
+    },
+    {
+      "date": "2026-03-22",
+      "spend": 39.35,
+      "impressions": 3008,
+      "reach": 2495,
+      "leads": 7,
+      "messages": 7,
+      "linkClicks": 32,
+      "uniqueCtr": 0.0,
+      "cpm": 13.08
+    },
+    {
+      "date": "2026-03-23",
+      "spend": 37.06,
+      "impressions": 3175,
+      "reach": 2671,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 33,
+      "uniqueCtr": 0.0,
+      "cpm": 11.67
+    },
+    {
+      "date": "2026-03-24",
+      "spend": 56.45,
+      "impressions": 4624,
+      "reach": 3612,
+      "leads": 9,
+      "messages": 8,
+      "linkClicks": 52,
+      "uniqueCtr": 0.0,
+      "cpm": 12.21
+    },
+    {
+      "date": "2026-03-25",
+      "spend": 49.45,
+      "impressions": 3965,
+      "reach": 3319,
+      "leads": 4,
+      "messages": 1,
+      "linkClicks": 31,
+      "uniqueCtr": 0.0,
+      "cpm": 12.47
+    },
+    {
+      "date": "2026-03-26",
+      "spend": 44.52,
+      "impressions": 3775,
+      "reach": 3094,
+      "leads": 7,
+      "messages": 5,
+      "linkClicks": 34,
+      "uniqueCtr": 0.03,
+      "cpm": 11.79
+    },
+    {
+      "date": "2026-03-27",
+      "spend": 43.73,
+      "impressions": 3552,
+      "reach": 3051,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 25,
+      "uniqueCtr": 0.0,
+      "cpm": 12.31
+    },
+    {
+      "date": "2026-03-28",
+      "spend": 44.38,
+      "impressions": 3734,
+      "reach": 3160,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 38,
+      "uniqueCtr": 0.03,
+      "cpm": 11.89
+    },
+    {
+      "date": "2026-03-29",
+      "spend": 50.75,
+      "impressions": 4174,
+      "reach": 3425,
+      "leads": 2,
+      "messages": 6,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 12.16
+    },
+    {
+      "date": "2026-03-30",
+      "spend": 46.54,
+      "impressions": 3924,
+      "reach": 3261,
+      "leads": 2,
+      "messages": 5,
+      "linkClicks": 17,
+      "uniqueCtr": 0.0,
+      "cpm": 11.86
+    },
+    {
+      "date": "2026-03-31",
+      "spend": 43.92,
+      "impressions": 3535,
+      "reach": 2954,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 39,
+      "uniqueCtr": 0.03,
+      "cpm": 12.42
     }
   ],
   "campaignDaily": {
@@ -840,6 +1361,316 @@
       "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
         "spend": 22.06,
         "leads": 5
+      }
+    },
+    "2026-03-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.64,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 27.07,
+        "leads": 1
+      }
+    },
+    "2026-03-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.72,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 24.39,
+        "leads": 4
+      }
+    },
+    "2026-03-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.09,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 21.66,
+        "leads": 5
+      }
+    },
+    "2026-03-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.7,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 21.96,
+        "leads": 4
+      }
+    },
+    "2026-03-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.91,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.83,
+        "leads": 0
+      }
+    },
+    "2026-03-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.03,
+        "leads": 6
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.6,
+        "leads": 1
+      }
+    },
+    "2026-03-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.41,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 16.74,
+        "leads": 4
+      }
+    },
+    "2026-03-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.09,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 23.26,
+        "leads": 3
+      }
+    },
+    "2026-03-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.28,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.86,
+        "leads": 4
+      }
+    },
+    "2026-03-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 1.76,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 1.96,
+        "leads": 0
+      }
+    },
+    "2026-03-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 16.04,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 9.69,
+        "leads": 1
+      }
+    },
+    "2026-03-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 43.19,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 28.53,
+        "leads": 0
+      }
+    },
+    "2026-03-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 32.5,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 28.45,
+        "leads": 1
+      }
+    },
+    "2026-03-14": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 29.11,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 27.22,
+        "leads": 3
+      }
+    },
+    "2026-03-15": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 30.24,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 24.48,
+        "leads": 6
+      }
+    },
+    "2026-03-16": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.57,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.48,
+        "leads": 3
+      }
+    },
+    "2026-03-17": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.41,
+        "leads": 6
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.54,
+        "leads": 2
+      }
+    },
+    "2026-03-18": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.11,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.07,
+        "leads": 2
+      }
+    },
+    "2026-03-19": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.68,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.01,
+        "leads": 2
+      }
+    },
+    "2026-03-20": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.3,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 16.83,
+        "leads": 0
+      }
+    },
+    "2026-03-21": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.66,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.56,
+        "leads": 1
+      }
+    },
+    "2026-03-22": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 21.65,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 17.7,
+        "leads": 0
+      }
+    },
+    "2026-03-23": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 20.08,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 16.98,
+        "leads": 1
+      }
+    },
+    "2026-03-24": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 31.24,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 25.21,
+        "leads": 2
+      }
+    },
+    "2026-03-25": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.85,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 22.6,
+        "leads": 2
+      }
+    },
+    "2026-03-26": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.36,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.16,
+        "leads": 4
+      }
+    },
+    "2026-03-27": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.79,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 18.94,
+        "leads": 2
+      }
+    },
+    "2026-03-28": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.0,
+        "leads": 7
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.38,
+        "leads": 1
+      }
+    },
+    "2026-03-29": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.51,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 22.24,
+        "leads": 1
+      }
+    },
+    "2026-03-30": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.5,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 21.04,
+        "leads": 0
+      }
+    },
+    "2026-03-31": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.56,
+        "leads": 5
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.36,
+        "leads": 1
       }
     }
   }
