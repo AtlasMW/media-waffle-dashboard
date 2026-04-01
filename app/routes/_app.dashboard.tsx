@@ -746,7 +746,11 @@ function renderLeads(l,pl,m) {
         if (s === null || s === undefined) return '--';
         if (s < 60) return s + 's';
         if (s < 3600) return Math.floor(s/60) + 'm ' + (s%60) + 's';
-        return Math.floor(s/3600) + 'h ' + Math.floor((s%3600)/60) + 'm';
+        var d = Math.floor(s/86400);
+        var h = Math.floor((s%86400)/3600);
+        var m = Math.floor((s%3600)/60);
+        if (d > 0) return d + 'd ' + h + 'h ' + m + 'm';
+        return h + 'h ' + m + 'm';
       }
       grid.innerHTML =
         kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
@@ -818,7 +822,11 @@ function renderLeadsRange(l,pl,leads,days) {
         if (s === null || s === undefined) return '--';
         if (s < 60) return s + 's';
         if (s < 3600) return Math.floor(s/60) + 'm ' + (s%60) + 's';
-        return Math.floor(s/3600) + 'h ' + Math.floor((s%3600)/60) + 'm';
+        var d = Math.floor(s/86400);
+        var h = Math.floor((s%86400)/3600);
+        var m = Math.floor((s%3600)/60);
+        if (d > 0) return d + 'd ' + h + 'h ' + m + 'm';
+        return h + 'h ' + m + 'm';
       }
       grid.innerHTML =
         kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
