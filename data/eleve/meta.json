@@ -1,7 +1,7 @@
 {
   "client": "\u00c9lev\u00e9 Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T06:00:49+10:00",
+  "lastUpdated": "2026-04-01T13:21:43+10:00",
   "agencyFees": {
     "2026-02": 1000,
     "2026-03": 1000
@@ -197,8 +197,8 @@
       ]
     },
     "2026-03": {
-      "spend": 1178.22,
-      "impressions": 57822,
+      "spend": 1178.24,
+      "impressions": 57824,
       "reach": 22659,
       "leads": 162,
       "cpl": 7.27,
@@ -212,8 +212,8 @@
       "campaigns": [
         {
           "name": "LEADS // AD+ // ABO // OFFER 3",
-          "spend": 568.78,
-          "impressions": 26965,
+          "spend": 568.79,
+          "impressions": 26966,
           "reach": 13747,
           "leads": 86,
           "cpl": 6.61,
@@ -225,11 +225,11 @@
         },
         {
           "name": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
-          "spend": 466.26,
-          "impressions": 21734,
+          "spend": 466.27,
+          "impressions": 21735,
           "reach": 11633,
           "leads": 76,
-          "cpl": 6.13,
+          "cpl": 6.14,
           "uniqueCtr": 0.0,
           "messages": 72,
           "linkClicks": 274,
@@ -255,14 +255,14 @@
           "name": "LEADS // AD+ // ABO // OFFER 3",
           "leads": 86,
           "cpl": 6.61,
-          "spend": 568.78,
+          "spend": 568.79,
           "campaignPattern": "LEADS // AD+ // ABO // OFFER 3"
         },
         {
           "name": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "leads": 76,
-          "cpl": 6.13,
-          "spend": 466.26,
+          "cpl": 6.14,
+          "spend": 466.27,
           "campaignPattern": "LEADS // AD+ // ABO // AGE 35+ OFFER 3"
         }
       ],
@@ -321,7 +321,7 @@
       "demographics": [
         {
           "age": "18-24",
-          "spend": 340.33,
+          "spend": 340.34,
           "leads": 48
         },
         {
@@ -336,7 +336,7 @@
         },
         {
           "age": "45-54",
-          "spend": 50.96,
+          "spend": 50.97,
           "leads": 7
         },
         {
@@ -398,7 +398,7 @@
         },
         {
           "name": "Instagram Instagram Stories",
-          "spend": 843.47,
+          "spend": 843.49,
           "leads": 133
         }
       ]
@@ -1045,14 +1045,14 @@
     },
     {
       "date": "2026-03-31",
-      "spend": 34.08,
-      "impressions": 1776,
-      "reach": 1520,
+      "spend": 34.1,
+      "impressions": 1778,
+      "reach": 1522,
       "leads": 3,
       "messages": 4,
       "linkClicks": 48,
       "uniqueCtr": 0.0,
-      "cpm": 19.19
+      "cpm": 19.18
     }
   ],
   "campaignDaily": {
@@ -1590,11 +1590,11 @@
     },
     "2026-03-31": {
       "LEADS // AD+ // ABO // OFFER 3": {
-        "spend": 16.45,
+        "spend": 16.46,
         "leads": 2
       },
       "LEADS // AD+ // ABO // AGE 35+ OFFER 3": {
-        "spend": 12.84,
+        "spend": 12.85,
         "leads": 1
       }
     }
