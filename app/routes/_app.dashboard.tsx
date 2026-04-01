@@ -752,6 +752,43 @@ function renderLeads(l,pl,m) {
         if (d > 0) return d + 'd ' + h + 'h ' + m + 'm';
         return h + 'h ' + m + 'm';
       }
+
+      // Calculate business hours response time from raw calls
+      // Business hours: Mon-Sat, clinic opening hours (default 9am-6pm)
+      function calcBizHoursSeconds(oppCreated, callStarted) {
+        if (!oppCreated || !callStarted) return null;
+        var start = new Date(oppCreated);
+        var end = new Date(callStarted);
+        if (isNaN(start) || isNaN(end) || end <= start) return null;
+        var totalBizSec = 0;
+        var cursor = new Date(start);
+        var OPEN_HOUR = 9;
+        var CLOSE_HOUR = 18;
+        while (cursor < end) {
+          var day = cursor.getDay();
+          if (day >= 1 && day <= 6) {
+            var dayStart = new Date(cursor); dayStart.setHours(OPEN_HOUR, 0, 0, 0);
+            var dayEnd = new Date(cursor); dayEnd.setHours(CLOSE_HOUR, 0, 0, 0);
+            var windowStart = cursor > dayStart ? cursor : dayStart;
+            var windowEnd = end < dayEnd ? end : dayEnd;
+            if (windowStart < windowEnd && windowStart < dayEnd && windowEnd > dayStart) {
+              totalBizSec += (windowEnd - windowStart) / 1000;
+            }
+          }
+          cursor = new Date(cursor); cursor.setDate(cursor.getDate() + 1); cursor.setHours(0, 0, 0, 0);
+        }
+        return Math.round(totalBizSec);
+      }
+      var bhTimes = [];
+      if (cm.raw_calls) {
+        cm.raw_calls.forEach(function(c) {
+          if (c.is_first_call && c.opportunity_created_at && c.call_started_at) {
+            var bh = calcBizHoursSeconds(c.opportunity_created_at, c.call_started_at);
+            if (bh !== null) bhTimes.push(bh);
+          }
+        });
+      }
+      var avgBH = bhTimes.length > 0 ? Math.round(bhTimes.reduce(function(a,b){return a+b;},0) / bhTimes.length) : null;
       grid.innerHTML =
         kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
         kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
@@ -759,7 +796,7 @@ function renderLeads(l,pl,m) {
         kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
         kpi('revenue', 'During Business Hours', cm.calls_during_business_hours, '') +
         kpi('cpl', 'Outside Business Hours', cm.calls_outside_business_hours, '') +
-        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(cm.avg_time_to_first_call_bh_seconds), '') +
+        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '') +
         kpi('responded', 'Calls Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '');
     })
     .catch(function(err) {});
@@ -828,6 +865,43 @@ function renderLeadsRange(l,pl,leads,days) {
         if (d > 0) return d + 'd ' + h + 'h ' + m + 'm';
         return h + 'h ' + m + 'm';
       }
+
+      // Calculate business hours response time from raw calls
+      // Business hours: Mon-Sat, clinic opening hours (default 9am-6pm)
+      function calcBizHoursSeconds(oppCreated, callStarted) {
+        if (!oppCreated || !callStarted) return null;
+        var start = new Date(oppCreated);
+        var end = new Date(callStarted);
+        if (isNaN(start) || isNaN(end) || end <= start) return null;
+        var totalBizSec = 0;
+        var cursor = new Date(start);
+        var OPEN_HOUR = 9;
+        var CLOSE_HOUR = 18;
+        while (cursor < end) {
+          var day = cursor.getDay();
+          if (day >= 1 && day <= 6) {
+            var dayStart = new Date(cursor); dayStart.setHours(OPEN_HOUR, 0, 0, 0);
+            var dayEnd = new Date(cursor); dayEnd.setHours(CLOSE_HOUR, 0, 0, 0);
+            var windowStart = cursor > dayStart ? cursor : dayStart;
+            var windowEnd = end < dayEnd ? end : dayEnd;
+            if (windowStart < windowEnd && windowStart < dayEnd && windowEnd > dayStart) {
+              totalBizSec += (windowEnd - windowStart) / 1000;
+            }
+          }
+          cursor = new Date(cursor); cursor.setDate(cursor.getDate() + 1); cursor.setHours(0, 0, 0, 0);
+        }
+        return Math.round(totalBizSec);
+      }
+      var bhTimes = [];
+      if (cm.raw_calls) {
+        cm.raw_calls.forEach(function(c) {
+          if (c.is_first_call && c.opportunity_created_at && c.call_started_at) {
+            var bh = calcBizHoursSeconds(c.opportunity_created_at, c.call_started_at);
+            if (bh !== null) bhTimes.push(bh);
+          }
+        });
+      }
+      var avgBH = bhTimes.length > 0 ? Math.round(bhTimes.reduce(function(a,b){return a+b;},0) / bhTimes.length) : null;
       grid.innerHTML =
         kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
         kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
@@ -835,7 +909,7 @@ function renderLeadsRange(l,pl,leads,days) {
         kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
         kpi('revenue', 'During Business Hours', cm.calls_during_business_hours, '') +
         kpi('cpl', 'Outside Business Hours', cm.calls_outside_business_hours, '') +
-        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(cm.avg_time_to_first_call_bh_seconds), '') +
+        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '') +
         kpi('responded', 'Calls Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '');
     })
     .catch(function(err) {});
