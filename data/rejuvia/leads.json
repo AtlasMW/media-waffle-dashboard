@@ -1,5 +1,1284 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
-  "monthly": {},
-  "allLeads": []
+  "monthly": {
+    "2026-02": {
+      "totalLeads": 30,
+      "responded": 16,
+      "noContact": 0,
+      "inFollowUp": 14,
+      "respondedPct": 53,
+      "booked": 5,
+      "bookedPct": 17,
+      "confirmed": 4,
+      "noShow": 0,
+      "cancelled": 1,
+      "rebooked": 1,
+      "moneyCollected": 977.0,
+      "budget": 565.84,
+      "offers": [
+        {
+          "name": "OFFER 5",
+          "leads": 18,
+          "cpl": 22.12,
+          "booked": 4,
+          "spend": 442.31
+        },
+        {
+          "name": "OFFER 6",
+          "leads": 12,
+          "cpl": 10.29,
+          "booked": 1,
+          "spend": 123.53
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-02-05",
+          "name": "Betty Murison",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-05",
+          "name": "Esther Marina",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-02-07",
+          "name": "Vivienne Tobler",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-05",
+          "name": "Anna de Rooy",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-02-08",
+          "name": "Clare B",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-08",
+          "name": "Ciara Grossmann",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-09",
+          "name": "Linda Owens",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-10",
+          "name": "Courtney Johnstone",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-10",
+          "name": "Zara Anne Whelan",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-11",
+          "name": "Shakuntala Stephanie",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-11",
+          "name": "Shelline Ndirangu",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-02-12",
+          "name": "Renee Melville",
+          "offer": "OFFER 5",
+          "responded": "Yes",
+          "status": "Cancelled"
+        },
+        {
+          "date": "2026-02-12",
+          "name": "Cassie Webb",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-13",
+          "name": "Suzannah Dee",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Ezmeralda Mae",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Gost",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Anamika RL Rana",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-15",
+          "name": "Zac Harvie-Ward",
+          "offer": "OFFER 5",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-24",
+          "name": "Mel Ward",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Erika Emily",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Angelleen Corpz",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Evy",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-25",
+          "name": "Sheryl Gotje",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-26",
+          "name": "Emery Tom",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-27",
+          "name": "Anndlaughlin",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-27",
+          "name": "Alyce Cahill",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-28",
+          "name": "Sharon Tottle",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-28",
+          "name": "Kaye Clark",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-02-28",
+          "name": "Kerri Corey",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-02-28",
+          "name": "Chrissy Reynders",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        }
+      ]
+    },
+    "2026-03": {
+      "totalLeads": 57,
+      "responded": 30,
+      "noContact": 0,
+      "inFollowUp": 27,
+      "respondedPct": 53,
+      "booked": 8,
+      "bookedPct": 14,
+      "confirmed": 3,
+      "noShow": 0,
+      "cancelled": 3,
+      "rebooked": 1,
+      "moneyCollected": 420.0,
+      "budget": 843.31,
+      "offers": [
+        {
+          "name": "OFFER 6",
+          "leads": 57,
+          "cpl": 14.29,
+          "booked": 8,
+          "spend": 843.31
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-03-01",
+          "name": "Carmela Borgo",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-01",
+          "name": "Debbie Lock",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-03-02",
+          "name": "Lindy Launer",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Cancelled Appointment"
+        },
+        {
+          "date": "2026-03-03",
+          "name": "Claire Parry",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Cancelled Appointment"
+        },
+        {
+          "date": "2026-03-04",
+          "name": "Angie Gannon",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-04",
+          "name": "Cherie Hosking",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-06",
+          "name": "Narelle Milligan",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-06",
+          "name": "Siouxsie Aler",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-06",
+          "name": "The fox small bar",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-06",
+          "name": "carmel crook",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-08",
+          "name": "judy lega",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-09",
+          "name": "joanne cawood-smith",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-09",
+          "name": "tracy bentley",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-09",
+          "name": "tracy harrington",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-09",
+          "name": "jenny sheppard",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Cancelled Appointment"
+        },
+        {
+          "date": "2026-03-10",
+          "name": "kim de marchi",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-11",
+          "name": "danielle handley",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-11",
+          "name": "aman",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-12",
+          "name": "akarere maretu",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-12",
+          "name": "marie olsen",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-13",
+          "name": "bernice cooper",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-14",
+          "name": "joanna king",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-14",
+          "name": "emiley rossington",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-03-14",
+          "name": "racquel rose",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-15",
+          "name": "maryann naylor",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-15",
+          "name": "kim mcalonan",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-15",
+          "name": "karma lee",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-15",
+          "name": "julie hendry",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-16",
+          "name": "courtney adams",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-16",
+          "name": "joan hunter",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-03-16",
+          "name": "jasmine brady",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-17",
+          "name": "vindhya tharangani",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-17",
+          "name": "theresa jayne casey",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-17",
+          "name": "del meinrath",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-18",
+          "name": "sarah roberts",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-18",
+          "name": "di oakes",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-03-18",
+          "name": "jennifer crisp",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-18",
+          "name": "chelle anne",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-03-19",
+          "name": "jenny tenni",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "c",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "cheryl macgregor",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "tracy dyke",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "jodie coldwell",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "varopana tora",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "anita morton",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "melissa chandler",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "tash dent",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-27",
+          "name": "tammy seymour",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-27",
+          "name": "taryn sullivan",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-27",
+          "name": "wahidah nicholson",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-27",
+          "name": "elyn juv",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "vanessa rimon",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "julie starke",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "sa baker",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "tracey fisk",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "manuela moro",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "julia zaph",
+          "offer": "OFFER 6",
+          "responded": "Yes",
+          "status": ""
+        }
+      ]
+    }
+  },
+  "allLeads": [
+    {
+      "date": "2026-02-05",
+      "name": "Betty Murison",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-05",
+      "name": "Esther Marina",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-02-07",
+      "name": "Vivienne Tobler",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-05",
+      "name": "Anna de Rooy",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-02-08",
+      "name": "Clare B",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-08",
+      "name": "Ciara Grossmann",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-09",
+      "name": "Linda Owens",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-10",
+      "name": "Courtney Johnstone",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-10",
+      "name": "Zara Anne Whelan",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-11",
+      "name": "Shakuntala Stephanie",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-11",
+      "name": "Shelline Ndirangu",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-02-12",
+      "name": "Renee Melville",
+      "offer": "OFFER 5",
+      "responded": "Yes",
+      "status": "Cancelled"
+    },
+    {
+      "date": "2026-02-12",
+      "name": "Cassie Webb",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-13",
+      "name": "Suzannah Dee",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-15",
+      "name": "Ezmeralda Mae",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-15",
+      "name": "Gost",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-15",
+      "name": "Anamika RL Rana",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-15",
+      "name": "Zac Harvie-Ward",
+      "offer": "OFFER 5",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-24",
+      "name": "Mel Ward",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-25",
+      "name": "Erika Emily",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-02-25",
+      "name": "Angelleen Corpz",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-25",
+      "name": "Evy",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-25",
+      "name": "Sheryl Gotje",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-26",
+      "name": "Emery Tom",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-27",
+      "name": "Anndlaughlin",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-27",
+      "name": "Alyce Cahill",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-28",
+      "name": "Sharon Tottle",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-28",
+      "name": "Kaye Clark",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-02-28",
+      "name": "Kerri Corey",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-02-28",
+      "name": "Chrissy Reynders",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-01",
+      "name": "Carmela Borgo",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-01",
+      "name": "Debbie Lock",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-03-02",
+      "name": "Lindy Launer",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Cancelled Appointment"
+    },
+    {
+      "date": "2026-03-03",
+      "name": "Claire Parry",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Cancelled Appointment"
+    },
+    {
+      "date": "2026-03-04",
+      "name": "Angie Gannon",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-04",
+      "name": "Cherie Hosking",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-06",
+      "name": "Narelle Milligan",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-06",
+      "name": "Siouxsie Aler",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-06",
+      "name": "The fox small bar",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-06",
+      "name": "carmel crook",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-08",
+      "name": "judy lega",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-09",
+      "name": "joanne cawood-smith",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-09",
+      "name": "tracy bentley",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-09",
+      "name": "tracy harrington",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-09",
+      "name": "jenny sheppard",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Cancelled Appointment"
+    },
+    {
+      "date": "2026-03-10",
+      "name": "kim de marchi",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-11",
+      "name": "danielle handley",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-11",
+      "name": "aman",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-12",
+      "name": "akarere maretu",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-12",
+      "name": "marie olsen",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-13",
+      "name": "bernice cooper",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-14",
+      "name": "joanna king",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-14",
+      "name": "emiley rossington",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-03-14",
+      "name": "racquel rose",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-15",
+      "name": "maryann naylor",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-15",
+      "name": "kim mcalonan",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-15",
+      "name": "karma lee",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-15",
+      "name": "julie hendry",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-16",
+      "name": "courtney adams",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-16",
+      "name": "joan hunter",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-03-16",
+      "name": "jasmine brady",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-17",
+      "name": "vindhya tharangani",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-17",
+      "name": "theresa jayne casey",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-17",
+      "name": "del meinrath",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-18",
+      "name": "sarah roberts",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-18",
+      "name": "di oakes",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-03-18",
+      "name": "jennifer crisp",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-18",
+      "name": "chelle anne",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-03-19",
+      "name": "jenny tenni",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "c",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "cheryl macgregor",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "tracy dyke",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "jodie coldwell",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "varopana tora",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "anita morton",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "melissa chandler",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "tash dent",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-27",
+      "name": "tammy seymour",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-27",
+      "name": "taryn sullivan",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-27",
+      "name": "wahidah nicholson",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-27",
+      "name": "elyn juv",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "vanessa rimon",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "julie starke",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "sa baker",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "tracey fisk",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "manuela moro",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "julia zaph",
+      "offer": "OFFER 6",
+      "responded": "Yes",
+      "status": ""
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T06:01:04+10:00",
+  "lastUpdated": "2026-04-01T13:21:59+10:00",
   "agencyFees": {
     "2026-02": 0,
     "2026-03": 0
@@ -197,8 +197,8 @@
       ]
     },
     "2026-03": {
-      "spend": 843.18,
-      "impressions": 50059,
+      "spend": 843.31,
+      "impressions": 50067,
       "reach": 12419,
       "leads": 59,
       "cpl": 14.29,
@@ -206,22 +206,22 @@
       "costPerMessage": 15.33,
       "uniqueCtr": 0.08,
       "cpm": 16.84,
-      "linkClicks": 460,
+      "linkClicks": 461,
       "cpc": 1.83,
-      "leadConvPct": 12.83,
+      "leadConvPct": 12.8,
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 843.18,
-          "impressions": 50059,
+          "spend": 843.31,
+          "impressions": 50067,
           "reach": 12419,
           "leads": 59,
           "cpl": 14.29,
           "uniqueCtr": 0.08,
           "messages": 55,
-          "linkClicks": 460,
+          "linkClicks": 461,
           "cpc": 1.83,
-          "leadConvPct": 12.83
+          "leadConvPct": 12.8
         }
       ],
       "offers": [
@@ -229,7 +229,7 @@
           "name": "LEADS // CBO // OFFER 6 BROWS",
           "leads": 59,
           "cpl": 14.29,
-          "spend": 843.18,
+          "spend": 843.31,
           "campaignPattern": "LEADS // CBO // OFFER 6 BROWS"
         }
       ],
@@ -248,9 +248,9 @@
           "adName": "IMG 1 | H1 & 3 - C1 - Copy",
           "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
           "campaignName": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 261.81,
+          "spend": 261.91,
           "leads": 23,
-          "cpl": 11.38,
+          "cpl": 11.39,
           "uniqueCtr": 0.09,
           "frequency": 2.43
         },
@@ -268,7 +268,7 @@
           "adName": "VIDEO 2 | H2 - C1 - Copy",
           "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
           "campaignName": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 241.09,
+          "spend": 241.12,
           "leads": 19,
           "cpl": 12.69,
           "uniqueCtr": 0.0,
@@ -298,7 +298,7 @@
         },
         {
           "age": "35-44",
-          "spend": 163.98,
+          "spend": 164.01,
           "leads": 10
         },
         {
@@ -308,12 +308,12 @@
         },
         {
           "age": "55-64",
-          "spend": 196.76,
+          "spend": 196.83,
           "leads": 14
         },
         {
           "age": "65+",
-          "spend": 169.03,
+          "spend": 169.06,
           "leads": 14
         }
       ],
@@ -325,7 +325,7 @@
         },
         {
           "name": "Facebook Facebook Reels",
-          "spend": 98.51,
+          "spend": 98.53,
           "leads": 4
         },
         {
@@ -340,7 +340,7 @@
         },
         {
           "name": "Facebook Feed",
-          "spend": 569.71,
+          "spend": 569.82,
           "leads": 44
         },
         {
@@ -918,14 +918,14 @@
     },
     {
       "date": "2026-03-31",
-      "spend": 26.07,
-      "impressions": 1516,
-      "reach": 1256,
+      "spend": 26.2,
+      "impressions": 1524,
+      "reach": 1264,
       "leads": 0,
       "messages": 0,
-      "linkClicks": 5,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
-      "cpm": 17.2
+      "cpm": 17.19
     }
   ],
   "campaignDaily": {
@@ -1225,7 +1225,7 @@
     },
     "2026-03-31": {
       "LEADS // CBO // OFFER 6 BROWS": {
-        "spend": 26.07,
+        "spend": 26.2,
         "leads": 0
       }
     }
