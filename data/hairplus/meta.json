@@ -1,7 +1,7 @@
 {
   "client": "The Hair Plus Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T06:01:18+10:00",
+  "lastUpdated": "2026-04-01T13:22:15+10:00",
   "agencyFees": {
     "2026-02": 990,
     "2026-03": 990
@@ -217,13 +217,13 @@
       ]
     },
     "2026-03": {
-      "spend": 776.52,
-      "impressions": 33793,
+      "spend": 776.6,
+      "impressions": 33796,
       "reach": 13041,
       "leads": 35,
       "cpl": 22.19,
       "messages": 8,
-      "costPerMessage": 97.06,
+      "costPerMessage": 97.08,
       "uniqueCtr": 0.12,
       "cpm": 22.98,
       "linkClicks": 362,
@@ -245,8 +245,8 @@
         },
         {
           "name": "LEADS // ABO //OFFER 1 [RELAUNCHED]",
-          "spend": 719.08,
-          "impressions": 29900,
+          "spend": 719.16,
+          "impressions": 29903,
           "reach": 11954,
           "leads": 32,
           "cpl": 22.47,
@@ -269,7 +269,7 @@
           "name": "LEADS // ABO //OFFER 1 [RELAUNCHED]",
           "leads": 32,
           "cpl": 22.47,
-          "spend": 719.08,
+          "spend": 719.16,
           "campaignPattern": "LEADS // ABO //OFFER 1 [RELAUNCHED]"
         }
       ],
@@ -288,9 +288,9 @@
           "adName": "Video 2 | H2-C1",
           "adSetName": "Platinum Hair Regrowth package (Female)",
           "campaignName": "LEADS // ABO //OFFER 1 [RELAUNCHED]",
-          "spend": 36.98,
+          "spend": 37.03,
           "leads": 5,
-          "cpl": 7.4,
+          "cpl": 7.41,
           "uniqueCtr": 0.27,
           "frequency": 1.76
         },
@@ -318,9 +318,9 @@
           "adName": "Video 1 | H2-C1",
           "adSetName": "Platinum Hair Regrowth package (Female)",
           "campaignName": "LEADS // ABO //OFFER 1 [RELAUNCHED]",
-          "spend": 238.98,
+          "spend": 239.01,
           "leads": 8,
-          "cpl": 29.87,
+          "cpl": 29.88,
           "uniqueCtr": 0.11,
           "frequency": 1.71
         }
@@ -343,7 +343,7 @@
         },
         {
           "age": "45-54",
-          "spend": 173.75,
+          "spend": 173.83,
           "leads": 9
         },
         {
@@ -370,7 +370,7 @@
         },
         {
           "name": "Facebook Facebook Reels",
-          "spend": 217.69,
+          "spend": 217.72,
           "leads": 13
         },
         {
@@ -380,7 +380,7 @@
         },
         {
           "name": "Facebook Feed",
-          "spend": 394.8,
+          "spend": 394.85,
           "leads": 13
         },
         {
@@ -1067,14 +1067,14 @@
     },
     {
       "date": "2026-03-31",
-      "spend": 32.23,
-      "impressions": 1336,
-      "reach": 1122,
+      "spend": 32.31,
+      "impressions": 1339,
+      "reach": 1124,
       "leads": 1,
       "messages": 0,
       "linkClicks": 13,
       "uniqueCtr": 0.0,
-      "cpm": 24.12
+      "cpm": 24.13
     }
   ],
   "campaignDaily": {
@@ -1464,7 +1464,7 @@
     },
     "2026-03-31": {
       "LEADS // ABO //OFFER 1 [RELAUNCHED]": {
-        "spend": 32.23,
+        "spend": 32.31,
         "leads": 1
       }
     }
