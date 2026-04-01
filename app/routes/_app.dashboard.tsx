@@ -797,7 +797,10 @@ function renderLeads(l,pl,m) {
         kpi('revenue', 'During Business Hours', cm.calls_during_business_hours, '') +
         kpi('cpl', 'Outside Business Hours', cm.calls_outside_business_hours, '') +
         kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '') +
-        kpi('responded', 'Calls Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '');
+        kpi('responded', 'Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '') +
+        kpi('cpl', 'No Answer', (cm.status_breakdown && cm.status_breakdown['no-answer']) || 0, '') +
+        kpi('ctr', 'Voicemail', (cm.status_breakdown && cm.status_breakdown.voicemail) || 0, '') +
+        kpi('conv', 'Answer Rate', cm.total_outbound_calls > 0 ? Math.round(((cm.status_breakdown && cm.status_breakdown.completed) || 0) / cm.total_outbound_calls * 100) + '%' : '--', '');
     })
     .catch(function(err) {});
 }
@@ -910,7 +913,10 @@ function renderLeadsRange(l,pl,leads,days) {
         kpi('revenue', 'During Business Hours', cm.calls_during_business_hours, '') +
         kpi('cpl', 'Outside Business Hours', cm.calls_outside_business_hours, '') +
         kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '') +
-        kpi('responded', 'Calls Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '');
+        kpi('responded', 'Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '') +
+        kpi('cpl', 'No Answer', (cm.status_breakdown && cm.status_breakdown['no-answer']) || 0, '') +
+        kpi('ctr', 'Voicemail', (cm.status_breakdown && cm.status_breakdown.voicemail) || 0, '') +
+        kpi('conv', 'Answer Rate', cm.total_outbound_calls > 0 ? Math.round(((cm.status_breakdown && cm.status_breakdown.completed) || 0) / cm.total_outbound_calls * 100) + '%' : '--', '');
     })
     .catch(function(err) {});
 }
