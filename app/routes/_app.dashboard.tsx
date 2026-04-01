@@ -797,7 +797,7 @@ function renderLeads(l,pl,m) {
             var dur = c.call_duration || 0;
             var st = (c.call_status || '').toLowerCase();
             if (st === 'voicemail') { voicemail++; }
-            else if (st === 'completed' && dur > 15) { answered++; }
+            else if (st === 'completed' && dur > 10) { answered++; }
             else { notAnswered++; }
           });
         }
@@ -925,7 +925,7 @@ function renderLeadsRange(l,pl,leads,days) {
             var dur = c.call_duration || 0;
             var st = (c.call_status || '').toLowerCase();
             if (st === 'voicemail') { voicemail++; }
-            else if (st === 'completed' && dur > 15) { answered++; }
+            else if (st === 'completed' && dur > 10) { answered++; }
             else { notAnswered++; }
           });
         }
