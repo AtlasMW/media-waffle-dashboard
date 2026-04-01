@@ -1,0 +1,108 @@
+{
+  "client": "Vernalys Skin & Laser Clinic",
+  "lastUpdated": "2026-03-10T06:00:00+10:00",
+  "monthly": {
+    "2025-12": {
+      "totalLeads": 125,
+      "responded": 48,
+      "noContact": 52,
+      "inFollowUp": 25,
+      "booked": 28,
+      "confirmed": 22,
+      "noShow": 4,
+      "cancelled": 6,
+      "respondedPct": 38.4,
+      "bookedPct": 22.4,
+      "confirmedPct": 17.6,
+      "noShowPct": 3.2,
+      "cancelledPct": 4.8,
+      "moneyCollected": 5650,
+      "avgTransactionValue": 256.82,
+      "budget": 832.45,
+      "offers": [
+        { "name": "PICO Laser Treatment", "leads": 85, "cpl": 6.03, "booked": 20 },
+        { "name": "Skin Rejuvenation Package", "leads": 40, "cpl": 8.00, "booked": 8 }
+      ],
+      "leads": [
+        { "date": "2025-12-02", "name": "Sarah M.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2025-12-03", "name": "Jessica L.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2025-12-04", "name": "Emily R.", "offer": "Skin Rejuvenation Package", "responded": "No contact", "status": "" },
+        { "date": "2025-12-05", "name": "Michelle T.", "offer": "PICO Laser Treatment", "responded": "In follow up", "status": "" },
+        { "date": "2025-12-06", "name": "Lauren K.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "No Show" },
+        { "date": "2025-12-08", "name": "Amanda W.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2025-12-09", "name": "Rebecca H.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" },
+        { "date": "2025-12-10", "name": "Nicole P.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Cancelled" },
+        { "date": "2025-12-11", "name": "Stephanie G.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2025-12-12", "name": "Catherine D.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" }
+      ]
+    },
+    "2026-01": {
+      "totalLeads": 187,
+      "responded": 72,
+      "noContact": 78,
+      "inFollowUp": 37,
+      "booked": 38,
+      "confirmed": 30,
+      "noShow": 5,
+      "cancelled": 8,
+      "respondedPct": 38.5,
+      "bookedPct": 20.3,
+      "confirmedPct": 16.0,
+      "noShowPct": 2.7,
+      "cancelledPct": 4.3,
+      "moneyCollected": 5422,
+      "avgTransactionValue": 180.73,
+      "budget": 1798.12,
+      "offers": [
+        { "name": "PICO Laser Treatment", "leads": 128, "cpl": 8.75, "booked": 28 },
+        { "name": "Skin Rejuvenation Package", "leads": 59, "cpl": 11.49, "booked": 10 }
+      ],
+      "leads": [
+        { "date": "2026-01-02", "name": "Anna B.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-01-03", "name": "Megan S.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" },
+        { "date": "2026-01-05", "name": "Olivia C.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-01-06", "name": "Hannah J.", "offer": "PICO Laser Treatment", "responded": "In follow up", "status": "" },
+        { "date": "2026-01-07", "name": "Grace F.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "No Show" },
+        { "date": "2026-01-09", "name": "Sophie M.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Cancelled" },
+        { "date": "2026-01-10", "name": "Isabella W.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" },
+        { "date": "2026-01-12", "name": "Charlotte R.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-01-14", "name": "Emma T.", "offer": "Skin Rejuvenation Package", "responded": "No contact", "status": "" },
+        { "date": "2026-01-15", "name": "Zoe A.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" }
+      ]
+    },
+    "2026-02": {
+      "totalLeads": 213,
+      "responded": 84,
+      "noContact": 88,
+      "inFollowUp": 41,
+      "booked": 42,
+      "confirmed": 28,
+      "noShow": 6,
+      "cancelled": 14,
+      "respondedPct": 39.4,
+      "bookedPct": 19.7,
+      "confirmedPct": 13.1,
+      "noShowPct": 2.8,
+      "cancelledPct": 6.6,
+      "moneyCollected": 2033,
+      "avgTransactionValue": 72.61,
+      "budget": 1742.83,
+      "offers": [
+        { "name": "PICO Laser Treatment", "leads": 148, "cpl": 7.37, "booked": 30 },
+        { "name": "Skin Rejuvenation Package", "leads": 65, "cpl": 10.04, "booked": 12 }
+      ],
+      "leads": [
+        { "date": "2026-02-01", "name": "Lucy P.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-02-02", "name": "Chloe N.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" },
+        { "date": "2026-02-03", "name": "Ella V.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Cancelled" },
+        { "date": "2026-02-04", "name": "Ruby M.", "offer": "PICO Laser Treatment", "responded": "In follow up", "status": "" },
+        { "date": "2026-02-06", "name": "Lily K.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-02-07", "name": "Amelia H.", "offer": "Skin Rejuvenation Package", "responded": "No contact", "status": "" },
+        { "date": "2026-02-09", "name": "Maya D.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "No Show" },
+        { "date": "2026-02-10", "name": "Sienna L.", "offer": "PICO Laser Treatment", "responded": "Yes", "status": "Cancelled" },
+        { "date": "2026-02-12", "name": "Ivy C.", "offer": "Skin Rejuvenation Package", "responded": "Yes", "status": "Confirmed" },
+        { "date": "2026-02-14", "name": "Willow T.", "offer": "PICO Laser Treatment", "responded": "No contact", "status": "" }
+      ]
+    }
+  }
+}

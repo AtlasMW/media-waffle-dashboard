@@ -1,0 +1,519 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/login": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth.callback": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api.generate-link": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.admin.index": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.admin.clients": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.admin.clients.$slug": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.admin.invite": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.dashboard": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub._index": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.admin.clients": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.admin.onboarding": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.brand": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.settings": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.offers": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.faqs": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.locations": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.conversations": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.escalations": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/_app.hub.$slug.training": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "app/root.tsx",
+        "path": "",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/login": {
+        "id": "routes/login",
+        "parentId": "root",
+        "file": "app/routes/login.tsx",
+        "path": "login",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth.callback": {
+        "id": "routes/auth.callback",
+        "parentId": "root",
+        "file": "app/routes/auth.callback.tsx",
+        "path": "auth/callback",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api.generate-link": {
+        "id": "routes/api.generate-link",
+        "parentId": "root",
+        "file": "app/routes/api.generate-link.tsx",
+        "path": "api/generate-link",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app": {
+        "id": "routes/_app",
+        "parentId": "root",
+        "file": "app/routes/_app.tsx",
+        "config": {}
+      },
+      "routes/_app.admin": {
+        "id": "routes/_app.admin",
+        "parentId": "routes/_app",
+        "file": "app/routes/_app.admin.tsx",
+        "path": "admin",
+        "config": {}
+      },
+      "routes/_app.admin.index": {
+        "id": "routes/_app.admin.index",
+        "parentId": "routes/_app.admin",
+        "file": "app/routes/_app.admin.index.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.admin.clients": {
+        "id": "routes/_app.admin.clients",
+        "parentId": "routes/_app.admin",
+        "file": "app/routes/_app.admin.clients.tsx",
+        "path": "clients",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.admin.clients.$slug": {
+        "id": "routes/_app.admin.clients.$slug",
+        "parentId": "routes/_app.admin",
+        "file": "app/routes/_app.admin.clients.$slug.tsx",
+        "path": "clients/:slug",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.admin.invite": {
+        "id": "routes/_app.admin.invite",
+        "parentId": "routes/_app.admin",
+        "file": "app/routes/_app.admin.invite.tsx",
+        "path": "invite",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.dashboard": {
+        "id": "routes/_app.dashboard",
+        "parentId": "routes/_app",
+        "file": "app/routes/_app.dashboard.tsx",
+        "path": "dashboard/:slug?",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub": {
+        "id": "routes/_app.hub",
+        "parentId": "routes/_app",
+        "file": "app/routes/_app.hub.tsx",
+        "path": "hub",
+        "config": {}
+      },
+      "routes/_app.hub._index": {
+        "id": "routes/_app.hub._index",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub._index.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.admin.clients": {
+        "id": "routes/_app.hub.admin.clients",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.admin.clients.tsx",
+        "path": "admin/clients",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.admin.onboarding": {
+        "id": "routes/_app.hub.admin.onboarding",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.admin.onboarding.tsx",
+        "path": "admin/onboarding",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.brand": {
+        "id": "routes/_app.hub.$slug.brand",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.brand.tsx",
+        "path": ":slug/brand",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.settings": {
+        "id": "routes/_app.hub.$slug.settings",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.settings.tsx",
+        "path": ":slug/settings",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.offers": {
+        "id": "routes/_app.hub.$slug.offers",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.offers.tsx",
+        "path": ":slug/offers",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.faqs": {
+        "id": "routes/_app.hub.$slug.faqs",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.faqs.tsx",
+        "path": ":slug/faqs",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.locations": {
+        "id": "routes/_app.hub.$slug.locations",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.locations.tsx",
+        "path": ":slug/locations",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.conversations": {
+        "id": "routes/_app.hub.$slug.conversations",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.conversations.tsx",
+        "path": ":slug/conversations",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.escalations": {
+        "id": "routes/_app.hub.$slug.escalations",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.escalations.tsx",
+        "path": ":slug/escalations",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/_app.hub.$slug.training": {
+        "id": "routes/_app.hub.$slug.training",
+        "parentId": "routes/_app.hub",
+        "file": "app/routes/_app.hub.$slug.training.tsx",
+        "path": ":slug/training",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/atlasdrifter/.openclaw/workspace/dashboard-app/app",
+    "basename": "/",
+    "buildDirectory": "/Users/atlasdrifter/.openclaw/workspace/dashboard-app/build",
+    "future": {
+      "unstable_optimizeDeps": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_trailingSlashAwareDataRequests": false,
+      "v8_middleware": false,
+      "v8_splitRouteModules": false,
+      "v8_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/login": {
+        "id": "routes/login",
+        "parentId": "root",
+        "file": "routes/login.tsx",
+        "path": "login"
+      },
+      "routes/auth.callback": {
+        "id": "routes/auth.callback",
+        "parentId": "root",
+        "file": "routes/auth.callback.tsx",
+        "path": "auth/callback"
+      },
+      "routes/api.generate-link": {
+        "id": "routes/api.generate-link",
+        "parentId": "root",
+        "file": "routes/api.generate-link.tsx",
+        "path": "api/generate-link"
+      },
+      "routes/_app": {
+        "id": "routes/_app",
+        "parentId": "root",
+        "file": "routes/_app.tsx"
+      },
+      "routes/_app.admin": {
+        "id": "routes/_app.admin",
+        "parentId": "routes/_app",
+        "file": "routes/_app.admin.tsx",
+        "path": "admin"
+      },
+      "routes/_app.admin.index": {
+        "id": "routes/_app.admin.index",
+        "parentId": "routes/_app.admin",
+        "file": "routes/_app.admin.index.tsx",
+        "index": true
+      },
+      "routes/_app.admin.clients": {
+        "id": "routes/_app.admin.clients",
+        "parentId": "routes/_app.admin",
+        "file": "routes/_app.admin.clients.tsx",
+        "path": "clients"
+      },
+      "routes/_app.admin.clients.$slug": {
+        "id": "routes/_app.admin.clients.$slug",
+        "parentId": "routes/_app.admin",
+        "file": "routes/_app.admin.clients.$slug.tsx",
+        "path": "clients/:slug"
+      },
+      "routes/_app.admin.invite": {
+        "id": "routes/_app.admin.invite",
+        "parentId": "routes/_app.admin",
+        "file": "routes/_app.admin.invite.tsx",
+        "path": "invite"
+      },
+      "routes/_app.dashboard": {
+        "id": "routes/_app.dashboard",
+        "parentId": "routes/_app",
+        "file": "routes/_app.dashboard.tsx",
+        "path": "dashboard/:slug?"
+      },
+      "routes/_app.hub": {
+        "id": "routes/_app.hub",
+        "parentId": "routes/_app",
+        "file": "routes/_app.hub.tsx",
+        "path": "hub"
+      },
+      "routes/_app.hub._index": {
+        "id": "routes/_app.hub._index",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub._index.tsx",
+        "index": true
+      },
+      "routes/_app.hub.admin.clients": {
+        "id": "routes/_app.hub.admin.clients",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.admin.clients.tsx",
+        "path": "admin/clients"
+      },
+      "routes/_app.hub.admin.onboarding": {
+        "id": "routes/_app.hub.admin.onboarding",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.admin.onboarding.tsx",
+        "path": "admin/onboarding"
+      },
+      "routes/_app.hub.$slug.brand": {
+        "id": "routes/_app.hub.$slug.brand",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.brand.tsx",
+        "path": ":slug/brand"
+      },
+      "routes/_app.hub.$slug.settings": {
+        "id": "routes/_app.hub.$slug.settings",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.settings.tsx",
+        "path": ":slug/settings"
+      },
+      "routes/_app.hub.$slug.offers": {
+        "id": "routes/_app.hub.$slug.offers",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.offers.tsx",
+        "path": ":slug/offers"
+      },
+      "routes/_app.hub.$slug.faqs": {
+        "id": "routes/_app.hub.$slug.faqs",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.faqs.tsx",
+        "path": ":slug/faqs"
+      },
+      "routes/_app.hub.$slug.locations": {
+        "id": "routes/_app.hub.$slug.locations",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.locations.tsx",
+        "path": ":slug/locations"
+      },
+      "routes/_app.hub.$slug.conversations": {
+        "id": "routes/_app.hub.$slug.conversations",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.conversations.tsx",
+        "path": ":slug/conversations"
+      },
+      "routes/_app.hub.$slug.escalations": {
+        "id": "routes/_app.hub.$slug.escalations",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.escalations.tsx",
+        "path": ":slug/escalations"
+      },
+      "routes/_app.hub.$slug.training": {
+        "id": "routes/_app.hub.$slug.training",
+        "parentId": "routes/_app.hub",
+        "file": "routes/_app.hub.$slug.training.tsx",
+        "path": ":slug/training"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true,
+    "allowedActionOrigins": false,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "routes/home.tsx",
+            "index": true
+          },
+          {
+            "file": "routes/login.tsx",
+            "path": "login"
+          },
+          {
+            "file": "routes/auth.callback.tsx",
+            "path": "auth/callback"
+          },
+          {
+            "file": "routes/api.generate-link.tsx",
+            "path": "api/generate-link"
+          },
+          {
+            "file": "routes/_app.tsx",
+            "children": [
+              {
+                "file": "routes/_app.admin.tsx",
+                "children": [
+                  {
+                    "file": "routes/_app.admin.index.tsx",
+                    "index": true
+                  },
+                  {
+                    "file": "routes/_app.admin.clients.tsx",
+                    "path": "clients"
+                  },
+                  {
+                    "file": "routes/_app.admin.clients.$slug.tsx",
+                    "path": "clients/:slug"
+                  },
+                  {
+                    "file": "routes/_app.admin.invite.tsx",
+                    "path": "invite"
+                  }
+                ],
+                "path": "admin"
+              },
+              {
+                "file": "routes/_app.dashboard.tsx",
+                "path": "dashboard/:slug?"
+              },
+              {
+                "file": "routes/_app.hub.tsx",
+                "children": [
+                  {
+                    "file": "routes/_app.hub._index.tsx",
+                    "index": true
+                  },
+                  {
+                    "file": "routes/_app.hub.admin.clients.tsx",
+                    "path": "admin/clients"
+                  },
+                  {
+                    "file": "routes/_app.hub.admin.onboarding.tsx",
+                    "path": "admin/onboarding"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.brand.tsx",
+                    "path": ":slug/brand"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.settings.tsx",
+                    "path": ":slug/settings"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.offers.tsx",
+                    "path": ":slug/offers"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.faqs.tsx",
+                    "path": ":slug/faqs"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.locations.tsx",
+                    "path": ":slug/locations"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.conversations.tsx",
+                    "path": ":slug/conversations"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.escalations.tsx",
+                    "path": ":slug/escalations"
+                  },
+                  {
+                    "file": "routes/_app.hub.$slug.training.tsx",
+                    "path": ":slug/training"
+                  }
+                ],
+                "path": "hub"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

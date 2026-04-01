@@ -1,295 +1,70 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "lastUpdated": "2026-03-16T02:03:12+10:00",
+  "lastUpdated": "2026-04-01T13:21:25+10:00",
   "agencyFees": {
-    "2026-01": 1500,
-    "2026-02": 1500
+    "2026-02": 1500,
+    "2026-03": 1500
   },
   "monthly": {
-    "2026-01": {
-      "spend": 1239.29,
-      "impressions": 43978,
-      "reach": 12139,
-      "leads": 144,
-      "cpl": 8.6,
-      "messages": 21,
-      "costPerMessage": 59.01,
-      "uniqueCtr": 0.86,
-      "cpm": 28.18,
-      "leadConvPct": 138.46,
-      "campaigns": [
-        {
-          "name": "OMG | Website purchases",
-          "spend": 169.29,
-          "impressions": 7917,
-          "reach": 3090,
-          "leads": 51,
-          "cpl": 3.32,
-          "uniqueCtr": 3.27,
-          "messages": 1,
-          "leadConvPct": 50.5
-        },
-        {
-          "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "spend": 1070.0,
-          "impressions": 36061,
-          "reach": 9781,
-          "leads": 93,
-          "cpl": 11.5,
-          "uniqueCtr": 0.03,
-          "messages": 20,
-          "leadConvPct": 3100.0
-        }
-      ],
-      "offers": [
-        {
-          "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "leads": 93,
-          "cpl": 11.5,
-          "spend": 1070.0,
-          "campaignPattern": "LEADS // ABO // OFFER 1 - Refined Skin Radiance"
-        }
-      ],
-      "ads": [
-        {
-          "adName": "Aug'25_Ad2_Boosted post_Circadia Firming Peptide Facial",
-          "adSetName": "TOF | Skin Treatments",
-          "campaignName": "OMG | Website purchases",
-          "spend": 45.17,
-          "leads": 29,
-          "cpl": 1.55,
-          "uniqueCtr": 1.56,
-          "frequency": 1.59
-        },
-        {
-          "adName": "TOF | Skin Treatments | Video - Existing Post - Treating pigment? It\u2019s not just about the laser.",
-          "adSetName": "TOF | Skin Treatments",
-          "campaignName": "OMG | Website purchases",
-          "spend": 38.73,
-          "leads": 11,
-          "cpl": 3.52,
-          "uniqueCtr": 2.02,
-          "frequency": 1.79
-        },
-        {
-          "adName": "AD 2- H1+ C1",
-          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "spend": 77.56,
-          "leads": 13,
-          "cpl": 5.97,
-          "uniqueCtr": 0.06,
-          "frequency": 2.04
-        },
-        {
-          "adName": "AD 2- H1+ C1",
-          "adSetName": "LLA EMAIL LIST // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "spend": 36.33,
-          "leads": 5,
-          "cpl": 7.27,
-          "uniqueCtr": 0.0,
-          "frequency": 1.36
-        },
-        {
-          "adName": "VIDEO 1 - H1+ C1",
-          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "spend": 708.99,
-          "leads": 63,
-          "cpl": 11.25,
-          "uniqueCtr": 0.01,
-          "frequency": 2.63
-        }
-      ],
-      "demographics": [
-        {
-          "age": "18-24",
-          "spend": 19.22,
-          "leads": 1
-        },
-        {
-          "age": "25-34",
-          "spend": 118.05,
-          "leads": 22
-        },
-        {
-          "age": "35-44",
-          "spend": 279.96,
-          "leads": 44
-        },
-        {
-          "age": "45-54",
-          "spend": 337.51,
-          "leads": 39
-        },
-        {
-          "age": "55-64",
-          "spend": 296.7,
-          "leads": 25
-        },
-        {
-          "age": "65+",
-          "spend": 187.84,
-          "leads": 13
-        }
-      ],
-      "placements": [
-        {
-          "name": "Audience_Network An Classic",
-          "spend": 1.86,
-          "leads": 9
-        },
-        {
-          "name": "Audience_Network Rewarded Video",
-          "spend": 1.78,
-          "leads": 2
-        },
-        {
-          "name": "Facebook Facebook Reels",
-          "spend": 61.41,
-          "leads": 10
-        },
-        {
-          "name": "Facebook Facebook Reels Overlay",
-          "spend": 2.42,
-          "leads": 3
-        },
-        {
-          "name": "Facebook Facebook Stories",
-          "spend": 143.08,
-          "leads": 9
-        },
-        {
-          "name": "Facebook Feed",
-          "spend": 457.75,
-          "leads": 63
-        },
-        {
-          "name": "Facebook Instream Video",
-          "spend": 24.49,
-          "leads": 1
-        },
-        {
-          "name": "Facebook Right Hand Column",
-          "spend": 0.17,
-          "leads": 0
-        },
-        {
-          "name": "Facebook Search",
-          "spend": 1.07,
-          "leads": 0
-        },
-        {
-          "name": "Instagram Feed",
-          "spend": 247.04,
-          "leads": 32
-        },
-        {
-          "name": "Instagram Instagram Explore",
-          "spend": 0.11,
-          "leads": 1
-        },
-        {
-          "name": "Instagram Instagram Reels",
-          "spend": 82.09,
-          "leads": 10
-        },
-        {
-          "name": "Instagram Instagram Stories",
-          "spend": 215.95,
-          "leads": 4
-        },
-        {
-          "name": "Threads Threads Feed",
-          "spend": 0.08,
-          "leads": 0
-        }
-      ]
-    },
     "2026-02": {
       "spend": 1412.41,
       "impressions": 41671,
       "reach": 11842,
-      "leads": 141,
-      "cpl": 10.01,
+      "leads": 74,
+      "cpl": 19.08,
       "messages": 44,
       "costPerMessage": 32.1,
       "uniqueCtr": 0.08,
       "cpm": 33.9,
-      "leadConvPct": 1566.67,
+      "linkClicks": 577,
+      "cpc": 1.58,
+      "leadConvPct": 12.82,
       "campaigns": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
           "spend": 691.86,
           "impressions": 21040,
           "reach": 8757,
-          "leads": 35,
-          "cpl": 19.76,
+          "leads": 13,
+          "cpl": 53.23,
           "uniqueCtr": 0.02,
           "messages": 10,
-          "leadConvPct": 1750.0
+          "linkClicks": 160,
+          "cpc": 2.79,
+          "leadConvPct": 8.12
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
           "spend": 720.55,
           "impressions": 20631,
           "reach": 6554,
-          "leads": 106,
-          "cpl": 6.8,
+          "leads": 61,
+          "cpl": 11.81,
           "uniqueCtr": 0.11,
           "messages": 34,
-          "leadConvPct": 1514.29
+          "linkClicks": 417,
+          "cpc": 1.11,
+          "leadConvPct": 14.63
         }
       ],
       "offers": [
         {
           "name": "LEADS // ABO // OFFER 1 - Refined Skin Radiance",
-          "leads": 35,
-          "cpl": 19.76,
+          "leads": 13,
+          "cpl": 53.23,
           "spend": 691.86,
           "campaignPattern": "LEADS // ABO // OFFER 1 - Refined Skin Radiance"
         },
         {
           "name": "LEADS // ABO // OFFER 2 - HIFU",
-          "leads": 106,
-          "cpl": 6.8,
+          "leads": 61,
+          "cpl": 11.81,
           "spend": 720.55,
           "campaignPattern": "LEADS // ABO // OFFER 2 - HIFU"
         }
       ],
       "ads": [
-        {
-          "adName": "VIDEO AD 2 OLD - H1,3 C2",
-          "adSetName": "BROAD NO DT // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
-          "spend": 179.04,
-          "leads": 34,
-          "cpl": 5.27,
-          "uniqueCtr": 0.12,
-          "frequency": 1.85
-        },
-        {
-          "adName": "VIDEO AD 1 - H1,3 C2-3 - Copy",
-          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
-          "spend": 202.35,
-          "leads": 35,
-          "cpl": 5.78,
-          "uniqueCtr": 0.06,
-          "frequency": 1.79
-        },
-        {
-          "adName": "AD 1 - H1 C1",
-          "adSetName": "BROAD NO DT // WOMEN 27+ // CRONULLA",
-          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
-          "spend": 24.97,
-          "leads": 4,
-          "cpl": 6.25,
-          "uniqueCtr": 0.0,
-          "frequency": 1.41
-        },
         {
           "adName": "VIDEO AD 1 - H1,3 C2-3",
           "adSetName": "BROAD NO DT // WOMEN 27+ // CRONULLA",
@@ -305,10 +80,40 @@
           "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
           "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
           "spend": 209.1,
-          "leads": 22,
-          "cpl": 9.5,
+          "leads": 18,
+          "cpl": 11.61,
           "uniqueCtr": 0.03,
           "frequency": 1.82
+        },
+        {
+          "adName": "AD 1 - H1 C1 - Copy",
+          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 35.54,
+          "leads": 3,
+          "cpl": 11.84,
+          "uniqueCtr": 0.0,
+          "frequency": 1.74
+        },
+        {
+          "adName": "VIDEO AD 2 OLD - H1,3 C2",
+          "adSetName": "BROAD NO DT // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 179.04,
+          "leads": 15,
+          "cpl": 11.94,
+          "uniqueCtr": 0.12,
+          "frequency": 1.85
+        },
+        {
+          "adName": "VIDEO AD 1 - H1,3 C2-3 - Copy",
+          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 202.35,
+          "leads": 16,
+          "cpl": 12.65,
+          "uniqueCtr": 0.06,
+          "frequency": 1.79
         }
       ],
       "demographics": [
@@ -320,27 +125,27 @@
         {
           "age": "25-34",
           "spend": 95.34,
-          "leads": 10
+          "leads": 4
         },
         {
           "age": "35-44",
           "spend": 258.93,
-          "leads": 38
+          "leads": 9
         },
         {
           "age": "45-54",
           "spend": 390.55,
-          "leads": 37
+          "leads": 30
         },
         {
           "age": "55-64",
           "spend": 381.98,
-          "leads": 41
+          "leads": 20
         },
         {
           "age": "65+",
           "spend": 270.91,
-          "leads": 14
+          "leads": 10
         }
       ],
       "placements": [
@@ -357,17 +162,17 @@
         {
           "name": "Facebook Facebook Stories",
           "spend": 169.41,
-          "leads": 5
+          "leads": 4
         },
         {
           "name": "Facebook Feed",
           "spend": 398.13,
-          "leads": 47
+          "leads": 11
         },
         {
           "name": "Facebook Instream Video",
           "spend": 45.18,
-          "leads": 2
+          "leads": 0
         },
         {
           "name": "Facebook Search",
@@ -377,7 +182,7 @@
         {
           "name": "Instagram Feed",
           "spend": 159.22,
-          "leads": 17
+          "leads": 13
         },
         {
           "name": "Instagram Instagram Explore",
@@ -387,314 +192,259 @@
         {
           "name": "Instagram Instagram Reels",
           "spend": 133.45,
-          "leads": 15
+          "leads": 13
         },
         {
           "name": "Instagram Instagram Stories",
           "spend": 289.66,
-          "leads": 39
+          "leads": 17
+        }
+      ]
+    },
+    "2026-03": {
+      "spend": 1779.26,
+      "impressions": 46791,
+      "reach": 12996,
+      "leads": 72,
+      "cpl": 24.71,
+      "messages": 37,
+      "costPerMessage": 48.08,
+      "uniqueCtr": 1.77,
+      "cpm": 38.02,
+      "linkClicks": 814,
+      "cpc": 1.41,
+      "leadConvPct": 8.85,
+      "campaigns": [
+        {
+          "name": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 1279.15,
+          "impressions": 33897,
+          "reach": 10234,
+          "leads": 59,
+          "cpl": 21.68,
+          "uniqueCtr": 0.05,
+          "messages": 35,
+          "linkClicks": 539,
+          "cpc": 1.53,
+          "leadConvPct": 10.95
+        },
+        {
+          "name": "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU",
+          "spend": 406.81,
+          "impressions": 10889,
+          "reach": 3728,
+          "leads": 5,
+          "cpl": 81.36,
+          "uniqueCtr": 6.04,
+          "messages": 1,
+          "linkClicks": 225,
+          "cpc": 1.17,
+          "leadConvPct": 2.22
+        },
+        {
+          "name": "LEADS // ABO // MOF// OFFER 2 - HIFU",
+          "spend": 93.29,
+          "impressions": 2005,
+          "reach": 1282,
+          "leads": 8,
+          "cpl": 11.66,
+          "uniqueCtr": 0.0,
+          "messages": 1,
+          "linkClicks": 50,
+          "cpc": 1.2,
+          "leadConvPct": 16.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // ABO // OFFER 2 - HIFU",
+          "leads": 59,
+          "cpl": 21.68,
+          "spend": 1279.15,
+          "campaignPattern": "LEADS // ABO // OFFER 2 - HIFU"
+        },
+        {
+          "name": "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU",
+          "leads": 5,
+          "cpl": 81.36,
+          "spend": 406.81,
+          "campaignPattern": "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU"
+        },
+        {
+          "name": "LEADS // ABO // MOF// OFFER 2 - HIFU",
+          "leads": 8,
+          "cpl": 11.66,
+          "spend": 93.29,
+          "campaignPattern": "LEADS // ABO // MOF// OFFER 2 - HIFU"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "VIDEO AD 2 OLD - H1,3 C2",
+          "adSetName": "WARM // WOMEN 25+ // CRONULLA",
+          "campaignName": "LEADS // ABO // MOF// OFFER 2 - HIFU",
+          "spend": 54.51,
+          "leads": 7,
+          "cpl": 7.78,
+          "uniqueCtr": 0.0,
+          "frequency": 1.43
+        },
+        {
+          "adName": "VIDEO AD 2 OLD - H1,3 C2 - Copy",
+          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 676.31,
+          "leads": 37,
+          "cpl": 18.27,
+          "uniqueCtr": 0.01,
+          "frequency": 2.33
+        },
+        {
+          "adName": "VIDEO AD 1 - H1,3 C2-3 - Copy",
+          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 260.11,
+          "leads": 13,
+          "cpl": 20.01,
+          "uniqueCtr": 0.06,
+          "frequency": 1.65
+        },
+        {
+          "adName": "AD 2 - H2,3 C2 - Copy",
+          "adSetName": "DT BEAUTY SALON // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 66.09,
+          "leads": 2,
+          "cpl": 33.05,
+          "uniqueCtr": 0.0,
+          "frequency": 2.07
+        },
+        {
+          "adName": "VIDEO AD 2 OLD - H1,3 C2",
+          "adSetName": "BROAD NO DT // WOMEN 27+ // CRONULLA",
+          "campaignName": "LEADS // ABO // OFFER 2 - HIFU",
+          "spend": 76.6,
+          "leads": 2,
+          "cpl": 38.3,
+          "uniqueCtr": 0.0,
+          "frequency": 1.29
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 8.66,
+          "leads": 0
+        },
+        {
+          "age": "25-34",
+          "spend": 83.17,
+          "leads": 7
+        },
+        {
+          "age": "35-44",
+          "spend": 271.37,
+          "leads": 12
+        },
+        {
+          "age": "45-54",
+          "spend": 537.9,
+          "leads": 20
+        },
+        {
+          "age": "55-64",
+          "spend": 551.72,
+          "leads": 20
+        },
+        {
+          "age": "65+",
+          "spend": 326.43,
+          "leads": 13
+        }
+      ],
+      "placements": [
+        {
+          "name": "Audience_Network An Classic",
+          "spend": 0.46,
+          "leads": 0
+        },
+        {
+          "name": "Audience_Network Rewarded Video",
+          "spend": 0.85,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 347.29,
+          "leads": 17
+        },
+        {
+          "name": "Facebook Facebook Reels Overlay",
+          "spend": 1.6,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 145.67,
+          "leads": 3
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 511.38,
+          "leads": 11
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 35.93,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Right Hand Column",
+          "spend": 0.08,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Search",
+          "spend": 0.31,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 153.56,
+          "leads": 9
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.06,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 192.06,
+          "leads": 7
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 389.45,
+          "leads": 25
+        },
+        {
+          "name": "Threads Threads Feed",
+          "spend": 0.56,
+          "leads": 0
         }
       ]
     }
   },
   "daily": [
     {
-      "date": "2026-01-01",
-      "spend": 33.54,
-      "impressions": 1718,
-      "reach": 1103,
-      "leads": 15,
-      "messages": 0,
-      "uniqueCtr": 1.72,
-      "cpm": 19.53
-    },
-    {
-      "date": "2026-01-02",
-      "spend": 39.43,
-      "impressions": 1902,
-      "reach": 1131,
-      "leads": 8,
-      "messages": 0,
-      "uniqueCtr": 1.68,
-      "cpm": 20.74
-    },
-    {
-      "date": "2026-01-03",
-      "spend": 40.39,
-      "impressions": 1778,
-      "reach": 1105,
-      "leads": 14,
-      "messages": 0,
-      "uniqueCtr": 2.08,
-      "cpm": 22.72
-    },
-    {
-      "date": "2026-01-04",
-      "spend": 40.53,
-      "impressions": 1851,
-      "reach": 1068,
-      "leads": 7,
-      "messages": 0,
-      "uniqueCtr": 3.46,
-      "cpm": 21.9
-    },
-    {
-      "date": "2026-01-05",
-      "spend": 15.39,
-      "impressions": 668,
-      "reach": 463,
-      "leads": 3,
-      "messages": 0,
-      "uniqueCtr": 0.65,
-      "cpm": 23.05
-    },
-    {
-      "date": "2026-01-06",
-      "spend": 0.0,
-      "impressions": 0,
-      "reach": 0,
-      "leads": 1,
-      "messages": 1,
-      "uniqueCtr": 0,
-      "cpm": 0.0
-    },
-    {
-      "date": "2026-01-07",
-      "spend": 0.0,
-      "impressions": 0,
-      "reach": 0,
-      "leads": 0,
-      "messages": 0,
-      "uniqueCtr": 0,
-      "cpm": 0.0
-    },
-    {
-      "date": "2026-01-08",
-      "spend": 0.0,
-      "impressions": 0,
-      "reach": 0,
-      "leads": 0,
-      "messages": 0,
-      "uniqueCtr": 0,
-      "cpm": 0.0
-    },
-    {
-      "date": "2026-01-09",
-      "spend": 0.0,
-      "impressions": 0,
-      "reach": 0,
-      "leads": 3,
-      "messages": 0,
-      "uniqueCtr": 0,
-      "cpm": 0.0
-    },
-    {
-      "date": "2026-01-12",
-      "spend": 46.69,
-      "impressions": 1838,
-      "reach": 1175,
-      "leads": 0,
-      "messages": 1,
-      "uniqueCtr": 0.09,
-      "cpm": 25.4
-    },
-    {
-      "date": "2026-01-13",
-      "spend": 48.96,
-      "impressions": 1602,
-      "reach": 1088,
-      "leads": 1,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 30.57
-    },
-    {
-      "date": "2026-01-14",
-      "spend": 55.38,
-      "impressions": 1678,
-      "reach": 1187,
-      "leads": 9,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 33.0
-    },
-    {
-      "date": "2026-01-15",
-      "spend": 55.01,
-      "impressions": 1760,
-      "reach": 1318,
-      "leads": 4,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 31.25
-    },
-    {
-      "date": "2026-01-16",
-      "spend": 52.62,
-      "impressions": 1628,
-      "reach": 1196,
-      "leads": 6,
-      "messages": 2,
-      "uniqueCtr": 0.0,
-      "cpm": 32.32
-    },
-    {
-      "date": "2026-01-17",
-      "spend": 54.0,
-      "impressions": 1557,
-      "reach": 1200,
-      "leads": 11,
-      "messages": 2,
-      "uniqueCtr": 0.0,
-      "cpm": 34.69
-    },
-    {
-      "date": "2026-01-18",
-      "spend": 59.44,
-      "impressions": 1772,
-      "reach": 1343,
-      "leads": 6,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 33.54
-    },
-    {
-      "date": "2026-01-19",
-      "spend": 57.66,
-      "impressions": 1919,
-      "reach": 1512,
-      "leads": 3,
-      "messages": 2,
-      "uniqueCtr": 0.07,
-      "cpm": 30.05
-    },
-    {
-      "date": "2026-01-20",
-      "spend": 54.22,
-      "impressions": 1679,
-      "reach": 1333,
-      "leads": 3,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 32.29
-    },
-    {
-      "date": "2026-01-21",
-      "spend": 51.93,
-      "impressions": 1826,
-      "reach": 1368,
-      "leads": 9,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 28.44
-    },
-    {
-      "date": "2026-01-22",
-      "spend": 52.31,
-      "impressions": 1731,
-      "reach": 1374,
-      "leads": 4,
-      "messages": 2,
-      "uniqueCtr": 0.07,
-      "cpm": 30.23
-    },
-    {
-      "date": "2026-01-23",
-      "spend": 51.79,
-      "impressions": 1689,
-      "reach": 1442,
-      "leads": 2,
-      "messages": 2,
-      "uniqueCtr": 0.0,
-      "cpm": 30.66
-    },
-    {
-      "date": "2026-01-24",
-      "spend": 51.13,
-      "impressions": 1547,
-      "reach": 1324,
-      "leads": 3,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 33.06
-    },
-    {
-      "date": "2026-01-25",
-      "spend": 57.51,
-      "impressions": 2174,
-      "reach": 1779,
-      "leads": 6,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 26.46
-    },
-    {
-      "date": "2026-01-26",
-      "spend": 59.43,
-      "impressions": 2178,
-      "reach": 1744,
-      "leads": 10,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 27.28
-    },
-    {
-      "date": "2026-01-27",
-      "spend": 54.31,
-      "impressions": 2016,
-      "reach": 1578,
-      "leads": 0,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 26.94
-    },
-    {
-      "date": "2026-01-28",
-      "spend": 52.62,
-      "impressions": 1802,
-      "reach": 1438,
-      "leads": 1,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 29.2
-    },
-    {
-      "date": "2026-01-29",
-      "spend": 50.28,
-      "impressions": 1841,
-      "reach": 1446,
-      "leads": 3,
-      "messages": 2,
-      "uniqueCtr": 0.0,
-      "cpm": 27.31
-    },
-    {
-      "date": "2026-01-30",
-      "spend": 51.41,
-      "impressions": 1901,
-      "reach": 1408,
-      "leads": 7,
-      "messages": 1,
-      "uniqueCtr": 0.0,
-      "cpm": 27.05
-    },
-    {
-      "date": "2026-01-31",
-      "spend": 53.29,
-      "impressions": 1923,
-      "reach": 1410,
-      "leads": 5,
-      "messages": 0,
-      "uniqueCtr": 0.0,
-      "cpm": 27.71
-    },
-    {
       "date": "2026-02-01",
       "spend": 71.97,
       "impressions": 2434,
       "reach": 1830,
-      "leads": 3,
+      "leads": 2,
       "messages": 1,
+      "linkClicks": 17,
       "uniqueCtr": 0.0,
       "cpm": 29.57
     },
@@ -705,6 +455,7 @@
       "reach": 1384,
       "leads": 2,
       "messages": 3,
+      "linkClicks": 14,
       "uniqueCtr": 0.07,
       "cpm": 30.88
     },
@@ -713,8 +464,9 @@
       "spend": 45.73,
       "impressions": 1478,
       "reach": 1145,
-      "leads": 3,
+      "leads": 1,
       "messages": 1,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 30.94
     },
@@ -725,6 +477,7 @@
       "reach": 1131,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 16,
       "uniqueCtr": 0.0,
       "cpm": 31.03
     },
@@ -735,6 +488,7 @@
       "reach": 1131,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 30.72
     },
@@ -743,8 +497,9 @@
       "spend": 40.9,
       "impressions": 1315,
       "reach": 1071,
-      "leads": 1,
+      "leads": 0,
       "messages": 1,
+      "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 31.11
     },
@@ -755,6 +510,7 @@
       "reach": 773,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 7,
       "uniqueCtr": 0.0,
       "cpm": 38.91
     },
@@ -763,8 +519,9 @@
       "spend": 46.27,
       "impressions": 1636,
       "reach": 1349,
-      "leads": 3,
+      "leads": 1,
       "messages": 0,
+      "linkClicks": 11,
       "uniqueCtr": 0.0,
       "cpm": 28.29
     },
@@ -775,6 +532,7 @@
       "reach": 1036,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 8,
       "uniqueCtr": 0.0,
       "cpm": 34.72
     },
@@ -783,8 +541,9 @@
       "spend": 40.21,
       "impressions": 1191,
       "reach": 972,
-      "leads": 2,
+      "leads": 1,
       "messages": 1,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
       "cpm": 33.76
     },
@@ -795,6 +554,7 @@
       "reach": 1550,
       "leads": 1,
       "messages": 3,
+      "linkClicks": 26,
       "uniqueCtr": 0.06,
       "cpm": 41.37
     },
@@ -803,8 +563,9 @@
       "spend": 72.35,
       "impressions": 1779,
       "reach": 1254,
-      "leads": 16,
+      "leads": 9,
       "messages": 5,
+      "linkClicks": 26,
       "uniqueCtr": 0.0,
       "cpm": 40.67
     },
@@ -813,8 +574,9 @@
       "spend": 75.8,
       "impressions": 2206,
       "reach": 1688,
-      "leads": 23,
+      "leads": 4,
       "messages": 2,
+      "linkClicks": 42,
       "uniqueCtr": 0.06,
       "cpm": 34.36
     },
@@ -823,8 +585,9 @@
       "spend": 57.58,
       "impressions": 1635,
       "reach": 1260,
-      "leads": 9,
+      "leads": 7,
       "messages": 2,
+      "linkClicks": 23,
       "uniqueCtr": 0.08,
       "cpm": 35.22
     },
@@ -833,8 +596,9 @@
       "spend": 69.04,
       "impressions": 2120,
       "reach": 1569,
-      "leads": 8,
+      "leads": 3,
       "messages": 3,
+      "linkClicks": 37,
       "uniqueCtr": 0.06,
       "cpm": 32.57
     },
@@ -843,8 +607,9 @@
       "spend": 71.67,
       "impressions": 2223,
       "reach": 1670,
-      "leads": 6,
+      "leads": 4,
       "messages": 2,
+      "linkClicks": 32,
       "uniqueCtr": 0.0,
       "cpm": 32.24
     },
@@ -853,8 +618,9 @@
       "spend": 57.23,
       "impressions": 1583,
       "reach": 1231,
-      "leads": 4,
+      "leads": 3,
       "messages": 2,
+      "linkClicks": 25,
       "uniqueCtr": 0.0,
       "cpm": 36.15
     },
@@ -863,8 +629,9 @@
       "spend": 39.9,
       "impressions": 1295,
       "reach": 1049,
-      "leads": 5,
+      "leads": 3,
       "messages": 3,
+      "linkClicks": 17,
       "uniqueCtr": 0.0,
       "cpm": 30.81
     },
@@ -875,6 +642,7 @@
       "reach": 932,
       "leads": 0,
       "messages": 0,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 34.95
     },
@@ -885,6 +653,7 @@
       "reach": 857,
       "leads": 2,
       "messages": 2,
+      "linkClicks": 28,
       "uniqueCtr": 0.0,
       "cpm": 40.55
     },
@@ -895,6 +664,7 @@
       "reach": 912,
       "leads": 5,
       "messages": 1,
+      "linkClicks": 26,
       "uniqueCtr": 0.0,
       "cpm": 35.42
     },
@@ -905,6 +675,7 @@
       "reach": 1148,
       "leads": 6,
       "messages": 2,
+      "linkClicks": 30,
       "uniqueCtr": 0.09,
       "cpm": 33.56
     },
@@ -913,8 +684,9 @@
       "spend": 43.37,
       "impressions": 1423,
       "reach": 1173,
-      "leads": 4,
+      "leads": 1,
       "messages": 2,
+      "linkClicks": 28,
       "uniqueCtr": 0.0,
       "cpm": 30.47
     },
@@ -923,8 +695,9 @@
       "spend": 41.45,
       "impressions": 1117,
       "reach": 912,
-      "leads": 9,
+      "leads": 2,
       "messages": 2,
+      "linkClicks": 15,
       "uniqueCtr": 0.0,
       "cpm": 37.11
     },
@@ -935,6 +708,7 @@
       "reach": 934,
       "leads": 2,
       "messages": 0,
+      "linkClicks": 19,
       "uniqueCtr": 0.0,
       "cpm": 34.75
     },
@@ -943,8 +717,9 @@
       "spend": 41.76,
       "impressions": 1103,
       "reach": 947,
-      "leads": 5,
+      "leads": 4,
       "messages": 2,
+      "linkClicks": 23,
       "uniqueCtr": 0.32,
       "cpm": 37.85
     },
@@ -953,8 +728,9 @@
       "spend": 43.38,
       "impressions": 1233,
       "reach": 972,
-      "leads": 12,
+      "leads": 7,
       "messages": 3,
+      "linkClicks": 24,
       "uniqueCtr": 0.0,
       "cpm": 35.19
     },
@@ -963,10 +739,824 @@
       "spend": 40.32,
       "impressions": 1262,
       "reach": 1056,
-      "leads": 10,
+      "leads": 4,
       "messages": 1,
+      "linkClicks": 23,
       "uniqueCtr": 0.0,
       "cpm": 31.95
+    },
+    {
+      "date": "2026-03-01",
+      "spend": 47.23,
+      "impressions": 1527,
+      "reach": 1218,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 31,
+      "uniqueCtr": 0.08,
+      "cpm": 30.92
+    },
+    {
+      "date": "2026-03-02",
+      "spend": 42.69,
+      "impressions": 1381,
+      "reach": 1133,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 30.91
+    },
+    {
+      "date": "2026-03-03",
+      "spend": 59.81,
+      "impressions": 1871,
+      "reach": 1432,
+      "leads": 4,
+      "messages": 2,
+      "linkClicks": 31,
+      "uniqueCtr": 0.35,
+      "cpm": 31.98
+    },
+    {
+      "date": "2026-03-04",
+      "spend": 77.05,
+      "impressions": 2245,
+      "reach": 1619,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 37,
+      "uniqueCtr": 1.3,
+      "cpm": 34.32
+    },
+    {
+      "date": "2026-03-05",
+      "spend": 82.17,
+      "impressions": 2097,
+      "reach": 1599,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 38,
+      "uniqueCtr": 1.25,
+      "cpm": 39.18
+    },
+    {
+      "date": "2026-03-06",
+      "spend": 94.04,
+      "impressions": 2251,
+      "reach": 1677,
+      "leads": 6,
+      "messages": 2,
+      "linkClicks": 46,
+      "uniqueCtr": 1.79,
+      "cpm": 41.77
+    },
+    {
+      "date": "2026-03-07",
+      "spend": 79.3,
+      "impressions": 2224,
+      "reach": 1580,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 37,
+      "uniqueCtr": 1.65,
+      "cpm": 35.65
+    },
+    {
+      "date": "2026-03-08",
+      "spend": 87.13,
+      "impressions": 2270,
+      "reach": 1650,
+      "leads": 5,
+      "messages": 2,
+      "linkClicks": 39,
+      "uniqueCtr": 1.52,
+      "cpm": 38.38
+    },
+    {
+      "date": "2026-03-09",
+      "spend": 77.92,
+      "impressions": 2027,
+      "reach": 1452,
+      "leads": 3,
+      "messages": 1,
+      "linkClicks": 35,
+      "uniqueCtr": 1.17,
+      "cpm": 38.44
+    },
+    {
+      "date": "2026-03-10",
+      "spend": 63.86,
+      "impressions": 1434,
+      "reach": 1068,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 30,
+      "uniqueCtr": 1.31,
+      "cpm": 44.53
+    },
+    {
+      "date": "2026-03-11",
+      "spend": 56.65,
+      "impressions": 1451,
+      "reach": 1088,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 26,
+      "uniqueCtr": 1.29,
+      "cpm": 39.04
+    },
+    {
+      "date": "2026-03-12",
+      "spend": 57.16,
+      "impressions": 1524,
+      "reach": 1155,
+      "leads": 3,
+      "messages": 0,
+      "linkClicks": 28,
+      "uniqueCtr": 1.47,
+      "cpm": 37.51
+    },
+    {
+      "date": "2026-03-13",
+      "spend": 55.21,
+      "impressions": 1483,
+      "reach": 1131,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 25,
+      "uniqueCtr": 0.88,
+      "cpm": 37.23
+    },
+    {
+      "date": "2026-03-14",
+      "spend": 56.59,
+      "impressions": 1645,
+      "reach": 1337,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 37,
+      "uniqueCtr": 1.2,
+      "cpm": 34.39
+    },
+    {
+      "date": "2026-03-15",
+      "spend": 72.15,
+      "impressions": 2191,
+      "reach": 1746,
+      "leads": 5,
+      "messages": 2,
+      "linkClicks": 36,
+      "uniqueCtr": 0.74,
+      "cpm": 32.94
+    },
+    {
+      "date": "2026-03-16",
+      "spend": 59.15,
+      "impressions": 1641,
+      "reach": 1303,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 30,
+      "uniqueCtr": 0.0,
+      "cpm": 36.04
+    },
+    {
+      "date": "2026-03-17",
+      "spend": 37.84,
+      "impressions": 933,
+      "reach": 786,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 17,
+      "uniqueCtr": 0.0,
+      "cpm": 40.55
+    },
+    {
+      "date": "2026-03-18",
+      "spend": 50.41,
+      "impressions": 1377,
+      "reach": 1127,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 23,
+      "uniqueCtr": 0.0,
+      "cpm": 36.61
+    },
+    {
+      "date": "2026-03-19",
+      "spend": 55.41,
+      "impressions": 1216,
+      "reach": 993,
+      "leads": 3,
+      "messages": 1,
+      "linkClicks": 17,
+      "uniqueCtr": 0.0,
+      "cpm": 45.57
+    },
+    {
+      "date": "2026-03-20",
+      "spend": 39.59,
+      "impressions": 989,
+      "reach": 858,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 40.02
+    },
+    {
+      "date": "2026-03-21",
+      "spend": 42.87,
+      "impressions": 1074,
+      "reach": 870,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 13,
+      "uniqueCtr": 0.11,
+      "cpm": 39.91
+    },
+    {
+      "date": "2026-03-22",
+      "spend": 55.55,
+      "impressions": 1523,
+      "reach": 1282,
+      "leads": 2,
+      "messages": 0,
+      "linkClicks": 33,
+      "uniqueCtr": 0.0,
+      "cpm": 36.47
+    },
+    {
+      "date": "2026-03-23",
+      "spend": 50.14,
+      "impressions": 1262,
+      "reach": 1041,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 22,
+      "uniqueCtr": 0.0,
+      "cpm": 39.73
+    },
+    {
+      "date": "2026-03-24",
+      "spend": 52.17,
+      "impressions": 1153,
+      "reach": 926,
+      "leads": 4,
+      "messages": 3,
+      "linkClicks": 16,
+      "uniqueCtr": 0.0,
+      "cpm": 45.24
+    },
+    {
+      "date": "2026-03-25",
+      "spend": 52.93,
+      "impressions": 1217,
+      "reach": 982,
+      "leads": 3,
+      "messages": 1,
+      "linkClicks": 32,
+      "uniqueCtr": 0.0,
+      "cpm": 43.49
+    },
+    {
+      "date": "2026-03-26",
+      "spend": 42.28,
+      "impressions": 966,
+      "reach": 810,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 43.77
+    },
+    {
+      "date": "2026-03-27",
+      "spend": 48.53,
+      "impressions": 1226,
+      "reach": 1024,
+      "leads": 6,
+      "messages": 3,
+      "linkClicks": 20,
+      "uniqueCtr": 0.0,
+      "cpm": 39.59
+    },
+    {
+      "date": "2026-03-28",
+      "spend": 43.38,
+      "impressions": 1026,
+      "reach": 873,
+      "leads": 3,
+      "messages": 0,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 42.28
+    },
+    {
+      "date": "2026-03-29",
+      "spend": 54.51,
+      "impressions": 1418,
+      "reach": 1225,
+      "leads": 1,
+      "messages": 0,
+      "linkClicks": 16,
+      "uniqueCtr": 0.0,
+      "cpm": 38.44
+    },
+    {
+      "date": "2026-03-30",
+      "spend": 56.44,
+      "impressions": 1473,
+      "reach": 1251,
+      "leads": 2,
+      "messages": 0,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 38.32
+    },
+    {
+      "date": "2026-03-31",
+      "spend": 29.09,
+      "impressions": 676,
+      "reach": 596,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 43.04
     }
-  ]
+  ],
+  "campaignDaily": {
+    "2026-02-01": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 71.97,
+        "leads": 2
+      }
+    },
+    "2026-02-02": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 55.47,
+        "leads": 2
+      }
+    },
+    "2026-02-03": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 45.73,
+        "leads": 1
+      }
+    },
+    "2026-02-04": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 42.39,
+        "leads": 0
+      }
+    },
+    "2026-02-05": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 42.36,
+        "leads": 0
+      }
+    },
+    "2026-02-06": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 40.9,
+        "leads": 0
+      }
+    },
+    "2026-02-07": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 35.22,
+        "leads": 0
+      }
+    },
+    "2026-02-08": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 46.27,
+        "leads": 1
+      }
+    },
+    "2026-02-09": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 44.76,
+        "leads": 0
+      }
+    },
+    "2026-02-10": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 40.21,
+        "leads": 1
+      }
+    },
+    "2026-02-11": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 53.75,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 29.64,
+        "leads": 1
+      }
+    },
+    "2026-02-12": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 36.98,
+        "leads": 5
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 35.37,
+        "leads": 4
+      }
+    },
+    "2026-02-13": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 38.78,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 37.01,
+        "leads": 4
+      }
+    },
+    "2026-02-14": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 22.79,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 34.8,
+        "leads": 7
+      }
+    },
+    "2026-02-15": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 30.13,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 38.91,
+        "leads": 2
+      }
+    },
+    "2026-02-16": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 32.55,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.12,
+        "leads": 4
+      }
+    },
+    "2026-02-17": {
+      "LEADS // ABO // OFFER 1 - Refined Skin Radiance": {
+        "spend": 11.59,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 45.63,
+        "leads": 3
+      }
+    },
+    "2026-02-18": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.9,
+        "leads": 3
+      }
+    },
+    "2026-02-19": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.47,
+        "leads": 0
+      }
+    },
+    "2026-02-20": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 42.5,
+        "leads": 2
+      }
+    },
+    "2026-02-21": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.39,
+        "leads": 5
+      }
+    },
+    "2026-02-22": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 47.31,
+        "leads": 6
+      }
+    },
+    "2026-02-23": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 43.37,
+        "leads": 1
+      }
+    },
+    "2026-02-24": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 41.45,
+        "leads": 2
+      }
+    },
+    "2026-02-25": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.24,
+        "leads": 2
+      }
+    },
+    "2026-02-26": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 41.76,
+        "leads": 4
+      }
+    },
+    "2026-02-27": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 43.38,
+        "leads": 7
+      }
+    },
+    "2026-02-28": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.32,
+        "leads": 4
+      }
+    },
+    "2026-03-01": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 47.23,
+        "leads": 1
+      }
+    },
+    "2026-03-02": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 42.69,
+        "leads": 0
+      }
+    },
+    "2026-03-03": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.26,
+        "leads": 3
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 20.55,
+        "leads": 1
+      }
+    },
+    "2026-03-04": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 41.76,
+        "leads": 2
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 35.29,
+        "leads": 0
+      }
+    },
+    "2026-03-05": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 42.44,
+        "leads": 1
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 39.73,
+        "leads": 1
+      }
+    },
+    "2026-03-06": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 44.56,
+        "leads": 5
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 49.48,
+        "leads": 1
+      }
+    },
+    "2026-03-07": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.34,
+        "leads": 0
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 39.96,
+        "leads": 0
+      }
+    },
+    "2026-03-08": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 44.0,
+        "leads": 4
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 43.12,
+        "leads": 1
+      }
+    },
+    "2026-03-09": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 44.18,
+        "leads": 3
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 33.74,
+        "leads": 0
+      }
+    },
+    "2026-03-10": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 40.1,
+        "leads": 2
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 23.76,
+        "leads": 0
+      }
+    },
+    "2026-03-11": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 33.87,
+        "leads": 1
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 22.79,
+        "leads": 0
+      }
+    },
+    "2026-03-12": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 35.32,
+        "leads": 3
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 21.84,
+        "leads": 0
+      }
+    },
+    "2026-03-13": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 35.76,
+        "leads": 1
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 19.45,
+        "leads": 0
+      }
+    },
+    "2026-03-14": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 33.36,
+        "leads": 3
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 23.23,
+        "leads": 0
+      }
+    },
+    "2026-03-15": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 44.48,
+        "leads": 4
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 27.67,
+        "leads": 1
+      }
+    },
+    "2026-03-16": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 52.95,
+        "leads": 1
+      },
+      "LEADS // LANDING PAGE // ABO // OFFER 2 - HIFU": {
+        "spend": 6.2,
+        "leads": 0
+      }
+    },
+    "2026-03-17": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 37.84,
+        "leads": 2
+      }
+    },
+    "2026-03-18": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 50.41,
+        "leads": 1
+      }
+    },
+    "2026-03-19": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 55.41,
+        "leads": 3
+      }
+    },
+    "2026-03-20": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.59,
+        "leads": 0
+      }
+    },
+    "2026-03-21": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 42.87,
+        "leads": 3
+      }
+    },
+    "2026-03-22": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 55.55,
+        "leads": 2
+      }
+    },
+    "2026-03-23": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 50.14,
+        "leads": 0
+      }
+    },
+    "2026-03-24": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 38.92,
+        "leads": 2
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 13.25,
+        "leads": 2
+      }
+    },
+    "2026-03-25": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 39.37,
+        "leads": 2
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 13.56,
+        "leads": 1
+      }
+    },
+    "2026-03-26": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 33.14,
+        "leads": 2
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 9.15,
+        "leads": 0
+      }
+    },
+    "2026-03-27": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 38.35,
+        "leads": 5
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 10.18,
+        "leads": 1
+      }
+    },
+    "2026-03-28": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 32.72,
+        "leads": 0
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 10.66,
+        "leads": 3
+      }
+    },
+    "2026-03-29": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 38.89,
+        "leads": 0
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 15.62,
+        "leads": 1
+      }
+    },
+    "2026-03-30": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 44.56,
+        "leads": 2
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 11.87,
+        "leads": 0
+      }
+    },
+    "2026-03-31": {
+      "LEADS // ABO // OFFER 2 - HIFU": {
+        "spend": 20.1,
+        "leads": 1
+      },
+      "LEADS // ABO // MOF// OFFER 2 - HIFU": {
+        "spend": 8.99,
+        "leads": 0
+      }
+    }
+  }
 }

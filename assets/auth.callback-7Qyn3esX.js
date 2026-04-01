@@ -1,0 +1,1 @@
+import{w as e}from"./chunk-EPOLDU6W-Dso2WXXj.js";import{j as r}from"./jsx-runtime-u17CrQMm.js";const o=e(function(){return r.jsx("div",{className:"min-h-screen flex items-center justify-center bg-[var(--color-charcoal-900)]",children:r.jsx("p",{className:"text-[var(--color-cream-200)]",children:"Signing you in..."})})});export{o as default};

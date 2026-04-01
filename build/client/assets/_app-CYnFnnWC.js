@@ -1,0 +1,1 @@
+import{w as o,O as r}from"./chunk-EPOLDU6W-Dso2WXXj.js";import{j as e}from"./jsx-runtime-u17CrQMm.js";function u({formAction:t}){return!!t}const a=o(function(){return e.jsx(r,{})});export{a as default,u as shouldRevalidate};
