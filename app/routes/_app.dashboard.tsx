@@ -790,15 +790,29 @@ function renderLeads(l,pl,m) {
       }
       var avgBH = bhTimes.length > 0 ? Math.round(bhTimes.reduce(function(a,b){return a+b;},0) / bhTimes.length) : null;
       grid.innerHTML =
-        kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
-        kpi('leads', 'Total Outbound Calls', cm.total_outbound_calls, '') +
-        kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
-        kpi('responded', 'Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '') +
-        kpi('cpl', 'No Answer', (cm.status_breakdown && cm.status_breakdown['no-answer']) || 0, '') +
-        kpi('conv', 'Answer Rate', cm.total_outbound_calls > 0 ? Math.round(((cm.status_breakdown && cm.status_breakdown.completed) || 0) / cm.total_outbound_calls * 100) + '%' : '--', '') +
-        kpi('ctr', 'Voicemail', (cm.status_breakdown && cm.status_breakdown.voicemail) || 0, '') +
-        kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
-        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '');
+        (function() {
+        var answered = 0, notAnswered = 0, voicemail = 0;
+        if (cm.raw_calls) {
+          cm.raw_calls.forEach(function(c) {
+            var dur = c.call_duration || 0;
+            var st = (c.call_status || '').toLowerCase();
+            if (st === 'voicemail') { voicemail++; }
+            else if (st === 'completed' && dur > 15) { answered++; }
+            else { notAnswered++; }
+          });
+        }
+        var total = cm.total_outbound_calls || 0;
+        var answerRate = total > 0 ? Math.round(answered / total * 100) + '%' : '--';
+        return kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
+          kpi('leads', 'Total Outbound Calls', total, '') +
+          kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
+          kpi('responded', 'Answered', answered, '') +
+          kpi('cpl', 'No Answer', notAnswered, '') +
+          kpi('conv', 'Answer Rate', answerRate, '') +
+          kpi('ctr', 'Voicemail', voicemail, '') +
+          kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
+          kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '');
+      })();
     })
     .catch(function(err) {});
 }
@@ -904,15 +918,29 @@ function renderLeadsRange(l,pl,leads,days) {
       }
       var avgBH = bhTimes.length > 0 ? Math.round(bhTimes.reduce(function(a,b){return a+b;},0) / bhTimes.length) : null;
       grid.innerHTML =
-        kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
-        kpi('leads', 'Total Outbound Calls', cm.total_outbound_calls, '') +
-        kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
-        kpi('responded', 'Answered', (cm.status_breakdown && cm.status_breakdown.completed) || 0, '') +
-        kpi('cpl', 'No Answer', (cm.status_breakdown && cm.status_breakdown['no-answer']) || 0, '') +
-        kpi('conv', 'Answer Rate', cm.total_outbound_calls > 0 ? Math.round(((cm.status_breakdown && cm.status_breakdown.completed) || 0) / cm.total_outbound_calls * 100) + '%' : '--', '') +
-        kpi('ctr', 'Voicemail', (cm.status_breakdown && cm.status_breakdown.voicemail) || 0, '') +
-        kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
-        kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '');
+        (function() {
+        var answered = 0, notAnswered = 0, voicemail = 0;
+        if (cm.raw_calls) {
+          cm.raw_calls.forEach(function(c) {
+            var dur = c.call_duration || 0;
+            var st = (c.call_status || '').toLowerCase();
+            if (st === 'voicemail') { voicemail++; }
+            else if (st === 'completed' && dur > 15) { answered++; }
+            else { notAnswered++; }
+          });
+        }
+        var total = cm.total_outbound_calls || 0;
+        var answerRate = total > 0 ? Math.round(answered / total * 100) + '%' : '--';
+        return kpi('booked', 'Contacts Called', cm.unique_contacts_called, '') +
+          kpi('leads', 'Total Outbound Calls', total, '') +
+          kpi('conv', 'Called Within 10 Min', cm.called_within_10_min_pct + '%', '') +
+          kpi('responded', 'Answered', answered, '') +
+          kpi('cpl', 'No Answer', notAnswered, '') +
+          kpi('conv', 'Answer Rate', answerRate, '') +
+          kpi('ctr', 'Voicemail', voicemail, '') +
+          kpi('ctr', 'Avg Time to First Call', fmtTime(cm.avg_time_to_first_call_seconds), '') +
+          kpi('ctr', 'Avg Response (Business Hrs)', fmtTime(avgBH), '');
+      })();
     })
     .catch(function(err) {});
 }
