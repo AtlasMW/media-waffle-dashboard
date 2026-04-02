@@ -584,7 +584,7 @@ function ReviewResponses({ conversations, fetcher, reviewingLog, setReviewingLog
 
           {/* Profile filter */}
           <div style={{ display: "flex", gap: 4, marginBottom: 16, background: "#eee8dc", borderRadius: 8, padding: 4 }}>
-            {[{ key: "all", label: "All" }, { key: "promo", label: "Promo" }, { key: "general", label: "General" }].map(t => (
+            {[{ key: "all", label: "All" }, { key: "promo", label: "Promo" }, { key: "general", label: "General" }, { key: "email", label: "Email" }].map(t => (
               <button key={t.key} onClick={() => setReviewProfile(t.key)} style={{
                 flex: 1, padding: "6px 10px", borderRadius: 6, border: "none", fontSize: 11, fontWeight: 600,
                 cursor: "pointer", fontFamily: "'Montserrat', sans-serif",
