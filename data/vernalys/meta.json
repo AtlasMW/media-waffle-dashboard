@@ -1,6 +1,8 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
+  "ltv": 827,
+  "ltvDescription": "Based on average revenue per client tracked through Timely reports. Currently estimated at ~$827 per client.",
   "lastUpdated": "2026-04-01T13:21:05+10:00",
   "agencyFees": {
     "2026-02": 950,
