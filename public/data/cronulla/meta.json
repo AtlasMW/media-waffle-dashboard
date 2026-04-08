@@ -1,6 +1,8 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
+  "ltv": 1637,
+  "ltvDescription": "Based on average LTV data from Phorest reports. Currently estimated at ~$1637 per client.",
   "lastUpdated": "2026-04-08T12:18:30+10:00",
   "agencyFees": {
     "2026-01": 1500,
