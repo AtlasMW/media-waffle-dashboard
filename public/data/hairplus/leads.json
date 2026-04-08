@@ -11,7 +11,7 @@
       "bookedPct": 27,
       "confirmed": 8,
       "noShow": 0,
-      "cancelled": 3,
+      "cancelled": 4,
       "rebooked": 6,
       "moneyCollected": 9500.0,
       "budget": 678.91,
@@ -219,7 +219,7 @@
           "name": "Nadia Anwar",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Cancelled"
         },
         {
           "date": "2026-02-17",
@@ -351,18 +351,18 @@
     },
     "2026-03": {
       "totalLeads": 35,
-      "responded": 13,
+      "responded": 14,
       "noContact": 0,
-      "inFollowUp": 22,
-      "respondedPct": 37,
-      "booked": 7,
-      "bookedPct": 20,
-      "confirmed": 0,
+      "inFollowUp": 21,
+      "respondedPct": 40,
+      "booked": 8,
+      "bookedPct": 23,
+      "confirmed": 3,
       "noShow": 0,
       "cancelled": 0,
-      "rebooked": 0,
-      "moneyCollected": 0,
-      "budget": 776.6,
+      "rebooked": 1,
+      "moneyCollected": 300.0,
+      "budget": 776.79,
       "offers": [
         {
           "name": "OFFER 2",
@@ -375,7 +375,7 @@
           "name": "OFFER 1",
           "leads": 29,
           "cpl": 19.15,
-          "booked": 4,
+          "booked": 5,
           "spend": 57.44
         }
       ],
@@ -399,7 +399,7 @@
           "name": "Stella Minardi",
           "offer": "OFFER 2",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-01",
@@ -448,14 +448,14 @@
           "name": "poonam sharma",
           "offer": "OFFER 2",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-09",
           "name": "bilal ahmed",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-12",
@@ -566,8 +566,8 @@
           "date": "2026-03-25",
           "name": "etika navudidra",
           "offer": "OFFER 1",
-          "responded": "In follow up",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-03-25",
@@ -816,7 +816,7 @@
       "name": "Nadia Anwar",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Cancelled"
     },
     {
       "date": "2026-02-17",
@@ -963,7 +963,7 @@
       "name": "Stella Minardi",
       "offer": "OFFER 2",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-01",
@@ -1012,14 +1012,14 @@
       "name": "poonam sharma",
       "offer": "OFFER 2",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-09",
       "name": "bilal ahmed",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-12",
@@ -1130,8 +1130,8 @@
       "date": "2026-03-25",
       "name": "etika navudidra",
       "offer": "OFFER 1",
-      "responded": "In follow up",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-03-25",

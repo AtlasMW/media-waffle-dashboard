@@ -1,12 +1,667 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T13:21:59+10:00",
+  "lastUpdated": "2026-04-08T12:17:58+10:00",
   "agencyFees": {
+    "2025-10": 1500,
+    "2025-11": 1500,
+    "2025-12": 1500,
+    "2026-01": 0,
     "2026-02": 0,
     "2026-03": 0
   },
   "monthly": {
+    "2025-10": {
+      "spend": 568.95,
+      "impressions": 35679,
+      "reach": 9398,
+      "leads": 120,
+      "cpl": 4.74,
+      "messages": 77,
+      "costPerMessage": 7.39,
+      "uniqueCtr": 0.28,
+      "cpm": 15.95,
+      "linkClicks": 636,
+      "cpc": 0.89,
+      "leadConvPct": 18.87,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 568.95,
+          "impressions": 35679,
+          "reach": 9398,
+          "leads": 120,
+          "cpl": 4.74,
+          "uniqueCtr": 0.28,
+          "messages": 77,
+          "linkClicks": 636,
+          "cpc": 0.89,
+          "leadConvPct": 18.87
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "leads": 120,
+          "cpl": 4.74,
+          "spend": 568.95,
+          "campaignPattern": "LEADS // CBO // OFFER 1 - GRAND OPENING"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // ALL // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 86.94,
+          "leads": 23,
+          "cpl": 3.78,
+          "uniqueCtr": 0.3,
+          "frequency": 2.44
+        },
+        {
+          "adName": "IMG 2 | H1 - C1",
+          "adSetName": "NO DT // AD+ // ALL // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 285.59,
+          "leads": 62,
+          "cpl": 4.61,
+          "uniqueCtr": 0.2,
+          "frequency": 2.54
+        },
+        {
+          "adName": "IMG 2 | H1 - C1",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 151.34,
+          "leads": 30,
+          "cpl": 5.04,
+          "uniqueCtr": 0.08,
+          "frequency": 1.9
+        },
+        {
+          "adName": "IMG 3 | H1 - C1",
+          "adSetName": "NO DT // AD+ // ALL // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 19.4,
+          "leads": 3,
+          "cpl": 6.47,
+          "uniqueCtr": 0.14,
+          "frequency": 1.59
+        },
+        {
+          "adName": "IMG 3 | H1 - C1",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 1 - GRAND OPENING",
+          "spend": 25.27,
+          "leads": 2,
+          "cpl": 12.63,
+          "uniqueCtr": 0.0,
+          "frequency": 1.4
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 22.83,
+          "leads": 7
+        },
+        {
+          "age": "25-34",
+          "spend": 124.4,
+          "leads": 19
+        },
+        {
+          "age": "35-44",
+          "spend": 168.67,
+          "leads": 38
+        },
+        {
+          "age": "45-54",
+          "spend": 123.94,
+          "leads": 26
+        },
+        {
+          "age": "55-64",
+          "spend": 82.0,
+          "leads": 19
+        },
+        {
+          "age": "65+",
+          "spend": 47.11,
+          "leads": 11
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 15.9,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 13.43,
+          "leads": 3
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 273.98,
+          "leads": 66
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.01,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 77.82,
+          "leads": 16
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.11,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 6.79,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 180.9,
+          "leads": 33
+        }
+      ]
+    },
+    "2025-11": {
+      "spend": 384.33,
+      "impressions": 13301,
+      "reach": 3301,
+      "leads": 16,
+      "cpl": 24.02,
+      "messages": 17,
+      "costPerMessage": 22.61,
+      "uniqueCtr": 0.12,
+      "cpm": 28.89,
+      "linkClicks": 156,
+      "cpc": 2.46,
+      "leadConvPct": 10.26,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 3 - Face Series",
+          "spend": 264.7,
+          "impressions": 9764,
+          "reach": 2883,
+          "leads": 9,
+          "cpl": 29.41,
+          "uniqueCtr": 0.03,
+          "messages": 13,
+          "linkClicks": 122,
+          "cpc": 2.17,
+          "leadConvPct": 7.38
+        },
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 119.63,
+          "impressions": 3537,
+          "reach": 1458,
+          "leads": 7,
+          "cpl": 17.09,
+          "uniqueCtr": 0.21,
+          "messages": 4,
+          "linkClicks": 34,
+          "cpc": 3.52,
+          "leadConvPct": 20.59
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 3 - Face Series",
+          "leads": 9,
+          "cpl": 29.41,
+          "spend": 264.7,
+          "campaignPattern": "LEADS // CBO // OFFER 3 - Face Series"
+        },
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "leads": 7,
+          "cpl": 17.09,
+          "spend": 119.63,
+          "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 7.46,
+          "leads": 1,
+          "cpl": 7.46,
+          "uniqueCtr": 0.0,
+          "frequency": 1.33
+        },
+        {
+          "adName": "VIDEO 1 | H1 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
+          "spend": 10.66,
+          "leads": 1,
+          "cpl": 10.66,
+          "uniqueCtr": 0.0,
+          "frequency": 1.23
+        },
+        {
+          "adName": "VIDEO 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 3 - Face Series",
+          "spend": 11.84,
+          "leads": 1,
+          "cpl": 11.84,
+          "uniqueCtr": 0.0,
+          "frequency": 1.36
+        },
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 54.99,
+          "leads": 3,
+          "cpl": 18.33,
+          "uniqueCtr": 0.11,
+          "frequency": 1.81
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 57.18,
+          "leads": 3,
+          "cpl": 19.06,
+          "uniqueCtr": 0.21,
+          "frequency": 1.73
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 7.35,
+          "leads": 0
+        },
+        {
+          "age": "25-34",
+          "spend": 37.23,
+          "leads": 2
+        },
+        {
+          "age": "35-44",
+          "spend": 95.08,
+          "leads": 3
+        },
+        {
+          "age": "45-54",
+          "spend": 98.12,
+          "leads": 6
+        },
+        {
+          "age": "55-64",
+          "spend": 93.99,
+          "leads": 2
+        },
+        {
+          "age": "65+",
+          "spend": 52.56,
+          "leads": 3
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 30.5,
+          "leads": 3
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 23.61,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 252.06,
+          "leads": 9
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.45,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 30.76,
+          "leads": 1
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.04,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 7.86,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 39.04,
+          "leads": 2
+        }
+      ]
+    },
+    "2025-12": {
+      "spend": 763.2,
+      "impressions": 40074,
+      "reach": 9026,
+      "leads": 37,
+      "cpl": 20.63,
+      "messages": 39,
+      "costPerMessage": 19.57,
+      "uniqueCtr": 0.04,
+      "cpm": 19.04,
+      "linkClicks": 345,
+      "cpc": 2.21,
+      "leadConvPct": 10.72,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 763.2,
+          "impressions": 40074,
+          "reach": 9026,
+          "leads": 37,
+          "cpl": 20.63,
+          "uniqueCtr": 0.04,
+          "messages": 39,
+          "linkClicks": 345,
+          "cpc": 2.21,
+          "leadConvPct": 10.72
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "leads": 37,
+          "cpl": 20.63,
+          "spend": 763.2,
+          "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 2 | H2 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 21.88,
+          "leads": 3,
+          "cpl": 7.29,
+          "uniqueCtr": 0.0,
+          "frequency": 1.46
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 90.54,
+          "leads": 6,
+          "cpl": 15.09,
+          "uniqueCtr": 0.05,
+          "frequency": 2.71
+        },
+        {
+          "adName": "IMG 1 | H1 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 33.46,
+          "leads": 2,
+          "cpl": 16.73,
+          "uniqueCtr": 0.0,
+          "frequency": 2.07
+        },
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 494.1,
+          "leads": 24,
+          "cpl": 20.59,
+          "uniqueCtr": 0.04,
+          "frequency": 3.34
+        },
+        {
+          "adName": "IMG 3 | H2 - C1 - Copy",
+          "adSetName": "DT COSMETICS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 49.46,
+          "leads": 1,
+          "cpl": 49.46,
+          "uniqueCtr": 0.0,
+          "frequency": 1.59
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 19.9,
+          "leads": 1
+        },
+        {
+          "age": "25-34",
+          "spend": 98.51,
+          "leads": 7
+        },
+        {
+          "age": "35-44",
+          "spend": 179.08,
+          "leads": 10
+        },
+        {
+          "age": "45-54",
+          "spend": 172.38,
+          "leads": 8
+        },
+        {
+          "age": "55-64",
+          "spend": 166.63,
+          "leads": 5
+        },
+        {
+          "age": "65+",
+          "spend": 126.7,
+          "leads": 6
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 33.61,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 28.66,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 545.79,
+          "leads": 28
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 1.34,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Search",
+          "spend": 0.0,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 74.69,
+          "leads": 1
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.1,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 14.7,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 64.3,
+          "leads": 5
+        }
+      ]
+    },
+    "2026-01": {
+      "spend": 138.85,
+      "impressions": 9927,
+      "reach": 3734,
+      "leads": 5,
+      "cpl": 27.77,
+      "messages": 7,
+      "costPerMessage": 19.84,
+      "uniqueCtr": 0.03,
+      "cpm": 13.99,
+      "linkClicks": 71,
+      "cpc": 1.96,
+      "leadConvPct": 7.04,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 138.85,
+          "impressions": 9927,
+          "reach": 3734,
+          "leads": 5,
+          "cpl": 27.77,
+          "uniqueCtr": 0.03,
+          "messages": 7,
+          "linkClicks": 71,
+          "cpc": 1.96,
+          "leadConvPct": 7.04
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "leads": 5,
+          "cpl": 27.77,
+          "spend": 138.85,
+          "campaignPattern": "LEADS // CBO // OFFER 4 - Christmas Reset"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 3 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 40.43,
+          "leads": 2,
+          "cpl": 20.21,
+          "uniqueCtr": 0.0,
+          "frequency": 1.65
+        },
+        {
+          "adName": "IMG 2 | H2 - C1",
+          "adSetName": "NO DT // AD+ // FEMALE 24+ // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 4 - Christmas Reset",
+          "spend": 73.23,
+          "leads": 3,
+          "cpl": 24.41,
+          "uniqueCtr": 0.05,
+          "frequency": 2.37
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 4.99,
+          "leads": 0
+        },
+        {
+          "age": "25-34",
+          "spend": 20.68,
+          "leads": 1
+        },
+        {
+          "age": "35-44",
+          "spend": 34.01,
+          "leads": 2
+        },
+        {
+          "age": "45-54",
+          "spend": 32.93,
+          "leads": 1
+        },
+        {
+          "age": "55-64",
+          "spend": 25.45,
+          "leads": 1
+        },
+        {
+          "age": "65+",
+          "spend": 20.79,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 8.72,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 6.95,
+          "leads": 1
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 88.57,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 0.14,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 8.94,
+          "leads": 1
+        },
+        {
+          "name": "Instagram Instagram Explore",
+          "spend": 0.0,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 3.99,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 21.53,
+          "leads": 1
+        }
+      ]
+    },
     "2026-02": {
       "spend": 565.84,
       "impressions": 32392,
@@ -197,9 +852,9 @@
       ]
     },
     "2026-03": {
-      "spend": 843.31,
-      "impressions": 50067,
-      "reach": 12419,
+      "spend": 843.38,
+      "impressions": 50071,
+      "reach": 12422,
       "leads": 59,
       "cpl": 14.29,
       "messages": 55,
@@ -212,9 +867,9 @@
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 843.31,
-          "impressions": 50067,
-          "reach": 12419,
+          "spend": 843.38,
+          "impressions": 50071,
+          "reach": 12422,
           "leads": 59,
           "cpl": 14.29,
           "uniqueCtr": 0.08,
@@ -229,7 +884,7 @@
           "name": "LEADS // CBO // OFFER 6 BROWS",
           "leads": 59,
           "cpl": 14.29,
-          "spend": 843.31,
+          "spend": 843.38,
           "campaignPattern": "LEADS // CBO // OFFER 6 BROWS"
         }
       ],
@@ -248,7 +903,7 @@
           "adName": "IMG 1 | H1 & 3 - C1 - Copy",
           "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
           "campaignName": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 261.91,
+          "spend": 261.98,
           "leads": 23,
           "cpl": 11.39,
           "uniqueCtr": 0.09,
@@ -298,7 +953,7 @@
         },
         {
           "age": "35-44",
-          "spend": 164.01,
+          "spend": 164.02,
           "leads": 10
         },
         {
@@ -313,7 +968,7 @@
         },
         {
           "age": "65+",
-          "spend": 169.06,
+          "spend": 169.12,
           "leads": 14
         }
       ],
@@ -340,7 +995,7 @@
         },
         {
           "name": "Facebook Feed",
-          "spend": 569.82,
+          "spend": 569.89,
           "leads": 44
         },
         {
@@ -377,6 +1032,974 @@
     }
   },
   "daily": [
+    {
+      "date": "2025-10-03",
+      "spend": 37.79,
+      "impressions": 1797,
+      "reach": 1442,
+      "leads": 9,
+      "messages": 9,
+      "linkClicks": 44,
+      "uniqueCtr": 0.35,
+      "cpm": 21.03
+    },
+    {
+      "date": "2025-10-04",
+      "spend": 8.84,
+      "impressions": 626,
+      "reach": 478,
+      "leads": 5,
+      "messages": 2,
+      "linkClicks": 30,
+      "uniqueCtr": 0.42,
+      "cpm": 14.12
+    },
+    {
+      "date": "2025-10-05",
+      "spend": 27.57,
+      "impressions": 1898,
+      "reach": 1386,
+      "leads": 6,
+      "messages": 3,
+      "linkClicks": 54,
+      "uniqueCtr": 0.0,
+      "cpm": 14.53
+    },
+    {
+      "date": "2025-10-06",
+      "spend": 33.65,
+      "impressions": 2395,
+      "reach": 1695,
+      "leads": 8,
+      "messages": 4,
+      "linkClicks": 38,
+      "uniqueCtr": 0.24,
+      "cpm": 14.05
+    },
+    {
+      "date": "2025-10-07",
+      "spend": 26.19,
+      "impressions": 1834,
+      "reach": 1432,
+      "leads": 5,
+      "messages": 3,
+      "linkClicks": 33,
+      "uniqueCtr": 0.0,
+      "cpm": 14.28
+    },
+    {
+      "date": "2025-10-08",
+      "spend": 23.75,
+      "impressions": 1580,
+      "reach": 1301,
+      "leads": 5,
+      "messages": 4,
+      "linkClicks": 35,
+      "uniqueCtr": 0.08,
+      "cpm": 15.03
+    },
+    {
+      "date": "2025-10-09",
+      "spend": 25.47,
+      "impressions": 1549,
+      "reach": 1218,
+      "leads": 7,
+      "messages": 6,
+      "linkClicks": 31,
+      "uniqueCtr": 0.0,
+      "cpm": 16.44
+    },
+    {
+      "date": "2025-10-10",
+      "spend": 25.86,
+      "impressions": 1675,
+      "reach": 1357,
+      "leads": 8,
+      "messages": 5,
+      "linkClicks": 37,
+      "uniqueCtr": 0.07,
+      "cpm": 15.44
+    },
+    {
+      "date": "2025-10-11",
+      "spend": 26.36,
+      "impressions": 1791,
+      "reach": 1472,
+      "leads": 7,
+      "messages": 4,
+      "linkClicks": 29,
+      "uniqueCtr": 0.0,
+      "cpm": 14.72
+    },
+    {
+      "date": "2025-10-12",
+      "spend": 29.88,
+      "impressions": 1931,
+      "reach": 1545,
+      "leads": 5,
+      "messages": 1,
+      "linkClicks": 36,
+      "uniqueCtr": 0.0,
+      "cpm": 15.47
+    },
+    {
+      "date": "2025-10-13",
+      "spend": 28.1,
+      "impressions": 1971,
+      "reach": 1702,
+      "leads": 7,
+      "messages": 4,
+      "linkClicks": 25,
+      "uniqueCtr": 0.0,
+      "cpm": 14.26
+    },
+    {
+      "date": "2025-10-14",
+      "spend": 26.3,
+      "impressions": 1865,
+      "reach": 1505,
+      "leads": 6,
+      "messages": 3,
+      "linkClicks": 31,
+      "uniqueCtr": 0.13,
+      "cpm": 14.1
+    },
+    {
+      "date": "2025-10-15",
+      "spend": 26.87,
+      "impressions": 1672,
+      "reach": 1390,
+      "leads": 7,
+      "messages": 5,
+      "linkClicks": 32,
+      "uniqueCtr": 0.14,
+      "cpm": 16.07
+    },
+    {
+      "date": "2025-10-16",
+      "spend": 25.86,
+      "impressions": 1504,
+      "reach": 1231,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 17.19
+    },
+    {
+      "date": "2025-10-17",
+      "spend": 25.12,
+      "impressions": 1418,
+      "reach": 1143,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 27,
+      "uniqueCtr": 0.17,
+      "cpm": 17.72
+    },
+    {
+      "date": "2025-10-18",
+      "spend": 26.69,
+      "impressions": 1575,
+      "reach": 1366,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 16,
+      "uniqueCtr": 0.07,
+      "cpm": 16.95
+    },
+    {
+      "date": "2025-10-19",
+      "spend": 30.17,
+      "impressions": 1788,
+      "reach": 1522,
+      "leads": 8,
+      "messages": 2,
+      "linkClicks": 29,
+      "uniqueCtr": 0.07,
+      "cpm": 16.87
+    },
+    {
+      "date": "2025-10-20",
+      "spend": 26.64,
+      "impressions": 1701,
+      "reach": 1370,
+      "leads": 5,
+      "messages": 4,
+      "linkClicks": 23,
+      "uniqueCtr": 0.15,
+      "cpm": 15.66
+    },
+    {
+      "date": "2025-10-21",
+      "spend": 26.31,
+      "impressions": 1613,
+      "reach": 1392,
+      "leads": 4,
+      "messages": 2,
+      "linkClicks": 20,
+      "uniqueCtr": 0.07,
+      "cpm": 16.31
+    },
+    {
+      "date": "2025-10-22",
+      "spend": 27.87,
+      "impressions": 1679,
+      "reach": 1468,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 23,
+      "uniqueCtr": 0.07,
+      "cpm": 16.6
+    },
+    {
+      "date": "2025-10-23",
+      "spend": 25.36,
+      "impressions": 1409,
+      "reach": 1299,
+      "leads": 7,
+      "messages": 6,
+      "linkClicks": 22,
+      "uniqueCtr": 0.08,
+      "cpm": 18.0
+    },
+    {
+      "date": "2025-10-24",
+      "spend": 8.3,
+      "impressions": 408,
+      "reach": 374,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 20.34
+    },
+    {
+      "date": "2025-10-27",
+      "spend": 0.0,
+      "impressions": 0,
+      "reach": 0,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 0,
+      "uniqueCtr": 0,
+      "cpm": 0.0
+    },
+    {
+      "date": "2025-11-09",
+      "spend": 15.46,
+      "impressions": 660,
+      "reach": 469,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 23.42
+    },
+    {
+      "date": "2025-11-10",
+      "spend": 28.2,
+      "impressions": 1102,
+      "reach": 656,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 22,
+      "uniqueCtr": 0.0,
+      "cpm": 25.59
+    },
+    {
+      "date": "2025-11-11",
+      "spend": 29.69,
+      "impressions": 1121,
+      "reach": 731,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 26.49
+    },
+    {
+      "date": "2025-11-12",
+      "spend": 30.89,
+      "impressions": 1366,
+      "reach": 1018,
+      "leads": 1,
+      "messages": 3,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 22.61
+    },
+    {
+      "date": "2025-11-13",
+      "spend": 30.68,
+      "impressions": 1138,
+      "reach": 864,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 26.96
+    },
+    {
+      "date": "2025-11-14",
+      "spend": 28.27,
+      "impressions": 965,
+      "reach": 724,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 29.3
+    },
+    {
+      "date": "2025-11-15",
+      "spend": 27.79,
+      "impressions": 968,
+      "reach": 754,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 9,
+      "uniqueCtr": 0.13,
+      "cpm": 28.71
+    },
+    {
+      "date": "2025-11-16",
+      "spend": 31.58,
+      "impressions": 1211,
+      "reach": 928,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 26.08
+    },
+    {
+      "date": "2025-11-17",
+      "spend": 32.63,
+      "impressions": 1037,
+      "reach": 803,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 31.47
+    },
+    {
+      "date": "2025-11-18",
+      "spend": 9.51,
+      "impressions": 196,
+      "reach": 165,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 48.52
+    },
+    {
+      "date": "2025-11-27",
+      "spend": 14.59,
+      "impressions": 402,
+      "reach": 313,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 36.29
+    },
+    {
+      "date": "2025-11-28",
+      "spend": 27.79,
+      "impressions": 786,
+      "reach": 515,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 8,
+      "uniqueCtr": 0.19,
+      "cpm": 35.36
+    },
+    {
+      "date": "2025-11-29",
+      "spend": 35.93,
+      "impressions": 1066,
+      "reach": 743,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 9,
+      "uniqueCtr": 0.13,
+      "cpm": 33.71
+    },
+    {
+      "date": "2025-11-30",
+      "spend": 41.32,
+      "impressions": 1283,
+      "reach": 898,
+      "leads": 4,
+      "messages": 2,
+      "linkClicks": 16,
+      "uniqueCtr": 0.11,
+      "cpm": 32.21
+    },
+    {
+      "date": "2025-12-01",
+      "spend": 36.81,
+      "impressions": 1338,
+      "reach": 947,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 27.51
+    },
+    {
+      "date": "2025-12-02",
+      "spend": 36.13,
+      "impressions": 1385,
+      "reach": 1046,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 26.09
+    },
+    {
+      "date": "2025-12-03",
+      "spend": 28.74,
+      "impressions": 1238,
+      "reach": 950,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 23.21
+    },
+    {
+      "date": "2025-12-04",
+      "spend": 27.19,
+      "impressions": 1264,
+      "reach": 985,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 21.51
+    },
+    {
+      "date": "2025-12-05",
+      "spend": 28.1,
+      "impressions": 1210,
+      "reach": 963,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 23.22
+    },
+    {
+      "date": "2025-12-06",
+      "spend": 23.22,
+      "impressions": 1085,
+      "reach": 850,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 21.4
+    },
+    {
+      "date": "2025-12-07",
+      "spend": 33.41,
+      "impressions": 1738,
+      "reach": 1316,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 19.22
+    },
+    {
+      "date": "2025-12-08",
+      "spend": 29.85,
+      "impressions": 1434,
+      "reach": 1058,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 20.82
+    },
+    {
+      "date": "2025-12-09",
+      "spend": 28.22,
+      "impressions": 1386,
+      "reach": 1046,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 20.36
+    },
+    {
+      "date": "2025-12-10",
+      "spend": 27.26,
+      "impressions": 1285,
+      "reach": 979,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 11,
+      "uniqueCtr": 0.1,
+      "cpm": 21.21
+    },
+    {
+      "date": "2025-12-11",
+      "spend": 26.11,
+      "impressions": 1334,
+      "reach": 1024,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 13,
+      "uniqueCtr": 0.0,
+      "cpm": 19.57
+    },
+    {
+      "date": "2025-12-12",
+      "spend": 26.15,
+      "impressions": 1464,
+      "reach": 1145,
+      "leads": 4,
+      "messages": 3,
+      "linkClicks": 10,
+      "uniqueCtr": 0.09,
+      "cpm": 17.86
+    },
+    {
+      "date": "2025-12-13",
+      "spend": 24.91,
+      "impressions": 1351,
+      "reach": 1147,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 13,
+      "uniqueCtr": 0.0,
+      "cpm": 18.44
+    },
+    {
+      "date": "2025-12-14",
+      "spend": 32.65,
+      "impressions": 1644,
+      "reach": 1245,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 19.86
+    },
+    {
+      "date": "2025-12-15",
+      "spend": 30.49,
+      "impressions": 1770,
+      "reach": 1378,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 17.23
+    },
+    {
+      "date": "2025-12-16",
+      "spend": 28.87,
+      "impressions": 1613,
+      "reach": 1220,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 16,
+      "uniqueCtr": 0.08,
+      "cpm": 17.9
+    },
+    {
+      "date": "2025-12-17",
+      "spend": 26.76,
+      "impressions": 1378,
+      "reach": 1013,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 19.42
+    },
+    {
+      "date": "2025-12-18",
+      "spend": 26.51,
+      "impressions": 1617,
+      "reach": 1258,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 16.39
+    },
+    {
+      "date": "2025-12-19",
+      "spend": 26.38,
+      "impressions": 1407,
+      "reach": 1074,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 18.75
+    },
+    {
+      "date": "2025-12-20",
+      "spend": 24.16,
+      "impressions": 1482,
+      "reach": 1157,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 16.3
+    },
+    {
+      "date": "2025-12-21",
+      "spend": 32.92,
+      "impressions": 1931,
+      "reach": 1539,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 19,
+      "uniqueCtr": 0.0,
+      "cpm": 17.05
+    },
+    {
+      "date": "2025-12-22",
+      "spend": 23.62,
+      "impressions": 1397,
+      "reach": 1091,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 15,
+      "uniqueCtr": 0.09,
+      "cpm": 16.91
+    },
+    {
+      "date": "2025-12-23",
+      "spend": 15.36,
+      "impressions": 999,
+      "reach": 769,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 15.38
+    },
+    {
+      "date": "2025-12-24",
+      "spend": 15.29,
+      "impressions": 976,
+      "reach": 798,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 15.67
+    },
+    {
+      "date": "2025-12-25",
+      "spend": 14.08,
+      "impressions": 897,
+      "reach": 713,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 15.7
+    },
+    {
+      "date": "2025-12-26",
+      "spend": 16.0,
+      "impressions": 838,
+      "reach": 627,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 19.09
+    },
+    {
+      "date": "2025-12-27",
+      "spend": 12.32,
+      "impressions": 764,
+      "reach": 592,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 16.13
+    },
+    {
+      "date": "2025-12-28",
+      "spend": 18.31,
+      "impressions": 1045,
+      "reach": 750,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 17.52
+    },
+    {
+      "date": "2025-12-29",
+      "spend": 15.74,
+      "impressions": 922,
+      "reach": 685,
+      "leads": 1,
+      "messages": 0,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 17.07
+    },
+    {
+      "date": "2025-12-30",
+      "spend": 14.47,
+      "impressions": 974,
+      "reach": 716,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 14.86
+    },
+    {
+      "date": "2025-12-31",
+      "spend": 13.17,
+      "impressions": 908,
+      "reach": 704,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 14.5
+    },
+    {
+      "date": "2026-01-01",
+      "spend": 14.11,
+      "impressions": 1152,
+      "reach": 893,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 5,
+      "uniqueCtr": 0.0,
+      "cpm": 12.25
+    },
+    {
+      "date": "2026-01-02",
+      "spend": 14.85,
+      "impressions": 1188,
+      "reach": 939,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 12.5
+    },
+    {
+      "date": "2026-01-03",
+      "spend": 14.12,
+      "impressions": 1098,
+      "reach": 837,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 12.86
+    },
+    {
+      "date": "2026-01-04",
+      "spend": 16.87,
+      "impressions": 1238,
+      "reach": 959,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 13.63
+    },
+    {
+      "date": "2026-01-05",
+      "spend": 6.9,
+      "impressions": 485,
+      "reach": 403,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 14.23
+    },
+    {
+      "date": "2026-01-06",
+      "spend": 5.2,
+      "impressions": 299,
+      "reach": 240,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 17.39
+    },
+    {
+      "date": "2026-01-07",
+      "spend": 5.12,
+      "impressions": 383,
+      "reach": 301,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 13.37
+    },
+    {
+      "date": "2026-01-08",
+      "spend": 4.97,
+      "impressions": 343,
+      "reach": 291,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 14.49
+    },
+    {
+      "date": "2026-01-09",
+      "spend": 4.94,
+      "impressions": 323,
+      "reach": 268,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 15.29
+    },
+    {
+      "date": "2026-01-10",
+      "spend": 3.75,
+      "impressions": 267,
+      "reach": 217,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 14.04
+    },
+    {
+      "date": "2026-01-11",
+      "spend": 6.05,
+      "impressions": 409,
+      "reach": 337,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 3,
+      "uniqueCtr": 0.0,
+      "cpm": 14.79
+    },
+    {
+      "date": "2026-01-12",
+      "spend": 5.59,
+      "impressions": 337,
+      "reach": 258,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 16.59
+    },
+    {
+      "date": "2026-01-13",
+      "spend": 4.96,
+      "impressions": 299,
+      "reach": 225,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 16.59
+    },
+    {
+      "date": "2026-01-14",
+      "spend": 4.41,
+      "impressions": 355,
+      "reach": 270,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 0,
+      "uniqueCtr": 0.0,
+      "cpm": 12.42
+    },
+    {
+      "date": "2026-01-15",
+      "spend": 4.88,
+      "impressions": 289,
+      "reach": 230,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 5,
+      "uniqueCtr": 0.43,
+      "cpm": 16.89
+    },
+    {
+      "date": "2026-01-16",
+      "spend": 5.1,
+      "impressions": 314,
+      "reach": 253,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 16.24
+    },
+    {
+      "date": "2026-01-17",
+      "spend": 3.93,
+      "impressions": 259,
+      "reach": 211,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 6,
+      "uniqueCtr": 0.0,
+      "cpm": 15.17
+    },
+    {
+      "date": "2026-01-18",
+      "spend": 6.17,
+      "impressions": 388,
+      "reach": 314,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 2,
+      "uniqueCtr": 0.0,
+      "cpm": 15.9
+    },
+    {
+      "date": "2026-01-19",
+      "spend": 5.4,
+      "impressions": 398,
+      "reach": 328,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 13.57
+    },
+    {
+      "date": "2026-01-20",
+      "spend": 1.53,
+      "impressions": 103,
+      "reach": 82,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 1,
+      "uniqueCtr": 0.0,
+      "cpm": 14.85
+    },
     {
       "date": "2026-02-04",
       "spend": 14.14,
@@ -918,9 +2541,9 @@
     },
     {
       "date": "2026-03-31",
-      "spend": 26.2,
-      "impressions": 1524,
-      "reach": 1264,
+      "spend": 26.27,
+      "impressions": 1528,
+      "reach": 1269,
       "leads": 0,
       "messages": 0,
       "linkClicks": 6,
@@ -929,6 +2552,534 @@
     }
   ],
   "campaignDaily": {
+    "2025-10-03": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 37.79,
+        "leads": 9
+      }
+    },
+    "2025-10-04": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 8.84,
+        "leads": 5
+      }
+    },
+    "2025-10-05": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 27.57,
+        "leads": 6
+      }
+    },
+    "2025-10-06": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 33.65,
+        "leads": 8
+      }
+    },
+    "2025-10-07": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.19,
+        "leads": 5
+      }
+    },
+    "2025-10-08": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 23.75,
+        "leads": 5
+      }
+    },
+    "2025-10-09": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.47,
+        "leads": 7
+      }
+    },
+    "2025-10-10": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.86,
+        "leads": 8
+      }
+    },
+    "2025-10-11": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.36,
+        "leads": 7
+      }
+    },
+    "2025-10-12": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 29.88,
+        "leads": 5
+      }
+    },
+    "2025-10-13": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 28.1,
+        "leads": 7
+      }
+    },
+    "2025-10-14": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.3,
+        "leads": 6
+      }
+    },
+    "2025-10-15": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.87,
+        "leads": 7
+      }
+    },
+    "2025-10-16": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.86,
+        "leads": 0
+      }
+    },
+    "2025-10-17": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.12,
+        "leads": 5
+      }
+    },
+    "2025-10-18": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.69,
+        "leads": 3
+      }
+    },
+    "2025-10-19": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 30.17,
+        "leads": 8
+      }
+    },
+    "2025-10-20": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.64,
+        "leads": 5
+      }
+    },
+    "2025-10-21": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 26.31,
+        "leads": 4
+      }
+    },
+    "2025-10-22": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 27.87,
+        "leads": 3
+      }
+    },
+    "2025-10-23": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 25.36,
+        "leads": 7
+      }
+    },
+    "2025-10-24": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 8.3,
+        "leads": 0
+      }
+    },
+    "2025-10-27": {
+      "LEADS // CBO // OFFER 1 - GRAND OPENING": {
+        "spend": 0.0,
+        "leads": 0
+      }
+    },
+    "2025-11-09": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 15.46,
+        "leads": 0
+      }
+    },
+    "2025-11-10": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 28.2,
+        "leads": 1
+      }
+    },
+    "2025-11-11": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 29.69,
+        "leads": 2
+      }
+    },
+    "2025-11-12": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 30.89,
+        "leads": 1
+      }
+    },
+    "2025-11-13": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 30.68,
+        "leads": 0
+      }
+    },
+    "2025-11-14": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 28.27,
+        "leads": 1
+      }
+    },
+    "2025-11-15": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 27.79,
+        "leads": 1
+      }
+    },
+    "2025-11-16": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 31.58,
+        "leads": 1
+      }
+    },
+    "2025-11-17": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 32.63,
+        "leads": 2
+      }
+    },
+    "2025-11-18": {
+      "LEADS // CBO // OFFER 3 - Face Series": {
+        "spend": 9.51,
+        "leads": 0
+      }
+    },
+    "2025-11-27": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.59,
+        "leads": 0
+      }
+    },
+    "2025-11-28": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.79,
+        "leads": 1
+      }
+    },
+    "2025-11-29": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 35.93,
+        "leads": 2
+      }
+    },
+    "2025-11-30": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 41.32,
+        "leads": 4
+      }
+    },
+    "2025-12-01": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 36.81,
+        "leads": 2
+      }
+    },
+    "2025-12-02": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 36.13,
+        "leads": 3
+      }
+    },
+    "2025-12-03": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.74,
+        "leads": 1
+      }
+    },
+    "2025-12-04": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.19,
+        "leads": 1
+      }
+    },
+    "2025-12-05": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.1,
+        "leads": 1
+      }
+    },
+    "2025-12-06": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 23.22,
+        "leads": 1
+      }
+    },
+    "2025-12-07": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 33.41,
+        "leads": 2
+      }
+    },
+    "2025-12-08": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 29.85,
+        "leads": 2
+      }
+    },
+    "2025-12-09": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.22,
+        "leads": 1
+      }
+    },
+    "2025-12-10": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 27.26,
+        "leads": 2
+      }
+    },
+    "2025-12-11": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.11,
+        "leads": 0
+      }
+    },
+    "2025-12-12": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.15,
+        "leads": 4
+      }
+    },
+    "2025-12-13": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 24.91,
+        "leads": 1
+      }
+    },
+    "2025-12-14": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 32.65,
+        "leads": 1
+      }
+    },
+    "2025-12-15": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 30.49,
+        "leads": 1
+      }
+    },
+    "2025-12-16": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 28.87,
+        "leads": 1
+      }
+    },
+    "2025-12-17": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.76,
+        "leads": 2
+      }
+    },
+    "2025-12-18": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.51,
+        "leads": 0
+      }
+    },
+    "2025-12-19": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 26.38,
+        "leads": 1
+      }
+    },
+    "2025-12-20": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 24.16,
+        "leads": 3
+      }
+    },
+    "2025-12-21": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 32.92,
+        "leads": 3
+      }
+    },
+    "2025-12-22": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 23.62,
+        "leads": 2
+      }
+    },
+    "2025-12-23": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.36,
+        "leads": 0
+      }
+    },
+    "2025-12-24": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.29,
+        "leads": 0
+      }
+    },
+    "2025-12-25": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.08,
+        "leads": 0
+      }
+    },
+    "2025-12-26": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 16.0,
+        "leads": 1
+      }
+    },
+    "2025-12-27": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 12.32,
+        "leads": 0
+      }
+    },
+    "2025-12-28": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 18.31,
+        "leads": 0
+      }
+    },
+    "2025-12-29": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 15.74,
+        "leads": 1
+      }
+    },
+    "2025-12-30": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.47,
+        "leads": 0
+      }
+    },
+    "2025-12-31": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 13.17,
+        "leads": 0
+      }
+    },
+    "2026-01-01": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.11,
+        "leads": 2
+      }
+    },
+    "2026-01-02": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.85,
+        "leads": 0
+      }
+    },
+    "2026-01-03": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 14.12,
+        "leads": 0
+      }
+    },
+    "2026-01-04": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 16.87,
+        "leads": 0
+      }
+    },
+    "2026-01-05": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.9,
+        "leads": 0
+      }
+    },
+    "2026-01-06": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.2,
+        "leads": 0
+      }
+    },
+    "2026-01-07": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.12,
+        "leads": 0
+      }
+    },
+    "2026-01-08": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.97,
+        "leads": 0
+      }
+    },
+    "2026-01-09": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.94,
+        "leads": 0
+      }
+    },
+    "2026-01-10": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 3.75,
+        "leads": 1
+      }
+    },
+    "2026-01-11": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.05,
+        "leads": 0
+      }
+    },
+    "2026-01-12": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.59,
+        "leads": 0
+      }
+    },
+    "2026-01-13": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.96,
+        "leads": 1
+      }
+    },
+    "2026-01-14": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.41,
+        "leads": 0
+      }
+    },
+    "2026-01-15": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 4.88,
+        "leads": 1
+      }
+    },
+    "2026-01-16": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.1,
+        "leads": 0
+      }
+    },
+    "2026-01-17": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 3.93,
+        "leads": 0
+      }
+    },
+    "2026-01-18": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 6.17,
+        "leads": 0
+      }
+    },
+    "2026-01-19": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 5.4,
+        "leads": 0
+      }
+    },
+    "2026-01-20": {
+      "LEADS // CBO // OFFER 4 - Christmas Reset": {
+        "spend": 1.53,
+        "leads": 0
+      }
+    },
     "2026-02-04": {
       "LEADS // CBO // OFFER 5 - Love Glow": {
         "spend": 14.14,
@@ -1225,7 +3376,7 @@
     },
     "2026-03-31": {
       "LEADS // CBO // OFFER 6 BROWS": {
-        "spend": 26.2,
+        "spend": 26.27,
         "leads": 0
       }
     }
