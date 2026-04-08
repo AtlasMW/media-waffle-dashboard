@@ -5520,19 +5520,19 @@
       ]
     },
     "2026-03": {
-      "totalLeads": 159,
-      "responded": 30,
+      "totalLeads": 250,
+      "responded": 45,
       "noContact": 0,
-      "inFollowUp": 129,
-      "respondedPct": 19,
+      "inFollowUp": 205,
+      "respondedPct": 18,
       "booked": 10,
-      "bookedPct": 6,
+      "bookedPct": 4,
       "confirmed": 8,
       "noShow": 0,
       "cancelled": 0,
       "rebooked": 0,
       "moneyCollected": 675.5,
-      "budget": 608.39,
+      "budget": 931.39,
       "offers": [
         {
           "name": "OFFER 1 COMBO",
@@ -5543,7 +5543,7 @@
         },
         {
           "name": "OFFER 1 NEW",
-          "leads": 66,
+          "leads": 157,
           "cpl": 0,
           "booked": 0,
           "spend": 0
@@ -6702,6 +6702,643 @@
           "date": "2026-03-08",
           "name": "lana",
           "offer": "meta lead, fairfield, offer 1 combo",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "micaela micaela",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-25",
+          "name": "kristen leedie",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-25",
+          "name": "narissa rachel",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-25",
+          "name": "brittney",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-25",
+          "name": "catherine wong",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "brett paganoni",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "angela garwood",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "jennie dowie",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "megan ann",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "braden",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "linda",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "hayleigh cameron",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-24",
+          "name": "sariya sariya",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-23",
+          "name": "maureen",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-23",
+          "name": "louise watkins",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-23",
+          "name": "algon congoo",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-23",
+          "name": "matt bro",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-23",
+          "name": "jitha george",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "wendy edwards",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "katelyn",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "gordon",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "louise emily",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "lindy monteith",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "lenesse elizabeth james",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "rhonda flynn",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "ruby harrington",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "julie-ann douglas",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-22",
+          "name": "\u2b50\ufe0f\ud83e\udd17nicola pennington\ud83d\udc69\ud83c\udffc\ud83d\udc66\ud83c\udffc\ud83d\udc76\ud83c\udffb",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "sima mallik",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "joan mitchell",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "amber carige",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "michael gallon",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "rikki taua",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "louise thiele",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "ch\u00e2u tr\u1ea7n",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "ryan mills",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "mariann mccall",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-21",
+          "name": "rick cantoni",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "theresa-jane roberts",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "saranne lou lou maule",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "hope casanovas",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "nicolle marie",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "mardi clifford",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "sha",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-20",
+          "name": "ro motea",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "susan dorries",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "anita norton",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "tania greenwood",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "kerry",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "selina a",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "desaree byrnes",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "dieumerci mukandama",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "lynn armstrong",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "delvi delvi",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "paula koppe",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "joeli bauleka",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "kathy fell",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "campbell merrylees",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-19",
+          "name": "jayne",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "jamie lee lee brilley",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "leeanne johnson",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "haylee gransden",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-26",
+          "name": "erin",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "maya",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "hope white",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "anna de guzman",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "pania peke",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "tegs",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-28",
+          "name": "richard doig",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "maddy",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "kelsey mathison",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "cassie lee",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "michelle",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "emily",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "david brice",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "rachel",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-29",
+          "name": "leggy",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "nicola crane",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "coral ferguson",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "coralie",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "antonella olivera",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "agam",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-30",
+          "name": "ella",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "katia alamillo",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "mone",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "cheynee morrison",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "kara",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "roz clarke",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "shelley frisch",
+          "offer": "OFFER 1 NEW",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "sue smith",
+          "offer": "OFFER 1 NEW",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-03-31",
+          "name": "kayla smith",
+          "offer": "OFFER 1 NEW",
           "responded": "In follow up",
           "status": ""
         }
@@ -13118,6 +13755,643 @@
       "date": "2026-03-08",
       "name": "lana",
       "offer": "meta lead, fairfield, offer 1 combo",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "micaela micaela",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-25",
+      "name": "kristen leedie",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-25",
+      "name": "narissa rachel",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-25",
+      "name": "brittney",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-25",
+      "name": "catherine wong",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "brett paganoni",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "angela garwood",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "jennie dowie",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "megan ann",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "braden",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "linda",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "hayleigh cameron",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-24",
+      "name": "sariya sariya",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-23",
+      "name": "maureen",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-23",
+      "name": "louise watkins",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-23",
+      "name": "algon congoo",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-23",
+      "name": "matt bro",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-23",
+      "name": "jitha george",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "wendy edwards",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "katelyn",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "gordon",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "louise emily",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "lindy monteith",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "lenesse elizabeth james",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "rhonda flynn",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "ruby harrington",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "julie-ann douglas",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-22",
+      "name": "\u2b50\ufe0f\ud83e\udd17nicola pennington\ud83d\udc69\ud83c\udffc\ud83d\udc66\ud83c\udffc\ud83d\udc76\ud83c\udffb",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "sima mallik",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "joan mitchell",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "amber carige",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "michael gallon",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "rikki taua",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "louise thiele",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "ch\u00e2u tr\u1ea7n",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "ryan mills",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "mariann mccall",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-21",
+      "name": "rick cantoni",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "theresa-jane roberts",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "saranne lou lou maule",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "hope casanovas",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "nicolle marie",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "mardi clifford",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "sha",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-20",
+      "name": "ro motea",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "susan dorries",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "anita norton",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "tania greenwood",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "kerry",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "selina a",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "desaree byrnes",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "dieumerci mukandama",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "lynn armstrong",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "delvi delvi",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "paula koppe",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "joeli bauleka",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "kathy fell",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "campbell merrylees",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-19",
+      "name": "jayne",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "jamie lee lee brilley",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "leeanne johnson",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "haylee gransden",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-26",
+      "name": "erin",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "maya",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "hope white",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "anna de guzman",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "pania peke",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "tegs",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-28",
+      "name": "richard doig",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "maddy",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "kelsey mathison",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "cassie lee",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "michelle",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "emily",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "david brice",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "rachel",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-29",
+      "name": "leggy",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "nicola crane",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "coral ferguson",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "coralie",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "antonella olivera",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "agam",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-30",
+      "name": "ella",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "katia alamillo",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "mone",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "cheynee morrison",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "kara",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "roz clarke",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "shelley frisch",
+      "offer": "OFFER 1 NEW",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "sue smith",
+      "offer": "OFFER 1 NEW",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-03-31",
+      "name": "kayla smith",
+      "offer": "OFFER 1 NEW",
       "responded": "In follow up",
       "status": ""
     }
