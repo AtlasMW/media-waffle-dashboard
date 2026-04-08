@@ -1,7 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T13:21:05+10:00",
+  "lastUpdated": "2026-04-08T12:07:04+10:00",
   "agencyFees": {
     "2026-02": 950,
     "2026-03": 950
@@ -257,7 +257,7 @@
     },
     "2026-03": {
       "spend": 1407.8,
-      "impressions": 115705,
+      "impressions": 115706,
       "reach": 41298,
       "leads": 175,
       "cpl": 8.04,
@@ -272,7 +272,7 @@
         {
           "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
           "spend": 773.98,
-          "impressions": 65592,
+          "impressions": 65593,
           "reach": 26711,
           "leads": 114,
           "cpl": 6.79,
@@ -1077,8 +1077,8 @@
     {
       "date": "2026-03-31",
       "spend": 43.94,
-      "impressions": 3537,
-      "reach": 2959,
+      "impressions": 3538,
+      "reach": 2963,
       "leads": 6,
       "messages": 6,
       "linkClicks": 39,
