@@ -5558,8 +5558,8 @@
       "noContact": 15,
       "inFollowUp": 111,
       "respondedPct": 30,
-      "booked": 32,
-      "bookedPct": 18,
+      "booked": 31,
+      "bookedPct": 17,
       "confirmed": 15,
       "noShow": 0,
       "cancelled": 14,
@@ -5571,7 +5571,7 @@
           "name": "OFFER 2",
           "leads": 104,
           "cpl": 5.69,
-          "booked": 21,
+          "booked": 20,
           "spend": 666.1
         },
         {
@@ -5623,7 +5623,7 @@
           "name": "Tia Ru",
           "offer": "OFFER 2",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-02-02",
@@ -6860,11 +6860,11 @@
       "respondedPct": 27,
       "booked": 12,
       "bookedPct": 8,
-      "confirmed": 8,
+      "confirmed": 9,
       "noShow": 0,
       "cancelled": 1,
-      "rebooked": 3,
-      "moneyCollected": 4231.0,
+      "rebooked": 4,
+      "moneyCollected": 5683.0,
       "budget": 1407.8,
       "offers": [
         {
@@ -7861,7 +7861,7 @@
           "name": "shella joy",
           "offer": "OFFER 2",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-27",
@@ -7985,6 +7985,109 @@
         {
           "date": "2026-03-31",
           "name": "mercy sigei",
+          "offer": "OFFER 2",
+          "responded": "In follow up",
+          "status": ""
+        }
+      ]
+    },
+    "2026-04": {
+      "totalLeads": 10,
+      "responded": 2,
+      "noContact": 0,
+      "inFollowUp": 8,
+      "respondedPct": 20,
+      "booked": 1,
+      "bookedPct": 10,
+      "confirmed": 0,
+      "noShow": 0,
+      "cancelled": 0,
+      "rebooked": 0,
+      "moneyCollected": 0,
+      "budget": 546.38,
+      "offers": [
+        {
+          "name": "OFFER 2",
+          "leads": 5,
+          "cpl": 7.73,
+          "booked": 1,
+          "spend": 309.24
+        },
+        {
+          "name": "OFFER 3",
+          "leads": 5,
+          "cpl": 9.12,
+          "booked": 0,
+          "spend": 237.14
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-04-01",
+          "name": "pratikshya karki",
+          "offer": "OFFER 2",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "harold moscoso",
+          "offer": "OFFER 3",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "tintin \ud83e\uddff\u20e4",
+          "offer": "OFFER 3",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "jasmin co",
+          "offer": "OFFER 2",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "porsche pukdeepamornsri",
+          "offer": "OFFER 3",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "maizabbb",
+          "offer": "OFFER 2",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-04-01",
+          "name": "cel",
+          "offer": "OFFER 3",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "angelina ang",
+          "offer": "OFFER 3",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-02",
+          "name": "hyma",
+          "offer": "OFFER 2",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-02",
+          "name": "jasmine kaur",
           "offer": "OFFER 2",
           "responded": "In follow up",
           "status": ""
@@ -13388,7 +13491,7 @@
       "name": "Tia Ru",
       "offer": "OFFER 2",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-02-02",
@@ -15593,7 +15696,7 @@
       "name": "shella joy",
       "offer": "OFFER 2",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-27",
@@ -15717,6 +15820,76 @@
     {
       "date": "2026-03-31",
       "name": "mercy sigei",
+      "offer": "OFFER 2",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "pratikshya karki",
+      "offer": "OFFER 2",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "harold moscoso",
+      "offer": "OFFER 3",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "tintin \ud83e\uddff\u20e4",
+      "offer": "OFFER 3",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "jasmin co",
+      "offer": "OFFER 2",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "porsche pukdeepamornsri",
+      "offer": "OFFER 3",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "maizabbb",
+      "offer": "OFFER 2",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-04-01",
+      "name": "cel",
+      "offer": "OFFER 3",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "angelina ang",
+      "offer": "OFFER 3",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-02",
+      "name": "hyma",
+      "offer": "OFFER 2",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-02",
+      "name": "jasmine kaur",
       "offer": "OFFER 2",
       "responded": "In follow up",
       "status": ""

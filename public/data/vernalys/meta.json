@@ -1,9 +1,7 @@
 {
   "client": "Vernalys Skin & Laser Clinic",
   "currency": "AUD",
-  "ltv": 827,
-  "ltvDescription": "Based on average revenue per client tracked through Timely reports. Currently estimated at ~$827 per client.",
-  "lastUpdated": "2026-04-08T12:16:10+10:00",
+  "lastUpdated": "2026-04-13T14:14:53+10:00",
   "agencyFees": {
     "2025-07": 950,
     "2025-08": 950,
@@ -13,7 +11,8 @@
     "2025-12": 950,
     "2026-01": 950,
     "2026-02": 950,
-    "2026-03": 950
+    "2026-03": 950,
+    "2026-04": 950
   },
   "monthly": {
     "2025-07": {
@@ -1702,6 +1701,180 @@
           "name": "Instagram Instagram Stories",
           "spend": 502.56,
           "leads": 66
+        }
+      ]
+    },
+    "2026-04": {
+      "spend": 546.38,
+      "impressions": 47460,
+      "reach": 22400,
+      "leads": 66,
+      "cpl": 8.28,
+      "messages": 66,
+      "costPerMessage": 8.28,
+      "uniqueCtr": 0.0,
+      "cpm": 11.51,
+      "linkClicks": 357,
+      "cpc": 1.53,
+      "leadConvPct": 18.49,
+      "campaigns": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 309.24,
+          "impressions": 27936,
+          "reach": 14882,
+          "leads": 40,
+          "cpl": 7.73,
+          "uniqueCtr": 0.0,
+          "messages": 41,
+          "linkClicks": 212,
+          "cpc": 1.46,
+          "leadConvPct": 18.87
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 237.14,
+          "impressions": 19524,
+          "reach": 8390,
+          "leads": 26,
+          "cpl": 9.12,
+          "uniqueCtr": 0.01,
+          "messages": 25,
+          "linkClicks": 145,
+          "cpc": 1.64,
+          "leadConvPct": 17.93
+        }
+      ],
+      "offers": [
+        {
+          "name": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "leads": 40,
+          "cpl": 7.73,
+          "spend": 309.24,
+          "campaignPattern": "TOF // LEAD // MBO // OFFER 2 - PICO"
+        },
+        {
+          "name": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "leads": 26,
+          "cpl": 9.12,
+          "spend": 237.14,
+          "campaignPattern": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 8.85,
+          "leads": 3,
+          "cpl": 2.95,
+          "uniqueCtr": 0.0,
+          "frequency": 1.24
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 5.69,
+          "leads": 1,
+          "cpl": 5.69,
+          "uniqueCtr": 0.0,
+          "frequency": 1.24
+        },
+        {
+          "adName": "OFFER 2 - IMG 1 | H1 C1",
+          "adSetName": "DT HAIR REMOVAL // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // MBO // OFFER 2 - PICO",
+          "spend": 71.85,
+          "leads": 10,
+          "cpl": 7.18,
+          "uniqueCtr": 0.0,
+          "frequency": 1.57
+        },
+        {
+          "adName": "OFFER 3 - IMG 1 | H1 C1",
+          "adSetName": "NO DT AD+ // FEED + STORY // FEMALE 18-64",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 65.33,
+          "leads": 9,
+          "cpl": 7.26,
+          "uniqueCtr": 0.0,
+          "frequency": 1.6
+        },
+        {
+          "adName": "OFFER 3 - IMG 2 | H1 C1",
+          "adSetName": "DT PERSONAL CARE // FEMALE 18-65+",
+          "campaignName": "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)",
+          "spend": 14.86,
+          "leads": 2,
+          "cpl": 7.43,
+          "uniqueCtr": 0.0,
+          "frequency": 1.18
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 98.59,
+          "leads": 14
+        },
+        {
+          "age": "25-34",
+          "spend": 227.1,
+          "leads": 25
+        },
+        {
+          "age": "35-44",
+          "spend": 134.57,
+          "leads": 14
+        },
+        {
+          "age": "45-54",
+          "spend": 61.21,
+          "leads": 13
+        },
+        {
+          "age": "55-64",
+          "spend": 15.39,
+          "leads": 0
+        },
+        {
+          "age": "65+",
+          "spend": 9.52,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 68.1,
+          "leads": 8
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 9.85,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 36.3,
+          "leads": 4
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 58.73,
+          "leads": 10
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 167.03,
+          "leads": 25
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 206.37,
+          "leads": 19
         }
       ]
     }
@@ -4467,6 +4640,149 @@
       "linkClicks": 39,
       "uniqueCtr": 0.03,
       "cpm": 12.42
+    },
+    {
+      "date": "2026-04-01",
+      "spend": 44.69,
+      "impressions": 4189,
+      "reach": 3463,
+      "leads": 8,
+      "messages": 7,
+      "linkClicks": 40,
+      "uniqueCtr": 0.0,
+      "cpm": 10.67
+    },
+    {
+      "date": "2026-04-02",
+      "spend": 42.31,
+      "impressions": 3489,
+      "reach": 2837,
+      "leads": 4,
+      "messages": 3,
+      "linkClicks": 26,
+      "uniqueCtr": 0.0,
+      "cpm": 12.13
+    },
+    {
+      "date": "2026-04-03",
+      "spend": 45.5,
+      "impressions": 3161,
+      "reach": 2515,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 20,
+      "uniqueCtr": 0.0,
+      "cpm": 14.39
+    },
+    {
+      "date": "2026-04-04",
+      "spend": 41.2,
+      "impressions": 3269,
+      "reach": 2770,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 27,
+      "uniqueCtr": 0.0,
+      "cpm": 12.6
+    },
+    {
+      "date": "2026-04-05",
+      "spend": 51.96,
+      "impressions": 4322,
+      "reach": 3527,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 12.02
+    },
+    {
+      "date": "2026-04-06",
+      "spend": 46.71,
+      "impressions": 4590,
+      "reach": 3851,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 30,
+      "uniqueCtr": 0.0,
+      "cpm": 10.18
+    },
+    {
+      "date": "2026-04-07",
+      "spend": 42.0,
+      "impressions": 4825,
+      "reach": 4034,
+      "leads": 8,
+      "messages": 6,
+      "linkClicks": 30,
+      "uniqueCtr": 0.02,
+      "cpm": 8.7
+    },
+    {
+      "date": "2026-04-08",
+      "spend": 46.53,
+      "impressions": 4045,
+      "reach": 3394,
+      "leads": 8,
+      "messages": 9,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 11.5
+    },
+    {
+      "date": "2026-04-09",
+      "spend": 39.52,
+      "impressions": 3295,
+      "reach": 2776,
+      "leads": 6,
+      "messages": 5,
+      "linkClicks": 24,
+      "uniqueCtr": 0.0,
+      "cpm": 11.99
+    },
+    {
+      "date": "2026-04-10",
+      "spend": 40.19,
+      "impressions": 3602,
+      "reach": 2940,
+      "leads": 6,
+      "messages": 6,
+      "linkClicks": 28,
+      "uniqueCtr": 0.0,
+      "cpm": 11.16
+    },
+    {
+      "date": "2026-04-11",
+      "spend": 39.84,
+      "impressions": 3359,
+      "reach": 2865,
+      "leads": 6,
+      "messages": 7,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 11.86
+    },
+    {
+      "date": "2026-04-12",
+      "spend": 48.25,
+      "impressions": 3957,
+      "reach": 3271,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 27,
+      "uniqueCtr": 0.0,
+      "cpm": 12.19
+    },
+    {
+      "date": "2026-04-13",
+      "spend": 17.68,
+      "impressions": 1357,
+      "reach": 1189,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 14,
+      "uniqueCtr": 0.0,
+      "cpm": 13.03
     }
   ],
   "campaignDaily": {
@@ -6211,6 +6527,138 @@
         "spend": 19.38,
         "leads": 1
       }
+    },
+    "2026-04-01": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.26,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.43,
+        "leads": 5
+      }
+    },
+    "2026-04-02": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.35,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 18.96,
+        "leads": 1
+      }
+    },
+    "2026-04-03": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.6,
+        "leads": 1
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.9,
+        "leads": 1
+      }
+    },
+    "2026-04-04": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.16,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 18.04,
+        "leads": 2
+      }
+    },
+    "2026-04-05": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 28.49,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 23.47,
+        "leads": 0
+      }
+    },
+    "2026-04-06": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 25.52,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 21.19,
+        "leads": 2
+      }
+    },
+    "2026-04-07": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 22.85,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 19.15,
+        "leads": 4
+      }
+    },
+    "2026-04-08": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 26.05,
+        "leads": 6
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.48,
+        "leads": 2
+      }
+    },
+    "2026-04-09": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 23.62,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 15.9,
+        "leads": 4
+      }
+    },
+    "2026-04-10": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.38,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 15.81,
+        "leads": 3
+      }
+    },
+    "2026-04-11": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 24.04,
+        "leads": 4
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 15.8,
+        "leads": 2
+      }
+    },
+    "2026-04-12": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 27.54,
+        "leads": 2
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 20.71,
+        "leads": 0
+      }
+    },
+    "2026-04-13": {
+      "TOF // LEAD // MBO // OFFER 2 - PICO": {
+        "spend": 10.38,
+        "leads": 3
+      },
+      "TOF // LEAD // CBO // OFFER 3 - Acne Clear Program (CB)": {
+        "spend": 7.3,
+        "leads": 0
+      }
     }
-  }
+  },
+  "ltv": 827,
+  "ltvDescription": "Based on average revenue per client tracked through Timely reports. Currently estimated at ~$827 per client."
 }
