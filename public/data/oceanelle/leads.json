@@ -7,20 +7,20 @@
       "noContact": 0,
       "inFollowUp": 64,
       "respondedPct": 50,
-      "booked": 22,
-      "bookedPct": 17,
-      "confirmed": 10,
+      "booked": 26,
+      "bookedPct": 20,
+      "confirmed": 16,
       "noShow": 0,
-      "cancelled": 4,
-      "rebooked": 9,
-      "moneyCollected": 898.5,
+      "cancelled": 5,
+      "rebooked": 13,
+      "moneyCollected": 1098.5,
       "budget": 976.02,
       "offers": [
         {
           "name": "OFFER 1",
           "leads": 128,
           "cpl": 14.77,
-          "booked": 22,
+          "booked": 26,
           "spend": 457.84
         }
       ],
@@ -247,7 +247,7 @@
           "name": "kellie brown",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-13",
@@ -268,7 +268,7 @@
           "name": "lareesa green",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-14",
@@ -331,7 +331,7 @@
           "name": "julie sandra",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-15",
@@ -422,7 +422,7 @@
           "name": "christie n steve childs",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-16",
@@ -618,7 +618,7 @@
           "name": "kay giameos paradisis",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-21",
@@ -856,7 +856,7 @@
           "name": "peta alexander",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Cancelled Appointment"
         },
         {
           "date": "2026-03-29",
@@ -905,7 +905,7 @@
           "name": "elise steele",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-31",
@@ -1147,7 +1147,7 @@
       "name": "kellie brown",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-13",
@@ -1168,7 +1168,7 @@
       "name": "lareesa green",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-14",
@@ -1231,7 +1231,7 @@
       "name": "julie sandra",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-15",
@@ -1322,7 +1322,7 @@
       "name": "christie n steve childs",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-16",
@@ -1518,7 +1518,7 @@
       "name": "kay giameos paradisis",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-21",
@@ -1756,7 +1756,7 @@
       "name": "peta alexander",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Cancelled Appointment"
     },
     {
       "date": "2026-03-29",
@@ -1805,7 +1805,7 @@
       "name": "elise steele",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-31",
