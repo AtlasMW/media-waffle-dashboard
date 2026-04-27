@@ -1,8 +1,8 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "ltv": 440,
-  "ltvDescription": "Based on average revenue per client. Currently estimated at ~$440 per client.",
+  "ltv": 330,
+  "ltvDescription": "Based on average revenue per client. Currently estimated at ~$330 per client.",
   "lastUpdated": "2026-04-08T12:17:58+10:00",
   "agencyFees": {
     "2025-10": 1500,
