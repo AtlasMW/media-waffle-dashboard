@@ -599,7 +599,7 @@ function renderAds(m,pm) {
   if(hasMultiOffer) {
     document.getElementById('offer-compare-grid').innerHTML = m.offers.map(function(o) {
       var camp = (m.campaigns||[]).find(function(c){ return c.name.toUpperCase().includes(o.campaignPattern); });
-      return '<div class="offer-card"><h4>'+o.name+'</h4><div class="offer-stat"><span class="label">Leads</span><span class="value">'+o.leads+'</span></div><div class="offer-stat"><span class="label">CPL</span><span class="value">'+fmtC(o.cpl)+'</span></div><div class="offer-stat"><span class="label">Lead Conv %</span><span class="value">'+fmtP(camp?camp.leadConvPct:0)+'</span></div></div>';
+      return '<div class="offer-card"><h4>'+o.name+'</h4><div class="offer-stat"><span class="label">Budget</span><span class="value">'+fmtC(o.spend||0)+'</span></div><div class="offer-stat"><span class="label">Leads</span><span class="value">'+o.leads+'</span></div><div class="offer-stat"><span class="label">CPL</span><span class="value">'+fmtC(o.cpl)+'</span></div><div class="offer-stat"><span class="label">Lead Conv %</span><span class="value">'+fmtP(camp?camp.leadConvPct:0)+'</span></div></div>';
     }).join('');
   }
 
@@ -668,8 +668,34 @@ function renderAdsRange(m,pm,days) {
   var hasGenderR = genderDataR.length > 0;
   var ageRowColsR = hasGenderR ? 'triple' : '';
 
+  // Aggregate offers across months in the selected range
+  var offerAggR = {};
+  if (dr && metaData.monthly) {
+    Object.entries(metaData.monthly).forEach(function(entry) {
+      var k = entry[0], v = entry[1];
+      var mStart = k + '-01';
+      var p = k.split('-').map(Number);
+      var mEndD = new Date(p[0], p[1], 0);
+      var mEnd = p[0]+'-'+String(p[1]).padStart(2,'0')+'-'+String(mEndD.getDate()).padStart(2,'0');
+      if (mStart <= dr.end && mEnd >= dr.start && v.offers) {
+        v.offers.forEach(function(o) {
+          var key = o.name || o.campaignPattern;
+          if (!offerAggR[key]) offerAggR[key] = { name: key, spend: 0, leads: 0 };
+          offerAggR[key].spend += (o.spend || 0);
+          offerAggR[key].leads += (o.leads || 0);
+        });
+      }
+    });
+  }
+  var rangeOffers = Object.values(offerAggR).map(function(o) {
+    o.cpl = o.leads > 0 ? o.spend / o.leads : 0;
+    return o;
+  });
+  var hasRangeOffers = rangeOffers.length > 1;
+  var rangeOfferHtml = hasRangeOffers ? '<div class="chart-row full"><div class="chart-card"><h3>Offer Comparison</h3><div class="chart-sub">'+adsPL+' — Aggregated across selected period</div><div class="offer-grid">'+rangeOffers.map(function(o){return '<div class="offer-card"><h4>'+o.name+'</h4><div class="offer-stat"><span class="label">Budget</span><span class="value">'+fmtC(o.spend)+'</span></div><div class="offer-stat"><span class="label">Leads</span><span class="value">'+o.leads+'</span></div><div class="offer-stat"><span class="label">CPL</span><span class="value">'+fmtC(o.cpl)+'</span></div></div>';}).join('')+'</div></div></div>' : '';
+
   var adsPL = drLabel ? drLabel.label : 'Selected period';
-  tab.innerHTML = '<div class="kpi-grid">'+kpi('spend','Ad Spend',fmtC(m.spend),trend(m.spend,pm&&pm.spend))+kpi('leads','Leads Generated',m.leads,trend(m.leads,pm&&pm.leads))+kpi('cpl','Cost Per Lead',fmtC(m.cpl),trend(m.cpl,pm&&pm.cpl,true))+kpi('msg','Conversations Started',m.messages,trend(m.messages,pm&&pm.messages))+kpi('msg','Cost Per Conversation',fmtC(m.costPerMessage),trend(m.costPerMessage,pm&&pm.costPerMessage,true))+kpi('ctr','CTR',fmtP(m.impressions>0?(m.linkClicks||0)/m.impressions*100:0),trend(m.impressions>0?(m.linkClicks||0)/m.impressions*100:0,pm&&pm.impressions>0?(pm.linkClicks||0)/pm.impressions*100:0))+kpi('impressions','CPM',fmtC(m.cpm),trend(m.cpm,pm&&pm.cpm,true))+kpi('clicks','Link Clicks',fmtN(m.linkClicks||0),trend(m.linkClicks||0,pm&&pm.linkClicks||0))+kpi('cpc','CPC',fmtC(m.cpc||0),trend(m.cpc||0,pm&&pm.cpc||0,true))+kpi('conv','Lead Conv %',fmtP(m.leadConvPct||0),trend(m.leadConvPct||0,pm&&pm.leadConvPct||0))+'</div><div class="chart-row full"><div class="chart-card"><h3>Spend vs Leads</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-overlay"></canvas></div></div></div><div class="chart-row '+ageRowColsR+'"><div class="chart-card"><h3>Audience by Age</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-age"></canvas></div></div>'+(hasGenderR?'<div class="chart-card"><h3>Gender Breakdown</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-gender"></canvas></div></div>':'')+'<div class="chart-card"><h3>Ad Placements</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-placements"></canvas></div></div></div><div class="chart-row full"><div class="chart-card"><h3>Ad Creative Leaderboard</h3><div class="chart-sub">'+adsPL+'</div><div id="ad-leaderboard-table"></div></div></div>'+LEGEND_ADS;
+  tab.innerHTML = '<div class="kpi-grid">'+kpi('spend','Ad Spend',fmtC(m.spend),trend(m.spend,pm&&pm.spend))+kpi('leads','Leads Generated',m.leads,trend(m.leads,pm&&pm.leads))+kpi('cpl','Cost Per Lead',fmtC(m.cpl),trend(m.cpl,pm&&pm.cpl,true))+kpi('msg','Conversations Started',m.messages,trend(m.messages,pm&&pm.messages))+kpi('msg','Cost Per Conversation',fmtC(m.costPerMessage),trend(m.costPerMessage,pm&&pm.costPerMessage,true))+kpi('ctr','CTR',fmtP(m.impressions>0?(m.linkClicks||0)/m.impressions*100:0),trend(m.impressions>0?(m.linkClicks||0)/m.impressions*100:0,pm&&pm.impressions>0?(pm.linkClicks||0)/pm.impressions*100:0))+kpi('impressions','CPM',fmtC(m.cpm),trend(m.cpm,pm&&pm.cpm,true))+kpi('clicks','Link Clicks',fmtN(m.linkClicks||0),trend(m.linkClicks||0,pm&&pm.linkClicks||0))+kpi('cpc','CPC',fmtC(m.cpc||0),trend(m.cpc||0,pm&&pm.cpc||0,true))+kpi('conv','Lead Conv %',fmtP(m.leadConvPct||0),trend(m.leadConvPct||0,pm&&pm.leadConvPct||0))+'</div><div class="chart-row full"><div class="chart-card"><h3>Spend vs Leads</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-overlay"></canvas></div></div></div>'+rangeOfferHtml+'<div class="chart-row '+ageRowColsR+'"><div class="chart-card"><h3>Audience by Age</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-age"></canvas></div></div>'+(hasGenderR?'<div class="chart-card"><h3>Gender Breakdown</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-gender"></canvas></div></div>':'')+'<div class="chart-card"><h3>Ad Placements</h3><div class="chart-sub">'+adsPL+'</div><div class="chart-container"><canvas id="c-placements"></canvas></div></div></div><div class="chart-row full"><div class="chart-card"><h3>Ad Creative Leaderboard</h3><div class="chart-sub">'+adsPL+'</div><div id="ad-leaderboard-table"></div></div></div>'+LEGEND_ADS;
 
   var pr2 = (currentRange === '90d' || (currentRange==='custom' && _numD > 45)) ? 4 : 3;
   charts.ov = new Chart(document.getElementById('c-overlay'),{type:'line',data:{labels:labels,datasets:[
