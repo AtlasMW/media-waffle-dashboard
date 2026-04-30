@@ -250,21 +250,21 @@
       "noContact": 0,
       "inFollowUp": 27,
       "respondedPct": 53,
-      "booked": 8,
-      "bookedPct": 14,
-      "confirmed": 3,
+      "booked": 10,
+      "bookedPct": 18,
+      "confirmed": 6,
       "noShow": 0,
-      "cancelled": 3,
+      "cancelled": 4,
       "rebooked": 1,
-      "moneyCollected": 420.0,
-      "budget": 843.31,
+      "moneyCollected": 776.9,
+      "budget": 843.38,
       "offers": [
         {
           "name": "OFFER 6",
           "leads": 57,
           "cpl": 14.29,
-          "booked": 8,
-          "spend": 843.31
+          "booked": 10,
+          "spend": 843.38
         }
       ],
       "leads": [
@@ -476,7 +476,7 @@
           "name": "joan hunter",
           "offer": "OFFER 6",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-16",
@@ -518,7 +518,7 @@
           "name": "di oakes",
           "offer": "OFFER 6",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-18",
@@ -553,7 +553,7 @@
           "name": "cheryl macgregor",
           "offer": "OFFER 6",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-22",
@@ -623,7 +623,7 @@
           "name": "elyn juv",
           "offer": "OFFER 6",
           "responded": "Yes",
-          "status": ""
+          "status": "Cancelled Appointment"
         },
         {
           "date": "2026-03-28",
@@ -665,6 +665,249 @@
           "name": "julia zaph",
           "offer": "OFFER 6",
           "responded": "Yes",
+          "status": ""
+        }
+      ]
+    },
+    "2026-04": {
+      "totalLeads": 30,
+      "responded": 14,
+      "noContact": 0,
+      "inFollowUp": 16,
+      "respondedPct": 47,
+      "booked": 8,
+      "bookedPct": 27,
+      "confirmed": 4,
+      "noShow": 0,
+      "cancelled": 0,
+      "rebooked": 1,
+      "moneyCollected": 675.0,
+      "budget": 844.39,
+      "offers": [
+        {
+          "name": "OFFER 6",
+          "leads": 3,
+          "cpl": 9.86,
+          "booked": 0,
+          "spend": 39.43
+        },
+        {
+          "name": "OFFER 7",
+          "leads": 27,
+          "cpl": 18.32,
+          "booked": 8,
+          "spend": 659.39
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-04-01",
+          "name": "sonya sonny",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "natasha renwick",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-01",
+          "name": "shari pinfield",
+          "offer": "OFFER 6",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-03",
+          "name": "jayne martin",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-04-04",
+          "name": "nic kel",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-04",
+          "name": "trace lucas davenport",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-07",
+          "name": "lynda etherington",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-07",
+          "name": "dallas seedsman",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-04-07",
+          "name": "nic lawson",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-07",
+          "name": "kathy riordan",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-04-08",
+          "name": "shaz barnwell",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-08",
+          "name": "melissa alice",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-04-10",
+          "name": "sandy clarke",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-10",
+          "name": "sonia berzinski",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-11",
+          "name": "deb bradshaw",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Successful"
+        },
+        {
+          "date": "2026-04-12",
+          "name": "bridget marie scarff",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-15",
+          "name": "al leesha",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-16",
+          "name": "kate tree",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-17",
+          "name": "narelle milligan",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-17",
+          "name": "\u271d\ufe0f",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-18",
+          "name": "stephie anderson",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-18",
+          "name": "lisa callan",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-04-18",
+          "name": "melanie j mccormack",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-20",
+          "name": "taiya searle",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-04-20",
+          "name": "lu proctor",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-20",
+          "name": "katrina leonardi",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-04-21",
+          "name": "caitlin scarborough",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-21",
+          "name": "beliss sherrin",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-04-21",
+          "name": "carla nicholls",
+          "offer": "OFFER 7",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-04-22",
+          "name": "cathy taylor",
+          "offer": "OFFER 7",
+          "responded": "In follow up",
           "status": ""
         }
       ]
@@ -1089,7 +1332,7 @@
       "name": "joan hunter",
       "offer": "OFFER 6",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-16",
@@ -1131,7 +1374,7 @@
       "name": "di oakes",
       "offer": "OFFER 6",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-18",
@@ -1166,7 +1409,7 @@
       "name": "cheryl macgregor",
       "offer": "OFFER 6",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-22",
@@ -1236,7 +1479,7 @@
       "name": "elyn juv",
       "offer": "OFFER 6",
       "responded": "Yes",
-      "status": ""
+      "status": "Cancelled Appointment"
     },
     {
       "date": "2026-03-28",
@@ -1278,6 +1521,216 @@
       "name": "julia zaph",
       "offer": "OFFER 6",
       "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "sonya sonny",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "natasha renwick",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-01",
+      "name": "shari pinfield",
+      "offer": "OFFER 6",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-03",
+      "name": "jayne martin",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-04-04",
+      "name": "nic kel",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-04",
+      "name": "trace lucas davenport",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-07",
+      "name": "lynda etherington",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-07",
+      "name": "dallas seedsman",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-04-07",
+      "name": "nic lawson",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-07",
+      "name": "kathy riordan",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-04-08",
+      "name": "shaz barnwell",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-08",
+      "name": "melissa alice",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-04-10",
+      "name": "sandy clarke",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-10",
+      "name": "sonia berzinski",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-11",
+      "name": "deb bradshaw",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Successful"
+    },
+    {
+      "date": "2026-04-12",
+      "name": "bridget marie scarff",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-15",
+      "name": "al leesha",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-16",
+      "name": "kate tree",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-17",
+      "name": "narelle milligan",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-17",
+      "name": "\u271d\ufe0f",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-18",
+      "name": "stephie anderson",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-18",
+      "name": "lisa callan",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-04-18",
+      "name": "melanie j mccormack",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-20",
+      "name": "taiya searle",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-04-20",
+      "name": "lu proctor",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-20",
+      "name": "katrina leonardi",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-04-21",
+      "name": "caitlin scarborough",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-21",
+      "name": "beliss sherrin",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-04-21",
+      "name": "carla nicholls",
+      "offer": "OFFER 7",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-04-22",
+      "name": "cathy taylor",
+      "offer": "OFFER 7",
+      "responded": "In follow up",
       "status": ""
     }
   ]

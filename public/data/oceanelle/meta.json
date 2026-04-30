@@ -1,819 +1,825 @@
 {
   "client": "Oceanelle Medispa",
   "currency": "AUD",
-  "ltv": 408,
-  "ltvDescription": "Based on average revenue per client. Currently estimated at ~$408 per client.",
-  "lastUpdated": "2026-04-14T12:00:02+10:00",
+  "lastUpdated": "2026-05-01T06:01:41+10:00",
   "agencyFees": {
-    "2026-03": 950
+    "2026-04": 950
   },
   "monthly": {
-    "2026-03": {
-      "spend": 976.02,
-      "impressions": 46582,
-      "reach": 18486,
-      "leads": 143,
-      "cpl": 6.83,
-      "messages": 141,
-      "costPerMessage": 6.92,
-      "uniqueCtr": 0.08,
-      "cpm": 20.95,
-      "linkClicks": 732,
-      "cpc": 1.33,
-      "leadConvPct": 19.54,
+    "2026-04": {
+      "spend": 905.45,
+      "impressions": 43689,
+      "reach": 24714,
+      "leads": 138,
+      "cpl": 6.56,
+      "messages": 137,
+      "costPerMessage": 6.61,
+      "uniqueCtr": 0.03,
+      "cpm": 20.72,
+      "linkClicks": 789,
+      "cpc": 1.15,
+      "leadConvPct": 17.49,
       "campaigns": [
         {
-          "name": "LEAD GEN FORM - MODEL SEARCH",
-          "spend": 23.28,
-          "impressions": 1721,
-          "reach": 1518,
-          "leads": 7,
-          "cpl": 3.33,
-          "uniqueCtr": 0.0,
-          "messages": 9,
-          "linkClicks": 26,
-          "cpc": 0.9,
-          "leadConvPct": 26.92
-        },
-        {
           "name": "LEADS // ABO // OFFER 1",
-          "spend": 457.84,
-          "impressions": 16535,
-          "reach": 6072,
-          "leads": 31,
-          "cpl": 14.77,
-          "uniqueCtr": 0.15,
-          "messages": 31,
-          "linkClicks": 199,
-          "cpc": 2.3,
-          "leadConvPct": 15.58
+          "spend": 220.42,
+          "impressions": 8280,
+          "reach": 3468,
+          "leads": 26,
+          "cpl": 8.48,
+          "uniqueCtr": 0.09,
+          "messages": 24,
+          "linkClicks": 131,
+          "cpc": 1.68,
+          "leadConvPct": 19.85
         },
         {
           "name": "LEADS // ABO // OFFER 1 [NEWS VIDEO]",
-          "spend": 494.9,
-          "impressions": 28326,
-          "reach": 15948,
-          "leads": 105,
-          "cpl": 4.71,
-          "uniqueCtr": 0.03,
-          "messages": 101,
-          "linkClicks": 507,
-          "cpc": 0.98,
-          "leadConvPct": 20.71
+          "spend": 659.95,
+          "impressions": 32126,
+          "reach": 20819,
+          "leads": 112,
+          "cpl": 5.89,
+          "uniqueCtr": 0.02,
+          "messages": 113,
+          "linkClicks": 528,
+          "cpc": 1.25,
+          "leadConvPct": 21.21
+        },
+        {
+          "name": "BROAD_TRAFFIC_IG",
+          "spend": 25.08,
+          "impressions": 3283,
+          "reach": 2814,
+          "leads": 0,
+          "cpl": 0,
+          "uniqueCtr": 0.0,
+          "messages": 0,
+          "linkClicks": 130,
+          "cpc": 0.19,
+          "leadConvPct": 0.0
         }
       ],
       "offers": [
         {
           "name": "LEADS // ABO // OFFER 1",
-          "leads": 31,
-          "cpl": 14.77,
-          "spend": 457.84,
+          "leads": 26,
+          "cpl": 8.48,
+          "spend": 220.42,
           "campaignPattern": "LEADS // ABO // OFFER 1"
         },
         {
           "name": "LEADS // ABO // OFFER 1 [NEWS VIDEO]",
-          "leads": 105,
-          "cpl": 4.71,
-          "spend": 494.9,
+          "leads": 112,
+          "cpl": 5.89,
+          "spend": 659.95,
           "campaignPattern": "LEADS // ABO // OFFER 1 [NEWS VIDEO]"
         }
       ],
       "ads": [
         {
-          "adName": "AD 4",
-          "adSetName": "FAT FREEZING MODEL SEARCH",
-          "campaignName": "LEAD GEN FORM - MODEL SEARCH",
-          "spend": 23.21,
-          "leads": 7,
-          "cpl": 3.32,
-          "uniqueCtr": 0.0,
-          "frequency": 1.13
-        },
-        {
           "adName": "NEWS VIDEO | H3 - C2",
           "adSetName": "BROAD // WOMEN AGE 18+ // WOLLONGONG",
           "campaignName": "LEADS // ABO // OFFER 1 [NEWS VIDEO]",
-          "spend": 494.9,
-          "leads": 105,
-          "cpl": 4.71,
-          "uniqueCtr": 0.03,
-          "frequency": 1.78
+          "spend": 659.95,
+          "leads": 112,
+          "cpl": 5.89,
+          "uniqueCtr": 0.02,
+          "frequency": 1.54
         },
         {
           "adName": "VIDEO 4 | H2, 3 - C3",
           "adSetName": "BROAD // WOMEN AGE 34-65+ // WOLLONGONG",
           "campaignName": "LEADS // ABO // OFFER 1",
-          "spend": 320.94,
-          "leads": 30,
-          "cpl": 10.7,
-          "uniqueCtr": 0.2,
-          "frequency": 2.42
+          "spend": 76.21,
+          "leads": 9,
+          "cpl": 8.47,
+          "uniqueCtr": 0.06,
+          "frequency": 1.78
         },
         {
-          "adName": "VIDEO 2 | H1,2 - C1",
+          "adName": "VIDEO 3 | H3,4 - C2",
           "adSetName": "BROAD // WOMEN AGE 34-65+ // WOLLONGONG",
           "campaignName": "LEADS // ABO // OFFER 1",
-          "spend": 52.36,
-          "leads": 1,
-          "cpl": 52.36,
-          "uniqueCtr": 0.0,
-          "frequency": 1.38
+          "spend": 144.21,
+          "leads": 17,
+          "cpl": 8.48,
+          "uniqueCtr": 0.07,
+          "frequency": 2.0
         }
       ],
       "demographics": [
         {
           "age": "18-24",
-          "spend": 67.12,
-          "leads": 11
+          "spend": 67.26,
+          "leads": 13
         },
         {
           "age": "25-34",
-          "spend": 121.28,
-          "leads": 14
+          "spend": 113.47,
+          "leads": 17
         },
         {
           "age": "35-44",
-          "spend": 192.84,
-          "leads": 24
+          "spend": 185.87,
+          "leads": 21
         },
         {
           "age": "45-54",
-          "spend": 255.94,
-          "leads": 43
-        },
-        {
-          "age": "55-64",
-          "spend": 216.26,
+          "spend": 245.88,
           "leads": 31
         },
         {
-          "age": "65+",
-          "spend": 122.54,
-          "leads": 20
+          "age": "55-64",
+          "spend": 186.72,
+          "leads": 42
         },
         {
-          "age": "Unknown",
-          "spend": 0.04,
-          "leads": 0
+          "age": "65+",
+          "spend": 106.25,
+          "leads": 14
         }
       ],
       "placements": [
         {
           "name": "Facebook Facebook Profile Feed",
-          "spend": 0.27,
+          "spend": 0.2,
           "leads": 0
         },
         {
           "name": "Facebook Facebook Reels",
-          "spend": 211.38,
-          "leads": 35
+          "spend": 195.53,
+          "leads": 30
         },
         {
           "name": "Facebook Facebook Stories",
-          "spend": 39.91,
-          "leads": 8
+          "spend": 22.09,
+          "leads": 2
         },
         {
           "name": "Facebook Feed",
-          "spend": 339.31,
-          "leads": 34
+          "spend": 165.53,
+          "leads": 22
         },
         {
           "name": "Facebook Instream Video",
-          "spend": 15.97,
-          "leads": 0
+          "spend": 6.79,
+          "leads": 1
         },
         {
           "name": "Instagram Feed",
-          "spend": 232.43,
-          "leads": 45
+          "spend": 369.96,
+          "leads": 66
         },
         {
           "name": "Instagram Instagram Explore Grid Home",
-          "spend": 0.06,
+          "spend": 0.14,
           "leads": 0
         },
         {
           "name": "Instagram Instagram Reels",
-          "spend": 130.55,
+          "spend": 141.77,
           "leads": 17
         },
         {
           "name": "Instagram Instagram Stories",
-          "spend": 6.14,
-          "leads": 4
+          "spend": 3.44,
+          "leads": 0
         }
       ]
     }
   },
   "daily": [
     {
-      "date": "2026-03-01",
-      "spend": 11.54,
-      "impressions": 779,
-      "reach": 747,
-      "leads": 3,
-      "messages": 3,
-      "linkClicks": 11,
-      "uniqueCtr": 0.0,
-      "cpm": 14.81
-    },
-    {
-      "date": "2026-03-02",
-      "spend": 9.21,
-      "impressions": 739,
-      "reach": 683,
+      "date": "2026-04-01",
+      "spend": 28.59,
+      "impressions": 1407,
+      "reach": 1284,
       "leads": 3,
       "messages": 4,
-      "linkClicks": 13,
-      "uniqueCtr": 0.0,
-      "cpm": 12.46
+      "linkClicks": 22,
+      "uniqueCtr": 0.08,
+      "cpm": 20.32
     },
     {
-      "date": "2026-03-03",
-      "spend": 25.5,
-      "impressions": 1277,
-      "reach": 1044,
-      "leads": 1,
+      "date": "2026-04-02",
+      "spend": 26.9,
+      "impressions": 1007,
+      "reach": 923,
+      "leads": 4,
       "messages": 4,
-      "linkClicks": 12,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
-      "cpm": 19.97
+      "cpm": 26.71
     },
     {
-      "date": "2026-03-04",
-      "spend": 26.15,
-      "impressions": 1045,
-      "reach": 778,
-      "leads": 0,
-      "messages": 0,
-      "linkClicks": 8,
-      "uniqueCtr": 0.0,
-      "cpm": 25.02
-    },
-    {
-      "date": "2026-03-05",
-      "spend": 23.38,
-      "impressions": 842,
-      "reach": 668,
-      "leads": 1,
-      "messages": 2,
-      "linkClicks": 15,
-      "uniqueCtr": 0.0,
-      "cpm": 27.77
-    },
-    {
-      "date": "2026-03-06",
-      "spend": 21.33,
-      "impressions": 745,
-      "reach": 563,
+      "date": "2026-04-03",
+      "spend": 27.78,
+      "impressions": 1081,
+      "reach": 1010,
       "leads": 2,
       "messages": 2,
       "linkClicks": 12,
-      "uniqueCtr": 0.18,
-      "cpm": 28.63
-    },
-    {
-      "date": "2026-03-07",
-      "spend": 25.9,
-      "impressions": 1024,
-      "reach": 846,
-      "leads": 1,
-      "messages": 1,
-      "linkClicks": 8,
       "uniqueCtr": 0.0,
-      "cpm": 25.29
-    },
-    {
-      "date": "2026-03-08",
-      "spend": 28.17,
-      "impressions": 1074,
-      "reach": 855,
-      "leads": 1,
-      "messages": 1,
-      "linkClicks": 5,
-      "uniqueCtr": 0.0,
-      "cpm": 26.23
-    },
-    {
-      "date": "2026-03-09",
-      "spend": 43.03,
-      "impressions": 1674,
-      "reach": 1374,
-      "leads": 3,
-      "messages": 1,
-      "linkClicks": 25,
-      "uniqueCtr": 0.07,
       "cpm": 25.7
     },
     {
-      "date": "2026-03-10",
-      "spend": 63.12,
-      "impressions": 2463,
-      "reach": 1940,
-      "leads": 11,
-      "messages": 12,
-      "linkClicks": 46,
-      "uniqueCtr": 0.0,
-      "cpm": 25.63
-    },
-    {
-      "date": "2026-03-11",
-      "spend": 39.7,
-      "impressions": 1794,
-      "reach": 1528,
-      "leads": 5,
-      "messages": 4,
-      "linkClicks": 29,
-      "uniqueCtr": 0.13,
-      "cpm": 22.13
-    },
-    {
-      "date": "2026-03-12",
-      "spend": 34.33,
-      "impressions": 1752,
-      "reach": 1491,
-      "leads": 4,
-      "messages": 4,
-      "linkClicks": 38,
-      "uniqueCtr": 0.0,
-      "cpm": 19.59
-    },
-    {
-      "date": "2026-03-13",
-      "spend": 33.53,
-      "impressions": 1721,
-      "reach": 1452,
-      "leads": 7,
-      "messages": 7,
-      "linkClicks": 23,
-      "uniqueCtr": 0.14,
-      "cpm": 19.48
-    },
-    {
-      "date": "2026-03-14",
-      "spend": 27.5,
-      "impressions": 1429,
-      "reach": 1260,
-      "leads": 6,
-      "messages": 5,
-      "linkClicks": 27,
-      "uniqueCtr": 0.08,
-      "cpm": 19.24
-    },
-    {
-      "date": "2026-03-15",
-      "spend": 45.96,
-      "impressions": 2467,
-      "reach": 2192,
-      "leads": 13,
-      "messages": 13,
-      "linkClicks": 49,
-      "uniqueCtr": 0.09,
-      "cpm": 18.63
-    },
-    {
-      "date": "2026-03-16",
-      "spend": 37.78,
-      "impressions": 2016,
-      "reach": 1768,
+      "date": "2026-04-04",
+      "spend": 23.66,
+      "impressions": 1257,
+      "reach": 1157,
       "leads": 6,
       "messages": 6,
-      "linkClicks": 39,
+      "linkClicks": 27,
+      "uniqueCtr": 0.0,
+      "cpm": 18.82
+    },
+    {
+      "date": "2026-04-05",
+      "spend": 35.68,
+      "impressions": 1815,
+      "reach": 1615,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 28,
+      "uniqueCtr": 0.06,
+      "cpm": 19.66
+    },
+    {
+      "date": "2026-04-06",
+      "spend": 29.39,
+      "impressions": 1577,
+      "reach": 1388,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 22,
+      "uniqueCtr": 0.07,
+      "cpm": 18.64
+    },
+    {
+      "date": "2026-04-07",
+      "spend": 29.49,
+      "impressions": 1784,
+      "reach": 1556,
+      "leads": 7,
+      "messages": 7,
+      "linkClicks": 28,
+      "uniqueCtr": 0.0,
+      "cpm": 16.53
+    },
+    {
+      "date": "2026-04-08",
+      "spend": 30.23,
+      "impressions": 1765,
+      "reach": 1569,
+      "leads": 1,
+      "messages": 0,
+      "linkClicks": 20,
+      "uniqueCtr": 0.0,
+      "cpm": 17.13
+    },
+    {
+      "date": "2026-04-09",
+      "spend": 25.58,
+      "impressions": 1354,
+      "reach": 1196,
+      "leads": 5,
+      "messages": 3,
+      "linkClicks": 26,
+      "uniqueCtr": 0.08,
+      "cpm": 18.89
+    },
+    {
+      "date": "2026-04-10",
+      "spend": 28.05,
+      "impressions": 1309,
+      "reach": 1185,
+      "leads": 8,
+      "messages": 8,
+      "linkClicks": 24,
+      "uniqueCtr": 0.08,
+      "cpm": 21.43
+    },
+    {
+      "date": "2026-04-11",
+      "spend": 24.35,
+      "impressions": 1303,
+      "reach": 1182,
+      "leads": 8,
+      "messages": 7,
+      "linkClicks": 24,
+      "uniqueCtr": 0.0,
+      "cpm": 18.69
+    },
+    {
+      "date": "2026-04-12",
+      "spend": 33.82,
+      "impressions": 1644,
+      "reach": 1516,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 27,
+      "uniqueCtr": 0.0,
+      "cpm": 20.57
+    },
+    {
+      "date": "2026-04-13",
+      "spend": 29.76,
+      "impressions": 1588,
+      "reach": 1428,
+      "leads": 8,
+      "messages": 7,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
       "cpm": 18.74
     },
     {
-      "date": "2026-03-17",
-      "spend": 36.33,
-      "impressions": 1699,
-      "reach": 1518,
-      "leads": 5,
+      "date": "2026-04-14",
+      "spend": 31.22,
+      "impressions": 1453,
+      "reach": 1347,
+      "leads": 7,
       "messages": 5,
+      "linkClicks": 21,
+      "uniqueCtr": 0.0,
+      "cpm": 21.49
+    },
+    {
+      "date": "2026-04-15",
+      "spend": 29.08,
+      "impressions": 1409,
+      "reach": 1355,
+      "leads": 3,
+      "messages": 2,
+      "linkClicks": 26,
+      "uniqueCtr": 0.0,
+      "cpm": 20.64
+    },
+    {
+      "date": "2026-04-16",
+      "spend": 27.23,
+      "impressions": 1242,
+      "reach": 1095,
+      "leads": 11,
+      "messages": 11,
+      "linkClicks": 34,
+      "uniqueCtr": 0.0,
+      "cpm": 21.92
+    },
+    {
+      "date": "2026-04-17",
+      "spend": 26.1,
+      "impressions": 1231,
+      "reach": 1157,
+      "leads": 5,
+      "messages": 7,
       "linkClicks": 19,
       "uniqueCtr": 0.0,
-      "cpm": 21.38
+      "cpm": 21.2
     },
     {
-      "date": "2026-03-18",
-      "spend": 35.57,
-      "impressions": 1709,
-      "reach": 1493,
-      "leads": 10,
-      "messages": 8,
-      "linkClicks": 32,
+      "date": "2026-04-18",
+      "spend": 25.71,
+      "impressions": 1169,
+      "reach": 1036,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 13,
       "uniqueCtr": 0.0,
-      "cpm": 20.81
+      "cpm": 21.99
     },
     {
-      "date": "2026-03-19",
-      "spend": 34.83,
-      "impressions": 1610,
-      "reach": 1432,
+      "date": "2026-04-19",
+      "spend": 34.71,
+      "impressions": 1724,
+      "reach": 1595,
       "leads": 8,
       "messages": 7,
-      "linkClicks": 33,
-      "uniqueCtr": 0.07,
-      "cpm": 21.63
+      "linkClicks": 35,
+      "uniqueCtr": 0.13,
+      "cpm": 20.13
     },
     {
-      "date": "2026-03-20",
-      "spend": 32.16,
-      "impressions": 1618,
-      "reach": 1450,
-      "leads": 5,
-      "messages": 4,
-      "linkClicks": 33,
-      "uniqueCtr": 0.14,
-      "cpm": 19.88
-    },
-    {
-      "date": "2026-03-21",
-      "spend": 27.89,
-      "impressions": 1308,
-      "reach": 1152,
-      "leads": 3,
-      "messages": 4,
-      "linkClicks": 16,
+      "date": "2026-04-20",
+      "spend": 32.14,
+      "impressions": 1632,
+      "reach": 1493,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 21,
       "uniqueCtr": 0.0,
-      "cpm": 21.32
+      "cpm": 19.69
     },
     {
-      "date": "2026-03-22",
-      "spend": 38.79,
-      "impressions": 2039,
-      "reach": 1753,
-      "leads": 10,
-      "messages": 8,
-      "linkClicks": 36,
-      "uniqueCtr": 0.06,
-      "cpm": 19.02
-    },
-    {
-      "date": "2026-03-23",
-      "spend": 35.21,
-      "impressions": 1979,
-      "reach": 1723,
+      "date": "2026-04-21",
+      "spend": 28.97,
+      "impressions": 1294,
+      "reach": 1145,
       "leads": 4,
       "messages": 4,
-      "linkClicks": 35,
+      "linkClicks": 19,
       "uniqueCtr": 0.0,
-      "cpm": 17.79
+      "cpm": 22.39
     },
     {
-      "date": "2026-03-24",
-      "spend": 32.26,
-      "impressions": 1463,
-      "reach": 1349,
-      "leads": 7,
-      "messages": 8,
-      "linkClicks": 30,
-      "uniqueCtr": 0.0,
-      "cpm": 22.05
-    },
-    {
-      "date": "2026-03-25",
-      "spend": 32.59,
-      "impressions": 1642,
-      "reach": 1442,
-      "leads": 6,
-      "messages": 5,
-      "linkClicks": 30,
-      "uniqueCtr": 0.0,
-      "cpm": 19.85
-    },
-    {
-      "date": "2026-03-26",
-      "spend": 27.26,
-      "impressions": 1402,
-      "reach": 1284,
+      "date": "2026-04-22",
+      "spend": 29.98,
+      "impressions": 1198,
+      "reach": 1086,
       "leads": 2,
-      "messages": 2,
-      "linkClicks": 20,
+      "messages": 3,
+      "linkClicks": 14,
       "uniqueCtr": 0.0,
-      "cpm": 19.44
+      "cpm": 25.03
     },
     {
-      "date": "2026-03-27",
-      "spend": 25.78,
-      "impressions": 1234,
-      "reach": 1161,
-      "leads": 1,
-      "messages": 2,
-      "linkClicks": 12,
+      "date": "2026-04-23",
+      "spend": 32.1,
+      "impressions": 1377,
+      "reach": 1203,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 27,
       "uniqueCtr": 0.0,
-      "cpm": 20.89
+      "cpm": 23.31
     },
     {
-      "date": "2026-03-28",
-      "spend": 25.19,
-      "impressions": 1303,
-      "reach": 1256,
+      "date": "2026-04-24",
+      "spend": 34.36,
+      "impressions": 1686,
+      "reach": 1541,
       "leads": 1,
       "messages": 1,
-      "linkClicks": 12,
+      "linkClicks": 32,
       "uniqueCtr": 0.0,
-      "cpm": 19.33
+      "cpm": 20.38
     },
     {
-      "date": "2026-03-29",
-      "spend": 34.45,
-      "impressions": 1619,
-      "reach": 1438,
-      "leads": 7,
-      "messages": 6,
-      "linkClicks": 25,
-      "uniqueCtr": 0.0,
-      "cpm": 21.28
-    },
-    {
-      "date": "2026-03-30",
-      "spend": 31.21,
-      "impressions": 1656,
-      "reach": 1491,
+      "date": "2026-04-25",
+      "spend": 29.95,
+      "impressions": 1618,
+      "reach": 1550,
       "leads": 3,
       "messages": 3,
-      "linkClicks": 23,
+      "linkClicks": 51,
       "uniqueCtr": 0.0,
-      "cpm": 18.85
+      "cpm": 18.51
     },
     {
-      "date": "2026-03-31",
-      "spend": 30.37,
-      "impressions": 1460,
-      "reach": 1314,
-      "leads": 4,
-      "messages": 5,
-      "linkClicks": 16,
-      "uniqueCtr": 0.08,
-      "cpm": 20.8
+      "date": "2026-04-26",
+      "spend": 42.82,
+      "impressions": 2225,
+      "reach": 2062,
+      "leads": 7,
+      "messages": 6,
+      "linkClicks": 60,
+      "uniqueCtr": 0.0,
+      "cpm": 19.24
+    },
+    {
+      "date": "2026-04-27",
+      "spend": 38.66,
+      "impressions": 2008,
+      "reach": 1865,
+      "leads": 8,
+      "messages": 9,
+      "linkClicks": 50,
+      "uniqueCtr": 0.0,
+      "cpm": 19.25
+    },
+    {
+      "date": "2026-04-28",
+      "spend": 30.75,
+      "impressions": 1479,
+      "reach": 1355,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 35,
+      "uniqueCtr": 0.0,
+      "cpm": 20.79
+    },
+    {
+      "date": "2026-04-29",
+      "spend": 29.63,
+      "impressions": 1043,
+      "reach": 936,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 29,
+      "uniqueCtr": 0.0,
+      "cpm": 28.41
+    },
+    {
+      "date": "2026-04-30",
+      "spend": 28.76,
+      "impressions": 1010,
+      "reach": 917,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 28.48
     }
   ],
   "campaignDaily": {
-    "2026-03-03": {
+    "2026-04-01": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 22.97,
-        "leads": 0
-      }
-    },
-    "2026-03-04": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 26.15,
-        "leads": 0
-      }
-    },
-    "2026-03-05": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 23.38,
-        "leads": 1
-      }
-    },
-    "2026-03-06": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 21.33,
-        "leads": 2
-      }
-    },
-    "2026-03-07": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 25.9,
-        "leads": 1
-      }
-    },
-    "2026-03-08": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 28.17,
-        "leads": 1
-      }
-    },
-    "2026-03-09": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 29.34,
-        "leads": 1
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 13.69,
-        "leads": 2
-      }
-    },
-    "2026-03-10": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 31.32,
-        "leads": 1
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 31.8,
-        "leads": 10
-      }
-    },
-    "2026-03-11": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 22.34,
+        "spend": 7.6,
         "leads": 2
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 17.36,
+        "spend": 20.99,
+        "leads": 1
+      }
+    },
+    "2026-04-02": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.34,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 20.56,
         "leads": 3
       }
     },
-    "2026-03-12": {
+    "2026-04-03": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 17.06,
-        "leads": 2
+        "spend": 6.04,
+        "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 17.27,
-        "leads": 2
+        "spend": 21.74,
+        "leads": 1
       }
     },
-    "2026-03-13": {
+    "2026-04-04": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 15.28,
-        "leads": 2
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 18.25,
-        "leads": 5
-      }
-    },
-    "2026-03-14": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 10.54,
-        "leads": 3
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 16.96,
-        "leads": 3
-      }
-    },
-    "2026-03-15": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 17.91,
-        "leads": 3
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 28.05,
-        "leads": 10
-      }
-    },
-    "2026-03-16": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 15.59,
+        "spend": 4.62,
         "leads": 0
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.19,
+        "spend": 19.04,
         "leads": 6
       }
     },
-    "2026-03-17": {
+    "2026-04-05": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 13.9,
+        "spend": 8.56,
         "leads": 0
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.43,
-        "leads": 5
-      }
-    },
-    "2026-03-18": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 13.97,
+        "spend": 27.12,
         "leads": 2
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 21.6,
-        "leads": 8
       }
     },
-    "2026-03-19": {
+    "2026-04-06": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 13.77,
-        "leads": 2
+        "spend": 7.67,
+        "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 21.06,
-        "leads": 6
-      }
-    },
-    "2026-03-20": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 12.39,
-        "leads": 0
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 19.77,
-        "leads": 5
-      }
-    },
-    "2026-03-21": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 9.0,
-        "leads": 0
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 18.89,
-        "leads": 3
-      }
-    },
-    "2026-03-22": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 12.93,
-        "leads": 3
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 25.86,
-        "leads": 7
-      }
-    },
-    "2026-03-23": {
-      "LEADS // ABO // OFFER 1": {
-        "spend": 12.22,
-        "leads": 0
-      },
-      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.99,
+        "spend": 21.72,
         "leads": 4
       }
     },
-    "2026-03-24": {
+    "2026-04-07": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 9.6,
+        "spend": 7.87,
         "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.66,
+        "spend": 21.62,
         "leads": 6
       }
     },
-    "2026-03-25": {
+    "2026-04-08": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 9.69,
-        "leads": 0
+        "spend": 6.95,
+        "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.9,
-        "leads": 6
+        "spend": 23.28,
+        "leads": 0
       }
     },
-    "2026-03-26": {
+    "2026-04-09": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 6.86,
+        "spend": 5.85,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 19.73,
+        "leads": 4
+      }
+    },
+    "2026-04-10": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.39,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 21.66,
+        "leads": 7
+      }
+    },
+    "2026-04-11": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 5.54,
         "leads": 0
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 20.4,
+        "spend": 18.81,
+        "leads": 8
+      }
+    },
+    "2026-04-12": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 8.55,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 25.27,
+        "leads": 4
+      }
+    },
+    "2026-04-13": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.34,
         "leads": 2
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 23.42,
+        "leads": 6
       }
     },
-    "2026-03-27": {
+    "2026-04-14": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 5.8,
+        "spend": 9.23,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 21.99,
+        "leads": 6
+      }
+    },
+    "2026-04-15": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.48,
+        "leads": 2
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 22.6,
+        "leads": 1
+      }
+    },
+    "2026-04-16": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 5.69,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 21.54,
+        "leads": 11
+      }
+    },
+    "2026-04-17": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.12,
         "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
         "spend": 19.98,
-        "leads": 0
+        "leads": 4
       }
     },
-    "2026-03-28": {
+    "2026-04-18": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 6.07,
+        "spend": 6.54,
         "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 19.12,
-        "leads": 0
+        "spend": 19.17,
+        "leads": 3
       }
     },
-    "2026-03-29": {
+    "2026-04-19": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 9.12,
-        "leads": 0
+        "spend": 8.87,
+        "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 25.33,
+        "spend": 25.84,
         "leads": 7
       }
     },
-    "2026-03-30": {
+    "2026-04-20": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 7.64,
+        "spend": 7.93,
         "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 23.57,
+        "spend": 24.21,
+        "leads": 3
+      }
+    },
+    "2026-04-21": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 8.21,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 20.76,
+        "leads": 4
+      }
+    },
+    "2026-04-22": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 7.56,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 22.42,
         "leads": 2
       }
     },
-    "2026-03-31": {
+    "2026-04-23": {
       "LEADS // ABO // OFFER 1": {
-        "spend": 7.6,
+        "spend": 6.93,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 20.63,
+        "leads": 0
+      }
+    },
+    "2026-04-24": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 9.07,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 21.55,
+        "leads": 1
+      }
+    },
+    "2026-04-25": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 7.15,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 18.56,
+        "leads": 3
+      }
+    },
+    "2026-04-26": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 10.46,
         "leads": 1
       },
       "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
-        "spend": 22.77,
+        "spend": 26.85,
+        "leads": 6
+      }
+    },
+    "2026-04-27": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 9.96,
         "leads": 3
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 24.03,
+        "leads": 5
+      }
+    },
+    "2026-04-28": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 7.67,
+        "leads": 1
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 20.7,
+        "leads": 0
+      }
+    },
+    "2026-04-29": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 6.88,
+        "leads": 2
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 22.75,
+        "leads": 3
+      }
+    },
+    "2026-04-30": {
+      "LEADS // ABO // OFFER 1": {
+        "spend": 7.35,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 1 [NEWS VIDEO]": {
+        "spend": 21.41,
+        "leads": 1
       }
     }
   }
