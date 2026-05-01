@@ -1,6 +1,8 @@
 {
   "client": "The Hair Plus Clinic",
   "currency": "AUD",
+  "ltv": 1900,
+  "ltvDescription": "Based on average revenue per client. Currently estimated at ~$1900 per client.",
   "lastUpdated": "2026-04-08T12:18:53+10:00",
   "agencyFees": {
     "2026-01": 0,
