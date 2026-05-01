@@ -1,12 +1,11 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "currency": "AUD",
-  "ltv": 1637,
-  "ltvDescription": "Based on average LTV data from Phorest reports. Currently estimated at ~$1637 per client.",
-  "lastUpdated": "2026-04-01T13:21:25+10:00",
+  "lastUpdated": "2026-05-01T06:01:16+10:00",
   "agencyFees": {
     "2026-02": 1500,
-    "2026-03": 1500
+    "2026-03": 1500,
+    "2026-04": 1500
   },
   "monthly": {
     "2026-02": {
@@ -433,6 +432,124 @@
         {
           "name": "Threads Threads Feed",
           "spend": 0.56,
+          "leads": 0
+        }
+      ]
+    },
+    "2026-04": {
+      "spend": 402.94,
+      "impressions": 16744,
+      "reach": 9289,
+      "leads": 0,
+      "cpl": 0.0,
+      "messages": 1,
+      "costPerMessage": 402.94,
+      "uniqueCtr": 9.48,
+      "cpm": 24.07,
+      "linkClicks": 881,
+      "cpc": 0.3,
+      "leadConvPct": 0.0,
+      "campaigns": [
+        {
+          "name": "Instagram post: Lift, tighten & refresh your...",
+          "spend": 186.0,
+          "impressions": 6339,
+          "reach": 1330,
+          "leads": 0,
+          "cpl": 0.0,
+          "uniqueCtr": 3.46,
+          "messages": 0,
+          "linkClicks": 46,
+          "cpc": 2.61,
+          "leadConvPct": 0.0
+        },
+        {
+          "name": "Instagram post: Don\u2019t wait any longer \ud83e\udef5 If you...",
+          "spend": 216.94,
+          "impressions": 10405,
+          "reach": 8020,
+          "leads": 0,
+          "cpl": 0.0,
+          "uniqueCtr": 10.41,
+          "messages": 1,
+          "linkClicks": 835,
+          "cpc": 0.17,
+          "leadConvPct": 0.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "Instagram post: Lift, tighten & refresh your...",
+          "leads": 0,
+          "cpl": 0.0,
+          "spend": 186.0,
+          "campaignPattern": "Instagram post: Lift, tighten & refresh your..."
+        },
+        {
+          "name": "Instagram post: Don\u2019t wait any longer \ud83e\udef5 If you...",
+          "leads": 0,
+          "cpl": 0.0,
+          "spend": 216.94,
+          "campaignPattern": "Instagram post: Don\u2019t wait any longer \ud83e\udef5 If you..."
+        }
+      ],
+      "ads": [],
+      "demographics": [
+        {
+          "age": "25-34",
+          "spend": 36.95,
+          "leads": 0
+        },
+        {
+          "age": "35-44",
+          "spend": 121.07,
+          "leads": 0
+        },
+        {
+          "age": "45-54",
+          "spend": 149.95,
+          "leads": 0
+        },
+        {
+          "age": "55-64",
+          "spend": 61.27,
+          "leads": 0
+        },
+        {
+          "age": "65+",
+          "spend": 33.7,
+          "leads": 0
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 10.35,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 11.83,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 135.39,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 36.32,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 22.2,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 186.84,
           "leads": 0
         }
       ]
@@ -1087,6 +1204,171 @@
       "linkClicks": 12,
       "uniqueCtr": 0.0,
       "cpm": 43.04
+    },
+    {
+      "date": "2026-04-15",
+      "spend": 13.73,
+      "impressions": 748,
+      "reach": 671,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 27,
+      "uniqueCtr": 4.02,
+      "cpm": 18.35
+    },
+    {
+      "date": "2026-04-16",
+      "spend": 37.29,
+      "impressions": 1744,
+      "reach": 1380,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 89,
+      "uniqueCtr": 6.45,
+      "cpm": 21.39
+    },
+    {
+      "date": "2026-04-17",
+      "spend": 31.73,
+      "impressions": 1372,
+      "reach": 1134,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 77,
+      "uniqueCtr": 6.79,
+      "cpm": 23.13
+    },
+    {
+      "date": "2026-04-18",
+      "spend": 34.64,
+      "impressions": 1369,
+      "reach": 1121,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 70,
+      "uniqueCtr": 6.24,
+      "cpm": 25.31
+    },
+    {
+      "date": "2026-04-19",
+      "spend": 33.46,
+      "impressions": 1451,
+      "reach": 1225,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 74,
+      "uniqueCtr": 6.04,
+      "cpm": 23.06
+    },
+    {
+      "date": "2026-04-20",
+      "spend": 33.87,
+      "impressions": 1302,
+      "reach": 1061,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 51,
+      "uniqueCtr": 4.81,
+      "cpm": 26.01
+    },
+    {
+      "date": "2026-04-21",
+      "spend": 29.42,
+      "impressions": 1200,
+      "reach": 857,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 48,
+      "uniqueCtr": 5.6,
+      "cpm": 24.52
+    },
+    {
+      "date": "2026-04-22",
+      "spend": 28.43,
+      "impressions": 1113,
+      "reach": 832,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 64,
+      "uniqueCtr": 7.69,
+      "cpm": 25.54
+    },
+    {
+      "date": "2026-04-23",
+      "spend": 29.7,
+      "impressions": 1114,
+      "reach": 854,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 58,
+      "uniqueCtr": 6.79,
+      "cpm": 26.66
+    },
+    {
+      "date": "2026-04-24",
+      "spend": 29.17,
+      "impressions": 1146,
+      "reach": 936,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 49,
+      "uniqueCtr": 5.24,
+      "cpm": 25.45
+    },
+    {
+      "date": "2026-04-25",
+      "spend": 30.6,
+      "impressions": 1234,
+      "reach": 971,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 60,
+      "uniqueCtr": 6.18,
+      "cpm": 24.8
+    },
+    {
+      "date": "2026-04-26",
+      "spend": 28.21,
+      "impressions": 1101,
+      "reach": 860,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 61,
+      "uniqueCtr": 7.09,
+      "cpm": 25.62
+    },
+    {
+      "date": "2026-04-27",
+      "spend": 22.03,
+      "impressions": 910,
+      "reach": 788,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 73,
+      "uniqueCtr": 9.26,
+      "cpm": 24.21
+    },
+    {
+      "date": "2026-04-28",
+      "spend": 13.78,
+      "impressions": 614,
+      "reach": 605,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 59,
+      "uniqueCtr": 9.75,
+      "cpm": 22.44
+    },
+    {
+      "date": "2026-04-29",
+      "spend": 6.88,
+      "impressions": 326,
+      "reach": 326,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 21,
+      "uniqueCtr": 6.44,
+      "cpm": 21.11
     }
   ],
   "campaignDaily": {
@@ -1560,5 +1842,7 @@
         "leads": 0
       }
     }
-  }
+  },
+  "ltv": 1637,
+  "ltvDescription": "Based on average LTV data from Phorest reports. Currently estimated at ~$1637 per client."
 }

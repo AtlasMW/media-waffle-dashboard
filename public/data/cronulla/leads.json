@@ -1,214 +1,6 @@
 {
   "client": "Cronulla Skin Sanctuary",
   "monthly": {
-    "2026-01": {
-      "totalLeads": 26,
-      "responded": 21,
-      "noContact": 2,
-      "inFollowUp": 3,
-      "respondedPct": 81,
-      "booked": 5,
-      "bookedPct": 19,
-      "confirmed": 5,
-      "noShow": 0,
-      "cancelled": 0,
-      "rebooked": 4,
-      "moneyCollected": 4128.27,
-      "budget": 1239.29,
-      "offers": [
-        {
-          "name": "OFFER 1",
-          "leads": 26,
-          "cpl": 38.21,
-          "booked": 5,
-          "spend": 1070.0
-        }
-      ],
-      "leads": [
-        {
-          "date": "2026-01-16",
-          "name": "Kell Macc",
-          "offer": "OFFER 1",
-          "responded": "In follow up",
-          "status": ""
-        },
-        {
-          "date": "2026-01-16",
-          "name": "Lee O'Brien",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-16",
-          "name": "Kelle Taylor",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-16",
-          "name": "Pam Waters",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-19",
-          "name": "Tracey Fisher",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-19",
-          "name": "Joe Lombardo",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": "Appointment Successful"
-        },
-        {
-          "date": "2026-01-20",
-          "name": "Renee Mclennan",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": "Appointment Successful"
-        },
-        {
-          "date": "2026-01-21",
-          "name": "Tiffany",
-          "offer": "OFFER 1",
-          "responded": "In follow up",
-          "status": ""
-        },
-        {
-          "date": "2026-01-21",
-          "name": "Irene Newbury-Mitchell",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-22",
-          "name": "Pam Mason",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-22",
-          "name": "Sue Cole",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-23",
-          "name": "Nicole Ziegenfusz",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-17",
-          "name": "Jaycee Johnson",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-15",
-          "name": "Kylie Wakeham",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-18",
-          "name": "Sally Walsh-Sutton",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-17",
-          "name": "Roza Jovanoska",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-13",
-          "name": "Frances De Francesco",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-12",
-          "name": "Heidi Hansell",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": "Appointment Successful"
-        },
-        {
-          "date": "2026-01-24",
-          "name": "Trish Bellanto",
-          "offer": "OFFER 1",
-          "responded": "No contact",
-          "status": ""
-        },
-        {
-          "date": "2026-01-25",
-          "name": "Jo-Anne Emery",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-26",
-          "name": "Julie Bates",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": "Appointment Successful"
-        },
-        {
-          "date": "2026-01-26",
-          "name": "Wendy Mclennan",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": "Appointment Successful"
-        },
-        {
-          "date": "2026-01-27",
-          "name": "Georgie Redrup",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-28",
-          "name": "Akanksha Sharma",
-          "offer": "OFFER 1",
-          "responded": "Yes",
-          "status": ""
-        },
-        {
-          "date": "2026-01-29",
-          "name": "Ade Heaney",
-          "offer": "OFFER 1",
-          "responded": "No contact",
-          "status": ""
-        },
-        {
-          "date": "2026-01-30",
-          "name": "Helen Pap",
-          "offer": "OFFER 1",
-          "responded": "In follow up",
-          "status": ""
-        }
-      ]
-    },
     "2026-02": {
       "totalLeads": 75,
       "responded": 51,
@@ -773,20 +565,20 @@
       "noContact": 1,
       "inFollowUp": 51,
       "respondedPct": 24,
-      "booked": 1,
-      "bookedPct": 1,
-      "confirmed": 0,
+      "booked": 2,
+      "bookedPct": 3,
+      "confirmed": 1,
       "noShow": 0,
       "cancelled": 0,
       "rebooked": 0,
-      "moneyCollected": 0,
+      "moneyCollected": 1499.0,
       "budget": 1779.26,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 68,
           "cpl": 21.68,
-          "booked": 1,
+          "booked": 2,
           "spend": 1279.15
         }
       ],
@@ -880,7 +672,7 @@
           "name": "angela",
           "offer": "OFFER 2",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Successful"
         },
         {
           "date": "2026-03-08",
@@ -1268,191 +1060,77 @@
           "status": ""
         }
       ]
+    },
+    "2026-04": {
+      "totalLeads": 6,
+      "responded": 0,
+      "noContact": 0,
+      "inFollowUp": 6,
+      "respondedPct": 0,
+      "booked": 0,
+      "bookedPct": 0,
+      "confirmed": 0,
+      "noShow": 0,
+      "cancelled": 0,
+      "rebooked": 5,
+      "moneyCollected": 446.0,
+      "budget": 402.94,
+      "offers": [
+        {
+          "name": "Unknown",
+          "leads": 6,
+          "cpl": 0,
+          "booked": 0,
+          "spend": 0
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-01-19",
+          "name": "Joe Lombardo",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        },
+        {
+          "date": "2026-01-20",
+          "name": "Renee Mclennan",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        },
+        {
+          "date": "2026-01-12",
+          "name": "Heidi Hansell",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        },
+        {
+          "date": "2026-01-26",
+          "name": "Julie Bates",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        },
+        {
+          "date": "2026-01-26",
+          "name": "Wendy Mclennan",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        },
+        {
+          "date": "2026-02-03",
+          "name": "Jodie Cardiff",
+          "offer": "",
+          "responded": "",
+          "status": ""
+        }
+      ]
     }
   },
   "allLeads": [
-    {
-      "date": "2026-01-16",
-      "name": "Kell Macc",
-      "offer": "OFFER 1",
-      "responded": "In follow up",
-      "status": ""
-    },
-    {
-      "date": "2026-01-16",
-      "name": "Lee O'Brien",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-16",
-      "name": "Kelle Taylor",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-16",
-      "name": "Pam Waters",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-19",
-      "name": "Tracey Fisher",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-19",
-      "name": "Joe Lombardo",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": "Appointment Successful"
-    },
-    {
-      "date": "2026-01-20",
-      "name": "Renee Mclennan",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": "Appointment Successful"
-    },
-    {
-      "date": "2026-01-21",
-      "name": "Tiffany",
-      "offer": "OFFER 1",
-      "responded": "In follow up",
-      "status": ""
-    },
-    {
-      "date": "2026-01-21",
-      "name": "Irene Newbury-Mitchell",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-22",
-      "name": "Pam Mason",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-22",
-      "name": "Sue Cole",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-23",
-      "name": "Nicole Ziegenfusz",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-17",
-      "name": "Jaycee Johnson",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-15",
-      "name": "Kylie Wakeham",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-18",
-      "name": "Sally Walsh-Sutton",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-17",
-      "name": "Roza Jovanoska",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-13",
-      "name": "Frances De Francesco",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-12",
-      "name": "Heidi Hansell",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": "Appointment Successful"
-    },
-    {
-      "date": "2026-01-24",
-      "name": "Trish Bellanto",
-      "offer": "OFFER 1",
-      "responded": "No contact",
-      "status": ""
-    },
-    {
-      "date": "2026-01-25",
-      "name": "Jo-Anne Emery",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-26",
-      "name": "Julie Bates",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": "Appointment Successful"
-    },
-    {
-      "date": "2026-01-26",
-      "name": "Wendy Mclennan",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": "Appointment Successful"
-    },
-    {
-      "date": "2026-01-27",
-      "name": "Georgie Redrup",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-28",
-      "name": "Akanksha Sharma",
-      "offer": "OFFER 1",
-      "responded": "Yes",
-      "status": ""
-    },
-    {
-      "date": "2026-01-29",
-      "name": "Ade Heaney",
-      "offer": "OFFER 1",
-      "responded": "No contact",
-      "status": ""
-    },
-    {
-      "date": "2026-01-30",
-      "name": "Helen Pap",
-      "offer": "OFFER 1",
-      "responded": "In follow up",
-      "status": ""
-    },
     {
       "date": "2026-02-01",
       "name": "Eram Javed",
@@ -2067,7 +1745,7 @@
       "name": "angela",
       "offer": "OFFER 2",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Successful"
     },
     {
       "date": "2026-03-08",
@@ -2452,6 +2130,48 @@
       "name": "tania kamau",
       "offer": "OFFER 2",
       "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-01-19",
+      "name": "Joe Lombardo",
+      "offer": "",
+      "responded": "",
+      "status": ""
+    },
+    {
+      "date": "2026-01-20",
+      "name": "Renee Mclennan",
+      "offer": "",
+      "responded": "",
+      "status": ""
+    },
+    {
+      "date": "2026-01-12",
+      "name": "Heidi Hansell",
+      "offer": "",
+      "responded": "",
+      "status": ""
+    },
+    {
+      "date": "2026-01-26",
+      "name": "Julie Bates",
+      "offer": "",
+      "responded": "",
+      "status": ""
+    },
+    {
+      "date": "2026-01-26",
+      "name": "Wendy Mclennan",
+      "offer": "",
+      "responded": "",
+      "status": ""
+    },
+    {
+      "date": "2026-02-03",
+      "name": "Jodie Cardiff",
+      "offer": "",
+      "responded": "",
       "status": ""
     }
   ]

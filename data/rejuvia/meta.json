@@ -1,10 +1,11 @@
 {
   "client": "Rejuvia Beauty & Aesthetics",
   "currency": "AUD",
-  "lastUpdated": "2026-04-01T13:21:59+10:00",
+  "lastUpdated": "2026-05-01T06:01:54+10:00",
   "agencyFees": {
     "2026-02": 0,
-    "2026-03": 0
+    "2026-03": 0,
+    "2026-04": 1500
   },
   "monthly": {
     "2026-02": {
@@ -197,9 +198,9 @@
       ]
     },
     "2026-03": {
-      "spend": 843.31,
-      "impressions": 50067,
-      "reach": 12419,
+      "spend": 843.38,
+      "impressions": 50071,
+      "reach": 12422,
       "leads": 59,
       "cpl": 14.29,
       "messages": 55,
@@ -212,9 +213,9 @@
       "campaigns": [
         {
           "name": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 843.31,
-          "impressions": 50067,
-          "reach": 12419,
+          "spend": 843.38,
+          "impressions": 50071,
+          "reach": 12422,
           "leads": 59,
           "cpl": 14.29,
           "uniqueCtr": 0.08,
@@ -229,7 +230,7 @@
           "name": "LEADS // CBO // OFFER 6 BROWS",
           "leads": 59,
           "cpl": 14.29,
-          "spend": 843.31,
+          "spend": 843.38,
           "campaignPattern": "LEADS // CBO // OFFER 6 BROWS"
         }
       ],
@@ -248,7 +249,7 @@
           "adName": "IMG 1 | H1 & 3 - C1 - Copy",
           "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
           "campaignName": "LEADS // CBO // OFFER 6 BROWS",
-          "spend": 261.91,
+          "spend": 261.98,
           "leads": 23,
           "cpl": 11.39,
           "uniqueCtr": 0.09,
@@ -298,7 +299,7 @@
         },
         {
           "age": "35-44",
-          "spend": 164.01,
+          "spend": 164.02,
           "leads": 10
         },
         {
@@ -313,7 +314,7 @@
         },
         {
           "age": "65+",
-          "spend": 169.06,
+          "spend": 169.12,
           "leads": 14
         }
       ],
@@ -340,7 +341,7 @@
         },
         {
           "name": "Facebook Feed",
-          "spend": 569.82,
+          "spend": 569.89,
           "leads": 44
         },
         {
@@ -372,6 +373,205 @@
           "name": "Instagram Instagram Stories",
           "spend": 36.39,
           "leads": 1
+        }
+      ]
+    },
+    "2026-04": {
+      "spend": 844.39,
+      "impressions": 45119,
+      "reach": 9834,
+      "leads": 47,
+      "cpl": 17.97,
+      "messages": 45,
+      "costPerMessage": 18.76,
+      "uniqueCtr": 0.15,
+      "cpm": 18.71,
+      "linkClicks": 339,
+      "cpc": 2.49,
+      "leadConvPct": 13.86,
+      "campaigns": [
+        {
+          "name": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 39.43,
+          "impressions": 2152,
+          "reach": 1661,
+          "leads": 4,
+          "cpl": 9.86,
+          "uniqueCtr": 0.06,
+          "messages": 4,
+          "linkClicks": 26,
+          "cpc": 1.52,
+          "leadConvPct": 15.38
+        },
+        {
+          "name": "LEADS // CBO // OFFER 7 LASHES",
+          "spend": 659.39,
+          "impressions": 35998,
+          "reach": 8496,
+          "leads": 36,
+          "cpl": 18.32,
+          "uniqueCtr": 0.15,
+          "messages": 35,
+          "linkClicks": 243,
+          "cpc": 2.71,
+          "leadConvPct": 14.81
+        },
+        {
+          "name": "LEADS // CBO // OFFER 8 MOTHER'S DAY",
+          "spend": 145.57,
+          "impressions": 6969,
+          "reach": 2375,
+          "leads": 7,
+          "cpl": 20.8,
+          "uniqueCtr": 0.04,
+          "messages": 6,
+          "linkClicks": 70,
+          "cpc": 2.08,
+          "leadConvPct": 10.0
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // CBO // OFFER 6 BROWS",
+          "leads": 4,
+          "cpl": 9.86,
+          "spend": 39.43,
+          "campaignPattern": "LEADS // CBO // OFFER 6 BROWS"
+        },
+        {
+          "name": "LEADS // CBO // OFFER 7 LASHES",
+          "leads": 36,
+          "cpl": 18.32,
+          "spend": 659.39,
+          "campaignPattern": "LEADS // CBO // OFFER 7 LASHES"
+        },
+        {
+          "name": "LEADS // CBO // OFFER 8 MOTHER'S DAY",
+          "leads": 7,
+          "cpl": 20.8,
+          "spend": 145.57,
+          "campaignPattern": "LEADS // CBO // OFFER 8 MOTHER'S DAY"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "IMG 1 | H1 & 3 - C1 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 12.83,
+          "leads": 1,
+          "cpl": 12.83,
+          "uniqueCtr": 0.13,
+          "frequency": 1.18
+        },
+        {
+          "adName": "IMG AD 3 | H3 C3 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 7 LASHES",
+          "spend": 14.78,
+          "leads": 1,
+          "cpl": 14.78,
+          "uniqueCtr": 0.0,
+          "frequency": 1.56
+        },
+        {
+          "adName": "IMG AD 4 | H1 C1 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 7 LASHES",
+          "spend": 388.53,
+          "leads": 26,
+          "cpl": 14.94,
+          "uniqueCtr": 0.1,
+          "frequency": 3.0
+        },
+        {
+          "adName": "IMG AD 9 | H3 C3 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 7 LASHES",
+          "spend": 53.51,
+          "leads": 3,
+          "cpl": 17.84,
+          "uniqueCtr": 0.13,
+          "frequency": 1.53
+        },
+        {
+          "adName": "VIDEO 2 | H2 - C1 - Copy",
+          "adSetName": "DT BROWS // AD+ // WOMEN // STRATFORD",
+          "campaignName": "LEADS // CBO // OFFER 6 BROWS",
+          "spend": 20.26,
+          "leads": 1,
+          "cpl": 20.26,
+          "uniqueCtr": 0.0,
+          "frequency": 1.14
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 25.46,
+          "leads": 0
+        },
+        {
+          "age": "25-34",
+          "spend": 120.89,
+          "leads": 7
+        },
+        {
+          "age": "35-44",
+          "spend": 197.37,
+          "leads": 14
+        },
+        {
+          "age": "45-54",
+          "spend": 221.26,
+          "leads": 12
+        },
+        {
+          "age": "55-64",
+          "spend": 171.85,
+          "leads": 12
+        },
+        {
+          "age": "65+",
+          "spend": 107.56,
+          "leads": 2
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 59.73,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 32.21,
+          "leads": 2
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 518.4,
+          "leads": 29
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 3.81,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 107.7,
+          "leads": 8
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 31.41,
+          "leads": 1
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 91.13,
+          "leads": 5
         }
       ]
     }
@@ -918,14 +1118,344 @@
     },
     {
       "date": "2026-03-31",
-      "spend": 26.2,
-      "impressions": 1524,
-      "reach": 1264,
+      "spend": 26.27,
+      "impressions": 1528,
+      "reach": 1269,
       "leads": 0,
       "messages": 0,
       "linkClicks": 6,
       "uniqueCtr": 0.0,
       "cpm": 17.19
+    },
+    {
+      "date": "2026-04-01",
+      "spend": 26.42,
+      "impressions": 1569,
+      "reach": 1330,
+      "leads": 4,
+      "messages": 3,
+      "linkClicks": 18,
+      "uniqueCtr": 0.08,
+      "cpm": 16.84
+    },
+    {
+      "date": "2026-04-02",
+      "spend": 26.41,
+      "impressions": 1228,
+      "reach": 928,
+      "leads": 0,
+      "messages": 1,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 21.51
+    },
+    {
+      "date": "2026-04-03",
+      "spend": 25.85,
+      "impressions": 1192,
+      "reach": 798,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 16,
+      "uniqueCtr": 0.63,
+      "cpm": 21.69
+    },
+    {
+      "date": "2026-04-04",
+      "spend": 22.0,
+      "impressions": 1384,
+      "reach": 1054,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 10,
+      "uniqueCtr": 0.19,
+      "cpm": 15.9
+    },
+    {
+      "date": "2026-04-05",
+      "spend": 27.86,
+      "impressions": 1609,
+      "reach": 1154,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 15,
+      "uniqueCtr": 0.0,
+      "cpm": 17.32
+    },
+    {
+      "date": "2026-04-06",
+      "spend": 25.7,
+      "impressions": 1486,
+      "reach": 1114,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 17.29
+    },
+    {
+      "date": "2026-04-07",
+      "spend": 28.25,
+      "impressions": 1667,
+      "reach": 1232,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 11,
+      "uniqueCtr": 0.0,
+      "cpm": 16.95
+    },
+    {
+      "date": "2026-04-08",
+      "spend": 27.11,
+      "impressions": 1751,
+      "reach": 1347,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 15.48
+    },
+    {
+      "date": "2026-04-09",
+      "spend": 23.12,
+      "impressions": 1396,
+      "reach": 1048,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 16.56
+    },
+    {
+      "date": "2026-04-10",
+      "spend": 21.99,
+      "impressions": 1328,
+      "reach": 998,
+      "leads": 2,
+      "messages": 1,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 16.56
+    },
+    {
+      "date": "2026-04-11",
+      "spend": 22.73,
+      "impressions": 1248,
+      "reach": 951,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 18.21
+    },
+    {
+      "date": "2026-04-12",
+      "spend": 26.1,
+      "impressions": 1323,
+      "reach": 1031,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 13,
+      "uniqueCtr": 0.0,
+      "cpm": 19.73
+    },
+    {
+      "date": "2026-04-13",
+      "spend": 25.62,
+      "impressions": 1528,
+      "reach": 1124,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 4,
+      "uniqueCtr": 0.0,
+      "cpm": 16.77
+    },
+    {
+      "date": "2026-04-14",
+      "spend": 25.98,
+      "impressions": 1393,
+      "reach": 1034,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 18.65
+    },
+    {
+      "date": "2026-04-15",
+      "spend": 24.47,
+      "impressions": 1343,
+      "reach": 1006,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 11,
+      "uniqueCtr": 0.1,
+      "cpm": 18.22
+    },
+    {
+      "date": "2026-04-16",
+      "spend": 26.3,
+      "impressions": 1374,
+      "reach": 1090,
+      "leads": 3,
+      "messages": 1,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 19.14
+    },
+    {
+      "date": "2026-04-17",
+      "spend": 24.12,
+      "impressions": 1347,
+      "reach": 1049,
+      "leads": 2,
+      "messages": 2,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 17.91
+    },
+    {
+      "date": "2026-04-18",
+      "spend": 22.4,
+      "impressions": 1223,
+      "reach": 1043,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 18.32
+    },
+    {
+      "date": "2026-04-19",
+      "spend": 26.72,
+      "impressions": 1493,
+      "reach": 1191,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 7,
+      "uniqueCtr": 0.08,
+      "cpm": 17.9
+    },
+    {
+      "date": "2026-04-20",
+      "spend": 25.35,
+      "impressions": 1359,
+      "reach": 1021,
+      "leads": 3,
+      "messages": 1,
+      "linkClicks": 9,
+      "uniqueCtr": 0.0,
+      "cpm": 18.65
+    },
+    {
+      "date": "2026-04-21",
+      "spend": 19.67,
+      "impressions": 1188,
+      "reach": 915,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 9,
+      "uniqueCtr": 0.11,
+      "cpm": 16.56
+    },
+    {
+      "date": "2026-04-22",
+      "spend": 20.34,
+      "impressions": 1075,
+      "reach": 835,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 18.92
+    },
+    {
+      "date": "2026-04-23",
+      "spend": 17.7,
+      "impressions": 922,
+      "reach": 744,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 7,
+      "uniqueCtr": 0.0,
+      "cpm": 19.2
+    },
+    {
+      "date": "2026-04-24",
+      "spend": 34.93,
+      "impressions": 1777,
+      "reach": 1194,
+      "leads": 4,
+      "messages": 4,
+      "linkClicks": 20,
+      "uniqueCtr": 0.08,
+      "cpm": 19.66
+    },
+    {
+      "date": "2026-04-25",
+      "spend": 34.17,
+      "impressions": 1800,
+      "reach": 1374,
+      "leads": 1,
+      "messages": 0,
+      "linkClicks": 16,
+      "uniqueCtr": 0.0,
+      "cpm": 18.98
+    },
+    {
+      "date": "2026-04-26",
+      "spend": 38.76,
+      "impressions": 2010,
+      "reach": 1528,
+      "leads": 1,
+      "messages": 0,
+      "linkClicks": 12,
+      "uniqueCtr": 0.0,
+      "cpm": 19.28
+    },
+    {
+      "date": "2026-04-27",
+      "spend": 41.77,
+      "impressions": 2007,
+      "reach": 1452,
+      "leads": 0,
+      "messages": 2,
+      "linkClicks": 7,
+      "uniqueCtr": 0.07,
+      "cpm": 20.81
+    },
+    {
+      "date": "2026-04-28",
+      "spend": 43.32,
+      "impressions": 1942,
+      "reach": 1380,
+      "leads": 0,
+      "messages": 0,
+      "linkClicks": 18,
+      "uniqueCtr": 0.0,
+      "cpm": 22.31
+    },
+    {
+      "date": "2026-04-29",
+      "spend": 46.86,
+      "impressions": 2179,
+      "reach": 1655,
+      "leads": 2,
+      "messages": 3,
+      "linkClicks": 24,
+      "uniqueCtr": 0.12,
+      "cpm": 21.51
+    },
+    {
+      "date": "2026-04-30",
+      "spend": 42.37,
+      "impressions": 1978,
+      "reach": 1474,
+      "leads": 4,
+      "messages": 2,
+      "linkClicks": 16,
+      "uniqueCtr": 0.0,
+      "cpm": 21.42
     }
   ],
   "campaignDaily": {
@@ -1225,8 +1755,220 @@
     },
     "2026-03-31": {
       "LEADS // CBO // OFFER 6 BROWS": {
-        "spend": 26.2,
+        "spend": 26.27,
         "leads": 0
+      }
+    },
+    "2026-04-01": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 26.42,
+        "leads": 4
+      }
+    },
+    "2026-04-02": {
+      "LEADS // CBO // OFFER 6 BROWS": {
+        "spend": 13.01,
+        "leads": 0
+      },
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 13.4,
+        "leads": 0
+      }
+    },
+    "2026-04-03": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 25.85,
+        "leads": 3
+      }
+    },
+    "2026-04-04": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 22.0,
+        "leads": 2
+      }
+    },
+    "2026-04-05": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 27.86,
+        "leads": 0
+      }
+    },
+    "2026-04-06": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 25.7,
+        "leads": 0
+      }
+    },
+    "2026-04-07": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 28.25,
+        "leads": 3
+      }
+    },
+    "2026-04-08": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 27.11,
+        "leads": 2
+      }
+    },
+    "2026-04-09": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 23.12,
+        "leads": 0
+      }
+    },
+    "2026-04-10": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 21.99,
+        "leads": 2
+      }
+    },
+    "2026-04-11": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 22.73,
+        "leads": 1
+      }
+    },
+    "2026-04-12": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 26.1,
+        "leads": 1
+      }
+    },
+    "2026-04-13": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 25.62,
+        "leads": 0
+      }
+    },
+    "2026-04-14": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 25.98,
+        "leads": 0
+      }
+    },
+    "2026-04-15": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 24.47,
+        "leads": 1
+      }
+    },
+    "2026-04-16": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 26.3,
+        "leads": 3
+      }
+    },
+    "2026-04-17": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 24.12,
+        "leads": 2
+      }
+    },
+    "2026-04-18": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 22.4,
+        "leads": 3
+      }
+    },
+    "2026-04-19": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 26.72,
+        "leads": 0
+      }
+    },
+    "2026-04-20": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 25.35,
+        "leads": 3
+      }
+    },
+    "2026-04-21": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 19.67,
+        "leads": 3
+      }
+    },
+    "2026-04-22": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 20.34,
+        "leads": 1
+      }
+    },
+    "2026-04-23": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 17.7,
+        "leads": 1
+      }
+    },
+    "2026-04-24": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 18.95,
+        "leads": 2
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 15.98,
+        "leads": 2
+      }
+    },
+    "2026-04-25": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 15.63,
+        "leads": 1
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 18.54,
+        "leads": 0
+      }
+    },
+    "2026-04-26": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 20.26,
+        "leads": 0
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 18.5,
+        "leads": 1
+      }
+    },
+    "2026-04-27": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 22.83,
+        "leads": 0
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 18.94,
+        "leads": 0
+      }
+    },
+    "2026-04-28": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 20.34,
+        "leads": 0
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 22.98,
+        "leads": 0
+      }
+    },
+    "2026-04-29": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 20.02,
+        "leads": 0
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 26.84,
+        "leads": 2
+      }
+    },
+    "2026-04-30": {
+      "LEADS // CBO // OFFER 7 LASHES": {
+        "spend": 18.58,
+        "leads": 2
+      },
+      "LEADS // CBO // OFFER 8 MOTHER'S DAY": {
+        "spend": 23.79,
+        "leads": 2
       }
     }
   }
