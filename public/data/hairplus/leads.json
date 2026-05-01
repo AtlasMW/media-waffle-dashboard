@@ -640,14 +640,14 @@
       "cancelled": 1,
       "rebooked": 3,
       "moneyCollected": 5800.0,
-      "budget": 1043.63,
+      "budget": 1044.03,
       "offers": [
         {
           "name": "OFFER 1",
           "leads": 41,
-          "cpl": 14.1,
+          "cpl": 14.11,
           "booked": 14,
-          "spend": 1043.63
+          "spend": 1044.03
         },
         {
           "name": "OFFER 2",
