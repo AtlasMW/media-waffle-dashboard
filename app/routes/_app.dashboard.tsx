@@ -761,8 +761,35 @@ function renderLeads(l,pl,m) {
   var cSlug = new URLSearchParams(window.location.search).get('client') || window.__CLIENT_SLUG__ || '';
   fetch('https://lavpnfluvywcjeiyuash.supabase.co/functions/v1/call-metrics?client=' + cSlug)
     .then(function(r) { return r.json(); })
-    .then(function(cm) {
-      if (!cm || !cm.total_outbound_calls || cm.total_outbound_calls === 0) return;
+    .then(function(cmAll) {
+      if (!cmAll || !cmAll.raw_calls) return;
+      // Filter calls to current month
+      var monthPrefix = currentMonth; // e.g. '2026-03'
+      var filtered = cmAll.raw_calls.filter(function(c) {
+        var d = (c.call_started_at || c.opportunity_created_at || '').slice(0, 7);
+        return d === monthPrefix;
+      });
+      if (filtered.length === 0) return;
+      // Recalculate metrics from filtered calls
+      var uniqueContacts = {};
+      var within10 = 0;
+      var firstCallTimes = [];
+      filtered.forEach(function(c) {
+        var cid = c.contact_id || c.id;
+        if (cid) uniqueContacts[cid] = true;
+        if (c.is_first_call && c.time_to_first_call_seconds !== undefined && c.time_to_first_call_seconds !== null) {
+          firstCallTimes.push(c.time_to_first_call_seconds);
+          if (c.time_to_first_call_seconds <= 600) within10++;
+        }
+      });
+      var cm = {
+        total_outbound_calls: filtered.length,
+        unique_contacts_called: Object.keys(uniqueContacts).length,
+        called_within_10_min_pct: firstCallTimes.length > 0 ? Math.round(within10 / firstCallTimes.length * 100) : 0,
+        avg_time_to_first_call_seconds: firstCallTimes.length > 0 ? Math.round(firstCallTimes.reduce(function(a,b){return a+b;},0) / firstCallTimes.length) : null,
+        raw_calls: filtered
+      };
+      if (!cm.total_outbound_calls || cm.total_outbound_calls === 0) return;
       var section = document.getElementById('call-metrics-section');
       var grid = document.getElementById('call-metrics-grid');
       if (!grid || !section) return;
@@ -889,8 +916,34 @@ function renderLeadsRange(l,pl,leads,days) {
   var cSlugR = new URLSearchParams(window.location.search).get('client') || window.__CLIENT_SLUG__ || '';
   fetch('https://lavpnfluvywcjeiyuash.supabase.co/functions/v1/call-metrics?client=' + cSlugR)
     .then(function(r) { return r.json(); })
-    .then(function(cm) {
-      if (!cm || !cm.total_outbound_calls || cm.total_outbound_calls === 0) return;
+    .then(function(cmAll) {
+      if (!cmAll || !cmAll.raw_calls) return;
+      // Filter calls to selected date range
+      var drR = getDateRange(currentRange);
+      var filtered = cmAll.raw_calls.filter(function(c) {
+        var d = (c.call_started_at || c.opportunity_created_at || '').slice(0, 10);
+        return drR && d >= drR.start && d <= drR.end;
+      });
+      if (filtered.length === 0) return;
+      var uniqueContacts = {};
+      var within10 = 0;
+      var firstCallTimes = [];
+      filtered.forEach(function(c) {
+        var cid = c.contact_id || c.id;
+        if (cid) uniqueContacts[cid] = true;
+        if (c.is_first_call && c.time_to_first_call_seconds !== undefined && c.time_to_first_call_seconds !== null) {
+          firstCallTimes.push(c.time_to_first_call_seconds);
+          if (c.time_to_first_call_seconds <= 600) within10++;
+        }
+      });
+      var cm = {
+        total_outbound_calls: filtered.length,
+        unique_contacts_called: Object.keys(uniqueContacts).length,
+        called_within_10_min_pct: firstCallTimes.length > 0 ? Math.round(within10 / firstCallTimes.length * 100) : 0,
+        avg_time_to_first_call_seconds: firstCallTimes.length > 0 ? Math.round(firstCallTimes.reduce(function(a,b){return a+b;},0) / firstCallTimes.length) : null,
+        raw_calls: filtered
+      };
+      if (!cm.total_outbound_calls || cm.total_outbound_calls === 0) return;
       var section = document.getElementById('call-metrics-section');
       var grid = document.getElementById('call-metrics-grid');
       if (!grid || !section) return;
