@@ -1,8 +1,6 @@
 {
   "client": "Oceanelle Medispa",
   "currency": "AUD",
-  "ltv": 419,
-  "ltvDescription": "Based on average revenue per client. Currently estimated at ~$419 per client.",
   "lastUpdated": "2026-05-05T12:57:38+10:00",
   "agencyFees": {
     "2026-03": 950,
