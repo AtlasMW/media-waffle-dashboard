@@ -14,21 +14,21 @@
       "cancelled": 14,
       "rebooked": 8,
       "moneyCollected": 4892.0,
-      "budget": 0,
+      "budget": 1742.83,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 104,
-          "cpl": 0,
+          "cpl": 5.69,
           "booked": 20,
-          "spend": 0
+          "spend": 666.1
         },
         {
           "name": "OFFER 3",
           "leads": 77,
-          "cpl": 0,
+          "cpl": 8.37,
           "booked": 11,
-          "spend": 0
+          "spend": 736.48
         }
       ],
       "leads": [
@@ -1314,21 +1314,21 @@
       "cancelled": 1,
       "rebooked": 4,
       "moneyCollected": 5683.0,
-      "budget": 0,
+      "budget": 1407.8,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 105,
-          "cpl": 0,
+          "cpl": 6.79,
           "booked": 8,
-          "spend": 0
+          "spend": 773.98
         },
         {
           "name": "OFFER 3",
           "leads": 53,
-          "cpl": 0,
+          "cpl": 10.39,
           "booked": 3,
-          "spend": 0
+          "spend": 633.82
         }
       ],
       "leads": [
@@ -2453,21 +2453,21 @@
       "cancelled": 3,
       "rebooked": 4,
       "moneyCollected": 3959.0,
-      "budget": 0,
+      "budget": 1305.04,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 76,
-          "cpl": 0,
+          "cpl": 8.95,
           "booked": 9,
-          "spend": 0
+          "spend": 751.73
         },
         {
           "name": "OFFER 3",
           "leads": 49,
-          "cpl": 0,
+          "cpl": 10.44,
           "booked": 1,
-          "spend": 0
+          "spend": 553.31
         }
       ],
       "leads": [
@@ -3361,14 +3361,14 @@
       "cancelled": 0,
       "rebooked": 0,
       "moneyCollected": 0,
-      "budget": 0,
+      "budget": 339.73,
       "offers": [
         {
           "name": "OFFER 1",
           "leads": 22,
-          "cpl": 0,
+          "cpl": 19.39,
           "booked": 0,
-          "spend": 0
+          "spend": 19.39
         }
       ],
       "leads": [
@@ -3541,21 +3541,21 @@
       "cancelled": 5,
       "rebooked": 7,
       "moneyCollected": 1782.0,
-      "budget": 0,
+      "budget": 635.88,
       "offers": [
         {
           "name": "OFFER 1",
           "leads": 8,
-          "cpl": 0,
+          "cpl": 18.97,
           "booked": 1,
-          "spend": 0
+          "spend": 151.74
         },
         {
           "name": "OFFER 2",
           "leads": 80,
-          "cpl": 0,
+          "cpl": 5.98,
           "booked": 15,
-          "spend": 0
+          "spend": 484.14
         }
       ],
       "leads": [
@@ -4190,14 +4190,14 @@
       "cancelled": 5,
       "rebooked": 6,
       "moneyCollected": 1941.0,
-      "budget": 0,
+      "budget": 806.76,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 118,
-          "cpl": 0,
+          "cpl": 6.9,
           "booked": 16,
-          "spend": 0
+          "spend": 806.76
         }
       ],
       "leads": [
@@ -5042,14 +5042,14 @@
       "cancelled": 3,
       "rebooked": 10,
       "moneyCollected": 2608.05,
-      "budget": 0,
+      "budget": 836.73,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 149,
-          "cpl": 0,
+          "cpl": 5.58,
           "booked": 18,
-          "spend": 0
+          "spend": 836.73
         }
       ],
       "leads": [
@@ -6111,14 +6111,14 @@
       "cancelled": 0,
       "rebooked": 10,
       "moneyCollected": 6599.45,
-      "budget": 0,
+      "budget": 813.01,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 115,
-          "cpl": 0,
+          "cpl": 7.53,
           "booked": 13,
-          "spend": 0
+          "spend": 813.01
         }
       ],
       "leads": [
@@ -6942,14 +6942,14 @@
       "cancelled": 3,
       "rebooked": 3,
       "moneyCollected": 5650.0,
-      "budget": 0,
+      "budget": 832.7,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 112,
-          "cpl": 0,
+          "cpl": 6.66,
           "booked": 11,
-          "spend": 0
+          "spend": 832.7
         }
       ],
       "leads": [
@@ -7752,14 +7752,14 @@
       "cancelled": 2,
       "rebooked": 8,
       "moneyCollected": 6472.0,
-      "budget": 0,
+      "budget": 1798.11,
       "offers": [
         {
           "name": "OFFER 2",
           "leads": 160,
-          "cpl": 0,
+          "cpl": 4.96,
           "booked": 10,
-          "spend": 0
+          "spend": 818.07
         },
         {
           "name": "OFFER 3",
