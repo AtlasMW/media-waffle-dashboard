@@ -1,9 +1,9 @@
 {
   "client": "Rial Beauty & Co",
   "currency": "AUD",
-  "lastUpdated": "2026-06-02T07:51:54+10:00",
+  "lastUpdated": "2026-06-02T08:04:18+10:00",
   "agencyFees": {
-    "2026-05": 950
+    "2026-05": 1500
   },
   "monthly": {
     "2026-05": {
