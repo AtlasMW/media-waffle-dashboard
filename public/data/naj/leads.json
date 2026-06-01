@@ -1,0 +1,1216 @@
+{
+  "client": "Natural Aesthetic Journey",
+  "monthly": {
+    "2026-05": {
+      "totalLeads": 84,
+      "responded": 26,
+      "noContact": 5,
+      "inFollowUp": 53,
+      "respondedPct": 31,
+      "booked": 7,
+      "bookedPct": 8,
+      "confirmed": 0,
+      "noShow": 0,
+      "cancelled": 2,
+      "rebooked": 0,
+      "moneyCollected": 0,
+      "budget": 533.58,
+      "offers": [
+        {
+          "name": "offer 1",
+          "leads": 7,
+          "cpl": 5.8,
+          "booked": 2,
+          "spend": 533.58
+        },
+        {
+          "name": "OFFER 1",
+          "leads": 77,
+          "cpl": 5.8,
+          "booked": 5,
+          "spend": 533.58
+        }
+      ],
+      "leads": [
+        {
+          "date": "2026-05-13",
+          "name": "sangeeta sharma bains",
+          "offer": "offer 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-13",
+          "name": "dave",
+          "offer": "offer 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-13",
+          "name": "hoi ai",
+          "offer": "offer 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-14",
+          "name": "yutika_rayate rayate",
+          "offer": "offer 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-14",
+          "name": "sandeep atwal",
+          "offer": "offer 1",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-05-14",
+          "name": "alice moorehouse",
+          "offer": "offer 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-14",
+          "name": "joemol thomas",
+          "offer": "offer 1",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-05-15",
+          "name": "shanika kalpanie",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-15",
+          "name": "dhillon reet",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-16",
+          "name": "s o p h i a",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-16",
+          "name": "ezmarly dortolina",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-16",
+          "name": "ray cerra",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-16",
+          "name": "iliana cruz",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-16",
+          "name": "sadaph hasnain",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": "Cancelled Appointment"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "beatrice areh",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "leo macrae",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "m\u00f3nica g\u00f3mez",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "rebecca stevens",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "sana saeed",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "nyasha mudehwe",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "marie yarakk",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-05-18",
+          "name": "christine barlow",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-18",
+          "name": "colombobatik_au",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-19",
+          "name": "craig smith",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-19",
+          "name": "angela randeniya \ud83c\uddf8\ud83c\uddea \ud83c\uddf1\ud83c\uddf0",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-19",
+          "name": "wanstcandle wanstall",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-19",
+          "name": "lissell segura sanchez",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-19",
+          "name": "melissa vincini",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "amal zahraman",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "nicholahall6",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "angel jouaneh",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "sharruni",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "samar mavaddati",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "goran vukojevic",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": "Cancelled Appointment"
+        },
+        {
+          "date": "2026-05-20",
+          "name": "rhonnie cartwright",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "maryam molaei",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "seda genc",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "am!0+",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-20",
+          "name": "chetu chowdary \u2600\ufe0f",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-21",
+          "name": "nicky \ud83c\udde8\ud83c\uddf1",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-21",
+          "name": "janki patel",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-05-22",
+          "name": "maree",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "dilani sandamale",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "fariha khan",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "manisha verma\ud83e\udd8b",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "m\u00e3ria\u00e3\u00f1\u00f1e m\u00e3r\u00f5 s\u00e3r\u00f5fim",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "yovana piedrahita cardona",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "renu jdeepak",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-22",
+          "name": "studio of events",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": "Appointment Booked"
+        },
+        {
+          "date": "2026-05-23",
+          "name": "andrea wells",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "carlos guzman",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "mavi jinsi",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "sania gupta",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "deepti k dadhwal",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "nisrine abbas",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-23",
+          "name": "anna corrigan",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "loulou amek",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "tahira ali",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "ron dips",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "natalie guminski",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "archana kari",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-24",
+          "name": "lynley shaw",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "deepika rana",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "\ud835\udc3b\ud835\udcc7\ud835\udcbe\ud835\udcc8\ud835\udcc9\ud835\udcbe\ud835\udcc3\ud835\udcb6 \ud835\udc9f\ud835\udcbe\ud835\udcc2\ud835\udc5c\ud835\udccb\ud835\udcc8\ud835\udcc0\ud835\udcb6",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "ange turco",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "lauren usman",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "shreya tiwari",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-25",
+          "name": "josi pierce",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-26",
+          "name": "julie cox",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-26",
+          "name": "steven gasbarri",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "akshaya",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "taryn rebecca",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "debra lishman",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "zara saeed",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "rosetta barrese",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "jeanette-ann monteduro",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "ayan",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "tayfun yaris",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-27",
+          "name": "\u2026ana",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-28",
+          "name": "melissa mcgauley",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-28",
+          "name": "menik jayasuriya",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-28",
+          "name": "roukaiya elhaouli",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "bek robertson",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "r.wah",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        }
+      ]
+    }
+  },
+  "allLeads": [
+    {
+      "date": "2026-05-13",
+      "name": "sangeeta sharma bains",
+      "offer": "offer 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-13",
+      "name": "dave",
+      "offer": "offer 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-13",
+      "name": "hoi ai",
+      "offer": "offer 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-14",
+      "name": "yutika_rayate rayate",
+      "offer": "offer 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-14",
+      "name": "sandeep atwal",
+      "offer": "offer 1",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "alice moorehouse",
+      "offer": "offer 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-14",
+      "name": "joemol thomas",
+      "offer": "offer 1",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-05-15",
+      "name": "shanika kalpanie",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-15",
+      "name": "dhillon reet",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-16",
+      "name": "s o p h i a",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-16",
+      "name": "ezmarly dortolina",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-16",
+      "name": "ray cerra",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-16",
+      "name": "iliana cruz",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-16",
+      "name": "sadaph hasnain",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": "Cancelled Appointment"
+    },
+    {
+      "date": "2026-05-17",
+      "name": "beatrice areh",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "leo macrae",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "m\u00f3nica g\u00f3mez",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "rebecca stevens",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "sana saeed",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "nyasha mudehwe",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "marie yarakk",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-05-18",
+      "name": "christine barlow",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-18",
+      "name": "colombobatik_au",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-19",
+      "name": "craig smith",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-19",
+      "name": "angela randeniya \ud83c\uddf8\ud83c\uddea \ud83c\uddf1\ud83c\uddf0",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-19",
+      "name": "wanstcandle wanstall",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-19",
+      "name": "lissell segura sanchez",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-19",
+      "name": "melissa vincini",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "amal zahraman",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "nicholahall6",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "angel jouaneh",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "sharruni",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "samar mavaddati",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "goran vukojevic",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": "Cancelled Appointment"
+    },
+    {
+      "date": "2026-05-20",
+      "name": "rhonnie cartwright",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "maryam molaei",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "seda genc",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "am!0+",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-20",
+      "name": "chetu chowdary \u2600\ufe0f",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-21",
+      "name": "nicky \ud83c\udde8\ud83c\uddf1",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-21",
+      "name": "janki patel",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-05-22",
+      "name": "maree",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "dilani sandamale",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "fariha khan",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "manisha verma\ud83e\udd8b",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "m\u00e3ria\u00e3\u00f1\u00f1e m\u00e3r\u00f5 s\u00e3r\u00f5fim",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "yovana piedrahita cardona",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "renu jdeepak",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-22",
+      "name": "studio of events",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": "Appointment Booked"
+    },
+    {
+      "date": "2026-05-23",
+      "name": "andrea wells",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "carlos guzman",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "mavi jinsi",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "sania gupta",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "deepti k dadhwal",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "nisrine abbas",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-23",
+      "name": "anna corrigan",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "loulou amek",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "tahira ali",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "ron dips",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "natalie guminski",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "archana kari",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-24",
+      "name": "lynley shaw",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "deepika rana",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "\ud835\udc3b\ud835\udcc7\ud835\udcbe\ud835\udcc8\ud835\udcc9\ud835\udcbe\ud835\udcc3\ud835\udcb6 \ud835\udc9f\ud835\udcbe\ud835\udcc2\ud835\udc5c\ud835\udccb\ud835\udcc8\ud835\udcc0\ud835\udcb6",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "ange turco",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "lauren usman",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "shreya tiwari",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-25",
+      "name": "josi pierce",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-26",
+      "name": "julie cox",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-26",
+      "name": "steven gasbarri",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "akshaya",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "taryn rebecca",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "debra lishman",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "zara saeed",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "rosetta barrese",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "jeanette-ann monteduro",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "ayan",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "tayfun yaris",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-27",
+      "name": "\u2026ana",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-28",
+      "name": "melissa mcgauley",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-28",
+      "name": "menik jayasuriya",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-28",
+      "name": "roukaiya elhaouli",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "bek robertson",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "r.wah",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    }
+  ]
+}

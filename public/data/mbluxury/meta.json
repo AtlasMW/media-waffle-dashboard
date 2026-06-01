@@ -1,13 +1,14 @@
 {
   "client": "MB Luxury Spa",
   "currency": "AUD",
-  "lastUpdated": "2026-05-08T14:02:20+10:00",
+  "lastUpdated": "2026-06-02T07:53:54+10:00",
   "agencyFees": {
     "2026-04": 1000,
     "2025-12": 800,
     "2026-01": 1000,
     "2026-02": 1000,
-    "2026-03": 1000
+    "2026-03": 1000,
+    "2026-05": 1000
   },
   "monthly": {
     "2026-04": {
@@ -933,6 +934,200 @@
           "name": "Instagram Instagram Stories",
           "spend": 99.76,
           "leads": 21
+        }
+      ]
+    },
+    "2026-05": {
+      "spend": 863.04,
+      "impressions": 66609,
+      "reach": 18525,
+      "leads": 174,
+      "cpl": 4.96,
+      "messages": 200,
+      "costPerMessage": 4.32,
+      "uniqueCtr": 0.42,
+      "cpm": 12.96,
+      "linkClicks": 736,
+      "cpc": 1.17,
+      "leadConvPct": 23.64,
+      "campaigns": [
+        {
+          "name": "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale",
+          "spend": 778.99,
+          "impressions": 59553,
+          "reach": 17648,
+          "leads": 132,
+          "cpl": 5.9,
+          "uniqueCtr": 0.35,
+          "messages": 168,
+          "linkClicks": 629,
+          "cpc": 1.24,
+          "leadConvPct": 20.99
+        },
+        {
+          "name": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 84.05,
+          "impressions": 7056,
+          "reach": 3604,
+          "leads": 42,
+          "cpl": 2.0,
+          "uniqueCtr": 0.42,
+          "messages": 32,
+          "linkClicks": 107,
+          "cpc": 0.79,
+          "leadConvPct": 39.25
+        }
+      ],
+      "offers": [
+        {
+          "name": "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale",
+          "leads": 132,
+          "cpl": 5.9,
+          "spend": 778.99,
+          "campaignPattern": "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale"
+        },
+        {
+          "name": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "leads": 42,
+          "cpl": 2.0,
+          "spend": 84.05,
+          "campaignPattern": "LEADS // ABO // OFFER 2 | Aitkenvale"
+        }
+      ],
+      "ads": [
+        {
+          "adName": "THAI AD 3 | H3 C2",
+          "adSetName": "BROAD // MEN 18+ // TOWNSVILLE",
+          "campaignName": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 1.88,
+          "leads": 2,
+          "cpl": 0.94,
+          "uniqueCtr": 0.0,
+          "frequency": 1.19
+        },
+        {
+          "adName": "WOMEN THAI AD 2 | H3 C2",
+          "adSetName": "BROAD // FEMALE 18+ // TOWNSVILLE",
+          "campaignName": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 43.34,
+          "leads": 24,
+          "cpl": 1.81,
+          "uniqueCtr": 0.32,
+          "frequency": 1.46
+        },
+        {
+          "adName": "THAI AD 2 | H3 C2",
+          "adSetName": "BROAD // MEN 18+ // TOWNSVILLE",
+          "campaignName": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 20.06,
+          "leads": 11,
+          "cpl": 1.82,
+          "uniqueCtr": 0.31,
+          "frequency": 1.39
+        },
+        {
+          "adName": "THAI AD 1 | H1-2 C1",
+          "adSetName": "BROAD // FEMALE 18+ // TOWNSVILLE",
+          "campaignName": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 4.75,
+          "leads": 2,
+          "cpl": 2.38,
+          "uniqueCtr": 0.0,
+          "frequency": 1.2
+        },
+        {
+          "adName": "THAI AD 1 | H2-3 C2",
+          "adSetName": "BROAD // MEN 18+ // TOWNSVILLE",
+          "campaignName": "LEADS // ABO // OFFER 2 | Aitkenvale",
+          "spend": 6.78,
+          "leads": 2,
+          "cpl": 3.39,
+          "uniqueCtr": 0.45,
+          "frequency": 1.15
+        }
+      ],
+      "demographics": [
+        {
+          "age": "18-24",
+          "spend": 82.61,
+          "leads": 15
+        },
+        {
+          "age": "25-34",
+          "spend": 205.28,
+          "leads": 37
+        },
+        {
+          "age": "35-44",
+          "spend": 201.59,
+          "leads": 42
+        },
+        {
+          "age": "45-54",
+          "spend": 185.85,
+          "leads": 36
+        },
+        {
+          "age": "55-64",
+          "spend": 129.64,
+          "leads": 35
+        },
+        {
+          "age": "65+",
+          "spend": 58.07,
+          "leads": 9
+        }
+      ],
+      "placements": [
+        {
+          "name": "Facebook Facebook Profile Feed",
+          "spend": 0.1,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Reels",
+          "spend": 79.56,
+          "leads": 12
+        },
+        {
+          "name": "Facebook Facebook Reels Overlay",
+          "spend": 0.16,
+          "leads": 0
+        },
+        {
+          "name": "Facebook Facebook Stories",
+          "spend": 24.03,
+          "leads": 4
+        },
+        {
+          "name": "Facebook Feed",
+          "spend": 402.72,
+          "leads": 95
+        },
+        {
+          "name": "Facebook Instream Video",
+          "spend": 9.7,
+          "leads": 4
+        },
+        {
+          "name": "Instagram Feed",
+          "spend": 207.95,
+          "leads": 37
+        },
+        {
+          "name": "Instagram Instagram Explore Grid Home",
+          "spend": 0.27,
+          "leads": 0
+        },
+        {
+          "name": "Instagram Instagram Reels",
+          "spend": 56.63,
+          "leads": 6
+        },
+        {
+          "name": "Instagram Instagram Stories",
+          "spend": 81.9,
+          "leads": 16
         }
       ]
     }
@@ -2587,6 +2782,347 @@
       "linkClicks": 11,
       "uniqueCtr": 0.08,
       "cpm": 13.32
+    },
+    {
+      "date": "2026-05-01",
+      "spend": 25.07,
+      "impressions": 1859,
+      "reach": 1545,
+      "leads": 3,
+      "messages": 5,
+      "linkClicks": 21,
+      "uniqueCtr": 0.06,
+      "cpm": 13.49
+    },
+    {
+      "date": "2026-05-02",
+      "spend": 31.84,
+      "impressions": 2498,
+      "reach": 2029,
+      "leads": 3,
+      "messages": 6,
+      "linkClicks": 31,
+      "uniqueCtr": 0.2,
+      "cpm": 12.75
+    },
+    {
+      "date": "2026-05-03",
+      "spend": 31.87,
+      "impressions": 2404,
+      "reach": 1957,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 23,
+      "uniqueCtr": 0.05,
+      "cpm": 13.26
+    },
+    {
+      "date": "2026-05-04",
+      "spend": 27.02,
+      "impressions": 1978,
+      "reach": 1655,
+      "leads": 3,
+      "messages": 5,
+      "linkClicks": 17,
+      "uniqueCtr": 0.12,
+      "cpm": 13.66
+    },
+    {
+      "date": "2026-05-05",
+      "spend": 30.26,
+      "impressions": 2298,
+      "reach": 1806,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 18,
+      "uniqueCtr": 0.11,
+      "cpm": 13.17
+    },
+    {
+      "date": "2026-05-06",
+      "spend": 28.93,
+      "impressions": 2377,
+      "reach": 2000,
+      "leads": 12,
+      "messages": 13,
+      "linkClicks": 35,
+      "uniqueCtr": 0.3,
+      "cpm": 12.17
+    },
+    {
+      "date": "2026-05-07",
+      "spend": 27.7,
+      "impressions": 2369,
+      "reach": 1970,
+      "leads": 3,
+      "messages": 7,
+      "linkClicks": 23,
+      "uniqueCtr": 0.05,
+      "cpm": 11.69
+    },
+    {
+      "date": "2026-05-08",
+      "spend": 21.2,
+      "impressions": 1499,
+      "reach": 1234,
+      "leads": 1,
+      "messages": 1,
+      "linkClicks": 10,
+      "uniqueCtr": 0.0,
+      "cpm": 14.14
+    },
+    {
+      "date": "2026-05-09",
+      "spend": 21.97,
+      "impressions": 1530,
+      "reach": 1284,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 27,
+      "uniqueCtr": 0.08,
+      "cpm": 14.36
+    },
+    {
+      "date": "2026-05-10",
+      "spend": 27.8,
+      "impressions": 2201,
+      "reach": 1872,
+      "leads": 5,
+      "messages": 4,
+      "linkClicks": 24,
+      "uniqueCtr": 0.05,
+      "cpm": 12.63
+    },
+    {
+      "date": "2026-05-11",
+      "spend": 25.49,
+      "impressions": 1995,
+      "reach": 1646,
+      "leads": 4,
+      "messages": 6,
+      "linkClicks": 18,
+      "uniqueCtr": 0.06,
+      "cpm": 12.78
+    },
+    {
+      "date": "2026-05-12",
+      "spend": 29.1,
+      "impressions": 2248,
+      "reach": 1837,
+      "leads": 9,
+      "messages": 10,
+      "linkClicks": 22,
+      "uniqueCtr": 0.11,
+      "cpm": 12.94
+    },
+    {
+      "date": "2026-05-13",
+      "spend": 27.11,
+      "impressions": 2033,
+      "reach": 1628,
+      "leads": 3,
+      "messages": 5,
+      "linkClicks": 19,
+      "uniqueCtr": 0.37,
+      "cpm": 13.33
+    },
+    {
+      "date": "2026-05-14",
+      "spend": 25.53,
+      "impressions": 1956,
+      "reach": 1565,
+      "leads": 7,
+      "messages": 8,
+      "linkClicks": 26,
+      "uniqueCtr": 0.19,
+      "cpm": 13.05
+    },
+    {
+      "date": "2026-05-15",
+      "spend": 23.28,
+      "impressions": 1824,
+      "reach": 1489,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 14,
+      "uniqueCtr": 0.0,
+      "cpm": 12.76
+    },
+    {
+      "date": "2026-05-16",
+      "spend": 20.82,
+      "impressions": 1648,
+      "reach": 1358,
+      "leads": 2,
+      "messages": 5,
+      "linkClicks": 18,
+      "uniqueCtr": 0.22,
+      "cpm": 12.63
+    },
+    {
+      "date": "2026-05-17",
+      "spend": 28.12,
+      "impressions": 2042,
+      "reach": 1758,
+      "leads": 4,
+      "messages": 6,
+      "linkClicks": 19,
+      "uniqueCtr": 0.0,
+      "cpm": 13.77
+    },
+    {
+      "date": "2026-05-18",
+      "spend": 26.01,
+      "impressions": 1999,
+      "reach": 1746,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 19,
+      "uniqueCtr": 0.17,
+      "cpm": 13.01
+    },
+    {
+      "date": "2026-05-19",
+      "spend": 26.9,
+      "impressions": 2202,
+      "reach": 1890,
+      "leads": 8,
+      "messages": 10,
+      "linkClicks": 18,
+      "uniqueCtr": 0.21,
+      "cpm": 12.22
+    },
+    {
+      "date": "2026-05-20",
+      "spend": 25.86,
+      "impressions": 1987,
+      "reach": 1704,
+      "leads": 5,
+      "messages": 6,
+      "linkClicks": 25,
+      "uniqueCtr": 0.06,
+      "cpm": 13.01
+    },
+    {
+      "date": "2026-05-21",
+      "spend": 22.56,
+      "impressions": 1591,
+      "reach": 1408,
+      "leads": 1,
+      "messages": 2,
+      "linkClicks": 18,
+      "uniqueCtr": 0.14,
+      "cpm": 14.18
+    },
+    {
+      "date": "2026-05-22",
+      "spend": 21.87,
+      "impressions": 1582,
+      "reach": 1422,
+      "leads": 5,
+      "messages": 5,
+      "linkClicks": 16,
+      "uniqueCtr": 0.35,
+      "cpm": 13.82
+    },
+    {
+      "date": "2026-05-23",
+      "spend": 23.68,
+      "impressions": 1779,
+      "reach": 1550,
+      "leads": 3,
+      "messages": 4,
+      "linkClicks": 26,
+      "uniqueCtr": 0.19,
+      "cpm": 13.31
+    },
+    {
+      "date": "2026-05-24",
+      "spend": 30.13,
+      "impressions": 2234,
+      "reach": 1934,
+      "leads": 4,
+      "messages": 5,
+      "linkClicks": 28,
+      "uniqueCtr": 0.05,
+      "cpm": 13.49
+    },
+    {
+      "date": "2026-05-25",
+      "spend": 22.73,
+      "impressions": 1816,
+      "reach": 1657,
+      "leads": 3,
+      "messages": 3,
+      "linkClicks": 13,
+      "uniqueCtr": 0.0,
+      "cpm": 12.52
+    },
+    {
+      "date": "2026-05-26",
+      "spend": 23.5,
+      "impressions": 1833,
+      "reach": 1615,
+      "leads": 2,
+      "messages": 4,
+      "linkClicks": 8,
+      "uniqueCtr": 0.0,
+      "cpm": 12.82
+    },
+    {
+      "date": "2026-05-27",
+      "spend": 38.73,
+      "impressions": 2872,
+      "reach": 2313,
+      "leads": 14,
+      "messages": 12,
+      "linkClicks": 54,
+      "uniqueCtr": 0.26,
+      "cpm": 13.49
+    },
+    {
+      "date": "2026-05-28",
+      "spend": 37.98,
+      "impressions": 2842,
+      "reach": 2276,
+      "leads": 8,
+      "messages": 6,
+      "linkClicks": 24,
+      "uniqueCtr": 0.04,
+      "cpm": 13.36
+    },
+    {
+      "date": "2026-05-29",
+      "spend": 38.18,
+      "impressions": 3021,
+      "reach": 2471,
+      "leads": 18,
+      "messages": 18,
+      "linkClicks": 49,
+      "uniqueCtr": 0.16,
+      "cpm": 12.64
+    },
+    {
+      "date": "2026-05-30",
+      "spend": 28.41,
+      "impressions": 2313,
+      "reach": 1852,
+      "leads": 17,
+      "messages": 13,
+      "linkClicks": 34,
+      "uniqueCtr": 0.22,
+      "cpm": 12.28
+    },
+    {
+      "date": "2026-05-31",
+      "spend": 43.39,
+      "impressions": 3779,
+      "reach": 3096,
+      "leads": 6,
+      "messages": 8,
+      "linkClicks": 39,
+      "uniqueCtr": 0.29,
+      "cpm": 11.48
     }
   ],
   "campaignDaily": {
@@ -3068,6 +3604,212 @@
       "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
         "spend": 32.11,
         "leads": 9
+      }
+    },
+    "2026-05-01": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 25.07,
+        "leads": 3
+      }
+    },
+    "2026-05-02": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 31.84,
+        "leads": 3
+      }
+    },
+    "2026-05-03": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 31.87,
+        "leads": 5
+      }
+    },
+    "2026-05-04": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 27.02,
+        "leads": 3
+      }
+    },
+    "2026-05-05": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 30.26,
+        "leads": 5
+      }
+    },
+    "2026-05-06": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 28.93,
+        "leads": 12
+      }
+    },
+    "2026-05-07": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 27.7,
+        "leads": 3
+      }
+    },
+    "2026-05-08": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 21.2,
+        "leads": 1
+      }
+    },
+    "2026-05-09": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 21.97,
+        "leads": 4
+      }
+    },
+    "2026-05-10": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 27.8,
+        "leads": 5
+      }
+    },
+    "2026-05-11": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 25.49,
+        "leads": 4
+      }
+    },
+    "2026-05-12": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 29.1,
+        "leads": 9
+      }
+    },
+    "2026-05-13": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 27.11,
+        "leads": 3
+      }
+    },
+    "2026-05-14": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 25.53,
+        "leads": 7
+      }
+    },
+    "2026-05-15": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 23.28,
+        "leads": 3
+      }
+    },
+    "2026-05-16": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 20.82,
+        "leads": 2
+      }
+    },
+    "2026-05-17": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 28.12,
+        "leads": 4
+      }
+    },
+    "2026-05-18": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 26.01,
+        "leads": 4
+      }
+    },
+    "2026-05-19": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 26.9,
+        "leads": 8
+      }
+    },
+    "2026-05-20": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 25.86,
+        "leads": 5
+      }
+    },
+    "2026-05-21": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 22.56,
+        "leads": 1
+      }
+    },
+    "2026-05-22": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 21.87,
+        "leads": 5
+      }
+    },
+    "2026-05-23": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 23.68,
+        "leads": 3
+      }
+    },
+    "2026-05-24": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 30.13,
+        "leads": 4
+      }
+    },
+    "2026-05-25": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 22.73,
+        "leads": 3
+      }
+    },
+    "2026-05-26": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 23.5,
+        "leads": 2
+      }
+    },
+    "2026-05-27": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 22.06,
+        "leads": 5
+      },
+      "LEADS // ABO // OFFER 2 | Aitkenvale": {
+        "spend": 16.67,
+        "leads": 9
+      }
+    },
+    "2026-05-28": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 19.93,
+        "leads": 0
+      },
+      "LEADS // ABO // OFFER 2 | Aitkenvale": {
+        "spend": 18.05,
+        "leads": 8
+      }
+    },
+    "2026-05-29": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 21.26,
+        "leads": 8
+      },
+      "LEADS // ABO // OFFER 2 | Aitkenvale": {
+        "spend": 16.92,
+        "leads": 10
+      }
+    },
+    "2026-05-30": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 15.66,
+        "leads": 4
+      },
+      "LEADS // ABO // OFFER 2 | Aitkenvale": {
+        "spend": 12.75,
+        "leads": 13
+      }
+    },
+    "2026-05-31": {
+      "LEADS // ABO // OFFER 1 | Fairfield + Aitkenvale": {
+        "spend": 23.73,
+        "leads": 4
+      },
+      "LEADS // ABO // OFFER 2 | Aitkenvale": {
+        "spend": 19.66,
+        "leads": 2
       }
     }
   }
