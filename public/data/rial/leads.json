@@ -2,13 +2,13 @@
   "client": "Rial Beauty & Co",
   "monthly": {
     "2026-05": {
-      "totalLeads": 87,
-      "responded": 28,
-      "noContact": 44,
-      "inFollowUp": 15,
-      "respondedPct": 32,
+      "totalLeads": 96,
+      "responded": 68,
+      "noContact": 14,
+      "inFollowUp": 14,
+      "respondedPct": 71,
       "booked": 10,
-      "bookedPct": 11,
+      "bookedPct": 10,
       "confirmed": 0,
       "noShow": 0,
       "cancelled": 0,
@@ -24,18 +24,18 @@
           "spend": 865.36
         },
         {
+          "name": "OFFER 1",
+          "leads": 44,
+          "cpl": 9.21,
+          "booked": 2,
+          "spend": 865.36
+        },
+        {
           "name": "hot lead",
           "leads": 2,
           "cpl": 0,
           "booked": 0,
           "spend": 0
-        },
-        {
-          "name": "OFFER 1",
-          "leads": 35,
-          "cpl": 9.21,
-          "booked": 2,
-          "spend": 865.36
         }
       ],
       "leads": [
@@ -43,14 +43,14 @@
           "date": "2026-05-01",
           "name": "julie wilton",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-01",
           "name": "\ud83e\udeachuniii333\ud83e\udeac",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -61,10 +61,17 @@
           "status": "Appointment Booked"
         },
         {
+          "date": "2026-05-01",
+          "name": "karin brink",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
           "date": "2026-05-02",
           "name": "jackie ma",
           "offer": "hot lead",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -78,28 +85,28 @@
           "date": "2026-05-03",
           "name": "mirela lane",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-03",
           "name": "cassie banks",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-03",
           "name": "editha ramos tabasan edwards",
           "offer": "hot lead",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-03",
           "name": "wrightyma saunders",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -113,35 +120,35 @@
           "date": "2026-05-04",
           "name": "\u2606",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-04",
           "name": "kasia johnson",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-04",
           "name": "tina beard",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-04",
           "name": "rebecca",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-05",
           "name": "faduma yusuf",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -155,29 +162,29 @@
           "date": "2026-05-05",
           "name": "qinghui hou",
           "offer": "offer 1",
-          "responded": "No contact",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-06",
           "name": "nikaela",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-06",
           "name": "bear",
           "offer": "offer 1",
           "responded": "No contact",
-          "status": ""
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-06",
           "name": "bianca campling",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-06",
@@ -204,35 +211,35 @@
           "date": "2026-05-07",
           "name": "shannen \u2764\ufe0f\u200d\ud83d\udd25",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-08",
           "name": "kara joyce",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-08",
           "name": "puncharat saelao",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-08",
           "name": "denise billinghurst",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-08",
           "name": "idoya martinez",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -246,7 +253,7 @@
           "date": "2026-05-09",
           "name": "danica randall",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -274,7 +281,7 @@
           "date": "2026-05-10",
           "name": "sheena cuthbert",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -282,83 +289,83 @@
           "name": "debora anahi",
           "offer": "offer 1",
           "responded": "No contact",
-          "status": ""
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-11",
           "name": "stacey rodda marketing",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-11",
           "name": "nu'\u016b cilla ulberg",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-11",
           "name": "pii muamua",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-12",
           "name": "vicki taylor",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-12",
           "name": "libby mary",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-12",
           "name": "soph\u02da\u02d6\ud80c\udf62\u05b4\u0ecb\ud83c\udf37\u0359\u0592\u2727\u02da.\ud83c\udf80\u0f18\u22c6",
           "offer": "offer 1",
-          "responded": "No contact",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-12",
           "name": "nikita sham",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-12",
           "name": "renee perry \u745e\u73c2\u6674",
           "offer": "offer 1",
-          "responded": "No contact",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-12",
           "name": "isha bywaters",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-13",
           "name": "shristi pun",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-14",
           "name": "jasmine thuy",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -372,36 +379,36 @@
           "date": "2026-05-14",
           "name": "lani",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-14",
           "name": "peums77 ran",
           "offer": "offer 1",
-          "responded": "No contact",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-14",
           "name": "rafael morales",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-14",
           "name": "katie",
           "offer": "offer 1",
-          "responded": "No contact",
-          "status": ""
+          "responded": "Yes",
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-15",
           "name": "kavita anuj",
           "offer": "offer 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-16",
@@ -485,14 +492,14 @@
           "name": "demi kilafis",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": ""
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-21",
           "name": "maan s",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-22",
@@ -512,7 +519,7 @@
           "date": "2026-05-22",
           "name": "cjeanikens maloney",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -554,7 +561,7 @@
           "date": "2026-05-25",
           "name": "rylee moore",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -582,7 +589,7 @@
           "date": "2026-05-26",
           "name": "jayne friend",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -603,7 +610,7 @@
           "date": "2026-05-27",
           "name": "natasha rabbitt",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -625,14 +632,14 @@
           "name": "melanie l wright",
           "offer": "OFFER 1",
           "responded": "In follow up",
-          "status": ""
+          "status": "Appointment Booked"
         },
         {
           "date": "2026-05-28",
           "name": "jo millett",
           "offer": "OFFER 1",
           "responded": "Yes",
-          "status": "Appointment Booked"
+          "status": ""
         },
         {
           "date": "2026-05-28",
@@ -645,6 +652,62 @@
           "date": "2026-05-29",
           "name": "emily davies",
           "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "sandy duke",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "amandi",
+          "offer": "OFFER 1",
+          "responded": "No contact",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "mags slater",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "emma richards",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "eve rowell",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "ellie o'connell",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "deborah zambilton",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "annabelle efstathis",
+          "offer": "OFFER 1",
           "responded": "In follow up",
           "status": ""
         }
@@ -656,14 +719,14 @@
       "date": "2026-05-01",
       "name": "julie wilton",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-01",
       "name": "\ud83e\udeachuniii333\ud83e\udeac",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -674,10 +737,17 @@
       "status": "Appointment Booked"
     },
     {
+      "date": "2026-05-01",
+      "name": "karin brink",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
       "date": "2026-05-02",
       "name": "jackie ma",
       "offer": "hot lead",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -691,28 +761,28 @@
       "date": "2026-05-03",
       "name": "mirela lane",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-03",
       "name": "cassie banks",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-03",
       "name": "editha ramos tabasan edwards",
       "offer": "hot lead",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-03",
       "name": "wrightyma saunders",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -726,35 +796,35 @@
       "date": "2026-05-04",
       "name": "\u2606",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-04",
       "name": "kasia johnson",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-04",
       "name": "tina beard",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-04",
       "name": "rebecca",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-05",
       "name": "faduma yusuf",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -768,29 +838,29 @@
       "date": "2026-05-05",
       "name": "qinghui hou",
       "offer": "offer 1",
-      "responded": "No contact",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-06",
       "name": "nikaela",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-06",
       "name": "bear",
       "offer": "offer 1",
       "responded": "No contact",
-      "status": ""
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-06",
       "name": "bianca campling",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-06",
@@ -817,35 +887,35 @@
       "date": "2026-05-07",
       "name": "shannen \u2764\ufe0f\u200d\ud83d\udd25",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-08",
       "name": "kara joyce",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-08",
       "name": "puncharat saelao",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-08",
       "name": "denise billinghurst",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-08",
       "name": "idoya martinez",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -859,7 +929,7 @@
       "date": "2026-05-09",
       "name": "danica randall",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -887,7 +957,7 @@
       "date": "2026-05-10",
       "name": "sheena cuthbert",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -895,83 +965,83 @@
       "name": "debora anahi",
       "offer": "offer 1",
       "responded": "No contact",
-      "status": ""
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-11",
       "name": "stacey rodda marketing",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-11",
       "name": "nu'\u016b cilla ulberg",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-11",
       "name": "pii muamua",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-12",
       "name": "vicki taylor",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-12",
       "name": "libby mary",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-12",
       "name": "soph\u02da\u02d6\ud80c\udf62\u05b4\u0ecb\ud83c\udf37\u0359\u0592\u2727\u02da.\ud83c\udf80\u0f18\u22c6",
       "offer": "offer 1",
-      "responded": "No contact",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-12",
       "name": "nikita sham",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-12",
       "name": "renee perry \u745e\u73c2\u6674",
       "offer": "offer 1",
-      "responded": "No contact",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-12",
       "name": "isha bywaters",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-13",
       "name": "shristi pun",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-14",
       "name": "jasmine thuy",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -985,36 +1055,36 @@
       "date": "2026-05-14",
       "name": "lani",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-14",
       "name": "peums77 ran",
       "offer": "offer 1",
-      "responded": "No contact",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-14",
       "name": "rafael morales",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-14",
       "name": "katie",
       "offer": "offer 1",
-      "responded": "No contact",
-      "status": ""
+      "responded": "Yes",
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-15",
       "name": "kavita anuj",
       "offer": "offer 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-16",
@@ -1098,14 +1168,14 @@
       "name": "demi kilafis",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": ""
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-21",
       "name": "maan s",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-22",
@@ -1125,7 +1195,7 @@
       "date": "2026-05-22",
       "name": "cjeanikens maloney",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1167,7 +1237,7 @@
       "date": "2026-05-25",
       "name": "rylee moore",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1195,7 +1265,7 @@
       "date": "2026-05-26",
       "name": "jayne friend",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1216,7 +1286,7 @@
       "date": "2026-05-27",
       "name": "natasha rabbitt",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1238,14 +1308,14 @@
       "name": "melanie l wright",
       "offer": "OFFER 1",
       "responded": "In follow up",
-      "status": ""
+      "status": "Appointment Booked"
     },
     {
       "date": "2026-05-28",
       "name": "jo millett",
       "offer": "OFFER 1",
       "responded": "Yes",
-      "status": "Appointment Booked"
+      "status": ""
     },
     {
       "date": "2026-05-28",
@@ -1257,6 +1327,62 @@
     {
       "date": "2026-05-29",
       "name": "emily davies",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "sandy duke",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "amandi",
+      "offer": "OFFER 1",
+      "responded": "No contact",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "mags slater",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "emma richards",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "eve rowell",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "ellie o'connell",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "deborah zambilton",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "annabelle efstathis",
       "offer": "OFFER 1",
       "responded": "In follow up",
       "status": ""
