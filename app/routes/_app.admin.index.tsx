@@ -77,7 +77,6 @@ export async function action({ request }: Route.ActionArgs) {
 
 const CLIENTS = [
   { slug: "vernalys", name: "Vernalys Skin & Laser Clinic", status: "active", startDate: "2025-07", fee: 950, hasReporting: true, hasMessaging: false },
-  { slug: "cronulla", name: "Cronulla Skin Sanctuary", status: "active", startDate: "2026-01", fee: 1500, hasReporting: true, hasMessaging: false },
   { slug: "eleve", name: "Élevé Cosmetics", status: "active", startDate: "2025-07", fee: 1000, hasReporting: true, hasMessaging: false },
   { slug: "rejuvia", name: "Rejuvia Beauty & Aesthetics", status: "active", startDate: "2025-10", fee: 1500, hasReporting: true, hasMessaging: false },
   { slug: "hairplus", name: "The Hair Plus Clinic", status: "active", startDate: "2026-01", fee: 990, hasReporting: true, hasMessaging: false },
@@ -85,6 +84,8 @@ const CLIENTS = [
   { slug: "livingskin", name: "Living Skin Clinic", status: "active", startDate: "2025-11", fee: 950, hasReporting: true, hasMessaging: false },
   { slug: "mbluxury", name: "MB Luxury Spa", status: "active", startDate: "2025-09", fee: 1000, hasReporting: true, hasMessaging: true },
   { slug: "wildflower", name: "Wildflower Skin Clinic", status: "active", startDate: "2024-03", fee: 1200, hasReporting: true, hasMessaging: false },
+  { slug: "rial", name: "Rial Beauty & Co", status: "active", startDate: "2026-05", fee: 0, hasReporting: true, hasMessaging: false },
+  { slug: "naj", name: "Natural Aesthetic Journey", status: "active", startDate: "2026-05", fee: 0, hasReporting: true, hasMessaging: false },
 ];
 
 function fmtC(v: number) { return '$' + Number(v).toLocaleString('en-AU', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
