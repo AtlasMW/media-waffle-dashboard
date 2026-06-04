@@ -2,13 +2,13 @@
   "client": "Natural Aesthetic Journey",
   "monthly": {
     "2026-05": {
-      "totalLeads": 84,
-      "responded": 26,
-      "noContact": 5,
-      "inFollowUp": 53,
-      "respondedPct": 31,
+      "totalLeads": 95,
+      "responded": 47,
+      "noContact": 3,
+      "inFollowUp": 45,
+      "respondedPct": 49,
       "booked": 7,
-      "bookedPct": 8,
+      "bookedPct": 7,
       "confirmed": 0,
       "noShow": 0,
       "cancelled": 2,
@@ -25,7 +25,7 @@
         },
         {
           "name": "OFFER 1",
-          "leads": 77,
+          "leads": 88,
           "cpl": 5.8,
           "booked": 5,
           "spend": 533.58
@@ -57,7 +57,7 @@
           "date": "2026-05-14",
           "name": "yutika_rayate rayate",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -71,7 +71,7 @@
           "date": "2026-05-14",
           "name": "alice moorehouse",
           "offer": "offer 1",
-          "responded": "No contact",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -85,7 +85,7 @@
           "date": "2026-05-15",
           "name": "shanika kalpanie",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -134,7 +134,7 @@
           "date": "2026-05-17",
           "name": "beatrice areh",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -155,14 +155,14 @@
           "date": "2026-05-18",
           "name": "rebecca stevens",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-18",
           "name": "sana saeed",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -225,14 +225,14 @@
           "date": "2026-05-19",
           "name": "melissa vincini",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
           "date": "2026-05-20",
           "name": "amal zahraman",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -337,7 +337,7 @@
           "date": "2026-05-22",
           "name": "fariha khan",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -435,7 +435,7 @@
           "date": "2026-05-24",
           "name": "tahira ali",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -519,7 +519,7 @@
           "date": "2026-05-26",
           "name": "steven gasbarri",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -561,7 +561,7 @@
           "date": "2026-05-27",
           "name": "jeanette-ann monteduro",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -575,7 +575,7 @@
           "date": "2026-05-27",
           "name": "tayfun yaris",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -589,7 +589,7 @@
           "date": "2026-05-28",
           "name": "melissa mcgauley",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -603,7 +603,7 @@
           "date": "2026-05-28",
           "name": "roukaiya elhaouli",
           "offer": "OFFER 1",
-          "responded": "In follow up",
+          "responded": "Yes",
           "status": ""
         },
         {
@@ -618,6 +618,83 @@
           "name": "r.wah",
           "offer": "OFFER 1",
           "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "nicole christine",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-29",
+          "name": "tejasvi brahmbhatt",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "susie emini",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "cheryl allen",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "alyanna camille",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-30",
+          "name": "kothur sai kumar",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "micha dee",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "melissa brick",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "tashfia nuhaz",
+          "offer": "OFFER 1",
+          "responded": "Yes",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "pati rosario",
+          "offer": "OFFER 1",
+          "responded": "In follow up",
+          "status": ""
+        },
+        {
+          "date": "2026-05-31",
+          "name": "meinu aparna mendis",
+          "offer": "OFFER 1",
+          "responded": "Yes",
           "status": ""
         }
       ]
@@ -649,7 +726,7 @@
       "date": "2026-05-14",
       "name": "yutika_rayate rayate",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -663,7 +740,7 @@
       "date": "2026-05-14",
       "name": "alice moorehouse",
       "offer": "offer 1",
-      "responded": "No contact",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -677,7 +754,7 @@
       "date": "2026-05-15",
       "name": "shanika kalpanie",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -726,7 +803,7 @@
       "date": "2026-05-17",
       "name": "beatrice areh",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -747,14 +824,14 @@
       "date": "2026-05-18",
       "name": "rebecca stevens",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-18",
       "name": "sana saeed",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -817,14 +894,14 @@
       "date": "2026-05-19",
       "name": "melissa vincini",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
       "date": "2026-05-20",
       "name": "amal zahraman",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -929,7 +1006,7 @@
       "date": "2026-05-22",
       "name": "fariha khan",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1027,7 +1104,7 @@
       "date": "2026-05-24",
       "name": "tahira ali",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1111,7 +1188,7 @@
       "date": "2026-05-26",
       "name": "steven gasbarri",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1153,7 +1230,7 @@
       "date": "2026-05-27",
       "name": "jeanette-ann monteduro",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1167,7 +1244,7 @@
       "date": "2026-05-27",
       "name": "tayfun yaris",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1181,7 +1258,7 @@
       "date": "2026-05-28",
       "name": "melissa mcgauley",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1195,7 +1272,7 @@
       "date": "2026-05-28",
       "name": "roukaiya elhaouli",
       "offer": "OFFER 1",
-      "responded": "In follow up",
+      "responded": "Yes",
       "status": ""
     },
     {
@@ -1210,6 +1287,83 @@
       "name": "r.wah",
       "offer": "OFFER 1",
       "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "nicole christine",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-29",
+      "name": "tejasvi brahmbhatt",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "susie emini",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "cheryl allen",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "alyanna camille",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-30",
+      "name": "kothur sai kumar",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "micha dee",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "melissa brick",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "tashfia nuhaz",
+      "offer": "OFFER 1",
+      "responded": "Yes",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "pati rosario",
+      "offer": "OFFER 1",
+      "responded": "In follow up",
+      "status": ""
+    },
+    {
+      "date": "2026-05-31",
+      "name": "meinu aparna mendis",
+      "offer": "OFFER 1",
+      "responded": "Yes",
       "status": ""
     }
   ]
