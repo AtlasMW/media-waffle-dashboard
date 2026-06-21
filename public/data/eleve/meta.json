@@ -1,7 +1,7 @@
 {
   "client": "\u00c9lev\u00e9 Cosmetics",
   "currency": "AUD",
-  "lastUpdated": "2026-06-15T02:00:30+10:00",
+  "lastUpdated": "2026-06-22T02:00:33+10:00",
   "agencyFees": {
     "2026-02": 1000,
     "2026-03": 1000,
@@ -86,7 +86,7 @@
         },
         {
           "adName": "IMG 2 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 15.26,
           "leads": 3,
@@ -288,7 +288,7 @@
         },
         {
           "adName": "IMG 1 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 254.06,
           "leads": 47,
@@ -318,7 +318,7 @@
         },
         {
           "adName": "IMG 3 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 26.39,
           "leads": 4,
@@ -495,7 +495,7 @@
         },
         {
           "adName": "IMG 3 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 185.29,
           "leads": 35,
@@ -1981,7 +1981,7 @@
         },
         {
           "adName": "IMG 3 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 152.78,
           "leads": 26,
@@ -1991,7 +1991,7 @@
         },
         {
           "adName": "IMG 1 | Offer 3 - 30%",
-          "adSetName": "NO DT // AD+ // ALL 18+ // RICHMOND",
+          "adSetName": "NO DT // AD+ // ALL 35+ // RICHMOND",
           "campaignName": "LEADS // AD+ // ABO // AGE 35+ OFFER 3",
           "spend": 172.41,
           "leads": 28,
